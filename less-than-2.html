@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<title>Features with less than two implementations</title>
+<h1>You must specify "spec" and "url" query parameters</h1>
+<div></div>
+<script>
+var url;
+var count = 0;
+const mdnBase = "https://developer.mozilla.org/en-US/docs/Web/";
+const urlParams = new URLSearchParams(window.location.search);
+const specName = urlParams.get("spec");
+const specFile = specName + ".json";
+const div = document.querySelector("div");
+if (specName != null) {
+  const h1 = document.querySelector("h1");
+  h1.innerHTML = specName + " features known to have less than two implementations";
+  fetch("SPECMAP.json")
+    .then(response => response.json())
+    .then(specURLs => {
+      for (const key in specURLs) {
+        if (specURLs[key] == specFile) {
+          url = key;
+          break;
+        }
+      }
+      fetch(specName + ".json")
+        .then(response => response.json())
+        .then(data => {
+          for (const key in data) {
+            data[key].forEach((obj) => {
+              if ("engines" in obj && obj["engines"].length < 2) {
+                if (!("support" in obj) || obj["support"] === null) {
+                  return;
+                }
+                const p = document.createElement("p")
+                if (url != null) {
+                  const speclink = document.createElement("a")
+                  speclink.href = url + "#" + key;
+                  speclink.textContent = key;
+                  p.appendChild(speclink);
+                } else {
+                   p.textContent = key;
+                }
+                if ("slug" in obj) {
+                  const slug = obj["slug"];
+                  const mdnlink = document.createElement("a")
+                  mdnlink.href = mdnBase + slug;
+                  mdnlink.textContent = slug;
+                  p.append(" ");
+                  p.appendChild(mdnlink);
+                }
+                count++;
+                div.appendChild(p);
+              }
+            })
+          }
+          if (count == 0) {
+            const p = document.createElement("p")
+            p.textContent = "[none]";
+            div.appendChild(p);
+          }
+        })
+      })
+}
+</script>
