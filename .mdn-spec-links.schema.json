@@ -1,0 +1,279 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/MDNSpecLink",
+  "definitions": {
+    "MDNSpecLink": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Feature"
+        }
+      },
+      "description": "Each top-level entry in our data is an object with a single key: A\nfragment ID from a spec. Each top-level entry associates its spec\nfragment ID with one or more objects holding data about a feature."
+    },
+    "Feature": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the feature (interface, method, or property name); from BCD."
+        },
+        "filename": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Filename of the BCD file containing the data for the feature."
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the MDN article for the feature."
+        },
+        "slug": {
+          "type": "string",
+          "description": "Slug (URL path) of the MDN article for the feature."
+        },
+        "summary": {
+          "type": "string",
+          "description": "First paragraph or \"seoSummary\" of the MDN article for the feature."
+        },
+        "engines": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Engines"
+          },
+          "description": "Names of engines with support for the feature that conforms to the\nspec (that is, un-prefixed and not under an alternative name —\nthough possibly requiring a runtime flag or preference to be set)."
+        },
+        "altname": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Engines"
+          },
+          "description": "Names of engines with support for the feature implemented under a\nwholly different name (in contrast to just being prefixed)."
+        },
+        "needsflag": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Engines"
+          },
+          "description": "Names of engines with support for the feature that requires setting\na runtime flag or preference."
+        },
+        "partial": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Engines"
+          },
+          "description": "Names of engines with support for the feature that differs from the\nspec in a way that may cause compatibility problems."
+        },
+        "prefixed": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Engines"
+          },
+          "description": "Names of engines with support for the feature that requires adding\na prefix to the standard feature name defined in the spec."
+        },
+        "support": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Support"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Per-browser data about support for the feature."
+        },
+        "caniuse": {
+          "type": "object",
+          "properties": {
+            "feature": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "feature",
+            "title"
+          ],
+          "additionalProperties": false,
+          "description": "The caniuse.com shortname for the feature, along with the title of\nthe caniuse.com table (page) for the feature."
+        }
+      },
+      "required": [
+        "name",
+        "filename",
+        "title",
+        "slug",
+        "summary",
+        "engines",
+        "support"
+      ],
+      "additionalProperties": false,
+      "description": "Each object for a feature has data from the MDN article for the feature,\nalong with data from BCD https://github.com/mdn/browser-compat-data/."
+    },
+    "Engines": {
+      "type": "string",
+      "enum": [
+        "blink",
+        "gecko",
+        "webkit"
+      ]
+    },
+    "Support": {
+      "type": "object",
+      "properties": {
+        "chrome": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "chrome_android": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "edge": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "edge_blink": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "firefox": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "firefox_android": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "ie": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "nodejs": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "opera": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "opera_android": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "qq_android": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "safari": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "safari_ios": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "samsunginternet_android": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "uc_android": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "uc_chinese_android": {
+          "$ref": "#/definitions/SupportData"
+        },
+        "webview_android": {
+          "$ref": "#/definitions/SupportData"
+        }
+      },
+      "additionalProperties": false
+    },
+    "SupportData": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/SupportDetails"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SupportDetails"
+          }
+        }
+      ]
+    },
+    "SupportDetails": {
+      "type": "object",
+      "properties": {
+        "version_added": {
+          "type": [
+            "string",
+            "boolean",
+            "null"
+          ],
+          "description": "Either: (1) a browser version number (the first version of the\nbrowser to add support for the feature), or (2) boolean true to\nindicate just that the browser supports the feature (but the first\nversion to add support for it is unknown), or (3) boolean false to\nindicate the browser doesn't support the feature, or else (4) null\nto indicate it's unknown whether the browser supports the feature."
+        },
+        "version_removed": {
+          "type": [
+            "string",
+            "boolean",
+            "null"
+          ],
+          "description": "Either: (1) a browser version number (the version of the browser\nwhich dropped support for the feature), or (2) boolean true to\nindicate just that the feature was dropped from the browser (but the\nfirst version to drop support for it is unknown). (Boolean false and\nnull are also allowed as values, but the semantics are undefined.)"
+        },
+        "alternative_name": {
+          "type": "string",
+          "description": "Alternative name for the feature, for cases of a feature implemented\nunder a wholly different name (in contrast to just being prefixed)."
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Flag"
+          },
+          "description": "Data about flags needed to enable support for the feature."
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ],
+          "description": "Additional/noteworthy information about support for the feature."
+        },
+        "partial_implementation": {
+          "type": "boolean",
+          "description": "Boolean indicating whether support for the feature deviates from the\nspecification in a way that may cause compatibility problems."
+        },
+        "prefix": {
+          "type": "string",
+          "description": "Prefix that must be added to the feature name defined in the spec in\norder to enable support. Includes any leading/trailing dashes."
+        }
+      },
+      "required": [
+        "version_added"
+      ],
+      "additionalProperties": false
+    },
+    "Flag": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the flag or preference that must be set in order to\nenable support for the feature."
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "preference",
+            "runtime_flag"
+          ]
+        },
+        "value_to_set": {
+          "type": "string",
+          "description": "The value to which the specified flag must be set in order to enable\nsupport for the feature."
+        }
+      },
+      "required": [
+        "name",
+        "type"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

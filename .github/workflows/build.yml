@@ -1,0 +1,68 @@
+name: build
+
+on: [repository_dispatch]
+
+defaults:
+  run:
+    shell: bash
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Log incoming event information
+        id: incoming
+        run: |
+          echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
+          echo "https://github.com/${{ github.event.client_payload.repository }}/commit/${{ github.event.client_payload.sha }}"
+          echo "::set-output name=sha_short::$(echo ${{ github.event.client_payload.sha }} | cut -c1-7)"
+          echo "::set-output name=self_link::$(echo $(curl https://api.github.com/repos/w3c/mdn-spec-links/check-suites/$(curl https://api.github.com/repos/w3c/mdn-spec-links/actions/runs/${{ github.run_id }} | jq -r .check_suite_id)/check-runs | jq -r .check_runs[0].html_url)?check_suite_focus=true)"
+      - name: Run w3c/mdn-spec-links build
+        id: build
+        if: github.event.action == 'ping'
+        run: |
+          echo "::set-output name=conclusion::success"
+          make report-BCD || echo "::set-output name=conclusion::failure"
+          make report || echo "::set-output name=conclusion::failure"
+      - uses: crazy-max/ghaction-import-gpg@v3
+        with:
+          gpg-private-key: ${{ secrets.GPG_SIGNING_KEY }}
+          passphrase: ${{ secrets.GPG_SIGNING_KEY_PASSPHRASE }}
+          git-user-signingkey: true
+          git-commit-gpgsign: true
+      - name: Create pull request
+        if: ${{ steps.build.outputs.conclusion == 'success' }}
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Incorporate new ${{ github.event.client_payload.repository }} changes
+          commit-message: |
+            Incorporate new ${{ github.event.client_payload.repository }} changes
+
+            Incorporate changes from https://github.com/${{ github.event.client_payload.repository }}/commit/${{ steps.incoming.outputs.sha_short }}
+          committer: Michael[tm] Smith <mike@w3.org>
+          author: Michael[tm] Smith <mike@w3.org>
+          assignees: sideshowbarker
+          reviewers: sideshowbarker
+          branch-suffix: timestamp
+          delete-branch: true
+      - name: Log pull request URL
+        if: ${{ steps.build.outputs.conclusion == 'success' }}
+        run: |
+          echo "Pull request URL: ${{ steps.cpr.outputs.pull-request-url }}"
+      - name: List all build errors and warnings encountered
+        run: make report-only || true
+      - name: Set status
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl \
+          -X POST \
+          -H "Authorization: Bearer $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/w3c/mdn-spec-links/statuses/${{ github.sha }} \
+          -d '{"state": "${{ steps.build.outputs.conclusion }}", "target_url": "${{ steps.incoming.outputs.self_link }}", "context": "Build triggered by ${{ github.event.client_payload.repository }} changes" }'
+          if [[ "${{ steps.build.outputs.conclusion }}" == "failure" ]]; then exit 1; fi
