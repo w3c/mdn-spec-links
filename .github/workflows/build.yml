@@ -1,0 +1,38 @@
+name: build
+
+on: [repository_dispatch]
+
+defaults:
+  run:
+    shell: bash
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Log incoming event information
+        run: |
+          echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
+          echo "https://github.com/${{ github.event.client_payload.repository }}/commit/${{ github.event.client_payload.sha }}"
+      - name: Run w3c/mdn-spec-links build
+        if: github.event.action == 'ping'
+        run: make report-BCD && make report
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: |
+            Incorporate new ${{ github.event.client_payload.repository }} changes
+            Incorporate changes from https://github.com/${{ github.event.client_payload.repository }}/commit/${{ github.event.client_payload.sha }}.
+          committer: Michael[tm] Smith <mike@w3.org>
+          author: Michael[tm] Smith <mike@w3.org>
+          gpg-sign: true
+          assignees: sideshowbarker
+          reviewers: sideshowbarker
+          delete-branch: true
+      - name: Log pull request URL
+        run: |
+          echo "Pull request URL: ${{ steps.cpr.outputs.pull-request-url }}"
