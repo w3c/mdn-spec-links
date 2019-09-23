@@ -1,0 +1,670 @@
+{
+    "dom-batterymanager-charging": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "charging",
+            "slug": "API/BatteryManager/charging",
+            "summary": "A Boolean value indicating whether or not the device's battery is currently being charged.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager.charging"
+        }
+    ],
+    "dom-batterymanager-chargingtime": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "chargingTime",
+            "slug": "API/BatteryManager/chargingTime",
+            "summary": "Indicates the amount of time, in seconds, that remain until the battery is fully charged.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "38",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Always equal to <code>0</code> or <code>Infinity</code>."
+                    }
+                ],
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "25",
+                        "version_removed": "29",
+                        "partial_implementation": true,
+                        "notes": "Always equal to <code>0</code> or <code>Infinity</code>."
+                    }
+                ],
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "4.0"
+                    },
+                    {
+                        "version_added": "3.0",
+                        "version_removed": "4.0",
+                        "partial_implementation": true,
+                        "notes": "Always equal to <code>0</code> or <code>Infinity</code>."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "38",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Always equal to <code>0</code> or <code>Infinity</code>."
+                    }
+                ],
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager.chargingTime"
+        }
+    ],
+    "dom-batterymanager-dischargingtime": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "dischargingTime",
+            "slug": "API/BatteryManager/dischargingTime",
+            "summary": "Indicates the amount of time, in seconds, that remains until the battery is fully discharged.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "38",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Always equal to <code>Infinity</code>."
+                    }
+                ],
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "25",
+                        "version_removed": "29",
+                        "partial_implementation": true,
+                        "notes": "Always equal to <code>Infinity</code>."
+                    }
+                ],
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "4.0"
+                    },
+                    {
+                        "version_added": "3.0",
+                        "version_removed": "4.0",
+                        "partial_implementation": true,
+                        "notes": "Always equal to <code>Infinity</code>."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "38",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Always equal to <code>Infinity</code>."
+                    }
+                ],
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager.dischargingTime"
+        }
+    ],
+    "dom-batterymanager-level": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "level",
+            "slug": "API/BatteryManager/level",
+            "summary": "Indicates the current battery charge level as a value between 0.0 and 1.0.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager.level"
+        }
+    ],
+    "dom-batterymanager-onchargingchange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "onchargingchange",
+            "slug": "API/BatteryManager/onchargingchange",
+            "summary": "Specifies an event listener to receive chargingchange events. These events occur when the battery charging state is updated.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager.onchargingchange"
+        }
+    ],
+    "dom-batterymanager-onchargingtimechange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "onchargingtimechange",
+            "slug": "API/BatteryManager/onchargingtimechange",
+            "summary": "Specifies an event listener to receive chargingtimechange events. These events occur when the battery chargingTime is updated.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager.onchargingtimechange"
+        }
+    ],
+    "dom-batterymanager-ondischargingtimechange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "ondischargingtimechange",
+            "slug": "API/BatteryManager/ondischargingtimechange",
+            "summary": "Specifies an event listener to receive dischargingtimechange events. These events occur when the battery dischargingTime is updated.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager.ondischargingtimechange"
+        }
+    ],
+    "dom-batterymanager-onlevelchange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "onlevelchange",
+            "slug": "API/BatteryManager/onlevelchange",
+            "summary": "The BatteryManager.onlevelchange property specifies an event listener to receive levelchange events. These events occur when the battery level is updated.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager.onlevelchange"
+        }
+    ],
+    "the-batterymanager-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BatteryManager.json",
+            "name": "BatteryManager",
+            "slug": "API/BatteryManager",
+            "summary": "The BatteryManager interface of the Battery Status API provides information about the system's battery charge level. The navigator.getBattery() method returns a promise that resolves with a BatteryManager interface.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BatteryManager"
+        }
+    ],
+    "dom-navigator-getbattery": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "getBattery",
+            "slug": "API/Navigator/getBattery",
+            "summary": "The getBattery() method provides information about the system's battery. It returns a battery promise, which is resolved in a BatteryManager object providing also some new events you can handle to monitor the battery status. This implements the Battery Status API; see that documentation for additional details, a guide to using the API, and sample code.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "firefox_android": {
+                    "version_added": "43",
+                    "version_removed": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator.getBattery()"
+        }
+    ],
+    "permissions-policy-integration": [
+        {
+            "engines": [],
+            "filename": "http/headers/feature-policy.json",
+            "name": "battery",
+            "slug": "HTTP/Headers/Feature-Policy/battery",
+            "summary": "The HTTP Feature-Policy header battery directive controls whether the current document is allowed to gather information about the battery of the device through the BatteryManager interface obtained via Navigator.getBattery().",
+            "support": {
+                "chrome": {
+                    "version_added": false,
+                    "notes": "Will be implemented, see <a href='https://crbug.com/1007264'>bug 1007264</a>."
+                },
+                "chrome_android": {
+                    "version_added": false,
+                    "notes": "Will be implemented, see <a href='https://crbug.com/1007264'>bug 1007264</a>."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "notes": "Will be implemented, see <a href='https://crbug.com/1007264'>bug 1007264</a>."
+                }
+            },
+            "title": "Feature-Policy: battery"
+        }
+    ]
+}
