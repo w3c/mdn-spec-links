@@ -1,0 +1,48 @@
+name: build
+
+on: [repository_dispatch]
+
+defaults:
+  run:
+    shell: bash
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Log incoming event information
+        id: incoming
+        run: |
+          echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
+          echo "https://github.com/${{ github.event.client_payload.repository }}/commit/${{ github.event.client_payload.sha }}"
+          echo "::set-output name=sha_short::$(echo ${{ github.event.client_payload.sha }} | cut -c1-7)"
+      - name: Run w3c/mdn-spec-links build
+        id: build
+        if: github.event.action == 'ping'
+        run: make report-BCD && make report
+      - uses: crazy-max/ghaction-import-gpg@v3
+        with:
+          gpg-private-key: ${{ secrets.GPG_SIGNING_KEY }}
+          passphrase: ${{ secrets.GPG_SIGNING_KEY_PASSPHRASE }}
+          git-user-signingkey: true
+          git-commit-gpgsign: true
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Incorporate new ${{ github.event.client_payload.repository }} changes
+          commit-message: |
+            Incorporate new ${{ github.event.client_payload.repository }} changes
+            Incorporate changes from https://github.com/${{ github.event.client_payload.repository }}/commit/${{ steps.incoming.outputs.sha_short }}
+          committer: Michael[tm] Smith <mike@w3.org>
+          author: Michael[tm] Smith <mike@w3.org>
+          gpg-sign: true
+          assignees: sideshowbarker
+          reviewers: sideshowbarker
+          delete-branch: true
+      - name: Log pull request URL
+        run: |
+          echo "Pull request URL: ${{ steps.cpr.outputs.pull-request-url }}"
