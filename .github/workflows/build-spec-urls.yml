@@ -1,0 +1,64 @@
+name: build SPECURLS.json
+
+on:
+  schedule:
+    - cron: '49 2 * * *'
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Run SPECURLS.json build
+        id: incoming
+        run: |
+          make URLS-LOG
+      - name: Run w3c/mdn-spec-links build
+        id: build
+        run: |
+          echo "::set-output name=conclusion::success"
+          make report-BCD || echo "::set-output name=conclusion::failure"
+          make report || echo "::set-output name=conclusion::failure"
+      - uses: crazy-max/ghaction-import-gpg@v3
+        with:
+          gpg-private-key: ${{ secrets.GPG_SIGNING_KEY }}
+          passphrase: ${{ secrets.GPG_SIGNING_KEY_PASSPHRASE }}
+          git-user-signingkey: true
+          git-commit-gpgsign: true
+      - name: Create pull request
+        if: ${{ steps.build.outputs.conclusion == 'success' }}
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Update SPECURLS.json
+          commit-message: Update SPECURLS.json
+          committer: Michael[tm] Smith <mike@w3.org>
+          author: Michael[tm] Smith <mike@w3.org>
+          assignees: sideshowbarker
+          reviewers: sideshowbarker
+          branch-suffix: timestamp
+          delete-branch: true
+      - name: Log pull request URL
+        if: ${{ steps.build.outputs.conclusion == 'success' }}
+        run: |
+          echo "Pull request URL: ${{ steps.cpr.outputs.pull-request-url }}"
+      - name: 🎃 Report all build errors and warnings
+        run: make report-only || true
+      - name: Set status
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl \
+          -X POST \
+          -H "Authorization: Bearer $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/w3c/mdn-spec-links/statuses/${{ github.sha }} \
+          -d '{"state": "${{ steps.build.outputs.conclusion }}", "context": "Update SPECURLS.json" }'
+          if [[ "${{ steps.build.outputs.conclusion }}" == "failure" ]]; then exit 1; fi
