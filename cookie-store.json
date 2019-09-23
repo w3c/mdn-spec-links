@@ -1,0 +1,956 @@
+{
+    "dom-cookiechangeevent-cookiechangeevent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieChangeEvent.json",
+            "name": "CookieChangeEvent",
+            "slug": "API/CookieChangeEvent/CookieChangeEvent",
+            "summary": "The CookieChangeEvent() constructor creates a new CookieChangeEvent object which is the event type passed to CookieStore.onchange(). This constructor is called by the browser when a change event occurs.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieChangeEvent.CookieChangeEvent()"
+        }
+    ],
+    "dom-cookiechangeevent-changed": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieChangeEvent.json",
+            "name": "changed",
+            "slug": "API/CookieChangeEvent/changed",
+            "summary": "The changed read-only property of the CookieChangeEvent interface returns an array of the cookies that have been changed.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieChangeEvent.changed"
+        }
+    ],
+    "dom-cookiechangeevent-deleted": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieChangeEvent.json",
+            "name": "deleted",
+            "slug": "API/CookieChangeEvent/deleted",
+            "summary": "The deleted read-only property of the CookieChangeEvent interface returns an array of the cookies that have been deleted by the given CookieChangeEvent instance.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieChangeEvent.deleted"
+        }
+    ],
+    "CookieChangeEvent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieChangeEvent.json",
+            "name": "CookieChangeEvent",
+            "slug": "API/CookieChangeEvent",
+            "summary": "The CookieChangeEvent interface of the Cookie Store API is the event type passed to CookieStore.onchange() when any cookie changes have occurred. A cookie change consists of a cookie and a type (either \"changed\" or \"deleted\").",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieChangeEvent"
+        }
+    ],
+    "dom-cookiestore-delete": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStore.json",
+            "name": "delete",
+            "slug": "API/CookieStore/delete",
+            "summary": "The delete() method of the CookieStore interface deletes a cookie with the given name or options object. (See below.) The delete() method expires the cookie by changing the date to one in the past.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStore.delete()"
+        }
+    ],
+    "dom-cookiestore-get": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStore.json",
+            "name": "get",
+            "slug": "API/CookieStore/get",
+            "summary": "The get() method of the CookieStore interface returns a single cookie with the given name or options object. (See below.) The method will return the first matching cookie for the passed parameters.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStore.get()"
+        }
+    ],
+    "dom-cookiestore-getall": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStore.json",
+            "name": "getAll",
+            "slug": "API/CookieStore/getAll",
+            "summary": "The getAll() method of the CookieStore interface returns a list of cookies that match the name or options passed to it. Passing no parameters will return all cookies for the current context.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStore.getAll()"
+        }
+    ],
+    "dom-cookiestore-onchange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStore.json",
+            "name": "onchange",
+            "slug": "API/CookieStore/onchange",
+            "summary": "The onchange EventHandler of the CookieStore interface fires when a change is made to any cookie.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStore.onchange"
+        }
+    ],
+    "dom-cookiestore-set": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStore.json",
+            "name": "set",
+            "slug": "API/CookieStore/set",
+            "summary": "The set() method of the CookieStore interface sets a cookie with the given name and value or options object. (See below.)",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStore.set()"
+        }
+    ],
+    "CookieStore": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStore.json",
+            "name": "CookieStore",
+            "slug": "API/CookieStore",
+            "summary": "The CookieStore interface of the Cookie Store API provides methods for getting and setting cookies asynchronously from either a page or a service worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStore"
+        }
+    ],
+    "dom-cookiestoremanager-getsubscriptions": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStoreManager.json",
+            "name": "getSubscriptions",
+            "slug": "API/CookieStoreManager/getSubscriptions",
+            "summary": "The getSubscriptions() method of the CookieStoreManager interface returns a list of all the cookie change subscriptions for this ServiceWorkerRegistration.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStoreManager.getSubscriptions()"
+        }
+    ],
+    "dom-cookiestoremanager-subscribe": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStoreManager.json",
+            "name": "subscribe",
+            "slug": "API/CookieStoreManager/subscribe",
+            "summary": "The subscribe() method of the CookieStoreManager interface subscribes a ServiceWorkerRegistration to cookie change events.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStoreManager.subscribe()"
+        }
+    ],
+    "dom-cookiestoremanager-unsubscribe": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStoreManager.json",
+            "name": "unsubscribe",
+            "slug": "API/CookieStoreManager/unsubscribe",
+            "summary": "The unsubscribe() method of the CookieStoreManager interface stops the ServiceWorkerRegistration from receiving previously subscribed events.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStoreManager.unsubscribe()"
+        }
+    ],
+    "cookiestoremanager": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/CookieStoreManager.json",
+            "name": "CookieStoreManager",
+            "slug": "API/CookieStoreManager",
+            "summary": "The CookieStoreManager interface of the Cookie Store API allows service workers to subscribe to events for cookie changes. By using the subscribe() method a particular service worker registration can indicate that it is interested in change events.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "CookieStoreManager"
+        }
+    ],
+    "dom-extendablecookiechangeevent-extendablecookiechangeevent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ExtendableCookieChangeEvent.json",
+            "name": "ExtendableCookieChangeEvent",
+            "slug": "API/ExtendableCookieChangeEvent/ExtendableCookieChangeEvent",
+            "summary": "The ExtendableCookieChangeEvent() constructor creates a new ExtendableCookieChangeEvent object which is the event type passed to ServiceWorkerRegistration.oncookiechange(). This constructor is called by the browser when a change event occurs.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "ExtendableCookieChangeEvent.ExtendableCookieChangeEvent()"
+        }
+    ],
+    "dom-extendablecookiechangeevent-changed": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ExtendableCookieChangeEvent.json",
+            "name": "changed",
+            "slug": "API/ExtendableCookieChangeEvent/changed",
+            "summary": "The changed read-only property of the ExtendableCookieChangeEvent interface returns any cookies that have been changed by the given ExtendableCookieChangeEvent instance.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "ExtendableCookieChangeEvent.changed"
+        }
+    ],
+    "dom-extendablecookiechangeevent-deleted": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ExtendableCookieChangeEvent.json",
+            "name": "deleted",
+            "slug": "API/ExtendableCookieChangeEvent/deleted",
+            "summary": "The deleted read-only property of the ExtendableCookieChangeEvent interface returns any cookies that have been deleted by the given ExtendableCookieChangeEvent instance.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "ExtendableCookieChangeEvent.deleted"
+        }
+    ],
+    "ExtendableCookieChangeEvent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ExtendableCookieChangeEvent.json",
+            "name": "ExtendableCookieChangeEvent",
+            "slug": "API/ExtendableCookieChangeEvent",
+            "summary": "The ExtendableCookieChangeEvent interface of the Cookie Store API is the event type passed to ServiceWorkerRegistration.oncookiechange() when any cookie changes have occurred. A cookie change event consists of a cookie and a type (either \"changed\" or \"deleted\".)",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "ExtendableCookieChangeEvent"
+        }
+    ]
+}
