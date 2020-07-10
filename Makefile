@@ -34,3 +34,6 @@ index.html: README.md
 	done
 	$(GRIP) --title=$< --export $<.tmp - > $@
 	$(RM) $<.tmp
+
+.mdn-spec-links.schema.json: .mdn-spec-links.ts
+	ts-json-schema-generator --path $< --unstable --type MDNSpecLink --out $@
