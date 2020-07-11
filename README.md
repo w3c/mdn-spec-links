@@ -9,7 +9,10 @@ directly; instead you’d need to edit the upstream data at
 https://github.com/mdn/browser-compat-data, and the content of
 https://developer.mozilla.org/docs/Web articles.
 
-[.mdn-spec-links.ts](https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.ts)
-defines the data-types and structure of the JSON data as a TypeScript declaration. The generated
-[.mdn-spec-links.schema.json](https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.schema.json)
-file is a JSON Schema that provides the same definitions.
+[.mdn-spec-links.ts][1] defines the data-types and structure of the JSON
+data as a TypeScript declaration. The [.mdn-spec-links.schema.json][2]
+file, generated from the TypeScript declaration, is a JSON Schema that
+provides the same definitions.
+
+[1]: https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.ts
+[2]: https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.schema.json
