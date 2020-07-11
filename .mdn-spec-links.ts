@@ -37,31 +37,31 @@ export interface Feature {
      * spec (that is, un-prefixed and not under an alternative name —
      * though possibly requiring a runtime flag or preference to be set).
      */
-    engines: EngineNames[];
+    engines: Engines[];
     /**
      * Names of engines with support for the feature implemented under a
      * wholly different name (in contrast to just being prefixed).
      */
-    altname?: EngineNames[];
+    altname?: Engines[];
     /**
      * Names of engines with support for the feature that requires setting
      * a runtime flag or preference.
      */
-    needsflag?: EngineNames[];
+    needsflag?: Engines[];
     /**
      * Names of engines with support for the feature that differs from the
      * spec in a way that may cause compatibility problems.
      */
-    partial?: EngineNames[];
+    partial?: Engines[];
     /**
      * Names of engines with support for the feature that requires adding
      * a prefix to the standard feature name defined in the spec.
      */
-    prefixed?: EngineNames[];
+    prefixed?: Engines[];
     /**
      * Per-browser data about support for the feature.
      */
-    support: SupportBlock | null;
+    support: Support | null;
     /**
      * The caniuse.com shortname for the feature, along with the title of
      * the caniuse.com table (page) for the feature.
@@ -69,31 +69,32 @@ export interface Feature {
     caniuse?:  { feature: string, title: string };
 }
 
-export type EngineNames = "blink" | "gecko" | "webkit";
+export type Engines = "blink" | "gecko" | "webkit";
 
-export type SupportDetails = SupportStatement | SupportStatement[];
+type Browsers =
+    "chrome"
+    | "chrome_android"
+    | "edge"
+    | "edge_blink"
+    | "firefox"
+    | "firefox_android"
+    | "ie"
+    | "nodejs"
+    | "opera"
+    | "opera_android"
+    | "qq_android"
+    | "safari"
+    | "safari_ios"
+    | "samsunginternet_android"
+    | "uc_android"
+    | "uc_chinese_android"
+    | "webview_android";
 
-export interface SupportBlock {
-    chrome?:                  SupportDetails;
-    chrome_android?:          SupportDetails;
-    edge?:                    SupportDetails;
-    edge_blink?:              SupportDetails;
-    firefox?:                 SupportDetails;
-    firefox_android?:         SupportDetails;
-    ie?:                      SupportDetails;
-    nodejs?:                  SupportDetails;
-    opera?:                   SupportDetails;
-    opera_android?:           SupportDetails;
-    qq_android?:              SupportDetails;
-    safari?:                  SupportDetails;
-    safari_ios?:              SupportDetails;
-    samsunginternet_android?: SupportDetails;
-    uc_android?:              SupportDetails;
-    uc_chinese_android?:      SupportDetails;
-    webview_android?:         SupportDetails;
-}
+export type Support = Partial<Record <Browsers, SupportData>>;
 
-export interface SupportStatement {
+export type SupportData = SupportDetails | SupportDetails[]
+
+export interface SupportDetails {
     /**
      * Either: (1) a browser version number (the first version of the
      * browser to add support for the feature), or (2) boolean true to

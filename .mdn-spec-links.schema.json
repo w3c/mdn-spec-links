@@ -41,42 +41,42 @@
         "engines": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EngineNames"
+            "$ref": "#/definitions/Engines"
           },
           "description": "Names of engines with support for the feature that conforms to the\nspec (that is, un-prefixed and not under an alternative name —\nthough possibly requiring a runtime flag or preference to be set)."
         },
         "altname": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EngineNames"
+            "$ref": "#/definitions/Engines"
           },
           "description": "Names of engines with support for the feature implemented under a\nwholly different name (in contrast to just being prefixed)."
         },
         "needsflag": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EngineNames"
+            "$ref": "#/definitions/Engines"
           },
           "description": "Names of engines with support for the feature that requires setting\na runtime flag or preference."
         },
         "partial": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EngineNames"
+            "$ref": "#/definitions/Engines"
           },
           "description": "Names of engines with support for the feature that differs from the\nspec in a way that may cause compatibility problems."
         },
         "prefixed": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EngineNames"
+            "$ref": "#/definitions/Engines"
           },
           "description": "Names of engines with support for the feature that requires adding\na prefix to the standard feature name defined in the spec."
         },
         "support": {
           "anyOf": [
             {
-              "$ref": "#/definitions/SupportBlock"
+              "$ref": "#/definitions/Support"
             },
             {
               "type": "null"
@@ -114,7 +114,7 @@
       "additionalProperties": false,
       "description": "Each object for a feature has data from the MDN article for the feature,\nalong with data from BCD https://github.com/mdn/browser-compat-data/."
     },
-    "EngineNames": {
+    "Engines": {
       "type": "string",
       "enum": [
         "blink",
@@ -122,77 +122,77 @@
         "webkit"
       ]
     },
-    "SupportBlock": {
+    "Support": {
       "type": "object",
       "properties": {
         "chrome": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "chrome_android": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "edge": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "edge_blink": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "firefox": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "firefox_android": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "ie": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "nodejs": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "opera": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "opera_android": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "qq_android": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "safari": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "safari_ios": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "samsunginternet_android": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "uc_android": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "uc_chinese_android": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         },
         "webview_android": {
-          "$ref": "#/definitions/SupportDetails"
+          "$ref": "#/definitions/SupportData"
         }
       },
       "additionalProperties": false
     },
-    "SupportDetails": {
+    "SupportData": {
       "anyOf": [
         {
-          "$ref": "#/definitions/SupportStatement"
+          "$ref": "#/definitions/SupportDetails"
         },
         {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/SupportStatement"
+            "$ref": "#/definitions/SupportDetails"
           }
         }
       ]
     },
-    "SupportStatement": {
+    "SupportDetails": {
       "type": "object",
       "properties": {
         "version_added": {
