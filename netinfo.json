@@ -508,5 +508,178 @@
             },
             "title": "NetworkInformation"
         }
+    ],
+    "downlink-request-header-field": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/downlink.json",
+            "name": "downlink",
+            "slug": "HTTP/Headers/downlink",
+            "summary": "The Downlink network client hint request header field provides the approximate bandwidth of the client's connection to the server, in Mbps.",
+            "support": {
+                "chrome": {
+                    "version_added": "67",
+                    "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
+                },
+                "chrome_android": {
+                    "version_added": "67",
+                    "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": "54",
+                    "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
+                },
+                "opera_android": {
+                    "version_added": "48",
+                    "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0",
+                    "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
+                },
+                "webview_android": {
+                    "version_added": "67",
+                    "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
+                }
+            },
+            "title": "Downlink"
+        }
+    ],
+    "ect-request-header-field": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/ect.json",
+            "name": "ect",
+            "slug": "HTTP/Headers/ect",
+            "summary": "The ECT network client hint request header field indicates the effective connection type: slow-2g, 2g, 3g, 4g.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ECT"
+        }
+    ],
+    "rtt-request-header-field": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/rtt.json",
+            "name": "rtt",
+            "slug": "HTTP/Headers/rtt",
+            "summary": "The RTT network client hint request header field provides the approximate round trip time on the application layer, in milliseconds. The RTT hint, unlike transport layer RTT, includes server processing time.",
+            "support": {
+                "chrome": {
+                    "version_added": "67",
+                    "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
+                },
+                "chrome_android": {
+                    "version_added": "67",
+                    "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": "54",
+                    "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
+                },
+                "opera_android": {
+                    "version_added": "48",
+                    "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0",
+                    "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
+                },
+                "webview_android": {
+                    "version_added": "67",
+                    "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
+                }
+            },
+            "title": "RTT"
+        }
     ]
 }
