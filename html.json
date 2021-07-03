@@ -4603,6 +4603,105 @@
             "title": "CanvasRenderingContext2D.closePath()"
         }
     ],
+    "dom-context-2d-createconicgradient-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "blink"
+            ],
+            "filename": "api/CanvasRenderingContext2D.json",
+            "name": "createConicGradient",
+            "slug": "API/CanvasRenderingContext2D/createConicGradient",
+            "summary": "The CanvasRenderingContext2D.createConicGradient() method of the Canvas 2D API creates a gradient around a point with given coordinates.",
+            "support": {
+                "chrome": {
+                    "version_added": "86",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#new-canvas-2d-api"
+                        }
+                    ]
+                },
+                "chrome_android": {
+                    "version_added": "86",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#new-canvas-2d-api"
+                        }
+                    ]
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "90"
+                    },
+                    {
+                        "version_added": "86",
+                        "version_removed": "90",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "canvas.createConicGradient.enabled"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "90"
+                    },
+                    {
+                        "version_added": "86",
+                        "version_removed": "90",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "canvas.createConicGradient.enabled"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "86",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#new-canvas-2d-api"
+                        }
+                    ]
+                }
+            },
+            "title": "CanvasRenderingContext2D.createConicGradient()"
+        }
+    ],
     "dom-context-2d-createimagedata-dev": [
         {
             "engines": [
@@ -12922,6 +13021,589 @@
                 }
             },
             "title": "Element: contextmenu event"
+        }
+    ],
+    "dom-elementinternals-checkvalidity": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "checkValidity",
+            "slug": "API/ElementInternals/checkValidity",
+            "summary": "The checkValidity() method of the ElementInternals interface checks if the element meets any constraint validation rules applied to it.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.checkValidity()"
+        }
+    ],
+    "dom-elementinternals-form": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "form",
+            "slug": "API/ElementInternals/form",
+            "summary": "The form read-only property of the ElementInternals interface returns the HTMLFormElement associated with this element.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.form"
+        }
+    ],
+    "dom-elementinternals-labels": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "labels",
+            "slug": "API/ElementInternals/labels",
+            "summary": "The labels read-only property of the ElementInternals interface returns the labels associated with the element.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.labels"
+        }
+    ],
+    "dom-elementinternals-reportvalidity": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "reportValidity",
+            "slug": "API/ElementInternals/reportValidity",
+            "summary": "The reportValidity() method of the ElementInternals interface checks if the element meets any constraint validation rules applied to it.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.reportValidity()"
+        }
+    ],
+    "dom-elementinternals-setformvalue": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "setFormValue",
+            "slug": "API/ElementInternals/setFormValue",
+            "summary": "The setFormValue() method of the ElementInternals interface sets the element's submission value and state, communicating these to the user agent.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.setFormValue()"
+        }
+    ],
+    "dom-elementinternals-setvalidity": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "setValidity",
+            "slug": "API/ElementInternals/setValidity",
+            "summary": "The setValidity() method of the ElementInternals interface sets the validity of the element.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.setValidity()"
+        }
+    ],
+    "dom-elementinternals-shadowroot": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "shadowRoot",
+            "slug": "API/ElementInternals/shadowRoot",
+            "summary": "The shadowRoot read-only property of the ElementInternals interface returns the ShadowRoot for this element.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.shadowRoot"
+        }
+    ],
+    "dom-elementinternals-validationmessage": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "validationMessage",
+            "slug": "API/ElementInternals/validationMessage",
+            "summary": "The validationMessage read-only property of the ElementInternals interface returns the validation message for the element.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.validationMessage"
+        }
+    ],
+    "dom-elementinternals-validity": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "validity",
+            "slug": "API/ElementInternals/validity",
+            "summary": "The validity read-only property of the ElementInternals interface returns a ValidityState object which represents the different validity states the element can be in, with respect to constraint validation.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.validity"
+        }
+    ],
+    "dom-elementinternals-willvalidate": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "willValidate",
+            "slug": "API/ElementInternals/willValidate",
+            "summary": "The willValidate read-only property of the ElementInternals interface returns true if the element is a submittable element that is a candidate for constraint validation.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals.willValidate"
+        }
+    ],
+    "the-elementinternals-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ElementInternals.json",
+            "name": "ElementInternals",
+            "slug": "API/ElementInternals",
+            "summary": "The ElementInternals interface of the Document_Object_Model gives web developers a way to allow custom elements to fully participate in HTML forms. It provides utilities for working with these elements in the same way you would work with any standard HTML form element, and also exposes the Accessibility Object Model to the element.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ElementInternals"
         }
     ],
     "the-errorevent-interface": [
@@ -44538,7 +45220,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/WindowOrWorkerGlobalScope.json",
             "name": "isSecureContext",
@@ -44564,16 +45247,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "42"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "42"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
