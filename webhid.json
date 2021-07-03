@@ -52,6 +52,801 @@
             "title": "HID"
         }
     ],
+    "dom-hidconnectionevent-constructor": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDConnectionEvent.json",
+            "name": "HIDConnectionEvent",
+            "slug": "API/HIDConnectionEvent/HIDConnectionEvent",
+            "summary": "The HIDConnectionEvent() constructor creates a new HIDConnectionEvent object. Typically this constructor is not used as events are created when an input report is received.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDConnectionEvent.HIDConnectionEvent()"
+        }
+    ],
+    "dom-hidconnectionevent-device": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDConnectionEvent.json",
+            "name": "device",
+            "slug": "API/HIDConnectionEvent/device",
+            "summary": "The device read-only property of the HIDConnectionEvent interface returns the HIDDevice associated with this connection event.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDConnectionEvent.device"
+        }
+    ],
+    "dom-hidconnectionevent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDConnectionEvent.json",
+            "name": "HIDConnectionEvent",
+            "slug": "API/HIDConnectionEvent",
+            "summary": "The HIDConnectionEvent interface of the WebHID API represents HID connection events, and is the event type passed to HID.onconnect and HID.ondisconnect when an input report is received.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDConnectionEvent"
+        }
+    ],
+    "dom-hiddevice-close": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "close",
+            "slug": "API/HIDDevice/close",
+            "summary": "The close() method of the HIDDevice interface closes the connection to the HID device.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.close()"
+        }
+    ],
+    "dom-hiddevice-collections": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "collections",
+            "slug": "API/HIDDevice/collections",
+            "summary": "The collections read-only property of the HIDDevice interface returns an array of report formats ",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.collections"
+        }
+    ],
+    "dom-hiddevice-oninputreport": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "oninputreport",
+            "slug": "API/HIDDevice/oninputreport",
+            "summary": "The oninputreport EventHandler of the HIDDevice interface is an EventHandler that processes inputreport events.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.oninputreport"
+        }
+    ],
+    "dom-hiddevice-open": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "open",
+            "slug": "API/HIDDevice/open",
+            "summary": "The open() method of the HIDDevice interface requests that the operating sytem opens the HID device.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.open()"
+        }
+    ],
+    "dom-hiddevice-opened": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "opened",
+            "slug": "API/HIDDevice/opened",
+            "summary": "The opened read-only property of the HIDDevice interface returns true if the connection to the HIDDevice is open and ready to transfer data.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.opened"
+        }
+    ],
+    "dom-hiddevice-productid": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "productId",
+            "slug": "API/HIDDevice/productId",
+            "summary": "The productId read-only property of the HIDDevice interface returns the product ID of the connected HID device.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.productId"
+        }
+    ],
+    "dom-hiddevice-productname": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "productName",
+            "slug": "API/HIDDevice/productName",
+            "summary": "The productName read-only property of the HIDDevice interface returns the product name of the connected HID device.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.productName"
+        }
+    ],
+    "dom-hiddevice-receivefeaturereport": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "receiveFeatureReport",
+            "slug": "API/HIDDevice/receiveFeatureReport",
+            "summary": "The receiveFeatureReport() method of the HIDDevice interface receives a feature report from the HID device. Feature reports are a way for HID devices and applications to exchange non-standardized HID data.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.receiveFeatureReport()"
+        }
+    ],
+    "dom-hiddevice-sendfeaturereport": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "sendFeatureReport",
+            "slug": "API/HIDDevice/sendFeatureReport",
+            "summary": "The sendFeatureReport() method of the HIDDevice interface sends a feature report to the HID device. Feature reports are a way for HID devices and applications to exchange non-standardized HID data.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.sendFeatureReport()"
+        }
+    ],
+    "dom-hiddevice-sendreport": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "sendReport",
+            "slug": "API/HIDDevice/sendReport",
+            "summary": "The sendReport() method of the HIDDevice interface sends an output report to the HID device.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.sendReport()"
+        }
+    ],
+    "dom-hiddevice-vendorid": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "vendorId",
+            "slug": "API/HIDDevice/vendorId",
+            "summary": "The vendorId read-only property of the HIDDevice interface returns the vendor ID of the connected HID device. This identifies the vendor of the device.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice.vendorId"
+        }
+    ],
+    "dom-hiddevice": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HIDDevice.json",
+            "name": "HIDDevice",
+            "slug": "API/HIDDevice",
+            "summary": "The HIDDevice interface of the WebHID API represents a HID Device. It provides properties for accessing information about the device, methods for opening and closing the connection, and the sending and receiving of reports.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "HIDDevice"
+        }
+    ],
     "dom-navigator-hid": [
         {
             "engines": [
