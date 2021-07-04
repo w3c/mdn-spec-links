@@ -8747,7 +8747,7 @@
             "filename": "api/DOMStringMap.json",
             "name": "DOMStringMap",
             "slug": "API/DOMStringMap",
-            "summary": "The DOMStringMap interface is used for the HTMLOrForeignElement.dataset attribute, to represent data for custom attributes added to elements.",
+            "summary": "The DOMStringMap interface is used for the HTMLElement.dataset/SVGElement.dataset attribute, to represent data for custom attributes added to elements.",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -20356,7 +20356,7 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "blur",
-            "slug": "API/HTMLOrForeignElement/blur",
+            "slug": "API/HTMLElement/blur",
             "summary": "The HTMLElement.blur() method removes keyboard focus from the current element.",
             "support": {
                 "chrome": {
@@ -20534,8 +20534,8 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "dataset",
-            "slug": "API/HTMLOrForeignElement/dataset",
-            "summary": "The dataset read-only property of the HTMLOrForeignElement mixin provides read/write access to custom data attributes (data-*) on elements.",
+            "slug": "API/HTMLElement/dataset",
+            "summary": "The dataset read-only property of the HTMLElement interface provides read/write access to custom data attributes (data-*) on elements. It exposes a map of strings (DOMStringMap) with an entry for each data-* attribute.",
             "support": {
                 "chrome": {
                     "version_added": "8"
@@ -20577,7 +20577,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLOrForeignElement.dataset"
+            "title": "HTMLElement.dataset"
         },
         {
             "engines": [
@@ -20587,8 +20587,8 @@
             ],
             "filename": "api/SVGElement.json",
             "name": "dataset",
-            "slug": "API/HTMLOrForeignElement/dataset",
-            "summary": "The dataset read-only property of the HTMLOrForeignElement mixin provides read/write access to custom data attributes (data-*) on elements.",
+            "slug": "API/SVGElement/dataset",
+            "summary": "The dataset read-only property of the HTMLElement interface provides read/write access to custom data attributes (data-*) on elements. It exposes a map of strings (DOMStringMap) with an entry for each data-* attribute.",
             "support": {
                 "chrome": {
                     "version_added": "55"
@@ -20630,7 +20630,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLOrForeignElement.dataset"
+            "title": "HTMLElement.dataset"
         }
     ],
     "dom-dir": [
@@ -20769,7 +20769,7 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "focus",
-            "slug": "API/HTMLOrForeignElement/focus",
+            "slug": "API/HTMLElement/focus",
             "summary": "The HTMLElement.focus() method sets focus on the specified element, if it can be focused. The focused element is the element which will receive keyboard and similar events by default.",
             "support": {
                 "chrome": {
@@ -20807,59 +20807,6 @@
                 },
                 "webview_android": {
                     "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLElement.focus()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SVGElement.json",
-            "name": "focus",
-            "slug": "API/HTMLOrForeignElement/focus",
-            "summary": "The HTMLElement.focus() method sets focus on the specified element, if it can be focused. The focused element is the element which will receive keyboard and similar events by default.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51"
-                },
-                "firefox_android": {
-                    "version_added": "51"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -21156,7 +21103,7 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "nonce",
-            "slug": "API/HTMLOrForeignElement/nonce",
+            "slug": "API/HTMLElement/nonce",
             "summary": "The nonce property of the HTMLOrForeignElement mixin returns the cryptographic number used once that is used by Content Security Policy to determine whether a given fetch will be allowed to proceed.",
             "support": {
                 "chrome": {
@@ -21215,7 +21162,7 @@
             ],
             "filename": "api/HTMLElement.json",
             "name": "tabIndex",
-            "slug": "API/HTMLOrForeignElement/tabIndex",
+            "slug": "API/HTMLElement/tabIndex",
             "summary": "The tabIndex property of the HTMLOrForeignElement mixin represents the tab order of the current element.",
             "support": {
                 "chrome": {
