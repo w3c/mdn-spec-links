@@ -1899,7 +1899,7 @@
             "filename": "api/_mixins/Body__Request.json",
             "name": "arrayBuffer",
             "slug": "API/Request/arrayBuffer",
-            "summary": "The arrayBuffer() method of the Request interface takes a Request stream and reads it to completion. It returns a promise that resolves with an ArrayBuffer.",
+            "summary": "The arrayBuffer() method of the Request interface reads the request body and returns it as a promise that resolves with an ArrayBuffer.",
             "support": {
                 "chrome": {
                     "version_added": "42"
@@ -2007,7 +2007,7 @@
             "filename": "api/_mixins/Body__Request.json",
             "name": "blob",
             "slug": "API/Request/blob",
-            "summary": "The blob() method of the Request interface takes a Request stream and reads it to completion. It returns a promise that resolves with a Blob.",
+            "summary": "The blob() method of the Request interface reads the request body and returns it as a promise that resolves with a Blob.",
             "support": {
                 "chrome": {
                     "version_added": "42"
@@ -2334,7 +2334,7 @@
             "filename": "api/_mixins/Body__Request.json",
             "name": "formData",
             "slug": "API/Request/formData",
-            "summary": "The formData() method of the Request interface takes a Request stream and reads it to completion. It returns a promise that resolves with a FormData object.",
+            "summary": "The formData() method of the Request interface reads the request body and returns it as a promise that resolves with a FormData object.",
             "support": {
                 "chrome": {
                     "version_added": "60"
@@ -2470,7 +2470,7 @@
             "filename": "api/_mixins/Body__Request.json",
             "name": "json",
             "slug": "API/Request/json",
-            "summary": "The json() method of the Request interface takes a Request stream and reads it to completion. It returns a promise which resolves with a JavaScript object that is the result of parsing the body text as JSON.",
+            "summary": "The json() method of the Request interface reads the request body and returns it as a promise that resolves with the result of parsing the body text as JSON.",
             "support": {
                 "chrome": {
                     "version_added": "42"
@@ -2523,7 +2523,7 @@
             "filename": "api/_mixins/Body__Response.json",
             "name": "json",
             "slug": "API/Response/json",
-            "summary": "The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with a JavaScript object that is the result of parsing the body text as JSON.",
+            "summary": "The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as JSON.",
             "support": {
                 "chrome": {
                     "version_added": "42"
@@ -2578,7 +2578,7 @@
             "filename": "api/_mixins/Body__Request.json",
             "name": "text",
             "slug": "API/Request/text",
-            "summary": "The text() method of the Request interface takes a Request stream and reads it to completion. It returns a promise that resolves with a USVString object (text). The response is always decoded using UTF-8.",
+            "summary": "The text() method of the Request interface reads the request body and returns it as a promise that resolves with a String. The response is always decoded using UTF-8.",
             "support": {
                 "chrome": {
                     "version_added": "42"
@@ -2631,7 +2631,7 @@
             "filename": "api/_mixins/Body__Response.json",
             "name": "text",
             "slug": "API/Response/text",
-            "summary": "The text() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with a USVString object (text). The response is always decoded using UTF-8.",
+            "summary": "The text() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with a String. The response is always decoded using UTF-8.",
             "support": {
                 "chrome": {
                     "version_added": "42"

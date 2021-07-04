@@ -8747,7 +8747,7 @@
             "filename": "api/DOMStringMap.json",
             "name": "DOMStringMap",
             "slug": "API/DOMStringMap",
-            "summary": "The DOMStringMap interface is used for the HTMLOrForeignElement.dataset attribute, to represent data for custom attributes added to elements.",
+            "summary": "The DOMStringMap interface is used for the HTMLElement.dataset/SVGElement.dataset attribute, to represent data for custom attributes added to elements.",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -20535,7 +20535,7 @@
             "filename": "api/HTMLElement.json",
             "name": "dataset",
             "slug": "API/HTMLElement/dataset",
-            "summary": "The dataset read-only property of the HTMLOrForeignElement mixin provides read/write access to custom data attributes (data-*) on elements.",
+            "summary": "The dataset read-only property of the HTMLElement interface provides read/write access to custom data attributes (data-*) on elements. It exposes a map of strings (DOMStringMap) with an entry for each data-* attribute.",
             "support": {
                 "chrome": {
                     "version_added": "8"
@@ -20577,7 +20577,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLOrForeignElement.dataset"
+            "title": "HTMLElement.dataset"
         },
         {
             "engines": [
@@ -20588,7 +20588,7 @@
             "filename": "api/SVGElement.json",
             "name": "dataset",
             "slug": "API/SVGElement/dataset",
-            "summary": "The dataset read-only property of the HTMLOrForeignElement mixin provides read/write access to custom data attributes (data-*) on elements.",
+            "summary": "The dataset read-only property of the HTMLElement interface provides read/write access to custom data attributes (data-*) on elements. It exposes a map of strings (DOMStringMap) with an entry for each data-* attribute.",
             "support": {
                 "chrome": {
                     "version_added": "55"
@@ -20630,7 +20630,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLOrForeignElement.dataset"
+            "title": "HTMLElement.dataset"
         }
     ],
     "dom-dir": [
