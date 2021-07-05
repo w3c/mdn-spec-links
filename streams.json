@@ -2843,6 +2843,276 @@
             "title": "TransformStream"
         }
     ],
+    "ts-default-controller-desired-size": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/TransformStreamDefaultController.json",
+            "name": "desiredSize",
+            "slug": "API/TransformStreamDefaultController/desiredSize",
+            "summary": "The desiredSize read-only property of the TransformStreamDefaultController interface returns the desired size to fill the queue of the associated ReadableStream.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TransformStreamDefaultController.desiredSize"
+        }
+    ],
+    "ts-default-controller-enqueue": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/TransformStreamDefaultController.json",
+            "name": "enqueue",
+            "slug": "API/TransformStreamDefaultController/enqueue",
+            "summary": "The enqueue() method of the TransformStreamDefaultController interface enqueues the given chunk in the readable side of the stream.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TransformStreamDefaultController.enqueue()"
+        }
+    ],
+    "ts-default-controller-error": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/TransformStreamDefaultController.json",
+            "name": "error",
+            "slug": "API/TransformStreamDefaultController/error",
+            "summary": "The error() method of the TransformStreamDefaultController interface errors both sides of the stream. Any further interactions with it will fail with the given error message, and any chunks in the queue will be discarded.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TransformStreamDefaultController.error()"
+        }
+    ],
+    "ts-default-controller-terminate": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/TransformStreamDefaultController.json",
+            "name": "terminate",
+            "slug": "API/TransformStreamDefaultController/terminate",
+            "summary": "The terminate() method of the TransformStreamDefaultController interface Closes the readable side and errors the writable side of the stream.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TransformStreamDefaultController.terminate()"
+        }
+    ],
+    "ts-default-controller-class": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/TransformStreamDefaultController.json",
+            "name": "TransformStreamDefaultController",
+            "slug": "API/TransformStreamDefaultController",
+            "summary": "The TransformStreamDefaultController interface of the Streams API provides methods to manipulate the associated ReadableStream and WritableStream.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TransformStreamDefaultController"
+        }
+    ],
     "ref-for-ws-constructor④": [
         {
             "engines": [
