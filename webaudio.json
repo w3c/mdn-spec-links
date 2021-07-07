@@ -9,7 +9,7 @@
             "filename": "api/AnalyserNode.json",
             "name": "AnalyserNode",
             "slug": "API/AnalyserNode/AnalyserNode",
-            "summary": "The AnalyserNode constructor of the Web Audio API creates a new AnalyserNode object instance.",
+            "summary": "The AnalyserNode() constructor of the Web Audio API creates a new AnalyserNode object instance.",
             "support": {
                 "chrome": {
                     "version_added": "55"
@@ -51,7 +51,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AnalyserNode.AnalyserNode()"
+            "title": "AnalyserNode()"
         }
     ],
     "dom-analysernode-fftsize": [
@@ -1163,7 +1163,7 @@
                     "notes": "Before version 59, the default values were not supported."
                 }
             },
-            "title": "AudioBufferSourceNode.AudioBufferSourceNode()"
+            "title": "AudioBufferSourceNode()"
         }
     ],
     "dom-audiobuffersourcenode-buffer": [
@@ -2427,7 +2427,7 @@
             "filename": "api/AudioContextOptions.json",
             "name": "latencyHint",
             "slug": "API/AudioContextOptions/latencyHint",
-            "summary": "The AudioContextOptions dictionary (used when instantiating an AudioContext) may contain a property named latencyHint, which indicates the preferred maximum latency in seconds for the audio context.",
+            "summary": "The AudioContext() constructor creates a new AudioContext object which represents an audio-processing graph, built from audio modules linked together, each represented by an AudioNode.",
             "support": {
                 "chrome": {
                     "version_added": "60"
@@ -2469,7 +2469,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AudioContextOptions.latencyHint"
+            "title": "AudioContext()"
         }
     ],
     "dom-audiocontextoptions-samplerate": [
@@ -2481,7 +2481,7 @@
             "filename": "api/AudioContextOptions.json",
             "name": "sampleRate",
             "slug": "API/AudioContextOptions/sampleRate",
-            "summary": "The AudioContextOptions dictionary (used when instantiating an AudioContext) may contain a property named sampleRate, which indicates the sample rate to use for the new context.",
+            "summary": "The AudioContext() constructor creates a new AudioContext object which represents an audio-processing graph, built from audio modules linked together, each represented by an AudioNode.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -2523,7 +2523,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AudioContextOptions.sampleRate"
+            "title": "AudioContext()"
         }
     ],
     "AudioContextOptions": [
@@ -2535,7 +2535,7 @@
             "filename": "api/AudioContextOptions.json",
             "name": "AudioContextOptions",
             "slug": "API/AudioContextOptions",
-            "summary": "The AudioContextOptions dictionary is used to specify configuration options when constructing a new AudioContext object to represent a graph of web audio nodes.",
+            "summary": "The AudioContext() constructor creates a new AudioContext object which represents an audio-processing graph, built from audio modules linked together, each represented by an AudioNode.",
             "support": {
                 "chrome": {
                     "version_added": "60"
@@ -2577,7 +2577,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AudioContextOptions"
+            "title": "AudioContext()"
         }
     ],
     "dom-audiodestinationnode-maxchannelcount": [
@@ -7706,7 +7706,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ChannelSplitterNode.ChannelSplitterNode()"
+            "title": "ChannelSplitterNode()"
         }
     ],
     "ChannelSplitterNode": [
@@ -9343,7 +9343,7 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
-            "title": "MediaStreamAudioDestinationNode.MediaStreamAudioDestinationNode()"
+            "title": "MediaStreamAudioDestinationNode()"
         }
     ],
     "dom-mediastreamaudiodestinationnode-stream": [
@@ -10007,7 +10007,7 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
-            "title": "OfflineAudioCompletionEvent.OfflineAudioCompletionEvent()"
+            "title": "OfflineAudioCompletionEvent()"
         }
     ],
     "dom-offlineaudiocompletionevent-renderedbuffer": [
@@ -10288,7 +10288,7 @@
                     }
                 ]
             },
-            "title": "OfflineAudioContext.OfflineAudioContext()"
+            "title": "OfflineAudioContext()"
         }
     ],
     "dom-offlineaudiocontext-length": [
@@ -10753,7 +10753,7 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
-            "title": "OscillatorNode.OscillatorNode()"
+            "title": "OscillatorNode()"
         }
     ],
     "dom-oscillatornode-detune": [
@@ -11088,7 +11088,7 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
-            "title": "PannerNode.PannerNode()"
+            "title": "PannerNode()"
         }
     ],
     "dom-pannernode-coneinnerangle": [
@@ -11987,7 +11987,7 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
-            "title": "PeriodicWave.PeriodicWave()"
+            "title": "PeriodicWave()"
         }
     ],
     "PeriodicWave": [
@@ -12102,7 +12102,7 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
-            "title": "StereoPannerNode.StereoPannerNode()"
+            "title": "StereoPannerNode()"
         }
     ],
     "dom-stereopannernode-pan": [
@@ -12272,7 +12272,7 @@
                     "notes": "Before Chrome 59, the default values were not supported."
                 }
             },
-            "title": "WaveShaperNode.WaveShaperNode()"
+            "title": "WaveShaperNode()"
         }
     ],
     "dom-waveshapernode-curve": [
