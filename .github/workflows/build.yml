@@ -22,7 +22,9 @@ jobs:
       - name: Run w3c/mdn-spec-links build
         id: build
         if: github.event.action == 'ping'
-        run: make report-BCD && make report
+        run: |
+          echo "::set-output name=conclusion::failure"
+          make report-BCD && make report && echo "::set-output name=conclusion::success"
       - uses: crazy-max/ghaction-import-gpg@v3
         with:
           gpg-private-key: ${{ secrets.GPG_SIGNING_KEY }}
@@ -47,3 +49,14 @@ jobs:
       - name: Log pull request URL
         run: |
           echo "Pull request URL: ${{ steps.cpr.outputs.pull-request-url }}"
+      - name: Create status check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BUILD_COMMIT=$(git rev-parse HEAD)
+          curl \
+          -X POST \
+          -H "Authorization: Bearer $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/w3c/mdn-spec-links/check-runs \
+          -d '{"name":"build", "head_sha": "'"$BUILD_COMMIT"'", "status": "completed", "conclusion": "${{ steps.build.outputs.conclusion }}" }'
