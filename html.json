@@ -36781,6 +36781,469 @@
             "title": "Navigator.cookieEnabled"
         }
     ],
+    "dom-navigator-hardwareconcurrency-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "hardwareConcurrency",
+            "slug": "API/Navigator/hardwareConcurrency",
+            "summary": "The navigator.hardwareConcurrency read-only property returns the number of logical processors available to run threads on the user's computer.",
+            "support": {
+                "chrome": {
+                    "version_added": "37"
+                },
+                "chrome_android": {
+                    "version_added": "37"
+                },
+                "edge": {
+                    "version_added": "15"
+                },
+                "firefox": {
+                    "version_added": "48"
+                },
+                "firefox_android": {
+                    "version_added": "48"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "10.1",
+                    "version_removed": "11"
+                },
+                "safari_ios": {
+                    "version_added": "10.3",
+                    "version_removed": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator.hardwareConcurrency"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/WorkerNavigator.json",
+            "name": "hardwareConcurrency",
+            "slug": "API/Navigator/hardwareConcurrency",
+            "summary": "The navigator.hardwareConcurrency read-only property returns the number of logical processors available to run threads on the user's computer.",
+            "support": {
+                "chrome": {
+                    "version_added": "37"
+                },
+                "chrome_android": {
+                    "version_added": "37"
+                },
+                "edge": {
+                    "version_added": "15"
+                },
+                "firefox": {
+                    "version_added": "48"
+                },
+                "firefox_android": {
+                    "version_added": "48"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "10.1",
+                    "version_removed": "11"
+                },
+                "safari_ios": {
+                    "version_added": "10.3",
+                    "version_removed": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator.hardwareConcurrency"
+        }
+    ],
+    "dom-navigator-language-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "language",
+            "slug": "API/Navigator/language",
+            "summary": "The Navigator.language read-only property returns a string representing the preferred language of the user, usually the language of the browser UI.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "notes": "Prior to Firefox 4, this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>. Starting in Firefox 5, this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "11",
+                    "notes": "Closest available (non-standard) properties are <code>userLanguage</code> and <code>browserLanguage</code>."
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator.language"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WorkerNavigator.json",
+            "name": "language",
+            "slug": "API/WorkerNavigator/language",
+            "summary": "The WorkerNavigator.language read-only property returns a string representing the preferred language of the user, usually the language of the browser UI.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5",
+                    "notes": "Prior to Firefox 4, this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>. Starting in Firefox 5, this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "11",
+                    "notes": "Closest available (non-standard) properties are <code>userLanguage</code> and <code>browserLanguage</code>."
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerNavigator.language"
+        }
+    ],
+    "dom-navigator-languages-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "languages",
+            "slug": "API/Navigator/languages",
+            "summary": "The Navigator.languages read-only property returns an array of DOMStrings representing the user's preferred languages. The language is described using BCP 47 language tags. In the returned array they are ordered by preference with the most preferred language first.",
+            "support": {
+                "chrome": {
+                    "version_added": "37",
+                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
+                },
+                "chrome_android": {
+                    "version_added": "37",
+                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "32",
+                    "notes": "In Firefox, the <code>navigator.languages</code> property's value is taken from the <code>intl.accept_languages</code> preference."
+                },
+                "firefox_android": {
+                    "version_added": "32",
+                    "notes": "In Firefox, the <code>navigator.languages</code> property's value is taken from the <code>intl.accept_languages</code> preference."
+                },
+                "ie": {
+                    "version_added": false,
+                    "notes": "Closest available (non-standard) properties are <code>userLanguage</code> and <code>browserLanguage</code>."
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "37",
+                    "notes": "Before version 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
+                }
+            },
+            "title": "Navigator.languages"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WorkerNavigator.json",
+            "name": "languages",
+            "slug": "API/WorkerNavigator/languages",
+            "summary": "The WorkerNavigator.languages read-only property returns an array of DOMStrings representing the user's preferred languages. The language is described using BCP 47 language tags. In the returned array they are ordered by preference with the most preferred language first.",
+            "support": {
+                "chrome": {
+                    "version_added": "37",
+                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
+                },
+                "chrome_android": {
+                    "version_added": "37",
+                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "32",
+                    "notes": "In Firefox, the <code>navigator.languages</code> property's value is taken from the <code>intl.accept_languages</code> preference."
+                },
+                "firefox_android": {
+                    "version_added": "32",
+                    "notes": "In Firefox, the <code>navigator.languages</code> property's value is taken from the <code>intl.accept_languages</code> preference."
+                },
+                "ie": {
+                    "version_added": false,
+                    "notes": "Closest available (non-standard) properties are <code>userLanguage</code> and <code>browserLanguage</code>."
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "37",
+                    "notes": "Before version 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
+                }
+            },
+            "title": "WorkerNavigator.languages"
+        }
+    ],
+    "dom-navigator-online-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "onLine",
+            "slug": "API/Navigator/onLine",
+            "summary": "Returns the online status of the browser. The property returns a boolean value, with true meaning online and false meaning offline. The property sends updates whenever the browser's ability to connect to the network changes. The update occurs when the user follows links or when a script requests a remote page. For example, the property should return false when users click links soon after they lose internet connection.",
+            "support": {
+                "chrome": {
+                    "version_added": "1",
+                    "notes": "Earlier versions of Chrome incorrectly return true when a tab is first opened, but it starts reporting the correct connectivity status after the first network event. Windows: 11, Mac: 14, Chrome OS: 13, Linux: Always returns <code>true</code>. For history, see <a href='https://crbug.com/7469'>crbug.com/7469</a>."
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5",
+                    "notes": "Since Firefox 4 the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity. Since Firefox 41, on OS X and Windows, the returned values follow the actual network connectivity, unless 'Work offline' mode is selected (where it will always return <code>false</code>)."
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4",
+                    "notes": "in Internet Explorer 8 'online' and 'offline' events are raised on the <code>document.body</code>; under IE 9 they are raised on both <code>document.body</code> and <code>window</code>."
+                },
+                "opera": {
+                    "version_added": "3",
+                    "notes": "From Opera 11.1 until Opera 12.1, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
+                },
+                "opera_android": {
+                    "version_added": "10.1",
+                    "notes": "From Opera 11.1 until Opera 12.1, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37",
+                    "notes": "Faulty in a WebView component, see Issue <a href='http://code.google.com/p/android/issues/detail?id=16760'>bug 16760</a>."
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": "Earlier versions of Chrome incorrectly return true when a tab is first opened, but it starts reporting the correct connectivity status after the first network event. Windows: 11, Mac: 14, Chrome OS: 13, Linux: Always returns <code>true</code>. For history, see <a href='https://crbug.com/7469'>crbug.com/7469</a>."
+                }
+            },
+            "title": "Navigator.onLine"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WorkerNavigator.json",
+            "name": "onLine",
+            "slug": "API/WorkerNavigator/onLine",
+            "summary": "Returns the online status of the browser. The property returns a boolean value, with true meaning online and false meaning offline. The property sends updates whenever the browser's ability to connect to the network changes. The update occurs when the user follows links or when a script requests a remote page. For example, the property should return false when users click links soon after they lose internet connection.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5",
+                    "notes": "Since Firefox 4 the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity. Since Firefox 41, on OS X and Windows, the returned values follow the actual network connectivity, unless 'Work offline' mode is selected (where it will always return <code>false</code>)."
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "10.6",
+                    "notes": "From Opera 11.1 until Opera 12.1, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
+                },
+                "opera_android": {
+                    "version_added": "11",
+                    "notes": "From Opera 11.1 until Opera 12.1, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "5.1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37",
+                    "notes": "Faulty in a WebView component, see Issue <a href='http://code.google.com/p/android/issues/detail?id=16760'>bug 16760</a>."
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerNavigator.onLine"
+        }
+    ],
     "custom-handlers": [
         {
             "engines": [
@@ -36844,6 +37307,114 @@
                 }
             },
             "title": "Navigator.registerProtocolHandler()"
+        }
+    ],
+    "dom-navigator-useragent-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "userAgent",
+            "slug": "API/Navigator/userAgent",
+            "summary": "The Navigator.userAgent read-only property returns the user agent string for the current browser.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator.userAgent"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WorkerNavigator.json",
+            "name": "userAgent",
+            "slug": "API/WorkerNavigator/userAgent",
+            "summary": "The WorkerNavigator.userAgent read-only property returns the user agent string for the current browser.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerNavigator.userAgent"
         }
     ],
     "dom-navigator-vendor-dev": [
@@ -36948,519 +37519,6 @@
                 },
                 "webview_android": {
                     "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Navigator"
-        }
-    ],
-    "dom-navigator-hardwareconcurrency-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/NavigatorConcurrentHardware.json",
-            "name": "hardwareConcurrency",
-            "slug": "API/NavigatorConcurrentHardware/hardwareConcurrency",
-            "summary": "The navigator.hardwareConcurrency read-only property returns the number of logical processors available to run threads on the user's computer.",
-            "support": {
-                "chrome": {
-                    "version_added": "37"
-                },
-                "chrome_android": {
-                    "version_added": "37"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "48"
-                },
-                "firefox_android": {
-                    "version_added": "48"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Navigator.hardwareConcurrency"
-        }
-    ],
-    "navigator.hardwareconcurrency": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/NavigatorConcurrentHardware.json",
-            "name": "NavigatorConcurrentHardware",
-            "slug": "API/NavigatorConcurrentHardware",
-            "summary": "The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities.",
-            "support": {
-                "chrome": {
-                    "version_added": "37"
-                },
-                "chrome_android": {
-                    "version_added": "37"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "48"
-                },
-                "firefox_android": {
-                    "version_added": "48"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Navigator"
-        }
-    ],
-    "dom-navigator-useragent-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorID.json",
-            "name": "userAgent",
-            "slug": "API/NavigatorID/userAgent",
-            "summary": "The Navigator.userAgent read-only property returns the user agent string for the current browser.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "3"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Navigator.userAgent"
-        }
-    ],
-    "client-identification": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorID.json",
-            "name": "NavigatorID",
-            "slug": "API/NavigatorID",
-            "summary": "The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "3"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Navigator"
-        }
-    ],
-    "dom-navigator-language-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorLanguage.json",
-            "name": "language",
-            "slug": "API/NavigatorLanguage/language",
-            "summary": "The Navigator.language read-only property returns a string representing the preferred language of the user, usually the language of the browser UI.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": "Prior to Firefox 4, this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>. Starting in Firefox 5, this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "11",
-                    "notes": "Closest available (non-standard) properties are <code>userLanguage</code> and <code>browserLanguage</code>."
-                },
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Navigator.language"
-        }
-    ],
-    "dom-navigator-languages-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorLanguage.json",
-            "name": "languages",
-            "slug": "API/NavigatorLanguage/languages",
-            "summary": "The Navigator.languages read-only property returns an array of DOMStrings representing the user's preferred languages. The language is described using BCP 47 language tags. In the returned array they are ordered by preference with the most preferred language first.",
-            "support": {
-                "chrome": {
-                    "version_added": "37",
-                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
-                },
-                "chrome_android": {
-                    "version_added": "37",
-                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
-                },
-                "edge": {
-                    "version_added": "16"
-                },
-                "firefox": {
-                    "version_added": "32",
-                    "notes": "In Firefox, the <code>navigator.languages</code> property's value is taken from the <code>intl.accept_languages</code> preference."
-                },
-                "firefox_android": {
-                    "version_added": "32",
-                    "notes": "In Firefox, the <code>navigator.languages</code> property's value is taken from the <code>intl.accept_languages</code> preference."
-                },
-                "ie": {
-                    "version_added": false,
-                    "notes": "Closest available (non-standard) properties are <code>userLanguage</code> and <code>browserLanguage</code>."
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "37",
-                    "notes": "Before version 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
-                }
-            },
-            "title": "Navigator.languages"
-        }
-    ],
-    "language-preferences": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorLanguage.json",
-            "name": "NavigatorLanguage",
-            "slug": "API/NavigatorLanguage",
-            "summary": "The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "11"
-                },
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Navigator"
-        }
-    ],
-    "dom-navigator-online-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorOnLine.json",
-            "name": "onLine",
-            "slug": "API/NavigatorOnLine/onLine",
-            "summary": "Returns the online status of the browser. The property returns a boolean value, with true meaning online and false meaning offline. The property sends updates whenever the browser's ability to connect to the network changes. The update occurs when the user follows links or when a script requests a remote page. For example, the property should return false when users click links soon after they lose internet connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "1",
-                    "notes": "Earlier versions of Chrome incorrectly return true when a tab is first opened, but it starts reporting the correct connectivity status after the first network event. Windows: 11, Mac: 14, Chrome OS: 13, Linux: Always returns <code>true</code>. For history, see <a href='https://crbug.com/7469'>crbug.com/7469</a>."
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1.5",
-                    "notes": "Since Firefox 4 the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity. Since Firefox 41, on OS X and Windows, the returned values follow the actual network connectivity, unless 'Work offline' mode is selected (where it will always return <code>false</code>)."
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4",
-                    "notes": "in Internet Explorer 8 'online' and 'offline' events are raised on the <code>document.body</code>; under IE 9 they are raised on both <code>document.body</code> and <code>window</code>."
-                },
-                "opera": {
-                    "version_added": "3",
-                    "notes": "From Opera 11.1 until Opera 12.1, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
-                },
-                "opera_android": {
-                    "version_added": "10.1",
-                    "notes": "From Opera 11.1 until Opera 12.1, the browser returns <code>true</code> when 'Work Offline' mode is disabled and <code>false</code> when it is enabled, regardless of actual connectivity."
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "3.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37",
-                    "notes": "Faulty in a WebView component, see Issue <a href='http://code.google.com/p/android/issues/detail?id=16760'>bug 16760</a>."
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "notes": "Earlier versions of Chrome incorrectly return true when a tab is first opened, but it starts reporting the correct connectivity status after the first network event. Windows: 11, Mac: 14, Chrome OS: 13, Linux: Always returns <code>true</code>. For history, see <a href='https://crbug.com/7469'>crbug.com/7469</a>."
-                }
-            },
-            "title": "Navigator.onLine"
-        }
-    ],
-    "browser-state": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NavigatorOnLine.json",
-            "name": "NavigatorOnLine",
-            "slug": "API/NavigatorOnLine",
-            "summary": "The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1.5"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "3"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "3.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -50334,7 +50392,7 @@
             "summary": "The WorkerNavigator interface represents a subset of the Navigator interface allowed to be accessed from a Worker. Such an object is initialized for each worker and is available via the WorkerGlobalScope.navigator property obtained by calling self.navigator.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "4"
                 },
                 "chrome_android": {
                     "version_added": true
