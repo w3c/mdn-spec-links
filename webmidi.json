@@ -368,6 +368,59 @@
             "title": "MIDIOutput.clear()"
         }
     ],
+    "dom-midioutput-send": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIOutput.json",
+            "name": "send",
+            "slug": "API/MIDIOutput/send",
+            "summary": "The send() method of the MIDIOutput interface queues messages for the corresponding MIDI port. The message can be sent immediately, or with an optional timestamp to delay sending.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIOutput.send()"
+        }
+    ],
     "MIDIOutput": [
         {
             "engines": [
@@ -419,6 +472,589 @@
                 }
             },
             "title": "MIDIOutput"
+        }
+    ],
+    "dom-midiport-close": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "close",
+            "slug": "API/MIDIPort/close",
+            "summary": "The close() method of the MIDIPort interface makes the access to the MIDI device connected to this MIDIPort unavailable.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.close()"
+        }
+    ],
+    "dom-midiport-connection": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "connection",
+            "slug": "API/MIDIPort/connection",
+            "summary": "The connection property of the MIDIPort interface returns the connection state of the port.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.connection"
+        }
+    ],
+    "dom-midiport-id": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "id",
+            "slug": "API/MIDIPort/id",
+            "summary": "The id read-only property of the MIDIPort interface returns the unique ID of the port.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.id"
+        }
+    ],
+    "dom-midiport-manufacturer": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "manufacturer",
+            "slug": "API/MIDIPort/manufacturer",
+            "summary": "The manufacturer read-only property of the MIDIPort interface returns the manufacturer of the port.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.manufacturer"
+        }
+    ],
+    "dom-midiport-name": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "name",
+            "slug": "API/MIDIPort/name",
+            "summary": "The name read-only property of the MIDIPort interface returns the system name of the port.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.name"
+        }
+    ],
+    "dom-midiport-onstatechange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "onstatechange",
+            "slug": "API/MIDIPort/onstatechange",
+            "summary": "The onstatechange EventHandler of the MIDIPort interface is an EventHandler that processes state change events.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.onstatechange"
+        }
+    ],
+    "dom-midiport-open": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "open",
+            "slug": "API/MIDIPort/open",
+            "summary": "The open() method of the MIDIPort interface makes the MIDI device connected to this MIDIPort explicitly available.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.open()"
+        }
+    ],
+    "dom-midiport-state": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "state",
+            "slug": "API/MIDIPort/state",
+            "summary": "The state read-only property of the MIDIPort interface returns the state of the port.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.state"
+        }
+    ],
+    "dom-midiport-type": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "type",
+            "slug": "API/MIDIPort/type",
+            "summary": "The type read-only property of the MIDIPort interface returns the type of the port, indicating whether this is an input or output MIDI port.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.type"
+        }
+    ],
+    "dom-midiport-version": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "version",
+            "slug": "API/MIDIPort/version",
+            "summary": "The version read-only property of the MIDIPort interface returns the version of the port.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort.version"
+        }
+    ],
+    "MIDIPort": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "MIDIPort",
+            "slug": "API/MIDIPort",
+            "summary": "The MIDIPort interface of the Web MIDI API represents a MIDI input or output port.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort"
         }
     ]
 }
