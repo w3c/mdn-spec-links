@@ -41027,7 +41027,7 @@
             "filename": "javascript/statements.json",
             "name": "namespace",
             "slug": "JavaScript/Reference/Statements/export",
-            "summary": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. Bindings that are exported can still be modified locally; when imported, although they can only be read by the importing module the value updates whenever it is updated by the exporting module.",
+            "summary": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. The value of an imported binding is subject to change in the module that exports it. When a module updates the value of a binding that it exports, the update will be visible in its imported value.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -41083,7 +41083,7 @@
             "filename": "javascript/statements.json",
             "name": "export",
             "slug": "JavaScript/Reference/Statements/export",
-            "summary": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. Bindings that are exported can still be modified locally; when imported, although they can only be read by the importing module the value updates whenever it is updated by the exporting module.",
+            "summary": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. The value of an imported binding is subject to change in the module that exports it. When a module updates the value of a binding that it exports, the update will be visible in its imported value.",
             "support": {
                 "chrome": {
                     "version_added": "61"
