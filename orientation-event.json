@@ -63,7 +63,7 @@
             "filename": "api/DeviceMotionEvent.json",
             "name": "acceleration",
             "slug": "API/DeviceMotionEvent/acceleration",
-            "summary": "The acceleration property returns the amount of acceleration recorded by the device, in meters per second squared (m/s²).",
+            "summary": "The acceleration property returns the amount of acceleration recorded by the device, in meters per second squared (m/s²). The acceleration value does not include the effect of the gravity force, in constrast to DeviceMotionEvent.accelerationIncludingGravity.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -118,7 +118,7 @@
             "filename": "api/DeviceMotionEvent.json",
             "name": "accelerationIncludingGravity",
             "slug": "API/DeviceMotionEvent/accelerationIncludingGravity",
-            "summary": "The accelerationIncludingGravity property returns the amount of acceleration recorded by the device, in meters per second squared (m/s²). Unlike DeviceMotionEvent.acceleration which compensates for the influence of gravity, its value is the sum of the acceleration of the device as induced by the user and the acceleration caused by gravity.",
+            "summary": "The accelerationIncludingGravity property returns the amount of acceleration recorded by the device, in meters per second squared (m/s²). Unlike DeviceMotionEvent.acceleration which compensates for the influence of gravity, its value is the sum of the acceleration of the device as induced by the user and an acceleration equal and opposite to that caused by gravity. In other words, it measures the g-force. In practice, this value represents the raw data measured by an accelerometer.",
             "support": {
                 "chrome": {
                     "version_added": true
