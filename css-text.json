@@ -533,10 +533,8 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
-            ],
-            "prefixed": [
-                "gecko"
             ],
             "filename": "css/properties/tab-size.json",
             "name": "tab-size",
@@ -554,22 +552,26 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "prefix": "-moz-",
-                    "version_added": "4",
-                    "notes": [
-                        "See <a href='https://bugzil.la/737785'>bug 737785</a> for the status of unprefixing this property.",
-                        "Before Firefox 53, this property was not animatable."
-                    ]
-                },
-                "firefox_android": {
-                    "prefix": "-moz-",
-                    "version_added": "4",
-                    "notes": [
-                        "See <a href='https://bugzil.la/737785'>bug 737785</a> for the status of unprefixing this property.",
-                        "Before Firefox 53, this property was not animatable."
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "prefix": "-moz-",
+                        "version_added": "4",
+                        "notes": "Before Firefox 53, this property was not animatable."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "prefix": "-moz-",
+                        "version_added": "4",
+                        "notes": "Before Firefox 53, this property was not animatable."
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
