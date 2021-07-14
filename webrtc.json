@@ -2995,14 +2995,28 @@
                 "edge": {
                     "version_added": "15"
                 },
-                "firefox": {
-                    "version_added": "22",
-                    "notes": "Before Firefox 68, the constructor's <code>options</code> parameter was required."
-                },
-                "firefox_android": {
-                    "version_added": true,
-                    "notes": "Before Firefox 68, the constructor's <code>options</code> parameter was required."
-                },
+                "firefox": [
+                    {
+                        "version_added": "44",
+                        "notes": "Before Firefox 68, the constructor's <code>options</code> parameter was required."
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22",
+                        "notes": "Before Firefox 68, the constructor's <code>options</code> parameter was required."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "44",
+                        "notes": "Before Firefox 68, the constructor's <code>options</code> parameter was required."
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22",
+                        "notes": "Before Firefox 68, the constructor's <code>options</code> parameter was required."
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3867,12 +3881,24 @@
                 "edge": {
                     "version_added": "15"
                 },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
+                "firefox": [
+                    {
+                        "version_added": "44"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "44"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22"
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5554,12 +5580,24 @@
                 "edge": {
                     "version_added": "15"
                 },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
+                "firefox": [
+                    {
+                        "version_added": "44"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "44"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22"
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -6946,6 +6984,62 @@
             "title": "RTCPeerConnection: icecandidate event"
         }
     ],
+    "event-icecandidateerror": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCPeerConnection.json",
+            "name": "icecandidateerror_event",
+            "slug": "API/RTCPeerConnection/icecandidateerror_event",
+            "summary": "The WebRTC API event icecandidateerror is sent to an RTCPeerConnection if an error occurs while performing ICE negotiations through a STUN or TURN server. The event object is of type RTCPeerConnectionIceErrorEvent, and contains information describing the error in some amount of detail.",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": {
+                    "version_added": "77"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1561441'>bug 1561441</a>"
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1561441'>bug 1561441</a>"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "64"
+                },
+                "opera_android": {
+                    "version_added": "55"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.0"
+                },
+                "webview_android": {
+                    "version_added": "77"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCPeerConnection: icecandidateerror event"
+        }
+    ],
     "dom-peerconnection-ice-connection-state": [
         {
             "engines": [
@@ -7137,6 +7231,61 @@
                 }
             },
             "title": "RTCPeerConnection.iceGatheringState"
+        }
+    ],
+    "event-icegatheringstatechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCPeerConnection.json",
+            "name": "icegatheringstatechange_event",
+            "slug": "API/RTCPeerConnection/icegatheringstatechange_event",
+            "summary": "The icegatheringstatechange event is sent to the onicegatheringstatechange event handler on an RTCPeerConnection when the state of the ICE candidate gathering process changes.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "15"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCPeerConnection: icegatheringstatechange event"
         }
     ],
     "dom-peerconnection-localdescription": [
@@ -7458,6 +7607,7 @@
     "dom-rtcpeerconnection-onicecandidateerror": [
         {
             "engines": [
+                "blink",
                 "webkit"
             ],
             "filename": "api/RTCPeerConnection.json",
@@ -7466,10 +7616,10 @@
             "summary": "The RTCPeerConnection.onicecandidateerror property is an event handler which specifies a function which is called to handle the icecandidateerror event when it occurs on an RTCPeerConnection instance. This event is fired when an error occurs during the ICE candidate gathering process.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "77"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "77"
                 },
                 "edge": {
                     "version_added": false
@@ -7484,10 +7634,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "64"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "55"
                 },
                 "safari": {
                     "version_added": "14.1"
@@ -7496,13 +7646,13 @@
                     "version_added": "14.5"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "12.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "77"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCPeerConnection.onicecandidateerror"
@@ -8698,17 +8848,22 @@
                 "edge": {
                     "version_added": "15"
                 },
-                "firefox": {
-                    "version_added": "22"
-                },
+                "firefox": [
+                    {
+                        "version_added": "44"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22"
+                    }
+                ],
                 "firefox_android": [
                     {
                         "version_added": "44"
                     },
                     {
                         "prefix": "moz",
-                        "version_added": "22",
-                        "version_removed": "44"
+                        "version_added": "22"
                     }
                 ],
                 "ie": {
@@ -11039,7 +11194,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "15.0"
                 },
                 "webview_android": {
                     "version_added": "88"
@@ -11510,9 +11665,6 @@
                 "gecko",
                 "webkit"
             ],
-            "prefixed": [
-                "gecko"
-            ],
             "filename": "api/RTCSessionDescription.json",
             "name": "RTCSessionDescription",
             "slug": "API/RTCSessionDescription",
@@ -11527,13 +11679,24 @@
                 "edge": {
                     "version_added": "15"
                 },
-                "firefox": {
-                    "prefix": "moz",
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
+                "firefox": [
+                    {
+                        "version_added": "44"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "44"
+                    },
+                    {
+                        "prefix": "moz",
+                        "version_added": "22"
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
