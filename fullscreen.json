@@ -68,7 +68,10 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": [
                     {
@@ -106,6 +109,9 @@
             "engines": [
                 "blink",
                 "gecko"
+            ],
+            "altname": [
+                "webkit"
             ],
             "filename": "api/Document.json",
             "name": "fullscreenchange_event",
@@ -162,10 +168,14 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "5.1",
+                    "alternative_name": "webkitfullscreenchange"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "12",
+                    "alternative_name": "webkitfullscreenchange",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -258,8 +268,10 @@
                     "alternative_name": "onwebkitfullscreenchange"
                 },
                 "safari_ios": {
-                    "version_added": "5.1",
-                    "alternative_name": "onwebkitfullscreenchange"
+                    "version_added": "12",
+                    "alternative_name": "onwebkitfullscreenchange",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -289,6 +301,9 @@
             "engines": [
                 "blink",
                 "gecko"
+            ],
+            "prefixed": [
+                "webkit"
             ],
             "filename": "api/Element.json",
             "name": "fullscreenchange_event",
@@ -344,10 +359,13 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "5.1",
+                    "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "notes": "Only available on iPad, not on iPhone. Shows an overlay button which can not be disabled."
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -377,6 +395,9 @@
             "engines": [
                 "blink",
                 "gecko"
+            ],
+            "altname": [
+                "webkit"
             ],
             "filename": "api/Element.json",
             "name": "onfullscreenchange",
@@ -432,10 +453,13 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "5.1",
+                    "alternative_name": "onwebkitfullscreenchange"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "12",
+                    "alternative_name": "onwebkitfullscreenchange",
+                    "notes": "Only available on iPad, not on iPhone. Shows an overlay button which can not be disabled."
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -530,8 +554,10 @@
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": [
                     {
@@ -569,6 +595,9 @@
             "engines": [
                 "blink",
                 "gecko"
+            ],
+            "altname": [
+                "webkit"
             ],
             "filename": "api/Document.json",
             "name": "fullscreenerror_event",
@@ -625,10 +654,14 @@
                     "version_added": "32"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "5.1",
+                    "alternative_name": "webkitfullscreenerror"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "12",
+                    "alternative_name": "webkitfullscreenerror",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -721,8 +754,10 @@
                     "alternative_name": "onwebkitfullscreenerror"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "alternative_name": "onwebkitfullscreenerror"
+                    "version_added": "12",
+                    "alternative_name": "onwebkitfullscreenerror",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -752,6 +787,9 @@
             "engines": [
                 "blink",
                 "gecko"
+            ],
+            "prefixed": [
+                "webkit"
             ],
             "filename": "api/Element.json",
             "name": "fullscreenerror_event",
@@ -807,10 +845,13 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": null
+                    "version_added": "5.1",
+                    "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "notes": "Only available on iPad, not on iPhone. Shows an overlay button which can not be disabled."
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -840,6 +881,9 @@
             "engines": [
                 "blink",
                 "gecko"
+            ],
+            "altname": [
+                "webkit"
             ],
             "filename": "api/Element.json",
             "name": "onfullscreenerror",
@@ -895,10 +939,13 @@
                     "version_added": true
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "5.1",
+                    "alternative_name": "onwebkitfullscreenerror"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "12",
+                    "alternative_name": "onwebkitfullscreenerror",
+                    "notes": "Only available on iPad, not on iPhone. Shows an overlay button which can not be disabled."
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -1011,11 +1058,11 @@
                     }
                 ],
                 "safari": {
-                    "version_added": "6",
+                    "version_added": "5.1",
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": "6",
+                    "version_added": "12",
                     "prefix": "webkit",
                     "notes": "Only available on iPad, not on iPhone. Shows an overlay button which can not be disabled."
                 },
@@ -1103,114 +1150,6 @@
                 }
             },
             "title": "Element"
-        }
-    ],
-    "dom-fullscreenoptions-navigationui": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/FullscreenOptions.json",
-            "name": "navigationUI",
-            "slug": "API/FullscreenOptions/navigationUI",
-            "summary": "The FullscreenOptions dictionary's navigationUI property is used when calling requestFullscreen() to specify to what extent the user agent should include its standard user interface while the element is presented in full-screen mode.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "64"
-                },
-                "firefox_android": {
-                    "version_added": "64"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "FullscreenOptions.navigationUI"
-        }
-    ],
-    "dictdef-fullscreenoptions": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/FullscreenOptions.json",
-            "name": "FullscreenOptions",
-            "slug": "API/FullscreenOptions",
-            "summary": "The FullscreenOptions dictionary is used to provide configuration options when calling requestFullscreen() on an element to place that element into full-screen mode.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "64"
-                },
-                "firefox_android": {
-                    "version_added": "64"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "FullscreenOptions"
         }
     ],
     "ref-for-dom-document-fullscreenelement①": [
