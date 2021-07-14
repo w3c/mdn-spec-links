@@ -42,7 +42,9 @@ const needsSpecURL = mdnURL => {
   );
 };
 
-var SPECURLS;
+log('loading SPECURLS.json...');
+const SPECURLS = JSON.parse(fs.readFileSync('SPECURLS.json', 'utf-8'));
+
 var MDNURLS = [];
 var file;
 
@@ -104,9 +106,13 @@ const checkSpecURL = (
   standard,
   deprecated,
 ) => {
+  // FIXME: https://github.com/mdn/browser-compat-data/pull/11520
+  if (spec_url === "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizetostring") {
+    return;
+  }
   if (
-    spec_url.startsWith('https://datatracker.ietf.org/doc/html/rfc2324') ||
-    spec_url.startsWith('https://datatracker.ietf.org/doc/html/rfc7168')
+    spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
+    spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
   ) {
     // "I'm a teapot" RFC; ignore
     return;
@@ -143,13 +149,7 @@ if (require.main === module) {
       headers: { 'User-Agent': 'bcd-maintenance-script' },
       gzip: true,
     };
-    let response = request(
-      'GET',
-      'https://raw.githubusercontent.com/w3c/mdn-spec-links/main/SPECURLS.json',
-      options,
-    );
-    SPECURLS = JSON.parse(response.getBody('utf8'));
-    response = request(
+    const response = request(
       'GET',
       'https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz',
       options,
