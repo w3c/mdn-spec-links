@@ -56,19 +56,33 @@
                     "version_added": "11",
                     "alternative_name": "msExitFullscreen"
                 },
-                "opera": {
-                    "version_added": "15",
-                    "prefix": "webkit"
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "prefix": "webkit"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "prefix": "webkit"
+                    }
+                ],
                 "safari": {
                     "version_added": "5.1",
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": [
                     {
@@ -107,6 +121,9 @@
                 "blink",
                 "gecko"
             ],
+            "altname": [
+                "webkit"
+            ],
             "filename": "api/Document.json",
             "name": "fullscreenchange_event",
             "slug": "API/Document/fullscreenchange_event",
@@ -117,7 +134,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "15",
                         "alternative_name": "webkitfullscreenchange"
                     }
                 ],
@@ -126,7 +143,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "18",
                         "alternative_name": "webkitfullscreenchange"
                     }
                 ],
@@ -155,27 +172,49 @@
                     "version_added": "11",
                     "alternative_name": "MSFullscreenChange"
                 },
-                "opera": {
-                    "version_added": "32"
-                },
-                "opera_android": {
-                    "version_added": "32"
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "webkitfullscreenchange"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "webkitfullscreenchange"
+                    }
+                ],
                 "safari": {
-                    "version_added": null
+                    "version_added": "5.1",
+                    "alternative_name": "webkitfullscreenchange"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "12",
+                    "alternative_name": "webkitfullscreenchange",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "10.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "webkitfullscreenchange"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "37",
                         "alternative_name": "webkitfullscreenchange"
                     }
                 ],
@@ -209,7 +248,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "15",
                         "alternative_name": "onwebkitfullscreenchange"
                     }
                 ],
@@ -218,7 +257,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "18",
                         "alternative_name": "onwebkitfullscreenchange"
                     }
                 ],
@@ -247,29 +286,49 @@
                     "version_added": "11",
                     "alternative_name": "onmsfullscreenchange"
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "onwebkitfullscreenchange"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "onwebkitfullscreenchange"
+                    }
+                ],
                 "safari": {
                     "version_added": "5.1",
                     "alternative_name": "onwebkitfullscreenchange"
                 },
                 "safari_ios": {
-                    "version_added": "5.1",
-                    "alternative_name": "onwebkitfullscreenchange"
+                    "version_added": "12",
+                    "alternative_name": "onwebkitfullscreenchange",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "10.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "onwebkitfullscreenchange"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "37",
                         "alternative_name": "onwebkitfullscreenchange"
                     }
                 ],
@@ -290,6 +349,9 @@
                 "blink",
                 "gecko"
             ],
+            "prefixed": [
+                "webkit"
+            ],
             "filename": "api/Element.json",
             "name": "fullscreenchange_event",
             "slug": "API/Element/fullscreenchange_event",
@@ -300,7 +362,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "15",
                         "alternative_name": "webkitfullscreenchange"
                     }
                 ],
@@ -309,7 +371,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "18",
                         "alternative_name": "webkitfullscreenchange"
                     }
                 ],
@@ -337,27 +399,49 @@
                 "ie": {
                     "version_added": null
                 },
-                "opera": {
-                    "version_added": "44"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "webkitfullscreenchange"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "webkitfullscreenchange"
+                    }
+                ],
                 "safari": {
-                    "version_added": null
+                    "version_added": "5.1",
+                    "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "10.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "webkitfullscreenchange"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "37",
                         "alternative_name": "webkitfullscreenchange"
                     }
                 ],
@@ -378,6 +462,9 @@
                 "blink",
                 "gecko"
             ],
+            "altname": [
+                "webkit"
+            ],
             "filename": "api/Element.json",
             "name": "onfullscreenchange",
             "slug": "API/Element/onfullscreenchange",
@@ -388,7 +475,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "15",
                         "alternative_name": "onwebkitfullscreenchange"
                     }
                 ],
@@ -397,7 +484,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "18",
                         "alternative_name": "onwebkitfullscreenchange"
                     }
                 ],
@@ -425,27 +512,49 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "onwebkitfullscreenchange"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "onwebkitfullscreenchange"
+                    }
+                ],
                 "safari": {
-                    "version_added": false
+                    "version_added": "5.1",
+                    "alternative_name": "onwebkitfullscreenchange"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "12",
+                    "alternative_name": "onwebkitfullscreenchange",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "10.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "onwebkitfullscreenchange"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "37",
                         "alternative_name": "onwebkitfullscreenchange"
                     }
                 ],
@@ -481,7 +590,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "20",
                         "prefix": "webkit"
                     }
                 ],
@@ -490,7 +599,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "25",
                         "prefix": "webkit"
                     }
                 ],
@@ -519,26 +628,40 @@
                     "version_added": "11",
                     "alternative_name": "msFullscreenEnabled"
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "prefix": "webkit"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "prefix": "webkit"
+                    }
+                ],
                 "safari": {
                     "version_added": "6",
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "prefix": "webkit"
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": [
                     {
                         "version_added": "10.0"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "1.5",
                         "prefix": "webkit"
                     }
                 ],
@@ -556,7 +679,7 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "79",
                         "prefix": "webkit"
                     }
                 ]
@@ -570,6 +693,9 @@
                 "blink",
                 "gecko"
             ],
+            "altname": [
+                "webkit"
+            ],
             "filename": "api/Document.json",
             "name": "fullscreenerror_event",
             "slug": "API/Document/fullscreenerror_event",
@@ -580,7 +706,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "18",
                         "alternative_name": "webkitfullscreenerror"
                     }
                 ],
@@ -589,7 +715,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "18",
                         "alternative_name": "webkitfullscreenerror"
                     }
                 ],
@@ -618,27 +744,49 @@
                     "version_added": "11",
                     "alternative_name": "MSFullscreenError"
                 },
-                "opera": {
-                    "version_added": "32"
-                },
-                "opera_android": {
-                    "version_added": "32"
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "webkitfullscreenerror"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "webkitfullscreenerror"
+                    }
+                ],
                 "safari": {
-                    "version_added": null
+                    "version_added": "6",
+                    "alternative_name": "webkitfullscreenerror"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "12",
+                    "alternative_name": "webkitfullscreenerror",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "10.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "webkitfullscreenerror"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "37",
                         "alternative_name": "webkitfullscreenerror"
                     }
                 ],
@@ -672,7 +820,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "18",
                         "alternative_name": "onwebkitfullscreenerror"
                     }
                 ],
@@ -681,7 +829,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "18",
                         "alternative_name": "onwebkitfullscreenerror"
                     }
                 ],
@@ -710,29 +858,49 @@
                     "version_added": "11",
                     "alternative_name": "onmsfullscreenerror"
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "onwebkitfullscreenerror"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "onwebkitfullscreenerror"
+                    }
+                ],
                 "safari": {
                     "version_added": "6",
                     "alternative_name": "onwebkitfullscreenerror"
                 },
                 "safari_ios": {
-                    "version_added": "6",
-                    "alternative_name": "onwebkitfullscreenerror"
+                    "version_added": "12",
+                    "alternative_name": "onwebkitfullscreenerror",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "10.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "onwebkitfullscreenerror"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "71"
                     },
                     {
-                        "version_added": "45",
+                        "version_added": "37",
                         "alternative_name": "onwebkitfullscreenerror"
                     }
                 ],
@@ -753,6 +921,9 @@
                 "blink",
                 "gecko"
             ],
+            "prefixed": [
+                "webkit"
+            ],
             "filename": "api/Element.json",
             "name": "fullscreenerror_event",
             "slug": "API/Element/fullscreenerror_event",
@@ -763,7 +934,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "18",
                         "alternative_name": "webkitfullscreenerror"
                     }
                 ],
@@ -772,7 +943,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "18",
                         "alternative_name": "webkitfullscreenerror"
                     }
                 ],
@@ -800,27 +971,49 @@
                 "ie": {
                     "version_added": null
                 },
-                "opera": {
-                    "version_added": "44"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "webkitfullscreenerror"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "webkitfullscreenerror"
+                    }
+                ],
                 "safari": {
-                    "version_added": null
+                    "version_added": "6",
+                    "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "10.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "webkitfullscreenerror"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "37",
                         "alternative_name": "webkitfullscreenerror"
                     }
                 ],
@@ -841,6 +1034,9 @@
                 "blink",
                 "gecko"
             ],
+            "altname": [
+                "webkit"
+            ],
             "filename": "api/Element.json",
             "name": "onfullscreenerror",
             "slug": "API/Element/onfullscreenerror",
@@ -851,7 +1047,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "18",
                         "alternative_name": "onwebkitfullscreenerror"
                     }
                 ],
@@ -860,7 +1056,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "18",
                         "alternative_name": "onwebkitfullscreenerror"
                     }
                 ],
@@ -888,27 +1084,49 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "onwebkitfullscreenerror"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "onwebkitfullscreenerror"
+                    }
+                ],
                 "safari": {
-                    "version_added": false
+                    "version_added": "6",
+                    "alternative_name": "onwebkitfullscreenerror"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "12",
+                    "alternative_name": "onwebkitfullscreenerror",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
                 },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "10.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "onwebkitfullscreenerror"
+                    }
+                ],
                 "webview_android": [
                     {
                         "version_added": "71"
                     },
                     {
-                        "version_added": "57",
+                        "version_added": "37",
                         "alternative_name": "onwebkitfullscreenerror"
                     }
                 ],
@@ -1011,12 +1229,13 @@
                     }
                 ],
                 "safari": {
-                    "version_added": "6",
+                    "version_added": "5.1",
                     "prefix": "webkit"
                 },
                 "safari_ios": {
-                    "version_added": "6",
+                    "version_added": "12",
                     "prefix": "webkit",
+                    "partial_implementation": true,
                     "notes": "Only available on iPad, not on iPhone. Shows an overlay button which can not be disabled."
                 },
                 "samsunginternet_android": [
@@ -1105,114 +1324,6 @@
             "title": "Element"
         }
     ],
-    "dom-fullscreenoptions-navigationui": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/FullscreenOptions.json",
-            "name": "navigationUI",
-            "slug": "API/FullscreenOptions/navigationUI",
-            "summary": "The FullscreenOptions dictionary's navigationUI property is used when calling requestFullscreen() to specify to what extent the user agent should include its standard user interface while the element is presented in full-screen mode.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "64"
-                },
-                "firefox_android": {
-                    "version_added": "64"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "FullscreenOptions.navigationUI"
-        }
-    ],
-    "dictdef-fullscreenoptions": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/FullscreenOptions.json",
-            "name": "FullscreenOptions",
-            "slug": "API/FullscreenOptions",
-            "summary": "The FullscreenOptions dictionary is used to provide configuration options when calling requestFullscreen() on an element to place that element into full-screen mode.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "64"
-                },
-                "firefox_android": {
-                    "version_added": "64"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "FullscreenOptions"
-        }
-    ],
     "ref-for-dom-document-fullscreenelement①": [
         {
             "engines": [
@@ -1232,7 +1343,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "53",
+                        "version_added": "20",
                         "prefix": "webkit"
                     }
                 ],
@@ -1241,7 +1352,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "53",
+                        "version_added": "25",
                         "prefix": "webkit"
                     }
                 ],
@@ -1275,7 +1386,7 @@
                         "version_added": "58"
                     },
                     {
-                        "version_added": "40",
+                        "version_added": "15",
                         "prefix": "webkit"
                     }
                 ],
@@ -1284,7 +1395,7 @@
                         "version_added": "50"
                     },
                     {
-                        "version_added": "41",
+                        "version_added": "14",
                         "prefix": "webkit"
                     }
                 ],
@@ -1296,14 +1407,14 @@
                     "version_added": "12",
                     "prefix": "webkit",
                     "partial_implementation": true,
-                    "notes": "Full-screen mode is only supported on the iPad."
+                    "notes": "Only available on iPad, not on iPhone."
                 },
                 "samsunginternet_android": [
                     {
                         "version_added": "10.0"
                     },
                     {
-                        "version_added": "6.0",
+                        "version_added": "1.5",
                         "prefix": "webkit"
                     }
                 ],
@@ -1312,7 +1423,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": "53",
+                        "version_added": "37",
                         "prefix": "webkit"
                     }
                 ],
