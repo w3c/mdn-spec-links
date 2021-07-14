@@ -1,0 +1,472 @@
+{
+    "rfc2397#section-2": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/data-url.json",
+            "name": "data-url",
+            "slug": "HTTP/Basics_of_HTTP/Data_URIs",
+            "summary": "Data URLs, URLs prefixed with the data: scheme, allow content creators to embed small files inline in documents. They were formerly known as \"data URIs\" until that name was retired by the WHATWG.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": "8",
+                    "notes": "The maximum size supported is 32kB"
+                },
+                "opera": {
+                    "version_added": "7.2"
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Data URLs"
+        }
+    ],
+    "rfc8942#section-3.1": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/accept-ch.json",
+            "name": "Accept-CH",
+            "slug": "HTTP/Headers/Accept-CH",
+            "summary": "The Accept-CH header may be set by a server to specify which client hints headers a client should include in subsequent requests.",
+            "support": {
+                "chrome": {
+                    "version_added": "46"
+                },
+                "chrome_android": {
+                    "version_added": "46"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": "33"
+                },
+                "opera_android": {
+                    "version_added": "33"
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "46"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Accept-CH"
+        }
+    ],
+    "rfc7578#section-4.2": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/content-disposition.json",
+            "name": "Content-Disposition",
+            "slug": "HTTP/Headers/Content-Disposition",
+            "summary": "In a regular HTTP response, the Content-Disposition response header is a header indicating if the content is expected to be displayed inline in the browser, that is, as a Web page or as part of a Web page, or as an attachment, that is downloaded and saved locally.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true,
+                    "notes": "From version 82, if an <code>&lt;a&gt;</code> element's <code>download</code> attribute is set (for a same-origin URL) then the <code>inline</code> directive is ignored. Earlier versions did not match the specification and respected the header directive over the attribute. See <a href='https://bugzil.la/1658877'>bug 1658877</a>."
+                },
+                "firefox_android": {
+                    "version_added": true,
+                    "notes": "From version 82, if an <code>&lt;a&gt;</code> element's <code>download</code> attribute is set (for a same-origin URL) then the <code>inline</code> directive is ignored. Earlier versions did not match the specification and respected the header directive over the attribute. See <a href='https://bugzil.la/1658877'>bug 1658877</a>."
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Content-Disposition"
+        }
+    ],
+    "rfc7239#section-4": [
+        {
+            "engines": [],
+            "filename": "http/headers/forwarded.json",
+            "name": "Forwarded",
+            "slug": "HTTP/Headers/Forwarded",
+            "summary": "The Forwarded header contains information from the reverse proxy servers that is altered or lost when a proxy is involved in the path of the request.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "title": "Forwarded"
+        }
+    ],
+    "rfc6454#section-7": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/origin.json",
+            "name": "Origin",
+            "slug": "HTTP/Headers/Origin",
+            "summary": "The Origin request header indicates where a request originates from. It doesn't include any path information. It is similar to the Referer header, but, unlike that header, it doesn't disclose the whole path.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": [
+                    {
+                        "version_added": "70"
+                    },
+                    {
+                        "version_added": "59",
+                        "flags": [
+                            {
+                                "name": "network.http.sendOriginHeader",
+                                "type": "preference",
+                                "value_to_set": "true"
+                            }
+                        ],
+                        "notes": "Sent with non-CORS requests since Fx59, unless they are <code>GET</code> or <code>HEAD</code>."
+                    },
+                    {
+                        "version_added": true,
+                        "partial_implementation": true,
+                        "notes": "Not sent with <code>POST</code> requests until Firefox 58, see <a href='https://bugzil.la/446344'>bug 446344</a>."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "59",
+                        "flags": [
+                            {
+                                "name": "network.http.sendOriginHeader",
+                                "type": "preference",
+                                "value_to_set": "true"
+                            }
+                        ],
+                        "notes": "Sent with non-CORS requests since Fx59, unless they are <code>GET</code> or <code>HEAD</code>."
+                    },
+                    {
+                        "version_added": true,
+                        "partial_implementation": true,
+                        "notes": "Not sent with <code>POST</code> requests until Firefox 58, see <a href='https://bugzil.la/446344'>bug 446344</a>."
+                    }
+                ],
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Origin"
+        }
+    ],
+    "rfc6797#section-6.1": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/strict-transport-security.json",
+            "name": "Strict-Transport-Security",
+            "slug": "HTTP/Headers/Strict-Transport-Security",
+            "summary": "The HTTP Strict-Transport-Security response header (often abbreviated as HSTS) lets a web site tell browsers that it should only be accessed using HTTPS, instead of using HTTP.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": "11"
+                },
+                "opera": {
+                    "version_added": "12"
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Strict-Transport-Security"
+        }
+    ],
+    "rfc7034#section-2": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/x-frame-options.json",
+            "name": "X-Frame-Options",
+            "slug": "HTTP/Headers/X-Frame-Options",
+            "summary": "The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe>, <embed> or <object>. Sites can use this to avoid click-jacking attacks, by ensuring that their content is not embedded into other sites.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": "8"
+                },
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "X-Frame-Options"
+        }
+    ],
+    "rfc2324#section-2.3.2": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/status.json",
+            "name": "418",
+            "slug": "HTTP/Status/418",
+            "summary": "The HTTP 418 I'm a teapot client error response code indicates that the server refuses to brew coffee because it is, permanently, a teapot. A combined coffee/tea pot that is temporarily out of coffee should instead return 503. This error is a reference to Hyper Text Coffee Pot Control Protocol defined in April Fools' jokes in 1998 and 2014.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "418 I'm a teapot"
+        }
+    ]
+}
