@@ -72,12 +72,8 @@
 <p><a href="https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.ts"><code>.mdn-spec-links.ts</code></a> is a TypeScript declaration defining the datatypes and structure of the JSON data.<br>
 <a href="https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.schema.json"><code>.mdn-spec-links.schema.json</code></a>, generated from the TypeScript, is a JSON Schema providing the same definitions.</p>
 <p>All data here is generated. So you don’t want to edit the data directly; rather, edit <a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data</a> data upstream, and <a href="https://developer.mozilla.org/docs/Web" rel="nofollow">https://developer.mozilla.org/docs/Web</a> article content.</p>
-<p>To regenerate the data, just type <code>make</code>. That builds from the W3C BCD fork. Otherwise:</p>
-<pre><code># build from the upsteam BCD repo
-BCD_REPO=https://github.com/mdn/browser-compat-data.git make -e
-
-# build from a local BCD clone and a local MDN clone:
-BCD_REPO=/path/to/mdn/browser-compat-data MDN_REPO=/path/to/mdn/content make -e
+<p>To regenerate the data, just type <code>make</code>. To build from local BCD and MDN clones:</p>
+<pre><code>BCD_REPO=/path/to/mdn/browser-compat-data MDN_REPO=/path/to/mdn/content make -e
 </code></pre>
 <ul>
 <li>
@@ -280,8 +276,6 @@ BCD_REPO=/path/to/mdn/browser-compat-data MDN_REPO=/path/to/mdn/content make -e
 <a href="draft-ietf-httpbis-digest-headers.json">draft-ietf-httpbis-digest-headers</a> [<a href="less-than-2.html?spec=draft-ietf-httpbis-digest-headers">status</a>]</li>
 <li>
 <a href="draft-ietf-httpbis-expect-ct.json">draft-ietf-httpbis-expect-ct</a> [<a href="less-than-2.html?spec=draft-ietf-httpbis-expect-ct">status</a>]</li>
-<li>
-<a href="draft-thomson-hybi-http-timeout.json">draft-thomson-hybi-http-timeout</a> [<a href="less-than-2.html?spec=draft-thomson-hybi-http-timeout">status</a>]</li>
 <li>
 <a href="ecma-402.json">ecma-402</a> [<a href="less-than-2.html?spec=ecma-402">status</a>]</li>
 <li>
@@ -542,6 +536,8 @@ BCD_REPO=/path/to/mdn/browser-compat-data MDN_REPO=/path/to/mdn/content make -e
 <a href="web-locks.json">web-locks</a> [<a href="less-than-2.html?spec=web-locks">status</a>]</li>
 <li>
 <a href="web-nfc.json">web-nfc</a> [<a href="less-than-2.html?spec=web-nfc">status</a>]</li>
+<li>
+<a href="web-otp.json">web-otp</a> [<a href="less-than-2.html?spec=web-otp">status</a>]</li>
 <li>
 <a href="web-share.json">web-share</a> [<a href="less-than-2.html?spec=web-share">status</a>]</li>
 <li>

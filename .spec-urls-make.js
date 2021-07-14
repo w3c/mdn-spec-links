@@ -8,7 +8,9 @@ const chalk = require('chalk');
 const fs = require('fs');
 const request = require('sync-request');
 
+const util = require('util');
 const { JSDOM } = require('jsdom');
+const waitImmediate = util.promisify(setImmediate);
 
 let allURLs = [];
 let bikeshedSpecs = [];
@@ -144,7 +146,7 @@ const getRemoteContents = (specURL, requestURL, seconds) => {
   }
 };
 
-const processSpecURL = (specURL, specJSONfile, seconds) => {
+const processSpecURL = async (specURL, specJSONfile, seconds) => {
   let requestURL = specURL;
   if (respecRawSpecs.includes(requestURL)) {
     requestURL =
@@ -154,8 +156,8 @@ const processSpecURL = (specURL, specJSONfile, seconds) => {
   if (contents.match(/respec-w3c-/)) {
     warn(`${specURL} loads respec`);
   }
-  var dom = new JSDOM(contents);
-  var document = dom.window.document;
+  const dom = new JSDOM(contents);
+  const document = dom.window.document;
 
   if (document.querySelector('script[src*="respec"]') ||
       document.querySelector('meta[content*="ReSpec"]')) {
@@ -215,6 +217,8 @@ const processSpecURL = (specURL, specJSONfile, seconds) => {
     note(requestURL + '#' + name);
   }
 
+  dom.window.close();
+  await waitImmediate();
 };
 
 const processSVG2files = baseURL => {

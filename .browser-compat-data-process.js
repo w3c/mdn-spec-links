@@ -529,11 +529,11 @@ const fixCanIUseSpecURLs = (key, data) => {
     if (url.startsWith('https://html.spec.whatwg.org/dev/')) {
       url = 'https://html.spec.whatwg.org/' + parsedURL.hash;
     }
-    if (url.startsWith('https://datatracker.ietf.org/doc/html/rfc2324')) {
+    if (url.startsWith('https://www.rfc-editor.org/rfc/rfc2324')) {
       // "I'm a teapot" RFC; ignore
       return false;
     }
-    if (url.startsWith('https://datatracker.ietf.org/doc/html/rfc7168')) {
+    if (url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')) {
       // "I'm a teapot" RFC; ignore
       return false;
     }
@@ -668,6 +668,11 @@ const getAdjustedData = (locationkey, url, path, baseurl, host, fragment) => {
     path = name;
     locationkey = fragment;
     baseurl = 'https://datatracker.ietf.org/doc/html/' + name;
+  } else if (url.startsWith('https://www.rfc-editor.org/rfc/')) {
+    const name = locationkey.split('#')[0];
+    path = name;
+    locationkey = fragment;
+    baseurl = 'https://www.rfc-editor.org/rfc/' + name;
   }
   return [locationkey, path, baseurl];
 };
@@ -1051,13 +1056,13 @@ const isForTargetJSONfile = (specURL, feature, mdnURL)  => {
 
 const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
   const parsedURL = URL.parse(url);
-  if (url.startsWith('https://datatracker.ietf.org/doc/html/rfc2324')) {
+  if (url.startsWith('https://www.rfc-editor.org/rfc/rfc2324')) {
     return; // 'I'm a teapot' RFC; ignore
   }
-  if (url.startsWith('https://datatracker.ietf.org/doc/html/rfc7168')) {
+  if (url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')) {
     return; // 'I'm a teapot' RFC; ignore
   }
-  if (url.startsWith('https://datatracker.ietf.org/doc/html/rfc7469')) {
+  if (url.startsWith('/https://www.rfc-editor.org/rfc/rfc7469')) {
     return; // HTTP Public Key Pinning (obsolete)
   }
   if (url.startsWith('https://www.w3.org/TR/tracking-dnt/')) {
