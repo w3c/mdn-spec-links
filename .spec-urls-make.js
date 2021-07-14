@@ -144,7 +144,7 @@ const getRemoteContents = (specURL, requestURL, seconds) => {
   }
 };
 
-const processSpecURL = (specURL, specJSONfile, seconds) => {
+const processSpecURL = async (specURL, specJSONfile, seconds) => {
   let requestURL = specURL;
   if (respecRawSpecs.includes(requestURL)) {
     requestURL =
@@ -154,8 +154,8 @@ const processSpecURL = (specURL, specJSONfile, seconds) => {
   if (contents.match(/respec-w3c-/)) {
     warn(`${specURL} loads respec`);
   }
-  var dom = new JSDOM(contents);
-  var document = dom.window.document;
+  const dom = new JSDOM(contents);
+  const document = dom.window.document;
 
   if (document.querySelector('script[src*="respec"]') ||
       document.querySelector('meta[content*="ReSpec"]')) {
@@ -203,6 +203,9 @@ const processSpecURL = (specURL, specJSONfile, seconds) => {
     }
     allURLs.push(requestURL+ '#' + id);
     note(requestURL+ '#' + id);
+    if (process.memoryUsage().heapUsed > 4000000000) { // memory use > 200MB
+      global.gc();
+    }
   }
 
   if (requestURL.startsWith('https://tc39.es/')) {
@@ -213,8 +216,13 @@ const processSpecURL = (specURL, specJSONfile, seconds) => {
     const name = allNameElements[i].getAttribute('name');
     allURLs.push(requestURL + '#' + name);
     note(requestURL + '#' + name);
+    if (process.memoryUsage().heapUsed > 4000000000) { // memory use > 200MB
+      global.gc();
+    }
   }
 
+  dom.window.close();
+  global.gc();
 };
 
 const processSVG2files = baseURL => {

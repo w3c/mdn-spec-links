@@ -69,7 +69,7 @@ report-only:
 	@! $(EGREP) "bad caniuse spec URL" LOG 2>/dev/null || true
 
 URLS-LOG: yarn.lock
-	$(NODE) --max-old-space-size=16384 .spec-urls-make.js 2>&1 \
+	$(NODE) --expose-gc --max-old-space-size=7168 .spec-urls-make.js 2>&1 \
 	  | tee URLS-LOG
 
 index.html: README.md
