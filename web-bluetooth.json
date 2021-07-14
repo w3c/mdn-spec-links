@@ -4253,17 +4253,19 @@
     ],
     "dom-bluetoothremotegattservice-device": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/BluetoothRemoteGATTService.json",
             "name": "device",
             "slug": "API/BluetoothRemoteGATTService/device",
             "summary": "The BluetoothGATTService.device read-only property returns information about a Bluetooth device through an instance of BluetoothDevice.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -4277,27 +4279,9 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
+                "opera": {
+                    "version_added": "43"
+                },
                 "opera_android": {
                     "version_added": "43"
                 },
@@ -4314,7 +4298,7 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "BluetoothRemoteGATTService.device"
@@ -4330,27 +4314,9 @@
             "slug": "API/BluetoothRemoteGATTService/getCharacteristic",
             "summary": "The BluetoothGATTService.getCharacteristic() method returns a Promise to an instance of BluetoothRemoteGATTCharacteristic for a given universally unique identifier (UUID).",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "56"
+                },
                 "chrome_android": {
                     "version_added": "56"
                 },
@@ -4366,27 +4332,9 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
+                "opera": {
+                    "version_added": "43"
+                },
                 "opera_android": {
                     "version_added": "43"
                 },
@@ -4402,44 +4350,28 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "BluetoothRemoteGATTService.getCharacteristic()"
         }
     ],
     "dom-bluetoothremotegattservice-getcharacteristics": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/BluetoothRemoteGATTService.json",
             "name": "getCharacteristics",
             "slug": "API/BluetoothRemoteGATTService/getCharacteristics",
             "summary": "The BluetoothGATTService.getCharacteristics() method returns a Promise to a list of BluetoothRemoteGATTCharacteristic instances for a given universally unique identifier (UUID).",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -4454,10 +4386,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "43"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "43"
                 },
                 "safari": {
                     "version_added": false
@@ -4466,13 +4398,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "BluetoothRemoteGATTService.getCharacteristics()"
@@ -4480,17 +4412,19 @@
     ],
     "dom-bluetoothremotegattservice-isprimary": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "filename": "api/BluetoothRemoteGATTService.json",
             "name": "isPrimary",
             "slug": "API/BluetoothRemoteGATTService/isPrimary",
             "summary": "The BluetoothGATTService.isPrimary read-only property returns a Boolean that indicates whether this is a primary service. If it is not a primary service, it is a secondary service.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -4505,10 +4439,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "43"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "43"
                 },
                 "safari": {
                     "version_added": false
@@ -4517,13 +4451,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "6.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "BluetoothRemoteGATTService.isPrimary"
@@ -4539,27 +4473,9 @@
             "slug": "API/BluetoothRemoteGATTService/uuid",
             "summary": "The BluetoothGATTService.uuid read-only property returns a DOMString representing the UUID of this service.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "56"
+                },
                 "chrome_android": {
                     "version_added": "56"
                 },
@@ -4575,27 +4491,9 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
+                "opera": {
+                    "version_added": "43"
+                },
                 "opera_android": {
                     "version_added": "43"
                 },
@@ -4611,27 +4509,9 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "BluetoothRemoteGATTService.uuid"
         }
@@ -4639,6 +4519,9 @@
     "bluetoothgattservice-interface": [
         {
             "engines": [
+                "blink"
+            ],
+            "needsflag": [
                 "blink"
             ],
             "filename": "api/BluetoothRemoteGATTService.json",
@@ -4649,11 +4532,12 @@
                 "chrome": [
                     {
                         "version_added": "56",
-                        "notes": "macOS only."
+                        "partial_implementation": true,
+                        "notes": "Before Chrome 70, this feature was only supported in macOS.  In Chrome 70, support was added for Windows 10. Linux support is not enabled by default."
                     },
                     {
                         "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -4661,10 +4545,6 @@
                                 "value_to_set": "enabled"
                             }
                         ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
                     }
                 ],
                 "chrome_android": {
@@ -4685,11 +4565,12 @@
                 "opera": [
                     {
                         "version_added": "43",
-                        "notes": "macOS only."
+                        "partial_implementation": true,
+                        "notes": "Before Opera 57, this feature was only supported in macOS.  In Opera 57, support was added for Windows 10. Linux support is not enabled by default."
                     },
                     {
                         "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -4697,10 +4578,6 @@
                                 "value_to_set": "enabled"
                             }
                         ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
                     }
                 ],
                 "opera_android": {
@@ -4721,11 +4598,12 @@
                 "edge_blink": [
                     {
                         "version_added": "79",
-                        "notes": "macOS only."
+                        "partial_implementation": true,
+                        "notes": "Before Chrome 70, this feature was only supported in macOS.  In Chrome 70, support was added for Windows 10. Linux support is not enabled by default."
                     },
                     {
                         "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -4733,10 +4611,6 @@
                                 "value_to_set": "enabled"
                             }
                         ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
                     }
                 ]
             },
