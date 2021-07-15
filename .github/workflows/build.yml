@@ -43,8 +43,8 @@ jobs:
             Incorporate new ${{ github.event.client_payload.repository }} changes
 
             Incorporate changes from https://github.com/${{ github.event.client_payload.repository }}/commit/${{ steps.incoming.outputs.sha_short }}
-          committer: Michael[tm] Smith <mike@w3.org>
-          author: Michael[tm] Smith <mike@w3.org>
+          committer: github-actions <github-actions@github.com>
+          author: github-actions <github-actions@github.com>
           assignees: sideshowbarker
           reviewers: sideshowbarker
           branch-suffix: timestamp
