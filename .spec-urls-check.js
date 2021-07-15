@@ -199,8 +199,8 @@ const checkSpecURL = (
   standard,
   deprecated,
 ) => {
-  // FIXME: https://github.com/mdn/browser-compat-data/pull/11520
-  if (spec_url === "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizetostring") {
+  // FIXME:
+  if (spec_url === "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-instrumentkey") {
     return;
   }
   if (
