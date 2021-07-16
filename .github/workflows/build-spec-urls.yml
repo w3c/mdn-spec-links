@@ -43,7 +43,6 @@ jobs:
           author: sideshowbarkerbot <sideshowbarker+sideshowbarkerbot@gmail.com>
           assignees: sideshowbarker
           reviewers: sideshowbarker
-          branch-suffix: timestamp
           delete-branch: true
       - name: Log pull request URL
         if: ${{ steps.build.outputs.conclusion == 'success' }}
