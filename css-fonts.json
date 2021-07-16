@@ -1590,160 +1590,6 @@
             "title": "font-optical-sizing"
         }
     ],
-    "font-size-adjust-prop": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "needsflag": [
-                "blink"
-            ],
-            "filename": "css/properties/font-size-adjust.json",
-            "name": "font-size-adjust",
-            "slug": "CSS/font-size-adjust",
-            "summary": "The font-size-adjust CSS property sets the size of lower-case letters relative to the current font size (which defines the size of upper-case letters).",
-            "support": {
-                "chrome": {
-                    "version_added": "43",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Enable experimental Web Platform features"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "43",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Enable experimental Web Platform features"
-                        }
-                    ]
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "40"
-                    },
-                    {
-                        "version_added": "3",
-                        "notes": "Before Firefox 40, <code>font-size-adjust: 0</code> was incorrectly interpreted as <code>font-size-adjust: none</code> (<a href='https://bugzil.la/1144885'>bug 1144885</a>)."
-                    },
-                    {
-                        "version_added": "1",
-                        "notes": "Before Firefox 3, <code>font-size-adjust</code> was supported on Windows only."
-                    }
-                ],
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "30",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Enable experimental Web Platform features"
-                        }
-                    ]
-                },
-                "opera_android": {
-                    "version_added": "30",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Enable experimental Web Platform features"
-                        }
-                    ]
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "Enable experimental Web Platform features"
-                        }
-                    ]
-                }
-            },
-            "caniuse": {
-                "feature": "font-size-adjust",
-                "title": "CSS font-size-adjust"
-            },
-            "title": "font-size-adjust"
-        },
-        {
-            "engines": [],
-            "filename": "svg/attributes/presentation.json",
-            "name": "font-size-adjust",
-            "slug": "SVG/Attribute/font-size-adjust",
-            "summary": "The font-size-adjust attribute allows authors to specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.",
-            "support": {
-                "chrome": {
-                    "version_added": null
-                },
-                "chrome_android": {
-                    "version_added": null
-                },
-                "edge": {
-                    "version_added": null
-                },
-                "firefox": {
-                    "version_added": null
-                },
-                "firefox_android": {
-                    "version_added": null
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": null
-                },
-                "webview_android": {
-                    "version_added": null
-                },
-                "edge_blink": {
-                    "version_added": null
-                }
-            },
-            "caniuse": {
-                "feature": "font-size-adjust",
-                "title": "CSS font-size-adjust"
-            },
-            "title": "font-size-adjust"
-        }
-    ],
     "font-size-prop": [
         {
             "engines": [
@@ -2600,6 +2446,61 @@
                 }
             },
             "title": "font"
+        }
+    ],
+    "font-size-adjust-prop": [
+        {
+            "engines": [],
+            "filename": "svg/attributes/presentation.json",
+            "name": "font-size-adjust",
+            "slug": "SVG/Attribute/font-size-adjust",
+            "summary": "The font-size-adjust attribute allows authors to specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": null
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": null
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "caniuse": {
+                "feature": "font-size-adjust",
+                "title": "CSS font-size-adjust"
+            },
+            "title": "font-size-adjust"
         }
     ]
 }
