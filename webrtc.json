@@ -5972,7 +5972,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "connectionState",
             "slug": "API/RTCPeerConnection/connectionState",
-            "summary": "The read-only connectionState property of the RTCPeerConnection interface indicates the current state of the peer connection by returning one of the string values specified by the enum RTCPeerConnectionState.",
+            "summary": "The read-only connectionState property of the RTCPeerConnection interface indicates the current state of the peer connection by returning one of the following string values: new, connecting, connected, disconnected, failed, or closed.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -6026,7 +6026,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "connectionstatechange_event",
             "slug": "API/RTCPeerConnection/connectionstatechange_event",
-            "summary": "The connectionstatechange event is sent to the onconnectionstatechange event handler on an RTCPeerConnection object after a new track has been added to an RTCRtpReceiver which is part of the connection. The new connection state can be found in connectionState, and is one of the strings in the RTCPeerConnectionState enumerated type.",
+            "summary": "The connectionstatechange event is sent to the onconnectionstatechange event handler on an RTCPeerConnection object after a new track has been added to an RTCRtpReceiver which is part of the connection. The new connection state can be found in connectionState, and is one of the string values: new, connecting, connected, disconnected, failed, or closed.",
             "support": {
                 "chrome": {
                     "version_added": "72"
