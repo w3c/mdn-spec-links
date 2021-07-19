@@ -5652,7 +5652,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "addIceCandidate",
             "slug": "API/RTCPeerConnection/addIceCandidate",
-            "summary": "When a web site or app using RTCPeerConnection receives a new ICE candidate from the remote peer over its signaling channel, it delivers the newly-received candidate to the browser's ICE agent by calling RTCPeerConnection.addIceCandidate().",
+            "summary": ">When a web site or app using RTCPeerConnection receives a new ICE candidate from the remote peer over its signaling channel, it delivers the newly-received candidate to the browser's ICE agent by calling RTCPeerConnection.addIceCandidate(). This adds this new remote candidate to the RTCPeerConnection's remote description, which describes the state of the remote end of the connection.",
             "support": {
                 "chrome": [
                     {
@@ -5755,7 +5755,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "addTrack",
             "slug": "API/RTCPeerConnection/addTrack",
-            "summary": "The RTCPeerConnection method addTrack() adds a new media track to the set of tracks which will be transmitted to the other peer.",
+            "summary": "The RTCPeerConnection method addTrack() adds a new media track to the set of tracks which will be transmitted to the other peer.>",
             "support": {
                 "chrome": {
                     "version_added": "64"
@@ -5810,7 +5810,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "addTransceiver",
             "slug": "API/RTCPeerConnection/addTransceiver",
-            "summary": "The RTCPeerConnection method addTransceiver() creates a new RTCRtpTransceiver and adds it to the set of transceivers associated with the RTCPeerConnection.",
+            "summary": "The RTCPeerConnection method addTransceiver() creates a new RTCRtpTransceiver and adds it to the set of transceivers associated with the RTCPeerConnection. Each transceiver represents a bidirectional stream, with both an RTCRtpSender and an RTCRtpReceiver associated with it.",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -6026,7 +6026,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "connectionstatechange_event",
             "slug": "API/RTCPeerConnection/connectionstatechange_event",
-            "summary": "The connectionstatechange event is sent to the onconnectionstatechange event handler on an RTCPeerConnection object after a new track has been added to an RTCRtpReceiver which is part of the connection.",
+            "summary": "The connectionstatechange event is sent to the onconnectionstatechange event handler on an RTCPeerConnection object after a new track has been added to an RTCRtpReceiver which is part of the connection. The new connection state can be found in connectionState, and is one of the strings in the RTCPeerConnectionState enumerated type.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -6182,7 +6182,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "createDataChannel",
             "slug": "API/RTCPeerConnection/createDataChannel",
-            "summary": "The createDataChannel() method on the RTCPeerConnection interface creates a new channel linked with the remote peer, over which any kind of data may be transmitted.",
+            "summary": "The createDataChannel() method on the RTCPeerConnection interface creates a new channel linked with the remote peer, over which any kind of data may be transmitted. This can be useful for back-channel content, such as images, file transfer, text chat, game update packets, and so forth.",
             "support": {
                 "chrome": {
                     "version_added": "25"
@@ -6251,7 +6251,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "createOffer",
             "slug": "API/RTCPeerConnection/createOffer",
-            "summary": "The createOffer() method of the RTCPeerConnection interface initiates the creation of an SDP offer for the purpose of starting a new WebRTC connection to a remote peer.",
+            "summary": "The createOffer() method of the RTCPeerConnection interface initiates the creation of an SDP offer for the purpose of starting a new WebRTC connection to a remote peer. The SDP offer includes information about any MediaStreamTrack objects already attached to the WebRTC session, codec, and options supported by the browser, and any candidates already gathered by the ICE agent, for the purpose of being sent over the signaling channel to a potential peer to request a connection or to update the configuration of an existing connection.",
             "support": {
                 "chrome": [
                     {
@@ -6724,7 +6724,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "getSenders",
             "slug": "API/RTCPeerConnection/getSenders",
-            "summary": "The RTCPeerConnection method getSenders() returns an array of RTCRtpSender objects, each of which represents the RTP sender responsible for transmitting one track's data.",
+            "summary": "The RTCPeerConnection method getSenders() returns an array of RTCRtpSender objects, each of which represents the RTP sender responsible for transmitting one track's data. A sender object provides methods and properties for examining and controlling the encoding and transmission of the track's data.",
             "support": {
                 "chrome": {
                     "version_added": "64"
@@ -7243,7 +7243,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "icegatheringstatechange_event",
             "slug": "API/RTCPeerConnection/icegatheringstatechange_event",
-            "summary": "The icegatheringstatechange event is sent to the onicegatheringstatechange event handler on an RTCPeerConnection when the state of the ICE candidate gathering process changes.",
+            "summary": "The icegatheringstatechange event is sent to the onicegatheringstatechange event handler on an RTCPeerConnection when the state of the ICE candidate gathering process changes. This signifies that the value of the connection's iceGatheringState property has changed.",
             "support": {
                 "chrome": {
                     "version_added": "59"
@@ -7367,7 +7367,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "negotiationneeded_event",
             "slug": "API/RTCPeerConnection/negotiationneeded_event",
-            "summary": "A negotiationneeded event is sent to the RTCPeerConnection when negotiation of the connection through the signaling channel is required.",
+            "summary": "A negotiationneeded event is sent to the RTCPeerConnection when negotiation of the connection through the signaling channel is required. This occurs both during the initial setup of the connection as well as any time a change to the communication environment requires reconfiguring the connection.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -7421,7 +7421,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "onconnectionstatechange",
             "slug": "API/RTCPeerConnection/onconnectionstatechange",
-            "summary": "The RTCPeerConnection.onconnectionstatechange property specifies an event handler which is called to handle the connectionstatechange event when it occurs on an instance of RTCPeerConnection. This happens whenever the aggregate state of the connection changes.",
+            "summary": "The RTCPeerConnection.onconnectionstatechange property specifies an event handler which is called to handle the connectionstatechange event when it occurs on an instance of RTCPeerConnection. This happens whenever the aggregate state of the connection changes. The aggregate state is a combination of the states of all of the individual network transports being used by the connection.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -7545,7 +7545,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "onicecandidate",
             "slug": "API/RTCPeerConnection/onicecandidate",
-            "summary": "The RTCPeerConnection property onicecandidate property is an event handler which specifies a function to be called when the icecandidate event occurs on an RTCPeerConnection instance. This happens whenever the local ICE agent needs to deliver a message to the other peer through the signaling server.",
+            "summary": "The RTCPeerConnection property onicecandidate property is an event handler which specifies a function to be called when the icecandidate event occurs on an RTCPeerConnection instance. This happens whenever the local ICE agent needs to deliver a message to the other peer through the signaling server.This lets the ICE agent perform negotiation with the remote peer without the browser itself needing to know any specifics about the technology being used for signaling; implement this method to use whatever messaging technology you choose to send the ICE candidate to the remote peer.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -7875,7 +7875,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "onsignalingstatechange",
             "slug": "API/RTCPeerConnection/onsignalingstatechange",
-            "summary": "The onsignalingstatechange event handler property of the RTCPeerConnection interface specifies a function to be called when the signalingstatechange event occurs on an RTCPeerConnection interface.",
+            "summary": "The onsignalingstatechange event handler property of the RTCPeerConnection interface specifies a function to be called when the signalingstatechange event occurs on an RTCPeerConnection interface. The function receives as input the event object of type Event; this event is sent when the peer connection's signalingState changes, which may happen either because of a call to setLocalDescription() or to setRemoteDescription().",
             "support": {
                 "chrome": {
                     "version_added": "28"
@@ -7944,7 +7944,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "ontrack",
             "slug": "API/RTCPeerConnection/ontrack",
-            "summary": "The RTCPeerConnection property ontrack is an event handler which specifies a function to be called when the track event occurs, indicating that a track has been added to the RTCPeerConnection.",
+            "summary": "The RTCPeerConnection property ontrack is an event handler which specifies a function to be called when the track event occurs, indicating that a track has been added to the RTCPeerConnection. The function receives as input the event object, of type RTCTrackEvent; this event is sent when a new incoming MediaStreamTrack has been created and associated with an RTCRtpReceiver object which has been added to the set of receivers on connection.",
             "support": {
                 "chrome": {
                     "version_added": "64"
@@ -8222,7 +8222,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "removeTrack",
             "slug": "API/RTCPeerConnection/removeTrack",
-            "summary": "The RTCPeerConnection.removeTrack() method tells the local end of the connection to stop sending media from the specified track, without actually removing the corresponding RTCRtpSender from the list of senders as reported by RTCPeerConnection.getSenders().",
+            "summary": "The RTCPeerConnection.removeTrack() method tells the local end of the connection to stop sending media from the specified track, without actually removing the corresponding RTCRtpSender from the list of senders as reported by RTCPeerConnection.getSenders(). If the track is already stopped, or is not in the connection's senders list, this method has no effect.",
             "support": {
                 "chrome": {
                     "version_added": "64"
@@ -8277,7 +8277,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "restartIce",
             "slug": "API/RTCPeerConnection/restartIce",
-            "summary": "The WebRTC API's RTCPeerConnection interface offers the restartIce() method to allow a web application to easily request that ICE candidate gathering be redone on both ends of the connection.",
+            "summary": "The WebRTC API's RTCPeerConnection interface offers the restartIce() method to allow a web application to easily request that ICE candidate gathering be redone on both ends of the connection. This simplifies the process by allowing the same method to be used by either the caller or the receiver to trigger an ICE restart.",
             "support": {
                 "chrome": {
                     "version_added": "77"
@@ -8457,7 +8457,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "setLocalDescription",
             "slug": "API/RTCPeerConnection/setLocalDescription",
-            "summary": "The RTCPeerConnection method setLocalDescription() changes the local description associated with the connection. This description specifies the properties of the local end of the connection, including the media format.",
+            "summary": "The RTCPeerConnection method setLocalDescription() changes the local description associated with the connection. This description specifies the properties of the local end of the connection, including the media format. The method takes a single parameter—the session description—and it returns a Promise which is fulfilled once the description has been changed, asynchronously.",
             "support": {
                 "chrome": [
                     {
@@ -8559,7 +8559,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "setRemoteDescription",
             "slug": "API/RTCPeerConnection/setRemoteDescription",
-            "summary": "The RTCPeerConnection method setRemoteDescription() sets the specified session description as the remote peer's current offer or answer. The description specifies the properties of the remote end of the connection, including the media format.",
+            "summary": "The RTCPeerConnection method setRemoteDescription() sets the specified session description as the remote peer's current offer or answer. The description specifies the properties of the remote end of the connection, including the media format. The method takes a single parameter—the session description—and it returns a Promise which is fulfilled once the description has been changed, asynchronously.",
             "support": {
                 "chrome": [
                     {

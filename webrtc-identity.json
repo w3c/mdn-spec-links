@@ -132,7 +132,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "peerIdentity",
             "slug": "API/RTCPeerConnection/peerIdentity",
-            "summary": "The read-only RTCPeerConnection property peerIdentity returns a JavaScript Promise that resolves to an RTCIdentityAssertion which contains a DOMString identifying the remote peer.",
+            "summary": "The read-only RTCPeerConnection property peerIdentity returns a JavaScript Promise that resolves to an RTCIdentityAssertion which contains a DOMString identifying the remote peer. Once this promise resolves successfully, the resulting identity is the target peer identity and cannot change for the duration of the connection.",
             "support": {
                 "chrome": {
                     "version_added": false
