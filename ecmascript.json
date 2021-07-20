@@ -2993,7 +2993,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "add",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/add",
-            "summary": "The static Atomics.add() method adds a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
+            "summary": "The static Atomics**.add()** method adds a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
                 "chrome": [
                     {
@@ -3127,7 +3127,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "and",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/and",
-            "summary": "The static Atomics.and() method computes a bitwise AND with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
+            "summary": "The static Atomics**.and()** method computes a bitwise AND with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
                 "chrome": [
                     {
@@ -3261,7 +3261,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "compareExchange",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/compareExchange",
-            "summary": "The static Atomics.compareExchange() method exchanges a given replacement value at a given position in the array, if a given expected value equals the old value. It returns the old value at that position whether it was equal to the expected value or not. This atomic operation guarantees that no other write happens until the modified value is written back.",
+            "summary": "The static Atomics**.compareExchange()** method exchanges a given replacement value at a given position in the array, if a given expected value equals the old value. It returns the old value at that position whether it was equal to the expected value or not. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
                 "chrome": [
                     {
@@ -3529,7 +3529,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "isLockFree",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/isLockFree",
-            "summary": "The static Atomics.isLockFree() method is used to determine whether the Atomics methods use locks or atomic hardware operations when applied to typed arrays with the given element byte size. It returns false if the given size is not one of the BYTES_PER_ELEMENT property of integer TypedArray types.",
+            "summary": "The static Atomics**.isLockFree()** method is used to determine whether the Atomics methods use locks or atomic hardware operations when applied to typed arrays with the given element byte size. It returns false if the given size is not one of the BYTES_PER_ELEMENT property of integer TypedArray types.",
             "support": {
                 "chrome": [
                     {
@@ -3663,7 +3663,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "load",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/load",
-            "summary": "The static Atomics.load() method returns a value at a given position in the array.",
+            "summary": "The static Atomics**.load()** method returns a value at a given position in the array.",
             "support": {
                 "chrome": [
                     {
@@ -3797,7 +3797,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "notify",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/notify",
-            "summary": "The static Atomics.notify() method notifies up some agents that are sleeping in the wait queue.",
+            "summary": "The static Atomics**.notify()** method notifies up some agents that are sleeping in the wait queue.",
             "support": {
                 "chrome": [
                     {
@@ -3988,7 +3988,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "or",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/or",
-            "summary": "The static Atomics.or() method computes a bitwise OR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
+            "summary": "The static Atomics**.or()** method computes a bitwise OR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
                 "chrome": [
                     {
@@ -4122,7 +4122,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "store",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/store",
-            "summary": "The static Atomics.store() method stores a given value at the given position in the array and returns that value.",
+            "summary": "The static Atomics**.store()** method stores a given value at the given position in the array and returns that value.",
             "support": {
                 "chrome": [
                     {
@@ -4390,7 +4390,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "wait",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/wait",
-            "summary": "The static Atomics.wait() method verifies that a given position in an Int32Array still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either \"ok\", \"not-equal\", or \"timed-out\".",
+            "summary": "The static Atomics**.wait()** method verifies that a given position in an Int32Array still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either \"ok\", \"not-equal\", or \"timed-out\".",
             "support": {
                 "chrome": [
                     {
@@ -4550,7 +4550,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "xor",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/xor",
-            "summary": "The static Atomics.xor() method computes a bitwise XOR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
+            "summary": "The static Atomics**.xor()** method computes a bitwise XOR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
                 "chrome": [
                     {
@@ -21537,7 +21537,7 @@
             "filename": "javascript/builtins/Reflect.json",
             "name": "deleteProperty",
             "slug": "JavaScript/Reference/Global_Objects/Reflect/deleteProperty",
-            "summary": "The static Reflect.deleteProperty() method allows to delete properties. It is like the delete operator as a function.",
+            "summary": "The static Reflect**.deleteProperty()** method allows to delete properties. It is like the delete operator as a function.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -26276,7 +26276,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "split",
             "slug": "JavaScript/Reference/Global_Objects/String/split",
-            "summary": "The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call. ",
+            "summary": "The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33413,7 +33413,7 @@
             "filename": "javascript/operators/class.json",
             "name": "class",
             "slug": "JavaScript/Reference/Operators/class",
-            "summary": "The class expression is one way to define a class in ECMAScript 2015. Similar to function expressions, class expressions can be named or unnamed. If named, the name of the class is local to the class body only. ",
+            "summary": "The class expression is one way to define a class in ECMAScript 2015. Similar to function expressions, class expressions can be named or unnamed. If named, the name of the class is local to the class body only.",
             "support": {
                 "chrome": {
                     "version_added": "42"
@@ -35599,7 +35599,7 @@
             "filename": "javascript/grammar.json",
             "name": "template_literals",
             "slug": "JavaScript/Reference/Template_literals",
-            "summary": "Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them. ",
+            "summary": "Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.",
             "support": {
                 "chrome": {
                     "version_added": "41"
