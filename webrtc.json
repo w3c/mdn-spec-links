@@ -7050,7 +7050,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "iceConnectionState",
             "slug": "API/RTCPeerConnection/iceConnectionState",
-            "summary": "The read-only property RTCPeerConnection.iceConnectionState returns an enum of type RTCIceConnectionState which state of the ICE agent associated with the RTCPeerConnection.",
+            "summary": "The read-only property RTCPeerConnection.iceConnectionState returns a string which state of the ICE agent associated with the RTCPeerConnection: new, checking, connected, completed, failed, disconnected, and closed.",
             "support": {
                 "chrome": {
                     "version_added": "26"
@@ -7119,7 +7119,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "iceconnectionstatechange_event",
             "slug": "API/RTCPeerConnection/iceconnectionstatechange_event",
-            "summary": "An iceconnectionstatechange event is sent to an RTCPeerConnection object each time the ICE connection state changes during the negotiation process.",
+            "summary": "An iceconnectionstatechange event is sent to an RTCPeerConnection object each time the ICE connection state changes during the negotiation process. The new ICE connection state is available in the object's iceConnectionState property.",
             "support": {
                 "chrome": {
                     "version_added": "28"
