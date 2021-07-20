@@ -211,59 +211,6 @@
             "title": "XRBoundedReferenceSpace"
         }
     ],
-    "view-eye": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XREye.json",
-            "name": "XREye",
-            "slug": "API/XREye",
-            "summary": "The XREye enumerated type is used to identify which eye a particular XRView represents: left or right; or, if the view doesn't represent a single eye, the value may be none.",
-            "support": {
-                "chrome": {
-                    "version_added": "79"
-                },
-                "chrome_android": {
-                    "version_added": "79"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
-                "webview_android": {
-                    "version_added": "79"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XREye"
-        }
-    ],
     "dom-xrframe-getpose": [
         {
             "engines": [
@@ -474,59 +421,6 @@
                 }
             },
             "title": "XRFrame"
-        }
-    ],
-    "animation-frames": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRFrameRequestCallback.json",
-            "name": "XRFrameRequestCallback",
-            "slug": "API/XRFrameRequestCallback",
-            "summary": "The XRFrameRequestCallback is a callback function passed into XRSession.requestAnimationFrame (part of WebXR API) to obtain the current time and the current XRFrame.",
-            "support": {
-                "chrome": {
-                    "version_added": "79"
-                },
-                "chrome_android": {
-                    "version_added": "79"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XRFrameRequestCallback"
         }
     ],
     "dom-xrinputsource-gripspace": [
@@ -4823,7 +4717,7 @@
             "filename": "api/XRView.json",
             "name": "eye",
             "slug": "API/XRView/eye",
-            "summary": "The XRView interface's read-only eye property is a string taken from the XREye enumerated type, indicating which eye's viewpoint the XRView represents: left or right. For views which represent neither eye, such as monoscopic views, this property's value is none.",
+            "summary": "The XRView interface's read-only eye property is a string indicating which eye's viewpoint the XRView represents: left or right. For views which represent neither eye, such as monoscopic views, this property's value is none.",
             "support": {
                 "chrome": {
                     "version_added": "79"
