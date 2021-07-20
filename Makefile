@@ -35,26 +35,23 @@ BCD-LOG: yarn.lock browser-compat-data
 	  | tee $@
 
 report-BCD: BCD-LOG
-	@# errors
 	@! $(EGREP) "bad fragment" BCD-LOG
-	@# warnings
-	@@! $(EGREP) "needs spec URL" BCD-LOG || true
+	@! $(EGREP) "needs spec URL" BCD-LOG
 
 LOG: report-BCD yari.PID
 	$(NODE) .browser-compat-data-process.js 2>&1 \
 	  | tee $@
 
 report: LOG
-	@# errors
+	@# BCD-LOG errors
 	@! $(EGREP) "bad fragment" BCD-LOG
-	@# warnings
-	@! $(EGREP) "needs spec URL" BCD-LOG || true
-	@# errors
+	@! $(EGREP) "needs spec URL" BCD-LOG
+	@# LOG errors
 	@! $(EGREP) "error for" LOG
 	@! $(EGREP) "broken spec URL" LOG
 	@! $(EGREP) "has bad spec URL" LOG
 	@! $(EGREP) "unexpected status code" LOG
-	@# warnings
+	@# LOG warnings
 	@! $(EGREP) "odd MDN URL" LOG || true
 	@! $(EGREP) "bad caniuse spec URL" LOG || true
 

@@ -32,7 +32,9 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/controller",
     "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/mediaGroup",
     "https://developer.mozilla.org/docs/Web/API/MouseEvent/region",
-    // iterables
+    // FIXME: for this one we really do need a spec URL
+    "https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite",
+    // iterables; we explicitly don’t want spec URLs for these
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/entries",
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/forEach",
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/keys",
@@ -78,7 +80,6 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/forEach",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/keys",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values",
-    "https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite",
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/entries",
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/forEach",
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/keys",
@@ -124,7 +125,6 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/forEach",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/keys",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values",
-    "https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite",
   ]
   if (exceptions.includes(mdnURL)) {
     return false;
