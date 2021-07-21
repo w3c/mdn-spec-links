@@ -5777,7 +5777,7 @@
             "filename": "api/XRWebGLLayerInit.json",
             "name": "alpha",
             "slug": "API/XRWebGLLayerInit/alpha",
-            "summary": "The alpha property is a Boolean value which, if present and set to true in the XRWebGLLayerInit dictionary passed into the XRWebGLLayer() constructor, specifies that the new layer's color buffer is to include an alpha channel.",
+            "summary": "The WebXR Device API XRWebGLLayer() constructor creates and returns a new XRWebGLLayer object, providing the linkage between the WebXR device and the WebGL graphics layer used to render the 3D scene.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -5819,7 +5819,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRWebGLLayerInit.alpha"
+            "title": "XRWebGLLayer()"
         }
     ],
     "dom-xrwebgllayerinit-antialias": [
@@ -5830,7 +5830,7 @@
             "filename": "api/XRWebGLLayerInit.json",
             "name": "antialias",
             "slug": "API/XRWebGLLayerInit/antialias",
-            "summary": "The Boolean antialias property, if present and set to true in the XRWebGLLayerInit object provided as the XRWebGLLayer() constructor's layerInit parameter, requests that the new WebGL rendering layer support anti-aliasing. If this property is missing or is false, anti-aliasing is not desired.",
+            "summary": "The WebXR Device API XRWebGLLayer() constructor creates and returns a new XRWebGLLayer object, providing the linkage between the WebXR device and the WebGL graphics layer used to render the 3D scene.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -5872,7 +5872,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRWebGLLayerInit.antialias"
+            "title": "XRWebGLLayer()"
         }
     ],
     "dom-xrwebgllayerinit-depth": [
@@ -5883,7 +5883,7 @@
             "filename": "api/XRWebGLLayerInit.json",
             "name": "depth",
             "slug": "API/XRWebGLLayerInit/depth",
-            "summary": "When using the XRWebGLLayer() constructor to create a new WebGL rendering layer for WebXR, providing as the layerInit parameter an object whose depth property is false will request that the new layer be created without a depth buffer.",
+            "summary": "The WebXR Device API XRWebGLLayer() constructor creates and returns a new XRWebGLLayer object, providing the linkage between the WebXR device and the WebGL graphics layer used to render the 3D scene.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -5925,7 +5925,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRWebGLLayerInit.depth"
+            "title": "XRWebGLLayer()"
         }
     ],
     "dom-xrwebgllayerinit-framebufferscalefactor": [
@@ -5936,7 +5936,7 @@
             "filename": "api/XRWebGLLayerInit.json",
             "name": "framebufferScaleFactor",
             "slug": "API/XRWebGLLayerInit/framebufferScaleFactor",
-            "summary": "The XRWebGLLayerInit dictionary's framebufferScaleFactor property, when specified upon instantiating a new XRWebGLLayer using its constructor, XRWebGLLayer(), specifies the scaling factor to use when determining the size of the frame buffer to use when rendering the scene, relative to the default XR device display resolution.",
+            "summary": "The WebXR Device API XRWebGLLayer() constructor creates and returns a new XRWebGLLayer object, providing the linkage between the WebXR device and the WebGL graphics layer used to render the 3D scene.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -5978,7 +5978,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRWebGLLayerInit.framebufferScaleFactor"
+            "title": "XRWebGLLayer()"
         }
     ],
     "dom-xrwebgllayerinit-ignoredepthvalues": [
@@ -5989,7 +5989,7 @@
             "filename": "api/XRWebGLLayerInit.json",
             "name": "ignoreDepthValues",
             "slug": "API/XRWebGLLayerInit/ignoreDepthValues",
-            "summary": "The XRWebGLLayerInit dictionary's Boolean ignoreDepthValues property can be provided in the options passed into the XRWebGLLayer() constructor to indicate that the depth buffer, if it exists, should be ignored while composing the scene.",
+            "summary": "The WebXR Device API XRWebGLLayer() constructor creates and returns a new XRWebGLLayer object, providing the linkage between the WebXR device and the WebGL graphics layer used to render the 3D scene.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -6031,7 +6031,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRWebGLLayerInit.ignoreDepthValues"
+            "title": "XRWebGLLayer()"
         }
     ],
     "dom-xrwebgllayerinit-stencil": [
@@ -6042,7 +6042,7 @@
             "filename": "api/XRWebGLLayerInit.json",
             "name": "stencil",
             "slug": "API/XRWebGLLayerInit/stencil",
-            "summary": "When using the XRWebGLLayer() constructor to create a new WebGL rendering layer for WebXR, providing as the layerInit parameter an object whose stencil property is false requests that the new layer be created without a stencil buffer.",
+            "summary": "The WebXR Device API XRWebGLLayer() constructor creates and returns a new XRWebGLLayer object, providing the linkage between the WebXR device and the WebGL graphics layer used to render the 3D scene.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -6084,7 +6084,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRWebGLLayerInit.stencil"
+            "title": "XRWebGLLayer()"
         }
     ],
     "dictdef-xrwebgllayerinit": [
@@ -6095,7 +6095,7 @@
             "filename": "api/XRWebGLLayerInit.json",
             "name": "XRWebGLLayerInit",
             "slug": "API/XRWebGLLayerInit",
-            "summary": "The WebXR Device API's XRWebGLLayerInit dictionary is used to provide configuration options when creating a new XRWebGLLayer object with the XRWebGLLayer() constructor.",
+            "summary": "The WebXR Device API XRWebGLLayer() constructor creates and returns a new XRWebGLLayer object, providing the linkage between the WebXR device and the WebGL graphics layer used to render the 3D scene.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -6137,7 +6137,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRWebGLLayerInit"
+            "title": "XRWebGLLayer()"
         }
     ],
     "permissions-policy": [
