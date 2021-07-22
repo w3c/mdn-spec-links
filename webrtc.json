@@ -943,7 +943,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "bufferedamountlow_event",
             "slug": "API/RTCDataChannel/bufferedamountlow_event",
-            "summary": "A bufferedamountlow event is sent to an RTCDataChannel when the number of bytes currently in the outbound data transfer buffer falls below the threshold specified in bufferedAmountLowThreshold.",
+            "summary": "A bufferedamountlow event is sent to an RTCDataChannel when the number of bytes currently in the outbound data transfer buffer falls below the threshold specified in bufferedAmountLowThreshold. bufferedamountlow events aren't sent if bufferedAmountLowThreshold is 0.",
             "support": {
                 "chrome": {
                     "version_added": "57",
@@ -1721,7 +1721,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "onerror",
             "slug": "API/RTCDataChannel/onerror",
-            "summary": "The RTCDataChannel.onerror property is an event handler which specifies a function to be called when the error event is received. When an error occurs on the data channel, the function receives as input an ErrorEvent object describing the error which occurred.",
+            "summary": "The RTCDataChannel.onerror property is an event handler which specifies a function to be called when the error event is received. When an error occurs on the data channel, the function receives as input an RTCErrorEvent object describing the error which occurred.",
             "support": {
                 "chrome": {
                     "version_added": "56"
