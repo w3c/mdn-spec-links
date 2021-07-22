@@ -833,7 +833,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "binaryType",
             "slug": "API/RTCDataChannel/binaryType",
-            "summary": "The property binaryType on the RTCDataChannel interface is a DOMString which specifies the type of JavaScript object which should be used to represent binary data received on the RTCDataChannel. Values allowed by the WebSocket.binaryType property are also permitted here: \"blob\" if Blob objects are being used or \"arraybuffer\" if ArrayBuffer objects are being used. The default is \"blob\".",
+            "summary": "The property binaryType on the RTCDataChannel interface is a DOMString which specifies the type of object which should be used to represent binary data received on the RTCDataChannel. Values allowed by the WebSocket.binaryType property are also permitted here: blob if Blob objects are being used or arraybuffer if ArrayBuffer objects are being used. The default is blob.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -888,7 +888,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "bufferedAmount",
             "slug": "API/RTCDataChannel/bufferedAmount",
-            "summary": "The read-only RTCDataChannel property bufferedAmount returns the number of bytes of data currently queued to be sent over the data channel.",
+            "summary": "The read-only RTCDataChannel property bufferedAmount returns the number of bytes of data currently queued to be sent over the data channel. The queue may build up as a result of calls to the send() method. This only includes data buffered by the user agent itself; it doesn't include any framing overhead or buffering done by the operating system or network hardware.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1005,7 +1005,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "bufferedAmountLowThreshold",
             "slug": "API/RTCDataChannel/bufferedAmountLowThreshold",
-            "summary": "The RTCDataChannel property bufferedAmountLowThreshold is used to specify the number of bytes of buffered outgoing data that is considered \"low.\" The default value is 0.",
+            "summary": "The RTCDataChannel property bufferedAmountLowThreshold is used to specify the number of bytes of buffered outgoing data that is considered \"low.\" The default value is 0. hen the number of buffered outgoing bytes, as indicated by the bufferedAmount property, falls to or below this value, a bufferedamountlow event is fired. This event may be used, for example, to implement code which queues more messages to be sent whenever there's room to buffer them. Listeners may be added with onbufferedamountlow or addEventListener().",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1114,7 +1114,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "close_event",
             "slug": "API/RTCDataChannel/close_event",
-            "summary": "The close event is sent to the onclose event handler on an RTCDataChannel instance when the data transport being used for the data channel has closed.",
+            "summary": "The close event is sent to the onclose event handler on an RTCDataChannel instance when the data transport being used for the data channel has closed. Before any further data can be transferred using RTCDataChannel, a new data channel instance must be created.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1222,7 +1222,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "id",
             "slug": "API/RTCDataChannel/id",
-            "summary": "The read-only RTCDataChannel property id returns an ID number (between 0 and 65,534) which uniquely identifies the RTCDataChannel.",
+            "summary": "The read-only RTCDataChannel property id returns an ID number (between 0 and 65,534) which uniquely identifies the RTCDataChannel. This ID is set at the time the data channel is created, either by the user agent (if RTCDataChannel.negotiated is false) or by the site or app script (if negotiated is true).",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1332,7 +1332,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "maxPacketLifeTime",
             "slug": "API/RTCDataChannel/maxPacketLifeTime",
-            "summary": "The read-only RTCDataChannel property maxPacketLifeTime returns the amount of time, in milliseconds, the browser is allowed to take to attempt to transmit a message, as set when the data channel was created, or null.",
+            "summary": "The read-only RTCDataChannel property maxPacketLifeTime returns the amount of time, in milliseconds, the browser is allowed to take to attempt to transmit a message, as set when the data channel was created, or null. This limits how long the browser can continue to attempt to transmit and retransmit the message before giving up.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1387,7 +1387,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "maxRetransmits",
             "slug": "API/RTCDataChannel/maxRetransmits",
-            "summary": "The read-only RTCDataChannel property maxRetransmits returns the maximum number of times the browser should try to retransmit a message before giving up, as set when the data channel was created, or null, which indicates that there is no maximum.",
+            "summary": "The read-only RTCDataChannel property maxRetransmits returns the maximum number of times the browser should try to retransmit a message before giving up, as set when the data channel was created, or null, which indicates that there is no maximum. This can only be set when the RTCDataChannel is created by calling RTCPeerConnection.createDataChannel(), using the maxRetransmits field in the specified options.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1497,7 +1497,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "negotiated",
             "slug": "API/RTCDataChannel/negotiated",
-            "summary": "The read-only RTCDataChannel property negotiated indicates whether the RTCDataChannel's connection was negotiated by the Web app (true) or by the WebRTC layer (false).",
+            "summary": "The read-only RTCDataChannel property negotiated indicates whether the RTCDataChannel's connection was negotiated by the Web app (true) or by the WebRTC layer (false). The default is false.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1941,7 +1941,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "ordered",
             "slug": "API/RTCDataChannel/ordered",
-            "summary": "The read-only RTCDataChannel property ordered indicates whether or not the data channel guarantees in-order delivery of messages; the default is true, which indicates that the data channel is indeed ordered.",
+            "summary": "The read-only RTCDataChannel property ordered indicates whether or not the data channel guarantees in-order delivery of messages; the default is true, which indicates that the data channel is indeed ordered. This is set when the RTCDataChannel is created, by setting the ordered property on the RTCDataChannelInit object passed as RTCPeerConnection.createDataChannel()'s options parameter.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1996,7 +1996,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "protocol",
             "slug": "API/RTCDataChannel/protocol",
-            "summary": "The read-only RTCDataChannel property protocol returns a DOMString containing the name of the subprotocol in use. If no protocol was specified when the data channel was created, then this property's value is \"\" (the empty string).",
+            "summary": "The read-only RTCDataChannel property protocol returns a string containing the name of the subprotocol in use. If no protocol was specified when the data channel was created, then this property's value is the empty string (\"\").",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -2106,7 +2106,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "send",
             "slug": "API/RTCDataChannel/send",
-            "summary": "The send() method of the RTCDataChannel interface sends data across the data channel to the remote peer.",
+            "summary": "The send() method of the RTCDataChannel interface sends data across the data channel to the remote peer. This can be done any time except during the initial process of creating the underlying transport channel. Data sent before connecting is buffered if possible (or an error occurs if it's not possible), and is also buffered if sent while the connection is closing or closed.",
             "support": {
                 "chrome": {
                     "version_added": "56"
