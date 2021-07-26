@@ -264,6 +264,112 @@
             "title": "MIDIAccess"
         }
     ],
+    "dom-midiconnectionevent-constructor": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIConnectionEvent.json",
+            "name": "MIDIConnectionEvent",
+            "slug": "API/MIDIConnectionEvent/MIDIConnectionEvent",
+            "summary": "The MIDIConnectionEvent() constructor creates a new MIDIConnectionEvent object. Typically this constructor is not used as events are created when a new port becomes available, and the object is passed to the MIDIAccess.onstagechange event handler.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIConnectionEvent.MIDIConnectionEvent()"
+        }
+    ],
+    "dom-midiconnectionevent-port": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MIDIConnectionEvent.json",
+            "name": "port",
+            "slug": "API/MIDIConnectionEvent/port",
+            "summary": "The port read-only property of the MIDIConnectionEvent interface returns the port that has been disconnected or connected.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIConnectionEvent.port"
+        }
+    ],
     "midiconnectionevent-interface": [
         {
             "engines": [
@@ -272,7 +378,7 @@
             "filename": "api/MIDIConnectionEvent.json",
             "name": "MIDIConnectionEvent",
             "slug": "API/MIDIConnectionEvent",
-            "summary": "The MIDIConnectionEvent interface of the Web MIDI API is the event passed to the onstatechange event handler of the MIDIAccess interface and the onstatechange event of the MIDIPorts interface. This occurs any time a new port becomes available, or when a previously available port becomes unavailable. For example, this event is fired whenever a MIDI device is either plugged in to or unplugged from a computer.",
+            "summary": "The MIDIConnectionEvent interface of the Web MIDI API is the event passed to the onstatechange event handler of the MIDIAccess interface and the onstatechange event of the MIDIPort interface. This occurs any time a new port becomes available, or when a previously available port becomes unavailable. For example, this event is fired whenever a MIDI device is either plugged in to or unplugged from a computer.",
             "support": {
                 "chrome": {
                     "version_added": "43"

@@ -771,7 +771,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": "31"
@@ -780,7 +780,7 @@
                     "version_added": "31"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "11"
                 },
                 "opera": {
                     "version_added": null
@@ -1037,7 +1037,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "18"
                 },
                 "firefox": {
                     "version_added": "31"
@@ -1046,7 +1046,7 @@
                     "version_added": "31"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": null
@@ -2332,7 +2332,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "18"
                 },
                 "firefox": {
                     "version_added": "31"
@@ -2341,7 +2341,7 @@
                     "version_added": "31"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": null
@@ -3204,7 +3204,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": true
@@ -3233,6 +3233,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/Window.json",
@@ -3250,10 +3251,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "ie": {
                     "version_added": null
@@ -8006,7 +8007,7 @@
                     "version_added": "8"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": null
@@ -13854,7 +13855,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": true
@@ -14126,7 +14127,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": true
@@ -19742,7 +19743,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": true
@@ -25393,7 +25394,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": true
@@ -25402,7 +25403,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "opera": {
                     "version_added": true
@@ -26505,7 +26506,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": true
@@ -26514,7 +26515,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "opera": {
                     "version_added": true
@@ -26775,7 +26776,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": true
@@ -26784,7 +26785,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "opera": {
                     "version_added": true
@@ -27380,7 +27381,7 @@
                     "version_added": true
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
                     "version_added": true
@@ -27389,7 +27390,7 @@
                     "version_added": true
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "9"
                 },
                 "opera": {
                     "version_added": true
@@ -33051,7 +33052,7 @@
                     "version_added": "31"
                 },
                 "ie": {
-                    "version_added": null
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": null
@@ -45845,45 +45846,117 @@
             "slug": "API/Window/navigator",
             "summary": "The Window.navigator read-only property returns a reference to the Navigator object, which has methods and properties about the application running the script.",
             "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
+                "chrome": [
+                    {
+                        "version_added": "1"
+                    },
+                    {
+                        "version_added": "1",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "18"
+                    },
+                    {
+                        "version_added": "18",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "opera": {
-                    "version_added": "3"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "firefox": [
+                    {
+                        "version_added": "1"
+                    },
+                    {
+                        "version_added": "91",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "4"
+                    },
+                    {
+                        "version_added": "91",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "ie": [
+                    {
+                        "version_added": "4"
+                    },
+                    {
+                        "version_added": "6",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "opera": [
+                    {
+                        "version_added": "3"
+                    },
+                    {
+                        "version_added": "15",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "10.1"
+                    },
+                    {
+                        "version_added": "14",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": "1"
+                    },
+                    {
+                        "version_added": "1",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "1"
+                    },
+                    {
+                        "version_added": "1",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": "1.0"
+                    },
+                    {
+                        "version_added": "1.0",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "1"
+                    },
+                    {
+                        "version_added": "1",
+                        "alternative_name": "clientInformation"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "clientInformation"
+                    }
+                ]
             },
             "title": "Window.navigator"
         }

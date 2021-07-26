@@ -1217,6 +1217,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/RTCDataChannel.json",
@@ -1234,10 +1235,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": true
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": true
                 },
                 "ie": {
                     "version_added": false
@@ -1716,6 +1717,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/RTCDataChannel.json",
@@ -1733,10 +1735,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": true
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": true
                 },
                 "ie": {
                     "version_added": false
@@ -2340,7 +2342,7 @@
             "filename": "api/RTCDataChannelEvent.json",
             "name": "RTCDataChannelEvent",
             "slug": "API/RTCDataChannelEvent",
-            "summary": "The RTCDataChannelEvent() constructor returns a new RTCDataChannelEvent object, which represents a datachannel event. These events sent to an RTCPeerConnection when its remote peer is asking to open an RTCDataChannel between the two peers.",
+            "summary": "Also inherits properties from Event.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -2393,7 +2395,7 @@
             "filename": "api/RTCDtlsTransport.json",
             "name": "iceTransport",
             "slug": "API/RTCDtlsTransport/iceTransport",
-            "summary": "The read-only RTCDtlsTransport property iceTransport contains a reference to the underlying RTCIceTransport.",
+            "summary": "The read-only RTCDtlsTransport property iceTransport contains areference to the underlying RTCIceTransport.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -4537,7 +4539,7 @@
             "filename": "api/RTCIceTransport.json",
             "name": "component",
             "slug": "API/RTCIceTransport/component",
-            "summary": "The read-only RTCIceTransport property component specifies whether the object is serving to transport RTP or RTCP. The value is one of the strings in RTCIceComponent.",
+            "summary": "The read-only RTCIceTransport property component specifies whether the object is serving to transport RTP or RTCP.",
             "support": {
                 "chrome": {
                     "version_added": false

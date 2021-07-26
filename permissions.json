@@ -520,7 +520,7 @@
             "filename": "http/headers/feature-policy.json",
             "name": "camera",
             "slug": "HTTP/Headers/Feature-Policy/camera",
-            "summary": "The HTTP Feature-Policy header camera directive controls whether the current document is allowed to use video input devices. When this policy is enabled, the Promise returned by MediaDevices.getUserMedia() will reject with a NotAllowedError.",
+            "summary": "The HTTP Feature-Policy header camera directive controls whether the current document is allowed to use video input devices. When this policy is enabled, the Promise returned by MediaDevices.getUserMedia() will reject with a NotAllowedError DOMException.",
             "support": {
                 "chrome": {
                     "version_added": "60"
