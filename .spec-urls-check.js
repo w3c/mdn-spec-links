@@ -199,10 +199,6 @@ const checkSpecURL = (
   standard,
   deprecated,
 ) => {
-  // FIXME: https://github.com/mdn/browser-compat-data/pull/11774
-  if (spec_url === "https://w3c.github.io/permissions/#screen-capture") {
-    return;
-  }
   if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
