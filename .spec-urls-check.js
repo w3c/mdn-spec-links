@@ -199,8 +199,8 @@ const checkSpecURL = (
   standard,
   deprecated,
 ) => {
-  // FIXME: https://github.com/mdn/browser-compat-data/pull/11549
-  if (spec_url === "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-instrumentkey") {
+  // FIXME: https://github.com/mdn/browser-compat-data/pull/11774
+  if (spec_url === "https://w3c.github.io/permissions/#screen-capture") {
     return;
   }
   if (
