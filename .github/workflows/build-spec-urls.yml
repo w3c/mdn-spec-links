@@ -49,8 +49,6 @@ jobs:
         if: ${{ steps.build.outputs.conclusion == 'success' }}
         run: |
           echo "Pull request URL: ${{ steps.cpr.outputs.pull-request-url }}"
-      - name: 🎃 Report all build errors and warnings
-        run: make report-only || true
       - name: Set status
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
