@@ -116,7 +116,7 @@
             "filename": "api/ConstrainDouble.json",
             "name": "ConstrainDouble",
             "slug": "API/ConstrainDouble",
-            "summary": "The ConstrainDouble type is used to specify a constraint for a property whose value is a double-precision floating-point number. It extends the DoubleRange dictionary (which provides the ability to specify a permitted range of property values) to also support an exact value and/or an ideal value the property should take on. Additionally, you can specify the property's value as a simple floating-point value, in which case the user agent does its best to match the value once all other more stringent constraints are met.",
+            "summary": "The MediaTrackConstraints dictionary is used to describe a set of capabilities and the value or values each can take on. A constraints dictionary is passed into applyConstraints() to allow a script to establish a set of exact (required) values or ranges and/or preferred values or ranges of values for the track, and the most recently-requested set of custom constraints can be retrieved by calling getConstraints().",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -158,7 +158,7 @@
                     "version_added": true
                 }
             },
-            "title": "ConstrainDouble"
+            "title": "MediaTrackConstraints"
         }
     ],
     "dom-constrainulong": [
