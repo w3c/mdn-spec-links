@@ -8,7 +8,7 @@
             "filename": "api/ConstrainBoolean.json",
             "name": "ConstrainBoolean",
             "slug": "API/ConstrainBoolean",
-            "summary": "The ConstrainBoolean dictionary is used to specify a constraint for a property whose value is a Boolean value. You can specify an exact value which must be matched, an ideal value that should be matched if at all possible, and a fallback value to attempt to match once all more specific constraints have been applied.",
+            "summary": "The MediaTrackConstraints dictionary is used to describe a set of capabilities and the value or values each can take on. A constraints dictionary is passed into applyConstraints() to allow a script to establish a set of exact (required) values or ranges and/or preferred values or ranges of values for the track, and the most recently-requested set of custom constraints can be retrieved by calling getConstraints().",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -50,7 +50,7 @@
                     "version_added": true
                 }
             },
-            "title": "ConstrainBoolean"
+            "title": "MediaTrackConstraints"
         }
     ],
     "dom-constraindomstring": [
@@ -62,7 +62,7 @@
             "filename": "api/ConstrainDOMString.json",
             "name": "ConstrainDOMString",
             "slug": "API/ConstrainDOMString",
-            "summary": "The ConstrainDOMString dictionary is used to specify a constraint for a property whose value is a string. It allows you to specify one or more exact string values from which one must be the parameter's value, or a set of ideal values which should be used if possible. You can also specify a single string (or an array of strings) which the user agent will do its best to match once all more stringent constraints have been applied.",
+            "summary": "The MediaTrackConstraints dictionary is used to describe a set of capabilities and the value or values each can take on. A constraints dictionary is passed into applyConstraints() to allow a script to establish a set of exact (required) values or ranges and/or preferred values or ranges of values for the track, and the most recently-requested set of custom constraints can be retrieved by calling getConstraints().",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -104,7 +104,7 @@
                     "version_added": true
                 }
             },
-            "title": "ConstrainDOMString"
+            "title": "MediaTrackConstraints"
         }
     ],
     "dom-constraindouble": [
@@ -161,57 +161,6 @@
             "title": "MediaTrackConstraints"
         }
     ],
-    "dom-constrainulong": [
-        {
-            "engines": [],
-            "filename": "api/ConstrainULong.json",
-            "name": "ConstrainULong",
-            "slug": "API/ConstrainULong",
-            "summary": "The ConstrainULong type is used to specify a constraint for a property whose value is an integral number. It extends the ULongRange dictionary (which provides the ability to specify a permitted range of property values) to also support an exact value and/or an ideal value the property should take on. In addition, you can specify the value as a simple long integer value, in which case the user agent does its best to match the value once all other more stringent constraints are met.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "ConstrainULong"
-        }
-    ],
     "dom-doublerange": [
         {
             "engines": [
@@ -221,7 +170,7 @@
             "filename": "api/DoubleRange.json",
             "name": "DoubleRange",
             "slug": "API/DoubleRange",
-            "summary": "The DoubleRange dictionary is used to define a range of permitted double-precision floating-point values for a property, with either or both a maximum and minimum value specified. The ConstrainDouble dictionary is based on this, augmenting it to support exact and ideal values as well.",
+            "summary": "The MediaTrackConstraints dictionary is used to describe a set of capabilities and the value or values each can take on. A constraints dictionary is passed into applyConstraints() to allow a script to establish a set of exact (required) values or ranges and/or preferred values or ranges of values for the track, and the most recently-requested set of custom constraints can be retrieved by calling getConstraints().",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -263,7 +212,7 @@
                     "version_added": true
                 }
             },
-            "title": "DoubleRange"
+            "title": "MediaTrackConstraints"
         }
     ],
     "dom-inputdeviceinfo-getcapabilities": [
@@ -5910,57 +5859,6 @@
                 }
             },
             "title": "OverconstrainedError"
-        }
-    ],
-    "dom-ulongrange": [
-        {
-            "engines": [],
-            "filename": "api/ULongRange.json",
-            "name": "ULongRange",
-            "slug": "API/ULongRange",
-            "summary": "The ULongRange dictionary is used to define a range of permitted integer values for a property, with either or both a maximum and minimum value specified. The ConstrainULongRange dictionary is based on this, augmenting it to support exact and ideal values as well.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "ULongRange"
         }
     ]
 }
