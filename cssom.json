@@ -1040,6 +1040,116 @@
             "title": "CSSRule"
         }
     ],
+    "dom-cssrulelist-item": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/CSSRuleList.json",
+            "name": "item",
+            "slug": "API/CSSRuleList/item",
+            "summary": "The item() method of the CSSRuleList interface returns the CSSRule object at the specified index or null if the specified index doesn't exist.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSRuleList.item()"
+        }
+    ],
+    "dom-cssrulelist-length": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/CSSRuleList.json",
+            "name": "length",
+            "slug": "API/CSSRuleList/length",
+            "summary": "The length property of the CSSRuleList interface returns the number of CSSRule objects in the list.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "CSSRuleList.length"
+        }
+    ],
     "the-cssrulelist-interface": [
         {
             "engines": [
@@ -1050,7 +1160,7 @@
             "filename": "api/CSSRuleList.json",
             "name": "CSSRuleList",
             "slug": "API/CSSRuleList",
-            "summary": "A CSSRuleList is an (indirect-modify only) array-like object containing an ordered collection of CSSRule objects.",
+            "summary": "A CSSRuleList represents an ordered collection of read-only CSSRule objects.",
             "support": {
                 "chrome": {
                     "version_added": "1"
