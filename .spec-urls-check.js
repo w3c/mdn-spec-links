@@ -125,8 +125,6 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/forEach",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/keys",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values",
-    // FIXME: https://github.com/mdn/browser-compat-data/pull/11843
-    "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/updateViaCache",
   ]
   if (exceptions.includes(mdnURL)) {
     return false;
