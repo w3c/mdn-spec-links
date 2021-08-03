@@ -884,6 +884,611 @@
                 ]
             },
             "title": "transform"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "transform-function",
+            "slug": "CSS/transform-function",
+            "summary": "The <transform-function> CSS data type represents a transformation that affects an element's appearance. Transformation functions can rotate, resize, distort, or move an element in 2D or 3D space. It is used in the transform property.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9",
+                    "notes": "Internet Explorer 9 supports 2D but not 3D transforms. In version 9, mixing 2D and 3D transform functions invalidates the entire property."
+                },
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "2"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<transform-function>"
+        }
+    ],
+    "funcdef-matrix3d": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "matrix3d",
+            "slug": "CSS/transform-function/matrix3d()",
+            "summary": "The matrix3d() CSS function defines a 3D transformation as a 4x4 homogeneous matrix. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10",
+                    "notes": "Before Firefox 16, the translation values of <code>matrix3d()</code> could be <a href='https://developer.mozilla.org/docs/Web/CSS/length'><code>&lt;length&gt;</code></a>s, in addition to the standard <a href='https://developer.mozilla.org/docs/Web/CSS/number'><code>&lt;number&gt;</code></a>."
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "matrix3d()"
+        }
+    ],
+    "funcdef-perspective": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "perspective",
+            "slug": "CSS/transform-function/perspective()",
+            "summary": "The perspective() CSS function defines a transformation that sets the distance between the user and the z=0 plane, the perspective from which the viewer would be if the 2-dimensional interface were 3-dimensional. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "perspective()"
+        }
+    ],
+    "funcdef-rotate3d": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "rotate3d",
+            "slug": "CSS/transform-function/rotate3d()",
+            "summary": "The rotate3d() CSS function defines a transformation that rotates an element around a fixed axis in 3D space, without deforming it. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "rotate3d()"
+        }
+    ],
+    "funcdef-rotatex": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "rotateX",
+            "slug": "CSS/transform-function/rotateX()",
+            "summary": "The rotateX() CSS function defines a transformation that rotates an element around the abscissa (horizontal axis) without deforming it. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "rotateX()"
+        }
+    ],
+    "funcdef-rotatey": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "rotateY",
+            "slug": "CSS/transform-function/rotateY()",
+            "summary": "The rotateY() CSS function defines a transformation that rotates an element around the ordinate (vertical axis) without deforming it. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "rotateY()"
+        }
+    ],
+    "funcdef-rotatez": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "rotateZ",
+            "slug": "CSS/transform-function/rotateZ()",
+            "summary": "The rotateZ() CSS function defines a transformation that rotates an element around the z-axis without deforming it. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "rotateZ()"
+        }
+    ],
+    "funcdef-scale3d": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "scale3d",
+            "slug": "CSS/transform-function/scale3d()",
+            "summary": "The scale3d() CSS function defines a transformation that resizes an element in 3D space. Because the amount of scaling is defined by a vector, it can resize different dimensions at different scales. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "scale3d()"
+        }
+    ],
+    "funcdef-scalez": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "scaleZ",
+            "slug": "CSS/transform-function/scaleZ()",
+            "summary": "The scaleZ() CSS function defines a transformation that resizes an element along the z-axis. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "scaleZ()"
+        }
+    ],
+    "funcdef-translate3d": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "translate3d",
+            "slug": "CSS/transform-function/translate3d()",
+            "summary": "The translate3d() CSS function repositions an element in 3D space. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "translate3d()"
+        }
+    ],
+    "funcdef-translatez": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/transform-function.json",
+            "name": "translateZ",
+            "slug": "CSS/transform-function/translateZ()",
+            "summary": "The translateZ() CSS function repositions an element along the z-axis in 3D space, i.e., closer to or farther away from the viewer. Its result is a <transform-function> data type.",
+            "support": {
+                "chrome": {
+                    "version_added": "12"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "10"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "translateZ()"
         }
     ]
 }
