@@ -63569,7 +63569,7 @@
             "filename": "http/headers/feature-policy.json",
             "name": "autoplay",
             "slug": "HTTP/Headers/Feature-Policy/autoplay",
-            "summary": "The HTTP Feature-Policy header autoplay directive controls whether the current document is allowed to autoplay media requested through the HTMLMediaElement interface.",
+            "summary": "The HTTP Feature-Policy header autoplay directive controls whether the current document is allowed to autoplay media requested through the HTMLMediaElement interface. When this policy is enabled and there were no user gestures, the Promise returned by HTMLMediaElement.play() will reject with a DOMException. The autoplay attribute on <audio> and <video> elements will be ignored.",
             "support": {
                 "chrome": {
                     "version_added": "64"
