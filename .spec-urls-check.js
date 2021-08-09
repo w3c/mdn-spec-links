@@ -200,14 +200,6 @@ const checkSpecURL = (
   deprecated,
 ) => {
   if (
-    // FIXME: https://github.com/mdn/browser-compat-data/pull/11939
-    spec_url.startsWith('https://drafts.csswg.org/css-flexbox/#order-property') ||
-    spec_url.startsWith('https://drafts.csswg.org/css-overflow-4/#scrollbar-gutter-property')
-  ) {
-    // "I'm a teapot" RFC; ignore
-    return;
-  }
-  if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
   ) {
