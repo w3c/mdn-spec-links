@@ -4594,7 +4594,7 @@
             "filename": "api/RTCIceTransport.json",
             "name": "gatheringState",
             "slug": "API/RTCIceTransport/gatheringState",
-            "summary": "The read-only RTCIceTransport property gatheringState returns a DOMString from the enumerated type RTCIceGathererState that indicates what gathering state the ICE agent is currently in: \"new\", \"gathering\", or \"complete\".",
+            "summary": "The read-only RTCIceTransport property gatheringState returns a DOMString that indicates the current gathering state of the ICE agent: \"new\", \"gathering\", or \"complete\".",
             "support": {
                 "chrome": {
                     "version_added": "75"
@@ -5338,7 +5338,7 @@
             "filename": "api/RTCIceTransport.json",
             "name": "RTCIceTransport",
             "slug": "API/RTCIceTransport",
-            "summary": "The RTCIceTransport interface provides access to information about the ICE transport layer over which the data is being sent and received.",
+            "summary": "The RTCIceTransport interface provides access to information about the ICE transport layer over which the data is being sent and received. This is particularly useful if you need to access state information about the connection.",
             "support": {
                 "chrome": {
                     "version_added": "75"
@@ -5655,7 +5655,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "addIceCandidate",
             "slug": "API/RTCPeerConnection/addIceCandidate",
-            "summary": ">When a web site or app using RTCPeerConnection receives a new ICE candidate from the remote peer over its signaling channel, it delivers the newly-received candidate to the browser's ICE agent by calling RTCPeerConnection.addIceCandidate(). This adds this new remote candidate to the RTCPeerConnection's remote description, which describes the state of the remote end of the connection.",
+            "summary": "When a web site or app using RTCPeerConnection receives a new ICE candidate from the remote peer over its signaling channel, it delivers the newly-received candidate to the browser's ICE agent by calling RTCPeerConnection.addIceCandidate(). This adds this new remote candidate to the RTCPeerConnection's remote description, which describes the state of the remote end of the connection.",
             "support": {
                 "chrome": [
                     {
