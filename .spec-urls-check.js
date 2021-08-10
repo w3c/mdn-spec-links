@@ -199,6 +199,9 @@ const checkSpecURL = (
   standard,
   deprecated,
 ) => {
+  if (spec_url.startsWith('https://www.w3.org/TR/gamepad/#dfn-gamepad')) {
+    return;
+  }
   if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
