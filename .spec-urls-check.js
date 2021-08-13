@@ -125,8 +125,11 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values",
     // FIXME: for this one we really do need a spec URL
     "https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite",
-    // FIXME: for this one we really do need a spec URL
+    // FIXME: for all these we really do need spec URLs
     "https://developer.mozilla.org/docs/Web/API/NDEFMessage/NDEFMessage",
+    "https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/NDEFReadingEvent",
+    "https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/message",
+    "https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/serialNumber",
     // FIXME: for all these we really do need spec URLs
     "https://developer.mozilla.org/docs/Web/API/TextTrack/activeCues",
     "https://developer.mozilla.org/docs/Web/API/TextTrack/addCue",
@@ -137,6 +140,10 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/TextTrack/label",
     "https://developer.mozilla.org/docs/Web/API/TextTrack/language",
     "https://developer.mozilla.org/docs/Web/API/TextTrack/removeCue",
+    "https://developer.mozilla.org/docs/Web/API/TextTrackCue/id",
+    "https://developer.mozilla.org/docs/Web/API/TextTrackCue/pauseOnExit",
+    "https://developer.mozilla.org/docs/Web/API/TextTrackCue/startTime",
+    "https://developer.mozilla.org/docs/Web/API/TextTrackCue/track",
     "https://developer.mozilla.org/docs/Web/API/VTTCue/align",
     "https://developer.mozilla.org/docs/Web/API/VTTCue/getCueAsHTML",
     "https://developer.mozilla.org/docs/Web/API/VTTCue/line",
