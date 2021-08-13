@@ -32,8 +32,6 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/controller",
     "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/mediaGroup",
     "https://developer.mozilla.org/docs/Web/API/MouseEvent/region",
-    // FIXME: for this one we really do need a spec URL
-    "https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite",
     // iterables; we explicitly don’t want spec URLs for these
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/entries",
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/forEach",
@@ -125,6 +123,31 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/forEach",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/keys",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values",
+    // FIXME: for this one we really do need a spec URL
+    "https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite",
+    // FIXME: for this one we really do need a spec URL
+    "https://developer.mozilla.org/docs/Web/API/NDEFMessage/NDEFMessage",
+    // FIXME: for all these we really do need spec URLs
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/activeCues",
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/addCue",
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/cues",
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/id",
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/inBandMetadataTrackDispatchType",
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/kind",
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/label",
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/language",
+    "https://developer.mozilla.org/docs/Web/API/TextTrack/removeCue",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/align",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/getCueAsHTML",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/line",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/lineAlign",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/position",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/positionAlign",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/region",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/size",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/snapToLines",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/text",
+    "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
   ]
   if (exceptions.includes(mdnURL)) {
     return false;
