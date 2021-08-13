@@ -140,6 +140,7 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/TextTrack/label",
     "https://developer.mozilla.org/docs/Web/API/TextTrack/language",
     "https://developer.mozilla.org/docs/Web/API/TextTrack/removeCue",
+    "https://developer.mozilla.org/docs/Web/API/TextTrackCue/endTime",
     "https://developer.mozilla.org/docs/Web/API/TextTrackCue/id",
     "https://developer.mozilla.org/docs/Web/API/TextTrackCue/pauseOnExit",
     "https://developer.mozilla.org/docs/Web/API/TextTrackCue/startTime",
