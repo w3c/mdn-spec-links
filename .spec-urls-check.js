@@ -230,7 +230,8 @@ const checkSpecURL = (
   standard,
   deprecated,
 ) => {
-  if (spec_url.startsWith('https://www.w3.org/TR/gamepad/#dfn-gamepad')) {
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12037
+  if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-track/id')) {
     return;
   }
   if (
