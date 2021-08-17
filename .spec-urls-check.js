@@ -230,10 +230,6 @@ const checkSpecURL = (
   standard,
   deprecated,
 ) => {
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12037
-  if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-track/id')) {
-    return;
-  }
   if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
