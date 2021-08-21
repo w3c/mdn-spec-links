@@ -484,7 +484,7 @@
             "filename": "api/PaymentMethodChangeEvent.json",
             "name": "methodDetails",
             "slug": "API/PaymentMethodChangeEvent/methodDetails",
-            "summary": "PaymentMethodChangeEvent interface is an object containing any data the payment handler may provide to describe the change the user has made to their payment method.",
+            "summary": "The read-only methodDetails property of the PaymentMethodChangeEvent interface is an object containing any data the payment handler may provide to describe the change the user has made to their payment method. The value is null if no details are available.",
             "support": {
                 "chrome": {
                     "version_added": "76"
@@ -538,7 +538,7 @@
             "filename": "api/PaymentMethodChangeEvent.json",
             "name": "methodName",
             "slug": "API/PaymentMethodChangeEvent/methodName",
-            "summary": "PaymentMethodChangeEvent interface is a string which uniquely identifies the payment handler currently selected by the user.",
+            "summary": "The read-only methodName property of the PaymentMethodChangeEvent interface is a string which uniquely identifies the payment handler currently selected by the user. The payment handler may be a payment technology, such as Apple Pay or Android Pay, and each payment handler may support multiple payment methods; changes to the payment method within the payment handler are described by the PaymentMethodChangeEvent.",
             "support": {
                 "chrome": {
                     "version_added": "76"

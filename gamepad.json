@@ -1700,5 +1700,92 @@
             },
             "title": "Window.ongamepaddisconnected"
         }
+    ],
+    "permission-policy": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "blink"
+            ],
+            "filename": "http/headers/feature-policy.json",
+            "name": "gamepad",
+            "slug": "HTTP/Headers/Feature-Policy/gamepad",
+            "summary": "The HTTP Feature-Policy header gamepad directive controls whether the current document is allowed to use the Gamepad API. When this policy is disabled, calls to Navigator.getGamepads() will throw a SecurityError DOMException. In addition, the gamepadconnected and gamepaddisconnected events will not fire.",
+            "support": {
+                "chrome": {
+                    "version_added": "86",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#restrict-gamepad-access",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "chrome_android": {
+                    "version_added": "86",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#restrict-gamepad-access",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "91",
+                    "notes": "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification)."
+                },
+                "firefox_android": {
+                    "version_added": "91",
+                    "notes": "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification)."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "72",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#restrict-gamepad-access",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "86",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#restrict-gamepad-access",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                }
+            },
+            "title": "Feature-Policy: gamepad"
+        }
     ]
 }

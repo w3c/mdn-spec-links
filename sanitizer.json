@@ -2,9 +2,11 @@
     "dom-sanitizer-sanitizer": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/Sanitizer.json",
@@ -13,7 +15,14 @@
             "summary": "The Sanitizer() constructor creates a new sanitizer object which allows developers to take untrusted strings of HTML, and sanitize them for safe insertion into a document’s DOM.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
                     "version_added": false
@@ -63,7 +72,14 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "Sanitizer()"
@@ -72,9 +88,11 @@
     "dom-sanitizer-sanitize": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/Sanitizer.json",
@@ -83,7 +101,14 @@
             "summary": "The sanitize() method of the sanitizer interface returns a sanitized DocumentFragment from an input, removing any offending elements or attributes.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
                     "version_added": false
@@ -133,7 +158,14 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "Sanitizer.sanitize()"
@@ -142,9 +174,11 @@
     "sanitizer-api": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/Sanitizer.json",
@@ -153,7 +187,14 @@
             "summary": "The Sanitizer interface of the HTML Sanitizer API allows developers to take untrusted strings of HTML, and sanitize them for safe insertion into a document’s DOM.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": {
                     "version_added": false
@@ -203,7 +244,14 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "Sanitizer"

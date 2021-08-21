@@ -1781,45 +1781,133 @@
             "slug": "API/DOMRectReadOnly",
             "summary": "The DOMRectReadOnly interface specifies the standard properties used by DOMRect to define a rectangle whose properties are immutable.",
             "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": {
-                    "version_added": "61"
-                },
+                "chrome": [
+                    {
+                        "version_added": "61"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "2",
+                        "version_removed": "61"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "61"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "18",
+                        "version_removed": "61"
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "31"
-                },
-                "firefox_android": {
-                    "version_added": "31"
-                },
+                "firefox": [
+                    {
+                        "version_added": "31"
+                    },
+                    {
+                        "alternative_name": "DOMRect",
+                        "version_added": "27",
+                        "version_removed": "31"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "3",
+                        "version_removed": "27"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "31"
+                    },
+                    {
+                        "alternative_name": "DOMRect",
+                        "version_added": "27",
+                        "version_removed": "31"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "4",
+                        "version_removed": "27"
+                    }
+                ],
                 "ie": {
-                    "version_added": false
+                    "alternative_name": "ClientRect",
+                    "version_added": "4"
                 },
-                "opera": {
-                    "version_added": "48"
-                },
-                "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "61"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "opera": [
+                    {
+                        "version_added": "48"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "9.5",
+                        "version_removed": "48"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "45"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "10.1",
+                        "version_removed": "45"
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": "10.1"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "4",
+                        "version_removed": "11"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "10.3"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "3.2",
+                        "version_removed": "11"
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": "8.0"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "1.0",
+                        "version_removed": "8.0"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "61"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": "2",
+                        "version_removed": "61"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "ClientRect",
+                        "version_added": false,
+                        "version_removed": "61"
+                    }
+                ]
             },
             "title": "DOMRectReadOnly"
         },
@@ -1945,40 +2033,40 @@
             "summary": "The bottom read-only property of the DOMRectReadOnly interface returns the bottom coordinate value of the DOMRect. (Has the same value as y + height, or y if height is negative.)",
             "support": {
                 "chrome": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "chrome_android": {
-                    "version_added": "61"
+                    "version_added": "18"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "31"
+                    "version_added": "3"
                 },
                 "firefox_android": {
-                    "version_added": "31"
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "4"
                 },
                 "opera": {
-                    "version_added": "48"
+                    "version_added": "9.5"
                 },
                 "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
                     "version_added": "10.1"
                 },
+                "safari": {
+                    "version_added": "4"
+                },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": "8.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2055,40 +2143,40 @@
             "summary": "The height read-only property of the DOMRectReadOnly interface represents the height of the DOMRect.",
             "support": {
                 "chrome": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "chrome_android": {
-                    "version_added": "61"
+                    "version_added": "18"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "31"
+                    "version_added": "3"
                 },
                 "firefox_android": {
-                    "version_added": "31"
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "4"
                 },
                 "opera": {
-                    "version_added": "48"
+                    "version_added": "9.5"
                 },
                 "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
                     "version_added": "10.1"
                 },
+                "safari": {
+                    "version_added": "4"
+                },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": "8.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2110,40 +2198,40 @@
             "summary": "The left read-only property of the DOMRectReadOnly interface returns the left coordinate value of the DOMRect. (Has the same value as x, or x + width if width is negative.)",
             "support": {
                 "chrome": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "chrome_android": {
-                    "version_added": "61"
+                    "version_added": "18"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "31"
+                    "version_added": "3"
                 },
                 "firefox_android": {
-                    "version_added": "31"
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "4"
                 },
                 "opera": {
-                    "version_added": "48"
+                    "version_added": "9.5"
                 },
                 "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
                     "version_added": "10.1"
                 },
+                "safari": {
+                    "version_added": "4"
+                },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": "8.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2165,40 +2253,40 @@
             "summary": "The right read-only property of the DOMRectReadOnly interface returns the right coordinate value of the DOMRect. (Has the same value as x + width, or x if width is negative.)",
             "support": {
                 "chrome": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "chrome_android": {
-                    "version_added": "61"
+                    "version_added": "18"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "31"
+                    "version_added": "3"
                 },
                 "firefox_android": {
-                    "version_added": "31"
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "4"
                 },
                 "opera": {
-                    "version_added": "48"
+                    "version_added": "9.5"
                 },
                 "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
                     "version_added": "10.1"
                 },
+                "safari": {
+                    "version_added": "4"
+                },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": "8.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2220,40 +2308,40 @@
             "summary": "The top read-only property of the DOMRectReadOnly interface returns the top coordinate value of the DOMRect. (Has the same value as y, or y + height if height is negative.)",
             "support": {
                 "chrome": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "chrome_android": {
-                    "version_added": "61"
+                    "version_added": "18"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "31"
+                    "version_added": "3"
                 },
                 "firefox_android": {
-                    "version_added": "31"
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "4"
                 },
                 "opera": {
-                    "version_added": "48"
+                    "version_added": "9.5"
                 },
                 "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
                     "version_added": "10.1"
                 },
+                "safari": {
+                    "version_added": "4"
+                },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": "8.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2275,40 +2363,40 @@
             "summary": "The width read-only property of the DOMRectReadOnly interface represents the width of the DOMRect.",
             "support": {
                 "chrome": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "chrome_android": {
-                    "version_added": "61"
+                    "version_added": "18"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "31"
+                    "version_added": "3"
                 },
                 "firefox_android": {
-                    "version_added": "31"
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "4"
                 },
                 "opera": {
-                    "version_added": "48"
+                    "version_added": "9.5"
                 },
                 "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
                     "version_added": "10.1"
                 },
+                "safari": {
+                    "version_added": "4"
+                },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": "8.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "61"
+                    "version_added": "2"
                 },
                 "edge_blink": {
                     "version_added": "79"

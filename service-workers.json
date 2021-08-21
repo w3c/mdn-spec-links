@@ -72,7 +72,7 @@
             "filename": "api/Cache.json",
             "name": "addAll",
             "slug": "API/Cache/addAll",
-            "summary": "The addAll() method of the Cache interface takes an array of URLs, retrieves them, and adds the resulting response objects to the given cache. The request objects created during retrieval become keys to the stored response operations. ",
+            "summary": "The addAll() method of the Cache interface takes an array of URLs, retrieves them, and adds the resulting response objects to the given cache. The request objects created during retrieval become keys to the stored response operations.",
             "support": {
                 "chrome": {
                     "version_added": "46",
@@ -2592,11 +2592,11 @@
                 },
                 "firefox": {
                     "version_added": false,
-                    "notes": "Implementation tracked in <a href='https://bugzil.la/1290958'>bug 1290958</a>"
+                    "notes": "Implementation tracked in <a href='https://bugzil.la/1290958'>bug 1290958</a>."
                 },
                 "firefox_android": {
                     "version_added": false,
-                    "notes": "Implementation tracked in <a href='https://bugzil.la/1290958'>bug 1290958</a>"
+                    "notes": "Implementation tracked in <a href='https://bugzil.la/1290958'>bug 1290958</a>."
                 },
                 "ie": {
                     "version_added": false
@@ -2972,7 +2972,7 @@
             "filename": "api/ServiceWorkerContainer.json",
             "name": "getRegistration",
             "slug": "API/ServiceWorkerContainer/getRegistration",
-            "summary": "The getRegistration() method of the ServiceWorkerContainer interface gets a ServiceWorkerRegistration object whose scope URL matches the provided document URL. The method returns a Promise that resolves to a ServiceWorkerRegistration or undefined.",
+            "summary": "The getRegistration() method of the ServiceWorkerContainer interface gets a ServiceWorkerRegistration object whose scope URL matches the provided client URL. The method returns a Promise that resolves to a ServiceWorkerRegistration or undefined.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -5018,6 +5018,9 @@
                 },
                 "chrome_android": {
                     "version_added": true
+                },
+                "deno": {
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
