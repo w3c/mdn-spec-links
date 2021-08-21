@@ -8,7 +8,7 @@
             "filename": "api/Document.json",
             "name": "exitPictureInPicture",
             "slug": "API/Document/exitPictureInPicture",
-            "summary": "The Document method exitPictureInPicture() requests that a video contained in this document, which is currently floating, be taken out of picture-in-picture mode, restoring the previous state of the screen.",
+            "summary": "The Document method exitPictureInPicture() requests that a video contained in this document, which is currently floating, be taken out of picture-in-picture mode, restoring the previous state of the screen. This usually reverses the effects of a previous call to HTMLVideoElement.requestPictureInPicture().",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -169,7 +169,7 @@
             "filename": "api/HTMLVideoElement.json",
             "name": "disablePictureInPicture",
             "slug": "API/HTMLVideoElement/disablePictureInPicture",
-            "summary": "The HTMLVideoElement disablePictureInPicture property reflects the HTML attribute indicating whether",
+            "summary": "The HTMLVideoElement disablePictureInPicture property reflects the HTML attribute indicating whether the user agent should suggest the picture-in-picture feature to users, or request it automatically.",
             "support": {
                 "chrome": {
                     "version_added": "69"

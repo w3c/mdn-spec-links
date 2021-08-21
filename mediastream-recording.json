@@ -505,7 +505,7 @@
             "filename": "api/MediaRecorder.json",
             "name": "mimeType",
             "slug": "API/MediaRecorder/mimeType",
-            "summary": "The mimeType read-only property returns the MIME media type that was specified when creating the MediaRecorder object, or, if none was specified, which was chosen by the browser.",
+            "summary": "The mimeType read-only property returns the MIME media type that was specified when creating the MediaRecorder object, or, if none was specified, which was chosen by the browser. This is the file format of the file that would result from writing all of the recorded data to disk.",
             "support": {
                 "chrome": [
                     {
@@ -648,7 +648,7 @@
             "filename": "api/MediaRecorder.json",
             "name": "onerror",
             "slug": "API/MediaRecorder/onerror",
-            "summary": "The MediaRecorder interface's onerror event handler is called by the MediaStream Recording API when an error occurs. You can provide an event handler to deal with errors that occur while creating or using a media recorder",
+            "summary": "The MediaRecorder interface's onerror event handler is called by the MediaStream Recording API when an error occurs. You can provide an event handler to deal with errors that occur while creating or using a media recorder.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -978,7 +978,7 @@
             "filename": "api/MediaRecorder.json",
             "name": "requestData",
             "slug": "API/MediaRecorder/requestData",
-            "summary": "The MediaRecorder.requestData() method (part of the MediaRecorder API) is used to raise a dataavailable event containing a Blob object of the captured media as it was when the method was called.",
+            "summary": "The MediaRecorder.requestData() method (part of the MediaRecorder API) is used to raise a dataavailable event containing a Blob object of the captured media as it was when the method was called. This can then be grabbed and manipulated as you wish.",
             "support": {
                 "chrome": {
                     "version_added": "49"

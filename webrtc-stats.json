@@ -7,7 +7,7 @@
             "filename": "api/RTCIceCandidatePairStats.json",
             "name": "availableIncomingBitrate",
             "slug": "API/RTCIceCandidatePairStats/availableIncomingBitrate",
-            "summary": "The RTCIceCandidatePairStats property availableIncomingBitrate returns a value indicative of the available inbound capacity of the network connection represented by the candidate pair.",
+            "summary": "The RTCIceCandidatePairStats property availableIncomingBitrate returns a value indicative of the available inbound capacity of the network connection represented by the candidate pair. The higher the value, the more bandwidth you can assume is available for incoming data.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -61,7 +61,7 @@
             "filename": "api/RTCIceCandidatePairStats.json",
             "name": "availableOutgoingBitrate",
             "slug": "API/RTCIceCandidatePairStats/availableOutgoingBitrate",
-            "summary": "The RTCIceCandidatePairStats property availableOutgoingBitrate returns a value indicative of the available outbound capacity of the network connection represented by the candidate pair.",
+            "summary": "The RTCIceCandidatePairStats property availableOutgoingBitrate returns a value indicative of the available outbound capacity of the network connection represented by the candidate pair. The higher the value, the more bandwidth you can assume is available for outgoing data.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -1357,7 +1357,7 @@
             "filename": "api/RTCIceCandidatePairStats.json",
             "name": "totalRoundTripTime",
             "slug": "API/RTCIceCandidatePairStats/totalRoundTripTime",
-            "summary": "The RTCIceCandidatePairStats dictionary's totalRoundTripTime property is the total time that has elapsed between sending STUN requests and receiving the responses, for all such requests that have been made so far on the pair of candidates described by this RTCIceCandidatePairStats object.",
+            "summary": "The RTCIceCandidatePairStats dictionary's totalRoundTripTime property is the total time that has elapsed between sending STUN requests and receiving the responses, for all such requests that have been made so far on the pair of candidates described by this RTCIceCandidatePairStats object. This value includes both connectivity check and consent check requests.",
             "support": {
                 "chrome": [
                     {
@@ -2135,7 +2135,7 @@
             "filename": "api/RTCRemoteOutboundRtpStreamStats.json",
             "name": "localId",
             "slug": "API/RTCRemoteOutboundRtpStreamStats/localId",
-            "summary": "The RTCRemoteOutboundRtpStreamStats dictionary's localId property is a string which can be used to identify the RTCInboundRtpStreamStats object whose remoteId matches this value. ",
+            "summary": "The RTCRemoteOutboundRtpStreamStats dictionary's localId property is a string which can be used to identify the RTCInboundRtpStreamStats object whose remoteId matches this value.",
             "support": {
                 "chrome": {
                     "version_added": false

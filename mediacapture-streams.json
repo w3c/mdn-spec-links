@@ -2242,7 +2242,7 @@
             "filename": "api/MediaStreamTrack.json",
             "name": "kind",
             "slug": "API/MediaStreamTrack/kind",
-            "summary": "The MediaStreamTrack.kind read-only property returns a DOMString set to \"audio\" if the track is an audio track and to \"video\", if it is a video track.",
+            "summary": "The MediaStreamTrack.kind read-only property returns a DOMString set to \"audio\" if the track is an audio track and to \"video\", if it is a video track. It doesn't change if the track is deassociated from its source.",
             "support": {
                 "chrome": {
                     "version_added": true

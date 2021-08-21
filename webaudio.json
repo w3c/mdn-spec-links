@@ -1563,7 +1563,7 @@
             "filename": "api/AudioBufferSourceNode.json",
             "name": "AudioBufferSourceNode",
             "slug": "API/AudioBufferSourceNode",
-            "summary": "The AudioBufferSourceNode interface is an AudioScheduledSourceNode which represents an audio source consisting of in-memory audio data, stored in an AudioBuffer. It's especially useful for playing back audio which has particularly stringent timing accuracy requirements, such as for sounds that must match a specific rhythm and can be kept in memory rather than being played from disk or the network.",
+            "summary": "The AudioBufferSourceNode interface is an AudioScheduledSourceNode which represents an audio source consisting of in-memory audio data, stored in an AudioBuffer.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -2092,7 +2092,7 @@
             "filename": "api/AudioContext.json",
             "name": "getOutputTimestamp",
             "slug": "API/AudioContext/getOutputTimestamp",
-            "summary": "The getOutputTimestamp() property of the AudioContext interface returns a new AudioTimestamp object containing two audio timestamp values relating to the current audio context. The getOutputTimestamp() property of the AudioContext interface returns a new AudioTimestamp object containing two audio timestamp values relating to the current audio context.",
+            "summary": "The getOutputTimestamp() property of the AudioContext interface returns a new AudioTimestamp object containing two audio timestamp values relating to the current audio context.",
             "support": {
                 "chrome": {
                     "version_added": "57"
@@ -3482,7 +3482,7 @@
             "filename": "api/AudioNode.json",
             "name": "numberOfInputs",
             "slug": "API/AudioNode/numberOfInputs",
-            "summary": "The numberOfInputs property of the AudioNode interface returns the number of inputs feeding the node. Source nodes are defined as nodes having a numberOfInputs property with a value of 0.The numberOfInputs property of the AudioNode interface returns the number of inputs feeding the node.",
+            "summary": "The numberOfInputs property of the AudioNode interface returns the number of inputs feeding the node. Source nodes are defined as nodes having a numberOfInputs property with a value of 0.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -3537,7 +3537,7 @@
             "filename": "api/AudioNode.json",
             "name": "numberOfOutputs",
             "slug": "API/AudioNode/numberOfOutputs",
-            "summary": "The numberOfOutputs property of the AudioNode interface returns the number of outputs coming out of the node. Destination nodes — like AudioDestinationNode — have a value of 0 for this attribute.The numberOfOutputs property of the AudioNode interface returns the number of outputs coming out of the node.",
+            "summary": "The numberOfOutputs property of the AudioNode interface returns the number of outputs coming out of the node. Destination nodes — like AudioDestinationNode — have a value of 0 for this attribute.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -4159,7 +4159,7 @@
             "filename": "api/AudioParam.json",
             "name": "setValueAtTime",
             "slug": "API/AudioParam/setValueAtTime",
-            "summary": "The setValueAtTime() method of the AudioParam interface schedules an instant change to the AudioParam value at a precise time, as measured against AudioContext.currentTime. The new value is given in the value parameter. ",
+            "summary": "The setValueAtTime() method of the AudioParam interface schedules an instant change to the AudioParam value at a precise time, as measured against AudioContext.currentTime. The new value is given in the value parameter.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -4214,7 +4214,7 @@
             "filename": "api/AudioParam.json",
             "name": "setValueCurveAtTime",
             "slug": "API/AudioParam/setValueCurveAtTime",
-            "summary": "The setValueCurveAtTime() method of the AudioParam interface schedules the parameter's value to change following a curve defined by a list of values. The curve is a linear interpolation between the sequence of values defined in an array of floating-point values, which are scaled to fit into the given interval starting at startTime and a specific duration.The setValueCurveAtTime() method of the AudioParam interface schedules the parameter's value to change following a curve defined by a list of values.",
+            "summary": "The setValueCurveAtTime() method of the AudioParam interface schedules the parameter's value to change following a curve defined by a list of values.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -4269,7 +4269,7 @@
             "filename": "api/AudioParam.json",
             "name": "value",
             "slug": "API/AudioParam/value",
-            "summary": "The Web Audio API's AudioParam interface property value gets or sets the value of this AudioParam at the current time. Initially, the value is set to AudioParam.defaultValue.The Web Audio API's AudioParam interface property value gets or sets the value of this AudioParam at the current time.",
+            "summary": "The Web Audio API's AudioParam interface property value gets or sets the value of this AudioParam at the current time. Initially, the value is set to AudioParam.defaultValue.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -4797,7 +4797,7 @@
             "filename": "api/AudioWorklet.json",
             "name": "AudioWorklet",
             "slug": "API/AudioWorklet",
-            "summary": "The AudioWorklet interface of the Web Audio API is used to supply custom audio processing scripts that execute in a separate thread to provide very low latency audio processing. The worklet's code is run in the AudioWorkletGlobalScope global execution context, using a separate Web Audio thread which is shared by the worklet and other audio nodes.The AudioWorklet interface of the Web Audio API is used to supply custom audio processing scripts that execute in a separate thread to provide very low latency audio processing.",
+            "summary": "The AudioWorklet interface of the Web Audio API is used to supply custom audio processing scripts that execute in a separate thread to provide very low latency audio processing.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -6694,7 +6694,7 @@
             "filename": "api/BaseAudioContext.json",
             "name": "sampleRate",
             "slug": "API/BaseAudioContext/sampleRate",
-            "summary": "The sampleRate property of the BaseAudioContext interface returns a floating point number representing the sample rate, in samples per second, used by all nodes in this audio context.",
+            "summary": "The sampleRate property of the BaseAudioContext interface returns a floating point number representing the sample rate, in samples per second, used by all nodes in this audio context. This limitation means that sample-rate converters are not supported.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -6804,7 +6804,7 @@
             "filename": "api/BaseAudioContext.json",
             "name": "BaseAudioContext",
             "slug": "API/BaseAudioContext",
-            "summary": "The BaseAudioContext interface of the Web Audio API acts as a base definition for online and offline audio-processing graphs, as represented by AudioContext and OfflineAudioContext respectively. You wouldn't use BaseAudioContext directly — you'd use its features via one of these two inheriting interfaces.The BaseAudioContext interface of the Web Audio API acts as a base definition for online and offline audio-processing graphs, as represented by AudioContext and OfflineAudioContext respectively.",
+            "summary": "The BaseAudioContext interface of the Web Audio API acts as a base definition for online and offline audio-processing graphs, as represented by AudioContext and OfflineAudioContext respectively. You wouldn't use BaseAudioContext directly — you'd use its features via one of these two inheriting interfaces.",
             "support": {
                 "chrome": [
                     {
@@ -7339,7 +7339,7 @@
             "filename": "api/BiquadFilterNode.json",
             "name": "BiquadFilterNode",
             "slug": "API/BiquadFilterNode",
-            "summary": "The BiquadFilterNode interface represents a simple low-order filter, and is created using the BaseAudioContext/createBiquadFilter method. It is an AudioNode that can represent different kinds of filters, tone control devices, and graphic equalizers.",
+            "summary": "The BiquadFilterNode interface represents a simple low-order filter, and is created using the BaseAudioContext/createBiquadFilter method. It is an AudioNode that can represent different kinds of filters, tone control devices, and graphic equalizers. A BiquadFilterNode always has exactly one input and one output.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -8176,7 +8176,7 @@
             "filename": "api/DynamicsCompressorNode.json",
             "name": "DynamicsCompressorNode",
             "slug": "API/DynamicsCompressorNode/DynamicsCompressorNode",
-            "summary": "The DynamicsCompressorNode() constructor creates a new DynamicsCompressorNode object which provides a compression effect, which lowers the volume of the loudest parts of the signal",
+            "summary": "The DynamicsCompressorNode() constructor creates a new DynamicsCompressorNode object which provides a compression effect, which lowers the volume of the loudest parts of the signal, in order to help prevent clipping and distortion. That can occur when multiple sounds are played and multiplexed together at once.",
             "support": {
                 "chrome": {
                     "version_added": "55",
@@ -10023,7 +10023,7 @@
             "filename": "api/OfflineAudioContext.json",
             "name": "OfflineAudioContext",
             "slug": "API/OfflineAudioContext/OfflineAudioContext",
-            "summary": "The OfflineAudioContext() constructor—part of the Web Audio API—creates and returns a new OfflineAudioContext object instance, which can then be used to render audio to an AudioBuffer rather than to an audio output device. The OfflineAudioContext() constructor—part of the Web Audio API—creates and returns a new OfflineAudioContext object instance, which can then be used to render audio to an AudioBuffer rather than to an audio output device.",
+            "summary": "The OfflineAudioContext() constructor—part of the Web Audio API—creates and returns a new OfflineAudioContext object instance, which can then be used to render audio to an AudioBuffer rather than to an audio output device.",
             "support": {
                 "chrome": [
                     {

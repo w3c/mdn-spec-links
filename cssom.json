@@ -335,7 +335,7 @@
             "filename": "api/CSSImportRule.json",
             "name": "media",
             "slug": "API/CSSImportRule/media",
-            "summary": "The read-only media property of the CSSImportRule interface returns a MediaList object, containing the value of the media attribute of the associated stylesheet. ",
+            "summary": "The read-only media property of the CSSImportRule interface returns a MediaList object, containing the value of the media attribute of the associated stylesheet.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -1436,7 +1436,7 @@
             "filename": "api/CSSStyleDeclaration.json",
             "name": "item",
             "slug": "API/CSSStyleDeclaration/item",
-            "summary": "The CSSStyleDeclaration.item() method interface returns a CSS property name from a CSSStyleDeclaration by index",
+            "summary": "The CSSStyleDeclaration.item() method interface returns a CSS property name from a CSSStyleDeclaration by index.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -1546,7 +1546,7 @@
             "filename": "api/CSSStyleDeclaration.json",
             "name": "parentRule",
             "slug": "API/CSSStyleDeclaration/parentRule",
-            "summary": "The CSSStyleDeclaration.parentRule read-only property returns a CSSRule that is the parent of this style block",
+            "summary": "The CSSStyleDeclaration.parentRule read-only property returns a CSSRule that is the parent of this style block, e.g. a CSSStyleRule representing the style for a CSS selector.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -1996,7 +1996,7 @@
             "filename": "api/CSSStyleSheet.json",
             "name": "cssRules",
             "slug": "API/CSSStyleSheet/cssRules",
-            "summary": "The read-only CSSStyleSheet property cssRules returns a live CSSRuleList which provides a real-time, up-to-date list of every CSS rule which comprises the stylesheet.",
+            "summary": "The read-only CSSStyleSheet property cssRules returns a live CSSRuleList which provides a real-time, up-to-date list of every CSS rule which comprises the stylesheet. Each item in the list is a CSSRule defining a single rule.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -2161,7 +2161,7 @@
             "filename": "api/CSSStyleSheet.json",
             "name": "ownerRule",
             "slug": "API/CSSStyleSheet/ownerRule",
-            "summary": "The read-only CSSStyleSheet property ownerRule returns the CSSImportRule corresponding to the @import at-rule which imported the stylesheet into the document.",
+            "summary": "The read-only CSSStyleSheet property ownerRule returns the CSSImportRule corresponding to the @import at-rule which imported the stylesheet into the document. If the stylesheet wasn't imported into the document using @import, the returned value is null.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -3116,7 +3116,7 @@
             "filename": "api/Window.json",
             "name": "getComputedStyle",
             "slug": "API/Window/getComputedStyle",
-            "summary": "The Window.getComputedStyle() method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain. Individual CSS property values are accessed through APIs provided by the object, or by indexing with CSS property names.The Window.getComputedStyle() method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.",
+            "summary": "The Window.getComputedStyle() method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.",
             "support": {
                 "chrome": {
                     "version_added": "1"
