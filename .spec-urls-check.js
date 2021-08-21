@@ -125,6 +125,8 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values",
     // FIXME: for this one we really do need a spec URL
     "https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite",
+    // FIXME: for this one we really do need a spec URL
+    "https://developer.mozilla.org/docs/Web/API/XRSession/requestHitTestSource",
     // FIXME: for all these we really do need spec URLs
     "https://developer.mozilla.org/docs/Web/API/NDEFMessage/NDEFMessage",
     "https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/NDEFReadingEvent",
