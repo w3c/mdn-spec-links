@@ -7,7 +7,7 @@
             "filename": "api/XRFrame.json",
             "name": "getHitTestResults",
             "slug": "API/XRFrame/getHitTestResults",
-            "summary": "The getHitTestResults() method of the XRFrame interface returns an array of XRHitResult objects containing hit test results for a given XRHitTestSource.",
+            "summary": "The getHitTestResults() method of the XRFrame interface returns an array of XRHitTestResult objects containing hit test results for a given XRHitTestSource.",
             "support": {
                 "chrome": {
                     "version_added": "81"
@@ -60,7 +60,7 @@
             "filename": "api/XRFrame.json",
             "name": "getHitTestResultsForTransientInput",
             "slug": "API/XRFrame/getHitTestResultsForTransientInput",
-            "summary": "The getHitTestResultsForTransientInput() method of the XRFrame interface returns an array of XRTransientInputHitResult objects containing transient input hit test results for a given XRTransientInputHitTestSource.",
+            "summary": "The getHitTestResultsForTransientInput() method of the XRFrame interface returns an array of XRTransientInputHitTestResult objects containing transient input hit test results for a given XRTransientInputHitTestSource.",
             "support": {
                 "chrome": {
                     "version_added": "81"
@@ -103,6 +103,59 @@
                 }
             },
             "title": "XRFrame.getHitTestResultsForTransientInput()"
+        }
+    ],
+    "xr-hit-test-result-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRHitTestResult.json",
+            "name": "XRHitTestResult",
+            "slug": "API/XRHitTestResult",
+            "summary": "The XRHitTestResult interface of the WebXR Device API contains a single result of a hit test. You can get an array of XRHitTestResult objects for a frame by calling XRFrame.getHitTestResults().",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRHitTestResult"
         }
     ],
     "dom-xrhittestsource-cancel": [
