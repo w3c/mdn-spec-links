@@ -1,0 +1,426 @@
+{
+    "dom-xrframe-gethittestresults": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRFrame.json",
+            "name": "getHitTestResults",
+            "slug": "API/XRFrame/getHitTestResults",
+            "summary": "The getHitTestResults() method of the XRFrame interface returns an array of XRHitResult objects containing hit test results for a given XRHitTestSource.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRFrame.getHitTestResults()"
+        }
+    ],
+    "dom-xrframe-gethittestresultsfortransientinput": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRFrame.json",
+            "name": "getHitTestResultsForTransientInput",
+            "slug": "API/XRFrame/getHitTestResultsForTransientInput",
+            "summary": "The getHitTestResultsForTransientInput() method of the XRFrame interface returns an array of XRTransientInputHitResult objects containing transient input hit test results for a given XRTransientInputHitTestSource.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRFrame.getHitTestResultsForTransientInput()"
+        }
+    ],
+    "dom-xrhittestsource-cancel": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRHitTestSource.json",
+            "name": "cancel",
+            "slug": "API/XRHitTestSource/cancel",
+            "summary": "The cancel() method of the XRHitTestSource interface unsubscribes a hit test.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRHitTestSource.cancel()"
+        }
+    ],
+    "hit-test-source-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRHitTestSource.json",
+            "name": "XRHitTestSource",
+            "slug": "API/XRHitTestSource",
+            "summary": "The XRHitTestSource interface of the WebXR Device API handles hit test subscriptions. You can get an XRHitTestSource object by using the XRSession.requestHitTestSource() method.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRHitTestSource"
+        }
+    ],
+    "dom-xrsession-requesthittestsource": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "requestHitTestSource",
+            "slug": "API/XRSession/requestHitTestSource",
+            "summary": "The requestHitTestSource() method of the XRSession interface returns a Promise that resolves with an XRHitTestSource object that can be passed to XRFrame.getHitTestResults().",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "12.1"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRSession.requestHitTestSource()"
+        }
+    ],
+    "dom-xrsession-requesthittestsourcefortransientinput": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "requestHitTestSourceForTransientInput",
+            "slug": "API/XRSession/requestHitTestSourceForTransientInput",
+            "summary": "The requestHitTestSourceForTransientInput() method of the XRSession interface returns a Promise that resolves with an XRTransientInputHitTestSource object that can be passed to XRFrame.getHitTestResultsForTransientInput().",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRSession.requestHitTestSourceForTransientInput()"
+        }
+    ],
+    "dom-xrtransientinputhittestsource-cancel": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRTransientInputHitTestSource.json",
+            "name": "cancel",
+            "slug": "API/XRTransientInputHitTestSource/cancel",
+            "summary": "The cancel() method of the XRTransientInputHitTestSource interface unsubscribes a transient input hit test.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRTransientInputHitTestSource.cancel()"
+        }
+    ],
+    "transient-input-hit-test-source-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRTransientInputHitTestSource.json",
+            "name": "XRTransientInputHitTestSource",
+            "slug": "API/XRTransientInputHitTestSource",
+            "summary": "The XRTransientInputHitTestSource interface of the WebXR Device API handles transient input hit test subscriptions. You can get an XRTransientInputHitTestSource object by calling the XRSession.requestHitTestSourceForTransientInput().",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRTransientInputHitTestSource"
+        }
+    ]
+}

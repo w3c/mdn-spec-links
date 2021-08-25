@@ -122,5 +122,121 @@
             },
             "title": "HTMLMediaElement.sinkId"
         }
+    ],
+    "dom-mediadevices-selectaudiooutput": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/MediaDevices.json",
+            "name": "selectAudioOutput",
+            "slug": "API/MediaDevices/selectAudioOutput",
+            "summary": "The MediaDevices method selectAudioOutput() prompts the user to select a specific audio output device, for example a speaker or headset. On success, the returned Promise is resolved with a MediaDeviceInfo describing the selected device.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "88",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.setsinkid.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "MediaDevices.selectAudioOutput()"
+        }
+    ],
+    "permissions-policy-integration": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "http/headers/feature-policy.json",
+            "name": "speaker-selection",
+            "slug": "HTTP/Headers/Feature-Policy/speaker-selection",
+            "summary": "The HTTP Feature-Policy header speaker-selection directive controls whether the current document is allowed to enumerate and select audio output devices (speakers, headphones, etc.).",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "92"
+                },
+                "firefox_android": {
+                    "version_added": "92"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "Feature-Policy: speaker-selection"
+        }
     ]
 }

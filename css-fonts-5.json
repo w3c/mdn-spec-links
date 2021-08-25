@@ -5,9 +5,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "css/at-rules/font-face.json",
             "name": "size-adjust",
             "slug": "CSS/@font-face/size-adjust",
@@ -22,18 +19,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "89",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.size-adjust.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "92"
+                    },
+                    {
+                        "version_added": "89",
+                        "version_removed": "92",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.size-adjust.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "92"
                 },
                 "ie": {
                     "version_added": false
@@ -68,9 +71,6 @@
             "engines": [
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "css/properties/font-size-adjust.json",
             "name": "two-values",
             "slug": "CSS/font-size-adjust",
@@ -85,24 +85,36 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "91",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.font-size-adjust.basis.enabled"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "91",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.font-size-adjust.basis.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "92"
+                    },
+                    {
+                        "version_added": "91",
+                        "version_removed": "92",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.font-size-adjust.basis.enabled"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "92"
+                    },
+                    {
+                        "version_added": "91",
+                        "version_removed": "92",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.font-size-adjust.basis.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
