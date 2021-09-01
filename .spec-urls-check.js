@@ -124,7 +124,7 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/keys",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values",
     // FIXME: for this one we really do need a spec URL
-    "https://developer.mozilla.org/en-US/docs/Web/API/GamepadButton/touched",
+    "https://developer.mozilla.org/docs/Web/API/GamepadButton/touched",
     // FIXME: for this one we really do need a spec URL
     "https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite",
     // FIXME: for this one we really do need a spec URL
