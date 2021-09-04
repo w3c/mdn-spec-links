@@ -264,6 +264,271 @@
             "title": "XRHitTestSource"
         }
     ],
+    "dom-xrray-xrray": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRRay.json",
+            "name": "XRRay",
+            "slug": "API/XRRay/XRRay",
+            "summary": "The XRRay() constructor creates a new XRRay object which is a geometric ray described by an origin point and a direction vector.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRRay()"
+        }
+    ],
+    "dom-xrray-direction": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRRay.json",
+            "name": "direction",
+            "slug": "API/XRRay/direction",
+            "summary": "The read-only direction property of the XRRay interface is a DOMPointReadOnly representing the ray's 3-dimensional directional vector, normalized to a unit vector with a length of 1.0.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRRay.direction"
+        }
+    ],
+    "dom-xrray-matrix": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRRay.json",
+            "name": "matrix",
+            "slug": "API/XRRay/matrix",
+            "summary": "The read-only matrix property of the XRRay interface is a transform that can be used to position objects along the XRRay. This is a 4 by 4 matrix given as a 16 element Float32Array in column major order.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRRay.matrix"
+        }
+    ],
+    "dom-xrray-origin": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRRay.json",
+            "name": "origin",
+            "slug": "API/XRRay/origin",
+            "summary": "The read-only origin property of the XRRay interface is a DOMPointReadOnly representing the 3-dimensional point in space that the ray originates from, in meters.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRRay.origin"
+        }
+    ],
+    "xrray-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRRay.json",
+            "name": "XRRay",
+            "slug": "API/XRRay",
+            "summary": "The XRRay interface of the WebXR Device API is a geometric ray described by an origin point and a direction vector.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "XRRay"
+        }
+    ],
     "dom-xrsession-requesthittestsource": [
         {
             "engines": [

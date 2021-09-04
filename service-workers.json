@@ -3865,7 +3865,7 @@
             "filename": "api/ServiceWorkerGlobalScope.json",
             "name": "onfetch",
             "slug": "API/ServiceWorkerGlobalScope/onfetch",
-            "summary": "The onfetch property of the ServiceWorkerGlobalScope interface is an event handler fired whenever a fetch event occurs (usually when the WindowOrWorkerGlobalScope.fetch() method is called.)",
+            "summary": "The onfetch property of the ServiceWorkerGlobalScope interface is an event handler fired whenever a fetch event occurs (usually when the fetch() method is called.)",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -5008,10 +5008,10 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
+            "filename": "api/_globals/caches.json",
             "name": "caches",
-            "slug": "API/WindowOrWorkerGlobalScope/caches",
-            "summary": "The caches read-only property of the WindowOrWorkerGlobalScope interface returns the CacheStorage object associated with the current context. This object enables functionality such as storing assets for offline use, and generating custom responses to requests.",
+            "slug": "API/caches",
+            "summary": "The global caches read-only property returns the CacheStorage object associated with the current context. This object enables functionality such as storing assets for offline use, and generating custom responses to requests.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -5056,7 +5056,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowOrWorkerGlobalScope.caches"
+            "title": "caches"
         }
     ]
 }

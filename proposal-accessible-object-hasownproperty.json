@@ -2,6 +2,7 @@
     "sec-object.hasown": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "javascript/builtins/Object.json",
@@ -10,10 +11,10 @@
             "summary": "The Object.hasOwn() static method returns true if the specified object has the indicated property as its own property. If the property is inherited, or does not exist, the method returns false.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "deno": {
                     "version_added": "1.13"
@@ -22,12 +23,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "91",
-                    "notes": "Available only in nightly builds."
+                    "version_added": "92"
                 },
                 "firefox_android": {
-                    "version_added": "91",
-                    "notes": "Available only in nightly builds."
+                    "version_added": "92"
                 },
                 "ie": {
                     "version_added": false
@@ -36,7 +35,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "opera_android": {
                     "version_added": false
@@ -51,10 +50,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "93"
                 }
             },
             "title": "Object.hasOwn()"

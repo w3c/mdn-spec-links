@@ -10495,7 +10495,12 @@
                 },
                 "deno": [
                     {
+                        "version_added": "1.14",
+                        "notes": "The <code>message</code> parameter does not support cloning <code>Blob</code> values."
+                    },
+                    {
                         "version_added": "1.12",
+                        "version_removed": "1.14",
                         "partial_implementation": true,
                         "notes": [
                             "The <code>message</code> parameter does not support cloning <code>Blob</code> values.",
@@ -18858,10 +18863,10 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "5.1"
+                    "version_added": "5"
                 },
                 "safari_ios": {
-                    "version_added": "5"
+                    "version_added": "4.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -37049,14 +37054,21 @@
                 "chrome_android": {
                     "version_added": "18"
                 },
-                "deno": {
-                    "version_added": "1.12",
-                    "partial_implementation": true,
-                    "notes": [
-                        "The <code>message</code> parameter does not support cloning <code>Blob</code> values.",
-                        "The <code>transfer</code> parameter does not accept <code>ArrayBuffer</code> items. Passing an <code>ArrayBuffer</code> results in an error being thrown."
-                    ]
-                },
+                "deno": [
+                    {
+                        "version_added": "1.14",
+                        "notes": "The <code>message</code> parameter does not support cloning <code>Blob</code> values."
+                    },
+                    {
+                        "version_added": "1.12",
+                        "version_removed": "1.14",
+                        "partial_implementation": true,
+                        "notes": [
+                            "The <code>message</code> parameter does not support cloning <code>Blob</code> values.",
+                            "The <code>transfer</code> parameter does not accept <code>ArrayBuffer</code> items. Passing an <code>ArrayBuffer</code> results in an error being thrown."
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": "12"
                 },
@@ -42862,7 +42874,7 @@
                     "version_added": true
                 },
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.12"
                 },
                 "edge": {
                     "version_added": "12"
@@ -46239,114 +46251,6 @@
             "title": "Window: hashchange event"
         }
     ],
-    "dom-issecurecontext-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "isSecureContext",
-            "slug": "API/Window/isSecureContext",
-            "summary": "The window.isSecureContext read-only property indicates whether a context is capable of using features that require secure contexts.",
-            "support": {
-                "chrome": {
-                    "version_added": "47"
-                },
-                "chrome_android": {
-                    "version_added": "47"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "49"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "34"
-                },
-                "opera_android": {
-                    "version_added": "34"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "47"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Window.isSecureContext"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "isSecureContext",
-            "slug": "API/WindowOrWorkerGlobalScope/isSecureContext",
-            "summary": "The isSecureContext read-only property of the WindowOrWorkerGlobalScope interface returns a boolean indicating whether the current context is secure (true) or not (false).",
-            "support": {
-                "chrome": {
-                    "version_added": "55"
-                },
-                "chrome_android": {
-                    "version_added": "55"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "52"
-                },
-                "firefox_android": {
-                    "version_added": "52"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "42"
-                },
-                "opera_android": {
-                    "version_added": "42"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "55"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.isSecureContext"
-        }
-    ],
     "event-languagechange": [
         {
             "engines": [
@@ -49365,752 +49269,6 @@
             "title": "WindowEventHandlers"
         }
     ],
-    "dom-atob-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "atob",
-            "slug": "API/WindowOrWorkerGlobalScope/atob",
-            "summary": "The WindowOrWorkerGlobalScope.atob() function decodes a string of data which has been encoded using Base64 encoding. You can use the btoa() method to encode and transmit data which may otherwise cause communication problems, then transmit it and use the atob() method to decode the data again. For example, you can encode, transmit, and decode control characters such as ASCII values 0 through 31.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": [
-                    {
-                        "version_added": "1"
-                    },
-                    {
-                        "version_added": "27",
-                        "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "4"
-                    },
-                    {
-                        "version_added": "27",
-                        "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
-                    }
-                ],
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "10.5"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.atob()"
-        }
-    ],
-    "dom-btoa-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "btoa",
-            "slug": "API/WindowOrWorkerGlobalScope/btoa",
-            "summary": "The WindowOrWorkerGlobalScope.btoa() method creates a Base64-encoded ASCII string from a binary string (i.e., a String object in which each character in the string is treated as a byte of binary data).",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "10.5"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.btoa()"
-        }
-    ],
-    "dom-clearinterval-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "clearInterval",
-            "slug": "API/WindowOrWorkerGlobalScope/clearInterval",
-            "summary": "The clearInterval() method of the WindowOrWorkerGlobalScope mixin cancels a timed, repeating action which was previously established by a call to setInterval().",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4",
-                    "notes": "From Internet Explorer 4 through 8, <code>clearInterval</code> is an Object rather than a Function. This behavior was fixed in Internet Explorer 9."
-                },
-                "nodejs": {
-                    "version_added": true,
-                    "partial_implementation": true,
-                    "notes": "Takes a <code>Timeout</code> object instead of the <code>intervalID</code>."
-                },
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.clearInterval()"
-        }
-    ],
-    "dom-cleartimeout-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "clearTimeout",
-            "slug": "API/WindowOrWorkerGlobalScope/clearTimeout",
-            "summary": "The clearTimeout() method of the WindowOrWorkerGlobalScope mixin cancels a timeout previously established by calling setTimeout().",
-            "support": {
-                "chrome": {
-                    "version_added": "45"
-                },
-                "chrome_android": {
-                    "version_added": "45"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4",
-                    "notes": "From Internet Explorer 4 through 8, <code>clearTimeout</code> is an Object rather than a Function. This behavior was fixed in Internet Explorer 9."
-                },
-                "nodejs": {
-                    "version_added": true,
-                    "partial_implementation": true,
-                    "notes": "Takes a <code>Timeout</code> object instead of the <code>timeoutID</code>."
-                },
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "45"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.clearTimeout()"
-        }
-    ],
-    "dom-createimagebitmap-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "createImageBitmap",
-            "slug": "API/WindowOrWorkerGlobalScope/createImageBitmap",
-            "summary": "The createImageBitmap() method creates a bitmap from a given source, optionally cropped to contain only a portion of that source. The method exists on the global scope in both windows and workers. It accepts a variety of different image sources, and returns a Promise which resolves to an ImageBitmap.",
-            "support": {
-                "chrome": {
-                    "version_added": "50"
-                },
-                "chrome_android": {
-                    "version_added": "50"
-                },
-                "deno": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "42"
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/182424'>bug 182424</a>."
-                },
-                "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/182424'>bug 182424</a>."
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "50"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "self.createImageBitmap()"
-        }
-    ],
-    "dom-crossoriginisolated-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "crossOriginIsolated",
-            "slug": "API/WindowOrWorkerGlobalScope/crossOriginIsolated",
-            "summary": "The crossOriginIsolated read-only property of the WindowOrWorkerGlobalScope interface returns a boolean value that indicates whether a SharedArrayBuffer can be sent via a Window.postMessage() call.",
-            "support": {
-                "chrome": {
-                    "version_added": "87"
-                },
-                "chrome_android": {
-                    "version_added": "87"
-                },
-                "deno": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "72"
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "73"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "14.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "87"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.crossOriginIsolated"
-        }
-    ],
-    "dom-origin-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "origin",
-            "slug": "API/WindowOrWorkerGlobalScope/origin",
-            "summary": "The origin read-only property of the WindowOrWorkerGlobalScope interface returns the origin of the global scope, serialized as a string.",
-            "support": {
-                "chrome": {
-                    "version_added": "59"
-                },
-                "chrome_android": {
-                    "version_added": "59"
-                },
-                "deno": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "54"
-                },
-                "firefox_android": {
-                    "version_added": "54"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
-                "webview_android": {
-                    "version_added": "59"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.origin"
-        }
-    ],
-    "microtask-queuing": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "queueMicrotask",
-            "slug": "API/WindowOrWorkerGlobalScope/queueMicrotask",
-            "summary": "The queueMicrotask() method, which is exposed on the Window or Worker interface, queues a microtask to be executed at a safe time prior to control returning to the browser's event loop.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "69"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "11.0.0"
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "12.1"
-                },
-                "safari_ios": {
-                    "version_added": "12.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.queueMicrotask()"
-        }
-    ],
-    "dom-setinterval-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "setInterval",
-            "slug": "API/WindowOrWorkerGlobalScope/setInterval",
-            "summary": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.",
-            "support": {
-                "chrome": {
-                    "version_added": "30"
-                },
-                "chrome_android": {
-                    "version_added": "30"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "nodejs": {
-                    "version_added": true,
-                    "partial_implementation": true,
-                    "notes": [
-                        "Returns a <code>Timeout</code> object instead of the <code>intervalID</code>.",
-                        "Does not support passing a <code>code</code> string and throws when the first parameter is not a function."
-                    ]
-                },
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.setInterval()"
-        }
-    ],
-    "dom-settimeout-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "setTimeout",
-            "slug": "API/WindowOrWorkerGlobalScope/setTimeout",
-            "summary": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin sets a timer which executes a function or specified piece of code once the timer expires.",
-            "support": {
-                "chrome": {
-                    "version_added": "30"
-                },
-                "chrome_android": {
-                    "version_added": "30"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "nodejs": {
-                    "version_added": true,
-                    "partial_implementation": true,
-                    "notes": [
-                        "Returns a <code>Timeout</code> object instead of the <code>timeoutID</code>.",
-                        "Does not support passing a <code>code</code> string and throws when the first parameter is not a function."
-                    ]
-                },
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.setTimeout()"
-        }
-    ],
-    "dom-structuredclone": [
-        {
-            "engines": [],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "structuredClone",
-            "slug": "API/WindowOrWorkerGlobalScope/structuredClone",
-            "summary": "The structuredClone() method of the WindowOrWorkerGlobalScope mixin deep clones a given value using the structured clone algorithm.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "deno": {
-                    "version_added": "1.13",
-                    "partial_implementation": true,
-                    "notes": [
-                        "The <code>message</code> parameter does not support cloning <code>Blob</code> values.",
-                        "The <code>transfer</code> parameter does not accept <code>ArrayBuffer</code> items. Passing an <code>ArrayBuffer</code> results in an error being thrown."
-                    ]
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.structuredClone()"
-        }
-    ],
-    "windoworworkerglobalscope-mixin": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowOrWorkerGlobalScope.json",
-            "name": "WindowOrWorkerGlobalScope",
-            "slug": "API/WindowOrWorkerGlobalScope",
-            "summary": "The WindowOrWorkerGlobalScope mixin describes several features common to the Window and WorkerGlobalScope interfaces.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": true
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope"
-        }
-    ],
     "dom-worker-dev": [
         {
             "engines": [
@@ -50317,7 +49475,12 @@
                 },
                 "deno": [
                     {
+                        "version_added": "1.14",
+                        "notes": "The <code>message</code> parameter does not support cloning <code>Blob</code> values."
+                    },
+                    {
                         "version_added": "1.12",
+                        "version_removed": "1.14",
                         "partial_implementation": true,
                         "notes": [
                             "The <code>message</code> parameter does not support cloning <code>Blob</code> values.",
@@ -51864,6 +51027,756 @@
                 }
             },
             "title": "Worklet"
+        }
+    ],
+    "dom-atob-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/atob.json",
+            "name": "atob",
+            "slug": "API/atob",
+            "summary": "The atob() function decodes a string of data which has been encoded using Base64 encoding. You can use the btoa() method to encode and transmit data which may otherwise cause communication problems, then transmit it and use the atob() method to decode the data again. For example, you can encode, transmit, and decode control characters such as ASCII values 0 through 31.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": [
+                    {
+                        "version_added": "1"
+                    },
+                    {
+                        "version_added": "27",
+                        "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "4"
+                    },
+                    {
+                        "version_added": "27",
+                        "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
+                    }
+                ],
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "atob()"
+        }
+    ],
+    "dom-btoa-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/btoa.json",
+            "name": "btoa",
+            "slug": "API/btoa",
+            "summary": "The btoa() method creates a Base64-encoded ASCII string from a binary string (i.e., a String object in which each character in the string is treated as a byte of binary data).",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "btoa()"
+        }
+    ],
+    "dom-clearinterval-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/clearInterval.json",
+            "name": "clearInterval",
+            "slug": "API/clearInterval",
+            "summary": "The global clearInterval() method cancels a timed, repeating action which was previously established by a call to setInterval().",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4",
+                    "notes": "From Internet Explorer 4 through 8, <code>clearInterval</code> is an Object rather than a Function. This behavior was fixed in Internet Explorer 9."
+                },
+                "nodejs": {
+                    "version_added": true,
+                    "partial_implementation": true,
+                    "notes": "Takes a <code>Timeout</code> object instead of the <code>intervalID</code>."
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "clearInterval()"
+        }
+    ],
+    "dom-cleartimeout-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/clearTimeout.json",
+            "name": "clearTimeout",
+            "slug": "API/clearTimeout",
+            "summary": "The global clearTimeout() method cancels a timeout previously established by calling setTimeout().",
+            "support": {
+                "chrome": {
+                    "version_added": "45"
+                },
+                "chrome_android": {
+                    "version_added": "45"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4",
+                    "notes": "From Internet Explorer 4 through 8, <code>clearTimeout</code> is an Object rather than a Function. This behavior was fixed in Internet Explorer 9."
+                },
+                "nodejs": {
+                    "version_added": true,
+                    "partial_implementation": true,
+                    "notes": "Takes a <code>Timeout</code> object instead of the <code>timeoutID</code>."
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "45"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "clearTimeout()"
+        }
+    ],
+    "dom-createimagebitmap-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/_globals/createImageBitmap.json",
+            "name": "createImageBitmap",
+            "slug": "API/createImageBitmap",
+            "summary": "The createImageBitmap() method creates a bitmap from a given source, optionally cropped to contain only a portion of that source. The method exists on the global scope in both windows and workers. It accepts a variety of different image sources, and returns a Promise which resolves to an ImageBitmap.",
+            "support": {
+                "chrome": {
+                    "version_added": "50"
+                },
+                "chrome_android": {
+                    "version_added": "50"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "42"
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/182424'>bug 182424</a>."
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/182424'>bug 182424</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "50"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "createImageBitmap()"
+        }
+    ],
+    "dom-crossoriginisolated-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/_globals/crossOriginIsolated.json",
+            "name": "crossOriginIsolated",
+            "slug": "API/crossOriginIsolated",
+            "summary": "The global crossOriginIsolated read-only property returns a boolean value that indicates whether a SharedArrayBuffer can be sent via a Window.postMessage() call.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "72"
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "crossOriginIsolated"
+        }
+    ],
+    "dom-issecurecontext-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/isSecureContext.json",
+            "name": "isSecureContext",
+            "slug": "API/isSecureContext",
+            "summary": "The global isSecureContext read-only property returns a boolean indicating whether the current context is secure (true) or not (false).",
+            "support": {
+                "chrome": {
+                    "version_added": "47"
+                },
+                "chrome_android": {
+                    "version_added": "47"
+                },
+                "edge": {
+                    "version_added": "15"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "49"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "34"
+                },
+                "opera_android": {
+                    "version_added": "34"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "47"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "isSecureContext"
+        }
+    ],
+    "dom-origin-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/origin.json",
+            "name": "origin",
+            "slug": "API/origin",
+            "summary": "The global origin read-only property returns the origin of the global scope, serialized as a string.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "54"
+                },
+                "firefox_android": {
+                    "version_added": "54"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "origin"
+        }
+    ],
+    "microtask-queuing": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/queueMicrotask.json",
+            "name": "queueMicrotask",
+            "slug": "API/queueMicrotask",
+            "summary": "The queueMicrotask() method, which is exposed on the Window or Worker interface, queues a microtask to be executed at a safe time prior to control returning to the browser's event loop.",
+            "support": {
+                "chrome": {
+                    "version_added": "71"
+                },
+                "chrome_android": {
+                    "version_added": "71"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "69"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "11.0.0"
+                },
+                "opera": {
+                    "version_added": "58"
+                },
+                "opera_android": {
+                    "version_added": "50"
+                },
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": {
+                    "version_added": "12.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "10.0"
+                },
+                "webview_android": {
+                    "version_added": "71"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "queueMicrotask()"
+        }
+    ],
+    "dom-setinterval-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/setInterval.json",
+            "name": "setInterval",
+            "slug": "API/setInterval",
+            "summary": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.",
+            "support": {
+                "chrome": {
+                    "version_added": "30"
+                },
+                "chrome_android": {
+                    "version_added": "30"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": true,
+                    "partial_implementation": true,
+                    "notes": [
+                        "Returns a <code>Timeout</code> object instead of the <code>intervalID</code>.",
+                        "Does not support passing a <code>code</code> string and throws when the first parameter is not a function."
+                    ]
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "setInterval()"
+        }
+    ],
+    "dom-settimeout-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/setTimeout.json",
+            "name": "setTimeout",
+            "slug": "API/setTimeout",
+            "summary": "The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.",
+            "support": {
+                "chrome": {
+                    "version_added": "30"
+                },
+                "chrome_android": {
+                    "version_added": "30"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": true,
+                    "partial_implementation": true,
+                    "notes": [
+                        "Returns a <code>Timeout</code> object instead of the <code>timeoutID</code>.",
+                        "Does not support passing a <code>code</code> string and throws when the first parameter is not a function."
+                    ]
+                },
+                "opera": {
+                    "version_added": "4"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "setTimeout()"
+        }
+    ],
+    "dom-structuredclone": [
+        {
+            "engines": [],
+            "filename": "api/_globals/structuredClone.json",
+            "name": "structuredClone",
+            "slug": "API/structuredClone",
+            "summary": "The global structuredClone() method deep clones a given value using the structured clone algorithm.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "deno": [
+                    {
+                        "version_added": "1.14",
+                        "notes": "The <code>message</code> parameter does not support cloning <code>Blob</code> values."
+                    },
+                    {
+                        "version_added": "1.13",
+                        "version_removed": "1.14",
+                        "partial_implementation": true,
+                        "notes": [
+                            "The <code>message</code> parameter does not support cloning <code>Blob</code> values.",
+                            "The <code>transfer</code> parameter does not accept <code>ArrayBuffer</code> items. Passing an <code>ArrayBuffer</code> results in an error being thrown."
+                        ]
+                    }
+                ],
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "structuredClone()"
         }
     ],
     "dom-documentorshadowroot-activeelement-dev": [
@@ -62027,7 +61940,7 @@
             "filename": "html/elements/summary.json",
             "name": "summary",
             "slug": "HTML/Element/summary",
-            "summary": "The <summary> HTML element element specifies a summary, caption, or legend for a <details> element's disclosure box. Clicking the <summary> element toggles the state of the parent <details> element open and closed.",
+            "summary": "The <summary> HTML element specifies a summary, caption, or legend for a <details> element's disclosure box. Clicking the <summary> element toggles the state of the parent <details> element open and closed.",
             "support": {
                 "chrome": {
                     "version_added": "12"
@@ -65126,76 +65039,6 @@
                 }
             },
             "title": "import.meta"
-        }
-    ],
-    "atob": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": null,
-            "name": "atob",
-            "slug": "API/WindowOrWorkerGlobalScope/atob",
-            "summary": "The WindowOrWorkerGlobalScope.atob() function decodes a string of data which has been encoded using Base64 encoding. You can use the btoa() method to encode and transmit data which may otherwise cause communication problems, then transmit it and use the atob() method to decode the data again. For example, you can encode, transmit, and decode control characters such as ASCII values 0 through 31.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": [
-                    {
-                        "version_added": "1"
-                    },
-                    {
-                        "version_added": "27",
-                        "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "4"
-                    },
-                    {
-                        "version_added": "27",
-                        "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
-                    }
-                ],
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "10.5"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "≤37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowOrWorkerGlobalScope.atob()"
         }
     ],
     "attr-fae-form": [
