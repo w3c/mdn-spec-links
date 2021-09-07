@@ -2431,7 +2431,7 @@
             "filename": "api/EffectTiming.json",
             "name": "endDelay",
             "slug": "API/EffectTiming/endDelay",
-            "summary": "The endDelay property of the EffectTiming dictionary (part of the Web Animations API) indicates the number of milliseconds to delay after the active period of an animation sequence. The animation's end time—the time at which an iteration is considered to have finished—is the time at which the animation finishes an iteration (its initial delay, AnimationEffectTimingReadOnly.delay, plus its duration,duration, plus its end delay.",
+            "summary": "The endDelay property of the EffectTiming dictionary (part of the Web Animations API) indicates the number of milliseconds to delay after the active period of an animation sequence. The animation's end time—the time at which an iteration is considered to have finished—is the time at which the animation finishes an iteration (its initial delay, delay, plus its duration,duration, plus its end delay).",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2651,7 +2651,7 @@
             "filename": "api/EffectTiming.json",
             "name": "EffectTiming",
             "slug": "API/EffectTiming",
-            "summary": "The EffectTiming dictionary, part of the Web Animations API, is used by Element.animate(), KeyframeEffectReadOnly(), and KeyframeEffect() to describe timing properties for animation effects. These properties are all optional, although without setting a duration the animation will not play.",
+            "summary": "The EffectTiming dictionary, part of the Web Animations API, is used by Element.animate(), and KeyframeEffect() to describe timing properties for animation effects. These properties are all optional, although without setting a duration the animation will not play.",
             "support": {
                 "chrome": [
                     {
