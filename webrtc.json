@@ -3942,7 +3942,7 @@
             "filename": "api/RTCIceCandidateInit.json",
             "name": "candidate",
             "slug": "API/RTCIceCandidateInit/candidate",
-            "summary": "The optional property candidate in the RTCIceCandidateInit dictionary specifies the value of the RTCIceCandidate object's candidate property.",
+            "summary": "The read-only property candidate on the RTCIceCandidate interface returns a DOMString describing the candidate in detail. Most of the other properties of RTCIceCandidate are actually extracted from this string.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -3986,7 +3986,7 @@
                     "version_added": true
                 }
             },
-            "title": "RTCIceCandidateInit.candidate"
+            "title": "RTCIceCandidate.candidate"
         }
     ],
     "dom-rtcicecandidateinit-sdpmid": [
@@ -3999,7 +3999,7 @@
             "filename": "api/RTCIceCandidateInit.json",
             "name": "sdpMid",
             "slug": "API/RTCIceCandidateInit/sdpMid",
-            "summary": "The optional property sdpMid in the RTCIceCandidateInit dictionary specifies the value of the RTCIceCandidate object's sdpMid property.",
+            "summary": "The read-only property sdpMid on the RTCIceCandidate interface returns a DOMString specifying the media stream identification tag of the media component with which the candidate is associated. This ID uniquely identifies a given stream for the component with which the candidate is associated.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -4041,7 +4041,7 @@
                     "version_added": true
                 }
             },
-            "title": "RTCIceCandidateInit.sdpMid"
+            "title": "RTCIceCandidate.sdpMid"
         }
     ],
     "dom-rtcicecandidateinit-sdpmlineindex": [
@@ -4054,7 +4054,7 @@
             "filename": "api/RTCIceCandidateInit.json",
             "name": "sdpMLineIndex",
             "slug": "API/RTCIceCandidateInit/sdpMLineIndex",
-            "summary": "The optional property sdpMLineIndex in the RTCIceCandidateInit dictionary specifies the value of the RTCIceCandidate object's sdpMLineIndex property.",
+            "summary": "The read-only sdpMLineIndex property on the RTCIceCandidate interface is a zero-based index of the m-line describing the media associated with the candidate.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -4096,7 +4096,7 @@
                     "version_added": true
                 }
             },
-            "title": "RTCIceCandidateInit.sdpMLineIndex"
+            "title": "RTCIceCandidate.sdpMLineIndex"
         }
     ],
     "dom-rtcicecandidateinit-usernamefragment": [
@@ -4109,7 +4109,7 @@
             "filename": "api/RTCIceCandidateInit.json",
             "name": "usernameFragment",
             "slug": "API/RTCIceCandidateInit/usernameFragment",
-            "summary": "The optional property usernameFragment in the RTCIceCandidateInit dictionary specifies the value of the RTCIceCandidate object's usernameFragment property.",
+            "summary": "The read-only usernameFragment property on the RTCIceCandidate interface is a string indicating the username fragment (\"ufrag\") that uniquely identifies a single ICE interaction session.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -4151,7 +4151,7 @@
                     "version_added": true
                 }
             },
-            "title": "RTCIceCandidateInit.usernameFragment"
+            "title": "RTCIceCandidate.usernameFragment"
         }
     ],
     "dom-rtcicecandidateinit": [
@@ -4164,7 +4164,7 @@
             "filename": "api/RTCIceCandidateInit.json",
             "name": "RTCIceCandidateInit",
             "slug": "API/RTCIceCandidateInit",
-            "summary": "The WebRTC API's RTCIceCandidateInit dictionary, which contains the information needed to fundamentally describe an RTCIceCandidate.",
+            "summary": "The RTCIceCandidate() constructor creates and returns a new RTCIceCandidate object, which can be configured to represent a single ICE candidate.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -4206,7 +4206,7 @@
                     "version_added": true
                 }
             },
-            "title": "RTCIceCandidateInit"
+            "title": "RTCIceCandidate()"
         }
     ],
     "dom-rtcicecredentialtype": [
