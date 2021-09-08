@@ -384,9 +384,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "css/properties/rotate.json",
             "name": "rotate",
             "slug": "CSS/rotate",
@@ -417,16 +414,22 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": "60",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.individual-transform.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "60",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.individual-transform.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -459,9 +462,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "css/properties/scale.json",
             "name": "scale",
             "slug": "CSS/scale",
@@ -492,16 +492,22 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": "60",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.individual-transform.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "60",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.individual-transform.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -534,9 +540,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "css/properties/translate.json",
             "name": "translate",
             "slug": "CSS/translate",
@@ -567,16 +570,22 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": "60",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.individual-transform.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "60",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.individual-transform.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },

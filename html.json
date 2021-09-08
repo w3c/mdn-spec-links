@@ -13694,7 +13694,8 @@
     "dom-elementinternals-shadowroot": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/ElementInternals.json",
             "name": "shadowRoot",
@@ -13711,10 +13712,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "ie": {
                     "version_added": false
@@ -13906,7 +13907,8 @@
     "the-elementinternals-interface": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/ElementInternals.json",
             "name": "ElementInternals",
@@ -13923,10 +13925,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "ie": {
                     "version_added": false
@@ -36072,7 +36074,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/MediaError.json",
             "name": "message",
@@ -36104,7 +36107,7 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "preview"
                 },
                 "safari_ios": {
                     "version_added": false
@@ -40503,7 +40506,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/SubmitEvent.json",
             "name": "SubmitEvent",
@@ -40535,7 +40539,7 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "preview"
                 },
                 "safari_ios": {
                     "version_added": false
@@ -53264,7 +53268,8 @@
     "selector-autofill": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "prefixed": [
                 "blink",
@@ -53315,10 +53320,15 @@
                     "version_added": "14",
                     "prefix": "-webkit-"
                 },
-                "safari": {
-                    "version_added": "3",
-                    "prefix": "-webkit-"
-                },
+                "safari": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "3",
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "safari_ios": {
                     "version_added": "1",
                     "prefix": "-webkit-"
@@ -64658,7 +64668,11 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "webkit"
             ],
             "filename": "http/headers/cross-origin-embedder-policy.json",
             "name": "Cross-Origin-Embedder-Policy",
@@ -64690,7 +64704,13 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "name": "Cross-Origin-Embedder-Policy (COEP) header",
+                            "type": "preference"
+                        }
+                    ]
                 },
                 "safari_ios": {
                     "version_added": false
@@ -64712,7 +64732,11 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "webkit"
             ],
             "filename": "http/headers/cross-origin-opener-policy.json",
             "name": "Cross-Origin-Opener-Policy",
@@ -64768,7 +64792,13 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "name": "Cross-Origin-Opener-Policy (COOP) header",
+                            "type": "preference"
+                        }
+                    ]
                 },
                 "safari_ios": {
                     "version_added": false
