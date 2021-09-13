@@ -240,12 +240,8 @@ const checkSpecURL = (
    *   return;
    * }
    */
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12231
-  if (spec_url.startsWith('https://w3c.github.io/payment-method-basic-card/')) {
-    return;
-  }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12232
-  if (spec_url.startsWith('https://w3c.github.io/permissions/#status-of-a-permission')) {
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12368
+  if (spec_url.startsWith('https://w3c.github.io/webcodecs/#dom-imagedecoder-type')) {
     return;
   }
   if (
