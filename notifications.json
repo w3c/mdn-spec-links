@@ -11,20 +11,14 @@
             "slug": "API/Notification/Notification",
             "summary": "The Notification() constructor creates a new Notification object instance, which represents a user notification.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "5",
-                        "prefix": "webkit"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "20"
+                },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "25"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "14"
                 },
                 "firefox": [
                     {
@@ -48,10 +42,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "25"
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -60,20 +54,14 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "prefix": "webkit"
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Notification()"
         }
@@ -250,10 +238,10 @@
             "summary": "The body read-only property of the Notification interface indicates the body string of the notification, as specified in the body option of the Notification() constructor.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "edge": {
                     "version_added": "14"
@@ -268,10 +256,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "11"
@@ -280,13 +268,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "2.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.body"
@@ -305,28 +293,28 @@
             "summary": "The close() method of the Notification interface is used to close/remove a previously displayed notification.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -335,13 +323,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.close()"
@@ -414,10 +402,10 @@
             "summary": "The dir read-only property of the Notification interface indicates the text direction of the notification, as specified in the dir option of the Notification() constructor.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "14"
@@ -432,10 +420,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -444,13 +432,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.dir"
@@ -468,47 +456,29 @@
             "slug": "API/Notification/icon",
             "summary": "The icon read-only property of the Notification interface contains the URL of an icon to be displayed as part of the notification, as specified in the icon option of the Notification() constructor.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "prefix": "webkit",
-                        "version_added": "5"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "33"
+                },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "prefix": "moz",
-                        "version_added": "4"
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "prefix": "moz",
-                        "version_added": "4"
-                    }
-                ],
+                "firefox": {
+                    "version_added": "26"
+                },
+                "firefox_android": {
+                    "version_added": "26"
+                },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "25"
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "11"
@@ -517,20 +487,14 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "2.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "prefix": "webkit",
-                        "version_added": "79"
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Notification.icon"
         }
@@ -601,10 +565,10 @@
             "summary": "The lang read-only property of the Notification interface indicates the language used in the notification, as specified in the lang option of the Notification() constructor.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "edge": {
                     "version_added": "14"
@@ -619,10 +583,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "11"
@@ -631,13 +595,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "2.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.lang"
@@ -654,10 +618,10 @@
             "summary": "The maxActions attribute of the Notification interface returns the maximum number of actions supported by the device and the User Agent. Effectively, this is the maximum number of elements in Notification.actions array which will be respected by the User Agent.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "48"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "48"
                 },
                 "edge": {
                     "version_added": "18"
@@ -672,10 +636,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "35"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "35"
                 },
                 "safari": {
                     "version_added": false
@@ -684,13 +648,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "5.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.maxActions"
@@ -709,10 +673,10 @@
             "summary": "The onclick property of the Notification interface specifies an event listener to receive click events. These events occur when the user clicks on a displayed Notification.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "14"
@@ -721,16 +685,16 @@
                     "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -739,13 +703,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.onclick"
@@ -764,28 +728,28 @@
             "summary": "The onclose property of the Notification interface specifies an event listener to receive close events. These events occur when a Notification is closed.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -794,13 +758,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.onclose"
@@ -810,6 +774,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/Notification.json",
@@ -818,28 +783,28 @@
             "summary": "The onerror property of the Notification interface specifies an event listener to receive error events. These events occur when something goes wrong with a Notification (in many cases an error preventing the notification from being displayed.)",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -848,13 +813,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.onerror"
@@ -873,28 +838,28 @@
             "summary": "The onshow property of the Notification interface specifies an event listener to receive show events. These events occur when a Notification is displayed.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -903,13 +868,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.onshow"
@@ -928,28 +893,28 @@
             "summary": "The permission read-only property of the Notification interface indicates the current permission granted by the user for the current origin to display web notifications.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "32"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "32"
                 },
                 "edge": {
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -958,13 +923,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "2.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.permission"
@@ -1036,32 +1001,32 @@
             "summary": "The requestPermission() method of the Notification interface requests permission from the user for the current origin to display notifications.",
             "support": {
                 "chrome": {
-                    "version_added": "46"
+                    "version_added": "20"
                 },
                 "chrome_android": {
-                    "version_added": "46"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": "47",
+                    "version_added": "22",
                     "notes": [
                         "From Firefox 70 onwards, cannot be called from a cross-origin IFrame.",
                         "From Firefox 72 onwards, can only be called in response to a user gesture such as a <code>click</code> event."
                     ]
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "40"
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": "41"
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -1070,7 +1035,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
@@ -1093,10 +1058,10 @@
             "summary": "The requireInteraction read-only property of the Notification interface returns a boolean value indicating that a notification should remain active until the user clicks or dismisses it, rather than closing automatically.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": "17"
@@ -1111,10 +1076,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1123,13 +1088,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "5.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.requireInteraction"
@@ -1201,10 +1166,10 @@
             "summary": "The tag read-only property of the Notification interface signifies an identifying tag for the notification, as specified in the tag option of the Notification() constructor.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "14"
@@ -1219,10 +1184,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -1231,13 +1196,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.tag"
@@ -1254,10 +1219,10 @@
             "summary": "The timestamp read-only property of the Notification interface returns a DOMTimeStamp, as specified in the timestamp option of the Notification() constructor.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "50"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "50"
                 },
                 "edge": {
                     "version_added": "17"
@@ -1272,10 +1237,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "safari": {
                     "version_added": false
@@ -1284,13 +1249,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "5.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.timestamp"
@@ -1309,10 +1274,10 @@
             "summary": "The title read-only property of the Notification interface indicates the title of the notification, as specified in the title parameter of the Notification() constructor.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "edge": {
                     "version_added": "14"
@@ -1327,10 +1292,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1339,13 +1304,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "2.0"
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Notification.title"
@@ -1362,7 +1327,7 @@
             "summary": "The vibrate read-only property of the Notification interface specifies a vibration pattern for the device's vibration hardware to emit when the notification fires. This is specified in the vibrate option of the Notification() constructor.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "53"
                 },
                 "chrome_android": {
                     "version_added": "53",
@@ -1381,7 +1346,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "40"
                 },
                 "opera_android": {
                     "version_added": "41",
@@ -1401,7 +1366,7 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "Notification.vibrate"
@@ -1419,18 +1384,19 @@
             "slug": "API/Notification",
             "summary": "The Notification interface of the Notifications API is used to configure and display desktop notifications to the user.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "22",
-                        "notes": "Before Chrome 22, the support for notification followed an old prefixed version of the specification and used the <code>navigator.webkitNotifications</code> object to instantiate a new notification. Before Chrome 32, <code>Notification.permission</code> was not supported. Before Chrome 42, service worker additions were not supported. Starting in Chrome 49, notifications do not work in incognito mode."
-                    },
-                    {
-                        "prefix": "webkit",
-                        "version_added": "5"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "20",
+                    "notes": [
+                        "Starting in Chrome 49, notifications do not work in incognito mode.",
+                        "Before Chrome 42, service worker additions were not supported."
+                    ]
+                },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25",
+                    "notes": [
+                        "Starting in Chrome 49, notifications do not work in incognito mode.",
+                        "Before Chrome 42, service worker additions were not supported."
+                    ]
                 },
                 "edge": {
                     "version_added": "14"
@@ -1449,7 +1415,7 @@
                         "version_added": "22"
                     },
                     {
-                        "prefix": "webkit",
+                        "prefix": "moz",
                         "version_added": "4"
                     }
                 ],
@@ -1457,10 +1423,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "25"
+                    "version_added": "23"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "safari": {
                     "version_added": "7"
@@ -1469,22 +1435,19 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": false,
                     "notes": "See <a href='https://crbug.com/551446'>bug 551446</a>."
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "Before Chrome 22, the support for notification followed an old prefixed version of the specification and used the <code>navigator.webkitNotifications</code> object to instantiate a new notification. Before Chrome 32, <code>Notification.permission</code> was not supported. Before Chrome 42, service worker additions were not supported. Starting in Chrome 49, notifications do not work in incognito mode."
-                    },
-                    {
-                        "prefix": "webkit",
-                        "version_added": "79"
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": [
+                        "Starting in Chrome 49, notifications do not work in incognito mode.",
+                        "Before Chrome 42, service worker additions were not supported."
+                    ]
+                }
             },
             "title": "Notification"
         }
