@@ -300,6 +300,7 @@
     "ref-for-dom-abortsignal-abort①": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -309,10 +310,10 @@
             "summary": "The static AbortSignal.abort() method returns an AbortSignal that is already set as aborted (and which does not trigger an abort event).",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "deno": {
                     "version_added": "1.9"
@@ -348,10 +349,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "93"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "93"
                 }
             },
             "title": "AbortSignal.abort()"
