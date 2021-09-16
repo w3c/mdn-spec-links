@@ -1,4 +1,481 @@
 {
+    "audiodecoder": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "AudioDecoder",
+            "slug": "API/AudioDecoder/AudioDecoder",
+            "summary": "The AudioDecoder() constructor creates a new AudioDecoder object with the provided init.output callback assigned as the output callback, the provided init.error callback as the error callback, and the AudioDecoder.state set to \"unconfigured\".",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder.AudioDecoder()"
+        }
+    ],
+    "dom-audiodecoder-close": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "close",
+            "slug": "API/AudioDecoder/close",
+            "summary": "The close() method of the AudioDecoder interface ends all pending work and releases system resources.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder.close()"
+        }
+    ],
+    "dom-audiodecoder-configure": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "configure",
+            "slug": "API/AudioDecoder/configure",
+            "summary": "The configure() method of the AudioDecoder interface enqueues a control message to configure the audio decoder for decoding chunks.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder.configure()"
+        }
+    ],
+    "dom-audiodecoder-decode": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "decode",
+            "slug": "API/AudioDecoder/decode",
+            "summary": "The decode() method of the AudioDecoder interface enqueues a control message to decode a given chunk of audio.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder.decode()"
+        }
+    ],
+    "dom-audiodecoder-decodequeuesize": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "decodeQueueSize",
+            "slug": "API/AudioDecoder/decodeQueueSize",
+            "summary": "The decodeQueueSize read-only property of the AudioDecoder interface returns the number of pending decode requests in the queue.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder.decodeQueueSize"
+        }
+    ],
+    "dom-audiodecoder-flush": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "flush",
+            "slug": "API/AudioDecoder/flush",
+            "summary": "The flush() method of the AudioDecoder interface returns a Promise that resolves once all pending messages in the queue have been completed.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder.flush()"
+        }
+    ],
+    "dom-audiodecoder-reset": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "reset",
+            "slug": "API/AudioDecoder/reset",
+            "summary": "The reset() method of the AudioDecoder interface resets all states including configuration, control messages in the control message queue, and all pending callbacks.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder.reset()"
+        }
+    ],
+    "dom-audiodecoder-state": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "state",
+            "slug": "API/AudioDecoder/state",
+            "summary": "The state read-only property of the AudioDecoder interface returns the current state of the underlying codec.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder.state"
+        }
+    ],
+    "audiodecoder-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioDecoder.json",
+            "name": "AudioDecoder",
+            "slug": "API/AudioDecoder",
+            "summary": "The AudioDecoder interface of the WebCodecs API decodes chunks of audio.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioDecoder"
+        }
+    ],
     "dom-videocolorspace-videocolorspace": [
         {
             "engines": [
