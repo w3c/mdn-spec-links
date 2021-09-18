@@ -837,10 +837,10 @@
             "summary": "The property binaryType on the RTCDataChannel interface is a DOMString which specifies the type of object which should be used to represent binary data received on the RTCDataChannel. Values allowed by the WebSocket.binaryType property are also permitted here: blob if Blob objects are being used or arraybuffer if ArrayBuffer objects are being used. The default is blob.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "29"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -855,10 +855,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -867,13 +867,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "2.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "4.4"
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCDataChannel.binaryType"
@@ -892,10 +892,10 @@
             "summary": "The read-only RTCDataChannel property bufferedAmount returns the number of bytes of data currently queued to be sent over the data channel. The queue may build up as a result of calls to the send() method. This only includes data buffered by the user agent itself; it doesn't include any framing overhead or buffering done by the operating system or network hardware.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -910,10 +910,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -922,10 +922,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1009,10 +1009,10 @@
             "summary": "The RTCDataChannel property bufferedAmountLowThreshold is used to specify the number of bytes of buffered outgoing data that is considered \"low.\" The default value is 0. hen the number of buffered outgoing bytes, as indicated by the bufferedAmount property, falls to or below this value, a bufferedamountlow event is fired. This event may be used, for example, to implement code which queues more messages to be sent whenever there's room to buffer them. Listeners may be added with onbufferedamountlow or addEventListener().",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "46"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "46"
                 },
                 "edge": {
                     "version_added": false
@@ -1027,10 +1027,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "33"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "33"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1039,10 +1039,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "5.0"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "46"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1064,10 +1064,10 @@
             "summary": "The RTCDataChannel.close() method closes the RTCDataChannel. Either peer is permitted to call this method to initiate closure of the channel.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1082,10 +1082,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1094,10 +1094,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1119,10 +1119,10 @@
             "summary": "The close event is sent to the onclose event handler on an RTCDataChannel instance when the data transport being used for the data channel has closed. Before any further data can be transferred using RTCDataChannel, a new data channel instance must be created.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1137,10 +1137,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1149,10 +1149,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1174,10 +1174,10 @@
             "summary": "A WebRTC error event is sent to an RTCDataChannel object's onerror error handler when an error occurs on the data channel.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1192,10 +1192,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1204,10 +1204,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1229,10 +1229,10 @@
             "summary": "The read-only RTCDataChannel property id returns an ID number (between 0 and 65,534) which uniquely identifies the RTCDataChannel. This ID is set at the time the data channel is created, either by the user agent (if RTCDataChannel.negotiated is false) or by the site or app script (if negotiated is true).",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "edge": {
                     "version_added": false
@@ -1247,10 +1247,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "17"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "18"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1259,10 +1259,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1284,10 +1284,10 @@
             "summary": "The read-only RTCDataChannel property label returns a DOMString containing a name describing the data channel. These labels are not required to be unique.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1302,10 +1302,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1314,10 +1314,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1394,10 +1394,10 @@
             "summary": "The read-only RTCDataChannel property maxRetransmits returns the maximum number of times the browser should try to retransmit a message before giving up, as set when the data channel was created, or null, which indicates that there is no maximum. This can only be set when the RTCDataChannel is created by calling RTCPeerConnection.createDataChannel(), using the maxRetransmits field in the specified options.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "edge": {
                     "version_added": false
@@ -1412,10 +1412,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "17"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "18"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1424,10 +1424,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1449,10 +1449,10 @@
             "summary": "The WebRTC message event is sent to the onmessage event handler on an RTCDataChannel object when a message has been received from the remote peer.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1467,10 +1467,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": true
@@ -1479,10 +1479,10 @@
                     "version_added": true
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1504,10 +1504,10 @@
             "summary": "The read-only RTCDataChannel property negotiated indicates whether the RTCDataChannel's connection was negotiated by the Web app (true) or by the WebRTC layer (false). The default is false.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "edge": {
                     "version_added": false
@@ -1522,10 +1522,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "17"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "18"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1534,10 +1534,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1559,11 +1559,11 @@
             "summary": "The RTCDataChannel.onbufferedamountlow property is an event handler which specifies a function the browser calls when the bufferedamountlow event is sent to the RTCDataChannel. This event, which is represented by a simple Event object, is sent when the amount of data buffered to be sent falls to or below the threshold specified by the channel's bufferedAmountLowThreshold.",
             "support": {
                 "chrome": {
-                    "version_added": "57",
+                    "version_added": "46",
                     "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
                 },
                 "chrome_android": {
-                    "version_added": "57",
+                    "version_added": "46",
                     "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
                 },
                 "edge": {
@@ -1579,11 +1579,11 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "44",
+                    "version_added": "33",
                     "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
                 },
                 "opera_android": {
-                    "version_added": "43",
+                    "version_added": "33",
                     "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
                 },
                 "safari": {
@@ -1593,11 +1593,11 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "7.0",
+                    "version_added": "5.0",
                     "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
                 },
                 "webview_android": {
-                    "version_added": "57",
+                    "version_added": "46",
                     "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
                 },
                 "edge_blink": {
@@ -1621,10 +1621,10 @@
             "summary": "The RTCDataChannel.onclose property is an event handler which specifies a function to be called by the browser when the close event is received by the RTCDataChannel. This is a simple Event which indicates that the data channel has closed down.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1639,10 +1639,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1651,10 +1651,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1695,7 +1695,7 @@
                     "version_added": "68"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "58"
                 },
                 "safari": {
                     "version_added": false
@@ -1729,10 +1729,10 @@
             "summary": "The RTCDataChannel.onerror property is an event handler which specifies a function to be called when the error event is received. When an error occurs on the data channel, the function receives as input an RTCErrorEvent object describing the error which occurred.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1747,10 +1747,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1759,10 +1759,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1784,10 +1784,10 @@
             "summary": "The RTCDataChannel.onmessage property stores an event handler which specifies a function to be called when the message event is fired on the channel. This event is represented by the MessageEvent interface. This event is sent to the channel when a message is received from the other peer.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1802,10 +1802,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1814,10 +1814,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1839,10 +1839,10 @@
             "summary": "The RTCDataChannel.onopen property is an event handler which specifies a function to be called when the open event is fired; this is a simple Event which is sent when the data channel's underlying data transport—the link over which the RTCDataChannel's messages flow—is established or re-established.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1857,10 +1857,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1869,10 +1869,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1894,10 +1894,10 @@
             "summary": "The WebRTC open event is sent to an RTCDataChannel object's onopen event handler when the underlying transport used to send and receive the data channel's messages is opened or re-opened.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -1912,10 +1912,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": true
@@ -1924,10 +1924,10 @@
                     "version_added": true
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1949,10 +1949,10 @@
             "summary": "The read-only RTCDataChannel property ordered indicates whether or not the data channel guarantees in-order delivery of messages; the default is true, which indicates that the data channel is indeed ordered. This is set when the RTCDataChannel is created, by setting the ordered property on the object passed as RTCPeerConnection.createDataChannel()'s options parameter.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "edge": {
                     "version_added": false
@@ -1967,10 +1967,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "17"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "18"
                 },
                 "safari": {
                     "version_added": "11"
@@ -1979,10 +1979,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2004,10 +2004,10 @@
             "summary": "The read-only RTCDataChannel property protocol returns a string containing the name of the subprotocol in use. If no protocol was specified when the data channel was created, then this property's value is the empty string (\"\").",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "30"
                 },
                 "edge": {
                     "version_added": false
@@ -2022,10 +2022,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "17"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "18"
                 },
                 "safari": {
                     "version_added": "11"
@@ -2034,10 +2034,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2059,10 +2059,10 @@
             "summary": "The read-only RTCDataChannel property readyState returns a string which indicates the state of the data channel's underlying data connection.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -2077,10 +2077,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -2089,10 +2089,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2114,10 +2114,10 @@
             "summary": "The send() method of the RTCDataChannel interface sends data across the data channel to the remote peer. This can be done any time except during the initial process of creating the underlying transport channel. Data sent before connecting is buffered if possible (or an error occurs if it's not possible), and is also buffered if sent while the connection is closing or closed.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "56"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -2132,10 +2132,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -2144,10 +2144,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "56"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2169,10 +2169,10 @@
             "summary": "The RTCDataChannel interface represents a network channel which can be used for bidirectional peer-to-peer transfers of arbitrary data. Every data channel is associated with an RTCPeerConnection, and each peer connection can have up to a theoretical maximum of 65,534 data channels (the actual limit may vary from browser to browser).",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": "29"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": false
@@ -2201,10 +2201,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -2213,13 +2213,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "2.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "4.4"
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCDataChannel"
