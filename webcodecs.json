@@ -847,6 +847,907 @@
             "title": "VideoColorSpace"
         }
     ],
+    "dom-videodecoder-videodecoder": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "VideoDecoder",
+            "slug": "API/VideoDecoder/VideoDecoder",
+            "summary": "The VideoDecoder() constructor creates a new VideoDecoder object with the provided init.output callback assigned as the output callback, the provided init.error callback as the error callback, and the VideoDecoder.state set to \"unconfigured\".",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder.VideoDecoder()"
+        }
+    ],
+    "dom-videodecoder-close": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "close",
+            "slug": "API/VideoDecoder/close",
+            "summary": "The close() method of the VideoDecoder interface ends all pending work and releases system resources.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder.close()"
+        }
+    ],
+    "dom-videodecoder-configure": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "configure",
+            "slug": "API/VideoDecoder/configure",
+            "summary": "The configure() method of the VideoDecoder interface enqueues a control message to configure the audio decoder for decoding chunks.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder.configure()"
+        }
+    ],
+    "dom-videodecoder-decode": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "decode",
+            "slug": "API/VideoDecoder/decode",
+            "summary": "The decode() method of the VideoDecoder interface enqueues a control message to decode a given chunk of video.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder.decode()"
+        }
+    ],
+    "dom-videodecoder-decodequeuesize": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "decodeQueueSize",
+            "slug": "API/VideoDecoder/decodeQueueSize",
+            "summary": "The decodeQueueSize read-only property of the VideoDecoder interface returns the number of pending decode requests in the queue.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder.decodeQueueSize"
+        }
+    ],
+    "dom-videodecoder-flush": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "flush",
+            "slug": "API/VideoDecoder/flush",
+            "summary": "The flush() method of the VideoDecoder interface returns a Promise that resolves once all pending messages in the queue have been completed.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder.flush()"
+        }
+    ],
+    "dom-videodecoder-reset": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "reset",
+            "slug": "API/VideoDecoder/reset",
+            "summary": "The reset() method of the VideoDecoder interface resets all states including configuration, control messages in the control message queue, and all pending callbacks.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder.reset()"
+        }
+    ],
+    "dom-videodecoder-state": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "state",
+            "slug": "API/VideoDecoder/state",
+            "summary": "The state property of the VideoDecoder interface returns the current state of the underlying codec.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder.state"
+        }
+    ],
+    "videodecoder-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoDecoder.json",
+            "name": "VideoDecoder",
+            "slug": "API/VideoDecoder",
+            "summary": "The VideoDecoder interface of the WebCodecs API decodes chunks of video.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoDecoder"
+        }
+    ],
+    "dom-videoencoder-videoencoder": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoEncoder.json",
+            "name": "VideoEncoder",
+            "slug": "API/VideoEncoder/VideoEncoder",
+            "summary": "The VideoEncoder() constructor creates a new VideoEncoder object with the provided init.output callback assigned as the output callback, the provided init.error callback as the error callback, and the VideoEncoder.state set to \"unconfigured\".",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoEncoder.VideoEncoder()"
+        }
+    ],
+    "dom-videoencoder-close": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoEncoder.json",
+            "name": "close",
+            "slug": "API/VideoEncoder/close",
+            "summary": "The close() method of the VideoEncoder interface ends all pending work and releases system resources.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoEncoder.close()"
+        }
+    ],
+    "dom-videoencoder-configure": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoEncoder.json",
+            "name": "configure",
+            "slug": "API/VideoEncoder/configure",
+            "summary": "The configure() method of the VideoEncoder interface enqueues a control message to configure the audio decoder for decoding chunks.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoEncoder.configure()"
+        }
+    ],
+    "dom-videoencoder-encode": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoEncoder.json",
+            "name": "encode",
+            "slug": "API/VideoEncoder/encode",
+            "summary": "The encode() method of the VideoEncoder interface enqueues a control message to encode a given VideoFrame.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoEncoder.encode()"
+        }
+    ],
+    "dom-videoencoder-encodequeuesize": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoEncoder.json",
+            "name": "encodeQueueSize",
+            "slug": "API/VideoEncoder/encodeQueueSize",
+            "summary": "The encodeQueueSize read-only property of the VideoEncoder interface returns the number of pending encode requests in the queue.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoEncoder.encodeQueueSize"
+        }
+    ],
+    "dom-videoencoder-reset": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoEncoder.json",
+            "name": "reset",
+            "slug": "API/VideoEncoder/reset",
+            "summary": "The reset() method of the VideoEncoder interface resets all states including configuration, control messages in the control message queue, and all pending callbacks.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoEncoder.reset()"
+        }
+    ],
+    "dom-videoencoder-state": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoEncoder.json",
+            "name": "state",
+            "slug": "API/VideoEncoder/state",
+            "summary": "The state read-only property of the VideoEncoder interface returns the current state of the underlying codec.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoEncoder.state"
+        }
+    ],
+    "videoencoder-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VideoEncoder.json",
+            "name": "VideoEncoder",
+            "slug": "API/VideoEncoder",
+            "summary": "The VideoEncoder interface of the WebCodecs API decodes VideoFrame objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "VideoEncoder"
+        }
+    ],
     "dom-videoframe-videoframe": [
         {
             "engines": [

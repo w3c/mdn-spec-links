@@ -2029,8 +2029,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "chrome_android": [
@@ -2038,8 +2044,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "edge": {
@@ -2054,12 +2066,36 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "66"
-                },
-                "opera_android": {
-                    "version_added": "57"
-                },
+                "opera": [
+                    {
+                        "version_added": "66"
+                    },
+                    {
+                        "version_added": "68",
+                        "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "30",
+                        "version_removed": "66",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "57"
+                    },
+                    {
+                        "version_added": "59",
+                        "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "30",
+                        "version_removed": "57",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
+                    }
+                ],
                 "safari": {
                     "version_added": "9"
                 },
@@ -2071,8 +2107,14 @@
                         "version_added": "12.0"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "13.0",
                         "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "4.0",
+                        "version_removed": "12.0",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "webview_android": [
@@ -2080,8 +2122,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "edge_blink": [
@@ -2089,8 +2137,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ]
             },
@@ -2114,8 +2168,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationiteration"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "chrome_android": [
@@ -2123,8 +2183,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationiteration"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "edge": {
@@ -2139,12 +2205,36 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "66"
-                },
-                "opera_android": {
-                    "version_added": "57"
-                },
+                "opera": [
+                    {
+                        "version_added": "66"
+                    },
+                    {
+                        "version_added": "68",
+                        "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "30",
+                        "version_removed": "66",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "57"
+                    },
+                    {
+                        "version_added": "59",
+                        "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "30",
+                        "version_removed": "57",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
+                    }
+                ],
                 "safari": {
                     "version_added": "9"
                 },
@@ -2156,8 +2246,14 @@
                         "version_added": "12.0"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "13.0",
                         "alternative_name": "onwebkitanimationiteration"
+                    },
+                    {
+                        "version_added": "4.0",
+                        "version_removed": "12.0",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "webview_android": [
@@ -2165,8 +2261,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationiteration"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "edge_blink": [
@@ -2174,8 +2276,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationiteration"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ]
             },
@@ -2199,8 +2307,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationstart"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "chrome_android": [
@@ -2208,8 +2322,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationstart"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "edge": {
@@ -2224,12 +2344,36 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "66"
-                },
-                "opera_android": {
-                    "version_added": "57"
-                },
+                "opera": [
+                    {
+                        "version_added": "66"
+                    },
+                    {
+                        "version_added": "68",
+                        "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "30",
+                        "version_removed": "66",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "57"
+                    },
+                    {
+                        "version_added": "59",
+                        "alternative_name": "onwebkitanimationend"
+                    },
+                    {
+                        "version_added": "30",
+                        "version_removed": "57",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
+                    }
+                ],
                 "safari": {
                     "version_added": "9"
                 },
@@ -2241,8 +2385,14 @@
                         "version_added": "12.0"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "13.0",
                         "alternative_name": "onwebkitanimationstart"
+                    },
+                    {
+                        "version_added": "4.0",
+                        "version_removed": "12.0",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "webview_android": [
@@ -2250,8 +2400,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationstart"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ],
                 "edge_blink": [
@@ -2259,8 +2415,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "81",
                         "alternative_name": "onwebkitanimationstart"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported on the <code>Window</code> interface."
                     }
                 ]
             },
