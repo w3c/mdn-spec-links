@@ -5285,7 +5285,7 @@
             "support": {
                 "chrome": [
                     {
-                        "version_added": "55",
+                        "version_added": "56",
                         "notes": "Before Chrome 63, the default value for the <code>configuration.rtcpMuxPolicy</code> parameter is <code>&quot;negotiate&quot;</code> instead of <code>&quot;required&quot;</code>."
                     },
                     {
@@ -5295,7 +5295,7 @@
                 ],
                 "chrome_android": [
                     {
-                        "version_added": "55",
+                        "version_added": "56",
                         "notes": "Before Chrome 63, the default value for the <code>configuration.rtcpMuxPolicy</code> parameter is <code>&quot;negotiate&quot;</code> instead of <code>&quot;required&quot;</code>."
                     },
                     {
@@ -5329,7 +5329,7 @@
                 },
                 "opera": [
                     {
-                        "version_added": "42",
+                        "version_added": "43",
                         "notes": "Before Opera 50, the default value for the <code>configuration.rtcpMuxPolicy</code> parameter is <code>&quot;negotiate&quot;</code> instead of <code>&quot;required&quot;</code>."
                     },
                     {
@@ -5339,7 +5339,7 @@
                 ],
                 "opera_android": [
                     {
-                        "version_added": "42",
+                        "version_added": "43",
                         "notes": "Before Opera Android 46, the default value for the <code>configuration.rtcpMuxPolicy</code> parameter is <code>&quot;negotiate&quot;</code> instead of <code>&quot;required&quot;</code>."
                     },
                     {
@@ -5363,10 +5363,16 @@
                         "version_added": "1.5"
                     }
                 ],
-                "webview_android": {
-                    "version_added": "37",
-                    "notes": "Before WebView 63, the default value for the <code>configuration.rtcpMuxPolicy</code> parameter is <code>&quot;negotiate&quot;</code> instead of <code>&quot;required&quot;</code>."
-                },
+                "webview_android": [
+                    {
+                        "version_added": "56",
+                        "notes": "Before WebView 63, the default value for the <code>configuration.rtcpMuxPolicy</code> parameter is <code>&quot;negotiate&quot;</code> instead of <code>&quot;required&quot;</code>."
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "37"
+                    }
+                ],
                 "edge_blink": [
                     {
                         "version_added": "79",
@@ -5393,24 +5399,12 @@
             "slug": "API/RTCPeerConnection/addIceCandidate",
             "summary": "When a web site or app using RTCPeerConnection receives a new ICE candidate from the remote peer over its signaling channel, it delivers the newly-received candidate to the browser's ICE agent by calling RTCPeerConnection.addIceCandidate(). This adds this new remote candidate to the RTCPeerConnection's remote description, which describes the state of the remote end of the connection.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "24"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
                 "edge": {
                     "version_added": "15"
                 },
@@ -5425,61 +5419,27 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
                 "safari_ios": {
                     "version_added": "11"
                 },
-                "samsunginternet_android": [
-                    {
-                        "notes": "Promise-based version and unprefixed.",
-                        "version_added": "6.0"
-                    },
-                    {
-                        "notes": "Promise-based version.",
-                        "version_removed": "6.0",
-                        "version_added": "5.0"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "79"
-                    }
-                ]
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "RTCPeerConnection.addIceCandidate()"
         }
@@ -5527,7 +5487,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "9.0"
                 },
                 "webview_android": {
                     "version_added": "64"
@@ -5635,7 +5595,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -5663,7 +5623,7 @@
                     "version_added": "23"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "15"
@@ -5678,10 +5638,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -5690,7 +5650,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -5732,10 +5692,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "60"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "51"
                 },
                 "safari": {
                     "version_added": "11"
@@ -5786,10 +5746,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "60"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "51"
                 },
                 "safari": {
                     "version_added": "11"
@@ -5822,24 +5782,12 @@
             "slug": "API/RTCPeerConnection/createAnswer",
             "summary": "The createAnswer() method on the RTCPeerConnection interface creates an SDP answer to an offer received from a remote peer during the offer/answer negotiation of a WebRTC connection. The answer contains information about any media already attached to the session, codecs and options supported by the browser, and any ICE candidates already gathered. The answer is delivered to the returned Promise, and should then be sent to the source of the offer to continue the negotiation process.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "24"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
                 "edge": {
                     "version_added": "15"
                 },
@@ -5852,61 +5800,27 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
                 "safari_ios": {
                     "version_added": "11"
                 },
-                "samsunginternet_android": [
-                    {
-                        "notes": "Promise-based version and unprefixed.",
-                        "version_added": "6.0"
-                    },
-                    {
-                        "notes": "Promise-based version.",
-                        "version_removed": "6.0",
-                        "version_added": "5.0"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "79"
-                    }
-                ]
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "RTCPeerConnection.createAnswer()"
         }
@@ -5924,7 +5838,7 @@
             "summary": "The createDataChannel() method on the RTCPeerConnection interface creates a new channel linked with the remote peer, over which any kind of data may be transmitted. This can be useful for back-channel content, such as images, file transfer, text chat, game update packets, and so forth.",
             "support": {
                 "chrome": {
-                    "version_added": "25"
+                    "version_added": "24"
                 },
                 "chrome_android": {
                     "version_added": "25"
@@ -5941,26 +5855,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -5968,7 +5868,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -5992,24 +5892,12 @@
             "slug": "API/RTCPeerConnection/createOffer",
             "summary": "The createOffer() method of the RTCPeerConnection interface initiates the creation of an SDP offer for the purpose of starting a new WebRTC connection to a remote peer. The SDP offer includes information about any MediaStreamTrack objects already attached to the WebRTC session, codec, and options supported by the browser, and any candidates already gathered by the ICE agent, for the purpose of being sent over the signaling channel to a potential peer to request a connection or to update the configuration of an existing connection.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "24"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
                 "edge": {
                     "version_added": "15"
                 },
@@ -6022,61 +5910,27 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
                 "safari_ios": {
                     "version_added": "11"
                 },
-                "samsunginternet_android": [
-                    {
-                        "notes": "Promise-based version and unprefixed.",
-                        "version_added": "6.0"
-                    },
-                    {
-                        "notes": "Promise-based version.",
-                        "version_removed": "6.0",
-                        "version_added": "5.0"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "79"
-                    }
-                ]
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "RTCPeerConnection.createOffer()"
         }
@@ -6111,26 +5965,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "57"
+                },
+                "opera_android": {
+                    "version_added": "49"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -6138,7 +5978,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "10.0"
                 },
                 "webview_android": {
                     "version_added": "70"
@@ -6181,10 +6021,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "57"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "49"
                 },
                 "safari": {
                     "version_added": "11"
@@ -6236,10 +6076,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -6248,10 +6088,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -6290,26 +6130,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "35"
+                },
+                "opera_android": {
+                    "version_added": "35"
+                },
                 "safari": {
                     "version_added": "12.1"
                 },
@@ -6359,26 +6185,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "57"
+                },
+                "opera_android": {
+                    "version_added": "49"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -6386,7 +6198,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "10.0"
                 },
                 "webview_android": {
                     "version_added": "70"
@@ -6520,32 +6332,12 @@
             "slug": "API/RTCPeerConnection/getStats",
             "summary": "The RTCPeerConnection method getStats() returns a promise which resolves with data providing statistics about either the overall connection or about the specified MediaStreamTrack.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "58",
-                        "notes": "Promise resolves with <code>RTCStatsReport</code>."
-                    },
-                    {
-                        "version_added": "54",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "24"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "58",
-                        "notes": "Promise resolves with <code>RTCStatsReport</code>."
-                    },
-                    {
-                        "version_added": "54",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
                 "edge": {
                     "version_added": "15"
                 },
@@ -6559,10 +6351,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "45"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -6570,45 +6362,15 @@
                 "safari_ios": {
                     "version_added": "11"
                 },
-                "samsunginternet_android": [
-                    {
-                        "version_added": "7.0",
-                        "notes": "Promise resolves with <code>RTCStatsReport</code>."
-                    },
-                    {
-                        "version_added": "6.0",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "58",
-                        "notes": "Promise resolves with <code>RTCStatsReport</code>."
-                    },
-                    {
-                        "version_added": "54",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "Promise resolves with <code>RTCStatsReport</code>."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "79"
-                    }
-                ]
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "RTCPeerConnection.getStats()"
         }
@@ -6699,10 +6461,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -6711,10 +6473,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -6809,26 +6571,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -6836,7 +6584,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "7.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -6891,10 +6639,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -6933,26 +6681,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -6960,7 +6694,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -7057,26 +6791,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7084,7 +6804,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -7112,7 +6832,7 @@
                     "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "15"
@@ -7127,10 +6847,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11"
@@ -7139,10 +6859,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -7235,26 +6955,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7262,7 +6968,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -7290,7 +6996,7 @@
                     "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "15"
@@ -7304,26 +7010,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7331,7 +7023,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -7427,26 +7119,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "15"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7454,7 +7132,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -7496,26 +7174,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7551,7 +7215,7 @@
                     "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "15"
@@ -7565,26 +7229,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7592,7 +7242,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -7634,26 +7284,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "15"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7661,7 +7297,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -7703,26 +7339,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "51"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7772,26 +7394,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "57"
+                },
+                "opera_android": {
+                    "version_added": "49"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7799,7 +7407,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "10.0"
                 },
                 "webview_android": {
                     "version_added": "70"
@@ -7841,26 +7449,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "57"
+                },
+                "opera_android": {
+                    "version_added": "49"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7868,7 +7462,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "10.0"
                 },
                 "webview_android": {
                     "version_added": "70"
@@ -7896,7 +7490,7 @@
                     "version_added": "24"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "15"
@@ -7910,28 +7504,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version and unprefixed."
-                    },
-                    {
-                        "version_added": "38",
-                        "notes": "Promise-based version.",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version and unprefixed."
-                    },
-                    {
-                        "version_added": "41",
-                        "notes": "Promise-based version.",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -7939,7 +7517,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -8147,26 +7725,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "35"
+                },
+                "opera_android": {
+                    "version_added": "35"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -8198,24 +7762,12 @@
             "slug": "API/RTCPeerConnection/setLocalDescription",
             "summary": "The RTCPeerConnection method setLocalDescription() changes the local description associated with the connection. This description specifies the properties of the local end of the connection, including the media format. The method takes a single parameter—the session description—and it returns a Promise which is fulfilled once the description has been changed, asynchronously.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "24"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
                 "edge": {
                     "version_added": "15"
                 },
@@ -8229,61 +7781,27 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
                 "safari_ios": {
                     "version_added": "11"
                 },
-                "samsunginternet_android": [
-                    {
-                        "notes": "Promise-based version and unprefixed.",
-                        "version_added": "6.0"
-                    },
-                    {
-                        "notes": "Promise-based version.",
-                        "version_removed": "6.0",
-                        "version_added": "5.0"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "79"
-                    }
-                ]
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "RTCPeerConnection.setLocalDescription()"
         }
@@ -8300,24 +7818,12 @@
             "slug": "API/RTCPeerConnection/setRemoteDescription",
             "summary": "The RTCPeerConnection method setRemoteDescription() sets the specified session description as the remote peer's current offer or answer. The description specifies the properties of the remote end of the connection, including the media format. The method takes a single parameter—the session description—and it returns a Promise which is fulfilled once the description has been changed, asynchronously.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "24"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
                 "edge": {
                     "version_added": "15"
                 },
@@ -8330,59 +7836,27 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
                 "safari_ios": {
                     "version_added": "11"
                 },
-                "samsunginternet_android": [
-                    {
-                        "version_added": "5.0",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": true
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "79"
-                    }
-                ]
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "RTCPeerConnection.setRemoteDescription()"
         }
@@ -8417,26 +7891,12 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "43",
-                        "notes": "Promise-based version."
-                    },
-                    {
-                        "version_added": "37",
-                        "version_removed": "43"
-                    }
-                ],
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
                     "version_added": "11"
                 },
@@ -8444,7 +7904,7 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -8487,10 +7947,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "safari": {
                     "version_added": "11"
@@ -8499,10 +7959,10 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "6.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -8580,7 +8040,7 @@
             "support": {
                 "chrome": [
                     {
-                        "version_added": "55"
+                        "version_added": "56"
                     },
                     {
                         "prefix": "webkit",
@@ -8589,7 +8049,7 @@
                 ],
                 "chrome_android": [
                     {
-                        "version_added": "55"
+                        "version_added": "56"
                     },
                     {
                         "prefix": "webkit",
@@ -8622,7 +8082,7 @@
                 },
                 "opera": [
                     {
-                        "version_added": "42"
+                        "version_added": "43"
                     },
                     {
                         "prefix": "webkit",
@@ -8631,7 +8091,7 @@
                 ],
                 "opera_android": [
                     {
-                        "version_added": "42"
+                        "version_added": "43"
                     },
                     {
                         "prefix": "webkit",
@@ -8655,7 +8115,7 @@
                 ],
                 "webview_android": [
                     {
-                        "version_added": "55"
+                        "version_added": "56"
                     },
                     {
                         "prefix": "webkit",
