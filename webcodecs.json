@@ -476,6 +476,801 @@
             "title": "AudioDecoder"
         }
     ],
+    "dom-audioencoder-audioencoder": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "AudioEncoder",
+            "slug": "API/AudioEncoder/AudioEncoder",
+            "summary": "The AudioEncoder() constructor creates a new AudioEncoder object with the provided init.output callback assigned as the output callback, the provided init.error callback as the error callback, and the AudioEncoder.state set to \"unconfigured\".",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder.AudioEncoder()"
+        }
+    ],
+    "dom-audioencoder-close": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "close",
+            "slug": "API/AudioEncoder/close",
+            "summary": "The close() method of the AudioEncoder interface ends all pending work and releases system resources.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder.close()"
+        }
+    ],
+    "dom-audioencoder-configure": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "configure",
+            "slug": "API/AudioEncoder/configure",
+            "summary": "The configure() method of the AudioEncoder interface enqueues a control message to configure the audio decoder for decoding chunks.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder.configure()"
+        }
+    ],
+    "dom-audioencoder-encode": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "encode",
+            "slug": "API/AudioEncoder/encode",
+            "summary": "The encode() method of the AudioEncoder interface enqueues a control message to encode a given AudioData object.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder.encode()"
+        }
+    ],
+    "dom-audioencoder-encodequeuesize": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "encodeQueueSize",
+            "slug": "API/AudioEncoder/encodeQueueSize",
+            "summary": "The encodeQueueSize read-only property of the AudioEncoder interface returns the number of pending encode requests in the queue.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder.encodeQueueSize"
+        }
+    ],
+    "dom-audioencoder-reset": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "reset",
+            "slug": "API/AudioEncoder/reset",
+            "summary": "The reset() method of the AudioEncoder interface resets all states including configuration, control messages in the control message queue, and all pending callbacks.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder.reset()"
+        }
+    ],
+    "dom-audioencoder-state": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "state",
+            "slug": "API/AudioEncoder/state",
+            "summary": "The state read-only property of the AudioEncoder interface returns the current state of the underlying codec.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder.state"
+        }
+    ],
+    "audioencoder-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "AudioEncoder",
+            "slug": "API/AudioEncoder",
+            "summary": "The AudioEncoder interface of the WebCodecs API encodes AudioData objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder"
+        }
+    ],
+    "dom-encodedaudiochunk-encodedaudiochunk": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/EncodedAudioChunk.json",
+            "name": "EncodedAudioChunk",
+            "slug": "API/EncodedAudioChunk/EncodedAudioChunk",
+            "summary": "The EncodedAudioChunk() constructor creates a new EncodedAudioChunk object representing a chunk of encoded audio.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "EncodedAudioChunk.EncodedAudioChunk()"
+        }
+    ],
+    "dom-encodedaudiochunk-bytelength": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/EncodedAudioChunk.json",
+            "name": "byteLength",
+            "slug": "API/EncodedAudioChunk/byteLength",
+            "summary": "The byteLength read-only property of the EncodedAudioChunk interface returns the length in bytes of the encoded audio data.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "EncodedAudioChunk.byteLength"
+        }
+    ],
+    "dom-encodedaudiochunk-copyto": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/EncodedAudioChunk.json",
+            "name": "copyTo",
+            "slug": "API/EncodedAudioChunk/copyTo",
+            "summary": "The copyTo() method of the EncodedAudioChunk interface copies the encoded chunk of audio data.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "EncodedAudioChunk.copyTo()"
+        }
+    ],
+    "dom-encodedaudiochunk-duration": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/EncodedAudioChunk.json",
+            "name": "duration",
+            "slug": "API/EncodedAudioChunk/duration",
+            "summary": "The duration read-only property of the EncodedAudioChunk interface returns an integer indicating the duration of the audio in microseconds.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "EncodedAudioChunk.duration"
+        }
+    ],
+    "dom-encodedaudiochunk-timestamp": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/EncodedAudioChunk.json",
+            "name": "timestamp",
+            "slug": "API/EncodedAudioChunk/timestamp",
+            "summary": "The timestamp read-only property of the EncodedAudioChunk interface returns an integer indicating the timestamp of the audio in microseconds.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "EncodedAudioChunk.timestamp"
+        }
+    ],
+    "dom-encodedaudiochunk-type": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/EncodedAudioChunk.json",
+            "name": "type",
+            "slug": "API/EncodedAudioChunk/type",
+            "summary": "The type read-only property of the EncodedAudioChunk interface returns a value indicating whether the audio chunk is a key chunk, which does not relying on other frames for decoding.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "EncodedAudioChunk.type"
+        }
+    ],
+    "encodedaudiochunk-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/EncodedAudioChunk.json",
+            "name": "EncodedAudioChunk",
+            "slug": "API/EncodedAudioChunk",
+            "summary": "The EncodedAudioChunk interface of the WebCodecs API represents a chunk of encoded audio data.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "EncodedAudioChunk"
+        }
+    ],
     "dom-videocolorspace-videocolorspace": [
         {
             "engines": [
