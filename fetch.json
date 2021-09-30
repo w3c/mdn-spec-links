@@ -427,11 +427,11 @@
             "summary": "The Request() constructor creates a new Request object.",
             "support": {
                 "chrome": {
-                    "version_added": "42",
+                    "version_added": "40",
                     "notes": "From Chrome 47, default values for the <code>init</code> argument's properties changed. <code>mode</code> defaults to <code>same-origin</code> (from <code>no-cors</code>). <code>credentials</code> defaults to <code>include</code> (from <code>same-origin</code>). <code>redirect</code> defaults to <code>follow</code> (from <code>manual</code>)."
                 },
                 "chrome_android": {
-                    "version_added": "42",
+                    "version_added": "40",
                     "notes": "From Chrome 47, default values for the <code>init</code> argument's properties changed. <code>mode</code> defaults to <code>same-origin</code> (from <code>no-cors</code>). <code>credentials</code> defaults to <code>include</code> (from <code>same-origin</code>). <code>redirect</code> defaults to <code>follow</code> (from <code>manual</code>)."
                 },
                 "deno": {
@@ -439,7 +439,7 @@
                     "notes": "Fetching with a <code>\"manual\"</code> redirect mode does not result in a <code>\"opaqueredirect\"</code> response, but a regular response."
                 },
                 "edge": {
-                    "version_added": "15"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "39"
@@ -451,10 +451,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "opera_android": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -472,7 +472,7 @@
                     }
                 ],
                 "webview_android": {
-                    "version_added": "42",
+                    "version_added": "40",
                     "notes": "From WebView 47, default values for the <code>init</code> argument's properties changed. <code>mode</code> defaults to <code>same-origin</code> (from <code>no-cors</code>). <code>credentials</code> defaults to <code>include</code> (from <code>same-origin</code>). <code>redirect</code> defaults to <code>follow</code> (from <code>manual</code>)."
                 },
                 "edge_blink": {
@@ -511,7 +511,7 @@
                     "version_added": "48"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "48"
                 },
                 "ie": {
                     "version_added": false
@@ -554,10 +554,10 @@
             "summary": "The clone() method of the Request interface creates a copy of the current Request object.",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -569,16 +569,16 @@
                     "version_added": "39"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "opera_android": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -590,7 +590,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -612,10 +612,10 @@
             "summary": "The credentials read-only property of the Request interface indicates whether the user agent should send cookies from the other domain in the case of cross-origin requests.",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": false
@@ -633,10 +633,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "opera_android": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -648,7 +648,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -728,10 +728,10 @@
             "summary": "The headers read-only property of the Request interface contains the Headers object associated with the request.",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -749,10 +749,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "opera_android": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -764,7 +764,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -807,10 +807,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -822,7 +822,7 @@
                     "version_added": "5.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "46"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -844,10 +844,10 @@
             "summary": "The method read-only property of the Request interface contains the request's method (GET, POST, etc.)",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -865,10 +865,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "opera_android": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -880,7 +880,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -902,10 +902,10 @@
             "summary": "The mode read-only property of the Request interface contains the mode of the request (e.g., cors, no-cors, same-origin, navigate or websocket.) This is used to determine if cross-origin requests lead to valid responses, and which properties of the response are readable.",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": "49"
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": false
@@ -923,10 +923,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "27"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -935,10 +935,10 @@
                     "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "49"
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -982,10 +982,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "33"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -997,7 +997,7 @@
                     "version_added": "5.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "46"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1019,10 +1019,10 @@
             "summary": "The referrer read-only property of the Request interface is set by the user agent to be the referrer of the Request. (e.g., client, no-referrer, or a URL.)",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -1031,19 +1031,19 @@
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": "47"
+                    "version_added": "39"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "opera_android": {
-                    "version_added": "29"
+                    "version_added": "27"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -1055,7 +1055,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1089,10 +1089,10 @@
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": "52"
+                    "version_added": "47"
                 },
                 "firefox_android": {
-                    "version_added": "52"
+                    "version_added": "47"
                 },
                 "ie": {
                     "version_added": false
@@ -1135,11 +1135,11 @@
             "summary": "The url read-only property of the Request interface contains the URL of the request.",
             "support": {
                 "chrome": {
-                    "version_added": "42",
+                    "version_added": "40",
                     "notes": "Fragment support added in Chrome 59."
                 },
                 "chrome_android": {
-                    "version_added": "42",
+                    "version_added": "40",
                     "notes": "Fragment support added in Chrome 59."
                 },
                 "deno": {
@@ -1158,11 +1158,11 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "29",
+                    "version_added": "27",
                     "notes": "Fragment support added in Opera 46."
                 },
                 "opera_android": {
-                    "version_added": "29",
+                    "version_added": "27",
                     "notes": "Fragment support added in Opera 46."
                 },
                 "safari": {
@@ -1176,7 +1176,7 @@
                     "notes": "Fragment support added in Samsung Internet 7.0."
                 },
                 "webview_android": {
-                    "version_added": "42",
+                    "version_added": "40",
                     "notes": "Fragment support added in Chrome 59."
                 },
                 "edge_blink": {
@@ -1199,17 +1199,33 @@
             "slug": "API/Request",
             "summary": "The Request interface of the Fetch API represents a resource request.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "40",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "40",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
                 "deno": {
                     "version_added": "1.0"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "39"
@@ -1220,12 +1236,28 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "28"
-                },
-                "opera_android": {
-                    "version_added": "28"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "27",
+                        "version_removed": "29",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "27",
+                        "version_removed": "29",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -1235,12 +1267,28 @@
                 "samsunginternet_android": {
                     "version_added": "4.0"
                 },
-                "webview_android": {
-                    "version_added": "42"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "webview_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "40",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ]
             },
             "title": "Request"
         }
@@ -1258,10 +1306,10 @@
             "summary": "The Response() constructor creates a new Response object.",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -1273,7 +1321,7 @@
                     "version_added": "39"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
@@ -1294,7 +1342,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1316,10 +1364,10 @@
             "summary": "The clone() method of the Response interface creates a clone of a response object, identical in every way, but stored in a different variable.",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -1331,7 +1379,7 @@
                     "version_added": "39"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
@@ -1349,10 +1397,10 @@
                     "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1374,10 +1422,10 @@
             "summary": "The error() method of the Response interface returns a new Response object associated with a network error.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "43"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "43"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -1386,34 +1434,34 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "39"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "30"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "43"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Response.error()"
@@ -1432,7 +1480,7 @@
             "summary": "The headers read-only property of the Response interface contains the Headers object associated with the response.",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
                     "version_added": "42"
@@ -1447,7 +1495,7 @@
                     "version_added": "39"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
@@ -1468,7 +1516,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1548,10 +1596,10 @@
             "summary": "The redirect() method of the Response interface returns a Response resulting in a redirect to the specified URL.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "44"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "44"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -1560,34 +1608,34 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "39"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "30"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "44"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Response.redirect()"
@@ -1606,10 +1654,10 @@
             "summary": "The read-only redirected property of the Response interface indicates whether or not the response is the result of a request you made which was redirected.",
             "support": {
                 "chrome": {
-                    "version_added": "60"
+                    "version_added": "57"
                 },
                 "chrome_android": {
-                    "version_added": "60"
+                    "version_added": "57"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -1627,10 +1675,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "47"
+                    "version_added": "44"
                 },
                 "opera_android": {
-                    "version_added": "44"
+                    "version_added": "43"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -1664,239 +1712,10 @@
             "summary": "The status read-only property of the Response interface contains the status code of the response (e.g., 200 for a success).",
             "support": {
                 "chrome": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "chrome_android": {
-                    "version_added": false
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.status"
-        }
-    ],
-    "ref-for-dom-response-statustext①": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Response.json",
-            "name": "statusText",
-            "slug": "API/Response/statusText",
-            "summary": "The statusText read-only property of the Response interface contains the status message corresponding to the status code (e.g., OK for 200).",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.statusText"
-        }
-    ],
-    "ref-for-dom-response-type①": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Response.json",
-            "name": "type",
-            "slug": "API/Response/type",
-            "summary": "The type read-only property of the Response interface contains the type of the response. It can be one of the following:",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "deno": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.type"
-        }
-    ],
-    "ref-for-dom-response-url①": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Response.json",
-            "name": "url",
-            "slug": "API/Response/url",
-            "summary": "The url read-only property of the Response interface contains the URL of the response. The value of the url property will be the final URL obtained after any redirects.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.url"
-        }
-    ],
-    "response-class": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Response.json",
-            "name": "Response",
-            "slug": "API/Response",
-            "summary": "The Response interface of the Fetch API represents the response to a request.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -1929,11 +1748,291 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
                 }
+            },
+            "title": "Response.status"
+        }
+    ],
+    "ref-for-dom-response-statustext①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "statusText",
+            "slug": "API/Response/statusText",
+            "summary": "The statusText read-only property of the Response interface contains the status message corresponding to the status code (e.g., OK for 200).",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": {
+                    "version_added": "39"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "29"
+                },
+                "opera_android": {
+                    "version_added": "29"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.statusText"
+        }
+    ],
+    "ref-for-dom-response-type①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "type",
+            "slug": "API/Response/type",
+            "summary": "The type read-only property of the Response interface contains the type of the response. It can be one of the following:",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": {
+                    "version_added": "39"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "29"
+                },
+                "opera_android": {
+                    "version_added": "29"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.type"
+        }
+    ],
+    "ref-for-dom-response-url①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "url",
+            "slug": "API/Response/url",
+            "summary": "The url read-only property of the Response interface contains the URL of the response. The value of the url property will be the final URL obtained after any redirects.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": {
+                    "version_added": "39"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "29"
+                },
+                "opera_android": {
+                    "version_added": "29"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.url"
+        }
+    ],
+    "response-class": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "Response",
+            "slug": "API/Response",
+            "summary": "The Response interface of the Fetch API represents the response to a request.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "40",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "40",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": {
+                    "version_added": "39"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "27",
+                        "version_removed": "29",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "27",
+                        "version_removed": "29",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "40",
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "42",
+                        "partial_implementation": true,
+                        "notes": "Only available in service workers."
+                    }
+                ]
             },
             "title": "Response"
         }

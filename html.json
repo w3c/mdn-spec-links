@@ -12707,43 +12707,43 @@
             "summary": "The readystatechange event is fired when the readyState attribute of a document has changed.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "ie": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "Document: readystatechange event"
@@ -33989,10 +33989,10 @@
             "summary": "The HashChangeEvent interface represents events that fire when the fragment identifier of the URL has changed.",
             "support": {
                 "chrome": {
-                    "version_added": "5"
+                    "version_added": "8"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -34019,7 +34019,7 @@
                     "version_added": "5"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
                     "version_added": "37"
@@ -39781,7 +39781,7 @@
             "summary": "The name read-only property of the SharedWorkerGlobalScope interface returns the name that the SharedWorker was (optionally) given when it was created. This is the name that the SharedWorker() constructor can pass to get a reference to the SharedWorkerGlobalScope.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "chrome_android": {
                     "version_added": "40"
@@ -39802,7 +39802,7 @@
                     "version_added": "10.6"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "safari": {
                     "version_added": false
@@ -39817,7 +39817,7 @@
                     "version_added": true
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "SharedWorkerGlobalScope.name"
@@ -46018,9 +46018,16 @@
             "slug": "API/Window/hashchange_event",
             "summary": "The hashchange event is fired when the fragment identifier of the URL has changed (the part of the URL beginning with and following the # symbol).",
             "support": {
-                "chrome": {
-                    "version_added": "5"
-                },
+                "chrome": [
+                    {
+                        "version_added": "8"
+                    },
+                    {
+                        "version_added": "4",
+                        "version_removed": "8",
+                        "notes": "A regular <code>Event</code> object is fired, rather than a <code>HashChangeEvent</code> object."
+                    }
+                ],
                 "chrome_android": {
                     "version_added": "18"
                 },
@@ -46054,9 +46061,16 @@
                 "webview_android": {
                     "version_added": "37"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "8",
+                        "notes": "A regular <code>Event</code> object is fired, rather than a <code>HashChangeEvent</code> object."
+                    }
+                ]
             },
             "title": "Window: hashchange event"
         }
@@ -63984,7 +63998,7 @@
             "filename": "html/global_attributes.json",
             "name": "itemtype",
             "slug": "HTML/Global_attributes/itemtype",
-            "summary": "The global attribute itemtype specifies the URL of the vocabulary that will be used to define itemprop's (item properties) in the data structure.",
+            "summary": "The global attribute** itemtype** specifies the URL of the vocabulary that will be used to define itemprop's (item properties) in the data structure.",
             "support": {
                 "chrome": {
                     "version_added": true
