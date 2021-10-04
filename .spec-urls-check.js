@@ -135,6 +135,12 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/message",
     "https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/serialNumber",
     // FIXME: for all these we really do need spec URLs
+    "https://developer.mozilla.org/docs/Web/API/FontFaceSet/forEach",
+    "https://developer.mozilla.org/docs/Web/API/FontFaceSet/has",
+    "https://developer.mozilla.org/docs/Web/API/FontFaceSet/keys",
+    "https://developer.mozilla.org/docs/Web/API/FontFaceSet/size",
+    "https://developer.mozilla.org/docs/Web/API/FontFaceSet/values",
+    // FIXME: for all these we really do need spec URLs
     "https://developer.mozilla.org/docs/Web/API/TextTrack/activeCues",
     "https://developer.mozilla.org/docs/Web/API/TextTrack/addCue",
     "https://developer.mozilla.org/docs/Web/API/TextTrack/cues",
