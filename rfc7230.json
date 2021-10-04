@@ -9,7 +9,7 @@
             "filename": "http/headers/connection.json",
             "name": "Connection",
             "slug": "HTTP/Headers/Connection",
-            "summary": "The Connection general header controls whether or not the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done.",
+            "summary": "The Connection general header controls whether the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -503,7 +503,7 @@
             "filename": "http/headers/via.json",
             "name": "Via",
             "slug": "HTTP/Headers/Via",
-            "summary": "The Via general header is added by proxies, both forward and reverse proxies, and can appear in the request headers and the response headers. It is used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain.",
+            "summary": "The Via general header is added by proxies, both forward and reverse, and can appear in the request or response headers. It is used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain.",
             "support": {
                 "chrome": {
                     "version_added": true

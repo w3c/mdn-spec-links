@@ -9,7 +9,7 @@
             "filename": "http/headers/age.json",
             "name": "Age",
             "slug": "HTTP/Headers/Age",
-            "summary": "The Age header contains the time in seconds the object has been in a proxy cache.",
+            "summary": "The Age header contains the time in seconds the object was in a proxy cache.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -64,7 +64,7 @@
             "filename": "http/headers/cache-control.json",
             "name": "Cache-Control",
             "slug": "HTTP/Headers/Cache-Control",
-            "summary": "The Cache-Control HTTP header holds directives (instructions) for caching in both requests and responses. A given directive in a request does not mean the same directive should be in the response.",
+            "summary": "The Cache-Control HTTP header holds directives (instructions) for caching in both requests and responses. If a given directive is in a request, it does not mean this directive is in the response.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -119,7 +119,7 @@
             "filename": "http/headers/expires.json",
             "name": "Expires",
             "slug": "HTTP/Headers/Expires",
-            "summary": "The Expires header contains the date/time after which the response is considered stale.",
+            "summary": "The Expires HTTP header contains the date/time after which the response is considered expired.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -174,7 +174,7 @@
             "filename": "http/headers/pragma.json",
             "name": "Pragma",
             "slug": "HTTP/Headers/Pragma",
-            "summary": "The Pragma HTTP/1.0 general header is an implementation-specific header that may have various effects along the request-response chain. It is used for backwards compatibility with HTTP/1.0 caches where the Cache-Control HTTP/1.1 header is not yet present.",
+            "summary": "The Pragma HTTP/1.0 general header is an implementation-specific header that may have various effects along the request-response chain. This header serves for backwards compatibility with the HTTP/1.0 caches that do not have a Cache-Control HTTP/1.1 header.",
             "support": {
                 "chrome": {
                     "version_added": true

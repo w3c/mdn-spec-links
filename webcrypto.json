@@ -207,63 +207,6 @@
                 }
             },
             "title": "Crypto"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "crypto",
-            "slug": "API/Window/crypto",
-            "summary": "The read-only Window.crypto property returns the Crypto object associated to the global object. This object allows web pages access to certain cryptographic related services.",
-            "support": {
-                "chrome": {
-                    "version_added": "37"
-                },
-                "chrome_android": {
-                    "version_added": "37"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "11",
-                    "prefix": "ms"
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Window.crypto"
         }
     ],
     "dom-cryptokey-algorithm": [
@@ -1393,7 +1336,7 @@
             "filename": "api/SubtleCrypto.json",
             "name": "SubtleCrypto",
             "slug": "API/SubtleCrypto",
-            "summary": "The SubtleCrypto interface of the Web Crypto API provides a number of low-level cryptographic functions. Access to the features of SubtleCrypto is obtained through the subtle property of the Crypto object you get from Window.crypto.",
+            "summary": "The SubtleCrypto interface of the Web Crypto API provides a number of low-level cryptographic functions. Access to the features of SubtleCrypto is obtained through the subtle property of the Crypto object you get from the crypto property.",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -1456,6 +1399,65 @@
                 }
             },
             "title": "SubtleCrypto"
+        }
+    ],
+    "dom-windoworworkerglobalscope-crypto": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/_globals/crypto.json",
+            "name": "crypto",
+            "slug": "API/crypto_property",
+            "summary": "The global read-only crypto property returns the Crypto object associated to the global object. This object allows web pages access to certain cryptographic related services.",
+            "support": {
+                "chrome": {
+                    "version_added": "37"
+                },
+                "chrome_android": {
+                    "version_added": "37"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "11",
+                    "prefix": "ms"
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "self.crypto"
         }
     ]
 }

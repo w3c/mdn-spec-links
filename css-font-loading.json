@@ -62,7 +62,7 @@
             "filename": "api/FontFaceSet.json",
             "name": "FontFaceSet",
             "slug": "API/FontFaceSet",
-            "summary": "The FontFaceSet interface of the CSS Font Loading API manages the loading of font-faces and querying of their download status.It is available as document.fonts.",
+            "summary": "The FontFaceSet interface of the CSS Font Loading API manages the loading of font-faces and querying of their download status. It is available as Document.fonts.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -1117,7 +1117,62 @@
             "title": "FontFace"
         }
     ],
-    "font-face-set-check": [
+    "dom-fontfaceset-add": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FontFaceSet.json",
+            "name": "add",
+            "slug": "API/FontFaceSet/add",
+            "summary": "The add() method of the FontFaceSet interface adds a new font to the set.",
+            "support": {
+                "chrome": {
+                    "version_added": "35"
+                },
+                "chrome_android": {
+                    "version_added": "35"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "41"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "22"
+                },
+                "opera_android": {
+                    "version_added": "22"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FontFaceSet.add()"
+        }
+    ],
+    "dom-fontfaceset-check": [
         {
             "engines": [
                 "blink",
@@ -1172,7 +1227,172 @@
             "title": "FontFaceSet.check()"
         }
     ],
-    "font-face-set-load": [
+    "dom-fontfaceset-clear": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FontFaceSet.json",
+            "name": "clear",
+            "slug": "API/FontFaceSet/clear",
+            "summary": "The clear() method of the FontFaceSet interface removes all fonts added via this interface. Fonts added with the @font-face rule are not removed.",
+            "support": {
+                "chrome": {
+                    "version_added": "35"
+                },
+                "chrome_android": {
+                    "version_added": "35"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "41"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "22"
+                },
+                "opera_android": {
+                    "version_added": "22"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FontFaceSet.clear()"
+        }
+    ],
+    "dom-fontfaceset-delete": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FontFaceSet.json",
+            "name": "delete",
+            "slug": "API/FontFaceSet/delete",
+            "summary": "The delete() method of the FontFaceSet interface removes a font from the set.",
+            "support": {
+                "chrome": {
+                    "version_added": "35"
+                },
+                "chrome_android": {
+                    "version_added": "35"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "41"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "22"
+                },
+                "opera_android": {
+                    "version_added": "22"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FontFaceSet.delete()"
+        }
+    ],
+    "dom-fontfaceset-set-entries": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FontFaceSet.json",
+            "name": "entries",
+            "slug": "API/FontFaceSet/entries",
+            "summary": "The entries() method of the FontFaceSet interface returns a new Iterator object, containing an array of [value,value] for each element in the FontFaceSet.",
+            "support": {
+                "chrome": {
+                    "version_added": "48"
+                },
+                "chrome_android": {
+                    "version_added": "48"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "41"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "35"
+                },
+                "opera_android": {
+                    "version_added": "35"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": "10"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "48"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FontFaceSet.entries()"
+        }
+    ],
+    "dom-fontfaceset-load": [
         {
             "engines": [
                 "blink",
@@ -1227,6 +1447,171 @@
             "title": "FontFaceSet.load()"
         }
     ],
+    "dom-fontfaceset-onloading": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FontFaceSet.json",
+            "name": "onloading",
+            "slug": "API/FontFaceSet/onloading",
+            "summary": "The onloading EventHandler of the FontFaceSet interface processes loading events.",
+            "support": {
+                "chrome": {
+                    "version_added": "35"
+                },
+                "chrome_android": {
+                    "version_added": "35"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "41"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "22"
+                },
+                "opera_android": {
+                    "version_added": "22"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FontFaceSet.onloading"
+        }
+    ],
+    "dom-fontfaceset-onloadingdone": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FontFaceSet.json",
+            "name": "onloadingdone",
+            "slug": "API/FontFaceSet/onloadingdone",
+            "summary": "The onloadingdone EventHandler of the FontFaceSet interface processes loadingdone events.",
+            "support": {
+                "chrome": {
+                    "version_added": "35"
+                },
+                "chrome_android": {
+                    "version_added": "35"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "41"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "22"
+                },
+                "opera_android": {
+                    "version_added": "22"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FontFaceSet.onloadingdone"
+        }
+    ],
+    "dom-fontfaceset-onloadingerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FontFaceSet.json",
+            "name": "onloadingerror",
+            "slug": "API/FontFaceSet/onloadingerror",
+            "summary": "The onloadingerror EventHandler of the FontFaceSet interface processes loadingerror events.",
+            "support": {
+                "chrome": {
+                    "version_added": "35"
+                },
+                "chrome_android": {
+                    "version_added": "35"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "41"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "22"
+                },
+                "opera_android": {
+                    "version_added": "22"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FontFaceSet.onloadingerror"
+        }
+    ],
     "dom-fontfaceset-ready": [
         {
             "engines": [
@@ -1237,7 +1622,7 @@
             "filename": "api/FontFaceSet.json",
             "name": "ready",
             "slug": "API/FontFaceSet/ready",
-            "summary": "The ready readonly property of the FontFaceSet interface returns a Promise that resolves to the given FontFaceSet.",
+            "summary": "The ready read-only property of the FontFaceSet interface returns a Promise that resolves to the given FontFaceSet.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -1280,6 +1665,61 @@
                 }
             },
             "title": "FontFaceSet.ready"
+        }
+    ],
+    "dom-fontfaceset-status": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FontFaceSet.json",
+            "name": "status",
+            "slug": "API/FontFaceSet/status",
+            "summary": "The status read-only property of the FontFaceSet interface returns the loading state of the fonts in the set.",
+            "support": {
+                "chrome": {
+                    "version_added": "35"
+                },
+                "chrome_android": {
+                    "version_added": "35"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "41"
+                },
+                "firefox_android": {
+                    "version_added": "41"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "22"
+                },
+                "opera_android": {
+                    "version_added": "22"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FontFaceSet.status"
         }
     ],
     "dom-fontfacesetloadevent-fontfacesetloadevent": [

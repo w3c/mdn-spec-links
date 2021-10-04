@@ -9,7 +9,7 @@
             "filename": "http/headers/accept-ranges.json",
             "name": "Accept-Ranges",
             "slug": "HTTP/Headers/Accept-Ranges",
-            "summary": "The Accept-Ranges response HTTP header is a marker used by the server to advertise its support of partial requests. The value of this field indicates the unit that can be used to define a range.",
+            "summary": "The Accept-Ranges HTTP response header is a marker used by the server to advertise its support for partial requests from the client for file downloads. The value of this field indicates the unit that can be used to define a range.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -227,7 +227,7 @@
             "filename": "http/headers/if-range.json",
             "name": "If-Range",
             "slug": "HTTP/Headers/If-Range",
-            "summary": "The If-Range HTTP request header makes a range request conditional: if the condition is fulfilled, the range request will be issued and the server sends back a 206 Partial Content answer with the appropriate body. If the condition is not fulfilled, the full resource is sent back, with a 200 OK status.",
+            "summary": "The If-Range HTTP request header makes a range request conditional: if the condition is fulfilled, the range request is issued, and the server sends back a 206 Partial Content answer with the appropriate body. If the condition is not fulfilled, the full resource is sent back with a 200 OK status.",
             "support": {
                 "chrome": {
                     "version_added": true

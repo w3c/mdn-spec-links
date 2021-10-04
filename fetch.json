@@ -2935,7 +2935,7 @@
             "filename": "http/headers/access-control-allow-credentials.json",
             "name": "Access-Control-Allow-Credentials",
             "slug": "HTTP/Headers/Access-Control-Allow-Credentials",
-            "summary": "The Access-Control-Allow-Credentials response header tells browsers whether to expose the response to frontend JavaScript code when the request's credentials mode (Request.credentials) is include.",
+            "summary": "The Access-Control-Allow-Credentials response header tells browsers whether to expose the response to the frontend JavaScript code when the request's credentials mode (Request.credentials) is include.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -3045,7 +3045,7 @@
             "filename": "http/headers/access-control-allow-methods.json",
             "name": "Access-Control-Allow-Methods",
             "slug": "HTTP/Headers/Access-Control-Allow-Methods",
-            "summary": "The Access-Control-Allow-Methods response header specifies the method or methods allowed when accessing the resource in response to a preflight request.",
+            "summary": "The Access-Control-Allow-Methods response header specifies one or more methods allowed when accessing a resource in response to a preflight request.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -3265,7 +3265,7 @@
             "filename": "http/headers/access-control-request-headers.json",
             "name": "Access-Control-Request-Headers",
             "slug": "HTTP/Headers/Access-Control-Request-Headers",
-            "summary": "The Access-Control-Request-Headers request header is used by browsers when issuing a preflight request, to let the server know which HTTP headers the client might send when the actual request is made (such as with setRequestHeader()). This browser side header will be answered by the complementary server side header of Access-Control-Allow-Headers.",
+            "summary": "The Access-Control-Request-Headers request header is used by browsers when issuing a preflight request to let the server know which HTTP headers the client might send when the actual request is made (such as with setRequestHeader()). The complementary server-side header of Access-Control-Allow-Headers will answer this browser-side header.",
             "support": {
                 "chrome": {
                     "version_added": "4"

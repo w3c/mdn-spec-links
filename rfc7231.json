@@ -9,7 +9,7 @@
             "filename": "http/headers/accept-encoding.json",
             "name": "Accept-Encoding",
             "slug": "HTTP/Headers/Accept-Encoding",
-            "summary": "The Accept-Encoding request HTTP header advertises which content encoding, usually a compression algorithm, the client is able to understand. Using content negotiation, the server selects one of the proposals, uses it and informs the client of its choice with the Content-Encoding response header.",
+            "summary": "The Accept-Encoding request HTTP header indicates the content encoding (usually a compression algorithm) that the client can understand. The server uses content negotiation to select one of the proposal and informs the client of that choice with the Content-Encoding response header.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -64,7 +64,7 @@
             "filename": "http/headers/accept-language.json",
             "name": "Accept-Language",
             "slug": "HTTP/Headers/Accept-Language",
-            "summary": "The Accept-Language request HTTP header advertises which languages the client is able to understand, and which locale variant is preferred. (By languages, we mean natural languages, such as English, and not programming languages.) Using content negotiation, the server then selects one of the proposals, uses it and informs the client of its choice with the Content-Language response header. Browsers set adequate values for this header according to their user interface language and even if a user can change it, this happens rarely (and is frowned upon as it leads to fingerprinting).",
+            "summary": "The Accept-Language request HTTP header indicates the natural language and locale that the client prefers. The server uses content negotiation to select one of the proposals and informs the client of the choice with the Content-Language response header. Browsers set required values for this header according to their active user interface language. Users rarely change it, and such changes are not recommended because they may lead to fingerprinting.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -119,7 +119,7 @@
             "filename": "http/headers/accept.json",
             "name": "Accept",
             "slug": "HTTP/Headers/Accept",
-            "summary": "The Accept request HTTP header advertises which content types, expressed as MIME types, the client is able to understand. Using content negotiation, the server then selects one of the proposals, uses it and informs the client of its choice with the Content-Type response header. Browsers set adequate values for this header depending on the context where the request is done: when fetching a CSS stylesheet a different value is set for the request than when fetching an image, video or a script.",
+            "summary": "The Accept request HTTP header indicates which content types, expressed as MIME types, the client is able to understand. The server uses content negotiation to select one of the proposals and informs the client of the choice with the Content-Type response header. Browsers set required values for this header based on the context of the request. For example, a browser uses different values in a request when fetches a CSS stylesheet, image, video, or a script.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -231,7 +231,7 @@
             "filename": "http/headers/content-language.json",
             "name": "Content-Language",
             "slug": "HTTP/Headers/Content-Language",
-            "summary": "The Content-Language representation header is used to describe the language(s) intended for the audience, so that it allows a user to differentiate according to the users' own preferred language.",
+            "summary": "The Content-Language representation header is used to describe the language(s) intended for the audience, so users can differentiate it according to their own preferred language.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -447,7 +447,7 @@
             "filename": "http/headers/expect.json",
             "name": "Expect",
             "slug": "HTTP/Headers/Expect",
-            "summary": "The Expect HTTP request header indicates expectations that need to be fulfilled by the server in order to properly handle the request.",
+            "summary": "The Expect HTTP request header indicates expectations that need to be met by the server to handle the request successfully.",
             "support": {
                 "chrome": {
                     "version_added": null
@@ -612,7 +612,7 @@
             "filename": "http/headers/referer.json",
             "name": "Referer",
             "slug": "HTTP/Headers/Referer",
-            "summary": "The Referer HTTP request header contains an absolute or partial address of the page making the request. When following a link, this would be the address of the page containing the link. When making resource requests to another domain, this would be the address of the page using the resource. The Referer header allows servers to identify where people are visiting them from, which can then be used for analytics, logging, optimized caching, and more.",
+            "summary": "The Referer HTTP request header contains an absolute or partial address of the page that makes the request. The Referer header allows a server to identify a page where people are visiting it from. This data can be used for analytics, logging, optimized caching, and more.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -1815,7 +1815,7 @@
             "filename": "http/status.json",
             "name": "403",
             "slug": "HTTP/Status/403",
-            "summary": "The HTTP 403 Forbidden client error status response code indicates that the server understood the request but refuses to authorize it.",
+            "summary": "The HTTP 403 Forbidden client error status response code indicates that the server understands the request but refuses to authorize it.",
             "support": {
                 "chrome": {
                     "version_added": true

@@ -9,7 +9,7 @@
             "filename": "http/headers/etag.json",
             "name": "ETag",
             "slug": "HTTP/Headers/ETag",
-            "summary": "The ETag HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content has not changed. Additionally, etags help prevent simultaneous updates of a resource from overwriting each other (\"mid-air collisions\").",
+            "summary": "The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. Additionally, etags help to prevent simultaneous updates of a resource from overwriting each other (\"mid-air collisions\").",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -64,7 +64,7 @@
             "filename": "http/headers/if-match.json",
             "name": "If-Match",
             "slug": "HTTP/Headers/If-Match",
-            "summary": "The If-Match HTTP request header makes the request conditional. For GET and HEAD methods, the server will send back the requested resource only if it matches one of the listed ETags. For PUT and other non-safe methods, it will only upload the resource in this case.",
+            "summary": "The If-Match HTTP request header makes the request conditional. For GET and HEAD methods, the server will return the requested resource only if it matches one of the listed ETags. For PUT and other non-safe methods, it will only upload the resource in this case.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -119,7 +119,7 @@
             "filename": "http/headers/if-modified-since.json",
             "name": "If-Modified-Since",
             "slug": "HTTP/Headers/If-Modified-Since",
-            "summary": "The If-Modified-Since request HTTP header makes the request conditional: the server will send back the requested resource, with a 200 status, only if it has been last modified after the given date. If the resource has not been modified since, the response will be a 304 without any body; the Last-Modified response header of a previous request will contain the date of last modification. Unlike If-Unmodified-Since, If-Modified-Since can only be used with a GET or HEAD.",
+            "summary": "The If-Modified-Since request HTTP header makes the request conditional: the server sends back the requested resource, with a 200 status, only if it has been last modified after the given date. If the resource has not been modified since, the response is a 304 without any body; the Last-Modified response header of a previous request contains the date of last modification. Unlike If-Unmodified-Since, If-Modified-Since can only be used with a GET or HEAD.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -174,7 +174,7 @@
             "filename": "http/headers/if-none-match.json",
             "name": "If-None-Match",
             "slug": "HTTP/Headers/If-None-Match",
-            "summary": "The If-None-Match HTTP request header makes the request conditional. For GET and HEAD methods, the server will send back the requested resource, with a 200 status, only if it doesn't have an ETag matching the given ones. For other methods, the request will be processed only if the eventually existing resource's ETag doesn't match any of the values listed.",
+            "summary": "The If-None-Match HTTP request header makes the request conditional. For GET and HEAD methods, the server will return the requested resource, with a 200 status, only if it doesn't have an ETag matching the given ones. For other methods, the request will be processed only if the eventually existing resource's ETag doesn't match any of the values listed.",
             "support": {
                 "chrome": {
                     "version_added": true
