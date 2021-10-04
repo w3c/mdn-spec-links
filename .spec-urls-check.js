@@ -254,6 +254,10 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://wicg.github.io/keyboard-map/#h-navigator-keyboard')) {
     return;
   }
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12698
+  if (spec_url.startsWith('https://drafts.csswg.org/css-font-loading/#dom-fontfaceset-set-entries')) {
+    return;
+  }
   if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
