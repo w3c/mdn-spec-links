@@ -45,6 +45,7 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/DOMTokenList/forEach",
     "https://developer.mozilla.org/docs/Web/API/DOMTokenList/keys",
     "https://developer.mozilla.org/docs/Web/API/DOMTokenList/values",
+    "https://developer.mozilla.org/docs/Web/API/FontFaceSet/entries",
     "https://developer.mozilla.org/docs/Web/API/FormData/entries",
     "https://developer.mozilla.org/docs/Web/API/FormData/keys",
     "https://developer.mozilla.org/docs/Web/API/FormData/values",
