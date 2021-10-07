@@ -284,7 +284,7 @@
             "filename": "http/headers/last-modified.json",
             "name": "Last-Modified",
             "slug": "HTTP/Headers/Last-Modified",
-            "summary": "The Last-Modified response HTTP header contains the date and time at which the origin server believes the resource was last modified. It is used as a validator to determine if a resource received or stored is the same. Less accurate than an ETag header, it is a fallback mechanism. Conditional requests containing If-Modified-Since or If-Unmodified-Since headers make use of this field.",
+            "summary": "The Last-Modified response HTTP header contains a date and time when the origin server believes the resource was last modified. It is used as a validator to determine if the resource is the same as the previously stored one. Less accurate than an ETag header, it is a fallback mechanism. Conditional requests containing If-Modified-Since or If-Unmodified-Since headers make use of this field.",
             "support": {
                 "chrome": {
                     "version_added": true

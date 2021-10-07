@@ -3546,7 +3546,7 @@
             "filename": "http/headers/x-content-type-options.json",
             "name": "X-Content-Type-Options",
             "slug": "HTTP/Headers/X-Content-Type-Options",
-            "summary": "The X-Content-Type-Options response HTTP header is a marker used by the server to indicate that the MIME types advertised in the Content-Type headers should not be changed and be followed. This is a way to opt out of MIME type sniffing, or, in other words, to say that the MIME types are deliberately configured.",
+            "summary": "The X-Content-Type-Options response HTTP header is a marker used by the server to indicate that the MIME types advertised in the Content-Type headers should be followed and not be changed. The header allows you to avoid MIME type sniffing by saying that the MIME types are deliberately configured.",
             "support": {
                 "chrome": [
                     {
