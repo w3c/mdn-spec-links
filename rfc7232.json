@@ -229,7 +229,7 @@
             "filename": "http/headers/if-unmodified-since.json",
             "name": "If-Unmodified-Since",
             "slug": "HTTP/Headers/If-Unmodified-Since",
-            "summary": "The If-Unmodified-Since request HTTP header makes the request conditional: the server will send back the requested resource, or accept it in the case of a POST or another non-safe method, only if it has not been last modified after the given date. If the resource has been modified after the given date, the response will be a 412 (Precondition Failed) error.",
+            "summary": "The HyperText Transfer Protocol (HTTP) If-Unmodified-Since request header makes the request for the resource conditional: the server will send the requested resource or accept it in the case of a POST or another non-safe method only if the resource has not been modified after the date specified by this HTTP header. If the resource has been modified after the specified date, the response will be a 412 Precondition Failed error.",
             "support": {
                 "chrome": {
                     "version_added": true

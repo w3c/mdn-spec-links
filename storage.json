@@ -114,7 +114,7 @@
             "filename": "api/StorageEstimate.json",
             "name": "quota",
             "slug": "API/StorageEstimate/quota",
-            "summary": "The StorageEstimate dictionary's quota property is a conservative approximation of how much storage is allotted to the origin or Web app that called StorageManager.estimate(); there may be more space available, but there will not be less. This value is an estimate to help prevent its use for fingerprinting—that is, identifying a device using an amalgamation of the values of seemingly innocuous properties.",
+            "summary": "The estimate() method of the StorageManager interface asks the Storage Manager for how much storage the current origin takes up (usage), and how much space is available (quota).",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -156,7 +156,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "StorageEstimate.quota"
+            "title": "StorageManager.estimate()"
         }
     ],
     "dom-storageestimate-usage": [
@@ -168,7 +168,7 @@
             "filename": "api/StorageEstimate.json",
             "name": "usage",
             "slug": "API/StorageEstimate/usage",
-            "summary": "The StorageEstimate dictionary's usage property is a conservative approximation of how much storage is allotted to the origin or Web app that called StorageManager.estimate(); there may be more space available, but there will not be less. The value is an estimate because the user agent may use compression, duplication prevention techniques, and other methods to improve storage efficiency.",
+            "summary": "The estimate() method of the StorageManager interface asks the Storage Manager for how much storage the current origin takes up (usage), and how much space is available (quota).",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -210,7 +210,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "StorageEstimate.usage"
+            "title": "StorageManager.estimate()"
         }
     ],
     "dictdef-storageestimate": [
@@ -222,7 +222,7 @@
             "filename": "api/StorageEstimate.json",
             "name": "StorageEstimate",
             "slug": "API/StorageEstimate",
-            "summary": "The StorageEstimate dictionary is used by the StorageManager to provide estimates of the size of a site's or application's data store and how much of it is in use. The estimate() method returns an object that conforms to this dictionary when its Promise resolves.",
+            "summary": "The estimate() method of the StorageManager interface asks the Storage Manager for how much storage the current origin takes up (usage), and how much space is available (quota).",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -264,7 +264,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "StorageEstimate"
+            "title": "StorageManager.estimate()"
         }
     ],
     "ref-for-dom-storagemanager-estimate": [

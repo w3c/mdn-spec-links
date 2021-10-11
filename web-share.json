@@ -1,12 +1,79 @@
 {
-    "share-method": [
+    "canshare-data-method": [
         {
             "engines": [
                 "blink",
                 "webkit"
             ],
             "partial": [
+                "blink"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "canShare",
+            "slug": "API/Navigator/canShare",
+            "summary": "The Navigator.canShare() method of the Web Share API returns true if the equivalent call to navigator.share() would succeed.",
+            "support": {
+                "chrome": {
+                    "version_added": "89",
+                    "partial_implementation": true,
+                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
+                },
+                "chrome_android": {
+                    "version_added": "75"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75",
+                    "partial_implementation": true,
+                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
+                },
+                "opera_android": {
+                    "version_added": "54"
+                },
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": {
+                    "version_added": "14"
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89",
+                    "partial_implementation": true,
+                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
+                }
+            },
+            "title": "Navigator.canShare()"
+        }
+    ],
+    "share-method": [
+        {
+            "engines": [
                 "blink",
+                "gecko",
+                "webkit"
+            ],
+            "partial": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
                 "gecko"
             ],
             "filename": "api/Navigator.json",
@@ -26,12 +93,18 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "71",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#dom.webshare.enabled",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": "79",
-                    "partial_implementation": true,
-                    "notes": "Firefox for Android does not support sharing files or text."
+                    "partial_implementation": true
                 },
                 "ie": {
                     "version_added": false

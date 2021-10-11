@@ -652,6 +652,7 @@
     "display-capture": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
@@ -663,7 +664,7 @@
             "summary": "The HTTP Feature-Policy header display-capture directive controls whether or not the document is permitted to use Screen Capture API, that is, getDisplayMedia() to capture the screen's contents.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "94"
                 },
                 "chrome_android": {
                     "version_added": false
@@ -695,7 +696,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "80"
                 },
                 "opera_android": {
                     "version_added": false
@@ -713,7 +714,7 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "94"
                 }
             },
             "title": "Feature-Policy: display-capture"

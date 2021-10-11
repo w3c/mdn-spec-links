@@ -761,8 +761,8 @@
                 "webkit"
             ],
             "filename": "api/TextTrackList.json",
-            "name": "addTrack_event",
-            "slug": "API/TextTrackList/addTrack_event",
+            "name": "addtrack_event",
+            "slug": "API/TextTrackList/addtrack_event",
             "summary": "The addtrack event is fired when a track is added to a TextTrackList.",
             "support": {
                 "chrome": {
@@ -2324,8 +2324,8 @@
                 "webkit"
             ],
             "filename": "api/TextTrackList.json",
-            "name": "removeTrack_event",
-            "slug": "API/TextTrackList/removeTrack_event",
+            "name": "removetrack_event",
+            "slug": "API/TextTrackList/removetrack_event",
             "summary": "The removetrack event is fired when a track is removed from a TextTrackList.",
             "support": {
                 "chrome": {
@@ -17786,6 +17786,60 @@
             "title": "GlobalEventHandlers.onselect"
         }
     ],
+    "handler-onslotchange": [
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/GlobalEventHandlers.json",
+            "name": "onslotchange",
+            "slug": "API/GlobalEventHandlers/onslotchange",
+            "summary": "The onslotchange property of the GlobalEventHandlers mixin is an event handler that processes slotchange events.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "93"
+                },
+                "firefox_android": {
+                    "version_added": "93"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "preview"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "GlobalEventHandlers.onslotchange"
+        }
+    ],
     "handler-onsubmit": [
         {
             "engines": [
@@ -21207,9 +21261,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLElement.json",
             "name": "enterKeyHint",
             "slug": "API/HTMLElement/enterKeyHint",
@@ -21224,25 +21275,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.forms.enterkeyhint",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "94"
+                    },
+                    {
+                        "version_added": "79",
+                        "version_removed": "94",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.forms.enterkeyhint",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.forms.enterkeyhint",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "94"
                 },
                 "ie": {
                     "version_added": false
@@ -30757,6 +30807,59 @@
                 }
             },
             "title": "HTMLScriptElement.referrerPolicy"
+        }
+    ],
+    "dom-script-supports": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/HTMLScriptElement.json",
+            "name": "supports",
+            "slug": "API/HTMLScriptElement/supports",
+            "summary": "The supports() static method of the HTMLScriptElement interface provides a simple and consistent method to feature-detect what types of scripts are supported by the user agent.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "94"
+                },
+                "firefox_android": {
+                    "version_added": "94"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "HTMLScriptElement.supports()"
         }
     ],
     "htmlscriptelement": [
@@ -44756,7 +44859,7 @@
                     "version_added": "7"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -44814,7 +44917,7 @@
                     "version_added": "7"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -44872,7 +44975,7 @@
                     "version_added": "7"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -44988,7 +45091,7 @@
                     "version_added": "7"
                 },
                 "ie": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -45082,7 +45185,7 @@
                     }
                 ],
                 "ie": {
-                    "version_added": false
+                    "version_added": "10"
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -51657,7 +51760,9 @@
     ],
     "dom-structuredclone": [
         {
-            "engines": [],
+            "engines": [
+                "gecko"
+            ],
             "filename": "api/_globals/structuredClone.json",
             "name": "structuredClone",
             "slug": "API/structuredClone",
@@ -51688,10 +51793,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "94"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "94"
                 },
                 "ie": {
                     "version_added": false
@@ -59193,7 +59298,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "<li>"
+            "title": "<li>: The List Item element"
         }
     ],
     "rel-alternate": [
@@ -63549,9 +63654,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "html/global_attributes.json",
             "name": "enterkeyhint",
             "slug": "HTML/Global_attributes/enterkeyhint",
@@ -63566,25 +63668,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.forms.enterkeyhint",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "94"
+                    },
+                    {
+                        "version_added": "79",
+                        "version_removed": "94",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.forms.enterkeyhint",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.forms.enterkeyhint",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "94"
                 },
                 "ie": {
                     "version_added": false
