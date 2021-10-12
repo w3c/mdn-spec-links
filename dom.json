@@ -10773,7 +10773,7 @@
             "filename": "api/MutationObserverInit.json",
             "name": "attributeFilter",
             "slug": "API/MutationObserverInit/attributeFilter",
-            "summary": "The MutationObserverInit dictionary's optional attributeFilter property is an array of strings specifying the names of the attributes whose values are to be monitored for changes.",
+            "summary": "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.",
             "support": {
                 "chrome": {
                     "version_added": "18"
@@ -10816,7 +10816,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MutationObserverInit.attributeFilter"
+            "title": "MutationObserver.observe()"
         }
     ],
     "ref-for-dom-mutationobserverinit-attributeoldvalue①": [
@@ -10829,7 +10829,7 @@
             "filename": "api/MutationObserverInit.json",
             "name": "attributeOldValue",
             "slug": "API/MutationObserverInit/attributeOldValue",
-            "summary": "The MutationObserverInit dictionary's optional attributeOldValue property is used to specify whether or not to record the prior value of the altered attribute in MutationRecord objects denoting attribute value changes.",
+            "summary": "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.",
             "support": {
                 "chrome": {
                     "version_added": "18"
@@ -10873,7 +10873,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MutationObserverInit.attributeOldValue"
+            "title": "MutationObserver.observe()"
         }
     ],
     "ref-for-dom-mutationobserverinit-attributes": [
@@ -10886,7 +10886,7 @@
             "filename": "api/MutationObserverInit.json",
             "name": "attributes",
             "slug": "API/MutationObserverInit/attributes",
-            "summary": "The MutationObserverInit dictionary's optional attributes property is used to specify whether or not to watch for attribute value changes on the node or nodes being observed.",
+            "summary": "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.",
             "support": {
                 "chrome": {
                     "version_added": "18"
@@ -10930,7 +10930,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MutationObserverInit.attributes"
+            "title": "MutationObserver.observe()"
         }
     ],
     "ref-for-dom-mutationobserverinit-characterdata": [
@@ -10943,7 +10943,7 @@
             "filename": "api/MutationObserverInit.json",
             "name": "characterData",
             "slug": "API/MutationObserverInit/characterData",
-            "summary": "The MutationObserverInit dictionary's optional characterData property is used to specify whether or not to monitor the node or nodes being observed for changes to their textual contents.",
+            "summary": "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.",
             "support": {
                 "chrome": {
                     "version_added": "18"
@@ -10987,7 +10987,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MutationObserverInit.characterData"
+            "title": "MutationObserver.observe()"
         }
     ],
     "ref-for-dom-mutationobserverinit-characterdataoldvalue①": [
@@ -11000,7 +11000,7 @@
             "filename": "api/MutationObserverInit.json",
             "name": "characterDataOldValue",
             "slug": "API/MutationObserverInit/characterDataOldValue",
-            "summary": "The MutationObserverInit dictionary's optional characterDataOldValue property is used to specify whether or not the MutationRecord.oldValue property for DOM mutations should be set to the previous value of text nodes which changed.",
+            "summary": "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.",
             "support": {
                 "chrome": {
                     "version_added": "18"
@@ -11044,7 +11044,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MutationObserverInit.characterDataOldValue"
+            "title": "MutationObserver.observe()"
         }
     ],
     "ref-for-dom-mutationobserverinit-childlist": [
@@ -11057,7 +11057,7 @@
             "filename": "api/MutationObserverInit.json",
             "name": "childList",
             "slug": "API/MutationObserverInit/childList",
-            "summary": "The MutationObserverInit dictionary's optional childList property indicates whether or not to monitor the specified node or nodes for the addition or removal of new child nodes.",
+            "summary": "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.",
             "support": {
                 "chrome": {
                     "version_added": "18"
@@ -11099,7 +11099,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MutationObserverInit.childList"
+            "title": "MutationObserver.observe()"
         }
     ],
     "ref-for-dom-mutationobserverinit-subtree②": [
@@ -11112,7 +11112,7 @@
             "filename": "api/MutationObserverInit.json",
             "name": "subtree",
             "slug": "API/MutationObserverInit/subtree",
-            "summary": "The MutationObserverInit dictionary's optional subtree property can be set to true to monitor the targeted node and all of its descendants.",
+            "summary": "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.",
             "support": {
                 "chrome": {
                     "version_added": "18"
@@ -11154,7 +11154,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MutationObserverInit.subtree"
+            "title": "MutationObserver.observe()"
         }
     ],
     "dictdef-mutationobserverinit": [
@@ -11167,7 +11167,7 @@
             "filename": "api/MutationObserverInit.json",
             "name": "MutationObserverInit",
             "slug": "API/MutationObserverInit",
-            "summary": "The MutationObserverInit dictionary describes the configuration of a mutation observer. As such, it's primarily used as the type of the options parameter on the MutationObserver.observe() method.",
+            "summary": "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.",
             "support": {
                 "chrome": [
                     {
@@ -11251,7 +11251,7 @@
                     }
                 ]
             },
-            "title": "MutationObserverInit"
+            "title": "MutationObserver.observe()"
         }
     ],
     "interface-mutationrecord": [
