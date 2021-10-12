@@ -1269,6 +1269,59 @@
             "title": "TrustedTypePolicyFactory"
         }
     ],
+    "require-trusted-types-for-csp-directive": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/content-security-policy.json",
+            "name": "require-trusted-types-for",
+            "slug": "HTTP/Headers/Content-Security-Policy/require-trusted-types-for",
+            "summary": "The HTTP Content-Security-Policy (CSP) require-trusted-types-for directive instructs user agents to control the data passed to DOM XSS sink functions, like Element.innerHTML setter.",
+            "support": {
+                "chrome": {
+                    "version_added": "83"
+                },
+                "chrome_android": {
+                    "version_added": "83"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "69"
+                },
+                "opera_android": {
+                    "version_added": "59"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": "83"
+                },
+                "edge_blink": {
+                    "version_added": "83"
+                }
+            },
+            "title": "CSP: require-trusted-types-for"
+        }
+    ],
     "trusted-types-csp-directive": [
         {
             "engines": [

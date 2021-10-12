@@ -9,15 +9,53 @@
             "slug": "API/URLPattern/URLPattern",
             "summary": "The URLPattern() constructor returns a new URLPattern object representing the url pattern defined by the parameters.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -48,9 +86,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern()"
         }
@@ -65,15 +116,53 @@
             "slug": "API/URLPattern/exec",
             "summary": "The **exec()**method of the URLPattern interface takes a URL or object of URL parts, and returns either an object containing the results of matching the URL to the pattern, or null if the URL does not match the pattern.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -104,9 +193,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.exec()"
         }
@@ -121,15 +223,53 @@
             "slug": "API/URLPattern/hash",
             "summary": "The hash property of the URLPattern interface is a USVString containing the pattern used to match the fragment part of a URL. This value may differ from the input to the constructor due to normalization.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -160,9 +300,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.hash"
         }
@@ -177,15 +330,53 @@
             "slug": "API/URLPattern/hostname",
             "summary": "The hostname property of the URLPattern interface is a USVString containing the pattern used to match the hostname part of a URL. This value may differ from the input to the constructor due to normalization.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -216,9 +407,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.hostname"
         }
@@ -233,15 +437,53 @@
             "slug": "API/URLPattern/password",
             "summary": "The password property of the URLPattern interface is a USVString containing the pattern used to match the password part of a URL. This value may differ from the input to the constructor due to normalization.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -272,9 +514,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.password"
         }
@@ -289,15 +544,53 @@
             "slug": "API/URLPattern/pathname",
             "summary": "The pathname property of the URLPattern interface is a USVString containing the pattern used to match the pathname part of a URL. This value may differ from the input to the constructor due to normalization.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -328,9 +621,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.pathname"
         }
@@ -345,15 +651,53 @@
             "slug": "API/URLPattern/port",
             "summary": "The port property of the URLPattern interface is a USVString containing the pattern used to match the port part of a URL. This value may differ from the input to the constructor due to normalization.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -384,9 +728,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.port"
         }
@@ -401,15 +758,53 @@
             "slug": "API/URLPattern/protocol",
             "summary": "The protocol property of the URLPattern interface is a USVString containing the pattern used to match the protocol part of a URL. This value may differ from the input to the constructor due to normalization.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -440,9 +835,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.protocol"
         }
@@ -457,15 +865,53 @@
             "slug": "API/URLPattern/search",
             "summary": "The search property of the URLPattern interface is a USVString containing the pattern used to match the search part of a URL. This value may differ from the input to the constructor due to normalization.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -496,9 +942,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.search"
         }
@@ -513,15 +972,53 @@
             "slug": "API/URLPattern/test",
             "summary": "The **test()**method of the URLPattern interface takes a URL or object of URL parts, and returns a boolean indicating if the given input matches the current pattern.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -552,9 +1049,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.test()"
         }
@@ -569,15 +1079,53 @@
             "slug": "API/URLPattern/username",
             "summary": "The username property of the URLPattern interface is a USVString containing the pattern used to match the username part of a URL. This value may differ from the input to the constructor due to normalization.",
             "support": {
-                "chrome": {
-                    "version_added": "93"
-                },
-                "chrome_android": {
-                    "version_added": "93"
-                },
-                "deno": {
-                    "version_added": "1.14"
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -608,9 +1156,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern.username"
         }
@@ -620,43 +1181,58 @@
             "engines": [
                 "blink"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "api/URLPattern.json",
             "name": "URLPattern",
             "slug": "API/URLPattern",
             "summary": "The URLPattern interface matches URLs or parts of URLs against a pattern. The pattern can contain capturing groups that extract parts of the matched URL.",
             "support": {
-                "chrome": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "deno": {
-                    "version_added": "1.14",
-                    "flags": [
-                        {
-                            "type": "runtime_flag",
-                            "name": "--unstable"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "deno": [
+                    {
+                        "version_added": "1.15"
+                    },
+                    {
+                        "version_added": "1.14",
+                        "version_removed": "1.15",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--unstable"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -687,16 +1263,22 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "95"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "95",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "URLPattern"
         }
