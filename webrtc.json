@@ -119,7 +119,7 @@
             "filename": "api/RTCConfiguration.json",
             "name": "bundlePolicy",
             "slug": "API/RTCConfiguration/bundlePolicy",
-            "summary": "The RTCConfiguration dictionary's bundlePolicy property is a string value indicating which SDP bundling policy, if any, to use for the underlying RTP streams used by an RTCPeerConnection.",
+            "summary": "The RTCPeerConnection() constructor returns a newly-created RTCPeerConnection, which represents a connection between the local device and a remote peer.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -161,7 +161,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCConfiguration.bundlePolicy"
+            "title": "RTCPeerConnection()"
         }
     ],
     "dom-rtcconfiguration-certificates": [
@@ -174,7 +174,7 @@
             "filename": "api/RTCConfiguration.json",
             "name": "certificates",
             "slug": "API/RTCConfiguration/certificates",
-            "summary": "The RTCConfiguration dictionary's optional certificates property is an array of RTCCertificate objects providing the security certificates available for use when authenticating duing the connection process.",
+            "summary": "The RTCPeerConnection() constructor returns a newly-created RTCPeerConnection, which represents a connection between the local device and a remote peer.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -216,7 +216,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCConfiguration.certificates"
+            "title": "RTCPeerConnection()"
         }
     ],
     "dom-rtcconfiguration-iceservers": [
@@ -229,7 +229,7 @@
             "filename": "api/RTCConfiguration.json",
             "name": "iceServers",
             "slug": "API/RTCConfiguration/iceServers",
-            "summary": "The RTCConfiguration dictionary's iceServers property is an array of RTCIceServer objects, each of which describes a single STUN or TURN server to use for negotiation purposes.",
+            "summary": "The RTCPeerConnection() constructor returns a newly-created RTCPeerConnection, which represents a connection between the local device and a remote peer.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -271,7 +271,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCConfiguration.iceServers"
+            "title": "RTCPeerConnection()"
         }
     ],
     "dom-rtcconfiguration-icetransportpolicy": [
@@ -284,7 +284,7 @@
             "filename": "api/RTCConfiguration.json",
             "name": "iceTransportPolicy",
             "slug": "API/RTCConfiguration/iceTransportPolicy",
-            "summary": "The WebRTC Device API dictionary RTCConfiguration's iceTransportPolicy property is a string indicating the transport selection policy the ICE agent should use during negotiation of connections.",
+            "summary": "The RTCPeerConnection() constructor returns a newly-created RTCPeerConnection, which represents a connection between the local device and a remote peer.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -326,7 +326,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCConfiguration.iceTransportPolicy"
+            "title": "RTCPeerConnection()"
         }
     ],
     "dom-rtcconfiguration": [
@@ -339,7 +339,7 @@
             "filename": "api/RTCConfiguration.json",
             "name": "RTCConfiguration",
             "slug": "API/RTCConfiguration",
-            "summary": "The RTCConfiguration dictionary is used to provide configuration options for an RTCPeerConnection. It may be passed into the constructor when instantiating a connection, or used with the RTCPeerConnection.getConfiguration() and RTCPeerConnection.setConfiguration() methods, which allow inspecting and changing the configuration while a connection is established.",
+            "summary": "The RTCPeerConnection() constructor returns a newly-created RTCPeerConnection, which represents a connection between the local device and a remote peer.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -381,7 +381,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCConfiguration"
+            "title": "RTCPeerConnection()"
         }
     ],
     "dom-RTCDTMFSender-insertDTMF": [
@@ -6165,7 +6165,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "getConfiguration",
             "slug": "API/RTCPeerConnection/getConfiguration",
-            "summary": "The RTCPeerConnection.getConfiguration() method returns an RTCConfiguration object which indicates the current configuration of the RTCPeerConnection on which the method is called.",
+            "summary": "The RTCPeerConnection.getConfiguration() method returns an object which indicates the current configuration of the RTCPeerConnection on which the method is called.",
             "support": {
                 "chrome": {
                     "version_added": "70"
@@ -7703,7 +7703,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "setConfiguration",
             "slug": "API/RTCPeerConnection/setConfiguration",
-            "summary": "The RTCPeerConnection.setConfiguration() method sets the current configuration of the RTCPeerConnection based on the values included in the specified RTCConfiguration object. This lets you change the ICE servers used by the connection and which transport policies to use.",
+            "summary": "The RTCPeerConnection.setConfiguration() method sets the current configuration of the RTCPeerConnection based on the values included in the specified object. This lets you change the ICE servers used by the connection and which transport policies to use.",
             "support": {
                 "chrome": {
                     "version_added": "48"

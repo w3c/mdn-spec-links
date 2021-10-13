@@ -9477,7 +9477,7 @@
             "filename": "api/Event.json",
             "name": "stopPropagation",
             "slug": "API/Event/stopPropagation",
-            "summary": "The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases. It does not, however, prevent any default behaviors from occurring; for instance, clicks on links are still processed. If you want to stop those behaviors, see the preventDefault() method.",
+            "summary": "The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases. It does not, however, prevent any default behaviors from occurring; for instance, clicks on links are still processed. If you want to stop those behaviors, see the preventDefault() method. It also does not prevent immediate propagation to other event-handlers. If you want to stop those, see stopImmediatePropagation().",
             "support": {
                 "chrome": {
                     "version_added": "1"

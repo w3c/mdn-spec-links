@@ -15,7 +15,7 @@
             "summary": "The Sanitizer() constructor creates a new sanitizer object which allows developers to take untrusted strings of HTML, and sanitize them for safe insertion into a document’s DOM.",
             "support": {
                 "chrome": {
-                    "version_added": "preview",
+                    "version_added": "93",
                     "flags": [
                         {
                             "type": "preference",
@@ -41,20 +41,20 @@
                     ]
                 },
                 "firefox_android": {
-                    "version_added": "83",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.sanitizer.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
                     "version_added": false
@@ -72,7 +72,7 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "preview",
+                    "version_added": "93",
                     "flags": [
                         {
                             "type": "preference",
@@ -101,7 +101,7 @@
             "summary": "The sanitize() method of the sanitizer interface returns a sanitized DocumentFragment from an input, removing any offending elements or attributes.",
             "support": {
                 "chrome": {
-                    "version_added": "preview",
+                    "version_added": "93",
                     "flags": [
                         {
                             "type": "preference",
@@ -127,20 +127,20 @@
                     ]
                 },
                 "firefox_android": {
-                    "version_added": "83",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.sanitizer.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
                     "version_added": false
@@ -158,7 +158,7 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "preview",
+                    "version_added": "93",
                     "flags": [
                         {
                             "type": "preference",
@@ -187,7 +187,7 @@
             "summary": "The Sanitizer interface of the HTML Sanitizer API allows developers to take untrusted strings of HTML, and sanitize them for safe insertion into a document’s DOM.",
             "support": {
                 "chrome": {
-                    "version_added": "preview",
+                    "version_added": "93",
                     "flags": [
                         {
                             "type": "preference",
@@ -213,20 +213,20 @@
                     ]
                 },
                 "firefox_android": {
-                    "version_added": "83",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.sanitizer.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "opera_android": {
                     "version_added": false
@@ -244,7 +244,7 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "preview",
+                    "version_added": "93",
                     "flags": [
                         {
                             "type": "preference",
