@@ -1427,7 +1427,7 @@
             "filename": "api/AnimationEffect.json",
             "name": "getTiming",
             "slug": "API/AnimationEffect/getTiming",
-            "summary": "The AnimationEffect.getTiming() method of the AnimationEffect interface returns an EffectTiming object containing the timing properties for the Animation Effect.",
+            "summary": "The AnimationEffect.getTiming() method of the AnimationEffect interface returns an object containing the timing properties for the Animation Effect.",
             "support": {
                 "chrome": {
                     "version_added": "75"
@@ -2214,7 +2214,7 @@
             "filename": "api/EffectTiming.json",
             "name": "delay",
             "slug": "API/EffectTiming/delay",
-            "summary": "The EffectTiming dictionary's delay property in the Web Animations API represents the number of milliseconds to delay the start of the animation.",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2256,7 +2256,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EffectTiming.delay"
+            "title": "KeyframeEffect()"
         }
     ],
     "enumdef-playbackdirection": [
@@ -2269,7 +2269,7 @@
             "filename": "api/EffectTiming.json",
             "name": "direction",
             "slug": "API/EffectTiming/direction",
-            "summary": "The direction property of the Web Animations API dictionary EffectTiming indicates an animation's playback direction along its timeline, as well as its behavior when it reaches the end of an iteration",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2311,7 +2311,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EffectTiming.direction"
+            "title": "KeyframeEffect()"
         }
     ],
     "iteration-duration": [
@@ -2324,7 +2324,7 @@
             "filename": "api/EffectTiming.json",
             "name": "duration",
             "slug": "API/EffectTiming/duration",
-            "summary": "The duration property of the dictionary EffectTiming in the Web Animations API specifies the duration in milliseconds that a single iteration (from beginning to end) the animation should take to complete.",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2366,7 +2366,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EffectTiming.duration"
+            "title": "KeyframeEffect()"
         }
     ],
     "time-transformations": [
@@ -2379,7 +2379,7 @@
             "filename": "api/EffectTiming.json",
             "name": "easing",
             "slug": "API/EffectTiming/easing",
-            "summary": "The EffectTiming dictionary's easing property in the Web Animations API specifies the timing function used to scale the time to produce easing effects, where easing is the rate of the animation's change over time.",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2421,7 +2421,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EffectTiming.easing"
+            "title": "KeyframeEffect()"
         }
     ],
     "end-delay": [
@@ -2434,7 +2434,7 @@
             "filename": "api/EffectTiming.json",
             "name": "endDelay",
             "slug": "API/EffectTiming/endDelay",
-            "summary": "The endDelay property of the EffectTiming dictionary (part of the Web Animations API) indicates the number of milliseconds to delay after the active period of an animation sequence. The animation's end time—the time at which an iteration is considered to have finished—is the time at which the animation finishes an iteration (its initial delay, delay, plus its duration,duration, plus its end delay).",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2476,7 +2476,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EffectTiming.endDelay"
+            "title": "KeyframeEffect()"
         }
     ],
     "enumdef-fillmode": [
@@ -2489,7 +2489,7 @@
             "filename": "api/EffectTiming.json",
             "name": "fill",
             "slug": "API/EffectTiming/fill",
-            "summary": "The Web Animations API's EffectTiming dictionary's fill property specifies a fill mode, which defines how the element to which the animation is applied should look when the animation sequence is not actively running, such as before the time specified by iterationStart or after animation's end time.",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2531,7 +2531,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EffectTiming.fill"
+            "title": "KeyframeEffect()"
         }
     ],
     "iteration-count": [
@@ -2544,7 +2544,7 @@
             "filename": "api/EffectTiming.json",
             "name": "iterations",
             "slug": "API/EffectTiming/iterations",
-            "summary": "The Web Animations API dictionary EffectTiming's iterations property specifies the number of times the animation should repeat. The default value is 1, indicating that it should only play once, but you can set it to any floating-point value (including positive Infinity defaults to 1, and can also take a value of Infinity to make it loop infinitely.",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2586,7 +2586,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EffectTiming.iterations"
+            "title": "KeyframeEffect()"
         }
     ],
     "iteration-start": [
@@ -2599,7 +2599,7 @@
             "filename": "api/EffectTiming.json",
             "name": "iterationStart",
             "slug": "API/EffectTiming/iterationStart",
-            "summary": "Web Animations API's EffectTiming dictionary's iterationStart property specifies the repetition number which repetition the animation begins at and its progress through it.",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -2641,7 +2641,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EffectTiming.iterationStart"
+            "title": "KeyframeEffect()"
         }
     ],
     "the-effecttiming-dictionaries": [
@@ -2654,7 +2654,7 @@
             "filename": "api/EffectTiming.json",
             "name": "EffectTiming",
             "slug": "API/EffectTiming",
-            "summary": "The EffectTiming dictionary, part of the Web Animations API, is used by Element.animate(), and KeyframeEffect() to describe timing properties for animation effects. These properties are all optional, although without setting a duration the animation will not play.",
+            "summary": "The KeyframeEffect() constructor of the Web Animations API returns a new KeyframeEffect object instance, and also allows you to clone an existing keyframe effect object instance.",
             "support": {
                 "chrome": [
                     {
@@ -2731,7 +2731,7 @@
                     }
                 ]
             },
-            "title": "EffectTiming"
+            "title": "KeyframeEffect()"
         }
     ],
     "dom-animatable-animate": [

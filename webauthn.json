@@ -803,7 +803,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "attestation",
             "slug": "API/PublicKeyCredentialCreationOptions/attestation",
-            "summary": "attestation is an optional property of the PublicKeyCredentialCreationOptions dictionary. This is a string whose value indicates the preference regarding the attestation transport, between the authenticator, the client and the relying party.",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -845,7 +845,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.attestation"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialcreationoptions-authenticatorselection": [
@@ -858,7 +858,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "authenticatorSelection",
             "slug": "API/PublicKeyCredentialCreationOptions/authenticatorSelection",
-            "summary": "authenticatorSelection, an optional property of the PublicKeyCredentialCreationOptions dictionary, is an object giving criteria to filter out the authenticators to be used for the creation operation.",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -900,7 +900,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.authenticatorSelection"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialcreationoptions-challenge": [
@@ -913,7 +913,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "challenge",
             "slug": "API/PublicKeyCredentialCreationOptions/challenge",
-            "summary": "The challenge property of the PublicKeyCredentialCreationOptions dictionary is a BufferSource used as a cryptographic challenge. This is randomly generated then sent from the relying party's server. This value (among other client data) will be signed by the authenticator, using its private key, and must be sent back for verification to the server as part of AuthenticatorAttestationResponse.attestationObject.",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -955,7 +955,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.challenge"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialcreationoptions-excludecredentials": [
@@ -968,7 +968,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "excludeCredentials",
             "slug": "API/PublicKeyCredentialCreationOptions/excludeCredentials",
-            "summary": "excludeCredentials, an optional property of the PublicKeyCredentialCreationOptions dictionary, is an Array whose elements are descriptors for the public keys already existing for a given user. This is provided by the relying party's server if it wants to prevent creation of new credentials for an existing user.",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1010,7 +1010,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.excludeCredentials"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialcreationoptions-extensions": [
@@ -1023,7 +1023,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "extensions",
             "slug": "API/PublicKeyCredentialCreationOptions/extensions",
-            "summary": "extensions, an optional property of the PublicKeyCredentialCreationOptions dictionary, is an object providing the client extensions and their input values.",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1065,7 +1065,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.extensions"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialcreationoptions-pubkeycredparams": [
@@ -1078,7 +1078,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "pubKeyCredParams",
             "slug": "API/PublicKeyCredentialCreationOptions/pubKeyCredParams",
-            "summary": "The pubKeyCredParams property of the PublicKeyCredentialCreationOptions dictionary is an Array whose elements are objects describing the desired features of the credential to be created. These objects define the type of public-key and the algorithm used for cryptographic signature operations.",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1120,7 +1120,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.pubKeyCredParams"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialcreationoptions-rp": [
@@ -1133,7 +1133,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "rp",
             "slug": "API/PublicKeyCredentialCreationOptions/rp",
-            "summary": "The rp property of the PublicKeyCredentialCreationOptions dictionary is an object describing the relying party which requested the credential creation (via navigator.credentials.create()).",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1175,7 +1175,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.rp"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialcreationoptions-timeout": [
@@ -1188,7 +1188,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "timeout",
             "slug": "API/PublicKeyCredentialCreationOptions/timeout",
-            "summary": "The timeout property, of the PublicKeyCredentialCreationOptions dictionary, represents an hint, given in milliseconds, for the time the script is willing to wait for the completion of the creation operation.",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1230,7 +1230,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.timeout"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialcreationoptions-user": [
@@ -1243,7 +1243,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "user",
             "slug": "API/PublicKeyCredentialCreationOptions/user",
-            "summary": "The user property of the PublicKeyCredentialCreationOptions dictionary is an object describing the user account for which the credentials are generated (via navigator.credentials.create()).",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1285,7 +1285,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions.user"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dictdef-publickeycredentialcreationoptions": [
@@ -1298,7 +1298,7 @@
             "filename": "api/PublicKeyCredentialCreationOptions.json",
             "name": "PublicKeyCredentialCreationOptions",
             "slug": "API/PublicKeyCredentialCreationOptions",
-            "summary": "The PublicKeyCredentialCreationOptions dictionary of the Web Authentication API holds options passed to navigators.credentials.create() in order to create a PublicKeyCredential.",
+            "summary": "The create() method of the CredentialsContainer interface returns a Promise that resolves with a new Credential instance based on the provided options, or null if no Credential object can be created.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1340,7 +1340,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialCreationOptions"
+            "title": "CredentialsContainer.create()"
         }
     ],
     "dom-publickeycredentialrequestoptions-allowcredentials": [
@@ -1353,7 +1353,7 @@
             "filename": "api/PublicKeyCredentialRequestOptions.json",
             "name": "allowCredentials",
             "slug": "API/PublicKeyCredentialRequestOptions/allowCredentials",
-            "summary": "allowCredentials is an optional property of the PublicKeyCredentialRequestOptions dictionary which indicates the existing credentials acceptable for retrieval. This is an Array of credential descriptors.",
+            "summary": "The get() method of the CredentialsContainer interface returns a Promise to a single Credential instance that matches the provided parameters. If no match is found the Promise will resolve to null.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1395,7 +1395,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialRequestOptions.allowCredentials"
+            "title": "CredentialsContainer.get()"
         }
     ],
     "dom-publickeycredentialrequestoptions-challenge": [
@@ -1408,7 +1408,7 @@
             "filename": "api/PublicKeyCredentialRequestOptions.json",
             "name": "challenge",
             "slug": "API/PublicKeyCredentialRequestOptions/challenge",
-            "summary": "The challenge property of the PublicKeyCredentialRequestOptions dictionary is a BufferSource used as a cryptographic challenge. This is randomly generated then sent from the relying party's server. This value (among other client data) will be signed by the authenticator's private key and produce AuthenticatorAssertionResponse.signature which should be sent back to the server as part of the response.",
+            "summary": "The get() method of the CredentialsContainer interface returns a Promise to a single Credential instance that matches the provided parameters. If no match is found the Promise will resolve to null.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1450,7 +1450,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialRequestOptions.challenge"
+            "title": "CredentialsContainer.get()"
         }
     ],
     "dom-publickeycredentialrequestoptions-extensions": [
@@ -1463,7 +1463,7 @@
             "filename": "api/PublicKeyCredentialRequestOptions.json",
             "name": "extensions",
             "slug": "API/PublicKeyCredentialRequestOptions/extensions",
-            "summary": "extensions, an optional property of the PublicKeyCredentialRequestOptions dictionary, is an object providing the client extensions and their input values.",
+            "summary": "The get() method of the CredentialsContainer interface returns a Promise to a single Credential instance that matches the provided parameters. If no match is found the Promise will resolve to null.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1505,7 +1505,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialRequestOptions.extensions"
+            "title": "CredentialsContainer.get()"
         }
     ],
     "dom-publickeycredentialrequestoptions-rpid": [
@@ -1518,7 +1518,7 @@
             "filename": "api/PublicKeyCredentialRequestOptions.json",
             "name": "rpId",
             "slug": "API/PublicKeyCredentialRequestOptions/rpId",
-            "summary": "The rpId property, of the PublicKeyCredentialRequestOptions dictionary, is an optional property which indicates the relying party's identifier as a USVString. Its value can only be a suffix of the current origin's domain. For example, if you are browsing on foo.example.com, the rpId value may be \"example.com\" but not \"bar.org\" or \"baz.example.com\".",
+            "summary": "The get() method of the CredentialsContainer interface returns a Promise to a single Credential instance that matches the provided parameters. If no match is found the Promise will resolve to null.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1560,7 +1560,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialRequestOptions.rpId"
+            "title": "CredentialsContainer.get()"
         }
     ],
     "dom-publickeycredentialrequestoptions-timeout": [
@@ -1573,7 +1573,7 @@
             "filename": "api/PublicKeyCredentialRequestOptions.json",
             "name": "timeout",
             "slug": "API/PublicKeyCredentialRequestOptions/timeout",
-            "summary": "The timeout property, of the PublicKeyCredentialRequestOptions dictionary, represents an hint, given in milliseconds, for the time the script is willing to wait for the completion of the retrieval operation.",
+            "summary": "The get() method of the CredentialsContainer interface returns a Promise to a single Credential instance that matches the provided parameters. If no match is found the Promise will resolve to null.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1615,7 +1615,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialRequestOptions.timeout"
+            "title": "CredentialsContainer.get()"
         }
     ],
     "dom-publickeycredentialrequestoptions-userverification": [
@@ -1628,7 +1628,7 @@
             "filename": "api/PublicKeyCredentialRequestOptions.json",
             "name": "userVerification",
             "slug": "API/PublicKeyCredentialRequestOptions/userVerification",
-            "summary": "userVerification is an optional property of the PublicKeyCredentialRequestOptions. This is a string which indicates how the user verification should be part of the authentication process.",
+            "summary": "The get() method of the CredentialsContainer interface returns a Promise to a single Credential instance that matches the provided parameters. If no match is found the Promise will resolve to null.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -1670,7 +1670,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredentialRequestOptions.userVerification"
+            "title": "CredentialsContainer.get()"
         }
     ],
     "dictdef-publickeycredentialrequestoptions": [
