@@ -251,14 +251,6 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://w3c.github.io/webcodecs/#dom-imagedecoder-type')) {
     return;
   }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12426
-  if (spec_url.startsWith('https://wicg.github.io/keyboard-map/#h-navigator-keyboard')) {
-    return;
-  }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12721
-  if (spec_url.startsWith('https://heycam.github.io/webidl')) {
-    return;
-  }
   if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
