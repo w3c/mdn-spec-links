@@ -7065,7 +7065,7 @@
                 },
                 "firefox": {
                     "version_added": "3",
-                    "notes": "Prior to Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflect the change in the spec."
+                    "notes": "Before Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflect the change in the spec."
                 },
                 "firefox_android": {
                     "version_added": "4"
@@ -7124,11 +7124,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Prior to Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflect the change in the spec."
+                    "notes": "Before Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflect the change in the spec."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Prior to Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflect the change in the spec."
+                    "notes": "Before Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflect the change in the spec."
                 },
                 "ie": {
                     "version_added": "5.5"
@@ -7191,12 +7191,12 @@
                     "version_added": "1",
                     "notes": [
                         "The behavior of <code>element.getElementsByTagNameNS</code> changed between Firefox 3.5 and Firefox 3.6. In Firefox 3.5 and before, this function would automatically case-fold any queries so that a search for \"foo\" would match \"Foo\" or \"foo\". In Firefox 3.6 and later this function is now case-sensitive so that a query for \"foo\" will only match \"foo\" and not \"Foo\". For more background on this, please see the <a href='https://bugzil.la/542185#c5'>comment from Henri Sivonen about the change</a>. You can also look at the <a href='https://developer.mozilla.org/docs/Case_Sensitivity_in_class_and_id_Names'>relevant part of the standard, which states which parts of the API are case-sensitive and which parts aren't</a>.",
-                        "Prior to Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflects the spec change."
+                        "Before Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflects the spec change."
                     ]
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Prior to Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflects the spec change."
+                    "notes": "Before Firefox 19, this method was returning a <code>NodeList</code>; it was then changed to reflects the spec change."
                 },
                 "ie": {
                     "version_added": "9"
@@ -7711,7 +7711,7 @@
                         "version_added": "3.6",
                         "alternative_name": "mozMatchesSelector",
                         "notes": [
-                            "Prior to Firefox 4, invalid selector strings caused false to be returned instead of throwing an exception.",
+                            "Before Firefox 4, invalid selector strings caused false to be returned instead of throwing an exception.",
                             "See <a href='https://bugzil.la/1119718'>bug 1119718</a> for removal."
                         ]
                     }
@@ -15240,10 +15240,11 @@
             "title": "Range"
         }
     ],
-    "dom-shadowroot-delegatesfocus": [
+    "shadowroot-delegates-focus": [
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/ShadowRoot.json",
@@ -15261,12 +15262,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1706275'>bug 1706275</a>."
+                    "version_added": "94"
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1706275'>bug 1706275</a>."
+                    "version_added": "94"
                 },
                 "ie": {
                     "version_added": false

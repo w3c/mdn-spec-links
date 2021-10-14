@@ -8342,8 +8342,8 @@
                 "firefox": {
                     "version_added": "8",
                     "notes": [
-                        "Prior to Firefox 12, the close code <code>CLOSE_NORMAL</code> was used when the channel was closed due to an unexpected error or unspecified error condition.",
-                        "Prior to Firefox 8, the <code>WebSocket</code> close event was sent to the listener as a simple event."
+                        "Before Firefox 12, the close code <code>CLOSE_NORMAL</code> was used when the channel was closed due to an unexpected error or unspecified error condition.",
+                        "Before Firefox 8, the <code>WebSocket</code> close event was sent to the listener as a simple event."
                     ]
                 },
                 "firefox_android": {
@@ -10897,11 +10897,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Prior to Firefox 68, <code>cookie</code> was available only on HTML documents; it is now available on all documents, such as XML and SVG."
+                    "notes": "Before Firefox 68, <code>cookie</code> was available only on HTML documents; it is now available on all documents, such as XML and SVG."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Prior to Firefox 68, <code>cookie</code> was available only on HTML documents; it is now available on all documents, such as XML and SVG."
+                    "notes": "Before Firefox 68, <code>cookie</code> was available only on HTML documents; it is now available on all documents, such as XML and SVG."
                 },
                 "ie": {
                     "version_added": "4"
@@ -11357,7 +11357,7 @@
             "support": {
                 "chrome": {
                     "version_added": "4",
-                    "notes": "Prior to Chrome 72, the <code>dragend</code> event was not dispatched if an iframe (not necessarily the source target) is involved in a DOM operation. See <a href='https://crbug.com/737691'>issue 737691</a> for more details."
+                    "notes": "Before Chrome 72, the <code>dragend</code> event was not dispatched if an iframe (not necessarily the source target) is involved in a DOM operation. See <a href='https://crbug.com/737691'>issue 737691</a> for more details."
                 },
                 "chrome_android": {
                     "version_added": false
@@ -11399,7 +11399,7 @@
                 },
                 "edge_blink": {
                     "version_added": "79",
-                    "notes": "Prior to Chrome 72, the <code>dragend</code> event was not dispatched if an iframe (not necessarily the source target) is involved in a DOM operation. See <a href='https://crbug.com/737691'>issue 737691</a> for more details."
+                    "notes": "Before Chrome 72, the <code>dragend</code> event was not dispatched if an iframe (not necessarily the source target) is involved in a DOM operation. See <a href='https://crbug.com/737691'>issue 737691</a> for more details."
                 }
             },
             "title": "Document: dragend event"
@@ -16275,59 +16275,6 @@
                 }
             },
             "title": "GlobalEventHandlers.onerror"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLMediaElement.json",
-            "name": "onerror",
-            "slug": "API/HTMLMediaElement/onerror",
-            "summary": "The onerror property of the HTMLMediaElement interface is the event handler for processing error events.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.5"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": "1.3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "HTMLMediaElement.onerror"
         }
     ],
     "handler-onfocus": [
@@ -25239,11 +25186,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Prior to Firefox 10, Gecko incorrectly reflected negative value attributes to 0."
+                    "notes": "Before Firefox 10, Gecko incorrectly reflected negative value attributes to 0."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Prior to Firefox 10, Gecko incorrectly reflected negative value attributes to 0."
+                    "notes": "Before Firefox 10, Gecko incorrectly reflected negative value attributes to 0."
                 },
                 "ie": {
                     "version_added": "5.5"
@@ -26284,7 +26231,7 @@
                 },
                 "firefox": {
                     "version_added": "3.5",
-                    "notes": "Prior to Firefox 28, <code>canPlayType()</code> returned <code>probably</code> when asked about WebM audio or video files without the <code>codecs</code> parameter. Since multiple codecs are supported, this is not enough information to determine if a file can be played, so <code>maybe</code> is now correctly returned."
+                    "notes": "Before Firefox 28, <code>canPlayType()</code> returned <code>probably</code> when asked about WebM audio or video files without the <code>codecs</code> parameter. Since multiple codecs are supported, this is not enough information to determine if a file can be played, so <code>maybe</code> is now correctly returned."
                 },
                 "firefox_android": {
                     "version_added": "4"
@@ -33660,11 +33607,11 @@
                 },
                 "firefox": {
                     "version_added": "31",
-                    "notes": "Setting the <code>src</code> property did not work properly in versions prior to 50."
+                    "notes": "Before Firefox 50, setting the <code>src</code> property did not work properly."
                 },
                 "firefox_android": {
                     "version_added": "31",
-                    "notes": "Setting the <code>src</code> property did not work properly in versions prior to 50."
+                    "notes": "Before Firefox 50, setting the <code>src</code> property did not work properly."
                 },
                 "ie": {
                     "version_added": "10"
@@ -33717,11 +33664,11 @@
                 },
                 "firefox": {
                     "version_added": "31",
-                    "notes": "Prior to Firefox 50, text tracks would only load if the <track> element is in a document."
+                    "notes": "Before Firefox 50, text tracks would only load if the <track> element is in a document."
                 },
                 "firefox_android": {
                     "version_added": "31",
-                    "notes": "Prior to Firefox 50, text tracks would only load if the <track> element is in a document."
+                    "notes": "Before Firefox 50, text tracks would only load if the <track> element is in a document."
                 },
                 "ie": {
                     "version_added": "10"
@@ -37420,11 +37367,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Prior to Firefox 8, <code>navigator.cookieEnabled</code> would report the wrong result if a site exception was in place for the page on which the check was performed. This has been fixed."
+                    "notes": "Before Firefox 8, <code>navigator.cookieEnabled</code> would report the wrong result if a site exception was in place for the page on which the check was performed. This has been fixed."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Prior to Firefox 8, <code>navigator.cookieEnabled</code> would report the wrong result if a site exception was in place for the page on which the check was performed. This has been fixed."
+                    "notes": "Before Firefox 8, <code>navigator.cookieEnabled</code> would report the wrong result if a site exception was in place for the page on which the check was performed. This has been fixed."
                 },
                 "ie": {
                     "version_added": "4",
@@ -37594,7 +37541,7 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Prior to Firefox 4, this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>. Starting in Firefox 5, this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
+                    "notes": "Before Firefox 4, this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>. Starting in Firefox 5, this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
                 },
                 "firefox_android": {
                     "version_added": "4"
@@ -37649,7 +37596,7 @@
                 },
                 "firefox": {
                     "version_added": "3.5",
-                    "notes": "Prior to Firefox 4, this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>. Starting in Firefox 5, this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
+                    "notes": "Before Firefox 4, this property's value was also part of the user agent string, as reported by <code>navigator.userAgent</code>. Starting in Firefox 5, this property's value is based on the value of the <code>Accept-Language</code> <a href='https://developer.mozilla.org/docs/Web/HTTP/Headers'>HTTP header</a>."
                 },
                 "firefox_android": {
                     "version_added": "4"
@@ -53307,11 +53254,11 @@
     "selector-autofill": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
             "prefixed": [
-                "blink",
                 "webkit"
             ],
             "filename": "css/selectors/autofill.json",
@@ -53319,14 +53266,24 @@
             "slug": "CSS/:autofill",
             "summary": "The :autofill CSS pseudo-class matches when an <input> element has its value autofilled by the browser. The class stops matching if the user edits the field.",
             "support": {
-                "chrome": {
-                    "version_added": "1",
-                    "prefix": "-webkit-"
-                },
-                "chrome_android": {
-                    "version_added": "18",
-                    "prefix": "-webkit-"
-                },
+                "chrome": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "1",
+                        "prefix": "-webkit-"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "18",
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -53376,14 +53333,24 @@
                     "version_added": "1.0",
                     "prefix": "-webkit-"
                 },
-                "webview_android": {
-                    "version_added": "1",
-                    "prefix": "-webkit-"
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "-webkit-"
-                }
+                "webview_android": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "1",
+                        "prefix": "-webkit-"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "79",
+                        "prefix": "-webkit-"
+                    }
+                ]
             },
             "title": ":autofill"
         }
@@ -54565,11 +54532,11 @@
                 },
                 "firefox": {
                     "version_added": "52",
-                    "notes": "Prior to Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
+                    "notes": "Before Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
                 },
                 "firefox_android": {
                     "version_added": "52",
-                    "notes": "Prior to Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
+                    "notes": "Before Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
                 },
                 "ie": {
                     "version_added": false
@@ -54620,11 +54587,11 @@
                 },
                 "firefox": {
                     "version_added": "52",
-                    "notes": "Prior to Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
+                    "notes": "Before Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
                 },
                 "firefox_android": {
                     "version_added": "52",
-                    "notes": "Prior to Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
+                    "notes": "Before Firefox 63, <code>rel=\"noopener\"</code> created windows with all features disabled by default. Starting with Firefox 63, these windows have the same features enabled by default as any other window."
                 },
                 "ie": {
                     "version_added": false
@@ -55623,7 +55590,7 @@
                     "version_added": "1.5",
                     "notes": [
                         "Before Firefox 5, the canvas width and height were signed integers instead of unsigned integers.",
-                        "Prior to Firefox 6, a &lt;canvas&gt; element with a zero width or height would be rendered as if it had default dimensions.",
+                        "Before Firefox 6, a &lt;canvas&gt; element with a zero width or height would be rendered as if it had default dimensions.",
                         "Before Firefox 12, if JavaScript is disabled, the &lt;canvas&gt; element was being rendered instead of showing the fallback content as per the specification. Since then, the fallback content is rendered instead."
                     ]
                 },
@@ -55631,7 +55598,7 @@
                     "version_added": "4",
                     "notes": [
                         "Before Firefox 5, the canvas width and height were signed integers instead of unsigned integers.",
-                        "Prior to Firefox 6, a &lt;canvas&gt; element with a zero width or height would be rendered as if it had default dimensions.",
+                        "Before Firefox 6, a &lt;canvas&gt; element with a zero width or height would be rendered as if it had default dimensions.",
                         "Before Firefox 12, if JavaScript is disabled, the &lt;canvas&gt; element was being rendered instead of showing the fallback content as per the specification. Since then, the fallback content is rendered instead."
                     ]
                 },
@@ -55646,7 +55613,7 @@
                 },
                 "safari": {
                     "version_added": "2",
-                    "notes": "Although early versions of Apple's Safari browser don't require the closing tag, the specification indicates that it is required, so you should be sure to include it for broadest compatibility. Versions of Safari prior to version 2 will render the content of the fallback in addition to the canvas itself unless you use CSS tricks to mask it."
+                    "notes": "Although early versions of Apple's Safari browser don't require the closing tag, the specification indicates that it is required, so you should be sure to include it for broadest compatibility. Before version 2, Safari will render the content of the fallback in addition to the canvas itself unless you use CSS tricks to mask it."
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -60995,14 +60962,14 @@
                 "firefox": {
                     "version_added": "6",
                     "notes": [
-                        "Prior to Firefox 14, the <code>&lt;progress&gt;</code> element was incorrectly classified as a form element, and therefore had a <code>form</code> attribute. This has been fixed.",
+                        "Before Firefox 14, the <code>&lt;progress&gt;</code> element was incorrectly classified as a form element, and therefore had a <code>form</code> attribute. This has been fixed.",
                         "Firefox provides the <code>::-moz-progress-bar</code> pseudo-element, which lets you style the part of the interior of the progress bar representing the amount of work completed so far."
                     ]
                 },
                 "firefox_android": {
                     "version_added": "6",
                     "notes": [
-                        "Prior to Firefox 14, the <code>&lt;progress&gt;</code> element was incorrectly classified as a form element, and therefore had a <code>form</code> attribute. This has been fixed.",
+                        "Before Firefox 14, the <code>&lt;progress&gt;</code> element was incorrectly classified as a form element, and therefore had a <code>form</code> attribute. This has been fixed.",
                         "Firefox provides the <code>::-moz-progress-bar</code> pseudo-element, which lets you style the part of the interior of the progress bar representing the amount of work completed so far."
                     ]
                 },
@@ -65868,7 +65835,7 @@
                 },
                 "ie": {
                     "version_added": "10",
-                    "notes": "In versions prior to Internet Explorer 10, it implemented <code>defer</code> by a proprietary specification. Since version 10 it conforms to the W3C specification."
+                    "notes": "Before version 10, Internet Explorer implemented <code>defer</code> by a proprietary specification. Since version 10 it conforms to the W3C specification."
                 },
                 "opera": {
                     "version_added": true,

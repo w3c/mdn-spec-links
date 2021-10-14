@@ -803,7 +803,7 @@
                         "version_added": "3",
                         "version_removed": "21",
                         "partial_implementation": true,
-                        "notes": "In Firefox versions prior to 21, when an element's content does not generate a vertical scrollbar, then its <code>scrollHeight</code> property is equal to its <code>clientHeight</code> property. This can mean either the content is too short to require a scrollbar or that the element has a CSS style <code>overflow</code> value of <code>visible</code> (non-scrollable)."
+                        "notes": "Before Firefox 21, when an element's content does not generate a vertical scrollbar, then its <code>scrollHeight</code> property is equal to its <code>clientHeight</code> property. This can mean either the content is too short to require a scrollbar or that the element has a CSS style <code>overflow</code> value of <code>visible</code> (non-scrollable)."
                     }
                 ],
                 "firefox_android": [
@@ -814,7 +814,7 @@
                         "version_added": "4",
                         "version_removed": "21",
                         "partial_implementation": true,
-                        "notes": "In Firefox versions prior to 21, when an element's content does not generate a vertical scrollbar, then its <code>scrollHeight</code> property is equal to its <code>clientHeight</code> property. This can mean either the content is too short to require a scrollbar or that the element has a CSS style <code>overflow</code> value of <code>visible</code> (non-scrollable)."
+                        "notes": "Before Firefox 21, when an element's content does not generate a vertical scrollbar, then its <code>scrollHeight</code> property is equal to its <code>clientHeight</code> property. This can mean either the content is too short to require a scrollbar or that the element has a CSS style <code>overflow</code> value of <code>visible</code> (non-scrollable)."
                     }
                 ],
                 "ie": {
@@ -1809,11 +1809,11 @@
                 },
                 "safari": {
                     "version_added": "5.1",
-                    "notes": "Prior to Safari 14, <code>MediaQueryList</code> is based on <code>EventTarget</code>, so you must use <code>addListener()</code> and <code>removeListener()</code> to observe media query lists."
+                    "notes": "Before Safari 14, <code>MediaQueryList</code> is based on <code>EventTarget</code>, so you must use <code>addListener()</code> and <code>removeListener()</code> to observe media query lists."
                 },
                 "safari_ios": {
                     "version_added": "5",
-                    "notes": "Prior to Safari 14, <code>MediaQueryList</code> is based on <code>EventTarget</code>, so you must use <code>addListener()</code> and <code>removeListener()</code> to observe media query lists."
+                    "notes": "Before Safari 14, <code>MediaQueryList</code> is based on <code>EventTarget</code>, so you must use <code>addListener()</code> and <code>removeListener()</code> to observe media query lists."
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -3661,11 +3661,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Prior to Firefox 68, Firefox emitted a <code>resize</code> event on page load. This is no longer the case."
+                    "notes": "Before Firefox 68, Firefox emitted a <code>resize</code> event on page load. This is no longer the case."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Prior to Firefox 68, Firefox emitted a <code>resize</code> event on page load. This is no longer the case."
+                    "notes": "Before Firefox 68, Firefox emitted a <code>resize</code> event on page load. This is no longer the case."
                 },
                 "ie": {
                     "version_added": "4"
