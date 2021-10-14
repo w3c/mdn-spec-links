@@ -10600,7 +10600,7 @@
             "filename": "api/RTCRtpTransceiverInit.json",
             "name": "RTCRtpTransceiverInit",
             "slug": "API/RTCRtpTransceiverInit",
-            "summary": "The RTCRtpTransceiverInit dictionary is used when calling the WebRTC function RTCPeerConnection.addTransceiver() to provide configuration options for the new transceiver.",
+            "summary": "The RTCPeerConnection method addTransceiver() creates a new RTCRtpTransceiver and adds it to the set of transceivers associated with the RTCPeerConnection. Each transceiver represents a bidirectional stream, with both an RTCRtpSender and an RTCRtpReceiver associated with it.",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -10642,7 +10642,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpTransceiverInit"
+            "title": "RTCPeerConnection.addTransceiver()"
         }
     ],
     "dom-rtcsctptransport-state": [
