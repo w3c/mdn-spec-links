@@ -20792,7 +20792,7 @@
             "filename": "javascript/builtins/Promise.json",
             "name": "any",
             "slug": "JavaScript/Reference/Global_Objects/Promise/any",
-            "summary": "Promise.any() takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise. If no promises in the iterable fulfill (if all of the given promises are rejected), then the returned promise is rejected with an AggregateError, a new subclass of Error that groups together individual errors.",
+            "summary": "Promise.any() takes an iterable of Promise objects. It returns a single promise that resolves as soon as any of the promises in the iterable fulfills, with the value of the fulfilled promise. If no promises in the iterable fulfill (if all of the given promises are rejected), then the returned promise is rejected with an AggregateError, a new subclass of Error that groups together individual errors.",
             "support": {
                 "chrome": {
                     "version_added": "85"

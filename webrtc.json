@@ -5629,10 +5629,10 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
@@ -6342,10 +6342,10 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "22"
                 },
                 "ie": {
                     "version_added": false
@@ -9020,7 +9020,6 @@
         {
             "engines": [
                 "blink",
-                "gecko",
                 "webkit"
             ],
             "filename": "api/RTCRtpReceiver.json",
@@ -9038,10 +9037,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
@@ -10588,61 +10587,6 @@
                 }
             },
             "title": "RTCRtpTransceiverDirection"
-        }
-    ],
-    "dom-rtcrtptransceiverinit": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCRtpTransceiverInit.json",
-            "name": "RTCRtpTransceiverInit",
-            "slug": "API/RTCRtpTransceiverInit",
-            "summary": "The RTCPeerConnection method addTransceiver() creates a new RTCRtpTransceiver and adds it to the set of transceivers associated with the RTCPeerConnection. Each transceiver represents a bidirectional stream, with both an RTCRtpSender and an RTCRtpReceiver associated with it.",
-            "support": {
-                "chrome": {
-                    "version_added": "69"
-                },
-                "chrome_android": {
-                    "version_added": "69"
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "59"
-                },
-                "firefox_android": {
-                    "version_added": "59"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "69"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.addTransceiver()"
         }
     ],
     "dom-rtcsctptransport-state": [
