@@ -40947,12 +40947,10 @@
     "dom-textmetrics-alphabeticbaseline-dev": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/TextMetrics.json",
@@ -40961,7 +40959,8 @@
             "summary": "The read-only alphabeticBaseline property of the TextMetrics interface is a double giving the distance from the horizontal line indicated by the CanvasRenderingContext2D.textBaseline property to the alphabetic baseline of the line box, in CSS pixels.",
             "support": {
                 "chrome": {
-                    "version_added": true,
+                    "version_added": "35",
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
@@ -40970,7 +40969,8 @@
                     ]
                 },
                 "chrome_android": {
-                    "version_added": true,
+                    "version_added": "35",
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
@@ -41016,7 +41016,8 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true,
+                    "version_added": false,
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
@@ -41395,12 +41396,10 @@
     "dom-textmetrics-hangingbaseline-dev": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/TextMetrics.json",
@@ -41409,7 +41408,8 @@
             "summary": "The read-only hangingBaseline property of the TextMetrics interface is a double giving the distance from the horizontal line indicated by the CanvasRenderingContext2D.textBaseline property to the hanging baseline of the line box, in CSS pixels.",
             "support": {
                 "chrome": {
-                    "version_added": true,
+                    "version_added": "35",
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
@@ -41418,7 +41418,8 @@
                     ]
                 },
                 "chrome_android": {
-                    "version_added": true,
+                    "version_added": "35",
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
@@ -41464,7 +41465,8 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true,
+                    "version_added": false,
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
@@ -41479,12 +41481,10 @@
     "dom-textmetrics-ideographicbaseline-dev": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/TextMetrics.json",
@@ -41493,7 +41493,8 @@
             "summary": "The read-only ideographicBaseline property of the TextMetrics interface is a double giving the distance from the horizontal line indicated by the CanvasRenderingContext2D.textBaseline property to the ideographic baseline of the line box, in CSS pixels.",
             "support": {
                 "chrome": {
-                    "version_added": true,
+                    "version_added": "35",
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
@@ -41502,7 +41503,8 @@
                     ]
                 },
                 "chrome_android": {
-                    "version_added": true,
+                    "version_added": "35",
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
@@ -41548,7 +41550,8 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": true,
+                    "version_added": false,
+                    "version_removed": "70",
                     "flags": [
                         {
                             "type": "preference",
