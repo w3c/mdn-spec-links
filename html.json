@@ -32593,11 +32593,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Starting with Firefox 20, the index argument has been made optional and defaults to -1 as per HTML specification."
+                    "notes": "Starting with Firefox 20, the <code>index</code> parameter has been made optional and defaults to -1 as per HTML specification."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Starting with Firefox 20, the index argument has been made optional and defaults to -1 as per HTML specification."
+                    "notes": "Starting with Firefox 20, the <code>index</code> parameter has been made optional and defaults to -1 as per HTML specification."
                 },
                 "ie": {
                     "version_added": "5.5"
@@ -37640,7 +37640,7 @@
             "filename": "api/Navigator.json",
             "name": "languages",
             "slug": "API/Navigator/languages",
-            "summary": "The Navigator.languages read-only property returns an array of DOMStrings representing the user's preferred languages. The language is described using BCP 47 language tags. In the returned array they are ordered by preference with the most preferred language first.",
+            "summary": "The Navigator.languages read-only property returns an array of DOMStrings representing the user's preferred languages. The language is described using language tags according to RFC 5646: Tags for Identifying Languages (also known as BCP 47). In the returned array they are ordered by preference with the most preferred language first.",
             "support": {
                 "chrome": {
                     "version_added": "37",
@@ -37700,7 +37700,7 @@
             "filename": "api/WorkerNavigator.json",
             "name": "languages",
             "slug": "API/WorkerNavigator/languages",
-            "summary": "The WorkerNavigator.languages read-only property returns an array of DOMStrings representing the user's preferred languages. The language is described using BCP 47 language tags. In the returned array they are ordered by preference with the most preferred language first.",
+            "summary": "The WorkerNavigator.languages read-only property returns an array of DOMStrings representing the user's preferred languages. The language is described using language tags according to RFC 5646: Tags for Identifying Languages (also known as BCP 47). In the returned array they are ordered by preference with the most preferred language first.",
             "support": {
                 "chrome": {
                     "version_added": "37",
@@ -37887,7 +37887,7 @@
                     "notes": [
                         "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>.",
                         "From Chrome 77, the URL parameter only accepts <code>http</code> or <code>https</code> URLs.",
-                        "The obsolete <code>title</code> argument is required."
+                        "The obsolete <code>title</code> parameter is required."
                     ]
                 },
                 "chrome_android": {
@@ -37907,7 +37907,7 @@
                 },
                 "opera": {
                     "version_added": "11.6",
-                    "notes": "The obsolete <code>title</code> argument is required."
+                    "notes": "The obsolete <code>title</code> parameter is required."
                 },
                 "opera_android": {
                     "version_added": false
@@ -37929,7 +37929,7 @@
                     "notes": [
                         "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>.",
                         "From Chrome 77, the URL parameter only accepts <code>http</code> or <code>https</code> URLs.",
-                        "The obsolete <code>title</code> argument is required."
+                        "The obsolete <code>title</code> parameter is required."
                     ]
                 }
             },
@@ -53311,10 +53311,15 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "15",
-                    "prefix": "-webkit-"
-                },
+                "opera": [
+                    {
+                        "version_added": "82"
+                    },
+                    {
+                        "version_added": "15",
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "opera_android": {
                     "version_added": "14",
                     "prefix": "-webkit-"
@@ -64239,7 +64244,7 @@
             "filename": "html/global_attributes.json",
             "name": "lang",
             "slug": "HTML/Global_attributes/lang",
-            "summary": "The lang global attribute helps define the language of an element: the language that non-editable elements are written in, or the language that the editable elements should be written in by the user. The attribute contains a single “language tag” in the format defined in Tags for Identifying Languages (BCP47).",
+            "summary": "The lang global attribute helps define the language of an element: the language that non-editable elements are written in, or the language that the editable elements should be written in by the user. The attribute contains a single “language tag” in the format defined in RFC 5646: Tags for Identifying Languages (also known as BCP 47).",
             "support": {
                 "chrome": {
                     "version_added": true

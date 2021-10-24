@@ -9,7 +9,7 @@
             "filename": "api/RTCAnswerOptions.json",
             "name": "RTCAnswerOptions",
             "slug": "API/RTCAnswerOptions",
-            "summary": "The RTCAnswerOptions dictionary is used to provide optional settings when creating an SDP answer using RTCPeerConnection.createOffer() after receiving an offer from a remote peer.",
+            "summary": "The createAnswer() method on the RTCPeerConnection interface creates an SDP answer to an offer received from a remote peer during the offer/answer negotiation of a WebRTC connection. The answer contains information about any media already attached to the session, codecs and options supported by the browser, and any ICE candidates already gathered. The answer is delivered to the returned Promise, and should then be sent to the source of the offer to continue the negotiation process.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -51,7 +51,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCAnswerOptions"
+            "title": "RTCPeerConnection.createAnswer()"
         }
     ],
     "dom-rtccertificate": [
@@ -3700,10 +3700,10 @@
             "summary": "The RTCIceCandidate method toJSON() converts the RTCIceCandidate on which it's called into JSON.",
             "support": {
                 "chrome": {
-                    "version_added": "45"
+                    "version_added": "43"
                 },
                 "chrome_android": {
-                    "version_added": "45"
+                    "version_added": "43"
                 },
                 "edge": {
                     "version_added": "15"
@@ -3718,10 +3718,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "32"
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": "32"
+                    "version_added": "30"
                 },
                 "safari": {
                     "version_added": "11"
@@ -3730,10 +3730,10 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "45"
+                    "version_added": "43"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -5104,7 +5104,7 @@
             "filename": "api/RTCOfferAnswerOptions.json",
             "name": "RTCOfferAnswerOptions",
             "slug": "API/RTCOfferAnswerOptions",
-            "summary": "The WebRTC API's RTCOfferAnswerOptions dictionary is used to specify options that configure and control the process of creating WebRTC offers or answers.",
+            "summary": "The createAnswer() method on the RTCPeerConnection interface creates an SDP answer to an offer received from a remote peer during the offer/answer negotiation of a WebRTC connection. The answer contains information about any media already attached to the session, codecs and options supported by the browser, and any ICE candidates already gathered. The answer is delivered to the returned Promise, and should then be sent to the source of the offer to continue the negotiation process.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -5146,7 +5146,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCOfferAnswerOptions"
+            "title": "RTCPeerConnection.createAnswer()"
         }
     ],
     "dom-rtcofferoptions-icerestart": [
@@ -5159,7 +5159,7 @@
             "filename": "api/RTCOfferOptions.json",
             "name": "iceRestart",
             "slug": "API/RTCOfferOptions/iceRestart",
-            "summary": "The iceRestart property of the RTCOfferOptions dictionary is a Boolean value which, when true, tells the RTCPeerConnection to start ICE renegotiation.",
+            "summary": "The createOffer() method of the RTCPeerConnection interface initiates the creation of an SDP offer for the purpose of starting a new WebRTC connection to a remote peer. The SDP offer includes information about any MediaStreamTrack objects already attached to the WebRTC session, codec, and options supported by the browser, and any candidates already gathered by the ICE agent, for the purpose of being sent over the signaling channel to a potential peer to request a connection or to update the configuration of an existing connection.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -5201,7 +5201,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCOfferOptions.iceRestart"
+            "title": "RTCPeerConnection.createOffer()"
         }
     ],
     "dom-rtcofferoptions": [
@@ -5214,7 +5214,7 @@
             "filename": "api/RTCOfferOptions.json",
             "name": "RTCOfferOptions",
             "slug": "API/RTCOfferOptions",
-            "summary": "The RTCOfferOptions dictionary is used to provide optional settings when creating an RTCPeerConnection offer with the createOffer() method.",
+            "summary": "The createOffer() method of the RTCPeerConnection interface initiates the creation of an SDP offer for the purpose of starting a new WebRTC connection to a remote peer. The SDP offer includes information about any MediaStreamTrack objects already attached to the WebRTC session, codec, and options supported by the browser, and any candidates already gathered by the ICE agent, for the purpose of being sent over the signaling channel to a potential peer to request a connection or to update the configuration of an existing connection.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -5268,7 +5268,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCOfferOptions"
+            "title": "RTCPeerConnection.createOffer()"
         }
     ],
     "dom-peerconnection": [
@@ -10037,7 +10037,7 @@
             "filename": "api/RTCRtpSynchronizationSource.json",
             "name": "RTCRtpSynchronizationSource",
             "slug": "API/RTCRtpSynchronizationSource",
-            "summary": "The RTCRtpSynchronizationSource dictionary of the WebRTC API is used by getSynchronizationSources() to describe a particular synchronization source (SSRC).",
+            "summary": "The getSynchronizationSources() method of the RTCRtpReceiver interface returns an array of RTCRtpContributingSource instances, each corresponding to one SSRC (synchronization source) identifier received by the current RTCRtpReceiver in the last ten seconds.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -10093,7 +10093,7 @@
                     "version_added": false
                 }
             },
-            "title": "RTCRtpSynchronizationSource"
+            "title": "RTCRtpReceiver.getSynchronizationSources()"
         }
     ],
     "dom-rtcrtptransceiver-currentdirection": [
@@ -10761,9 +10761,6 @@
                 "gecko",
                 "webkit"
             ],
-            "prefixed": [
-                "gecko"
-            ],
             "filename": "api/RTCSessionDescription.json",
             "name": "toJSON",
             "slug": "API/RTCSessionDescription/toJSON",
@@ -10779,11 +10776,10 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "prefix": "moz",
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "24"
                 },
                 "ie": {
                     "version_added": false

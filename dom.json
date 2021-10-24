@@ -8646,7 +8646,7 @@
             "filename": "api/Event.json",
             "name": "Event",
             "slug": "API/Event/Event",
-            "summary": "The Event() constructor creates a new Event.",
+            "summary": "The Event() constructor creates a new Event object. An event created in this way is called a synthetic event, as opposed to an event fired by the browser, and can be dispatched by a script.",
             "support": {
                 "chrome": {
                     "version_added": "15"
@@ -8713,7 +8713,7 @@
             "filename": "api/Event.json",
             "name": "bubbles",
             "slug": "API/Event/bubbles",
-            "summary": "The bubbles read-only property of the Event interface indicates whether the event bubbles up through the DOM or not.",
+            "summary": "The bubbles read-only property of the Event interface indicates whether the event bubbles up through the DOM tree or not.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8836,7 +8836,7 @@
             "filename": "api/Event.json",
             "name": "cancelBubble",
             "slug": "API/Event/cancelBubble",
-            "summary": "The cancelBubble property of the Event interface is a historical alias to Event.stopPropagation(). Setting its value to true before returning from an event handler prevents propagation of the event. In later implementations, setting this to false does nothing. See Browser compatibility for details.",
+            "summary": "The cancelBubble property of the Event interface is deprecated. Use Event.stopPropagation() instead. Setting its value to true before returning from an event handler prevents propagation of the event. In later implementations, setting this to false does nothing. See Browser compatibility for details.",
             "support": {
                 "chrome": {
                     "version_added": "1",
@@ -8983,7 +8983,7 @@
             "filename": "api/Event.json",
             "name": "composedPath",
             "slug": "API/Event/composedPath",
-            "summary": "The composedPath() method of the Event interface returns the event’s path which is an array of the objects on which listeners will be invoked. This does not include nodes in shadow trees if the shadow root was created with its ShadowRoot.mode closed.",
+            "summary": "The composedPath() method of the Event interface returns the event's path which is an array of the objects on which listeners will be invoked. This does not include nodes in shadow trees if the shadow root was created with its ShadowRoot.mode closed.",
             "support": {
                 "chrome": [
                     {
@@ -9355,7 +9355,7 @@
             "filename": "api/Event.json",
             "name": "preventDefault",
             "slug": "API/Event/preventDefault",
-            "summary": "The Event interface's preventDefault() method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.",
+            "summary": "The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -9539,7 +9539,7 @@
             "filename": "api/Event.json",
             "name": "target",
             "slug": "API/Event/target",
-            "summary": "The target property of the Event interface is a reference to the object onto which the event was dispatched. It is different from Event.currentTarget when the event handler is called during the bubbling or capturing phase of the event.",
+            "summary": "The read-only target property of the Event interface is a reference to the object onto which the event was dispatched. It is different from Event.currentTarget when the event handler is called during the bubbling or capturing phase of the event.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -15305,7 +15305,7 @@
             "filename": "api/ShadowRoot.json",
             "name": "delegatesFocus",
             "slug": "API/ShadowRoot/delegatesFocus",
-            "summary": "The delegatesFocus read-only property of the ShadowRoot interface returns a boolean that indicates whether delegatesFocus was set when the shadow was attached (see Element.attachShadow()).",
+            "summary": "The delegatesFocus read-only property of the ShadowRoot interface returns true if the shadow root delegates focus, and false otherwise.",
             "support": {
                 "chrome": {
                     "version_added": "53"
@@ -15694,11 +15694,11 @@
             "support": {
                 "chrome": {
                     "version_added": "1",
-                    "notes": "Before Chrome 30, the <code>offset</code> argument was optional."
+                    "notes": "Before Chrome 30, the <code>offset</code> parameter was optional."
                 },
                 "chrome_android": {
                     "version_added": "18",
-                    "notes": "Before Chrome 30, the <code>offset</code> argument was optional."
+                    "notes": "Before Chrome 30, the <code>offset</code> parameter was optional."
                 },
                 "edge": {
                     "version_added": "12"
@@ -15714,31 +15714,31 @@
                 },
                 "opera": {
                     "version_added": true,
-                    "notes": "Before Opera 17, the <code>offset</code> argument was optional."
+                    "notes": "Before Opera 17, the <code>offset</code> parameter was optional."
                 },
                 "opera_android": {
                     "version_added": true,
-                    "notes": "Before Opera 17, the <code>offset</code> argument was optional."
+                    "notes": "Before Opera 17, the <code>offset</code> parameter was optional."
                 },
                 "safari": {
                     "version_added": "1",
-                    "notes": "The <code>offset</code> argument is optional."
+                    "notes": "The <code>offset</code> parameter is optional."
                 },
                 "safari_ios": {
                     "version_added": "1",
-                    "notes": "The <code>offset</code> argument is optional."
+                    "notes": "The <code>offset</code> parameter is optional."
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0",
-                    "notes": "Before Samsung Internet 2.0, the <code>offset</code> argument was optional."
+                    "notes": "Before Samsung Internet 2.0, the <code>offset</code> parameter was optional."
                 },
                 "webview_android": {
                     "version_added": true,
-                    "notes": "Before version 4.4, the <code>offset</code> argument was optional."
+                    "notes": "Before version 4.4, the <code>offset</code> parameter was optional."
                 },
                 "edge_blink": {
                     "version_added": "79",
-                    "notes": "Before Chrome 30, the <code>offset</code> argument was optional."
+                    "notes": "Before Chrome 30, the <code>offset</code> parameter was optional."
                 }
             },
             "title": "Text.splitText()"
