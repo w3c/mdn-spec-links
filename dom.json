@@ -9974,7 +9974,7 @@
             "filename": "api/EventTarget.json",
             "name": "addEventListener",
             "slug": "API/EventTarget/addEventListener",
-            "summary": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+            "summary": "The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.",
             "support": {
                 "chrome": {
                     "version_added": "1",
@@ -10048,7 +10048,7 @@
             "filename": "api/EventTarget.json",
             "name": "dispatchEvent",
             "slug": "API/EventTarget/dispatchEvent",
-            "summary": "Dispatches an Event at the specified EventTarget, (synchronously) invoking the affected EventListeners in the appropriate order. The normal event processing rules (including the capturing and optional bubbling phase) also apply to events dispatched manually with dispatchEvent().",
+            "summary": "The dispatchEvent() method of the EventTarget sends an Event to the object, (synchronously) invoking the affected EventListeners in the appropriate order. The normal event processing rules (including the capturing and optional bubbling phase) also apply to events dispatched manually with dispatchEvent().",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -10117,7 +10117,7 @@
             "filename": "api/EventTarget.json",
             "name": "removeEventListener",
             "slug": "API/EventTarget/removeEventListener",
-            "summary": "The EventTarget.removeEventListener() method removes from the EventTarget an event listener previously registered with EventTarget.addEventListener(). The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see Matching event listeners for removal",
+            "summary": "The removeEventListener() method of the EventTarget interface removes from the target an event listener previously registered with EventTarget.addEventListener(). The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see Matching event listeners for removal.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -10186,7 +10186,7 @@
             "filename": "api/EventTarget.json",
             "name": "EventTarget",
             "slug": "API/EventTarget",
-            "summary": "EventTarget is a DOM interface implemented by objects that can receive events and may have listeners for them.",
+            "summary": "The EventTarget interface is implemented by objects that can receive events and may have listeners for them. In other words, any target of events implements the three methods associated with this interface.",
             "support": {
                 "chrome": {
                     "version_added": "1"
