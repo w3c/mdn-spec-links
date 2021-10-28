@@ -1156,7 +1156,7 @@
             "filename": "api/FileSystemFlags.json",
             "name": "create",
             "slug": "API/FileSystemFlags/create",
-            "summary": "The create property on the FileSystemFlags dictionary is used to indicate whether or not the file should be created if it's missing. FileSystemFlags is only used when calling FileSystemDirectoryEntry.getFile() or FileSystemDirectoryEntry.getDirectory().",
+            "summary": "The FileSystemFlags dictionary defines a set of values which are used when specifying option flags when calling certain methods in the File and Directory Entries API. Methods which accept an options parameter of this type may specify zero or more of these flags as fields in an object, like this:",
             "support": {
                 "chrome": {
                     "version_added": "13",
@@ -1207,7 +1207,7 @@
                     "prefix": "webkit"
                 }
             },
-            "title": "FileSystemFlags.create"
+            "title": "FileSystemFlags"
         }
     ],
     "dom-filesystemflags-exclusive": [
@@ -1222,7 +1222,7 @@
             "filename": "api/FileSystemFlags.json",
             "name": "exclusive",
             "slug": "API/FileSystemFlags/exclusive",
-            "summary": "The exclusive property on the FileSystemFlags dictionary is used in tandem with the create property to determine whether or not it's acceptable to require that the file not already exist when the reference to it is created by calling FileSystemDirectoryEntry.getFile() or FileSystemDirectoryEntry.getDirectory().",
+            "summary": "The FileSystemFlags dictionary defines a set of values which are used when specifying option flags when calling certain methods in the File and Directory Entries API. Methods which accept an options parameter of this type may specify zero or more of these flags as fields in an object, like this:",
             "support": {
                 "chrome": {
                     "version_added": "13",
@@ -1273,7 +1273,7 @@
                     "prefix": "webkit"
                 }
             },
-            "title": "FileSystemFlags.exclusive"
+            "title": "FileSystemFlags"
         }
     ],
     "dictdef-filesystemflags": [

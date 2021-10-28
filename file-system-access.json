@@ -325,7 +325,7 @@
             "filename": "api/FileSystemFileHandle.json",
             "name": "createWritable",
             "slug": "API/FileSystemFileHandle/createWritable",
-            "summary": "The createWritable() method of the FileSystemFileHandle interface creates a FileSystemWritableFileStream that can be used to write to a file.",
+            "summary": "The createWritable() method of the FileSystemFileHandle interface creates a FileSystemWritableFileStream that can be used to write to a file. The method returns a Promise which resolves to this created stream.",
             "support": {
                 "chrome": {
                     "version_added": "86"
@@ -378,7 +378,7 @@
             "filename": "api/FileSystemFileHandle.json",
             "name": "getFile",
             "slug": "API/FileSystemFileHandle/getFile",
-            "summary": "The getFile() method of the FileSystemFileHandle interface returns a file object representing the state on disk of the entry represented by the handle.",
+            "summary": "The getFile() method of the FileSystemFileHandle interface returns a Promise which resolves to a File object representing the state on disk of the entry represented by the handle.",
             "support": {
                 "chrome": {
                     "version_added": "86"
