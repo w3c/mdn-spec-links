@@ -97,7 +97,7 @@
             "filename": "api/PaymentItem.json",
             "name": "PaymentItem",
             "slug": "API/PaymentItem",
-            "summary": "The PaymentItem dictionary is used by the Payment Request API to describe a single line item on a payment request. This might be an item or service being purchased or a tax or other charge.",
+            "summary": "The PaymentRequest interface's show() method instructs the user agent to begin the process of showing and handling the user interface for the payment request to the user.",
             "support": {
                 "chrome": {
                     "version_added": "61",
@@ -186,7 +186,7 @@
                     ]
                 }
             },
-            "title": "PaymentItem"
+            "title": "PaymentRequest.show()"
         }
     ],
     "dom-paymentmethodchangeevent-constructor": [
