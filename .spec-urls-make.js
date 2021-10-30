@@ -105,6 +105,7 @@ const respecRawSpecs = [
   "https://webaudio.github.io/web-midi-api/", // out of date TR
   "https://wicg.github.io/frame-timing/", // NO TR; never had a TR
   "https://wicg.github.io/input-device-capabilities/", // NO TR; never had a TR
+  "https://wicg.github.io/manifest-incubations/",
   "https://wicg.github.io/visual-viewport/", // NO TR; never had a TR
   "https://wicg.github.io/netinfo/", // NO TR; never had a TR
   "https://wicg.github.io/savedata/", // NO TR; never had a TR
