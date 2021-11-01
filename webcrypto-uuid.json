@@ -2,12 +2,13 @@
     "extensions-to-the-crypto-interface": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/Crypto.json",
             "name": "randomUUID",
             "slug": "API/Crypto/randomUUID",
-            "summary": "The randomUUID() method of the Crypto interface lets you generate a v4 UUID using a cryptographically secure random number generator, like is used for getRandomValues().",
+            "summary": "The randomUUID() method of the Crypto interface is used to generate a v4 UUID using a cryptographically secure random number generator.",
             "support": {
                 "chrome": {
                     "version_added": "92"
@@ -22,10 +23,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "95"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "95"
                 },
                 "ie": {
                     "version_added": false

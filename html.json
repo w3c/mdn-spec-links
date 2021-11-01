@@ -37779,7 +37779,8 @@
                 },
                 "webview_android": {
                     "version_added": "37",
-                    "notes": "Faulty in a WebView component, see Issue <a href='http://code.google.com/p/android/issues/detail?id=16760'>bug 16760</a>."
+                    "partial_implementation": true,
+                    "notes": "Can incorrectly return true, see <a href='https://crbug.com/811122'>bug 811122</a>."
                 },
                 "edge_blink": {
                     "version_added": "79",
@@ -37837,7 +37838,8 @@
                 },
                 "webview_android": {
                     "version_added": "37",
-                    "notes": "Faulty in a WebView component, see Issue <a href='http://code.google.com/p/android/issues/detail?id=16760'>bug 16760</a>."
+                    "partial_implementation": true,
+                    "notes": "Can incorrectly return true, see <a href='https://crbug.com/811122'>bug 811122</a>."
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -40598,6 +40600,9 @@
                 "gecko",
                 "webkit"
             ],
+            "partial": [
+                "webkit"
+            ],
             "filename": "api/SubmitEvent.json",
             "name": "submitter",
             "slug": "API/SubmitEvent/submitter",
@@ -40627,11 +40632,20 @@
                 "opera_android": {
                     "version_added": null
                 },
-                "safari": {
-                    "version_added": "15"
-                },
+                "safari": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "15",
+                        "partial_implementation": true,
+                        "notes": "Property is not set for <code>&lt;button&gt;</code> elements. See <a href='https://webkit.org/b/229660'>bug 229660</a>."
+                    }
+                ],
                 "safari_ios": {
-                    "version_added": "15"
+                    "version_added": "15",
+                    "partial_implementation": true,
+                    "notes": "Property is not set for <code>&lt;button&gt;</code> elements. See <a href='https://webkit.org/b/229660'>bug 229660</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": "13.0"
@@ -45055,7 +45069,7 @@
             "filename": "api/WebSocket.json",
             "name": "send",
             "slug": "API/WebSocket/send",
-            "summary": "The WebSocket.send() method enqueues the specified data to be transmitted to the server over the WebSocket connection, increasing the value of bufferedAmount by the number of bytes needed to contain the data. If the data can't be sent (for example, because it needs to be buffered but the buffer is full), the socket is closed automatically.",
+            "summary": "The WebSocket.send() method enqueues the specified data to be transmitted to the server over the WebSocket connection, increasing the value of bufferedAmount by the number of bytes needed to contain the data. If the data can't be sent (for example, because it needs to be buffered but the buffer is full), the socket is closed automatically. The browser will throw an exception if you call send() when the connection is in the CONNECTING state. If you call send() when the connection is in the CLOSING or CLOSED states, the browser will silently discard the data.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -51167,7 +51181,7 @@
                     "notes": "From Internet Explorer 4 through 8, <code>clearInterval</code> is an Object rather than a Function. This behavior was fixed in Internet Explorer 9."
                 },
                 "nodejs": {
-                    "version_added": true,
+                    "version_added": "0.10.0",
                     "partial_implementation": true,
                     "notes": "Takes a <code>Timeout</code> object instead of the <code>intervalID</code>."
                 },
@@ -51231,7 +51245,7 @@
                     "notes": "From Internet Explorer 4 through 8, <code>clearTimeout</code> is an Object rather than a Function. This behavior was fixed in Internet Explorer 9."
                 },
                 "nodejs": {
-                    "version_added": true,
+                    "version_added": "0.10.0",
                     "partial_implementation": true,
                     "notes": "Takes a <code>Timeout</code> object instead of the <code>timeoutID</code>."
                 },
@@ -51588,7 +51602,7 @@
                     "version_added": "4"
                 },
                 "nodejs": {
-                    "version_added": true,
+                    "version_added": "0.10.0",
                     "partial_implementation": true,
                     "notes": [
                         "Returns a <code>Timeout</code> object instead of the <code>intervalID</code>.",
@@ -51654,7 +51668,7 @@
                     "version_added": "4"
                 },
                 "nodejs": {
-                    "version_added": true,
+                    "version_added": "0.10.0",
                     "partial_implementation": true,
                     "notes": [
                         "Returns a <code>Timeout</code> object instead of the <code>timeoutID</code>.",

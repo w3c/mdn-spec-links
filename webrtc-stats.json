@@ -64,10 +64,10 @@
             "summary": "The RTCIceCandidatePairStats property availableOutgoingBitrate returns a value indicative of the available outbound capacity of the network connection represented by the candidate pair. The higher the value, the more bandwidth you can assume is available for outgoing data.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -94,13 +94,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.availableOutgoingBitrate"
@@ -119,10 +119,10 @@
             "summary": "The RTCIceCandidatePairStats property bytesReceived indicates the total number of payload bytes—that is, bytes which aren't overhead such as headers or padding—that hve been received to date on the connection described by the candidate pair.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -149,13 +149,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.bytesReceived"
@@ -174,10 +174,10 @@
             "summary": "The RTCIceCandidatePairStats property bytesSent indicates the total number of payload bytes—that is, bytes which aren't overhead such as headers or padding—that hve been sent so far on the connection described by the candidate pair.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -204,13 +204,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.bytesSent"
@@ -385,7 +385,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "56",
                         "alternative_name": "currentRtt"
                     }
                 ],
@@ -394,7 +394,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "56",
                         "alternative_name": "currentRtt"
                     }
                 ],
@@ -427,7 +427,7 @@
                         "version_added": "10.0"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "6.0",
                         "alternative_name": "currentRtt"
                     }
                 ],
@@ -436,7 +436,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "56",
                         "alternative_name": "currentRtt"
                     }
                 ],
@@ -445,7 +445,7 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "79",
                         "alternative_name": "currentRtt"
                     }
                 ]
@@ -715,6 +715,7 @@
     "dom-rtcicecandidatepairstats-localcandidateid": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -724,10 +725,10 @@
             "summary": "The RTCIceCandidatePairStats property localCandidateId is a string that uniquely identifies the local ICE candidate which was analyzed to generate the RTCIceCandidateStats used to compute the statistics for this pair of candidates.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -754,13 +755,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidateStats.localCandidateId"
@@ -769,6 +770,7 @@
     "dom-rtcicecandidatepairstats-nominated": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -778,10 +780,10 @@
             "summary": "The RTCIceCandidatePairStats property nominated specifies whether or not the candidate pair described by the underlying RTCIceCandidatePair has been nominated to be used as the configuration for the WebRTC connection.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -808,13 +810,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.nominated"
@@ -925,6 +927,7 @@
     "dom-rtcicecandidatepairstats-remotecandidateid": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -934,10 +937,10 @@
             "summary": "The RTCIceCandidatePairStats property remoteCandidateId is a string that uniquely identifies the remote ICE candidate which was analyzed to generate the RTCIceCandidateStats used to compute the statistics for this pair of candidates.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -964,13 +967,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.remoteCandidateId"
@@ -988,10 +991,10 @@
             "summary": "The RTCIceCandidatePairStats dictionary's requestsReceived property indicates the total number of STUN connectivity check requests that have been received so far on the connection described by this pairing of candidates.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -1018,13 +1021,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.requestsReceived"
@@ -1042,10 +1045,10 @@
             "summary": "The RTCIceCandidatePairStats dictionary's requestsSent property indicates the total number of STUN connectivity check requests that have been sent so far on the connection described by this pair of candidates.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -1072,13 +1075,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.requestsSent"
@@ -1096,10 +1099,10 @@
             "summary": "The responsesReceived property in the RTCIceCandidatePairStats dictionary indicates the total number of STUN connectivity check responses that have been received on the connection described by this pair of candidates.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -1126,13 +1129,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.responsesReceived"
@@ -1150,10 +1153,10 @@
             "summary": "The RTCIceCandidatePairStats dictionary's responsesSent property indicates the total number of STUN connectivity check responses that have been sent so far on the connection described by this pair of candidates.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -1180,13 +1183,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.responsesSent"
@@ -1297,6 +1300,7 @@
     "dom-rtcicecandidatepairstats-state": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -1306,10 +1310,10 @@
             "summary": "The state property in an RTCIceCandidatePairStats object indicates the state of the check list of which the candidate pair is a member.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -1336,13 +1340,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.state"
@@ -1364,7 +1368,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "56",
                         "alternative_name": "totalRtt"
                     }
                 ],
@@ -1373,7 +1377,7 @@
                         "version_added": "71"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "56",
                         "alternative_name": "totalRtt"
                     }
                 ],
@@ -1406,7 +1410,7 @@
                         "version_added": "10.0"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "6.0",
                         "alternative_name": "totalRtt"
                     }
                 ],
@@ -1418,7 +1422,7 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": true,
+                        "version_added": "79",
                         "alternative_name": "totalRtt"
                     }
                 ]
@@ -1429,6 +1433,7 @@
     "dom-rtcicecandidatepairstats-transportid": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -1438,10 +1443,10 @@
             "summary": "The transportId property uniquely identifies the RTCIceTransport that was inspected to obtain the transport-related statistics contained in the RTCIceCandidatePairStats object.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge": {
                     "version_added": false
@@ -1480,13 +1485,13 @@
                     "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "56"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "RTCIceCandidatePairStats.transportId"
