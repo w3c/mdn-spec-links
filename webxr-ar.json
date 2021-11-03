@@ -116,10 +116,12 @@
             "summary": "The XRView interface's read-only isFirstPersonObserver property is a boolean indicating if the XRView is a first-person observer view.",
             "support": {
                 "chrome": {
-                    "version_added": "86"
+                    "version_added": "86",
+                    "notes": "Always returns <code>false</code> since no headset with first-person view is supported."
                 },
                 "chrome_android": {
-                    "version_added": "86"
+                    "version_added": "86",
+                    "notes": "Always returns <code>false</code> since no headset with first-person view is supported."
                 },
                 "edge": {
                     "version_added": false
@@ -146,13 +148,15 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "13.0"
+                    "version_added": "13.0",
+                    "notes": "Always returns <code>false</code> since no headset with first-person view is supported."
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "86"
+                    "version_added": "86",
+                    "notes": "Always returns <code>false</code> since no headset with first-person view is supported."
                 }
             },
             "title": "XRView.isFirstPersonObserver"
