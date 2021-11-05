@@ -247,6 +247,10 @@ const checkSpecURL = (
    *   return;
    * }
    */
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/13293
+  if (spec_url.startsWith('https://w3c.github.io/permissions/#geolocation')) {
+    return;
+  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12368
   if (spec_url.startsWith('https://w3c.github.io/webcodecs/#dom-imagedecoder-type')) {
     return;
