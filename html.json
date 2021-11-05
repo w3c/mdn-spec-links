@@ -13397,7 +13397,11 @@
     "dom-elementinternals-form": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ElementInternals.json",
             "name": "form",
@@ -13414,7 +13418,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "95",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -13450,7 +13461,11 @@
     "dom-elementinternals-labels": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ElementInternals.json",
             "name": "labels",
@@ -13467,7 +13482,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "95",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -13556,7 +13578,11 @@
     "dom-elementinternals-setformvalue": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ElementInternals.json",
             "name": "setFormValue",
@@ -13573,7 +13599,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "95",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
