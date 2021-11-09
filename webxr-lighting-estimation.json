@@ -272,7 +272,7 @@
             "filename": "api/XRLightProbe.json",
             "name": "onreflectionchange",
             "slug": "API/XRLightProbe/onreflectionchange",
-            "summary": "The onreflectionchange property of the XRLightProbe interface is and event handler for the reflectionchange event.",
+            "summary": "The WebXR reflectionchange event is passed to an XRLightProbe each time the estimated reflection cube map changes. This happens in response to use movements through different lighting conditions or to direct changes to lighting itself.",
             "support": {
                 "chrome": {
                     "version_added": "90"
@@ -314,7 +314,7 @@
                     "version_added": "90"
                 }
             },
-            "title": "XRLightProbe.onreflectionchange"
+            "title": "XRLightProbe: reflectionchange event"
         }
     ],
     "dom-xrlightprobe-probespace": [

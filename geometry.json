@@ -286,7 +286,7 @@
             "filename": "api/DOMMatrixReadOnly.json",
             "name": "flipX",
             "slug": "API/DOMMatrixReadOnly/flipX",
-            "summary": "The flipX() method of the DOMMatrixReadOnly interface creates a new matrix being the result of the original matrix flipped about the x-axis.",
+            "summary": "Returns a DOMMatrix containing a new matrix being the result of the original matrix flipped about the x-axis, which is equivalent to multiplying the matrix by DOMMatrix(-1, 0, 0, 1, 0, 0). The original matrix is not modified.",
             "support": {
                 "chrome": {
                     "version_added": "61"

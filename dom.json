@@ -1692,7 +1692,7 @@
             "filename": "api/CDATASection.json",
             "name": "CDATASection",
             "slug": "API/CDATASection",
-            "summary": "The CDATASection interface represents a CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section.",
+            "summary": "The CDATASection interface represents a CDATA section that can be used within XML to include extended portions of unescaped text. When inside a CDATA section, the symbols < and & don't need escaping as they normally do.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -1747,7 +1747,7 @@
             "filename": "api/CharacterData.json",
             "name": "after",
             "slug": "API/CharacterData/after",
-            "summary": "The CharacterData.after() method inserts a set of Node or DOMString objects in the children list of the CharacterData's parent, just after the CharacterData. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The after() method of the CharacterData interface inserts a set of Node objects or strings in the children list of the object's parent, just after the object itself.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -1908,7 +1908,7 @@
             "filename": "api/CharacterData.json",
             "name": "appendData",
             "slug": "API/CharacterData/appendData",
-            "summary": "The appendData() method of the CharacterData interface adds the provided data to the end of the Node's current data.",
+            "summary": "The appendData() method of the CharacterData interface adds the provided data to the end of the node's current data.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -1963,7 +1963,7 @@
             "filename": "api/CharacterData.json",
             "name": "before",
             "slug": "API/CharacterData/before",
-            "summary": "The CharacterData.before() method inserts a set of Node or DOMString objects in the children list of the CharacterData's parent, just before the CharacterData. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The before() method of the CharacterData interface inserts a set of Node objects and strings in the children list of the CharacterData's parent, just before the CharacterData node.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -2124,7 +2124,7 @@
             "filename": "api/CharacterData.json",
             "name": "data",
             "slug": "API/CharacterData/data",
-            "summary": "The data property of the CharacterData interface returns or sets the value of the current CharacterData Node's data.",
+            "summary": "The data property of the CharacterData interface represent the value of the current object's data.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -2179,7 +2179,7 @@
             "filename": "api/CharacterData.json",
             "name": "deleteData",
             "slug": "API/CharacterData/deleteData",
-            "summary": "The deleteData() method of the CharacterData interface removes all data from this CharacterData Node, leaving it empty.",
+            "summary": "The deleteData() method of the CharacterData interface removes all or part of the data from this CharacterData node.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -2234,7 +2234,7 @@
             "filename": "api/CharacterData.json",
             "name": "insertData",
             "slug": "API/CharacterData/insertData",
-            "summary": "The insertData() method of the CharacterData interface inserts the provided data into this CharacterData Node's current data, at the provided offset from the start of the existing data. The provided data is spliced into the existing data.",
+            "summary": "The insertData() method of the CharacterData interface inserts the provided data into this CharacterData node's current data, at the provided offset from the start of the existing data. The provided data is spliced into the existing data.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -2289,7 +2289,7 @@
             "filename": "api/CharacterData.json",
             "name": "length",
             "slug": "API/CharacterData/length",
-            "summary": "The CharacterData.length property returns the number of characters in the contained data, as a positive integer.",
+            "summary": "The read-only CharacterData.length property returns the number of characters in the contained data, as a positive integer.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -2344,7 +2344,7 @@
             "filename": "api/CharacterData.json",
             "name": "nextElementSibling",
             "slug": "API/CharacterData/nextElementSibling",
-            "summary": "The Element.nextElementSibling read-only property returns the element immediately following the specified one in its parent's children list, or null if the specified element is the last one in the list.",
+            "summary": "The read-only nextElementSibling property of the CharacterData interface returns the first Element node following the specified one in its parent's children list, or null if the specified element is the last one in the list.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -2386,7 +2386,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.nextElementSibling"
+            "title": "CharacterData.nextElementSibling"
         },
         {
             "engines": [
@@ -2452,7 +2452,7 @@
             "filename": "api/CharacterData.json",
             "name": "previousElementSibling",
             "slug": "API/CharacterData/previousElementSibling",
-            "summary": "The Element.previousElementSibling read-only property returns the Element immediately prior to the specified one in its parent's children list, or null if the specified element is the first one in the list.",
+            "summary": "The read-only previousElementSibling of the CharacterData interface returns the first Element before the current node in its parent's children list, or null if there is none.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -2494,7 +2494,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.previousElementSibling"
+            "title": "CharacterData.previousElementSibling"
         },
         {
             "engines": [
@@ -2560,7 +2560,7 @@
             "filename": "api/CharacterData.json",
             "name": "remove",
             "slug": "API/CharacterData/remove",
-            "summary": "The CharacterData.remove() method removes text.",
+            "summary": "The remove() method of the CharacterData removes the text contained in the node.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -2721,7 +2721,7 @@
             "filename": "api/CharacterData.json",
             "name": "replaceData",
             "slug": "API/CharacterData/replaceData",
-            "summary": "The replaceData() of the CharacterData interface is similar to insertData(), but replaceData() allows overwriting of a certain number of bytes.",
+            "summary": "The replaceData() of the CharacterData interface replace a part of the data inside the node with the string given in paramater.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -2776,7 +2776,7 @@
             "filename": "api/CharacterData.json",
             "name": "replaceWith",
             "slug": "API/CharacterData/replaceWith",
-            "summary": "The CharacterData.replaceWith() method replaces characters in the children list of its parent with a set of Node or DOMString objects. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The replaceWith() method of the CharacterData interface replaces this node in the children list of its parent with a set of Node objects or string.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -2992,7 +2992,7 @@
             "filename": "api/CharacterData.json",
             "name": "CharacterData",
             "slug": "API/CharacterData",
-            "summary": "The CharacterData abstract interface represents a Node object that contains characters. This is an abstract interface, meaning there aren't any objects of type CharacterData: it is implemented by other interfaces like Text, Comment, or ProcessingInstruction, which aren't abstract.",
+            "summary": "The CharacterData abstract interface represents a Node object that contains characters. This is an abstract interface, meaning there aren't any objects of type CharacterData: it is implemented by other interfaces like Text, Comment, CDATASection, or ProcessingInstruction, which aren't abstract.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -3047,7 +3047,7 @@
             "filename": "api/Comment.json",
             "name": "Comment",
             "slug": "API/Comment/Comment",
-            "summary": "The Comment() constructor returns a newly created Comment object with the optional DOMString given in parameter as its textual content.",
+            "summary": "The Comment() constructor returns a newly created Comment object with the optional string given in parameter as its textual content.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -6347,7 +6347,7 @@
             "filename": "api/Text.json",
             "name": "assignedSlot",
             "slug": "API/Text/assignedSlot",
-            "summary": "The assignedSlot property of the Text interface returns the HTMLSlotElement object associated with the element.",
+            "summary": "The read-only assignedSlot property of the Text interface returns the HTMLSlotElement object associated with the element.",
             "support": {
                 "chrome": {
                     "version_added": "53"
@@ -8569,7 +8569,7 @@
                     "version_added": "12"
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "12"
                 },
                 "samsunginternet_android": {
                     "version_added": "10.0"
@@ -11030,7 +11030,7 @@
             "filename": "api/Node.json",
             "name": "appendChild",
             "slug": "API/Node/appendChild",
-            "summary": "The Node.appendChild() method adds a node to the end of the list of children of a specified parent node. If the given child is a reference to an existing node in the document, appendChild() moves it from its current position to the new position (there is no requirement to remove the node from its parent node before appending it to some other node).",
+            "summary": "The appendChild() method of the Node interface adds a node to the end of the list of children of a specified parent node. If the given child is a reference to an existing node in the document, appendChild() moves it from its current position to the new position (there is no requirement to remove the node from its parent node before appending it to some other node).",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11085,7 +11085,7 @@
             "filename": "api/Node.json",
             "name": "baseURI",
             "slug": "API/Node/baseURI",
-            "summary": "The baseURI read-only property returns the absolute base URL of a Node.",
+            "summary": "The read-only baseURI property of the Node interface returns the absolute base URL of the document containing the node.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11140,7 +11140,7 @@
             "filename": "api/Node.json",
             "name": "childNodes",
             "slug": "API/Node/childNodes",
-            "summary": "The Node.childNodes read-only property returns a live NodeList of child nodes of the given element where the first child node is assigned index 0. Child nodes include elements, text and comments.",
+            "summary": "The read-only childNodes property of the Node interface returns a live NodeList of child nodes of the given element where the first child node is assigned index 0. Child nodes include elements, text and comments.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11195,7 +11195,7 @@
             "filename": "api/Node.json",
             "name": "cloneNode",
             "slug": "API/Node/cloneNode",
-            "summary": "The Node.cloneNode() method returns a duplicate of the node on which this method was called.",
+            "summary": "The cloneNode() method of the Node interface returns a duplicate of the node on which this method was called. Its parameter controls if the subtree contained in a node is also cloned or not.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11250,7 +11250,7 @@
             "filename": "api/Node.json",
             "name": "compareDocumentPosition",
             "slug": "API/Node/compareDocumentPosition",
-            "summary": "The Node.compareDocumentPosition() method reports the position of its argument node relative to the node on which it is called.",
+            "summary": "The compareDocumentPosition() method of the Node interface reports the position of its argument node relative to the node on which it is called.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11306,7 +11306,7 @@
             "filename": "api/Node.json",
             "name": "contains",
             "slug": "API/Node/contains",
-            "summary": "The Node.contains() method returns a boolean value indicating whether a node is a descendant of a given node, i.e. the node itself, one of its direct children (childNodes), one of the children's direct children, and so on.",
+            "summary": "The contains() method of the Node interface returns a boolean value indicating whether a node is a descendant of a given node, that is the node itself, one of its direct children (childNodes), one of the children's direct children, and so on.",
             "support": {
                 "chrome": {
                     "version_added": "16"
@@ -11363,7 +11363,7 @@
             "filename": "api/Node.json",
             "name": "firstChild",
             "slug": "API/Node/firstChild",
-            "summary": "The Node.firstChild read-only property returns the node's first child in the tree, or null if the node has no children.",
+            "summary": "The read-only firstChild property of the Node interface returns the node's first child in the tree, or null if the node has no children.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11473,7 +11473,7 @@
             "filename": "api/Node.json",
             "name": "hasChildNodes",
             "slug": "API/Node/hasChildNodes",
-            "summary": "The Node.hasChildNodes() method returns a boolean value indicating whether the given Node has child nodes or not.",
+            "summary": "The hasChildNodes() method of the Node interface returns a boolean value indicating whether the given Node has child nodes or not.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11528,7 +11528,7 @@
             "filename": "api/Node.json",
             "name": "insertBefore",
             "slug": "API/Node/insertBefore",
-            "summary": "The Node.insertBefore() method inserts a node before a reference node as a child of a specified parent node.",
+            "summary": "The insertBefore() method of the Node interface inserts a node before a reference node as a child of a specified parent node.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11583,7 +11583,7 @@
             "filename": "api/Node.json",
             "name": "isConnected",
             "slug": "API/Node/isConnected",
-            "summary": "The isConnected read-only property of the Node interface returns a boolean indicating whether the node is connected (directly or indirectly) to the context object, for example the Document object in the case of the normal DOM, or the ShadowRoot in the case of a shadow DOM.",
+            "summary": "The read-only isConnected property of the Node interface returns a boolean indicating whether the node is connected (directly or indirectly) to the context object, for example the Document object in the case of the normal DOM, or the ShadowRoot in the case of a shadow DOM.",
             "support": {
                 "chrome": {
                     "version_added": "51"
@@ -11638,7 +11638,7 @@
             "filename": "api/Node.json",
             "name": "isDefaultNamespace",
             "slug": "API/Node/isDefaultNamespace",
-            "summary": "The Node.isDefaultNamespace() method accepts a namespace URI as an argument and returns a boolean value that is true if the namespace is the default namespace on the given node and false if not.",
+            "summary": "The isDefaultNamespace() method of the Node interface accepts a namespace URI as an argument. It returns a boolean value that is true if the namespace is the default namespace on the given node and false if not.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11693,7 +11693,7 @@
             "filename": "api/Node.json",
             "name": "isEqualNode",
             "slug": "API/Node/isEqualNode",
-            "summary": "The Node.isEqualNode() method tests whether two nodes are equal. Two nodes are equal when they have the same type, defining characteristics (for elements, this would be their ID, number of children, and so forth), its attributes match, and so on. The specific set of data points that must match varies depending on the types of the nodes.",
+            "summary": "The isEqualNode() method of the Node interface tests whether two nodes are equal. Two nodes are equal when they have the same type, defining characteristics (for elements, this would be their ID, number of children, and so forth), its attributes match, and so on. The specific set of data points that must match varies depending on the types of the nodes.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11748,7 +11748,7 @@
             "filename": "api/Node.json",
             "name": "isSameNode",
             "slug": "API/Node/isSameNode",
-            "summary": "The isSameNode() method for Node objects is a legacy alias the for the === strict equality operator. That is, it tests whether two nodes are the same (in other words, whether they reference the same object).",
+            "summary": "The isSameNode() method of the Node interface is a legacy alias the for the === strict equality operator. That is, it tests whether two nodes are the same (in other words, whether they reference the same object).",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11815,7 +11815,7 @@
             "filename": "api/Node.json",
             "name": "lastChild",
             "slug": "API/Node/lastChild",
-            "summary": "The Node.lastChild read-only property returns the last child of the node. If its parent is an element, then the child is generally an element node, a text node, or a comment node. It returns null if there are no child elements.",
+            "summary": "The read-only lastChild property of the Node interface returns the last child of the node. If its parent is an element, then the child is generally an element node, a text node, or a comment node. It returns null if there are no child elements.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11870,7 +11870,7 @@
             "filename": "api/Node.json",
             "name": "lookupNamespaceURI",
             "slug": "API/Node/lookupNamespaceURI",
-            "summary": "The Node.lookupNamespaceURI() method accepts a prefix and returns the namespace URI associated with it on the given node if found (and null if not).",
+            "summary": "The lookupNamespaceURI() method of the Node interface takes a prefix as parameter and returns the namespace URI associated with it on the given node if found (and null if not).",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11925,7 +11925,7 @@
             "filename": "api/Node.json",
             "name": "lookupPrefix",
             "slug": "API/Node/lookupPrefix",
-            "summary": "The Node.lookupPrefix() method returns a DOMString containing the prefix for a given namespace URI, if present, and null if not. When multiple prefixes are possible, the result is implementation-dependent.",
+            "summary": "The lookupPrefix() method of the Node interface returns a String containing the prefix for a given namespace URI, if present, and null if not. When multiple prefixes are possible, the first prefix is returned.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11980,7 +11980,7 @@
             "filename": "api/Node.json",
             "name": "nextSibling",
             "slug": "API/Node/nextSibling",
-            "summary": "The Node.nextSibling read-only property returns the node immediately following the specified one in their parent's childNodes, or returns null if the specified node is the last child in the parent element.",
+            "summary": "The read-only nextSibling property of the Node interface returns the node immediately following the specified one in their parent's childNodes, or returns null if the specified node is the last child in the parent element.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12035,7 +12035,7 @@
             "filename": "api/Node.json",
             "name": "nodeName",
             "slug": "API/Node/nodeName",
-            "summary": "The nodeName read-only property returns the name of the current Node as a string.",
+            "summary": "The read-only nodeName property of Node returns the name of the current node as a string.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12090,7 +12090,7 @@
             "filename": "api/Node.json",
             "name": "nodeType",
             "slug": "API/Node/nodeType",
-            "summary": "The read-only Node.nodeType property is an integer that identifies what the node is. It distinguishes different kind of nodes from each other, such as elements, text and comments.",
+            "summary": "The read-only nodeType property of a Node element is an integer that identifies what the node is. It distinguishes different kind of nodes from each other, such as elements, text and comments.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12200,7 +12200,7 @@
             "filename": "api/Node.json",
             "name": "normalize",
             "slug": "API/Node/normalize",
-            "summary": "The Node.normalize() method puts the specified node and all of its sub-tree into a \"normalized\" form. In a normalized sub-tree, no text nodes in the sub-tree are empty and there are no adjacent text nodes.",
+            "summary": "The normalize() method of the Node puts the specified node and all of its sub-tree into a normalized form. In a normalized sub-tree, no text nodes in the sub-tree are empty and there are no adjacent text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12255,7 +12255,7 @@
             "filename": "api/Node.json",
             "name": "ownerDocument",
             "slug": "API/Node/ownerDocument",
-            "summary": "The ownerDocument read-only property of the Node interface returns the top-level document object of the node.",
+            "summary": "The read-only ownerDocument property of the Node interface returns the top-level document object of the node.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12324,7 +12324,7 @@
             "filename": "api/Node.json",
             "name": "parentElement",
             "slug": "API/Node/parentElement",
-            "summary": "The Node.parentElement read-only property returns the DOM node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.",
+            "summary": "The read-only parentElement property of Node interface returns the DOM node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12382,7 +12382,7 @@
             "filename": "api/Node.json",
             "name": "parentNode",
             "slug": "API/Node/parentNode",
-            "summary": "The Node.parentNode read-only property returns the parent of the specified node in the DOM tree.",
+            "summary": "The read-only parentNode property of the Node interface returns the parent of the specified node in the DOM tree.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12437,7 +12437,7 @@
             "filename": "api/Node.json",
             "name": "previousSibling",
             "slug": "API/Node/previousSibling",
-            "summary": "The Node.previousSibling read-only property returns the node immediately preceding the specified one in its parent's childNodes list, or null if the specified node is the first in that list.",
+            "summary": "The read-only previousSibling property of the Node interface returns the node immediately preceding the specified one in its parent's childNodes list, or null if the specified node is the first in that list.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12492,7 +12492,7 @@
             "filename": "api/Node.json",
             "name": "removeChild",
             "slug": "API/Node/removeChild",
-            "summary": "The Node.removeChild() method removes a child node from the DOM and returns the removed node.",
+            "summary": "The removeChild() method of the Node interface removes a child node from the DOM and returns the removed node.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12547,7 +12547,7 @@
             "filename": "api/Node.json",
             "name": "replaceChild",
             "slug": "API/Node/replaceChild",
-            "summary": "The Node.replaceChild() method replaces a child node within the given (parent) node.",
+            "summary": "The replaceChild() method of the Node element replaces a child node within the given (parent) node.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -13281,7 +13281,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -13296,10 +13296,10 @@
                     "version_added": "5"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
                     "version_added": "1"
@@ -13308,10 +13308,10 @@
                     "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -13336,7 +13336,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": true
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -13351,10 +13351,10 @@
                     "version_added": "5"
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
                     "version_added": "1"
@@ -13363,10 +13363,10 @@
                     "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": true
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -13428,6 +13428,61 @@
                 }
             },
             "title": "NodeList"
+        }
+    ],
+    "dom-processinginstruction-target": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ProcessingInstruction.json",
+            "name": "target",
+            "slug": "API/ProcessingInstruction/target",
+            "summary": "The read-only target property of the ProcessingInstruction interface represent the application to which the ProcessingInstruction is targeted.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ProcessingInstruction.target"
         }
     ],
     "interface-processinginstruction": [
@@ -15160,7 +15215,7 @@
             "filename": "api/Text.json",
             "name": "Text",
             "slug": "API/Text/Text",
-            "summary": "The Text() constructor returns a newly created Text object with the optional DOMString given in parameter as its textual content.",
+            "summary": "The Text() constructor returns a new Text object with the optional string given in parameter as its textual content.",
             "support": {
                 "chrome": {
                     "version_added": "28"
@@ -15196,7 +15251,7 @@
                     "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -15215,7 +15270,7 @@
             "filename": "api/Text.json",
             "name": "splitText",
             "slug": "API/Text/splitText",
-            "summary": "The Text.splitText() method breaks the Text node into two nodes at the specified offset, keeping both nodes in the tree as siblings.",
+            "summary": "The splitText() method of the Text interface breaks the Text node into two nodes at the specified offset, keeping both nodes in the tree as siblings.",
             "support": {
                 "chrome": {
                     "version_added": "1",
@@ -15258,7 +15313,7 @@
                     "notes": "Before Samsung Internet 2.0, the <code>offset</code> parameter was optional."
                 },
                 "webview_android": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "Before version 4.4, the <code>offset</code> parameter was optional."
                 },
                 "edge_blink": {
@@ -15279,7 +15334,7 @@
             "filename": "api/Text.json",
             "name": "wholeText",
             "slug": "API/Text/wholeText",
-            "summary": "The Text.wholeText read-only property returns the full text of all Text nodes logically adjacent to the node. The text is concatenated in document order. This allows specifying any text node and obtaining all adjacent text as a single string.",
+            "summary": "The read-only wholeText property of the Text interface returns the full text of all Text nodes logically adjacent to the node. The text is concatenated in document order. This allows specifying any text node and obtaining all adjacent text as a single string.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -15315,7 +15370,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -15370,7 +15425,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
