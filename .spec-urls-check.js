@@ -255,6 +255,10 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://w3c.github.io/webcodecs/#dom-imagedecoder-type')) {
     return;
   }
+  // FIXME temporary
+  if (spec_url.startsWith('https://drafts.csswg.org/web-animations/')) {
+    return;
+  }
   if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
