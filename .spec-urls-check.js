@@ -141,6 +141,9 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/FontFaceSet/keys",
     "https://developer.mozilla.org/docs/Web/API/FontFaceSet/size",
     "https://developer.mozilla.org/docs/Web/API/FontFaceSet/values",
+    // FIXME: for these we really do need spec URLs
+    "https://developer.mozilla.org/docs/Web/API/TextDecoder/fatal",
+    "https://developer.mozilla.org/docs/Web/API/TextDecoder/ignoreBOM",
     // FIXME: for all these we really do need spec URLs
     "https://developer.mozilla.org/docs/Web/API/TextTrack/activeCues",
     "https://developer.mozilla.org/docs/Web/API/TextTrack/addCue",
@@ -256,7 +259,31 @@ const checkSpecURL = (
     return;
   }
   // FIXME temporary
+  if (spec_url.startsWith('https://w3c.github.io/manifest/#the-display-mode-media-feature')) {
+    return;
+  }
+  // FIXME temporary
   if (spec_url.startsWith('https://drafts.csswg.org/web-animations/')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://drafts.csswg.org/css-conditional/#at-media')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://drafts.csswg.org/css-conditional/#at-supports')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://drafts.csswg.org/css-values/#attr-notation')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/origin.html#the-coep-headers')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://w3c.github.io/permissions/')) {
     return;
   }
   if (
