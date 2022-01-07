@@ -225,11 +225,9 @@
     "api-domfilesystem": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
-            ],
-            "altname": [
-                "blink"
             ],
             "filename": "api/FileSystem.json",
             "name": "FileSystem",
@@ -237,12 +235,10 @@
             "summary": "The File and Directory Entries API interface FileSystem is used to represent a file system. These objects can be obtained from the filesystem property on any file system entry. Some browsers offer additional APIs to create and manage file systems, such as Chrome's requestFileSystem() method.",
             "support": {
                 "chrome": {
-                    "version_added": "7",
-                    "alternative_name": "DOMFileSystem"
+                    "version_added": "7"
                 },
                 "chrome_android": {
-                    "version_added": "18",
-                    "alternative_name": "DOMFileSystem"
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "18"
@@ -257,12 +253,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "15",
-                    "prefix": "webkit"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "14",
-                    "prefix": "webkit"
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -271,16 +265,13 @@
                     "version_added": "11.3"
                 },
                 "samsunginternet_android": {
-                    "prefix": "webkit",
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37",
-                    "alternative_name": "DOMFileSystem"
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "alternative_name": "DOMFileSystem"
+                    "version_added": "79"
                 }
             },
             "title": "FileSystem"
@@ -458,11 +449,9 @@
     "api-directoryentry": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
-            ],
-            "altname": [
-                "blink"
             ],
             "filename": "api/FileSystemDirectoryEntry.json",
             "name": "FileSystemDirectoryEntry",
@@ -470,12 +459,10 @@
             "summary": "The FileSystemDirectoryEntry interface of the File and Directory Entries API represents a directory in a file system. It provides methods which make it possible to access and manipulate the files in a directory, as well as to access the entries within the directory.",
             "support": {
                 "chrome": {
-                    "version_added": "8",
-                    "alternative_name": "DirectoryEntry"
+                    "version_added": "8"
                 },
                 "chrome_android": {
-                    "version_added": "18",
-                    "alternative_name": "DirectoryEntry"
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": false
@@ -490,8 +477,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true,
-                    "prefix": "webkit"
+                    "version_added": "15"
                 },
                 "opera_android": {
                     "version_added": false
@@ -503,16 +489,13 @@
                     "version_added": "11.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0",
-                    "alternative_name": "DirectoryEntry"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37",
-                    "alternative_name": "DirectoryEntry"
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "alternative_name": "DirectoryEntry"
+                    "version_added": "79"
                 }
             },
             "title": "FileSystemDirectoryEntry"
@@ -549,7 +532,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "15"
                 },
                 "opera_android": {
                     "version_added": false
@@ -576,11 +559,9 @@
     "api-directoryreader": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
-            ],
-            "altname": [
-                "blink"
             ],
             "filename": "api/FileSystemDirectoryReader.json",
             "name": "FileSystemDirectoryReader",
@@ -588,12 +569,10 @@
             "summary": "The FileSystemDirectoryReader interface of the File and Directory Entries API lets you access the FileSystemFileEntry-based objects (generally FileSystemFileEntry or FileSystemDirectoryEntry) representing each entry in a directory.",
             "support": {
                 "chrome": {
-                    "version_added": "8",
-                    "alternative_name": "DirectoryReader"
+                    "version_added": "8"
                 },
                 "chrome_android": {
-                    "version_added": "18",
-                    "alternative_name": "DirectoryReader"
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "18"
@@ -608,8 +587,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true,
-                    "prefix": "webkit"
+                    "version_added": "15"
                 },
                 "opera_android": {
                     "version_added": false
@@ -621,16 +599,13 @@
                     "version_added": "11.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0",
-                    "alternative_name": "DirectoryReader"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37",
-                    "alternative_name": "DirectoryReader"
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "alternative_name": "DirectoryReader"
+                    "version_added": "79"
                 }
             },
             "title": "FileSystemDirectoryReader"
@@ -968,11 +943,9 @@
     "api-entry": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
-            ],
-            "altname": [
-                "blink"
             ],
             "filename": "api/FileSystemEntry.json",
             "name": "FileSystemEntry",
@@ -980,12 +953,10 @@
             "summary": "The FileSystemEntry interface of the File and Directory Entries API represents a single entry in a file system. The entry can be a file or a directory (directories are represented by the FileSystemDirectoryEntry interface). It includes methods for working with files—including copying, moving, removing, and reading files—as well as information about a file it points to—including the file name and its path from the root to the entry.",
             "support": {
                 "chrome": {
-                    "version_added": "8",
-                    "alternative_name": "Entry"
+                    "version_added": "8"
                 },
                 "chrome_android": {
-                    "version_added": "18",
-                    "alternative_name": "Entry"
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": false
@@ -1012,16 +983,13 @@
                     "version_added": "11.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0",
-                    "alternative_name": "Entry"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37",
-                    "alternative_name": "Entry"
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "alternative_name": "Entry"
+                    "version_added": "79"
                 }
             },
             "title": "FileSystemEntry"
@@ -1085,11 +1053,9 @@
     "api-fileentry": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
-            ],
-            "altname": [
-                "blink"
             ],
             "filename": "api/FileSystemFileEntry.json",
             "name": "FileSystemFileEntry",
@@ -1097,12 +1063,10 @@
             "summary": "The FileSystemFileEntry interface of the File System API represents a file in a file system. It offers properties describing the file's attributes, as well as the file() method, which creates a File object that can be used to read the file.",
             "support": {
                 "chrome": {
-                    "version_added": "8",
-                    "alternative_name": "FileEntry"
+                    "version_added": "8"
                 },
                 "chrome_android": {
-                    "version_added": "18",
-                    "alternative_name": "FileEntry"
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": false
@@ -1129,212 +1093,16 @@
                     "version_added": "11.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0",
-                    "alternative_name": "FileEntry"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37",
-                    "alternative_name": "FileEntry"
+                    "version_added": "37"
                 },
                 "edge_blink": {
-                    "version_added": "79",
-                    "alternative_name": "FileEntry"
+                    "version_added": "79"
                 }
             },
             "title": "FileSystemFileEntry"
-        }
-    ],
-    "dom-filesystemflags-create": [
-        {
-            "engines": [],
-            "partial": [
-                "gecko"
-            ],
-            "prefixed": [
-                "blink"
-            ],
-            "filename": "api/FileSystemFlags.json",
-            "name": "create",
-            "slug": "API/FileSystemFlags/create",
-            "summary": "The FileSystemFlags dictionary defines a set of values which are used when specifying option flags when calling certain methods in the File and Directory Entries API. Methods which accept an options parameter of this type may specify zero or more of these flags as fields in an object, like this:",
-            "support": {
-                "chrome": {
-                    "version_added": "13",
-                    "prefix": "webkit"
-                },
-                "chrome_android": {
-                    "version_added": "18",
-                    "prefix": "webkit"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "partial_implementation": true,
-                    "version_added": "50",
-                    "notes": "For security reasons, Firefox does not support creating files. This option has no effect."
-                },
-                "firefox_android": {
-                    "partial_implementation": true,
-                    "version_added": "50",
-                    "notes": "For security reasons, Firefox does not support creating files. This option has no effect."
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0",
-                    "prefix": "webkit"
-                },
-                "webview_android": {
-                    "version_added": "37",
-                    "prefix": "webkit"
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
-                }
-            },
-            "title": "FileSystemFlags"
-        }
-    ],
-    "dom-filesystemflags-exclusive": [
-        {
-            "engines": [],
-            "partial": [
-                "gecko"
-            ],
-            "prefixed": [
-                "blink"
-            ],
-            "filename": "api/FileSystemFlags.json",
-            "name": "exclusive",
-            "slug": "API/FileSystemFlags/exclusive",
-            "summary": "The FileSystemFlags dictionary defines a set of values which are used when specifying option flags when calling certain methods in the File and Directory Entries API. Methods which accept an options parameter of this type may specify zero or more of these flags as fields in an object, like this:",
-            "support": {
-                "chrome": {
-                    "version_added": "13",
-                    "prefix": "webkit"
-                },
-                "chrome_android": {
-                    "version_added": "18",
-                    "prefix": "webkit"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "partial_implementation": true,
-                    "version_added": "50",
-                    "notes": "For security reasons, Firefox does not support creating files. This option has no effect."
-                },
-                "firefox_android": {
-                    "partial_implementation": true,
-                    "version_added": "50",
-                    "notes": "For security reasons, Firefox does not support creating files. This option has no effect."
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0",
-                    "prefix": "webkit"
-                },
-                "webview_android": {
-                    "version_added": "37",
-                    "prefix": "webkit"
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
-                }
-            },
-            "title": "FileSystemFlags"
-        }
-    ],
-    "dictdef-filesystemflags": [
-        {
-            "engines": [
-                "gecko"
-            ],
-            "prefixed": [
-                "blink"
-            ],
-            "filename": "api/FileSystemFlags.json",
-            "name": "FileSystemFlags",
-            "slug": "API/FileSystemFlags",
-            "summary": "The FileSystemFlags dictionary defines a set of values which are used when specifying option flags when calling certain methods in the File and Directory Entries API. Methods which accept an options parameter of this type may specify zero or more of these flags as fields in an object, like this:",
-            "support": {
-                "chrome": {
-                    "version_added": "13",
-                    "prefix": "webkit"
-                },
-                "chrome_android": {
-                    "version_added": "18",
-                    "prefix": "webkit"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "50"
-                },
-                "firefox_android": {
-                    "version_added": "50"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0",
-                    "prefix": "webkit"
-                },
-                "webview_android": {
-                    "version_added": "37",
-                    "prefix": "webkit"
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "prefix": "webkit"
-                }
-            },
-            "title": "FileSystemFlags"
         }
     ],
     "dom-htmlinputelement-webkitdirectory": [
@@ -1393,7 +1161,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"

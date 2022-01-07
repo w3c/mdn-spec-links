@@ -2,7 +2,8 @@
     "dom-lock-mode": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/Lock.json",
             "name": "mode",
@@ -18,11 +19,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "96",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.weblocks.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "96"
                 },
                 "ie": {
                     "version_added": false
@@ -55,7 +69,8 @@
     "dom-lock-name": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/Lock.json",
             "name": "name",
@@ -71,11 +86,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "96",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.weblocks.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "96"
                 },
                 "ie": {
                     "version_added": false
@@ -108,12 +136,13 @@
     "api-lock": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/Lock.json",
             "name": "Lock",
             "slug": "API/Lock",
-            "summary": "The Lock interface of the Web Locks API provides the name and mode of a previously requested lock, which is received in the callback to LockManager.request().",
+            "summary": "The Lock interface of the Web Locks API provides the name and mode of a lock. This may be a newly requested lock that is received in the callback to LockManager.request(), or a record of an active or queued lock returned by LockManager.query().",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -124,11 +153,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "96",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.weblocks.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "96"
                 },
                 "ie": {
                     "version_added": false
@@ -161,12 +203,13 @@
     "api-lock-manager-query": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/LockManager.json",
             "name": "query",
             "slug": "API/LockManager/query",
-            "summary": "The query() method of the LockManager interface returns a Promise which resolves with an object containing information about held and pending locks.",
+            "summary": "The query() method of the LockManager interface returns a Promise that resolves with an object containing information about held and pending locks.",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -177,11 +220,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "96",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.weblocks.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "96"
                 },
                 "ie": {
                     "version_added": false
@@ -214,7 +270,8 @@
     "api-lock-manager-request": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/LockManager.json",
             "name": "request",
@@ -230,11 +287,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "96",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.weblocks.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "96"
                 },
                 "ie": {
                     "version_added": false
@@ -267,7 +337,8 @@
     "api-lock-manager": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/LockManager.json",
             "name": "LockManager",
@@ -283,11 +354,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "96",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.weblocks.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "96"
                 },
                 "ie": {
                     "version_added": false
@@ -320,7 +404,8 @@
     "dom-navigatorlocks-locks": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/Navigator.json",
             "name": "locks",
@@ -336,11 +421,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "96"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "96",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.weblocks.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "96"
                 },
                 "ie": {
                     "version_added": false

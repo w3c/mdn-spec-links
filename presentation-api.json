@@ -80,10 +80,10 @@
             "summary": "In a controlling user agent, the defaultRequest attribute MUST return the default presentation request if any, otherwise null. In a receiving browsing context, it MUST return null.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -114,10 +114,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -183,10 +183,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "35"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "35"
                 },
                 "safari": {
                     "version_added": false
@@ -218,10 +218,10 @@
             "summary": "The Presentation can be defined as two possible user agents in the context: Controlling user agent and Receiving user agent.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -252,10 +252,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -287,10 +287,10 @@
             "summary": "The onchange attribute is an event handler whose corresponding event handler event type is change.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -321,10 +321,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -356,10 +356,10 @@
             "summary": "The value attribute MUST return the last value from which it was set. The value is updated by the monitor the list of available presentation displays algorithm.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -390,10 +390,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -425,10 +425,10 @@
             "summary": "A PresentationAvailability object is associated with available presentation displays and represents the presentation display availability for a presentation request. If the controlling user agent can monitor the list of available presentation displays in the background (without a pending request to start()), the PresentationAvailability object MUST be implemented in a controlling browsing context.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -459,10 +459,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1046,10 +1046,10 @@
             "summary": "The PresentationConnectionAvailableInit() constructor creates a new PresentationConnectionAvailableEvent.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1080,10 +1080,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1115,10 +1115,10 @@
             "summary": "When an incoming connection is created, a receiving user agent fires a trusted event, named connectionavailable, on a PresentationReceiver. The trusted event is fired at the presentation controller's monitor, using the PresentationConnectionAvailableEvent interface, with the connection attribute set to the PresentationConnection object that was created.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1149,10 +1149,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1184,10 +1184,10 @@
             "summary": "The PresentationConnectionAvailableEvent interface of the Presentation API is fired on a PresentationRequest when a connection associated with the object is created.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1218,10 +1218,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1287,10 +1287,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "37"
                 },
                 "safari": {
                     "version_added": false
@@ -1356,10 +1356,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "38"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "41"
                 },
                 "safari": {
                     "version_added": false
@@ -1425,10 +1425,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "42"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "42"
                 },
                 "safari": {
                     "version_added": false
@@ -1460,10 +1460,10 @@
             "summary": "The PresentationRequest() constructor creates a new PresentationRequest object which creates a new PresentationRequest.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1494,10 +1494,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1529,10 +1529,10 @@
             "summary": "When the getAvailability() method is called, the user agent MUST run the following steps:",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1563,10 +1563,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1598,10 +1598,10 @@
             "summary": "The following are event handlers (and their corresponding event handler event types) which must be supported, as event handler IDL attributes, by objects implementing the PresentationRequest interface:",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1632,10 +1632,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1667,10 +1667,10 @@
             "summary": "When the reconnect(presentationId) method is called on a PresentationRequest presentationRequest, the user agent MUST run the following steps to reconnect to a presentation:",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1701,10 +1701,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1736,10 +1736,10 @@
             "summary": "The start() property of the PresentationRequest interface returns a Promise that resolves with a PresentationConnection after the user agent prompts the user to select a display and grant permission to use that display.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1770,10 +1770,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false
@@ -1805,10 +1805,10 @@
             "summary": "A PresentationRequest object is used to initiate or reconnect to a presentation made by a controlling browsing context. The PresentationRequest object MUST be implemented in a controlling browsing context provided by a controlling user agent.",
             "support": {
                 "chrome": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "chrome_android": {
-                    "version_added": "48"
+                    "version_added": "47"
                 },
                 "edge": {
                     "version_added": false
@@ -1839,10 +1839,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "opera_android": {
-                    "version_added": "35"
+                    "version_added": "34"
                 },
                 "safari": {
                     "version_added": false

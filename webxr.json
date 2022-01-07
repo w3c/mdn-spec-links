@@ -1694,15 +1694,15 @@
             "title": "XRReferenceSpace.getOffsetReferenceSpace()"
         }
     ],
-    "dom-xrreferencespace-onreset": [
+    "eventdef-xrreferencespace-reset": [
         {
             "engines": [
                 "blink"
             ],
             "filename": "api/XRReferenceSpace.json",
-            "name": "onreset",
-            "slug": "API/XRReferenceSpace/onreset",
-            "summary": "The XRReferenceSpace interface's onreset event handler property can be set to a function which is called when the XRReferenceSpace receives a reset event, signaling that the XR device has experienced a discontinuity large enough to require that the position and/or orientation of the origin be significantly altered to compensate.",
+            "name": "reset_event",
+            "slug": "API/XRReferenceSpace/reset_event",
+            "summary": "The reset event is sent to an XRReferenceSpace object when a discontinuity is detected in either the native origin or the effective origin, causing a jump in the position or orientation of objects oriented using the reference space. This is common when the user calibrates or recalibrates an XR device, or if the device automatically changes its origin after losing tracking of the user, then re-gaining it.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -1744,10 +1744,10 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRReferenceSpace.onreset"
+            "title": "XRReferenceSpace: reset event"
         }
     ],
-    "eventdef-xrreferencespace-reset": [
+    "dom-xrreferencespace-onreset": [
         {
             "engines": [
                 "blink"
@@ -2807,6 +2807,59 @@
             "title": "XRSession: end event"
         }
     ],
+    "dom-xrsession-onend": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "end_event",
+            "slug": "API/XRSession/end_event",
+            "summary": "An end event is fired at an XRSession object when the WebXR session has ended, either because the web application has chosen to stop the session, or because the user agent terminated the session.",
+            "support": {
+                "chrome": {
+                    "version_added": "79"
+                },
+                "chrome_android": {
+                    "version_added": "79"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.2"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "XRSession: end event"
+        }
+    ],
     "dom-xrsession-inputsources": [
         {
             "engines": [
@@ -2913,68 +2966,15 @@
             "title": "XRSession: inputsourceschange event"
         }
     ],
-    "dom-xrsession-onend": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSession.json",
-            "name": "onend",
-            "slug": "API/XRSession/onend",
-            "summary": "The onend attribute of the XRSession object is the event handler for the end event, which is dispatched after the XR session ends and all related hardware-specific routines are completed.",
-            "support": {
-                "chrome": {
-                    "version_added": "79"
-                },
-                "chrome_android": {
-                    "version_added": "79"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XRSession.onend"
-        }
-    ],
     "dom-xrsession-oninputsourceschange": [
         {
             "engines": [
                 "blink"
             ],
             "filename": "api/XRSession.json",
-            "name": "oninputsourceschange",
-            "slug": "API/XRSession/oninputsourceschange",
-            "summary": "The oninputsourcechange attribute of the XRSession object is the event handler for the inputsourcechange event, which is dispatched when session's list of active XR input sources has changed. The list itself is accessible via XRSession.inputSources.",
+            "name": "inputsourceschange_event",
+            "slug": "API/XRSession/inputsourceschange_event",
+            "summary": "The inputsourceschange event is sent to an XRSession when the set of available WebXR input devices changes.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -3016,378 +3016,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "XRSession.oninputsourceschange"
-        }
-    ],
-    "dom-xrsession-onselect": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSession.json",
-            "name": "onselect",
-            "slug": "API/XRSession/onselect",
-            "summary": "The onselect property of the XRSession object is the event handler for the select event, which is dispatched when a primary action is completed successfully by the user. This typically represents the pressing of a button or trigger, a hand gesture, or a spoken command.",
-            "support": {
-                "chrome": {
-                    "version_added": "79"
-                },
-                "chrome_android": {
-                    "version_added": "79"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XRSession.onselect"
-        }
-    ],
-    "dom-xrsession-onselectend": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSession.json",
-            "name": "onselectend",
-            "slug": "API/XRSession/onselectend",
-            "summary": "The onselectend attribute of the XRSession object is the event handler for the selectend event, which is dispatched when user finishes making some sort of selection by releasing a trigger, touchpad, or button, finishes speaking a command, or makes a hand gesture. For example, this might include releasing a button or joystick.",
-            "support": {
-                "chrome": {
-                    "version_added": "79"
-                },
-                "chrome_android": {
-                    "version_added": "79"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XRSession.onselectend"
-        }
-    ],
-    "dom-xrsession-onselectstart": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSession.json",
-            "name": "onselectstart",
-            "slug": "API/XRSession/onselectstart",
-            "summary": "The onselectstart attribute of the XRSession object is the event handler for the selectstart event, which is dispatched when user starts making some sort of selection by pressing a trigger, touchpad, or button, speaking a command, or making a hand gesture. For example, this might include pressing a button or moving a joystick.",
-            "support": {
-                "chrome": {
-                    "version_added": "79"
-                },
-                "chrome_android": {
-                    "version_added": "79"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XRSession.onselectstart"
-        }
-    ],
-    "dom-xrsession-onsqueeze": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSession.json",
-            "name": "onsqueeze",
-            "slug": "API/XRSession/onsqueeze",
-            "summary": "The XRSession interface's onsqueeze event handler property can be set to a function which is then invoked to handle the squeeze event that's sent when the user successfully completes a primary squeeze action on a WebXR input device. These actions represent the user squeezing or gripping an object or controller.",
-            "support": {
-                "chrome": {
-                    "version_added": "83"
-                },
-                "chrome_android": {
-                    "version_added": "83"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "13.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "83"
-                }
-            },
-            "title": "XRSession.onsqueeze"
-        }
-    ],
-    "dom-xrsession-onsqueezeend": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSession.json",
-            "name": "onsqueezeend",
-            "slug": "API/XRSession/onsqueezeend",
-            "summary": "The XRSession interface's onsqueezeend event handler property is a function to be invokedn when the squeezeend event sent to an XRSession when a primary squeeze action ends. This is sent immediately after the squeeze event, which announces the successful completion of the squeeze action. The squeezeend event handler is where you handle closing out a squeeze action whether it was successfully completed or not.",
-            "support": {
-                "chrome": {
-                    "version_added": "83"
-                },
-                "chrome_android": {
-                    "version_added": "83"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "13.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "83"
-                }
-            },
-            "title": "XRSession.onsqueezeend"
-        }
-    ],
-    "dom-xrsession-onsqueezestart": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSession.json",
-            "name": "onsqueezestart",
-            "slug": "API/XRSession/onsqueezestart",
-            "summary": "The XRSession interface's onsqueezestart event handler property can be set to a function which is then invoked to handle the squeezestart event that's sent when the user successfully begins a primary squeeze action on a WebXR input device. These actions represent the user squeezing or tightly gripping an object or controller.",
-            "support": {
-                "chrome": {
-                    "version_added": "83"
-                },
-                "chrome_android": {
-                    "version_added": "83"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "13.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "83"
-                }
-            },
-            "title": "XRSession.onsqueezestart"
-        }
-    ],
-    "dom-xrsession-onvisibilitychange": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSession.json",
-            "name": "onvisibilitychange",
-            "slug": "API/XRSession/onvisibilitychange",
-            "summary": "The onvisibilitychange attribute of the XRSession object is the event handler for the visibilitychange event, which is dispatched when the visibility state of the XR session changes. The visibility state of the session is accessible via XRSession.visibilityState.",
-            "support": {
-                "chrome": {
-                    "version_added": "79"
-                },
-                "chrome_android": {
-                    "version_added": "79"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XRSession.onvisibilitychange"
+            "title": "XRSession: inputsourceschange event"
         }
     ],
     "dom-xrsession-renderstate": [
@@ -3557,7 +3186,60 @@
             "filename": "api/XRSession.json",
             "name": "select_event",
             "slug": "API/XRSession/select_event",
-            "summary": "The WebXR event select is sent to an XRSession when one of the session's input sources has completed a primary action. Examples of common kinds of primary action are users pressing triggers or buttons, tapping a touchpad, speaking a command, or performing a recognizable gesture when using a video tracking system or handheld controller with an accelerometer.",
+            "summary": "The WebXR select event is sent to an XRSession when one of the session's input sources has completed a primary action.",
+            "support": {
+                "chrome": {
+                    "version_added": "79"
+                },
+                "chrome_android": {
+                    "version_added": "79"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.2"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "XRSession: select event"
+        }
+    ],
+    "dom-xrsession-onselect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "select_event",
+            "slug": "API/XRSession/select_event",
+            "summary": "The WebXR select event is sent to an XRSession when one of the session's input sources has completed a primary action.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -3655,6 +3337,59 @@
             "title": "XRSession: selectend event"
         }
     ],
+    "dom-xrsession-onselectend": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "selectend_event",
+            "slug": "API/XRSession/selectend_event",
+            "summary": "The WebXR event selectend is sent to an XRSession when one of its input sources ends its primary action or when an input source that's in the process of handling an ongoing primary action is disconnected without successfully completing the action.",
+            "support": {
+                "chrome": {
+                    "version_added": "79"
+                },
+                "chrome_android": {
+                    "version_added": "79"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.2"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "XRSession: selectend event"
+        }
+    ],
     "eventdef-xrsession-selectstart": [
         {
             "engines": [
@@ -3663,7 +3398,60 @@
             "filename": "api/XRSession.json",
             "name": "selectstart_event",
             "slug": "API/XRSession/selectstart_event",
-            "summary": "The WebXR event selectstart is sent to an XRSession when the user begins a primary action on one of its input sources. Primary actions include things like users pressing triggers or buttons, tapping a touchpad, speaking a command, or performing a recognizable gesture when using a video tracking system or handheld controller with an accelerometer.",
+            "summary": "The WebXR selectstart event is sent to an XRSession when the user begins a primary action on one of its input sources.",
+            "support": {
+                "chrome": {
+                    "version_added": "79"
+                },
+                "chrome_android": {
+                    "version_added": "79"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.2"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "XRSession: selectstart event"
+        }
+    ],
+    "dom-xrsession-onselectstart": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "selectstart_event",
+            "slug": "API/XRSession/selectstart_event",
+            "summary": "The WebXR selectstart event is sent to an XRSession when the user begins a primary action on one of its input sources.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -3716,7 +3504,60 @@
             "filename": "api/XRSession.json",
             "name": "squeeze_event",
             "slug": "API/XRSession/squeeze_event",
-            "summary": "The WebXR event squeeze is sent to an XRSession when one of the session's input sources has completed a primary squeeze action. Examples of common kinds of primary action are users pressing triggers or buttons, tapping a touchpad, speaking a command, or performing a recognizable gesture when using a video tracking system or handheld controller with an accelerometer.",
+            "summary": "The WebXR squeeze event is sent to an XRSession when one of the session's input sources has completed a primary squeeze action. Examples of common kinds of primary action are users pressing triggers or buttons, tapping a touchpad, speaking a command, or performing a recognizable gesture when using a video tracking system or handheld controller with an accelerometer.",
+            "support": {
+                "chrome": {
+                    "version_added": "83"
+                },
+                "chrome_android": {
+                    "version_added": "83"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "83"
+                }
+            },
+            "title": "XRSession: squeeze event"
+        }
+    ],
+    "dom-xrsession-onsqueeze": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "squeeze_event",
+            "slug": "API/XRSession/squeeze_event",
+            "summary": "The WebXR squeeze event is sent to an XRSession when one of the session's input sources has completed a primary squeeze action. Examples of common kinds of primary action are users pressing triggers or buttons, tapping a touchpad, speaking a command, or performing a recognizable gesture when using a video tracking system or handheld controller with an accelerometer.",
             "support": {
                 "chrome": {
                     "version_added": "83"
@@ -3814,7 +3655,113 @@
             "title": "XRSession: squeezeend event"
         }
     ],
+    "dom-xrsession-onsqueezeend": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "squeezeend_event",
+            "slug": "API/XRSession/squeezeend_event",
+            "summary": "The WebXR event squeezeend is sent to an XRSession when one of its input sources ends its primary action or when an input source that's in the process of handling an ongoing primary action is disconnected without successfully completing the action.",
+            "support": {
+                "chrome": {
+                    "version_added": "83"
+                },
+                "chrome_android": {
+                    "version_added": "83"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "83"
+                }
+            },
+            "title": "XRSession: squeezeend event"
+        }
+    ],
     "eventdef-xrsession-squeezestart": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "squeezestart_event",
+            "slug": "API/XRSession/squeezestart_event",
+            "summary": "The WebXR event squeezestart is sent to an XRSession when the user begins a primary squeeze action on one of its input sources.",
+            "support": {
+                "chrome": {
+                    "version_added": "83"
+                },
+                "chrome_android": {
+                    "version_added": "83"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "83"
+                }
+            },
+            "title": "XRSession: squeezestart event"
+        }
+    ],
+    "dom-xrsession-onsqueezestart": [
         {
             "engines": [
                 "blink"
@@ -3921,6 +3868,59 @@
         }
     ],
     "eventdef-xrsession-visibilitychange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSession.json",
+            "name": "visibilitychange_event",
+            "slug": "API/XRSession/visibilitychange_event",
+            "summary": "The visibilitychange event is sent to an XRSession to inform it when it becomes visible or hidden, or when it becomes visible but not currently focused. Upon receiving the event, you can check the value of the session's visibilityState property to determine the new visibility state.",
+            "support": {
+                "chrome": {
+                    "version_added": "79"
+                },
+                "chrome_android": {
+                    "version_added": "79"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.2"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "XRSession: visibilitychange event"
+        }
+    ],
+    "dom-xrsession-onvisibilitychange": [
         {
             "engines": [
                 "blink"
@@ -4344,6 +4344,59 @@
             "title": "XRSystem: devicechange event"
         }
     ],
+    "dom-xrsystem-ondevicechange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRSystem.json",
+            "name": "devicechange_event",
+            "slug": "API/XRSystem/devicechange_event",
+            "summary": "A devicechange event is fired on an XRSystem object whenever the availability of immersive XR devices has changed; for example, a VR headset or AR goggles have been connected or disconnected. It's a generic Event with no added properties.",
+            "support": {
+                "chrome": {
+                    "version_added": "79"
+                },
+                "chrome_android": {
+                    "version_added": "79"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.2"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "XRSystem: devicechange event"
+        }
+    ],
     "dom-xrsystem-issessionsupported": [
         {
             "engines": [
@@ -4395,59 +4448,6 @@
                 }
             },
             "title": "XRSystem: isSessionSupported()"
-        }
-    ],
-    "dom-xrsystem-ondevicechange": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRSystem.json",
-            "name": "ondevicechange",
-            "slug": "API/XRSystem/ondevicechange",
-            "summary": "The ondevicechange property of the XRSystem interface is passed a devicechange event whenever availability of an immersive device changes. The event that is fired is a \"simple event\" that implements the Event interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "79"
-                },
-                "chrome_android": {
-                    "version_added": "79"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XRSystem: ondevicechange"
         }
     ],
     "dom-xrsystem-requestsession": [

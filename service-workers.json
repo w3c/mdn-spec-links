@@ -1304,7 +1304,7 @@
                     "version_added": "5.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "51"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1326,11 +1326,11 @@
             "summary": "The matchAll() method of the Clients interface returns a Promise for a list of service worker Client objects. Include the options parameter to return all service worker clients whose origin is the same as the associated service worker's origin. If options are not included, the method returns only the service worker clients controlled by the service worker.",
             "support": {
                 "chrome": {
-                    "version_added": "47",
+                    "version_added": "42",
                     "notes": "<code>Client</code> objects returned in most recent focus order."
                 },
                 "chrome_android": {
-                    "version_added": "47",
+                    "version_added": "42",
                     "notes": "<code>Client</code> objects returned in most recent focus order."
                 },
                 "edge": {
@@ -1359,10 +1359,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "32"
+                    "version_added": "29"
                 },
                 "opera_android": {
-                    "version_added": "32"
+                    "version_added": "29"
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -1375,7 +1375,7 @@
                     "notes": "<code>Client</code> objects returned in most recent focus order."
                 },
                 "webview_android": {
-                    "version_added": "47",
+                    "version_added": "42",
                     "notes": "<code>Client</code> objects returned in most recent focus order."
                 },
                 "edge_blink": {
@@ -1749,11 +1749,11 @@
                     "version_added": "17"
                 },
                 "firefox": {
-                    "version_added": "45",
+                    "version_added": "44",
                     "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
                 },
                 "firefox_android": {
-                    "version_added": "45"
+                    "version_added": "44"
                 },
                 "ie": {
                     "version_added": false
@@ -1805,11 +1805,11 @@
                     "version_added": "17"
                 },
                 "firefox": {
-                    "version_added": "45",
+                    "version_added": "44",
                     "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
                 },
                 "firefox_android": {
-                    "version_added": "45"
+                    "version_added": "44"
                 },
                 "ie": {
                     "version_added": false
@@ -1861,11 +1861,11 @@
                     "version_added": "17"
                 },
                 "firefox": {
-                    "version_added": "45",
+                    "version_added": "44",
                     "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
                 },
                 "firefox_android": {
-                    "version_added": "45"
+                    "version_added": "44"
                 },
                 "ie": {
                     "version_added": false
@@ -1899,6 +1899,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/ExtendableMessageEvent.json",
@@ -1916,10 +1917,10 @@
                     "version_added": "17"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "44"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "44"
                 },
                 "ie": {
                     "version_added": false
@@ -1971,11 +1972,11 @@
                     "version_added": "17"
                 },
                 "firefox": {
-                    "version_added": "45",
+                    "version_added": "44",
                     "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
                 },
                 "firefox_android": {
-                    "version_added": "45"
+                    "version_added": "44"
                 },
                 "ie": {
                     "version_added": false
@@ -2027,11 +2028,11 @@
                     "version_added": "17"
                 },
                 "firefox": {
-                    "version_added": "45",
+                    "version_added": "44",
                     "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
                 },
                 "firefox_android": {
-                    "version_added": "45"
+                    "version_added": "44"
                 },
                 "ie": {
                     "version_added": false
@@ -2083,11 +2084,11 @@
                     "version_added": "17"
                 },
                 "firefox": {
-                    "version_added": "45",
+                    "version_added": "44",
                     "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
                 },
                 "firefox_android": {
-                    "version_added": "45"
+                    "version_added": "44"
                 },
                 "ie": {
                     "version_added": false
@@ -2365,7 +2366,7 @@
                     "version_added": "44"
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "44"
                 },
                 "ie": {
                     "version_added": false
@@ -2428,9 +2429,15 @@
                         "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
                     }
                 ],
-                "firefox_android": {
-                    "version_added": null
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "59",
+                        "notes": "NetworkError thrown if request mode is same-origin and response type is cors (see <a href='https://bugzil.la/1222008'>bug 1222008</a>)."
+                    },
+                    {
+                        "version_added": "44"
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3538,7 +3545,7 @@
                     "version_added": "40"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -3573,62 +3580,6 @@
                 }
             },
             "title": "ServiceWorkerGlobalScope: activate event"
-        }
-    ],
-    "global-caches": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "caches",
-            "slug": "API/ServiceWorkerGlobalScope/caches",
-            "summary": "The caches read-only property of the ServiceWorkerGlobalScope interface returns the CacheStorage object associated with the service worker.",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerGlobalScope.caches"
         }
     ],
     "service-worker-global-scope-clients": [
@@ -3706,7 +3657,7 @@
                     "version_added": "40"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -3762,7 +3713,7 @@
                     "version_added": "40"
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "44",
@@ -4399,7 +4350,7 @@
                     "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -4527,7 +4478,7 @@
                     "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0",
@@ -4585,10 +4536,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "48"
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -4650,7 +4601,7 @@
                     "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -4753,10 +4704,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -4768,7 +4719,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "42"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4809,10 +4760,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -4824,7 +4775,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "42"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4865,10 +4816,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "36"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "36"
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -4880,7 +4831,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "42"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4921,10 +4872,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -4936,7 +4887,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "42"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4977,10 +4928,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "29"
                 },
                 "safari": {
                     "version_added": "11.1"
@@ -4992,7 +4943,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "42"
                 },
                 "edge_blink": {
                     "version_added": "79"

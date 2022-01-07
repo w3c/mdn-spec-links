@@ -751,61 +751,6 @@
                 }
             },
             "title": "font-variation-settings"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "css/properties/font-variation-settings.json",
-            "name": "font-variation-settings",
-            "slug": "CSS/font-variation-settings",
-            "summary": "The font-variation-settings CSS property provides low-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.",
-            "support": {
-                "chrome": {
-                    "version_added": "62"
-                },
-                "chrome_android": {
-                    "version_added": "62"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "62"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "49"
-                },
-                "opera_android": {
-                    "version_added": "46"
-                },
-                "safari": {
-                    "version_added": "11",
-                    "notes": "Requires macOS 10.13 High Sierra or later."
-                },
-                "safari_ios": {
-                    "version_added": "11",
-                    "notes": "Requires iOS 11 or later."
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "62"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "font-variation-settings"
         }
     ],
     "src-desc": [
@@ -1328,7 +1273,7 @@
                     {
                         "partial_implementation": true,
                         "version_added": "3.2",
-                        "version_removed": "6.1"
+                        "version_removed": "6"
                     }
                 ],
                 "samsunginternet_android": {
@@ -1922,6 +1867,7 @@
     "font-synthesis": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -1931,10 +1877,10 @@
             "summary": "The font-synthesis CSS property controls which missing typefaces, bold, italic, or small-caps, may be synthesized by the browser.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "edge": {
                     "version_added": false
@@ -1949,7 +1895,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "83"
                 },
                 "opera_android": {
                     "version_added": false
@@ -1964,10 +1910,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "97"
                 }
             },
             "title": "font-synthesis"
@@ -2247,10 +2193,12 @@
             "summary": "The font-variant-position CSS property controls the use of alternate, smaller glyphs that are positioned as superscript or subscript.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1212668'>bug 1212668</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1212668'>bug 1212668</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -2283,10 +2231,72 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1212668'>bug 1212668</a>."
                 }
             },
             "title": "font-variant-position"
+        }
+    ],
+    "font-variation-settings-def": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/properties/font-variation-settings.json",
+            "name": "font-variation-settings",
+            "slug": "CSS/font-variation-settings",
+            "summary": "The font-variation-settings CSS property provides low-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.",
+            "support": {
+                "chrome": {
+                    "version_added": "62"
+                },
+                "chrome_android": {
+                    "version_added": "62"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "62"
+                },
+                "firefox_android": {
+                    "version_added": "62"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "49"
+                },
+                "opera_android": {
+                    "version_added": "46"
+                },
+                "safari": {
+                    "version_added": "11",
+                    "notes": "Requires macOS 10.13 High Sierra or later."
+                },
+                "safari_ios": {
+                    "version_added": "11",
+                    "notes": "Requires iOS 11 or later."
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "62"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "caniuse": {
+                "feature": "variable-fonts",
+                "title": "Variable fonts"
+            },
+            "title": "font-variation-settings"
         }
     ],
     "font-weight-prop": [

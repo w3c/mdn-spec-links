@@ -264,59 +264,6 @@
             "title": "XRLightEstimate"
         }
     ],
-    "dom-xrlightprobe-onreflectionchange": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/XRLightProbe.json",
-            "name": "onreflectionchange",
-            "slug": "API/XRLightProbe/onreflectionchange",
-            "summary": "The WebXR reflectionchange event is passed to an XRLightProbe each time the estimated reflection cube map changes. This happens in response to use movements through different lighting conditions or to direct changes to lighting itself.",
-            "support": {
-                "chrome": {
-                    "version_added": "90"
-                },
-                "chrome_android": {
-                    "version_added": "90"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "76"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "15.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "90"
-                }
-            },
-            "title": "XRLightProbe: reflectionchange event"
-        }
-    ],
     "dom-xrlightprobe-probespace": [
         {
             "engines": [
@@ -378,7 +325,60 @@
             "filename": "api/XRLightProbe.json",
             "name": "reflectionchange_event",
             "slug": "API/XRLightProbe/reflectionchange_event",
-            "summary": "The WebXR reflectionchange event is passed to an XRLightProbe each time the estimated reflection cube map changes. This happens in response to use movements through different lighting conditions or to direct changes to lighting itself.",
+            "summary": "The WebXR reflectionchange event fires each time the estimated reflection cube map changes. This happens in response to use movements through different lighting conditions or to direct changes to lighting itself. This event is not cancelable.",
+            "support": {
+                "chrome": {
+                    "version_added": "90"
+                },
+                "chrome_android": {
+                    "version_added": "90"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "76"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "15.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "90"
+                }
+            },
+            "title": "XRLightProbe: reflectionchange event"
+        }
+    ],
+    "dom-xrlightprobe-onreflectionchange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/XRLightProbe.json",
+            "name": "reflectionchange_event",
+            "slug": "API/XRLightProbe/reflectionchange_event",
+            "summary": "The WebXR reflectionchange event fires each time the estimated reflection cube map changes. This happens in response to use movements through different lighting conditions or to direct changes to lighting itself. This event is not cancelable.",
             "support": {
                 "chrome": {
                     "version_added": "90"

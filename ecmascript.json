@@ -1655,7 +1655,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "reduce",
             "slug": "JavaScript/Reference/Global_Objects/Array/reduce",
-            "summary": "The reduce() method executes a user-supplied “reducer” callback function on each element of the array, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.",
+            "summary": "The reduce() method executes a user-supplied “reducer” callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.",
             "support": {
                 "chrome": {
                     "version_added": "3"
@@ -2914,7 +2914,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -5307,7 +5307,7 @@
             "filename": "javascript/builtins/BigInt.json",
             "name": "BigInt",
             "slug": "JavaScript/Reference/Global_Objects/BigInt",
-            "summary": "BigInt is a built-in object whose constructor returns a bigint primitive — also called a BigInt value, or sometimes just a BigInt — to represent whole numbers larger than 2^53 - 1 (Number.MAX_SAFE_INTEGER), which is the largest number JavaScript can represent with a number primitive (or Number value). BigInt values can be used for arbitrarily large integers.",
+            "summary": "BigInt is a primitive wrapper object used to represent and manipulate primitive bigint values — which are too large to be represented by the number primitive.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -8959,7 +8959,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "getUTCMilliseconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds",
-            "summary": "The getUTCMilliseconds() method returns the milliseconds portion of the time object's value.",
+            "summary": "The getUTCMilliseconds() method returns the milliseconds portion of the time object's value according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -10423,7 +10423,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "toLocaleDateString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toLocaleDateString",
-            "summary": "The toLocaleDateString() method returns a string with a language sensitive representation of the date portion of this date. The new locales and options arguments let applications specify the language whose formatting conventions should be used and allow to customize the behavior of the function. In older implementations, which ignore the locales and options arguments, the locale used and the form of the string returned are entirely implementation dependent.",
+            "summary": "The toLocaleDateString() method returns a string with a language sensitive representation of the date portion of the specified date in the user agent's timezone.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -14798,67 +14798,6 @@
             "title": "Math.E"
         }
     ],
-    "sec-math.ln2": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "javascript/builtins/Math.json",
-            "name": "LN2",
-            "slug": "JavaScript/Reference/Global_Objects/Math/LN2",
-            "summary": "The Math.LN2 property represents the natural logarithm of 2, approximately 0.693:",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "3"
-                },
-                "nodejs": {
-                    "version_added": "0.10.0"
-                },
-                "opera": {
-                    "version_added": "3"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Math.LN2"
-        }
-    ],
     "sec-math.ln10": [
         {
             "engines": [
@@ -14920,7 +14859,7 @@
             "title": "Math.LN10"
         }
     ],
-    "sec-math.log2e": [
+    "sec-math.ln2": [
         {
             "engines": [
                 "blink",
@@ -14928,9 +14867,9 @@
                 "webkit"
             ],
             "filename": "javascript/builtins/Math.json",
-            "name": "LOG2E",
-            "slug": "JavaScript/Reference/Global_Objects/Math/LOG2E",
-            "summary": "The Math.LOG2E property represents the base 2 logarithm of e, approximately 1.442:",
+            "name": "LN2",
+            "slug": "JavaScript/Reference/Global_Objects/Math/LN2",
+            "summary": "The Math.LN2 property represents the natural logarithm of 2, approximately 0.693:",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -14978,7 +14917,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Math.LOG2E"
+            "title": "Math.LN2"
         }
     ],
     "sec-math.log10e": [
@@ -15040,6 +14979,67 @@
                 }
             },
             "title": "Math.LOG10E"
+        }
+    ],
+    "sec-math.log2e": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Math.json",
+            "name": "LOG2E",
+            "slug": "JavaScript/Reference/Global_Objects/Math/LOG2E",
+            "summary": "The Math.LOG2E property represents the base 2 logarithm of e, approximately 1.442:",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Math.LOG2E"
         }
     ],
     "sec-math.pi": [
@@ -16375,7 +16375,7 @@
                     "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -16443,6 +16443,67 @@
                 }
             },
             "title": "Math.log()"
+        }
+    ],
+    "sec-math.log10": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Math.json",
+            "name": "log10",
+            "slug": "JavaScript/Reference/Global_Objects/Math/log10",
+            "summary": "The Math.log10() function returns the base 10 logarithm of a number, that is",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "25"
+                },
+                "firefox_android": {
+                    "version_added": "25"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "0.12.0"
+                },
+                "opera": {
+                    "version_added": "25"
+                },
+                "opera_android": {
+                    "version_added": "25"
+                },
+                "safari": {
+                    "version_added": "8"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "38"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Math.log10()"
         }
     ],
     "sec-math.log1p": [
@@ -16565,67 +16626,6 @@
                 }
             },
             "title": "Math.log2()"
-        }
-    ],
-    "sec-math.log10": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "javascript/builtins/Math.json",
-            "name": "log10",
-            "slug": "JavaScript/Reference/Global_Objects/Math/log10",
-            "summary": "The Math.log10() function returns the base 10 logarithm of a number, that is",
-            "support": {
-                "chrome": {
-                    "version_added": "38"
-                },
-                "chrome_android": {
-                    "version_added": "38"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "25"
-                },
-                "firefox_android": {
-                    "version_added": "25"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "0.12.0"
-                },
-                "opera": {
-                    "version_added": "25"
-                },
-                "opera_android": {
-                    "version_added": "25"
-                },
-                "safari": {
-                    "version_added": "8"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "38"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Math.log10()"
         }
     ],
     "sec-math.max": [
@@ -17358,6 +17358,67 @@
                 }
             },
             "title": "Math.trunc()"
+        }
+    ],
+    "sec-math-object": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Math.json",
+            "name": "Math",
+            "slug": "JavaScript/Reference/Global_Objects/Math",
+            "summary": "Math is a built-in object that has properties and methods for mathematical constants and functions. It’s not a function object.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Math"
         }
     ],
     "sec-number.epsilon": [
@@ -22331,7 +22392,7 @@
             "filename": "javascript/builtins/ReferenceError.json",
             "name": "ReferenceError",
             "slug": "JavaScript/Reference/Global_Objects/ReferenceError",
-            "summary": "The ReferenceError object represents an error when a non-existent variable is referenced.",
+            "summary": "The ReferenceError object represents an error when a variable that doesn't exist (or hasn't yet been initialized) in the current scope is referenced.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -25391,7 +25452,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "SharedArrayBuffer",
@@ -25499,10 +25561,16 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11"
-                },
+                "safari": [
+                    {
+                        "version_added": "preview",
+                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11"
+                    }
+                ],
                 "safari_ios": {
                     "version_added": "10.3",
                     "version_removed": "11"
@@ -25534,7 +25602,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "byteLength",
@@ -25642,10 +25711,16 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11"
-                },
+                "safari": [
+                    {
+                        "version_added": "preview",
+                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11"
+                    }
+                ],
                 "safari_ios": {
                     "version_added": "10.3",
                     "version_removed": "11"
@@ -25677,7 +25752,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "slice",
@@ -25785,10 +25861,16 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11"
-                },
+                "safari": [
+                    {
+                        "version_added": "preview",
+                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11"
+                    }
+                ],
                 "safari_ios": {
                     "version_added": "10.3",
                     "version_removed": "11"
@@ -25820,7 +25902,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "SharedArrayBuffer",
@@ -25928,14 +26011,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "15.0",
                     "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
@@ -28032,7 +28127,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "trim",
             "slug": "JavaScript/Reference/Global_Objects/String/trim",
-            "summary": "The trim() method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).",
+            "summary": "The trim() method removes whitespace from both ends of a string and returns a new string, without modifying the original string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -28655,7 +28750,7 @@
                     "version_added": "11.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11.3"
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"
@@ -30746,7 +30841,7 @@
                     "version_added": "45"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "45"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -30767,10 +30862,10 @@
                     "version_added": "4.0.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "32"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "32"
                 },
                 "safari": {
                     "version_added": "10"
@@ -30779,10 +30874,10 @@
                     "version_added": "10"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "5.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "45"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -39636,7 +39731,7 @@
             "filename": "javascript/operators/conditional.json",
             "name": "conditional",
             "slug": "JavaScript/Reference/Operators/Conditional_Operator",
-            "summary": "The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as a shortcut for the if statement.",
+            "summary": "The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -41049,7 +41144,7 @@
             "filename": "javascript/operators/logical_and.json",
             "name": "logical_and",
             "slug": "JavaScript/Reference/Operators/Logical_AND",
-            "summary": "The logical AND (&&) operator (logical conjunction) for a set of operands is true if and only if all of its operands are true. It is typically used with Boolean (logical) values. When it is, it returns a Boolean value. However, the && operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.",
+            "summary": "The logical AND (&&) operator (logical conjunction) for a set of Boolean operands will be true if and only if all the operands are true. Otherwise it will be false.",
             "support": {
                 "chrome": {
                     "version_added": "1"

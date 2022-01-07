@@ -1032,7 +1032,7 @@
             "filename": "api/SpeechRecognition.json",
             "name": "lang",
             "slug": "API/SpeechRecognition/lang",
-            "summary": "The lang property of the SpeechRecognition interface returns and sets the language of the current SpeechRecognition. If not specified, this defaults to the HTML lang attribute value, or the user agent's language setting if that isn't set either.",
+            "summary": "A DOMString representing the BCP 47 language tag for the current SpeechRecognition.",
             "support": {
                 "chrome": {
                     "version_added": "33"
@@ -3731,7 +3731,7 @@
                     "version_added": "33"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "49"
@@ -3795,13 +3795,13 @@
                     "version_added": "49"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "49"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "opera_android": {
                     "version_added": false
@@ -3951,7 +3951,7 @@
             "filename": "api/SpeechSynthesisEvent.json",
             "name": "charIndex",
             "slug": "API/SpeechSynthesisEvent/charIndex",
-            "summary": "The charIndex read-only property of the SpeechSynthesisUtterance interface returns the index position of the character in the SpeechSynthesisUtterance.text that was being spoken when the event was triggered.",
+            "summary": "The charIndex read-only property of the SpeechSynthesisUtterance interface returns the index position of the character in SpeechSynthesisUtterance.text that was being spoken when the event was triggered.",
             "support": {
                 "chrome": {
                     "version_added": "33"
@@ -5730,7 +5730,7 @@
                     "version_added": "33"
                 },
                 "edge": {
-                    "version_added": "18"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "49"

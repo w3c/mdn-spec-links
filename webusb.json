@@ -1,4 +1,216 @@
 {
+    "connect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/USB.json",
+            "name": "connect_event",
+            "slug": "API/USB/connect_event",
+            "summary": "The connect event of the USB interface is fired whenever a paired device is connected.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": {
+                    "version_added": "61"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "USB: connect event"
+        }
+    ],
+    "ref-for-dom-usb-onconnect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/USB.json",
+            "name": "connect_event",
+            "slug": "API/USB/connect_event",
+            "summary": "The connect event of the USB interface is fired whenever a paired device is connected.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": {
+                    "version_added": "61"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "USB: connect event"
+        }
+    ],
+    "disconnect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/USB.json",
+            "name": "disconnect_event",
+            "slug": "API/USB/disconnect_event",
+            "summary": "The connect event of the USB interface is fired whenever a paired device is disconnected.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": {
+                    "version_added": "61"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "USB: disconnect event"
+        }
+    ],
+    "ref-for-dom-usb-ondisconnect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/USB.json",
+            "name": "disconnect_event",
+            "slug": "API/USB/disconnect_event",
+            "summary": "The connect event of the USB interface is fired whenever a paired device is disconnected.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": {
+                    "version_added": "61"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "USB: disconnect event"
+        }
+    ],
     "ref-for-dom-usb-getdevices②": [
         {
             "engines": [
@@ -50,112 +262,6 @@
                 }
             },
             "title": "USB.getDevices()"
-        }
-    ],
-    "ref-for-dom-usb-onconnect": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/USB.json",
-            "name": "onconnect",
-            "slug": "API/USB/onconnect",
-            "summary": "The onconnect property of the USB interface is an event handler called whenever a paired device is connected. It is passed an instance of USBConnectionEvent.",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": {
-                    "version_added": "61"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "48"
-                },
-                "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "USB.onconnect"
-        }
-    ],
-    "ref-for-dom-usb-ondisconnect": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/USB.json",
-            "name": "ondisconnect",
-            "slug": "API/USB/ondisconnect",
-            "summary": "The ondisconnect property of the USB is an event handler called whenever a paired device is disconnected. It is passed an instance of USBConnectionEvent.",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": {
-                    "version_added": "61"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "48"
-                },
-                "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "USB.ondisconnect"
         }
     ],
     "ref-for-dom-usb-requestdevice④": [

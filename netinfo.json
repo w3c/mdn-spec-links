@@ -40,7 +40,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "48"
                 },
                 "opera_android": {
                     "version_added": "37"
@@ -95,7 +95,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "48"
                 },
                 "opera_android": {
                     "version_added": "37"
@@ -144,7 +144,7 @@
                     "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
@@ -154,7 +154,7 @@
                     "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
                 },
                 "opera_android": {
-                    "version_added": "45",
+                    "version_added": "25",
                     "notes": "The value is never greater than 10 Mbps, as a non-standard anti-fingerprinting measure."
                 },
                 "safari": {
@@ -237,8 +237,7 @@
     "dom-networkinformation-effectivetype": [
         {
             "engines": [
-                "blink",
-                "gecko"
+                "blink"
             ],
             "filename": "api/NetworkInformation.json",
             "name": "effectiveType",
@@ -258,7 +257,7 @@
                     "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
@@ -377,7 +376,7 @@
                     "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
                 },
                 "opera_android": {
-                    "version_added": "45",
+                    "version_added": "25",
                     "notes": "The value is never greater than 3000 ms, as a non-standard anti-fingerprinting measure."
                 },
                 "safari": {
@@ -491,7 +490,7 @@
                     "version_added": "48"
                 },
                 "opera_android": {
-                    "version_added": "45"
+                    "version_added": "25"
                 },
                 "safari": {
                     "version_added": false
@@ -520,7 +519,7 @@
             "filename": "http/headers/downlink.json",
             "name": "downlink",
             "slug": "HTTP/Headers/downlink",
-            "summary": "The Downlink network client hint request header field provides the approximate bandwidth of the client's connection to the server, in Mbps.",
+            "summary": "The Downlink Client hint request header field provides the approximate bandwidth of the client's connection to the server, in Mbps.",
             "support": {
                 "chrome": {
                     "version_added": "67",
@@ -580,7 +579,7 @@
             "filename": "http/headers/ect.json",
             "name": "ect",
             "slug": "HTTP/Headers/ect",
-            "summary": "The ECT network client hint request header field indicates the effective connection type: slow-2g, 2g, 3g, 4g.",
+            "summary": "The ECT Client hint request header field indicates the effective connection type: slow-2g, 2g, 3g, 4g.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -633,7 +632,7 @@
             "filename": "http/headers/rtt.json",
             "name": "rtt",
             "slug": "HTTP/Headers/rtt",
-            "summary": "The RTT network client hint request header field provides the approximate round trip time on the application layer, in milliseconds. The RTT hint, unlike transport layer RTT, includes server processing time.",
+            "summary": "The RTT Client hint request header field provides the approximate round trip time on the application layer, in milliseconds. The RTT hint, unlike transport layer RTT, includes server processing time.",
             "support": {
                 "chrome": {
                     "version_added": "67",

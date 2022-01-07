@@ -29,10 +29,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "safari": {
                     "version_added": false
@@ -52,6 +52,59 @@
                 }
             },
             "title": "Navigator.permissions"
+        }
+    ],
+    "dom-permissionstatus-name": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/PermissionStatus.json",
+            "name": "name",
+            "slug": "API/PermissionStatus/name",
+            "summary": "The name read-only property of the PermissionStatus interface returns the name of a requested permission.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "93"
+                },
+                "firefox_android": {
+                    "version_added": "93"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "PermissionStatus.name"
         }
     ],
     "dom-permissionstatus-onchange": [
@@ -84,10 +137,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "safari": {
                     "version_added": false
@@ -151,12 +204,26 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "31"
+                    },
+                    {
+                        "alternative_name": "status",
+                        "version_added": "30",
+                        "version_removed": "31"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "32"
+                    },
+                    {
+                        "alternative_name": "status",
+                        "version_added": "30",
+                        "version_removed": "32"
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
@@ -213,10 +280,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "safari": {
                     "version_added": false
@@ -268,10 +335,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "safari": {
                     "version_added": false
@@ -322,10 +389,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "30"
                 },
                 "safari": {
                     "version_added": false
@@ -531,26 +598,40 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "74",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "65",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "65",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -601,26 +682,40 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "74",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "65",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "65",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -655,6 +750,9 @@
                 "blink",
                 "gecko"
             ],
+            "partial": [
+                "webkit"
+            ],
             "needsflag": [
                 "gecko"
             ],
@@ -672,25 +770,25 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "67",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "74",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "67",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": "67",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
@@ -702,7 +800,9 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "13",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
                 },
                 "safari_ios": {
                     "version_added": false
@@ -720,7 +820,7 @@
             "title": "Feature-Policy: display-capture"
         }
     ],
-    "geolocation": [
+    "dom-permissionname-geolocation": [
         {
             "engines": [
                 "blink",
@@ -743,26 +843,40 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "74",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "65",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "65",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },

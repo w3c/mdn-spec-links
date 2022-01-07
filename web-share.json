@@ -3,10 +3,14 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "partial": [
                 "blink"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/Navigator.json",
             "name": "canShare",
@@ -25,10 +29,17 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "96",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.webshare.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "96"
                 },
                 "ie": {
                     "version_added": false
@@ -97,8 +108,8 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "#dom.webshare.enabled",
-                            "value_to_set": "enabled"
+                            "name": "dom.webshare.enabled",
+                            "value_to_set": "true"
                         }
                     ]
                 },
@@ -158,28 +169,44 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "81",
-                    "notes": "Firefox recognizes the <code>web-share</code> permissions policy, but this has no effect in versions of Firefox that do not support the <a href='https://developer.mozilla.org/docs/Web/API/Navigator/share'><code>share()</code></a> method.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "81",
-                    "notes": "Firefox recognizes the <code>web-share</code> permissions policy, but this has no effect in versions of Firefox that do not support the <a href='https://developer.mozilla.org/docs/Web/API/Navigator/share'><code>share()</code></a> method.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "81",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
+                            "Firefox recognizes the <code>web-share</code> permissions policy, but this has no effect in versions of Firefox that do not support the <a href='https://developer.mozilla.org/docs/Web/API/Navigator/share'><code>share()</code></a> method."
+                        ]
+                    },
+                    {
+                        "version_added": "81",
+                        "notes": "Firefox recognizes the <code>web-share</code> permissions policy, but this has no effect in versions of Firefox that do not support the <a href='https://developer.mozilla.org/docs/Web/API/Navigator/share'><code>share()</code></a> method.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "81",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "81",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },

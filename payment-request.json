@@ -1,199 +1,13 @@
 {
-    "dom-paymentdetailsupdate": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "api/PaymentDetailsUpdate.json",
-            "name": "PaymentDetailsUpdate",
-            "slug": "API/PaymentDetailsUpdate",
-            "summary": "The updateWith() method of the PaymentRequestUpdateEvent interface updates the details of an existing PaymentRequest.",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": {
-                    "version_added": "53"
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "55",
-                    "notes": "Available only in nightly builds.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.payments.request.enabled",
-                            "value_to_set": "true"
-                        },
-                        {
-                            "name": "dom.payments.request.supportedRegions",
-                            "type": "preference",
-                            "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>."
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "55",
-                    "notes": "Available only in nightly builds.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.payments.request.enabled",
-                            "value_to_set": "true"
-                        },
-                        {
-                            "name": "dom.payments.request.supportedRegions",
-                            "type": "preference",
-                            "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>."
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PaymentRequestUpdateEvent.updateWith()"
-        }
-    ],
-    "dom-paymentitem": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/PaymentItem.json",
-            "name": "PaymentItem",
-            "slug": "API/PaymentItem",
-            "summary": "The PaymentRequest interface's show() method instructs the user agent to begin the process of showing and handling the user interface for the payment request to the user.",
-            "support": {
-                "chrome": {
-                    "version_added": "61",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#web-payments",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#web-payments",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "55",
-                    "notes": "Available only in nightly builds.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.payments.request.enabled",
-                            "value_to_set": "true"
-                        },
-                        {
-                            "name": "dom.payments.request.supportedRegions",
-                            "type": "preference",
-                            "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "55",
-                    "notes": "Available only in nightly builds.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.payments.request.enabled",
-                            "value_to_set": "true"
-                        },
-                        {
-                            "name": "dom.payments.request.supportedRegions",
-                            "type": "preference",
-                            "value_to_set": "A comma-delineated list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#web-payments",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
-            },
-            "title": "PaymentRequest.show()"
-        }
-    ],
     "dom-paymentmethodchangeevent-constructor": [
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentMethodChangeEvent.json",
             "name": "PaymentMethodChangeEvent",
@@ -210,10 +24,35 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -247,7 +86,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentMethodChangeEvent.json",
             "name": "methodDetails",
@@ -264,10 +107,35 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -301,7 +169,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentMethodChangeEvent.json",
             "name": "methodName",
@@ -318,10 +190,35 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -355,7 +252,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentMethodChangeEvent.json",
             "name": "PaymentMethodChangeEvent",
@@ -372,12 +273,35 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds. Requires <code>dom.payments.request.enabled</code> to be set to <code>true</code> and the comma-delineated list in <code>dom.payments.request.supportedRegions</code> to contain one or more of the supported 2-character ISO locales, currently US and CA."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds. Requires <code>dom.payments.request.enabled</code> to be set to <code>true</code> and the comma-delineated list in <code>dom.payments.request.supportedRegions</code> to contain one or more of the supported 2-character ISO locales, currently US and CA."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -411,7 +335,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequest.json",
             "name": "PaymentRequest",
@@ -428,12 +356,25 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -467,7 +408,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequest.json",
             "name": "abort",
@@ -484,12 +429,25 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -523,7 +481,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequest.json",
             "name": "canMakePayment",
@@ -540,12 +502,25 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -579,7 +554,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequest.json",
             "name": "id",
@@ -596,12 +575,25 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -635,7 +627,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequest.json",
             "name": "onpaymentmethodchange",
@@ -652,12 +648,25 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -691,7 +700,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequest.json",
             "name": "paymentmethodchange_event",
@@ -708,12 +721,25 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -747,7 +773,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequest.json",
             "name": "show",
@@ -764,12 +794,25 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -803,7 +846,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequest.json",
             "name": "PaymentRequest",
@@ -820,12 +867,35 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds. Requires <code>dom.payments.request.enabled</code> to be set to <code>true</code> and the comma-delineated list in <code>dom.payments.request.supportedRegions</code> to contain one or more of the supported 2-character ISO locales, currently US and CA."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds. Requires <code>dom.payments.request.enabled</code> to be set to <code>true</code> and the comma-delineated list in <code>dom.payments.request.supportedRegions</code> to contain one or more of the supported 2-character ISO locales, currently US and CA."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -859,7 +929,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequestUpdateEvent.json",
             "name": "PaymentRequestUpdateEvent",
@@ -876,12 +950,25 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -915,7 +1002,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequestUpdateEvent.json",
             "name": "updateWith",
@@ -932,12 +1023,25 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -971,7 +1075,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentRequestUpdateEvent.json",
             "name": "PaymentRequestUpdateEvent",
@@ -988,12 +1096,35 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds. Requires <code>dom.payments.request.enabled</code> to be set to <code>true</code> and the comma-delineated list in <code>dom.payments.request.supportedRegions</code> to contain one or more of the supported 2-character ISO locales, currently US and CA."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds. Requires <code>dom.payments.request.enabled</code> to be set to <code>true</code> and the comma-delineated list in <code>dom.payments.request.supportedRegions</code> to contain one or more of the supported 2-character ISO locales, currently US and CA."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -1027,7 +1158,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentResponse.json",
             "name": "complete",
@@ -1044,12 +1179,35 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -1083,7 +1241,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentResponse.json",
             "name": "details",
@@ -1100,12 +1262,35 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -1139,7 +1324,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentResponse.json",
             "name": "methodName",
@@ -1156,12 +1345,35 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -1195,7 +1407,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentResponse.json",
             "name": "requestId",
@@ -1212,12 +1428,35 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -1251,7 +1490,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentResponse.json",
             "name": "retry",
@@ -1268,12 +1511,35 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
@@ -1307,7 +1573,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PaymentResponse.json",
             "name": "PaymentResponse",
@@ -1324,12 +1594,35 @@
                     "version_added": "15"
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds. Requires <code>dom.payments.request.enabled</code> to be set to <code>true</code> and the comma-delineated list in <code>dom.payments.request.supportedRegions</code> to contain one or more of the supported 2-character ISO locales, currently US and CA."
+                    "version_added": "55",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "Available only in nightly builds. Requires <code>dom.payments.request.enabled</code> to be set to <code>true</code> and the comma-delineated list in <code>dom.payments.request.supportedRegions</code> to contain one or more of the supported 2-character ISO locales, currently US and CA."
+                    "version_added": "55",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.payments.request.enabled",
+                            "value_to_set": "true"
+                        },
+                        {
+                            "name": "dom.payments.request.supportedRegions",
+                            "type": "preference",
+                            "value_to_set": "A comma-delimited list of one or more 2-character ISO country codes indicating the countries in which to support payments (for example, <code>US,CA</code>)."
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false

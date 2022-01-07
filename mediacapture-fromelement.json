@@ -2,7 +2,9 @@
     "dom-canvascapturemediastreamtrack-canvas": [
         {
             "engines": [
-                "gecko"
+                "blink",
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -13,10 +15,10 @@
             "summary": "The CanvasCaptureMediaStreamTrack canvas read-only property returns the HTMLCanvasElement from which frames are being captured.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "51"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "51"
                 },
                 "edge": {
                     "version_added": false
@@ -33,6 +35,7 @@
                 },
                 "firefox_android": {
                     "version_added": "41",
+                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -45,25 +48,25 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "38"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "5.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "51"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "CanvasCaptureMediaStreamTrack.canvas"
@@ -73,7 +76,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -103,22 +107,30 @@
                     ]
                 },
                 "firefox_android": {
-                    "version_added": null
+                    "version_added": "41",
+                    "version_removed": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "canvas.capturestream.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "38"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"
@@ -137,7 +149,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -168,6 +181,7 @@
                 },
                 "firefox_android": {
                     "version_added": "41",
+                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -180,16 +194,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "38"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"

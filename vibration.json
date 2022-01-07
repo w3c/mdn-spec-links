@@ -57,7 +57,7 @@
                     },
                     {
                         "version_added": "14",
-                        "version_removed": true,
+                        "version_removed": "16",
                         "prefix": "moz"
                     }
                 ],
@@ -68,8 +68,11 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true,
-                    "notes": "Beginning in Opera 47, this method requires a user gesture. Otherwise it returns <code>false</code>."
+                    "version_added": "19",
+                    "notes": [
+                        "Beginning in Opera 42, this is not supported in cross-origin iframes.",
+                        "Beginning in Opera 47, this method requires a user gesture. Otherwise it returns <code>false</code>."
+                    ]
                 },
                 "safari": {
                     "version_added": false

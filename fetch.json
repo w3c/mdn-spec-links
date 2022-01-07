@@ -3458,7 +3458,7 @@
             "filename": "http/headers/origin.json",
             "name": "Origin",
             "slug": "HTTP/Headers/Origin",
-            "summary": "The Origin HyperText Transfer Protocol (HTTP) request header indicates the origin of the request. This header does not include any path information. It is similar to the Referer header, but unlike that header, the Origin header does not disclose the whole path.",
+            "summary": "The Origin request header indicates the origin (scheme, hostname, and port) that caused the request. For example, if a user agent needs to request resources included in a page, or fetched by scripts that it executes, then the origin of the page may be included in the request.",
             "support": {
                 "chrome": {
                     "version_added": true

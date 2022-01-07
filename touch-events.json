@@ -33,13 +33,13 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -86,13 +86,13 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -141,13 +141,13 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -194,13 +194,13 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -249,13 +249,13 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -302,13 +302,13 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -357,13 +357,13 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -410,13 +410,13 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -456,7 +456,7 @@
                     "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -511,7 +511,7 @@
                     "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -566,7 +566,7 @@
                     "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -621,7 +621,7 @@
                     "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": false
@@ -685,7 +685,7 @@
                     "version_added": "35"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "35"
                 },
                 "safari": {
                     "version_added": false
@@ -744,10 +744,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -806,10 +806,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -842,12 +842,26 @@
             "slug": "API/Touch/force",
             "summary": "The Touch.force read-only property returns the amount of pressure the user is applying to the touch surface for a Touch point.",
             "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "22",
+                        "version_removed": "47"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "25",
+                        "version_removed": "47"
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -867,27 +881,62 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "15",
+                        "version_removed": "34"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "14",
+                        "version_removed": "34"
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "10"
                 },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "1.5",
+                        "version_removed": "5.0"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "37",
+                        "version_removed": "47"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "47"
+                    }
+                ]
             },
             "title": "Touch.force"
         }
@@ -930,10 +979,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -992,10 +1041,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -1054,10 +1103,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -1090,12 +1139,26 @@
             "slug": "API/Touch/radiusX",
             "summary": "Returns the X radius of the ellipse that most closely circumscribes the area of contact with the touch surface. The value is in CSS pixels of the same scale as Touch.screenX.",
             "support": {
-                "chrome": {
-                    "version_added": "43"
-                },
-                "chrome_android": {
-                    "version_added": "43"
-                },
+                "chrome": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "22",
+                        "version_removed": "47"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "25",
+                        "version_removed": "47"
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -1115,27 +1178,62 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "15",
+                        "version_removed": "34"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "14",
+                        "version_removed": "34"
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "10"
                 },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "43"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "1.5",
+                        "version_removed": "5.0"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "37",
+                        "version_removed": "47"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "47"
+                    }
+                ]
             },
             "title": "Touch.radiusX"
         }
@@ -1152,12 +1250,26 @@
             "slug": "API/Touch/radiusY",
             "summary": "Returns the Y radius of the ellipse that most closely circumscribes the area of contact with the touch surface. The value is in CSS pixels of the same scale as Touch.screenX.",
             "support": {
-                "chrome": {
-                    "version_added": "43"
-                },
-                "chrome_android": {
-                    "version_added": "43"
-                },
+                "chrome": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "22",
+                        "version_removed": "47"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "25",
+                        "version_removed": "47"
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -1177,27 +1289,62 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "15",
+                        "version_removed": "34"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "14",
+                        "version_removed": "34"
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "10"
                 },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "43"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "1.5",
+                        "version_removed": "5.0"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "38"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "37",
+                        "version_removed": "47"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "47"
+                    }
+                ]
             },
             "title": "Touch.radiusY"
         }
@@ -1214,12 +1361,26 @@
             "slug": "API/Touch/rotationAngle",
             "summary": "Returns the rotation angle, in degrees, of the contact area ellipse defined by Touch.radiusX and Touch.radiusY. The value may be between 0 and 90. Together, these three values describe an ellipse that approximates the size and shape of the area of contact between the user and the screen. This may be a relatively large ellipse representing the contact between a fingertip and the screen or a small area representing the tip of a stylus, for example.",
             "support": {
-                "chrome": {
-                    "version_added": "43"
-                },
-                "chrome_android": {
-                    "version_added": "43"
-                },
+                "chrome": [
+                    {
+                        "version_added": "43"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "22",
+                        "version_removed": "47"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "43"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "25",
+                        "version_removed": "47"
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -1239,27 +1400,62 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": [
+                    {
+                        "version_added": "30"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "15",
+                        "version_removed": "34"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "30"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "14",
+                        "version_removed": "34"
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
                     "version_added": "10"
                 },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "43"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "4.0"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "1.5",
+                        "version_removed": "5.0"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "43"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "37",
+                        "version_removed": "47"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": false,
+                        "version_removed": "47"
+                    }
+                ]
             },
             "title": "Touch.rotationAngle"
         }
@@ -1302,10 +1498,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -1364,10 +1560,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -1426,10 +1622,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -1488,10 +1684,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
@@ -1503,7 +1699,7 @@
                     "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1539,16 +1735,18 @@
                     "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": true
+                    "version_added": "46"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "35",
+                    "notes": "Opera only supports the following <code>touchEventInit</code> properties: <code>touches</code>, <code>targetTouches</code>, <code>changedTouches</code>."
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "35",
+                    "notes": "Opera only supports the following <code>touchEventInit</code> properties: <code>touches</code>, <code>targetTouches</code>, <code>changedTouches</code>."
                 },
                 "safari": {
                     "version_added": false
@@ -1610,16 +1808,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -1672,16 +1870,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -1734,16 +1932,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -1796,16 +1994,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -1858,16 +2056,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -1920,16 +2118,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -1982,16 +2180,16 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "14"
                 },
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
@@ -2053,7 +2251,7 @@
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": true
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.5"
