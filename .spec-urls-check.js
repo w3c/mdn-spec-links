@@ -52,6 +52,8 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/Headers/entries",
     "https://developer.mozilla.org/docs/Web/API/Headers/keys",
     "https://developer.mozilla.org/docs/Web/API/Headers/values",
+    "https://developer.mozilla.org/docs/Web/API/HTMLInputElement/checkValidity",
+    "https://developer.mozilla.org/docs/Web/API/HTMLInputElement/setCustomValidity",
     "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/entries",
     "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/forEach",
     "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/get",
@@ -267,11 +269,7 @@ const checkSpecURL = (
     return;
   }
   // FIXME temporary
-  if (spec_url.startsWith('https://drafts.csswg.org/css-conditional/#at-media')) {
-    return;
-  }
-  // FIXME temporary
-  if (spec_url.startsWith('https://drafts.csswg.org/css-conditional/#at-supports')) {
+  if (spec_url.startsWith('https://drafts.csswg.org/css-conditional/')) {
     return;
   }
   // FIXME temporary
@@ -279,11 +277,15 @@ const checkSpecURL = (
     return;
   }
   // FIXME temporary
-  if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/origin.html#the-coep-headers')) {
+  if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/origin.html#the-headers')) {
     return;
   }
   // FIXME temporary
   if (spec_url.startsWith('https://w3c.github.io/permissions/')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://tc39.es/proposal-array-find-from-last/index.html')) {
     return;
   }
   if (
