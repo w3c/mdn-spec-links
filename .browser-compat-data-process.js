@@ -651,6 +651,10 @@ const getAdjustedData = (locationkey, url, path, baseurl, host, fragment) => {
     if (url.startsWith('https://html.spec.whatwg.org/multipage/')) {
       baseurl = 'https://html.spec.whatwg.org/multipage/';
     }
+  } else if (url.startsWith('https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html')) {
+    path = 'draft-ietf-httpbis-rfc6265bis';
+    locationkey = fragment;
+    baseurl = 'https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html';
   } else if (host.includes('httpwg.org')) {
     path = url.substring(25,32);
     locationkey = fragment;
@@ -672,11 +676,6 @@ const getAdjustedData = (locationkey, url, path, baseurl, host, fragment) => {
     path = name;
     locationkey = fragment;
     baseurl = 'https://datatracker.ietf.org/doc/html/' + name;
-  } else if (url.startsWith('https://httpwg.org/http-extensions/')) {
-    const name = locationkey.split('#')[0];
-    path = name;
-    locationkey = fragment;
-    baseurl = 'https://httpwg.org/http-extensions/' + name;
   } else if (url.startsWith('https://www.rfc-editor.org/rfc/')) {
     const name = locationkey.split('#')[0];
     path = name;
