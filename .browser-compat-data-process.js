@@ -282,6 +282,10 @@ const fixCanIUseSpecURLs = (key, data) => {
         '/input-events/index.html',
         '/input-events/',
       ],
+      'https://tc39.es/proposal-array-find-from-last/index.html': [
+        '/proposal-array-find-from-last/index.html',
+        '/proposal-array-find-from-last/',
+      ],
       'https://w3c.github.io/webappsec-csp/embedded/': [
         '/webappsec-csp/embedded/',
         '/webappsec-cspee/',
