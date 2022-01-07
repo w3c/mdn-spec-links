@@ -25374,6 +25374,63 @@
             "title": "HTMLInputElement.setSelectionRange()"
         }
     ],
+    "dom-input-showpicker": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLInputElement.json",
+            "name": "showPicker",
+            "slug": "API/HTMLInputElement/showPicker",
+            "summary": "The HTMLInputElement.showPicker() method returns a promise that resolves when a browser picker is shown to the user. It must be called in response to a user gesture such as a touch gesture or mouse click; otherwise it will reject. For security reasons, it also rejects when it's called in a cross-origin iframe.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": {
+                    "version_added": "99"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1745005'>bug 1745005</a>."
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1745005'>bug 1745005</a>."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/234009'>bug 234009</a>."
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/234009'>bug 234009</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "99"
+                },
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "HTMLInputElement.showPicker()"
+        }
+    ],
     "dom-input-stepdown-dev": [
         {
             "engines": [
