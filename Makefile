@@ -23,7 +23,7 @@ content:
 	$(YARN) --cwd content
 
 yari.PID: content
-	@if ! ($(NETSTAT) -an | $(EGREP) -i "[.:]5000.+LISTEN" > /dev/null); \
+	@if ! ($(NETSTAT) -an | $(EGREP) -i "[.:]5042.+LISTEN" > /dev/null); \
 		then \
 		$(YARN) --cwd content start & echo $$! > yari.PID; \
 		sleep 3; \
