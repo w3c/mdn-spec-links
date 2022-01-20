@@ -292,6 +292,10 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
     return;
   }
+  // FIXME temporary
+  if (spec_url.startsWith('https://www.w3.org/TR/css-cascade-5/#layering')) {
+    return;
+  }
   if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
