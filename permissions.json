@@ -468,7 +468,7 @@
             "title": "WorkerNavigator.permissions"
         }
     ],
-    "accelerometer": [
+    "dom-permissionname-accelerometer": [
         {
             "engines": [
                 "blink"
@@ -521,7 +521,7 @@
             "title": "Feature-Policy: accelerometer"
         }
     ],
-    "ambient-light-sensor": [
+    "dom-permissionname-ambient-light-sensor": [
         {
             "engines": [
                 "blink"
@@ -574,7 +574,7 @@
             "title": "Feature-Policy: ambient-light-sensor"
         }
     ],
-    "media-devices": [
+    "dom-permissionname-camera": [
         {
             "engines": [
                 "blink",
@@ -658,93 +658,9 @@
                 }
             },
             "title": "Feature-Policy: camera"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "http/headers/feature-policy.json",
-            "name": "microphone",
-            "slug": "HTTP/Headers/Feature-Policy/microphone",
-            "summary": "The HTTP Feature-Policy header microphone directive controls whether the current document is allowed to use audio input devices. When this policy is enabled, the Promise returned by MediaDevices.getUserMedia() will reject with a NotAllowedError.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": {
-                    "version_added": "60"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "74",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "65",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.security.featurePolicy.header.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "79",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "65",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.security.featurePolicy.header.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "48"
-                },
-                "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "60"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Feature-Policy: microphone"
         }
     ],
-    "display-capture": [
+    "dom-permissionname-display-capture": [
         {
             "engines": [
                 "blink",
@@ -905,7 +821,7 @@
             "title": "Feature-Policy: geolocation"
         }
     ],
-    "gyroscope": [
+    "dom-permissionname-gyroscope": [
         {
             "engines": [
                 "blink"
@@ -958,7 +874,7 @@
             "title": "Feature-Policy: gyroscope"
         }
     ],
-    "magnetometer": [
+    "dom-permissionname-magnetometer": [
         {
             "engines": [
                 "blink"
@@ -1011,7 +927,93 @@
             "title": "Feature-Policy: magnetometer"
         }
     ],
-    "midi": [
+    "dom-permissionname-microphone": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "http/headers/feature-policy.json",
+            "name": "microphone",
+            "slug": "HTTP/Headers/Feature-Policy/microphone",
+            "summary": "The HTTP Feature-Policy header microphone directive controls whether the current document is allowed to use audio input devices. When this policy is enabled, the Promise returned by MediaDevices.getUserMedia() will reject with a NotAllowedError.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": {
+                    "version_added": "60"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "74",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "65",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "65",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.security.featurePolicy.header.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "60"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Feature-Policy: microphone"
+        }
+    ],
+    "dom-permissionname-midi": [
         {
             "engines": [
                 "blink",
