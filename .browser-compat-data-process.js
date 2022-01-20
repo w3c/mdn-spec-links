@@ -15,7 +15,7 @@ const warn = msg => console.warn(chalk`{yellowBright     ${msg}}`);
 const error = msg => console.error(chalk`{redBright     ${msg}}`);
 const success = msg => console.log(chalk`{greenBright     ${msg}}`);
 
-let mdnOrigin = "http://localhost:5000"
+let mdnOrigin = "http://localhost:5042"
 if (process.env.MDN_ORIGIN) {
   mdnOrigin = process.env.MDN_ORIGIN
 }
