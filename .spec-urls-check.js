@@ -252,47 +252,43 @@ const checkSpecURL = (
    *   return;
    * }
    */
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/13293
-  if (spec_url.startsWith('https://w3c.github.io/permissions/#geolocation')) {
-    return;
-  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12368
   if (spec_url.startsWith('https://w3c.github.io/webcodecs/#dom-imagedecoder-type')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14605
   if (spec_url.startsWith('https://w3c.github.io/manifest/#the-display-mode-media-feature')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14610
   if (spec_url.startsWith('https://drafts.csswg.org/web-animations/')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14607
   if (spec_url.startsWith('https://drafts.csswg.org/css-conditional/')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14604
   if (spec_url.startsWith('https://drafts.csswg.org/css-values/#attr-notation')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14599
   if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/origin.html#the-headers')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14609
   if (spec_url.startsWith('https://w3c.github.io/permissions/')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14601
   if (spec_url.startsWith('https://tc39.es/proposal-array-find-from-last/index.html')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14600
   if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
     return;
   }
-  // FIXME temporary
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14602
   if (spec_url.startsWith('https://www.w3.org/TR/css-cascade-5/#layering')) {
     return;
   }
