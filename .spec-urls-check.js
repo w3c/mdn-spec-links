@@ -256,10 +256,6 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://w3c.github.io/webcodecs/#dom-imagedecoder-type')) {
     return;
   }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14610
-  if (spec_url.startsWith('https://drafts.csswg.org/web-animations/')) {
-    return;
-  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14607
   if (spec_url.startsWith('https://drafts.csswg.org/css-conditional/')) {
     return;
