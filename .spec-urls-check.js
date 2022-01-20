@@ -288,6 +288,10 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://tc39.es/proposal-array-find-from-last/index.html')) {
     return;
   }
+  // FIXME temporary
+  if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
+    return;
+  }
   if (
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
     spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
