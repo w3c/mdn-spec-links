@@ -1,0 +1,80 @@
+{
+    "layering": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/at-rules/layer.json",
+            "name": "layer",
+            "slug": "CSS/@layer",
+            "summary": "The @layer CSS at-rule declares a cascade layer. Rules within a cascade layer cascade together, giving more control over the cascade to web developers.",
+            "support": {
+                "chrome": {
+                    "version_added": false,
+                    "notes": "See Chromium <a href='https://crbug.com/1164367'>bug 1164367</a>."
+                },
+                "chrome_android": {
+                    "version_added": false,
+                    "notes": "See Chromium <a href='https://crbug.com/1164367'>bug 1164367</a>."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "94",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.cascade-layers.enabled",
+                            "value_to_set": "true"
+                        }
+                    ],
+                    "notes": "See Firefox <a href='https://bugzil.la/1699217'>bug 1699217</a>."
+                },
+                "firefox_android": {
+                    "version_added": "94",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.cascade-layers.enabled",
+                            "value_to_set": "true"
+                        }
+                    ],
+                    "notes": "See Firefox <a href='https://bugzil.la/1699217'>bug 1699217</a>."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See WebKit <a href='https://webkit.org/b/220779'>bug 220779</a>."
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See WebKit <a href='https://webkit.org/b/220779'>bug 220779</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "See Chromium <a href='https://crbug.com/1164367'>bug 1164367</a>."
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "notes": "See Chromium <a href='https://crbug.com/1164367'>bug 1164367</a>."
+                }
+            },
+            "title": "@layer"
+        }
+    ]
+}

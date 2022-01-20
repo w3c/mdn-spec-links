@@ -3132,7 +3132,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -3234,14 +3235,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -3269,7 +3282,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -3371,14 +3385,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -3406,7 +3432,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -3508,14 +3535,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -3543,7 +3582,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -3645,14 +3685,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -3680,7 +3732,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -3782,14 +3835,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -3817,7 +3882,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -3919,14 +3985,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -3954,7 +4032,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -4109,15 +4188,27 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1",
-                    "alternative_name": "wake"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1",
+                        "alternative_name": "wake"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "alternative_name": "wake",
@@ -4148,7 +4239,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -4250,14 +4342,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -4285,7 +4389,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -4387,14 +4492,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -4422,7 +4539,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -4524,14 +4642,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -4559,7 +4689,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -4687,14 +4818,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -4722,7 +4865,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -4824,14 +4968,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -4859,7 +5015,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -4961,14 +5118,26 @@
                 "opera_android": {
                     "version_added": false
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "version_removed": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11.3"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "version_removed": "11.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11.3"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": false,
                     "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
@@ -26251,7 +26420,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "codePointAt",
             "slug": "JavaScript/Reference/Global_Objects/String/codePointAt",
-            "summary": "The codePointAt() method returns a non-negative integer that is the UTF-16 code point value.",
+            "summary": "The codePointAt() method returns a non-negative integer that is the Unicode code point value at the given position.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -32723,7 +32892,7 @@
             "filename": "javascript/builtins/WeakMap.json",
             "name": "WeakMap",
             "slug": "JavaScript/Reference/Global_Objects/WeakMap",
-            "summary": "The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. The keys must be objects and the values can be arbitrary values.",
+            "summary": "A WeakMap is a collection of key/value pairs whose keys must be objects, with values of any arbitrary JavaScript type, and which does not create strong references to its keys. That is, an object’s presence as a key in a WeakMap does not prevent the object from being garbage collected. Once an object used as a key has been collected, its corresponding values in any WeakMap become candidates for garbage collection as well — as long as they aren't strongly referred to elsewhere.",
             "support": {
                 "chrome": {
                     "version_added": "36"
@@ -39291,7 +39460,7 @@
             "filename": "javascript/statements.json",
             "name": "async_function",
             "slug": "JavaScript/Reference/Statements/async_function",
-            "summary": "An async function is a function declared with the async keyword, and the await keyword is permitted within them. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.",
+            "summary": "An async function is a function declared with the async keyword, and the await keyword is permitted within it. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.",
             "support": {
                 "chrome": {
                     "version_added": "55"

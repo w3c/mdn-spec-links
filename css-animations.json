@@ -1129,16 +1129,23 @@
                 "gecko",
                 "webkit"
             ],
+            "partial": [
+                "blink"
+            ],
             "filename": "api/Document.json",
             "name": "animationcancel_event",
             "slug": "API/Document/animationcancel_event",
             "summary": "The animationcancel event is fired when a CSS Animation unexpectedly aborts. In other words, any time it stops running without sending an animationend event. This might happen when the animation-name is changed such that the animation is removed, or when the animating node is hidden using CSS. Therefore, either directly or because any of its containing nodes are hidden.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -1153,10 +1160,14 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "69",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "59",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "safari": [
                     {
@@ -1195,13 +1206,19 @@
                     }
                 ],
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "13.0",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 }
             },
             "title": "Document: animationcancel event"
@@ -1211,16 +1228,23 @@
                 "gecko",
                 "webkit"
             ],
+            "partial": [
+                "blink"
+            ],
             "filename": "api/HTMLElement.json",
             "name": "animationcancel_event",
             "slug": "API/HTMLElement/animationcancel_event",
             "summary": "The animationcancel event is fired when a CSS Animation unexpectedly aborts. In other words, any time it stops running without sending an animationend event. This might happen when the animation-name is changed such that the animation is removed, or when the animating node is hidden using CSS. Therefore, either directly or because any of its containing nodes are hidden.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -1235,10 +1259,14 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "69",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "59",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "safari": [
                     {
@@ -1277,13 +1305,19 @@
                     }
                 ],
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "13.0",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 }
             },
             "title": "HTMLElement: animationcancel event"
@@ -1293,16 +1327,23 @@
                 "gecko",
                 "webkit"
             ],
+            "partial": [
+                "blink"
+            ],
             "filename": "api/Window.json",
             "name": "animationcancel_event",
             "slug": "API/Window/animationcancel_event",
             "summary": "The animationcancel event is fired when a CSS Animation unexpectedly aborts. In other words, any time it stops running without sending an animationend event. This might happen when the animation-name is changed such that the animation is removed, or when the animating node is hidden using CSS. Therefore, either directly or because any of its containing nodes are hidden.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>window.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>window.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -1317,10 +1358,14 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "69",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>window.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "59",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>window.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "safari": [
                     {
@@ -1359,13 +1404,19 @@
                     }
                 ],
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "13.0",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>window.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>window.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "83",
+                    "partial_implementation": true,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>window.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 }
             },
             "title": "Window: animationcancel event"
@@ -1992,10 +2043,12 @@
             "summary": "The onanimationcancel property of the GlobalEventHandlers mixin is the event handler for processing animationcancel events.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>target.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>target.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -2010,10 +2063,12 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>target.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>target.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "safari": [
                     {
@@ -2036,13 +2091,16 @@
                     }
                 ],
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>target.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>target.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>target.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 }
             },
             "title": "GlobalEventHandlers.onanimationcancel"

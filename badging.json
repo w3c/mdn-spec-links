@@ -1,7 +1,9 @@
 {
     "clearappbadge-method": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "partial": [
                 "blink"
             ],
@@ -11,12 +13,12 @@
             "summary": "The clearAppBadge() method of the Navigator interface clears a badge on the current app's icon by setting it to nothing. The value nothing indictes that no badge is currently set, and the status of the badge is cleared.",
             "support": {
                 "chrome": {
-                    "version_added": "83",
+                    "version_added": "81",
                     "partial_implementation": true,
                     "notes": "Windows and macOS only."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "81"
                 },
                 "edge": {
                     "version_added": false
@@ -34,7 +36,7 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "58"
                 },
                 "safari": {
                     "version_added": false
@@ -43,13 +45,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "13.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "81"
                 },
                 "edge_blink": {
-                    "version_added": "83",
+                    "version_added": "81",
                     "partial_implementation": true,
                     "notes": "Windows and macOS only."
                 }
@@ -59,7 +61,9 @@
     ],
     "setappbadge-method": [
         {
-            "engines": [],
+            "engines": [
+                "blink"
+            ],
             "partial": [
                 "blink"
             ],
@@ -69,12 +73,12 @@
             "summary": "The setAppBadge() method of the Navigator interface a badge on the icon associated with this app. If a value is passed to the method, this will be set as the value of the badge. Otherwise the badge will display as a dot, or other indicator as defined by the platform.",
             "support": {
                 "chrome": {
-                    "version_added": "83",
+                    "version_added": "81",
                     "partial_implementation": true,
                     "notes": "Windows and macOS only."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "81"
                 },
                 "edge": {
                     "version_added": false
@@ -92,7 +96,7 @@
                     "version_added": false
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "58"
                 },
                 "safari": {
                     "version_added": false
@@ -101,13 +105,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "13.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "81"
                 },
                 "edge_blink": {
-                    "version_added": "83",
+                    "version_added": "81",
                     "partial_implementation": true,
                     "notes": "Windows and macOS only."
                 }

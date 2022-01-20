@@ -884,7 +884,7 @@
             "filename": "http/headers/vary.json",
             "name": "Vary",
             "slug": "HTTP/Headers/Vary",
-            "summary": "The Vary HyperText Transfer Protocol (HTTP) response header determines how to match future request headers. This information is required to decide whether or not a cached response can be served instead of requesting a fresh one from the origin server. This response header is used by the server to indicate the headers it used when selecting a representation of a resource in a content negotiation algorithm.",
+            "summary": "The Vary HTTP response header describes the parts of the request message aside from the method and URL that influenced the content of the response it occurs in. Most often, this is used to create a cache key when content negotiation is in use.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -1595,7 +1595,7 @@
             "filename": "http/status.json",
             "name": "301",
             "slug": "HTTP/Status/301",
-            "summary": "The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status response code indicates that the resource requested has been definitively moved to the URL given by the Location headers. A browser redirects to this page and search engines update their links to the resource (in 'SEO-speak', it is said that the 'link-juice' is sent to the new URL).",
+            "summary": "The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status response code indicates that the requested resource has been definitively moved to the URL given by the Location headers. A browser redirects to the new URL and search engines update their links to the resource.",
             "support": {
                 "chrome": {
                     "version_added": true

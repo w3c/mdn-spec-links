@@ -51,5 +51,58 @@
             },
             "title": "display_override"
         }
+    ],
+    "protocol_handlers-member": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "html/manifest/protocol_handlers.json",
+            "name": "protocol_handlers",
+            "slug": "Manifest/protocol_handlers",
+            "summary": "The protocol_handlers member specifies an array of objects that are protocols which this web app can register and handle. Protocol handlers register the application in an OS's application preferences; the registration associates a specific application with the given protocol scheme. For example, when using the protocol handler mailto:// on a web page, registered email applications open.",
+            "support": {
+                "chrome": {
+                    "version_added": "96"
+                },
+                "chrome_android": {
+                    "version_added": "96"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "83"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "96"
+                }
+            },
+            "title": "protocol_handlers"
+        }
     ]
 }

@@ -331,9 +331,11 @@
     "errorevent-section": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
+            ],
+            "partial": [
+                "blink"
             ],
             "filename": "api/MediaRecorder.json",
             "name": "error_event",
@@ -341,10 +343,14 @@
             "summary": "The MediaRecorder interface's error event is fired when an error occurs: for example because recording wasn't allowed or was attempted using an unsupported codec.",
             "support": {
                 "chrome": {
-                    "version_added": "49"
+                    "version_added": "49",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "chrome_android": {
-                    "version_added": "49"
+                    "version_added": "49",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -359,10 +365,14 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "36"
+                    "version_added": "36",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "opera_android": {
-                    "version_added": "36"
+                    "version_added": "36",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "safari": {
                     "version_added": "14"
@@ -371,13 +381,19 @@
                     "version_added": "14"
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "5.0",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "webview_android": {
-                    "version_added": "49"
+                    "version_added": "49",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 }
             },
             "title": "MediaRecorder: error event"
@@ -394,11 +410,11 @@
             "support": {
                 "chrome": {
                     "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "chrome_android": {
                     "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -414,11 +430,11 @@
                 },
                 "opera": {
                     "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "opera_android": {
                     "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "safari": {
                     "version_added": "14"
@@ -428,14 +444,15 @@
                 },
                 "samsunginternet_android": {
                     "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "edge_blink": {
                     "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 }
             },
             "title": "MediaRecorderErrorEvent"
@@ -642,9 +659,11 @@
     "dom-mediarecorder-onerror": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
+            ],
+            "partial": [
+                "blink"
             ],
             "filename": "api/MediaRecorder.json",
             "name": "onerror",
@@ -652,10 +671,14 @@
             "summary": "The MediaRecorder interface's onerror event handler is called by the MediaStream Recording API when an error occurs. You can provide an event handler to deal with errors that occur while creating or using a media recorder.",
             "support": {
                 "chrome": {
-                    "version_added": "49"
+                    "version_added": "49",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "chrome_android": {
-                    "version_added": "49"
+                    "version_added": "49",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -670,10 +693,14 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "36"
+                    "version_added": "36",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "opera_android": {
-                    "version_added": "36"
+                    "version_added": "36",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "safari": {
                     "version_added": "14"
@@ -682,13 +709,19 @@
                     "version_added": "14"
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "5.0",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "webview_android": {
-                    "version_added": "49"
+                    "version_added": "49",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
                 }
             },
             "title": "MediaRecorder.onerror"
@@ -1479,12 +1512,10 @@
             "summary": "The MediaRecorderErrorEvent() constructor creates a new MediaRecorderErrorEvent object that represents an error that occurred during the recording of media by the MediaStream Recording API.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1499,12 +1530,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "opera_android": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "safari": {
                     "version_added": "14"
@@ -1513,15 +1542,13 @@
                     "version_added": "14"
                 },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 }
             },
             "title": "MediaRecorderErrorEvent()"
@@ -1539,12 +1566,10 @@
             "summary": "The read-only error property in the MediaRecorderErrorEvent interface is a DOMException object providing details about the exception that was thrown by a MediaRecorder instance.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1559,12 +1584,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "opera_android": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "safari": {
                     "version_added": "14"
@@ -1573,15 +1596,13 @@
                     "version_added": "14"
                 },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "Uses a generic event with an <code>error</code> property."
+                    "version_added": false
                 }
             },
             "title": "MediaRecorderErrorEvent.error"

@@ -3272,7 +3272,7 @@
             "summary": "The message event is fired on a MessagePort object when a message arrives on that channel.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "1"
                 },
                 "chrome_android": {
                     "version_added": "18"
@@ -4869,7 +4869,8 @@
                             "type": "preference",
                             "name": "#new-canvas-2d-api"
                         }
-                    ]
+                    ],
+                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
                 },
                 "chrome_android": {
                     "version_added": "86",
@@ -4878,7 +4879,8 @@
                             "type": "preference",
                             "name": "#new-canvas-2d-api"
                         }
-                    ]
+                    ],
+                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -4917,10 +4919,12 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
                 },
                 "safari": {
                     "version_added": "15"
@@ -4929,10 +4933,12 @@
                     "version_added": "15"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
                 },
                 "edge_blink": {
                     "version_added": "86",
@@ -4941,7 +4947,8 @@
                             "type": "preference",
                             "name": "#new-canvas-2d-api"
                         }
-                    ]
+                    ],
+                    "notes": "See <a href='https://crbug.com/1284417'>bug 1284417</a>."
                 }
             },
             "title": "CanvasRenderingContext2D.createConicGradient()"
@@ -5654,10 +5661,12 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/198416'>bug 198416</a>."
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/198416'>bug 198416</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -13653,62 +13662,6 @@
             "title": "DragEvent.dataTransfer"
         }
     ],
-    "event-contextmenu": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Element.json",
-            "name": "contextmenu_event",
-            "slug": "API/Element/contextmenu_event",
-            "summary": "The contextmenu event fires when the user attempts to open a context menu. This event is typically triggered by clicking the right mouse button, or by pressing the context menu key.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "10.5"
-                },
-                "opera_android": {
-                    "version_added": "11.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/213953'>bug 213953</a>."
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: contextmenu event"
-        }
-    ],
     "dom-elementinternals-checkvalidity": [
         {
             "engines": [
@@ -14320,10 +14273,12 @@
                     "version_added": "55"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/197960'>bug 197960</a>."
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/197960'>bug 197960</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": "12.0"
@@ -18121,6 +18076,7 @@
     "handler-onslotchange": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -18130,10 +18086,10 @@
             "summary": "The onslotchange property of the GlobalEventHandlers mixin is an event handler that processes slotchange events.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "edge": {
                     "version_added": false
@@ -18148,7 +18104,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "83"
                 },
                 "opera_android": {
                     "version_added": false
@@ -18163,10 +18119,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "97"
                 }
             },
             "title": "GlobalEventHandlers.onslotchange"
@@ -20377,6 +20333,9 @@
                 "blink",
                 "gecko"
             ],
+            "needsflag": [
+                "gecko"
+            ],
             "filename": "api/HTMLDialogElement.json",
             "name": "cancel_event",
             "slug": "API/HTMLDialogElement/cancel_event",
@@ -20392,10 +20351,26 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "78"
+                    "version_added": "78",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.dialog_element.enabled",
+                            "value_to_set": "true"
+                        }
+                    ],
+                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.dialog_element.enabled",
+                            "value_to_set": "true"
+                        }
+                    ],
+                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
                 },
                 "ie": {
                     "version_added": false
@@ -21149,10 +21124,12 @@
             "summary": "The HTMLElement.accessKeyLabel read-only property returns a String containing the element's browser-assigned access key (if any); otherwise it returns an empty string.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/393466'>bug 393466</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/393466'>bug 393466</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -21167,10 +21144,12 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/393466'>bug 393466</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/393466'>bug 393466</a>."
                 },
                 "safari": {
                     "version_added": "14"
@@ -21179,13 +21158,16 @@
                     "version_added": "14"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/393466'>bug 393466</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/393466'>bug 393466</a>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/393466'>bug 393466</a>."
                 }
             },
             "title": "HTMLElement.accessKeyLabel"
@@ -21227,10 +21209,12 @@
                     "version_added": "55"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/197960'>bug 197960</a>."
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/197960'>bug 197960</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": "12.0"
@@ -23043,10 +23027,12 @@
                     "version_added": "54"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/197958'>bug 197958</a>."
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/197958'>bug 197958</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": "12.0"
@@ -25383,7 +25369,7 @@
             "filename": "api/HTMLInputElement.json",
             "name": "showPicker",
             "slug": "API/HTMLInputElement/showPicker",
-            "summary": "The HTMLInputElement.showPicker() method returns a promise that resolves when a browser picker is shown to the user. It must be called in response to a user gesture such as a touch gesture or mouse click; otherwise it will reject. For security reasons, it also rejects when it's called in a cross-origin iframe.",
+            "summary": "The HTMLInputElement.showPicker() method shows a browser picker to the user.",
             "support": {
                 "chrome": {
                     "version_added": "99"
@@ -27451,10 +27437,12 @@
             "summary": "The HTMLMediaElement.fastSeek() method quickly seeks the media to the new time with precision tradeoff.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/648207'>bug 648207</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/648207'>bug 648207</a>."
                 },
                 "edge": {
                     "version_added": false
@@ -27469,10 +27457,12 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/648207'>bug 648207</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/648207'>bug 648207</a>."
                 },
                 "safari": {
                     "version_added": "8"
@@ -27481,13 +27471,16 @@
                     "version_added": "8"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/648207'>bug 648207</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/648207'>bug 648207</a>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/648207'>bug 648207</a>."
                 }
             },
             "title": "HTMLMediaElement.fastSeek()"
@@ -37445,7 +37438,7 @@
             "summary": "The close() method of the MessagePort interface disconnects the port, so it is no longer active. This stops the flow of messages to that port.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "1"
                 },
                 "chrome_android": {
                     "version_added": "18"
@@ -37514,7 +37507,7 @@
             "summary": "The onmessage event handler of the MessagePort interface is an EventListener, called whenever an MessageEvent of type message is fired on the port — that is, when the port receives a message.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "1"
                 },
                 "chrome_android": {
                     "version_added": "18"
@@ -37637,7 +37630,7 @@
             "summary": "The postMessage() method of the MessagePort interface sends a message from the port, and optionally, transfers ownership of objects to other browsing contexts.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "1"
                 },
                 "chrome_android": {
                     "version_added": "18"
@@ -37710,7 +37703,7 @@
             "summary": "The start() method of the MessagePort interface starts the sending of messages queued on the port. This method is only needed when using EventTarget.addEventListener; it is implied when using MessageChannel.onmessage.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "1"
                 },
                 "chrome_android": {
                     "version_added": "18"
@@ -37771,7 +37764,7 @@
             "summary": "The MessagePort interface of the Channel Messaging API represents one of the two ports of a MessageChannel, allowing messages to be sent from one port and listening out for them arriving at the other.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "1"
                 },
                 "chrome_android": {
                     "version_added": "18"
@@ -38381,10 +38374,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "3"
+                    "version_added": "2"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "4"
                 },
                 "ie": {
                     "version_added": false
@@ -47949,7 +47942,7 @@
             "filename": "api/Window.json",
             "name": "print",
             "slug": "API/Window/print",
-            "summary": "Opens the Print Dialog to print the current document.",
+            "summary": "Opens the print dialog to print the current document.",
             "support": {
                 "chrome": {
                     "version_added": "1",
@@ -50515,10 +50508,12 @@
             "summary": "The onoffline property of the WorkerGlobalScope interface represents an event handler to be called when the offline event occurs.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "deno": {
                     "version_added": false
@@ -50536,10 +50531,12 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "safari": {
                     "version_added": "8"
@@ -50548,13 +50545,16 @@
                     "version_added": "8"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 }
             },
             "title": "WorkerGlobalScope.onoffline"
@@ -50572,10 +50572,12 @@
             "summary": "The ononline property of the WorkerGlobalScope interface represents an event handler to be called when the online event occurs.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "deno": {
                     "version_added": false
@@ -50593,10 +50595,12 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "safari": {
                     "version_added": "8"
@@ -50605,13 +50609,16 @@
                     "version_added": "8"
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 }
             },
             "title": "WorkerGlobalScope.ononline"
