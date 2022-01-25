@@ -69,8 +69,12 @@
                 <h1>
 <a id="user-content-mdn-spec-links" class="anchor" href="#mdn-spec-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MDN Spec Links</h1>
 <p>This space holds JSON data for individual specs; the per-spec data maps fragment IDs from a particular spec to MDN articles which have <em>Specifications</em> sections that contain links to that spec and fragment ID.</p>
-<p><a href="https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.ts"><code>.mdn-spec-links.ts</code></a> is a TypeScript declaration defining the datatypes and structure of the JSON data.<br>
-<a href="https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.schema.json"><code>.mdn-spec-links.schema.json</code></a>, generated from the TypeScript, is a JSON Schema providing the same definitions.</p>
+<ul>
+<li>
+<a href="https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.ts"><code>.mdn-spec-links.ts</code></a>: TypeScript declaration defining the datatypes and structure of the JSON data</li>
+<li>
+<a href="https://github.com/w3c/mdn-spec-links/blob/HEAD/.mdn-spec-links.schema.json"><code>.mdn-spec-links.schema.json</code></a>: JSON Schema with the same definitions, generated from the TypeScript</li>
+</ul>
 <p>All data here is generated. So you don’t want to edit the data directly; rather, edit <a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data</a> data upstream, and <a href="https://developer.mozilla.org/docs/Web" rel="nofollow">https://developer.mozilla.org/docs/Web</a> article content.</p>
 <p>To regenerate the data, just type <code>make</code>. To build from local BCD and MDN clones:</p>
 <pre><code>BCD_REPO=/path/to/mdn/browser-compat-data MDN_REPO=/path/to/mdn/content make -e
@@ -152,8 +156,6 @@
 <a href="css-conditional-3.json">css-conditional-3</a> [<a href="less-than-2.html?spec=css-conditional-3">status</a>]</li>
 <li>
 <a href="css-conditional-4.json">css-conditional-4</a> [<a href="less-than-2.html?spec=css-conditional-4">status</a>]</li>
-<li>
-<a href="css-conditional.json">css-conditional</a> [<a href="less-than-2.html?spec=css-conditional">status</a>]</li>
 <li>
 <a href="css-contain.json">css-contain</a> [<a href="less-than-2.html?spec=css-contain">status</a>]</li>
 <li>
@@ -311,8 +313,6 @@
 <li>
 <a href="filter-effects.json">filter-effects</a> [<a href="less-than-2.html?spec=filter-effects">status</a>]</li>
 <li>
-<a href="frame-timing.json">frame-timing</a> [<a href="less-than-2.html?spec=frame-timing">status</a>]</li>
-<li>
 <a href="fullscreen.json">fullscreen</a> [<a href="less-than-2.html?spec=fullscreen">status</a>]</li>
 <li>
 <a href="gamepad-extensions.json">gamepad-extensions</a> [<a href="less-than-2.html?spec=gamepad-extensions">status</a>]</li>
@@ -392,8 +392,6 @@
 <a href="orientation-event.json">orientation-event</a> [<a href="less-than-2.html?spec=orientation-event">status</a>]</li>
 <li>
 <a href="orientation-sensor.json">orientation-sensor</a> [<a href="less-than-2.html?spec=orientation-sensor">status</a>]</li>
-<li>
-<a href="page-visibility.json">page-visibility</a> [<a href="less-than-2.html?spec=page-visibility">status</a>]</li>
 <li>
 <a href="paint-timing.json">paint-timing</a> [<a href="less-than-2.html?spec=paint-timing">status</a>]</li>
 <li>
