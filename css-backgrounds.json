@@ -62,9 +62,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "prefixed": [
+                "gecko",
                 "webkit"
             ],
             "filename": "css/properties/background-clip.json",
@@ -144,16 +142,26 @@
                         "notes": "Opera accepts alternate synonyms to its values: <code>padding</code>, <code>border</code>, and <code>content</code>."
                     }
                 ],
-                "safari": {
-                    "version_added": "3",
-                    "prefix": "-webkit-",
-                    "notes": "Safari accepts alternate synonyms to its values: <code>padding</code>, <code>border</code>, and <code>content</code>."
-                },
-                "safari_ios": {
-                    "version_added": "1",
-                    "prefix": "-webkit-",
-                    "notes": "Safari accepts alternate synonyms to its values: <code>padding</code>, <code>border</code>, and <code>content</code>."
-                },
+                "safari": [
+                    {
+                        "version_added": "14"
+                    },
+                    {
+                        "version_added": "3",
+                        "prefix": "-webkit-",
+                        "notes": "Safari accepts alternate synonyms to its values: <code>padding</code>, <code>border</code>, and <code>content</code>."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14"
+                    },
+                    {
+                        "version_added": "1",
+                        "prefix": "-webkit-",
+                        "notes": "Safari accepts alternate synonyms to its values: <code>padding</code>, <code>border</code>, and <code>content</code>."
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "1.0"
