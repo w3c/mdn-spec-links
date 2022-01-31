@@ -1,4 +1,76 @@
 {
+    "dom-window-onappinstalled": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/Window.json",
+            "name": "appinstalled_event",
+            "slug": "API/Window/appinstalled_event",
+            "summary": "The appinstalled event of the Web Manifest API is fired when the browser has successfully installed a page as an application.",
+            "support": {
+                "chrome": {
+                    "version_added": "64"
+                },
+                "chrome_android": {
+                    "version_added": "57"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "49",
+                    "version_removed": "76",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.manifest.onappinstall",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "49",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.manifest.onappinstall",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "57"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window: appinstalled event"
+        }
+    ],
     "display_override-member": [
         {
             "engines": [
@@ -81,10 +153,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "83"
+                    "version_added": "82"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "67"
                 },
                 "safari": {
                     "version_added": false

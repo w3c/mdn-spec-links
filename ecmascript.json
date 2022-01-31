@@ -25733,7 +25733,7 @@
                 },
                 "safari": [
                     {
-                        "version_added": "preview",
+                        "version_added": "15.2",
                         "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
                     },
                     {
@@ -25741,10 +25741,16 @@
                         "version_removed": "11"
                     }
                 ],
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11"
-                },
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "15.0",
                     "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
@@ -25883,7 +25889,7 @@
                 },
                 "safari": [
                     {
-                        "version_added": "preview",
+                        "version_added": "15.2",
                         "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
                     },
                     {
@@ -25891,10 +25897,16 @@
                         "version_removed": "11"
                     }
                 ],
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11"
-                },
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "15.0",
                     "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
@@ -26033,7 +26045,7 @@
                 },
                 "safari": [
                     {
-                        "version_added": "preview",
+                        "version_added": "15.2",
                         "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
                     },
                     {
@@ -26041,10 +26053,16 @@
                         "version_removed": "11"
                     }
                 ],
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "version_removed": "11"
-                },
+                "safari_ios": [
+                    {
+                        "version_added": "15.2",
+                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "version_removed": "11"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "15.0",
                     "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
@@ -35799,7 +35817,7 @@
                     "version_added": "80"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "66"
                 },
                 "safari": {
                     "version_added": false
@@ -43283,7 +43301,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/statements.json",
             "name": "namespace",
@@ -43321,10 +43340,10 @@
                     "version_added": "51"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "14.1"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"

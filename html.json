@@ -21012,7 +21012,7 @@
             "filename": "api/HTMLDocument.json",
             "name": "HTMLDocument",
             "slug": "API/HTMLDocument",
-            "summary": "The HTMLDocument interface, which may be accessed through the Window.HTMLDocument property, extends the Window.HTMLDocument property to include methods and properties that are specific to HTML documents.",
+            "summary": "For historical reasons, Window objects have a window.HTMLDocument property whose value is the Document interface. So you can think of HTMLDocument as an alias for Document, and you can find documentation for HTMLDocument members under the documentation for the Document interface.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -22989,6 +22989,59 @@
                 }
             },
             "title": "HTMLFormElement.reportValidity()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLInputElement.json",
+            "name": "reportValidity",
+            "slug": "API/HTMLInputElement/reportValidity",
+            "summary": "The reportValidity() method of the HTMLInputElement interface performs the same validity checking steps as the checkValidity() method. If the value is invalid, this method also fires the invalid event on the element, and (if the event isn't canceled) reports the problem to the user.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "64"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "27"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLInputElement.reportValidity()"
         }
     ],
     "dom-form-requestsubmit-dev": [
@@ -53788,9 +53841,6 @@
                 "gecko",
                 "webkit"
             ],
-            "prefixed": [
-                "webkit"
-            ],
             "filename": "css/selectors/autofill.json",
             "name": "autofill",
             "slug": "CSS/:autofill",
@@ -53853,17 +53903,22 @@
                 },
                 "safari": [
                     {
-                        "version_added": "preview"
+                        "version_added": "15"
                     },
                     {
                         "version_added": "3",
                         "prefix": "-webkit-"
                     }
                 ],
-                "safari_ios": {
-                    "version_added": "1",
-                    "prefix": "-webkit-"
-                },
+                "safari_ios": [
+                    {
+                        "version_added": "15"
+                    },
+                    {
+                        "version_added": "1",
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "1.0",
                     "prefix": "-webkit-"
