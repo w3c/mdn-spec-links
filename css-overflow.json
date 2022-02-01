@@ -396,9 +396,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "webkit"
-            ],
             "filename": "css/properties/scroll-behavior.json",
             "name": "scroll-behavior",
             "slug": "CSS/scroll-behavior",
@@ -430,7 +427,7 @@
                 },
                 "safari": [
                     {
-                        "version_added": "preview"
+                        "version_added": "15.4"
                     },
                     {
                         "version_added": "14",
@@ -443,15 +440,20 @@
                         ]
                     }
                 ],
-                "safari_ios": {
-                    "version_added": "14",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "CSSOM View Smooth Scrolling"
-                        }
-                    ]
-                },
+                "safari_ios": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "version_added": "14",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "CSSOM View Smooth Scrolling"
+                            }
+                        ]
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "8.0"
                 },
