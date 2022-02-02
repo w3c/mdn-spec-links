@@ -1,4 +1,57 @@
 {
+    "sensor-onactivate": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/Sensor.json",
+            "name": "activate_event",
+            "slug": "API/Sensor/activate_event",
+            "summary": "The activate event is fired when a sensor becomes activated. It means that it will start obtaining readings.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Sensor: activate event"
+        }
+    ],
     "sensor-activated": [
         {
             "engines": [
@@ -50,6 +103,59 @@
                 }
             },
             "title": "Sensor.activated"
+        }
+    ],
+    "sensor-onerror": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/Sensor.json",
+            "name": "error_event",
+            "slug": "API/Sensor/error_event",
+            "summary": "The error event is fired when an exception occurs on a sensor.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Sensor: error event"
         }
     ],
     "sensor-has-reading": [
@@ -105,121 +211,15 @@
             "title": "Sensor.hasReading"
         }
     ],
-    "sensor-onactivate": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Sensor.json",
-            "name": "onactivate",
-            "slug": "API/Sensor/onactivate",
-            "summary": "The onactivate event handler is called when one of the Sensor interface's child interfaces becomes active.",
-            "support": {
-                "chrome": {
-                    "version_added": "67"
-                },
-                "chrome_android": {
-                    "version_added": "67"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "54"
-                },
-                "opera_android": {
-                    "version_added": "48"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "9.0"
-                },
-                "webview_android": {
-                    "version_added": "67"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Sensor.onactivate"
-        }
-    ],
-    "sensor-onerror": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Sensor.json",
-            "name": "onerror",
-            "slug": "API/Sensor/onerror",
-            "summary": "The onerror event handler is called when an error occurs on one of the child interfaces of the Sensor interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "67"
-                },
-                "chrome_android": {
-                    "version_added": "67"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "54"
-                },
-                "opera_android": {
-                    "version_added": "48"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "9.0"
-                },
-                "webview_android": {
-                    "version_added": "67"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Sensor.onerror"
-        }
-    ],
     "sensor-onreading": [
         {
             "engines": [
                 "blink"
             ],
             "filename": "api/Sensor.json",
-            "name": "onreading",
-            "slug": "API/Sensor/onreading",
-            "summary": "The onreading event handler is called when a reading is taken on one of the child interfaces of the Sensor interface.",
+            "name": "reading_event",
+            "slug": "API/Sensor/reading_event",
+            "summary": "The reading event is fired when a new reading is available on a sensor.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -261,7 +261,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Sensor.onreading"
+            "title": "Sensor: reading event"
         }
     ],
     "sensor-start": [

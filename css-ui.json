@@ -114,9 +114,6 @@
                 "gecko",
                 "webkit"
             ],
-            "prefixed": [
-                "webkit"
-            ],
             "filename": "css/properties/appearance.json",
             "name": "appearance",
             "slug": "CSS/appearance",
@@ -200,7 +197,7 @@
                 ],
                 "safari": [
                     {
-                        "version_added": "preview"
+                        "version_added": "15.4"
                     },
                     {
                         "version_added": "3",
@@ -208,11 +205,16 @@
                         "prefix": "-webkit-"
                     }
                 ],
-                "safari_ios": {
-                    "version_added": "1",
-                    "partial_implementation": true,
-                    "prefix": "-webkit-"
-                },
+                "safari_ios": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "version_added": "1",
+                        "partial_implementation": true,
+                        "prefix": "-webkit-"
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "14.0"
@@ -380,7 +382,7 @@
             "filename": "svg/attributes/presentation.json",
             "name": "cursor",
             "slug": "SVG/Attribute/cursor",
-            "summary": "« SVG Attribute reference home",
+            "summary": "SVG Attribute reference home",
             "support": {
                 "chrome": {
                     "version_added": null

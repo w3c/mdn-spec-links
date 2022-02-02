@@ -669,11 +669,11 @@
     "the-mask-clip": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "prefixed": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "css/properties/mask-clip.json",
             "name": "mask-clip",
@@ -708,14 +708,24 @@
                     "prefix": "-webkit-",
                     "version_added": "14"
                 },
-                "safari": {
-                    "prefix": "-webkit-",
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "prefix": "-webkit-",
-                    "version_added": "3.2"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "4"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "3.2"
+                    }
+                ],
                 "samsunginternet_android": {
                     "prefix": "-webkit-",
                     "version_added": "1.0"
@@ -735,7 +745,8 @@
     "the-mask-composite": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/mask-composite.json",
             "name": "mask-composite",
@@ -771,11 +782,11 @@
                     "notes": "See also <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-composite'><code>-webkit-mask-composite</code></a> for a similar non-standard property that uses different keywords."
                 },
                 "safari": {
-                    "version_added": false,
+                    "version_added": "15.4",
                     "notes": "See also <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-composite'><code>-webkit-mask-composite</code></a> for a similar non-standard property that uses different keywords."
                 },
                 "safari_ios": {
-                    "version_added": false,
+                    "version_added": "15.4",
                     "notes": "See also <a href='https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-composite'><code>-webkit-mask-composite</code></a> for a similar non-standard property that uses different keywords."
                 },
                 "samsunginternet_android": {
@@ -797,11 +808,11 @@
     "the-mask-image": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "prefixed": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "css/properties/mask-image.json",
             "name": "mask-image",
@@ -838,16 +849,26 @@
                     "prefix": "-webkit-",
                     "version_added": "14"
                 },
-                "safari": {
-                    "prefix": "-webkit-",
-                    "version_added": "4",
-                    "notes": "Initially, Safari supported only <code>-webkit-</code> prefixed values for gradients (such as <code>-webkit-linear-gradient()</code>). Later, support for unprefixed values was added."
-                },
-                "safari_ios": {
-                    "prefix": "-webkit-",
-                    "version_added": "3.2",
-                    "notes": "Initially, Safari supported only <code>-webkit-</code> prefixed values for gradients (such as <code>-webkit-linear-gradient()</code>). Later, support for unprefixed values was added."
-                },
+                "safari": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "4",
+                        "notes": "Initially, Safari supported only <code>-webkit-</code> prefixed values for gradients (such as <code>-webkit-linear-gradient()</code>). Later, support for unprefixed values was added."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "3.2",
+                        "notes": "Initially, Safari supported only <code>-webkit-</code> prefixed values for gradients (such as <code>-webkit-linear-gradient()</code>). Later, support for unprefixed values was added."
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "1.0",
                     "prefix": "-webkit-"
@@ -869,7 +890,8 @@
     "the-mask-mode": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/mask-mode.json",
             "name": "mask-mode",
@@ -901,10 +923,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "15.4"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "15.4"
                 },
                 "samsunginternet_android": {
                     "version_added": false
@@ -922,11 +944,11 @@
     "the-mask-origin": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "prefixed": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "css/properties/mask-origin.json",
             "name": "mask-origin",
@@ -965,16 +987,26 @@
                     "version_added": "14",
                     "notes": "The <code>margin-box</code> value is unsupported."
                 },
-                "safari": {
-                    "prefix": "-webkit-",
-                    "version_added": "4",
-                    "notes": "The <code>margin-box</code> value is unsupported."
-                },
-                "safari_ios": {
-                    "prefix": "-webkit-",
-                    "version_added": "3.2",
-                    "notes": "The <code>margin-box</code> value is unsupported."
-                },
+                "safari": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "4",
+                        "notes": "The <code>margin-box</code> value is unsupported."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "3.2",
+                        "notes": "The <code>margin-box</code> value is unsupported."
+                    }
+                ],
                 "samsunginternet_android": {
                     "prefix": "-webkit-",
                     "version_added": "1.0",
@@ -997,11 +1029,11 @@
     "the-mask-position": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "prefixed": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "css/properties/mask-position.json",
             "name": "mask-position",
@@ -1036,14 +1068,24 @@
                     "prefix": "-webkit-",
                     "version_added": "14"
                 },
-                "safari": {
-                    "prefix": "-webkit-",
-                    "version_added": "3.1"
-                },
-                "safari_ios": {
-                    "prefix": "-webkit-",
-                    "version_added": "2"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "3.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "2"
+                    }
+                ],
                 "samsunginternet_android": {
                     "prefix": "-webkit-",
                     "version_added": "1.0"
@@ -1063,11 +1105,11 @@
     "the-mask-repeat": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "prefixed": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "css/properties/mask-repeat.json",
             "name": "mask-repeat",
@@ -1102,14 +1144,24 @@
                     "prefix": "-webkit-",
                     "version_added": "14"
                 },
-                "safari": {
-                    "prefix": "-webkit-",
-                    "version_added": "3.1"
-                },
-                "safari_ios": {
-                    "prefix": "-webkit-",
-                    "version_added": "2"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "3.1"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "2"
+                    }
+                ],
                 "samsunginternet_android": {
                     "prefix": "-webkit-",
                     "version_added": "1.0"
@@ -1129,11 +1181,11 @@
     "the-mask-size": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "prefixed": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "css/properties/mask-size.json",
             "name": "mask-size",
@@ -1168,14 +1220,24 @@
                     "prefix": "-webkit-",
                     "version_added": "14"
                 },
-                "safari": {
-                    "prefix": "-webkit-",
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "prefix": "-webkit-",
-                    "version_added": "2"
-                },
+                "safari": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "4"
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "15.4"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "2"
+                    }
+                ],
                 "samsunginternet_android": {
                     "prefix": "-webkit-",
                     "version_added": "1.0"
