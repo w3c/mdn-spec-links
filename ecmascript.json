@@ -569,7 +569,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "find",
             "slug": "JavaScript/Reference/Global_Objects/Array/find",
-            "summary": "The find() method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.",
+            "summary": "The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.",
             "support": {
                 "chrome": {
                     "version_added": "45"
@@ -2626,7 +2626,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "Array",
             "slug": "JavaScript/Reference/Global_Objects/Array",
-            "summary": "The JavaScript Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.",
+            "summary": "The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -4548,7 +4548,7 @@
             "filename": "javascript/builtins/Atomics.json",
             "name": "sub",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/sub",
-            "summary": "The static Atomics.sub() method substracts a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
+            "summary": "The static Atomics.sub() method subtracts a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
                 "chrome": [
                     {
@@ -8762,7 +8762,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "getTime",
             "slug": "JavaScript/Reference/Global_Objects/Date/getTime",
-            "summary": "The getTime() method returns the number of milliseconds* since the Unix Epoch.",
+            "summary": "The getTime() method returns the number of milliseconds since the ECMAScript epoch.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -26096,7 +26096,7 @@
             "filename": "javascript/builtins/SharedArrayBuffer.json",
             "name": "SharedArrayBuffer",
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer",
-            "summary": "The SharedArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer, similar to the ArrayBuffer object, but in a way that they can be used to create views on shared memory. Unlike an ArrayBuffer, a SharedArrayBuffer cannot become detached.",
+            "summary": "The SharedArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer, similar to the ArrayBuffer object, but in a way that they can be used to create views on shared memory. A SharedArrayBuffer is not a Transferable Object, unlike an ArrayBuffer which is transferable.",
             "support": {
                 "chrome": [
                     {
@@ -27431,7 +27431,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "raw",
             "slug": "JavaScript/Reference/Global_Objects/String/raw",
-            "summary": "The static String.raw() method is a tag function of template literals. This is similar to the r prefix in Python, or the @ prefix in C# for string literals. (But it is not identical; see explanations in this issue.) It's used to get the raw string form of template literals, that is, substitutions (e.g. ${foo}) are processed, but escapes (e.g. \\n) are not.",
+            "summary": "The static String.raw() method is a tag function of template literals. This is similar to the r prefix in Python, or the @ prefix in C# for string literals. It's used to get the raw string form of template literals, that is, substitutions (e.g. ${foo}) are processed, but escapes (e.g. \\n) are not.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -39726,65 +39726,6 @@
                 }
             },
             "title": "Bitwise OR (|)"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "javascript/operators/right_shift.json",
-            "name": "right_shift",
-            "slug": "JavaScript/Reference/Operators/Right_shift",
-            "summary": "The right shift operator (>>) shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name \"sign-propagating\".",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "3"
-                },
-                "nodejs": {
-                    "version_added": "0.10.0"
-                },
-                "opera": {
-                    "version_added": "3"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Right shift (>>)"
         }
     ],
     "prod-BitwiseXORExpression": [
@@ -41984,6 +41925,67 @@
                 }
             },
             "title": "Property accessors"
+        }
+    ],
+    "sec-signed-right-shift-operator": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/right_shift.json",
+            "name": "right_shift",
+            "slug": "JavaScript/Reference/Operators/Right_shift",
+            "summary": "The right shift operator (>>) shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name \"sign-propagating\".",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "3"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "opera": {
+                    "version_added": "3"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Right shift (>>)"
         }
     ],
     "sec-subtraction-operator-minus": [

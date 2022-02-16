@@ -91,7 +91,7 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": null
@@ -118,7 +118,7 @@
             "filename": "html/manifest/display.json",
             "name": "display",
             "slug": "Manifest/display",
-            "summary": "The display member is a string that determines the developers’ preferred display mode for the website. The display mode changes how much of browser UI is shown to the user and can range from browser (when the full browser window is shown) to fullscreen (when the app is full-screened).",
+            "summary": "The display member is a string that determines the developers’ preferred display mode for the website. The display mode changes how much of browser UI is shown to the user and can range from browser (when the full browser window is shown) to fullscreen (when the app is fullscreened).",
             "support": {
                 "chrome": {
                     "version_added": "39"
@@ -169,7 +169,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -215,8 +216,8 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/183937'>bug 183937</a>."
+                    "version_added": "15.4",
+                    "notes": "Only used when no <code>apple-touch-icon</code> is present with <code>\"purpose\": \"any\"</code> or no <code>\"purpose\"</code> key."
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -492,7 +493,7 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": null
@@ -751,7 +752,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -797,7 +799,7 @@
                     "version_added": null
                 },
                 "safari_ios": {
-                    "version_added": null
+                    "version_added": "15"
                 },
                 "samsunginternet_android": {
                     "version_added": "5.0"

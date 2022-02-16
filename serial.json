@@ -105,112 +105,6 @@
             "title": "Serial.getPorts()"
         }
     ],
-    "dom-serial-onconnect": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Serial.json",
-            "name": "onconnect",
-            "slug": "API/Serial/onconnect",
-            "summary": "The onconnect event handler of the Serial interface is called when a port has been connected from a device. This method receives an Event object. The target of this event is the SerialPort interface that has been disconnected.",
-            "support": {
-                "chrome": {
-                    "version_added": "89"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "75"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "89"
-                }
-            },
-            "title": "Serial.onconnect"
-        }
-    ],
-    "dom-serial-ondisconnect": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Serial.json",
-            "name": "ondisconnect",
-            "slug": "API/Serial/ondisconnect",
-            "summary": "The ondisconnect EventHandler of the Serial interface is called when the port has been disconnected from the device. This method receives an Event object. The target of this event is the SerialPort interface that has been disconnected.",
-            "support": {
-                "chrome": {
-                    "version_added": "89"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "75"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "89"
-                }
-            },
-            "title": "Serial.ondisconnect"
-        }
-    ],
     "dom-serial-requestport": [
         {
             "engines": [
@@ -370,6 +264,218 @@
             "title": "SerialPort.close()"
         }
     ],
+    "dfn-connect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SerialPort.json",
+            "name": "connect_event",
+            "slug": "API/SerialPort/connect_event",
+            "summary": "The connect event of the SerialPort interface is fired when a port has connected to the device. This event is only fired for ports associated with removable devices such as those connected via USB.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "SerialPort: connect event"
+        }
+    ],
+    "dom-serialport-onconnect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SerialPort.json",
+            "name": "connect_event",
+            "slug": "API/SerialPort/connect_event",
+            "summary": "The connect event of the SerialPort interface is fired when a port has connected to the device. This event is only fired for ports associated with removable devices such as those connected via USB.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "SerialPort: connect event"
+        }
+    ],
+    "dfn-disconnect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SerialPort.json",
+            "name": "disconnect_event",
+            "slug": "API/SerialPort/disconnect_event",
+            "summary": "The disconnect event of the SerialPort interface is fired when the port has disconnected from the device. This event is only fired for ports associated with removable devices such as those connected via USB.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "SerialPort: disconnect"
+        }
+    ],
+    "dom-serialport-ondisconnect": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SerialPort.json",
+            "name": "disconnect_event",
+            "slug": "API/SerialPort/disconnect_event",
+            "summary": "The disconnect event of the SerialPort interface is fired when the port has disconnected from the device. This event is only fired for ports associated with removable devices such as those connected via USB.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "SerialPort: disconnect"
+        }
+    ],
     "dom-serialport-getinfo": [
         {
             "engines": [
@@ -474,112 +580,6 @@
                 }
             },
             "title": "SerialPort.getSignals()"
-        }
-    ],
-    "dom-serialport-onconnect": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/SerialPort.json",
-            "name": "onconnect",
-            "slug": "API/SerialPort/onconnect",
-            "summary": "The onconnect event handler of the SerialPort interface is called when the port has disconnected from the device. This method receives an Event object. This event is only fired for ports associated with removable devices such as those connected via USB. This event bubbles to the instance of Serial that returned this interface..",
-            "support": {
-                "chrome": {
-                    "version_added": "89"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "75"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "89"
-                }
-            },
-            "title": "SerialPort.onconnect"
-        }
-    ],
-    "dom-serialport-ondisconnect": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/SerialPort.json",
-            "name": "ondisconnect",
-            "slug": "API/SerialPort/ondisconnect",
-            "summary": "The ondisconnect event handler of the SerialPort interface is called when the port has disconnected from the device. This method receives an Event object. This event is only fired for ports associated with removable devices such as those connected via USB. This event bubbles to the instance of Serial that returned this interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "89"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "75"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "89"
-                }
-            },
-            "title": "SerialPort.ondisconnect"
         }
     ],
     "dom-serialport-open": [

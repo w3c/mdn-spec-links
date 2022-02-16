@@ -1,4 +1,110 @@
 {
+    "eventdef-bluetooth-availabilitychanged": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/Bluetooth.json",
+            "name": "availabilitychanged_event",
+            "slug": "API/Bluetooth/availabilitychanged_event",
+            "summary": "The availabilitychanged event fires when the Bluetooth system as a whole becomes available or unavailable to the User Agent.",
+            "support": {
+                "chrome": {
+                    "version_added": "56"
+                },
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "43"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bluetooth: availabilitychanged event"
+        }
+    ],
+    "dom-bluetooth-onavailabilitychanged": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/Bluetooth.json",
+            "name": "availabilitychanged_event",
+            "slug": "API/Bluetooth/availabilitychanged_event",
+            "summary": "The availabilitychanged event fires when the Bluetooth system as a whole becomes available or unavailable to the User Agent.",
+            "support": {
+                "chrome": {
+                    "version_added": "56"
+                },
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "43"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Bluetooth: availabilitychanged event"
+        }
+    ],
     "dom-bluetooth-getavailability": [
         {
             "engines": [
@@ -136,159 +242,6 @@
             "title": "Bluetooth.getDevices()"
         }
     ],
-    "bluetooth": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Bluetooth.json",
-            "name": "onavailabilitychanged",
-            "slug": "API/Bluetooth/onavailabilitychanged",
-            "summary": "The onavailabilitychanged property of the Bluetooth interface is an event handler that processes availabilitychanged events that fire when the Bluetooth system as a whole becomes available or unavailable to the User Agent.",
-            "support": {
-                "chrome": {
-                    "version_added": "56"
-                },
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "43"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Bluetooth.onavailabilitychanged"
-        },
-        {
-            "engines": [
-                "blink"
-            ],
-            "needsflag": [
-                "blink"
-            ],
-            "filename": "api/Bluetooth.json",
-            "name": "Bluetooth",
-            "slug": "API/Bluetooth",
-            "summary": "The Bluetooth interface of the Web Bluetooth API returns a Promise to a BluetoothDevice object with the specified options.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "partial_implementation": true,
-                        "notes": "Before Chrome 70, this feature was only supported in macOS.  In Chrome 70, support was added for Windows 10. Linux support is not enabled by default."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "partial_implementation": true,
-                        "notes": "Before Opera 57, this feature was only supported in macOS.  In Opera 57, support was added for Windows 10. Linux support is not enabled by default."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1100993'>bug 1100993</a>."
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "partial_implementation": true,
-                        "notes": "Before Chrome 70, this feature was only supported in macOS.  In Chrome 70, support was added for Windows 10. Linux support is not enabled by default."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "title": "Bluetooth"
-        }
-    ],
     "dom-bluetooth-referringdevice": [
         {
             "engines": [
@@ -393,6 +346,108 @@
                 }
             },
             "title": "Bluetooth.requestDevice()"
+        }
+    ],
+    "bluetooth": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "needsflag": [
+                "blink"
+            ],
+            "filename": "api/Bluetooth.json",
+            "name": "Bluetooth",
+            "slug": "API/Bluetooth",
+            "summary": "The Bluetooth interface of the Web Bluetooth API returns a Promise to a BluetoothDevice object with the specified options.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "56",
+                        "partial_implementation": true,
+                        "notes": "Before Chrome 70, this feature was only supported in macOS.  In Chrome 70, support was added for Windows 10. Linux support is not enabled by default."
+                    },
+                    {
+                        "version_added": "56",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "43",
+                        "partial_implementation": true,
+                        "notes": "Before Opera 57, this feature was only supported in macOS.  In Opera 57, support was added for Windows 10. Linux support is not enabled by default."
+                    },
+                    {
+                        "version_added": "43",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1100993'>bug 1100993</a>."
+                },
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Before Chrome 70, this feature was only supported in macOS.  In Chrome 70, support was added for Windows 10. Linux support is not enabled by default."
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "title": "Bluetooth"
         }
     ],
     "dom-bluetoothcharacteristicproperties-authenticatedsignedwrites": [

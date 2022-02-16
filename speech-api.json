@@ -646,7 +646,61 @@
             "title": "SpeechRecognition.abort()"
         }
     ],
-    "speechreco-events": [
+    "eventdef-speechrecognition-audioend": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "audioend_event",
+            "slug": "API/SpeechRecognition/audioend_event",
+            "summary": "The audioend event of the Web Speech API is fired when the user agent has finished capturing audio for speech recognition.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: audioend event"
+        }
+    ],
+    "dom-speechrecognition-onaudioend": [
         {
             "engines": [
                 "blink",
@@ -701,6 +755,60 @@
         }
     ],
     "eventdef-speechrecognition-audiostart": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "audiostart_event",
+            "slug": "API/SpeechRecognition/audiostart_event",
+            "summary": "The audiostart event of the Web Speech API is fired when the user agent has started to capture audio for speech recognition.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: audiostart event"
+        }
+    ],
+    "dom-speechrecognition-onaudiostart": [
         {
             "engines": [
                 "blink",
@@ -862,7 +970,115 @@
             "title": "SpeechRecognition: end event"
         }
     ],
+    "dom-speechrecognition-onend": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "end_event",
+            "slug": "API/SpeechRecognition/end_event",
+            "summary": "The end event of the Web Speech API SpeechRecognition object is fired when the speech recognition service has disconnected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: end event"
+        }
+    ],
     "eventdef-speechrecognition-error": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "error_event",
+            "slug": "API/SpeechRecognition/error_event",
+            "summary": "The error event of the Web Speech API SpeechRecognition object is fired when a speech recognition error occurs.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: error event"
+        }
+    ],
+    "dom-speechrecognition-onerror": [
         {
             "engines": [
                 "blink",
@@ -1185,222 +1401,6 @@
             "title": "SpeechRecognition: nomatch event"
         }
     ],
-    "dom-speechrecognition-onaudioend": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onaudioend",
-            "slug": "API/SpeechRecognition/onaudioend",
-            "summary": "The onaudioend property of the SpeechRecognition interface represents an event handler that will run when the user agent has finished capturing audio (when the audioend event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onaudioend"
-        }
-    ],
-    "dom-speechrecognition-onaudiostart": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onaudiostart",
-            "slug": "API/SpeechRecognition/onaudiostart",
-            "summary": "The onaudiostart property of the SpeechRecognition interface represents an event handler that will run when the user agent has started to capture audio (when the audiostart event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onaudiostart"
-        }
-    ],
-    "dom-speechrecognition-onend": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onend",
-            "slug": "API/SpeechRecognition/onend",
-            "summary": "The onend property of the SpeechRecognition interface represents an event handler that will run when the speech recognition service has disconnected (when the end event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onend"
-        }
-    ],
-    "dom-speechrecognition-onerror": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onerror",
-            "slug": "API/SpeechRecognition/onerror",
-            "summary": "The onerror property of the SpeechRecognition interface represents an event handler that will run when a speech recognition error occurs (when the error event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onerror"
-        }
-    ],
     "dom-speechrecognition-onnomatch": [
         {
             "engines": [
@@ -1408,9 +1408,9 @@
                 "webkit"
             ],
             "filename": "api/SpeechRecognition.json",
-            "name": "onnomatch",
-            "slug": "API/SpeechRecognition/onnomatch",
-            "summary": "The onnomatch property of the SpeechRecognition interface represents an event handler that will run when the speech recognition service returns a final result with no significant recognition (when the nomatch event fires.)",
+            "name": "nomatch_event",
+            "slug": "API/SpeechRecognition/nomatch_event",
+            "summary": "The nomatch event of the Web Speech API is fired when the speech recognition service returns a final result with no significant recognition.",
             "support": {
                 "chrome": {
                     "version_added": "33"
@@ -1452,334 +1452,64 @@
                     "version_added": "79"
                 }
             },
-            "title": "SpeechRecognition.onnomatch"
-        }
-    ],
-    "dom-speechrecognition-onresult": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onresult",
-            "slug": "API/SpeechRecognition/onresult",
-            "summary": "The onresult property of the SpeechRecognition interface represents an event handler that will run when the speech recognition service returns a result — a word or phrase has been positively recognized and this has been communicated back to the app (when the result event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onresult"
-        }
-    ],
-    "dom-speechrecognition-onsoundend": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onsoundend",
-            "slug": "API/SpeechRecognition/onsoundend",
-            "summary": "The onsoundend property of the SpeechRecognition interface represents an event handler that will run when any sound — recognizable speech or not — has stopped being detected (when the soundend event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onsoundend"
-        }
-    ],
-    "dom-speechrecognition-onsoundstart": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onsoundstart",
-            "slug": "API/SpeechRecognition/onsoundstart",
-            "summary": "The onsoundstart property of the SpeechRecognition interface represents an event handler that will run when any sound — recognizable speech or not — has been detected (when the soundstart event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onsoundstart"
-        }
-    ],
-    "dom-speechrecognition-onspeechend": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onspeechend",
-            "slug": "API/SpeechRecognition/onspeechend",
-            "summary": "The onspeechend property of the SpeechRecognition interface represents an event handler that will run when speech recognized by the speech recognition service has stopped being detected (when the speechend event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onspeechend"
-        }
-    ],
-    "dom-speechrecognition-onspeechstart": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onspeechstart",
-            "slug": "API/SpeechRecognition/onspeechstart",
-            "summary": "The onspeechstart property of the SpeechRecognition interface represents an event handler that will run when sound recognized by the speech recognition service as speech has been detected (when the speechstart event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onspeechstart"
-        }
-    ],
-    "dom-speechrecognition-onstart": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "onstart",
-            "slug": "API/SpeechRecognition/onstart",
-            "summary": "The onstart property of the SpeechRecognition interface represents an event handler that will run when the speech recognition service has begun listening to incoming audio with intent to recognize grammars associated with the current SpeechRecognition (when the start event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition.onstart"
+            "title": "SpeechRecognition: nomatch event"
         }
     ],
     "eventdef-speechrecognition-result": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "result_event",
+            "slug": "API/SpeechRecognition/result_event",
+            "summary": "The result event of the Web Speech API is fired when the speech recognition service returns a result — a word or phrase has been positively recognized and this has been communicated back to the app",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: result event"
+        }
+    ],
+    "dom-speechrecognition-onresult": [
         {
             "engines": [
                 "blink",
@@ -1887,7 +1617,115 @@
             "title": "SpeechRecognition: soundend event"
         }
     ],
+    "dom-speechrecognition-onsoundend": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "soundend_event",
+            "slug": "API/SpeechRecognition/soundend_event",
+            "summary": "The soundend event of the Web Speech API is fired when any sound — recognizable speech or not — has stopped being detected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: soundend event"
+        }
+    ],
     "eventdef-speechrecognition-soundstart": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "soundstart_event",
+            "slug": "API/SpeechRecognition/soundstart_event",
+            "summary": "The soundstart event of the Web Speech API is fired when any sound — recognizable speech or not — has been detected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: soundstart event"
+        }
+    ],
+    "dom-speechrecognition-onsoundstart": [
         {
             "engines": [
                 "blink",
@@ -1995,7 +1833,115 @@
             "title": "SpeechRecognition: speechend event"
         }
     ],
+    "dom-speechrecognition-onspeechend": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "speechend_event",
+            "slug": "API/SpeechRecognition/speechend_event",
+            "summary": "The speechend event of the Web Speech API is fired when speech recognized by the speech recognition service has stopped being detected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: speechend event"
+        }
+    ],
     "eventdef-speechrecognition-speechstart": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "speechstart_event",
+            "slug": "API/SpeechRecognition/speechstart_event",
+            "summary": "The speechstart event of the Web Speech API is fired when sound recognized by the speech recognition service as speech has been detected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: speechstart event"
+        }
+    ],
+    "dom-speechrecognition-onspeechstart": [
         {
             "engines": [
                 "blink",
@@ -2104,6 +2050,60 @@
         }
     ],
     "eventdef-speechrecognition-start": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "start_event",
+            "slug": "API/SpeechRecognition/start_event",
+            "summary": "The start event of the Web Speech API SpeechRecognition object is fired when the speech recognition service has begun listening to incoming audio with intent to recognize grammars associated with the current SpeechRecognition.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: start event"
+        }
+    ],
+    "dom-speechrecognition-onstart": [
         {
             "engines": [
                 "blink",
@@ -3270,60 +3270,6 @@
             "title": "SpeechSynthesis.getVoices()"
         }
     ],
-    "dom-speechsynthesis-onvoiceschanged": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/SpeechSynthesis.json",
-            "name": "onvoiceschanged",
-            "slug": "API/SpeechSynthesis/onvoiceschanged",
-            "summary": "The onvoiceschanged property of the SpeechSynthesis interface represents an event handler that will run when the list of SpeechSynthesisVoice objects that would be returned by the SpeechSynthesis.getVoices() method has changed (when the voiceschanged event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesis.onvoiceschanged"
-        }
-    ],
     "dom-speechsynthesis-pause": [
         {
             "engines": [
@@ -3661,8 +3607,7 @@
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/SpeechSynthesis.json",
             "name": "voiceschanged_event",
@@ -3694,10 +3639,64 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "7"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "7"
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesis: voiceschanged event"
+        }
+    ],
+    "dom-speechsynthesis-onvoiceschanged": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/SpeechSynthesis.json",
+            "name": "voiceschanged_event",
+            "slug": "API/SpeechSynthesis/voiceschanged_event",
+            "summary": "The voiceschanged event of the Web Speech API is fired when the list of SpeechSynthesisVoice objects that would be returned by the SpeechSynthesis.getVoices() method has changed (when the voiceschanged event fires.)",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "62"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "3.0"
@@ -4330,7 +4329,124 @@
                 }
             },
             "title": "SpeechSynthesisUtterance: boundary event"
-        },
+        }
+    ],
+    "dom-speechsynthesisutterance-onboundary": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "partial": [
+                "blink"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "boundary_event",
+            "slug": "API/SpeechSynthesisUtterance/boundary_event",
+            "summary": "The boundary event of the Web Speech API is fired when the spoken utterance reaches a word or sentence boundary.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33",
+                    "partial_implementation": true,
+                    "notes": "The <code>boundary</code> event does not fire as expected. See <a href='https://crbug.com/1122143'>bug 1122143</a>."
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "62"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: boundary event"
+        }
+    ],
+    "eventdef-speechsynthesisutterance-end": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "end_event",
+            "slug": "API/SpeechSynthesisUtterance/end_event",
+            "summary": "The end event of the Web Speech API SpeechSynthesisUtterance object is fired when the utterance has finished being spoken.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "62"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: end event"
+        }
+    ],
+    "dom-speechsynthesisutterance-onend": [
         {
             "engines": [
                 "blink",
@@ -4386,6 +4502,61 @@
         }
     ],
     "eventdef-speechsynthesisutterance-error": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "error_event",
+            "slug": "API/SpeechSynthesisUtterance/error_event",
+            "summary": "The error event of the Web Speech API SpeechSynthesisUtterance object is fired when an error occurs that prevents the utterance from being successfully spoken.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "62"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: error event"
+        }
+    ],
+    "dom-speechsynthesisutterance-onerror": [
         {
             "engines": [
                 "blink",
@@ -4550,176 +4721,6 @@
             "title": "SpeechSynthesisUtterance: mark event"
         }
     ],
-    "dom-speechsynthesisutterance-onboundary": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "partial": [
-                "blink"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "onboundary",
-            "slug": "API/SpeechSynthesisUtterance/onboundary",
-            "summary": "The onboundary property of the SpeechSynthesisUtterance interface represents an event handler that will run when the spoken utterance reaches a word or sentence boundary (when the boundary event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33",
-                    "partial_implementation": true,
-                    "notes": "The <code>boundary</code> event does not fire as expected. See <a href='https://crbug.com/1122143'>bug 1122143</a>."
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance.onboundary"
-        }
-    ],
-    "dom-speechsynthesisutterance-onend": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "onend",
-            "slug": "API/SpeechSynthesisUtterance/onend",
-            "summary": "The onend property of the SpeechSynthesisUtterance interface represents an event handler that will run when the utterance has finished being spoken (when the end event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance.onend"
-        }
-    ],
-    "dom-speechsynthesisutterance-onerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "onerror",
-            "slug": "API/SpeechSynthesisUtterance/onerror",
-            "summary": "The onerror property of the SpeechSynthesisUtterance interface represents an event handler that will run when an error occurs that prevents the utterance from being successfully spoken (when the error event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance.onerror"
-        }
-    ],
     "dom-speechsynthesisutterance-onmark": [
         {
             "engines": [
@@ -4728,9 +4729,9 @@
                 "webkit"
             ],
             "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "onmark",
-            "slug": "API/SpeechSynthesisUtterance/onmark",
-            "summary": "The onmark property of the SpeechSynthesisUtterance interface represents an event handler that will run when the spoken utterance reaches a named SSML mark tag (when the mark event fires.)",
+            "name": "mark_event",
+            "slug": "API/SpeechSynthesisUtterance/mark_event",
+            "summary": "The mark event of the Web Speech API SpeechSynthesisUtterance object is fired when the spoken utterance reaches a named SSML \"mark\" tag.",
             "support": {
                 "chrome": {
                     "version_added": "33"
@@ -4772,175 +4773,65 @@
                     "version_added": "79"
                 }
             },
-            "title": "SpeechSynthesisUtterance.onmark"
-        }
-    ],
-    "dom-speechsynthesisutterance-onpause": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "onpause",
-            "slug": "API/SpeechSynthesisUtterance/onpause",
-            "summary": "The onpause property of the SpeechSynthesisUtterance interface represents an event handler that will run when the utterance is paused part way through (when the pause event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance.onpause"
-        }
-    ],
-    "dom-speechsynthesisutterance-onresume": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "onresume",
-            "slug": "API/SpeechSynthesisUtterance/onresume",
-            "summary": "The onresume property of the SpeechSynthesisUtterance interface represents an event handler that will run when a paused utterance is resumed (when the resume event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance.onresume"
-        }
-    ],
-    "dom-speechsynthesisutterance-onstart": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "onstart",
-            "slug": "API/SpeechSynthesisUtterance/onstart",
-            "summary": "The onstart property of the SpeechSynthesisUtterance interface represents an event handler that will run when the utterance has begun to be spoken (when the start event fires.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance.onstart"
+            "title": "SpeechSynthesisUtterance: mark event"
         }
     ],
     "eventdef-speechsynthesisutterance-pause": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "pause_event",
+            "slug": "API/SpeechSynthesisUtterance/pause_event",
+            "summary": "The pause event of the Web Speech API SpeechSynthesisUtterance object is fired when the utterance is paused part way through.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "62"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: pause event"
+        }
+    ],
+    "dom-speechsynthesisutterance-onpause": [
         {
             "engines": [
                 "blink",
@@ -5160,7 +5051,117 @@
             "title": "SpeechSynthesisUtterance: resume event"
         }
     ],
+    "dom-speechsynthesisutterance-onresume": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "resume_event",
+            "slug": "API/SpeechSynthesisUtterance/resume_event",
+            "summary": "The resume event of the Web Speech API SpeechSynthesisUtterance object is fired when a paused utterance is resumed.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "62"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: resume event"
+        }
+    ],
     "eventdef-speechsynthesisutterance-start": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "start_event",
+            "slug": "API/SpeechSynthesisUtterance/start_event",
+            "summary": "The start event of the Web Speech API SpeechSynthesisUtterance object is fired when the utterance has begun to be spoken.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "62"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: start event"
+        }
+    ],
+    "dom-speechsynthesisutterance-onstart": [
         {
             "engines": [
                 "blink",
@@ -5225,7 +5226,7 @@
             "filename": "api/SpeechSynthesisUtterance.json",
             "name": "text",
             "slug": "API/SpeechSynthesisUtterance/text",
-            "summary": "The text property of the SpeechSynthesisUtterance interface gets and sets the text that will be synthesised when the utterance is spoken.",
+            "summary": "The text property of the SpeechSynthesisUtterance interface gets and sets the text that will be synthesized when the utterance is spoken.",
             "support": {
                 "chrome": {
                     "version_added": "33"

@@ -368,7 +368,68 @@
             "filename": "api/AbortSignal.json",
             "name": "abort_event",
             "slug": "API/AbortSignal/abort_event",
-            "summary": "The abort event of the Fetch API is fired when a fetch request is aborted, i.e. using AbortController.abort().",
+            "summary": "The abort event of the AbortSignal is fired when the associated request is aborted, i.e. using AbortController.abort().",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": {
+                    "version_added": "66"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "57"
+                },
+                "firefox_android": {
+                    "version_added": "57"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "15.0.0"
+                },
+                "opera": {
+                    "version_added": "53"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "66"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AbortSignal: abort event"
+        }
+    ],
+    "abortsignal-onabort": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/AbortSignal.json",
+            "name": "abort_event",
+            "slug": "API/AbortSignal/abort_event",
+            "summary": "The abort event of the AbortSignal is fired when the associated request is aborted, i.e. using AbortController.abort().",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -478,67 +539,6 @@
                 }
             },
             "title": "AbortSignal.aborted"
-        }
-    ],
-    "abortsignal-onabort": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/AbortSignal.json",
-            "name": "onabort",
-            "slug": "API/AbortSignal/onabort",
-            "summary": "The onabort read-only property of the AbortSignal interface is an event handler invoked when an abort event fires, i.e. when the fetch requests the signal is communicating with are aborted.",
-            "support": {
-                "chrome": {
-                    "version_added": "66"
-                },
-                "chrome_android": {
-                    "version_added": "66"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "16"
-                },
-                "firefox": {
-                    "version_added": "57"
-                },
-                "firefox_android": {
-                    "version_added": "57"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "15.0.0"
-                },
-                "opera": {
-                    "version_added": "53"
-                },
-                "opera_android": {
-                    "version_added": "47"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "9.0"
-                },
-                "webview_android": {
-                    "version_added": "66"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "AbortSignal.onabort"
         }
     ],
     "ref-for-dom-abortsignal-reason①": [
@@ -3921,10 +3921,10 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": "6"
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -3976,10 +3976,10 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": "6"
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -4031,10 +4031,10 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": "6"
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -4086,10 +4086,10 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": "6"
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -4141,10 +4141,10 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": "6"
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -4306,10 +4306,10 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": "6"
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -4423,10 +4423,10 @@
                     "version_added": "11.5"
                 },
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "5.1"
                 },
                 "safari_ios": {
-                    "version_added": "6"
+                    "version_added": "5"
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -8329,7 +8329,7 @@
             "filename": "api/Element.json",
             "name": "removeAttributeNode",
             "slug": "API/Element/removeAttributeNode",
-            "summary": "The removeAttributeNode() method of the Element object removes the specified attribute from the current element.",
+            "summary": "The removeAttributeNode() method of the Element interface removes the specified attribute from the element.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11281,6 +11281,391 @@
                 }
             },
             "title": "NamedNodeMap.getNamedItem()"
+        }
+    ],
+    "dom-namednodemap-getnameditemns": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NamedNodeMap.json",
+            "name": "getNamedItemNS",
+            "slug": "API/NamedNodeMap/getNamedItemNS",
+            "summary": "The getNamedItemNS() method of the NamedNodeMap interface returns the Attr corresponding to the given local name in the given namespace, or null if there is no corresponding attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NamedNodeMap.getNamedItemNS()"
+        }
+    ],
+    "dom-namednodemap-item": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NamedNodeMap.json",
+            "name": "item",
+            "slug": "API/NamedNodeMap/item",
+            "summary": "The item() method of the NamedNodeMap interface returns the item in the map matching the index.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NamedNodeMap.item()"
+        }
+    ],
+    "dom-namednodemap-length": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NamedNodeMap.json",
+            "name": "length",
+            "slug": "API/NamedNodeMap/length",
+            "summary": "The read-only length property of the NamedNodeMap interface is the number of objects stored in the map.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NamedNodeMap.length"
+        }
+    ],
+    "dom-namednodemap-removenameditem": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NamedNodeMap.json",
+            "name": "removeNamedItem",
+            "slug": "API/NamedNodeMap/removeNamedItem",
+            "summary": "The removeNamedItem() method of the NamedNodeMap interface removes the Attr corresponding to the given name from the map.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "6"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NamedNodeMap.removeNamedItem()"
+        }
+    ],
+    "dom-namednodemap-removenameditemns": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NamedNodeMap.json",
+            "name": "removeNamedItemNS",
+            "slug": "API/NamedNodeMap/removeNamedItemNS",
+            "summary": "The removedNamedItemNS() method of the NamedNodeMap interface removes the Attr corresponding to the given namespace and local name from the map.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NamedNodeMap.removeNamedItemNS()"
+        }
+    ],
+    "dom-namednodemap-setnameditem": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NamedNodeMap.json",
+            "name": "setNamedItem",
+            "slug": "API/NamedNodeMap/setNamedItem",
+            "summary": "The setNamedItem() method of the NamedNodeMap interface puts the Attr identified by its name in the map. If there is already an Attr with the same name in the map, it is replaced.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "6"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NamedNodeMap.setNamedItem()"
+        }
+    ],
+    "dom-namednodemap-setnameditemns": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NamedNodeMap.json",
+            "name": "setNamedItemNS",
+            "slug": "API/NamedNodeMap/setNamedItemNS",
+            "summary": "The setNamedItemNS() method of the NamedNodeMap interface puts the Attr identified by its name in the map. If there was already an Attr with the same name in the map, it is replaced.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NamedNodeMap.setNamedItemNS()"
         }
     ],
     "interface-namednodemap": [

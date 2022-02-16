@@ -32,6 +32,9 @@
                 "ie": {
                     "version_added": false
                 },
+                "nodejs": {
+                    "version_added": "16.5.0"
+                },
                 "opera": {
                     "version_added": "46"
                 },
@@ -89,6 +92,9 @@
                 },
                 "ie": {
                     "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.5.0"
                 },
                 "opera": {
                     "version_added": "39"
@@ -196,6 +202,9 @@
                 "chrome_android": {
                     "version_added": "80"
                 },
+                "deno": {
+                    "version_added": "1.19"
+                },
                 "edge": {
                     "version_added": false
                 },
@@ -251,7 +260,7 @@
                     "version_added": "80"
                 },
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.19"
                 },
                 "edge": {
                     "version_added": false
@@ -425,6 +434,9 @@
                 "chrome_android": {
                     "version_added": "80"
                 },
+                "deno": {
+                    "version_added": "1.19"
+                },
                 "edge": {
                     "version_added": false
                 },
@@ -480,7 +492,7 @@
                     "version_added": "80"
                 },
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.19"
                 },
                 "edge": {
                     "version_added": false
@@ -651,10 +663,10 @@
             "summary": "The CountQueuingStrategy() constructor creates and returns a CountQueuingStrategy object instance.",
             "support": {
                 "chrome": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "chrome_android": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "edge": {
                     "version_added": "16"
@@ -668,11 +680,14 @@
                 "ie": {
                     "version_added": false
                 },
+                "nodejs": {
+                    "version_added": "16.5.0"
+                },
                 "opera": {
-                    "version_added": "46"
+                    "version_added": "39"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "41"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -681,10 +696,10 @@
                     "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "7.0"
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -706,10 +721,10 @@
             "summary": "The size() method of the CountQueuingStrategy interface always returns 1, so that the total queue size is a count of the number of chunks in the queue.",
             "support": {
                 "chrome": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "chrome_android": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "edge": {
                     "version_added": "16"
@@ -723,11 +738,14 @@
                 "ie": {
                     "version_added": false
                 },
+                "nodejs": {
+                    "version_added": "16.5.0"
+                },
                 "opera": {
-                    "version_added": "46"
+                    "version_added": "39"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "41"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -736,10 +754,10 @@
                     "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "7.0"
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -761,10 +779,10 @@
             "summary": "The CountQueuingStrategy interface of the Streams API provides a built-in chunk counting queuing strategy that can be used when constructing streams.",
             "support": {
                 "chrome": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "chrome_android": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "edge": {
                     "version_added": "16"
@@ -786,10 +804,10 @@
                     ]
                 },
                 "opera": {
-                    "version_added": "46"
+                    "version_added": "39"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "41"
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -798,10 +816,10 @@
                     "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "7.0"
+                    "version_added": "6.0"
                 },
                 "webview_android": {
-                    "version_added": "59"
+                    "version_added": "52"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1852,7 +1870,7 @@
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "closed",
             "slug": "API/ReadableStreamBYOBReader/closed",
-            "summary": "The closed read-only property of the ReadableStreamBYOBReader interface returns a Promise that fulfills when the stream closes or the reader's lock is released, or rejects if the stream throws an error. This property enables you to write code that responds to an end to the streaming process.",
+            "summary": "The closed read-only property of the ReadableStreamBYOBReader interface returns a Promise that fulfills when the stream closes, or rejects if the stream throws an error or the reader's lock is released. This property enables you to write code that responds to an end to the streaming process.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -1911,7 +1929,7 @@
             "filename": "api/ReadableStreamDefaultReader.json",
             "name": "closed",
             "slug": "API/ReadableStreamDefaultReader/closed",
-            "summary": "The closed read-only property of the ReadableStreamDefaultReader interface returns a Promise that fulfills when the stream closes or the reader's lock is released, or rejects if the stream throws an error. This property enables you to write code that responds to an end to the streaming process.",
+            "summary": "The closed read-only property of the ReadableStreamDefaultReader interface returns a Promise that fulfills when the stream closes, or rejects if the stream throws an error or the reader's lock is released. This property enables you to write code that responds to an end to the streaming process.",
             "support": {
                 "chrome": {
                     "version_added": "78"
@@ -4118,7 +4136,7 @@
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "closed",
             "slug": "API/WritableStreamDefaultWriter/closed",
-            "summary": "The closed read-only property of the WritableStreamDefaultWriter interface returns a promise that fulfills if the stream becomes closed or the writer's lock is released, or rejects if the stream errors.",
+            "summary": "The closed read-only property of the WritableStreamDefaultWriter interface returns a Promise that fulfills if the stream becomes closed, or rejects if the stream errors or the writer's lock is released.",
             "support": {
                 "chrome": {
                     "version_added": "59"

@@ -799,7 +799,7 @@
                     "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -820,7 +820,7 @@
             "filename": "api/VideoTrackList.json",
             "name": "addtrack_event",
             "slug": "API/VideoTrackList/addtrack_event",
-            "summary": "The addtrack event is fired when a track is added to a VideoTrackList.",
+            "summary": "The addtrack event is fired when a video track is added to a VideoTrackList.",
             "support": {
                 "chrome": {
                     "version_added": "37",
@@ -1030,7 +1030,7 @@
             "filename": "api/TextTrackList.json",
             "name": "change_event",
             "slug": "API/TextTrackList/change_event",
-            "summary": "The change event is fired when a text track is made active or inactive, or a textTrackList is otherwise changed.",
+            "summary": "The change event is fired when a text track is made active or inactive, or a TextTrackList is otherwise changed.",
             "support": {
                 "chrome": {
                     "version_added": "33"
@@ -1066,7 +1066,7 @@
                     "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": "4.4.3"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1511,9 +1511,9 @@
                 "webkit"
             ],
             "filename": "api/TextTrackList.json",
-            "name": "onaddtrack",
-            "slug": "API/TextTrackList/onaddtrack",
-            "summary": "The TextTrackList property onaddtrack is an event handler which is called when the addtrack event occurs, indicating that a new text track has been added to the media element whose text tracks the TextTrackList represents.",
+            "name": "addtrack_event",
+            "slug": "API/TextTrackList/addtrack_event",
+            "summary": "The addtrack event is fired when a track is added to a TextTrackList.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -1555,7 +1555,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextTrackList.onaddtrack"
+            "title": "TextTrackList: addtrack event"
         },
         {
             "engines": [
@@ -1568,9 +1568,9 @@
                 "gecko"
             ],
             "filename": "api/VideoTrackList.json",
-            "name": "onaddtrack",
-            "slug": "API/VideoTrackList/onaddtrack",
-            "summary": "The VideoTrackList property onaddtrack is an event handler which is called when the addtrack event occurs, indicating that a new video track has been added to the media element whose video tracks the VideoTrackList represents.",
+            "name": "addtrack_event",
+            "slug": "API/VideoTrackList/addtrack_event",
+            "summary": "The addtrack event is fired when a video track is added to a VideoTrackList.",
             "support": {
                 "chrome": {
                     "version_added": "37",
@@ -1661,7 +1661,7 @@
                     ]
                 }
             },
-            "title": "VideoTrackList.onaddtrack"
+            "title": "VideoTrackList: addtrack event"
         }
     ],
     "handler-tracklist-onchange": [
@@ -1778,9 +1778,9 @@
                 "webkit"
             ],
             "filename": "api/TextTrackList.json",
-            "name": "onchange",
-            "slug": "API/TextTrackList/onchange",
-            "summary": "The TextTrackList property onchange is an event handler which is called when the change event occurs, indicating that a change has occurred on a TextTrack in the VideoTrackList.",
+            "name": "change_event",
+            "slug": "API/TextTrackList/change_event",
+            "summary": "The change event is fired when a text track is made active or inactive, or a TextTrackList is otherwise changed.",
             "support": {
                 "chrome": {
                     "version_added": "33"
@@ -1822,7 +1822,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextTrackList.onchange"
+            "title": "TextTrackList: change event"
         },
         {
             "engines": [
@@ -1835,9 +1835,9 @@
                 "gecko"
             ],
             "filename": "api/VideoTrackList.json",
-            "name": "onchange",
-            "slug": "API/VideoTrackList/onchange",
-            "summary": "The VideoTrackList property onchange is an event handler which is called when the change event occurs, indicating that a VideoTrack in the VideoTrackList has been made active.",
+            "name": "change_event",
+            "slug": "API/VideoTrackList/change_event",
+            "summary": "The change event is fired when a video track is made active or inactive, for example by changing the track's selected property.",
             "support": {
                 "chrome": {
                     "version_added": "37",
@@ -1928,7 +1928,7 @@
                     ]
                 }
             },
-            "title": "VideoTrackList.onchange"
+            "title": "VideoTrackList: change event"
         }
     ],
     "handler-tracklist-onremovetrack": [
@@ -2045,9 +2045,9 @@
                 "webkit"
             ],
             "filename": "api/TextTrackList.json",
-            "name": "onremovetrack",
-            "slug": "API/TextTrackList/onremovetrack",
-            "summary": "The TextTrackList onremovetrack event handler is called when the removetrack event occurs, indicating that a text track has been removed from the media element, and therefore also from the TextTrackList.",
+            "name": "removetrack_event",
+            "slug": "API/TextTrackList/removetrack_event",
+            "summary": "The removetrack event is fired when a track is removed from a TextTrackList.",
             "support": {
                 "chrome": {
                     "version_added": "33"
@@ -2101,7 +2101,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextTrackList.onremovetrack"
+            "title": "TextTrackList: removeTrack event"
         },
         {
             "engines": [
@@ -2114,9 +2114,9 @@
                 "gecko"
             ],
             "filename": "api/VideoTrackList.json",
-            "name": "onremovetrack",
-            "slug": "API/VideoTrackList/onremovetrack",
-            "summary": "The VideoTrackList onremovetrack event handler is called when the removetrack event occurs, indicating that a video track has been removed from the media element, and therefore also from the VideoTrackList.",
+            "name": "removetrack_event",
+            "slug": "API/VideoTrackList/removetrack_event",
+            "summary": "The removetrack event is fired when a video track is removed from a VideoTrackList.",
             "support": {
                 "chrome": {
                     "version_added": "37",
@@ -2207,7 +2207,7 @@
                     ]
                 }
             },
-            "title": "VideoTrackList.onremovetrack"
+            "title": "VideoTrackList: removetrack event"
         }
     ],
     "event-media-removetrack": [
@@ -2346,12 +2346,24 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "20"
-                },
-                "opera_android": {
-                    "version_added": "20"
-                },
+                "opera": [
+                    {
+                        "version_added": "20"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "15"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "20"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "14"
+                    }
+                ],
                 "safari": {
                     "version_added": "7"
                 },
@@ -2362,7 +2374,7 @@
                     "version_added": "2.0"
                 },
                 "webview_android": {
-                    "version_added": "4.4.3"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -2383,7 +2395,7 @@
             "filename": "api/VideoTrackList.json",
             "name": "removetrack_event",
             "slug": "API/VideoTrackList/removetrack_event",
-            "summary": "The removetrack event is fired when a track is removed from a VideoTrackList.",
+            "summary": "The removetrack event is fired when a video track is removed from a VideoTrackList.",
             "support": {
                 "chrome": {
                     "version_added": "37",
@@ -3498,6 +3510,67 @@
             "title": "Worker: message event"
         }
     ],
+    "handler-broadcastchannel-onmessage": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/BroadcastChannel.json",
+            "name": "message_event",
+            "slug": "API/BroadcastChannel/message_event",
+            "summary": "The message event is fired on a BroadcastChannel object when a message arrives on that channel.",
+            "support": {
+                "chrome": {
+                    "version_added": "54"
+                },
+                "chrome_android": {
+                    "version_added": "54"
+                },
+                "deno": {
+                    "version_added": "1.11"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "38"
+                },
+                "firefox_android": {
+                    "version_added": "38"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "15.4.0"
+                },
+                "opera": {
+                    "version_added": "41"
+                },
+                "opera_android": {
+                    "version_added": "41"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "54"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BroadcastChannel: message event"
+        }
+    ],
     "event-messageerror": [
         {
             "engines": [
@@ -3507,7 +3580,7 @@
             "filename": "api/BroadcastChannel.json",
             "name": "messageerror_event",
             "slug": "API/BroadcastChannel/messageerror_event",
-            "summary": "The messageerror event is fired on a BroadcastChannel object when a message arrives on the channel that can't be deserialized.",
+            "summary": "The messageerror event is fired on a BroadcastChannel object when a message that can't be deserialized arrives on the channel.",
             "support": {
                 "chrome": {
                     "version_added": "60"
@@ -3799,6 +3872,68 @@
             "title": "Worker: messageerror event"
         }
     ],
+    "handler-broadcastchannel-onmessageerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/BroadcastChannel.json",
+            "name": "messageerror_event",
+            "slug": "API/BroadcastChannel/messageerror_event",
+            "summary": "The messageerror event is fired on a BroadcastChannel object when a message that can't be deserialized arrives on the channel.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": {
+                    "version_added": "60"
+                },
+                "deno": {
+                    "version_added": "1.11"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "57"
+                },
+                "firefox_android": {
+                    "version_added": "57"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "15.4.0"
+                },
+                "opera": {
+                    "version_added": "47"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "60"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BroadcastChannel: messageerror event"
+        }
+    ],
     "dom-broadcastchannel-name-dev": [
         {
             "engines": [
@@ -3860,129 +3995,6 @@
             "title": "BroadcastChannel.name"
         }
     ],
-    "handler-broadcastchannel-onmessage": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/BroadcastChannel.json",
-            "name": "onmessage",
-            "slug": "API/BroadcastChannel/onmessage",
-            "summary": "The BroadcastChannel.onmessage event handler is a property that specifies the function to execute when a message event, of type MessageEvent, is received by this BroadcastChannel. Such an event is sent by the browser with a message broadcasted to the channel.",
-            "support": {
-                "chrome": {
-                    "version_added": "54"
-                },
-                "chrome_android": {
-                    "version_added": "54"
-                },
-                "deno": {
-                    "version_added": "1.11"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "38"
-                },
-                "firefox_android": {
-                    "version_added": "38"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "15.4.0"
-                },
-                "opera": {
-                    "version_added": "41"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": "15.4"
-                },
-                "safari_ios": {
-                    "version_added": "15.4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "54"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "BroadcastChannel.onmessage"
-        }
-    ],
-    "handler-broadcastchannel-onmessageerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/BroadcastChannel.json",
-            "name": "onmessageerror",
-            "slug": "API/BroadcastChannel/onmessageerror",
-            "summary": "The onmessageerror event handler of the BroadcastChannel interface is an EventListener, called whenever an MessageEvent of type messageerror is fired on the BroadcastChannel instance — that is, when it receives a message that cannot be deserialized.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": {
-                    "version_added": "60"
-                },
-                "deno": {
-                    "version_added": "1.11"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "57"
-                },
-                "firefox_android": {
-                    "version_added": "57"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "15.4.0"
-                },
-                "opera": {
-                    "version_added": "47"
-                },
-                "opera_android": {
-                    "version_added": "44"
-                },
-                "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "60"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "BroadcastChannel.onmessageerror"
-        }
-    ],
     "dom-broadcastchannel-postmessage-dev": [
         {
             "engines": [
@@ -3993,7 +4005,7 @@
             "filename": "api/BroadcastChannel.json",
             "name": "postMessage",
             "slug": "API/BroadcastChannel/postMessage",
-            "summary": "The BroadcastChannel.postMessage() sends a message, which can be of any kind of Object, to each listener in any browsing context with the same origin. The message is transmitted as a message event targeted at each BroadcastChannel bound to the channel.",
+            "summary": "The BroadcastChannel.postMessage() sends a message, which can be of any kind of Object, to each listener in any browsing context with the same origin. The message is transmitted as a 'message' event targeted at each BroadcastChannel bound to the channel.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -13721,9 +13733,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ElementInternals.json",
             "name": "form",
             "slug": "API/ElementInternals/form",
@@ -13738,18 +13747,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "95",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "95",
+                        "version_removed": "98",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "ie": {
                     "version_added": false
@@ -13785,9 +13800,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ElementInternals.json",
             "name": "labels",
             "slug": "API/ElementInternals/labels",
@@ -13802,18 +13814,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "95",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "95",
+                        "version_removed": "98",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "ie": {
                     "version_added": false
@@ -13902,9 +13920,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ElementInternals.json",
             "name": "setFormValue",
             "slug": "API/ElementInternals/setFormValue",
@@ -13919,18 +13934,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "95",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "95",
+                        "version_removed": "98",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "ie": {
                     "version_added": false
@@ -14179,9 +14200,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ElementInternals.json",
             "name": "willValidate",
             "slug": "API/ElementInternals/willValidate",
@@ -14196,18 +14214,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "96",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "95",
+                        "version_removed": "98",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "ie": {
                     "version_added": false
@@ -15836,87 +15860,6 @@
                 }
             },
             "title": "GlobalEventHandlers.oncontextmenu"
-        }
-    ],
-    "handler-oncuechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "oncuechange",
-            "slug": "API/GlobalEventHandlers/oncuechange",
-            "summary": "The oncuechange property of the GlobalEventHandlers mixin is the event handler for processing cuechange events.",
-            "support": {
-                "chrome": {
-                    "version_added": "32"
-                },
-                "chrome_android": {
-                    "version_added": "32"
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": [
-                    {
-                        "version_added": "68",
-                        "notes": "Added for the <code>&lt;track&gt;</code> element (<code>HTMLTrackElement</code>) in Firefox 68."
-                    },
-                    {
-                        "version_added": "31",
-                        "notes": "Added for the <code>TextTrack</code> interface in Firefox 31."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "68",
-                        "notes": "Added for the <code>&lt;track&gt;</code> element (<code>HTMLTrackElement</code>) in Firefox 68."
-                    },
-                    {
-                        "version_added": "31",
-                        "notes": "Added for the <code>TextTrack</code> interface in Firefox 31."
-                    }
-                ],
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "19"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "19"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "GlobalEventHandlers.oncuechange"
         }
     ],
     "handler-ondblclick": [
@@ -20334,9 +20277,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLDialogElement.json",
             "name": "cancel_event",
             "slug": "API/HTMLDialogElement/cancel_event",
@@ -20351,27 +20291,23 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "78",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "78",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
+                    "version_added": "98"
                 },
                 "ie": {
                     "version_added": false
@@ -20408,9 +20344,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLDialogElement.json",
             "name": "close",
             "slug": "API/HTMLDialogElement/close",
@@ -20425,28 +20358,37 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
-                "firefox_android": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -20479,6 +20421,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/HTMLDialogElement.json",
@@ -20496,10 +20439,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "ie": {
                     "version_added": false
@@ -20592,9 +20535,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLDialogElement.json",
             "name": "open",
             "slug": "API/HTMLDialogElement/open",
@@ -20609,28 +20549,37 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
-                "firefox_android": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -20666,9 +20615,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLDialogElement.json",
             "name": "returnValue",
             "slug": "API/HTMLDialogElement/returnValue",
@@ -20683,28 +20629,37 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
-                "firefox_android": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -20740,9 +20695,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLDialogElement.json",
             "name": "show",
             "slug": "API/HTMLDialogElement/show",
@@ -20757,28 +20709,37 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
-                "firefox_android": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -20814,9 +20775,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLDialogElement.json",
             "name": "showModal",
             "slug": "API/HTMLDialogElement/showModal",
@@ -20831,28 +20789,37 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
-                "firefox_android": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -20888,9 +20855,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLDialogElement.json",
             "name": "HTMLDialogElement",
             "slug": "API/HTMLDialogElement",
@@ -20905,28 +20869,37 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
-                "firefox_android": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -21766,7 +21739,7 @@
             "filename": "api/HTMLElement.json",
             "name": "innerText",
             "slug": "API/HTMLElement/innerText",
-            "summary": "The innerText property of the HTMLElement interface represents the \"rendered\" text content of a node and its descendants.",
+            "summary": "The innerText property of the HTMLElement interface represents the rendered text content of a node and its descendants.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -22037,6 +22010,61 @@
                 }
             },
             "title": "HTMLElement.nonce"
+        }
+    ],
+    "dom-outertext": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "outerText",
+            "slug": "API/HTMLElement/outerText",
+            "summary": "The outerText property of the HTMLElement interface returns the same value as HTMLElement.innerText. When used as a setter it replaces the whole current node with the given text (this differs from innerText, which replaces the content inside the current node).",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "98"
+                },
+                "firefox_android": {
+                    "version_added": "98"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1.3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLElement.outerText"
         }
     ],
     "dom-tabindex": [
@@ -30681,7 +30709,8 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5.5"
+                    "version_added": "5.5",
+                    "notes": "Before Internet Explorer 9, the <code>outerHTML</code> of elements lose their text when constructing with <code>new Option()</code>."
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -31261,6 +31290,7 @@
     "dom-script-supports": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/HTMLScriptElement.json",
@@ -31269,10 +31299,10 @@
             "summary": "The supports() static method of the HTMLScriptElement interface provides a simple and consistent method to feature-detect what types of scripts are supported by the user agent.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "edge": {
                     "version_added": false
@@ -31287,7 +31317,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "83"
                 },
                 "opera_android": {
                     "version_added": false
@@ -31302,10 +31332,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "97"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "97"
                 }
             },
             "title": "HTMLScriptElement.supports()"
@@ -33990,12 +34020,26 @@
             "slug": "API/HTMLTrackElement/cuechange_event",
             "summary": "The cuechange event fires when a TextTrack has changed the currently displaying cues. The event is fired on both the TextTrack and the HTMLTrackElement in which it's being presented, if any.",
             "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
+                "chrome": [
+                    {
+                        "version_added": "32"
+                    },
+                    {
+                        "version_added": "23",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "32"
+                    },
+                    {
+                        "version_added": "25",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
                 "edge": {
                     "version_added": "14"
                 },
@@ -34008,27 +34052,84 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "opera": [
+                    {
+                        "version_added": "19"
+                    },
+                    {
+                        "version_added": "15",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "12",
+                        "version_removed": "15"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "19"
+                    },
+                    {
+                        "version_added": "14",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "12",
+                        "version_removed": "14"
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": "10"
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "10"
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": "2.0"
+                    },
+                    {
+                        "version_added": "1.5",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "4.4.3"
+                    },
+                    {
+                        "version_added": "37",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ]
             },
             "title": "HTMLTrackElement: cuechange event"
         },
@@ -34062,13 +34163,13 @@
                     "version_added": "10"
                 },
                 "opera": {
-                    "version_added": "15"
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": "14"
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "6"
                 },
                 "safari_ios": {
                     "version_added": "7"
@@ -34077,13 +34178,139 @@
                     "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
                 }
             },
             "title": "TextTrack: cuechange event"
+        }
+    ],
+    "handler-oncuechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLTrackElement.json",
+            "name": "cuechange_event",
+            "slug": "API/HTMLTrackElement/cuechange_event",
+            "summary": "The cuechange event fires when a TextTrack has changed the currently displaying cues. The event is fired on both the TextTrack and the HTMLTrackElement in which it's being presented, if any.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "32"
+                    },
+                    {
+                        "version_added": "23",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "32"
+                    },
+                    {
+                        "version_added": "25",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "68"
+                },
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "19"
+                    },
+                    {
+                        "version_added": "15",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "12",
+                        "version_removed": "15"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "19"
+                    },
+                    {
+                        "version_added": "14",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "12",
+                        "version_removed": "14"
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": "10"
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "10"
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": "2.0"
+                    },
+                    {
+                        "version_added": "1.5",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "4.4.3"
+                    },
+                    {
+                        "version_added": "37",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>oncuechange</code> event handler property is not supported."
+                    }
+                ]
+            },
+            "title": "HTMLTrackElement: cuechange event"
         }
     ],
     "dom-track-src": [
@@ -39872,10 +40099,10 @@
             "summary": "If the underlying element collection contains radio buttons, the RadioNodeList.value property represents the checked radio button. On retrieving the value property, the value of the currently checked radio button is returned as a string. If the collection does not contain any radio buttons or none of the radio buttons in the collection is in checked state, the empty string is returned. On setting the value property, the first radio button input element whose value property is equal to the new value will be set to checked.",
             "support": {
                 "chrome": {
-                    "version_added": "34"
+                    "version_added": "21"
                 },
                 "chrome_android": {
-                    "version_added": "34"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "12"
@@ -39890,19 +40117,19 @@
                     "version_added": "9"
                 },
                 "opera": {
-                    "version_added": "21"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "21"
+                    "version_added": "14"
                 },
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "7"
                 },
                 "safari_ios": {
-                    "version_added": "9"
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": "2.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
                     "version_added": "4.4"
@@ -39927,10 +40154,10 @@
             "summary": "The RadioNodeList interface represents a collection of radio elements in a <form> or a <fieldset> element.",
             "support": {
                 "chrome": {
-                    "version_added": "34"
+                    "version_added": "21"
                 },
                 "chrome_android": {
-                    "version_added": "34"
+                    "version_added": "25"
                 },
                 "edge": {
                     "version_added": "12"
@@ -39945,22 +40172,22 @@
                     "version_added": "9"
                 },
                 "opera": {
-                    "version_added": "21"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "21"
+                    "version_added": "14"
                 },
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "7"
                 },
                 "safari_ios": {
-                    "version_added": "9"
+                    "version_added": "7"
                 },
                 "samsunginternet_android": {
-                    "version_added": "2.0"
+                    "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -42240,6 +42467,61 @@
             "title": "TextMetrics"
         }
     ],
+    "handler-texttrack-oncuechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "cuechange_event",
+            "slug": "API/TextTrack/cuechange_event",
+            "summary": "The cuechange event fires when a TextTrack has changed the currently displaying cues. The event is fired on both the TextTrack and the HTMLTrackElement in which it's being presented, if any.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack: cuechange event"
+        }
+    ],
     "dom-texttrack-mode-dev": [
         {
             "engines": [
@@ -42407,6 +42689,226 @@
             "title": "TextTrackCue.endTime"
         }
     ],
+    "event-media-enter": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrackCue.json",
+            "name": "enter_event",
+            "slug": "API/TextTrackCue/enter_event",
+            "summary": "The enter event fires when a cue becomes active. In the case of subtitles or a caption this is when it displays over the media.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrackCue: enter event"
+        }
+    ],
+    "handler-texttrackcue-onenter": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrackCue.json",
+            "name": "enter_event",
+            "slug": "API/TextTrackCue/enter_event",
+            "summary": "The enter event fires when a cue becomes active. In the case of subtitles or a caption this is when it displays over the media.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrackCue: enter event"
+        }
+    ],
+    "event-media-exit": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrackCue.json",
+            "name": "exit_event",
+            "slug": "API/TextTrackCue/exit_event",
+            "summary": "The exit event fires when a cue stops being active.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrackCue: exit event"
+        }
+    ],
+    "handler-texttrackcue-onexit": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrackCue.json",
+            "name": "exit_event",
+            "slug": "API/TextTrackCue/exit_event",
+            "summary": "The exit event fires when a cue stops being active.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrackCue: exit event"
+        }
+    ],
     "dom-texttrackcue-id": [
         {
             "engines": [
@@ -42460,116 +42962,6 @@
                 }
             },
             "title": "TextTrackCue.id"
-        }
-    ],
-    "handler-texttrackcue-onenter": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/TextTrackCue.json",
-            "name": "onenter",
-            "slug": "API/TextTrackCue/onenter",
-            "summary": "The onenter EventHandler of the TextTrackCue interface processes the enter event.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "31"
-                },
-                "firefox_android": {
-                    "version_added": "31"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextTrackCue.onenter"
-        }
-    ],
-    "handler-texttrackcue-onexit": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/TextTrackCue.json",
-            "name": "onexit",
-            "slug": "API/TextTrackCue/onexit",
-            "summary": "The onexit EventHandler of the TextTrackCue interface processes exit events.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "31"
-                },
-                "firefox_android": {
-                    "version_added": "31"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextTrackCue.onexit"
         }
     ],
     "dom-texttrackcue-pauseonexit": [
@@ -52299,6 +52691,7 @@
     "dom-structuredclone": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -52308,10 +52701,10 @@
             "summary": "The global structuredClone() method creates a deep clone of a given value using the structured clone algorithm.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "deno": [
                     {
@@ -52344,7 +52737,7 @@
                     "version_added": "17.0.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "84"
                 },
                 "opera_android": {
                     "version_added": false
@@ -52359,10 +52752,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "98"
                 }
             },
             "title": "structuredClone()"
@@ -56856,9 +57249,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "html/elements/dialog.json",
             "name": "dialog",
             "slug": "HTML/Element/dialog",
@@ -56873,28 +57263,37 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
-                "firefox_android": {
-                    "version_added": "53",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.dialog_element.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
-                    "notes": "See <a href='https://bugzil.la/840640'>bug 840640</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "98"
+                    },
+                    {
+                        "version_added": "53",
+                        "version_removed": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.dialog_element.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },

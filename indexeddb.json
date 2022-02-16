@@ -823,116 +823,6 @@
             "title": "IDBCursorWithValue"
         }
     ],
-    "eventdef-transaction-abort": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBDatabase.json",
-            "name": "abort_event",
-            "slug": "API/IDBDatabase/abort_event",
-            "summary": "The abort event is fired on IDBDatabase when a transaction is aborted and bubbles up to the connection object.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBDatabase: abort event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBTransaction.json",
-            "name": "abort_event",
-            "slug": "API/IDBTransaction/abort_event",
-            "summary": "The abort event is fired when an IndexedDB transaction is aborted.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBTransaction: abort event"
-        }
-    ],
     "ref-for-dom-idbdatabase-close②": [
         {
             "engines": [
@@ -990,6 +880,61 @@
         }
     ],
     "closing-connection": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBDatabase.json",
+            "name": "close_event",
+            "slug": "API/IDBDatabase/close_event",
+            "summary": "The close event is fired on IDBDatabase when the database connection is unexpectedly closed. This could happen, for example, if the underlying storage is removed or if the user clears the database in the browser's history preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": "31"
+                },
+                "chrome_android": {
+                    "version_added": "31"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "50"
+                },
+                "firefox_android": {
+                    "version_added": "50"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "18"
+                },
+                "opera_android": {
+                    "version_added": "18"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBDatabase: close event"
+        }
+    ],
+    "dom-idbdatabase-onclose": [
         {
             "engines": [
                 "blink",
@@ -1156,170 +1101,6 @@
             "title": "IDBDatabase.deleteObjectStore()"
         }
     ],
-    "eventdef-request-error": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBDatabase.json",
-            "name": "error_event",
-            "slug": "API/IDBDatabase/error_event",
-            "summary": "The error event is fired on IDBDatabase when a request returns an error and the event bubbles up to the connection object.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBDatabase: error event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBRequest.json",
-            "name": "error_event",
-            "slug": "API/IDBRequest/error_event",
-            "summary": "The error handler is executed when an error caused a request to fail.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBRequest: error event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBTransaction.json",
-            "name": "error_event",
-            "slug": "API/IDBTransaction/error_event",
-            "summary": "The error event is fired on IDBTransaction when a request returns an error and the event bubbles up to the transaction object.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBTransaction: error event"
-        }
-    ],
     "ref-for-dom-idbdatabase-name①": [
         {
             "engines": [
@@ -1430,231 +1211,6 @@
                 }
             },
             "title": "IDBDatabase.objectStoreNames"
-        }
-    ],
-    "dom-idbdatabase-onabort": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBDatabase.json",
-            "name": "onabort",
-            "slug": "API/IDBDatabase/onabort",
-            "summary": "The onabort event handler of the IDBDatabase interface handles the abort event, fired when a transaction is aborted and bubbles up to the connection object.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBDatabase.onabort"
-        }
-    ],
-    "dom-idbdatabase-onclose": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBDatabase.json",
-            "name": "onclose",
-            "slug": "API/IDBDatabase/onclose",
-            "summary": "The onclose event handler of the IDBDatabase interface handles the close event, which is fired when the database is unexpectedly closed. This can happen, for example, when the application is shut down or access to the disk the database is stored on is lost while the database is open.",
-            "support": {
-                "chrome": {
-                    "version_added": "31",
-                    "notes": "approx"
-                },
-                "chrome_android": {
-                    "version_added": "31"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "50"
-                },
-                "firefox_android": {
-                    "version_added": "50"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "18"
-                },
-                "opera_android": {
-                    "version_added": "18"
-                },
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "notes": "approx"
-                }
-            },
-            "title": "IDBDatabase.onclose"
-        }
-    ],
-    "dom-idbdatabase-onerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBDatabase.json",
-            "name": "onerror",
-            "slug": "API/IDBDatabase/onerror",
-            "summary": "The onerror event handler of the IDBDatabase interface handles the error event, fired when a request returns an error and bubbles up to the connection object.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBDatabase.onerror"
-        }
-    ],
-    "dom-idbdatabase-onversionchange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBDatabase.json",
-            "name": "onversionchange",
-            "slug": "API/IDBDatabase/onversionchange",
-            "summary": "The onversionchange event handler of the IDBDatabase interface handles the versionchange event, fired when a database structure change (IDBOpenDBRequest.onupgradeneeded event or IDBFactory.deleteDatabase) was requested elsewhere (most probably in another window/tab on the same computer).",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBDatabase.onversionchange"
         }
     ],
     "ref-for-dom-idbdatabase-transaction③": [
@@ -1779,7 +1335,63 @@
             "filename": "api/IDBDatabase.json",
             "name": "versionchange_event",
             "slug": "API/IDBDatabase/versionchange_event",
-            "summary": "The versionchange event is fired when a database structure change (IDBOpenDBRequest.onupgradeneeded event or IDBFactory.deleteDatabase) was requested.",
+            "summary": "The versionchange event is fired when a database structure change (upgradeneeded event send on an IDBOpenDBRequest or IDBFactory.deleteDatabase) was requested elsewhere (most probably in another window/tab on the same computer).",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBDatabase: versionchange event"
+        }
+    ],
+    "dom-idbdatabase-onversionchange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBDatabase.json",
+            "name": "versionchange_event",
+            "slug": "API/IDBDatabase/versionchange_event",
+            "summary": "The versionchange event is fired when a database structure change (upgradeneeded event send on an IDBOpenDBRequest or IDBFactory.deleteDatabase) was requested elsewhere (most probably in another window/tab on the same computer).",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -5189,6 +4801,116 @@
             "title": "IDBRequest.error"
         }
     ],
+    "eventdef-request-error": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBRequest.json",
+            "name": "error_event",
+            "slug": "API/IDBRequest/error_event",
+            "summary": "The error handler is executed when an error caused a request to fail.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBRequest: error event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBTransaction.json",
+            "name": "error_event",
+            "slug": "API/IDBTransaction/error_event",
+            "summary": "The error event is fired on IDBTransaction when a request returns an error and the event bubbles up to the transaction object.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBTransaction: error event"
+        }
+    ],
     "dom-idbrequest-onerror": [
         {
             "engines": [
@@ -5735,6 +5457,174 @@
             "title": "IDBTransaction.abort()"
         }
     ],
+    "eventdef-transaction-abort": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBTransaction.json",
+            "name": "abort_event",
+            "slug": "API/IDBTransaction/abort_event",
+            "summary": "The abort event is fired when an IndexedDB transaction is aborted.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBTransaction: abort event"
+        }
+    ],
+    "dom-idbtransaction-onabort": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBTransaction.json",
+            "name": "abort_event",
+            "slug": "API/IDBTransaction/abort_event",
+            "summary": "The abort event is fired when an IndexedDB transaction is aborted.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBTransaction: abort event"
+        }
+    ],
+    "dom-idbdatabase-onabort": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBTransaction.json",
+            "name": "abort_event",
+            "slug": "API/IDBTransaction/abort_event",
+            "summary": "The abort event is fired when an IndexedDB transaction is aborted.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBTransaction: abort event"
+        }
+    ],
     "ref-for-dom-idbtransaction-commit②": [
         {
             "engines": [
@@ -5800,7 +5690,63 @@
             "filename": "api/IDBTransaction.json",
             "name": "complete_event",
             "slug": "API/IDBTransaction/complete_event",
-            "summary": "The complete handler is executed when a transaction successfully completed.",
+            "summary": "The complete event of the IndexedDB API is fired when the transaction successfully completed.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBTransaction: complete event"
+        }
+    ],
+    "dom-idbtransaction-oncomplete": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBTransaction.json",
+            "name": "complete_event",
+            "slug": "API/IDBTransaction/complete_event",
+            "summary": "The complete event of the IndexedDB API is fired when the transaction successfully completed.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -6012,6 +5958,118 @@
             "title": "IDBTransaction.error"
         }
     ],
+    "dom-idbtransaction-onerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBTransaction.json",
+            "name": "error_event",
+            "slug": "API/IDBTransaction/error_event",
+            "summary": "The error event is fired on IDBTransaction when a request returns an error and the event bubbles up to the transaction object.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBTransaction: error event"
+        }
+    ],
+    "dom-idbdatabase-onerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBTransaction.json",
+            "name": "error_event",
+            "slug": "API/IDBTransaction/error_event",
+            "summary": "The error event is fired on IDBTransaction when a request returns an error and the event bubbles up to the transaction object.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBTransaction: error event"
+        }
+    ],
     "ref-for-dom-idbtransaction-mode①": [
         {
             "engines": [
@@ -6177,174 +6235,6 @@
                 }
             },
             "title": "IDBTransaction.objectStoreNames"
-        }
-    ],
-    "dom-idbtransaction-onabort": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBTransaction.json",
-            "name": "onabort",
-            "slug": "API/IDBTransaction/onabort",
-            "summary": "The onabort event handler of the IDBTransaction interface handles the abort event, fired, when the current transaction is aborted via the IDBTransaction.abort method.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBTransaction.onabort"
-        }
-    ],
-    "dom-idbtransaction-oncomplete": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBTransaction.json",
-            "name": "oncomplete",
-            "slug": "API/IDBTransaction/oncomplete",
-            "summary": "The oncomplete event handler of the IDBTransaction interface handles the complete event, fired when the transaction successfully completes.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBTransaction.oncomplete"
-        }
-    ],
-    "dom-idbtransaction-onerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBTransaction.json",
-            "name": "onerror",
-            "slug": "API/IDBTransaction/onerror",
-            "summary": "The onerror event handler of the IDBTransaction interface handles the error event, fired when a request returns an error and bubbles up to the transaction object.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBTransaction.onerror"
         }
     ],
     "transaction": [

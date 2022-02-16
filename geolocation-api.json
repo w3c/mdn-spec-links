@@ -559,7 +559,7 @@
             "filename": "api/GeolocationCoordinates.json",
             "name": "heading",
             "slug": "API/GeolocationCoordinates/heading",
-            "summary": "The GeolocationCoordinates.heading read-only property is a double representing the direction in which the device is traveling. This value, specified in degrees, indicates how far off from heading due north the device is. Zero degrees represents true north, and the direction is determined clockwise (which means that east is 90 degrees and west is 270 degrees). If GeolocationCoordinates.speed is 0, heading is NaN. If the device is not able to provide heading information, this value is null.",
+            "summary": "The GeolocationCoordinates.heading read-only property is a double representing the direction in which the device is traveling. This value, specified in degrees, indicates how far off from heading due north the device is. 0 degrees represents true north, and the direction is determined clockwise (which means that east is 90 degrees and west is 270 degrees). If GeolocationCoordinates.speed is 0, heading is NaN. If the device is not able to provide heading information, this value is null.",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -871,7 +871,7 @@
             "filename": "api/GeolocationPosition.json",
             "name": "timestamp",
             "slug": "API/GeolocationPosition/timestamp",
-            "summary": "The GeolocationPosition.timestamp read-only property returns a DOMTimeStamp object, represents the date and the time of the creation of the GeolocationPosition object it belongs to. The precision is to the millisecond.",
+            "summary": "The GeolocationPosition.timestamp read-only property returns a EpochTimeStamp object that represents the date and time that the position was acquired by the device.",
             "support": {
                 "chrome": {
                     "version_added": "5"

@@ -11,7 +11,7 @@
             "filename": "api/Document.json",
             "name": "exitFullscreen",
             "slug": "API/Document/exitFullscreen",
-            "summary": "The Document method exitFullscreen() requests that the element on this document which is currently being presented in full-screen mode be taken out of full-screen mode, restoring the previous state of the screen. This usually reverses the effects of a previous call to Element.requestFullscreen().",
+            "summary": "The Document method exitFullscreen() requests that the element on this document which is currently being presented in fullscreen mode be taken out of fullscreen mode, restoring the previous state of the screen. This usually reverses the effects of a previous call to Element.requestFullscreen().",
             "support": {
                 "chrome": [
                     {
@@ -135,7 +135,7 @@
             "filename": "api/Document.json",
             "name": "fullscreenchange_event",
             "slug": "API/Document/fullscreenchange_event",
-            "summary": "The fullscreenchange event is fired immediately after the browser switches into or out of full-screen mode.",
+            "summary": "The fullscreenchange event is fired immediately after the browser switches into or out of fullscreen mode.",
             "support": {
                 "chrome": [
                     {
@@ -251,135 +251,13 @@
                 "blink",
                 "gecko"
             ],
-            "altname": [
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "onfullscreenchange",
-            "slug": "API/Document/onfullscreenchange",
-            "summary": "The Document interface's onfullscreenchange property is an event handler for the fullscreenchange event that is fired immediately before a document transitions into or out of full-screen mode.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "15",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "18",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ],
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "10",
-                        "alternative_name": "onmozfullscreenchange"
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "10",
-                        "alternative_name": "onmozfullscreenchange"
-                    }
-                ],
-                "ie": {
-                    "version_added": "11",
-                    "alternative_name": "onmsfullscreenchange"
-                },
-                "opera": [
-                    {
-                        "version_added": "58"
-                    },
-                    {
-                        "version_added": "15",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "50"
-                    },
-                    {
-                        "version_added": "14",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "5.1",
-                    "alternative_name": "onwebkitfullscreenchange"
-                },
-                "safari_ios": {
-                    "version_added": "12",
-                    "alternative_name": "onwebkitfullscreenchange",
-                    "partial_implementation": true,
-                    "notes": "Only available on iPad, not on iPhone."
-                },
-                "samsunginternet_android": [
-                    {
-                        "version_added": "10.0"
-                    },
-                    {
-                        "version_added": "1.0",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "37",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ]
-            },
-            "title": "Document.onfullscreenchange"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
             "prefixed": [
                 "webkit"
             ],
             "filename": "api/Element.json",
             "name": "fullscreenchange_event",
             "slug": "API/Element/fullscreenchange_event",
-            "summary": "The fullscreenchange event is fired immediately after an Element switches into or out of full-screen mode.",
+            "summary": "The fullscreenchange event is fired immediately after an Element switches into or out of fullscreen mode.",
             "support": {
                 "chrome": [
                     {
@@ -488,127 +366,6 @@
                 ]
             },
             "title": "Element: fullscreenchange event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "altname": [
-                "webkit"
-            ],
-            "filename": "api/Element.json",
-            "name": "onfullscreenchange",
-            "slug": "API/Element/onfullscreenchange",
-            "summary": "The Element interface's onfullscreenchange property is an event handler for the fullscreenchange event that is fired when the element has transitioned into or out of full-screen mode.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "15",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "18",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ],
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "10",
-                        "alternative_name": "onmozfullscreenchange"
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "10",
-                        "alternative_name": "onmozfullscreenchange"
-                    }
-                ],
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "58"
-                    },
-                    {
-                        "version_added": "15",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "50"
-                    },
-                    {
-                        "version_added": "14",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "5.1",
-                    "alternative_name": "onwebkitfullscreenchange"
-                },
-                "safari_ios": {
-                    "version_added": "12",
-                    "alternative_name": "onwebkitfullscreenchange",
-                    "partial_implementation": true,
-                    "notes": "Only available on iPad, not on iPhone."
-                },
-                "samsunginternet_android": [
-                    {
-                        "version_added": "10.0"
-                    },
-                    {
-                        "version_added": "1.0",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "37",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "alternative_name": "onwebkitfullscreenchange"
-                    }
-                ]
-            },
-            "title": "Element.onfullscreenchange"
         }
     ],
     "ref-for-dom-document-fullscreenenabled①": [
@@ -623,7 +380,7 @@
             "filename": "api/Document.json",
             "name": "fullscreenEnabled",
             "slug": "API/Document/fullscreenEnabled",
-            "summary": "The read-only fullscreenEnabled property on the Document interface indicates whether or not full-screen mode is available.",
+            "summary": "The read-only fullscreenEnabled property on the Document interface indicates whether or not fullscreen mode is available.",
             "support": {
                 "chrome": [
                     {
@@ -747,7 +504,7 @@
             "filename": "api/Document.json",
             "name": "fullscreenerror_event",
             "slug": "API/Document/fullscreenerror_event",
-            "summary": "The fullscreenerror event is fired when the browser cannot switch to full-screen mode.",
+            "summary": "The fullscreenerror event is fired when the browser cannot switch to fullscreen mode.",
             "support": {
                 "chrome": [
                     {
@@ -863,135 +620,13 @@
                 "blink",
                 "gecko"
             ],
-            "altname": [
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "onfullscreenerror",
-            "slug": "API/Document/onfullscreenerror",
-            "summary": "The Document.onfullscreenerror property is an event handler for the fullscreenerror event that is sent to the document when it fails to transition into full-screen mode after a prior call to Element.requestFullscreen().",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "18",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "18",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ],
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "10",
-                        "alternative_name": "onmozfullscreenerror"
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "10",
-                        "alternative_name": "onmozfullscreenerror"
-                    }
-                ],
-                "ie": {
-                    "version_added": "11",
-                    "alternative_name": "onmsfullscreenerror"
-                },
-                "opera": [
-                    {
-                        "version_added": "58"
-                    },
-                    {
-                        "version_added": "15",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "50"
-                    },
-                    {
-                        "version_added": "14",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "6",
-                    "alternative_name": "onwebkitfullscreenerror"
-                },
-                "safari_ios": {
-                    "version_added": "12",
-                    "alternative_name": "onwebkitfullscreenerror",
-                    "partial_implementation": true,
-                    "notes": "Only available on iPad, not on iPhone."
-                },
-                "samsunginternet_android": [
-                    {
-                        "version_added": "10.0"
-                    },
-                    {
-                        "version_added": "1.0",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "37",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ]
-            },
-            "title": "Document.onfullscreenerror"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
             "prefixed": [
                 "webkit"
             ],
             "filename": "api/Element.json",
             "name": "fullscreenerror_event",
             "slug": "API/Element/fullscreenerror_event",
-            "summary": "The fullscreenerror event is fired when the browser cannot switch to full-screen mode.",
+            "summary": "The fullscreenerror event is fired when the browser cannot switch to fullscreen mode.",
             "support": {
                 "chrome": [
                     {
@@ -1100,127 +735,6 @@
                 ]
             },
             "title": "Element: fullscreenerror event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "altname": [
-                "webkit"
-            ],
-            "filename": "api/Element.json",
-            "name": "onfullscreenerror",
-            "slug": "API/Element/onfullscreenerror",
-            "summary": "The Element interface's onfullscreenerror property is an event handler for the fullscreenerror event which is sent to the element when an error occurs while attempting to transition into or out of full-screen mode.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "18",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "18",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ],
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "10",
-                        "alternative_name": "onmozfullscreenerror"
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "10",
-                        "alternative_name": "onmozfullscreenerror"
-                    }
-                ],
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "58"
-                    },
-                    {
-                        "version_added": "15",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "50"
-                    },
-                    {
-                        "version_added": "14",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "6",
-                    "alternative_name": "onwebkitfullscreenerror"
-                },
-                "safari_ios": {
-                    "version_added": "12",
-                    "alternative_name": "onwebkitfullscreenerror",
-                    "partial_implementation": true,
-                    "notes": "Only available on iPad, not on iPhone."
-                },
-                "samsunginternet_android": [
-                    {
-                        "version_added": "10.0"
-                    },
-                    {
-                        "version_added": "1.0",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "37",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "alternative_name": "onwebkitfullscreenerror"
-                    }
-                ]
-            },
-            "title": "Element.onfullscreenerror"
         }
     ],
     "ref-for-dom-element-requestfullscreen①": [
@@ -1235,7 +749,7 @@
             "filename": "api/Element.json",
             "name": "requestFullscreen",
             "slug": "API/Element/requestFullscreen",
-            "summary": "The Element.requestFullscreen() method issues an asynchronous request to make the element be displayed in full-screen mode.",
+            "summary": "The Element.requestFullscreen() method issues an asynchronous request to make the element be displayed in fullscreen mode.",
             "support": {
                 "chrome": [
                     {
@@ -1416,7 +930,7 @@
             "filename": "api/_mixins/DocumentOrShadowRoot__Document.json",
             "name": "fullscreenElement",
             "slug": "API/Document/fullscreenElement",
-            "summary": "The Document.fullscreenElement read-only property returns the Element that is currently being presented in full-screen mode in this document, or null if full-screen mode is not currently in use.",
+            "summary": "The Document.fullscreenElement read-only property returns the Element that is currently being presented in fullscreen mode in this document, or null if fullscreen mode is not currently in use.",
             "support": {
                 "chrome": [
                     {
@@ -1604,7 +1118,7 @@
             "filename": "css/selectors/backdrop.json",
             "name": "backdrop",
             "slug": "CSS/::backdrop",
-            "summary": "The ::backdrop CSS pseudo-element is a box the size of the viewport which is rendered immediately beneath any element being presented in full-screen mode. This includes both elements which have been placed in full-screen mode using the Fullscreen API and <dialog> elements.",
+            "summary": "The ::backdrop CSS pseudo-element is a box the size of the viewport which is rendered immediately beneath any element being presented in fullscreen mode. This includes both elements which have been placed in fullscreen mode using the Fullscreen API and <dialog> elements.",
             "support": {
                 "chrome": [
                     {
@@ -1704,7 +1218,7 @@
             "filename": "css/selectors/fullscreen.json",
             "name": "fullscreen",
             "slug": "CSS/:fullscreen",
-            "summary": "The :fullscreen CSS pseudo-class matches every element which is currently in full-screen mode. If multiple elements have been put into full-screen mode, this selects them all.",
+            "summary": "The :fullscreen CSS pseudo-class matches every element which is currently in fullscreen mode. If multiple elements have been put into fullscreen mode, this selects them all.",
             "support": {
                 "chrome": [
                     {
