@@ -256,10 +256,6 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
     return;
   }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/15018
-  if (spec_url.startsWith('https://w3c.github.io/permissions/')) {
-    return;
-  }
   if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
     return;
   }
