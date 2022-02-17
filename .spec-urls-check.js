@@ -252,12 +252,11 @@ const checkSpecURL = (
    *   return;
    * }
    */
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12368
-  if (spec_url.startsWith('https://w3c.github.io/webcodecs/#dom-imagedecoder-type')) {
-    return;
-  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14600
   if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
+    return;
+  }
+  if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
     return;
   }
   if (
