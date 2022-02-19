@@ -70,7 +70,7 @@
             "filename": "api/ByteLengthQueuingStrategy.json",
             "name": "size",
             "slug": "API/ByteLengthQueuingStrategy/size",
-            "summary": "The size() method of the ByteLengthQueuingStrategy interface returns the given chunk’s byteLength property.",
+            "summary": "The size() method of the ByteLengthQueuingStrategy interface returns the given chunk's byteLength property.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -831,7 +831,11 @@
     "ref-for-rbs-controller-byob-request②": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "byobRequest",
@@ -851,7 +855,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -890,7 +901,11 @@
     "ref-for-rbs-controller-close①": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "close",
@@ -910,7 +925,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -949,7 +971,11 @@
     "ref-for-rbs-controller-desired-size②": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "desiredSize",
@@ -969,7 +995,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1008,7 +1041,11 @@
     "ref-for-rbs-controller-enqueue①": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "enqueue",
@@ -1028,7 +1065,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1067,7 +1111,11 @@
     "ref-for-rbs-controller-error①": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "error",
@@ -1087,7 +1135,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1126,7 +1181,11 @@
     "rbs-controller-class": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "ReadableByteStreamController",
@@ -1154,7 +1213,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1687,7 +1753,11 @@
     "ref-for-byob-reader-constructor①": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "ReadableStreamBYOBReader",
@@ -1707,8 +1777,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1747,7 +1823,11 @@
     "ref-for-generic-reader-cancel②": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "cancel",
@@ -1767,8 +1847,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1865,7 +1951,11 @@
     "ref-for-generic-reader-closed②": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "closed",
@@ -1885,8 +1975,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1983,7 +2079,11 @@
     "ref-for-byob-reader-read③": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "read",
@@ -2003,8 +2103,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -2103,7 +2209,11 @@
     "byob-reader-class": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "ReadableStreamBYOBReader",
@@ -2123,8 +2233,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -2167,7 +2283,11 @@
     "ref-for-rs-byob-request-respond①": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "respond",
@@ -2187,7 +2307,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -2226,7 +2353,11 @@
     "ref-for-rs-byob-request-respond-with-new-view①": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "respondWithNewView",
@@ -2246,7 +2377,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -2285,7 +2423,11 @@
     "ref-for-rs-byob-request-view①": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "view",
@@ -2305,7 +2447,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -2344,7 +2493,11 @@
     "rs-byob-request-class": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "ReadableStreamBYOBRequest",
@@ -2364,7 +2517,14 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.byte_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -3524,7 +3684,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStream.json",
             "name": "WritableStream",
@@ -3544,7 +3708,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -3584,7 +3755,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStream.json",
             "name": "abort",
@@ -3604,7 +3779,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -3644,7 +3826,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStream.json",
             "name": "getWriter",
@@ -3664,7 +3850,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -3704,7 +3897,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStream.json",
             "name": "locked",
@@ -3724,7 +3921,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -3764,7 +3968,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStream.json",
             "name": "WritableStream",
@@ -3784,7 +3992,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -3828,7 +4043,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultController.json",
             "name": "error",
@@ -3848,7 +4067,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -3888,7 +4114,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultController.json",
             "name": "WritableStreamDefaultController",
@@ -3908,7 +4138,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -3951,7 +4188,11 @@
     "ref-for-default-writer-constructor①": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "WritableStreamDefaultWriter",
@@ -3971,7 +4212,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -4011,7 +4259,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "abort",
@@ -4031,7 +4283,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -4071,7 +4330,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "close",
@@ -4091,7 +4354,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -4131,7 +4401,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "closed",
@@ -4151,7 +4425,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -4191,7 +4472,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "desiredSize",
@@ -4211,7 +4496,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -4251,7 +4543,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "ready",
@@ -4271,7 +4567,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -4311,7 +4614,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "releaseLock",
@@ -4331,7 +4638,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -4371,7 +4685,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "write",
@@ -4391,7 +4709,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false
@@ -4431,7 +4756,11 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "WritableStreamDefaultWriter",
@@ -4451,7 +4780,14 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "99",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.streams.writable_streams.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
                     "version_added": false

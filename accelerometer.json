@@ -475,5 +475,58 @@
             },
             "title": "LinearAccelerationSensor"
         }
+    ],
+    "ref-for-policy-controlled-feature": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/feature-policy.json",
+            "name": "accelerometer",
+            "slug": "HTTP/Headers/Feature-Policy/accelerometer",
+            "summary": "The HTTP Feature-Policy header accelerometer directive controls whether the current document is allowed to gather information about the acceleration of the device through the Accelerometer interface.",
+            "support": {
+                "chrome": {
+                    "version_added": "67"
+                },
+                "chrome_android": {
+                    "version_added": "67"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "54"
+                },
+                "opera_android": {
+                    "version_added": "48"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "67"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Feature-Policy: accelerometer"
+        }
     ]
 }

@@ -1853,5 +1853,76 @@
             },
             "title": "MIDIPort"
         }
+    ],
+    "permissions-policy-integration": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "http/headers/feature-policy.json",
+            "name": "midi",
+            "slug": "HTTP/Headers/Feature-Policy/midi",
+            "summary": "The HTTP Feature-Policy header midi directive controls whether the current document is allowed to use the Web MIDI API. When this policy is enabled, the Promise returned by Navigator.requestMIDIAccess() will reject with a DOMException.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": {
+                    "version_added": "60"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "65",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.security.featurePolicy.header.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "65",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.security.featurePolicy.header.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "47"
+                },
+                "opera_android": {
+                    "version_added": "44"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "60"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Feature-Policy: midi"
+        }
     ]
 }
