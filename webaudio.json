@@ -9728,10 +9728,10 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "53"
+                    "version_added": "25"
                 },
                 "firefox_android": {
-                    "version_added": "53"
+                    "version_added": "25"
                 },
                 "ie": {
                     "version_added": false
@@ -9924,6 +9924,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/OfflineAudioContext.json",
@@ -9932,40 +9933,40 @@
             "summary": "The resume() method of the OfflineAudioContext interface resumes the progression of time in an audio context that has been suspended. The promise resolves immediately because the OfflineAudioContext does not require the audio hardware. If the context is not currently suspended or the rendering has not started, the promise is rejected with InvalidStateError.",
             "support": {
                 "chrome": {
-                    "version_added": "49"
+                    "version_added": "41"
                 },
                 "chrome_android": {
-                    "version_added": "49"
+                    "version_added": "41"
                 },
                 "edge": {
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "40"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "40"
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "36"
+                    "version_added": "28"
                 },
                 "opera_android": {
-                    "version_added": "36"
+                    "version_added": "28"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": "9"
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": "9"
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "49"
+                    "version_added": "41"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -10010,26 +10011,12 @@
                 "opera_android": {
                     "version_added": "14"
                 },
-                "safari": [
-                    {
-                        "version_added": "14.1"
-                    },
-                    {
-                        "version_added": "6",
-                        "version_removed": "14.1",
-                        "prefix": "webkit"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "14.5"
-                    },
-                    {
-                        "version_added": "6",
-                        "version_removed": "14.5",
-                        "prefix": "webkit"
-                    }
-                ],
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "6"
+                },
                 "samsunginternet_android": {
                     "version_added": "1.5"
                 },
@@ -10055,10 +10042,10 @@
             "summary": "The suspend() method of the OfflineAudioContext interface schedules a suspension of the time progression in the audio context at the specified time and returns a promise. This is generally useful at the time of manipulating the audio graph synchronously on OfflineAudioContext.",
             "support": {
                 "chrome": {
-                    "version_added": "49"
+                    "version_added": "41"
                 },
                 "chrome_android": {
-                    "version_added": "49"
+                    "version_added": "41"
                 },
                 "edge": {
                     "version_added": "14"
@@ -10073,22 +10060,22 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "36"
+                    "version_added": "28"
                 },
                 "opera_android": {
-                    "version_added": "36"
+                    "version_added": "28"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": "9"
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": "9"
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "49"
+                    "version_added": "41"
                 },
                 "edge_blink": {
                     "version_added": "79"
