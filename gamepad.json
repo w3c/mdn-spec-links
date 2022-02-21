@@ -866,30 +866,29 @@
             "title": "Navigator.getGamepads()"
         }
     ],
-    "the-gamepadconnected-event": [
+    "event-gamepadconnected": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
+            ],
+            "partial": [
+                "blink"
             ],
             "filename": "api/Window.json",
             "name": "gamepadconnected_event",
             "slug": "API/Window/gamepadconnected_event",
             "summary": "The gamepadconnected event is fired when the browser detects that a gamepad has been connected or the first time a button/axis of the gamepad is used.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "35"
-                    },
-                    {
-                        "version_added": "21",
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "35",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepadconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                },
                 "chrome_android": {
-                    "version_added": "37"
+                    "version_added": "37",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepadconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
                 },
                 "edge": {
                     "version_added": "18"
@@ -903,18 +902,15 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "version_removed": "22",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "22",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepadconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                },
                 "opera_android": {
-                    "version_added": "24"
+                    "version_added": "24",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepadconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
                 },
                 "safari": {
                     "version_added": "10.1"
@@ -923,194 +919,20 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "3.0"
+                    "version_added": "3.0",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepadconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "37",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepadconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ]
-            },
-            "title": "Window: gamepadconnected event"
-        }
-    ],
-    "the-gamepaddisconnected-event": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "gamepaddisconnected_event",
-            "slug": "API/Window/gamepaddisconnected_event",
-            "summary": "The gamepaddisconnected event is fired when the browser detects that a gamepad has been disconnected.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "35"
-                    },
-                    {
-                        "version_added": "21",
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "37"
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "29"
-                },
-                "firefox_android": {
-                    "version_added": "32"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "version_removed": "22",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ]
-            },
-            "title": "Window: gamepaddisconnected event"
-        }
-    ],
-    "event-gamepadconnected": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "ongamepadconnected",
-            "slug": "API/Window/ongamepadconnected",
-            "summary": "The gamepadconnected event is fired when the browser detects that a gamepad has been connected or the first time a button/axis of the gamepad is used.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "35"
-                    },
-                    {
-                        "version_added": "21",
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "35"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ],
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "29"
-                },
-                "firefox_android": {
-                    "version_added": "32"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "version_removed": "22",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "version_removed": "22",
-                        "prefix": "webkit"
-                    }
-                ],
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": [
-                    {
-                        "version_added": "3.0"
-                    },
-                    {
-                        "prefix": "webkit",
-                        "version_added": "1.5",
-                        "version_removed": "3.0"
-                    }
-                ],
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepadconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                }
             },
             "title": "Window: gamepadconnected event"
         }
@@ -1118,35 +940,27 @@
     "event-gamepaddisconnected": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
             ],
+            "partial": [
+                "blink"
+            ],
             "filename": "api/Window.json",
-            "name": "ongamepaddisconnected",
-            "slug": "API/Window/ongamepaddisconnected",
+            "name": "gamepaddisconnected_event",
+            "slug": "API/Window/gamepaddisconnected_event",
             "summary": "The gamepaddisconnected event is fired when the browser detects that a gamepad has been disconnected.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "35"
-                    },
-                    {
-                        "version_added": "21",
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "35"
-                    },
-                    {
-                        "version_added": "25",
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "35",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepaddisconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                },
+                "chrome_android": {
+                    "version_added": "37",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepaddisconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                },
                 "edge": {
                     "version_added": "18"
                 },
@@ -1159,55 +973,37 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "15",
-                        "version_removed": "22",
-                        "prefix": "webkit"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "22"
-                    },
-                    {
-                        "version_added": "14",
-                        "version_removed": "22",
-                        "prefix": "webkit"
-                    }
-                ],
+                "opera": {
+                    "version_added": "22",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepaddisconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                },
+                "opera_android": {
+                    "version_added": "24",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepaddisconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                },
                 "safari": {
                     "version_added": "10.1"
                 },
                 "safari_ios": {
                     "version_added": false
                 },
-                "samsunginternet_android": [
-                    {
-                        "version_added": "3.0"
-                    },
-                    {
-                        "prefix": "webkit",
-                        "version_added": "1.5",
-                        "version_removed": "3.0"
-                    }
-                ],
-                "webview_android": {
-                    "version_added": false
+                "samsunginternet_android": {
+                    "version_added": "3.0",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepaddisconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "35",
-                        "prefix": "webkit"
-                    }
-                ]
+                "webview_android": {
+                    "version_added": "37",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepaddisconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "The event handler property (<code>ongamepaddisconnected</code>) is not supported; see <a href='https://crbug.com/1192878'>bug 1192878</a>."
+                }
             },
             "title": "Window: gamepaddisconnected event"
         }

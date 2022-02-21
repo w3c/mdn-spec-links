@@ -4899,61 +4899,6 @@
             "title": "AudioWorkletNode()"
         }
     ],
-    "dom-audioworkletnode-onprocessorerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/AudioWorkletNode.json",
-            "name": "onprocessorerror",
-            "slug": "API/AudioWorkletNode/onprocessorerror",
-            "summary": "The onprocessorerror property of the AudioWorkletNode interface defines an event handler function to be called when the processorerror event fires. This occurs when the underlying AudioWorkletProcessor behind the node throws an exception in its constructor, the process method, or any user-defined class method.",
-            "support": {
-                "chrome": {
-                    "version_added": "66"
-                },
-                "chrome_android": {
-                    "version_added": "66"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "76"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "53"
-                },
-                "opera_android": {
-                    "version_added": "47"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "9.0"
-                },
-                "webview_android": {
-                    "version_added": "66"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "AudioWorkletNode.onprocessorerror"
-        }
-    ],
     "dom-audioworkletnode-parameters": [
         {
             "engines": [
@@ -5062,6 +5007,60 @@
                 }
             },
             "title": "AudioWorkletNode.port"
+        }
+    ],
+    "dom-audioworkletnode-onprocessorerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/AudioWorkletNode.json",
+            "name": "processorerror_event",
+            "slug": "API/AudioWorkletNode/processorerror_event",
+            "summary": "The processorerror event fires when the underlying AudioWorkletProcessor behind the node throws an exception in its constructor, the process method, or any user-defined class method.",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": {
+                    "version_added": "66"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "76"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "53"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "9.0"
+                },
+                "webview_android": {
+                    "version_added": "66"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AudioWorkletNode: processorerror event"
         }
     ],
     "AudioWorkletNode": [
@@ -6524,61 +6523,6 @@
             "title": "BaseAudioContext.listener"
         }
     ],
-    "dom-baseaudiocontext-onstatechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/BaseAudioContext.json",
-            "name": "onstatechange",
-            "slug": "API/BaseAudioContext/onstatechange",
-            "summary": "The onstatechange property of the BaseAudioContext interface defines an event handler function to be called when the statechange event fires: this occurs when the audio context's state changes.",
-            "support": {
-                "chrome": {
-                    "version_added": "41"
-                },
-                "chrome_android": {
-                    "version_added": "41"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "40"
-                },
-                "firefox_android": {
-                    "version_added": "40"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "28"
-                },
-                "opera_android": {
-                    "version_added": "28"
-                },
-                "safari": {
-                    "version_added": "9"
-                },
-                "safari_ios": {
-                    "version_added": "9"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "41"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "BaseAudioContext.onstatechange"
-        }
-    ],
     "dom-baseaudiocontext-samplerate": [
         {
             "engines": [
@@ -6687,6 +6631,61 @@
                 }
             },
             "title": "BaseAudioContext.state"
+        }
+    ],
+    "dom-baseaudiocontext-onstatechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/BaseAudioContext.json",
+            "name": "statechange_event",
+            "slug": "API/BaseAudioContext/statechange_event",
+            "summary": "A statechange event is fired at a BaseAudioContext object when its state member changes.",
+            "support": {
+                "chrome": {
+                    "version_added": "41"
+                },
+                "chrome_android": {
+                    "version_added": "41"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "40"
+                },
+                "firefox_android": {
+                    "version_added": "40"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "28"
+                },
+                "opera_android": {
+                    "version_added": "28"
+                },
+                "safari": {
+                    "version_added": "9"
+                },
+                "safari_ios": {
+                    "version_added": "9"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "41"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BaseAudioContext: statechange event"
         }
     ],
     "BaseAudioContext": [

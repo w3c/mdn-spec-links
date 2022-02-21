@@ -544,6 +544,7 @@
     "ref-for-dom-abortsignal-reason①": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/AbortSignal.json",
@@ -552,10 +553,10 @@
             "summary": "The reason read-only property returns a JavaScript value that indicates the abort reason.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "deno": {
                     "version_added": "1.16"
@@ -591,10 +592,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "98"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "98"
                 }
             },
             "title": "AbortSignal.reason"
