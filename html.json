@@ -35154,7 +35154,7 @@
             "filename": "api/History.json",
             "name": "replaceState",
             "slug": "API/History/replaceState",
-            "summary": "The History.replaceState() method modifies the current history entry, replacing it with the stateObj, title, and URL passed in the method parameters. This method is particularly useful when you want to update the state object or URL of the current history entry in response to some user action.",
+            "summary": "The History.replaceState() method modifies the current history entry, replacing it with the state object and URL passed in the method parameters. This method is particularly useful when you want to update the state object or URL of the current history entry in response to some user action.",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -38648,11 +38648,7 @@
             "support": {
                 "chrome": {
                     "version_added": "13",
-                    "notes": [
-                        "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>.",
-                        "From Chrome 77, the URL parameter only accepts <code>http</code> or <code>https</code> URLs.",
-                        "The obsolete <code>title</code> parameter is required."
-                    ]
+                    "notes": "From Chrome 77, the URL parameter only accepts <code>http</code> or <code>https</code> URLs."
                 },
                 "chrome_android": {
                     "version_added": false
@@ -38670,8 +38666,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "11.6",
-                    "notes": "The obsolete <code>title</code> parameter is required."
+                    "version_added": "11.6"
                 },
                 "opera_android": {
                     "version_added": false
@@ -38690,11 +38685,7 @@
                 },
                 "edge_blink": {
                     "version_added": "79",
-                    "notes": [
-                        "Allowed schemes include <code>mailto</code>, <code>mms</code>, <code>nntp</code>, <code>rtsp</code>, and <code>webcal</code>. Custom protocols must be prefixed with <code>web+</code>.",
-                        "From Chrome 77, the URL parameter only accepts <code>http</code> or <code>https</code> URLs.",
-                        "The obsolete <code>title</code> parameter is required."
-                    ]
+                    "notes": "From Chrome 77, the URL parameter only accepts <code>http</code> or <code>https</code> URLs."
                 }
             },
             "title": "Navigator.registerProtocolHandler()"

@@ -7,7 +7,7 @@
             "filename": "javascript/builtins/Array.json",
             "name": "groupBy",
             "slug": "JavaScript/Reference/Global_Objects/Array/groupBy",
-            "summary": "The groupBy() method groups the elements of the calling array according to the values returned by a provided testing function. The returned object has separate properties for each group, containing arrays with the elements in the group.",
+            "summary": "The groupBy() method groups the elements of the calling array according to the string values returned by a provided testing function. The returned object has separate properties for each group, containing arrays with the elements in the group.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -56,6 +56,65 @@
                 }
             },
             "title": "Array.prototype.groupBy()"
+        }
+    ],
+    "sec-array.prototype.groupbymap": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "javascript/builtins/Array.json",
+            "name": "groupByToMap",
+            "slug": "JavaScript/Reference/Global_Objects/Array/groupByToMap",
+            "summary": "The groupByToMap() method groups the elements of the calling array using the values returned by a provided testing function. The final returned Map uses the unique values from the test function as keys, which can be used to get the array of elements in each group.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "preview"
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "Array.prototype.groupByToMap()"
         }
     ]
 }

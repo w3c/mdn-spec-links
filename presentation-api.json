@@ -284,7 +284,7 @@
             "filename": "api/PresentationAvailability.json",
             "name": "onchange",
             "slug": "API/PresentationAvailability/onchange",
-            "summary": "The onchange attribute is an event handler whose corresponding event handler event type is change.",
+            "summary": "A PresentationAvailability object is associated with available presentation displays and represents the presentation display availability for a presentation request. If the controlling user agent can monitor the list of available presentation displays in the background (without a pending request to start()), the PresentationAvailability object MUST be implemented in a controlling browsing context.",
             "support": {
                 "chrome": {
                     "version_added": "47"
@@ -342,7 +342,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PresentationAvailability.onchange"
+            "title": "PresentationAvailability"
         }
     ],
     "dom-presentationavailability-value": [

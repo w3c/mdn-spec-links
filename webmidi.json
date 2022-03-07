@@ -5,9 +5,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIAccess.json",
             "name": "inputs",
             "slug": "API/MIDIAccess/inputs",
@@ -22,16 +19,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -69,9 +72,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIAccess.json",
             "name": "onstatechange",
             "slug": "API/MIDIAccess/onstatechange",
@@ -86,16 +86,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -133,9 +139,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIAccess.json",
             "name": "outputs",
             "slug": "API/MIDIAccess/outputs",
@@ -150,16 +153,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -197,9 +206,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIAccess.json",
             "name": "sysexEnabled",
             "slug": "API/MIDIAccess/sysexEnabled",
@@ -214,16 +220,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -261,9 +273,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIAccess.json",
             "name": "MIDIAccess",
             "slug": "API/MIDIAccess",
@@ -278,16 +287,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -325,9 +340,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIConnectionEvent.json",
             "name": "MIDIConnectionEvent",
             "slug": "API/MIDIConnectionEvent/MIDIConnectionEvent",
@@ -342,16 +354,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -389,9 +407,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIConnectionEvent.json",
             "name": "port",
             "slug": "API/MIDIConnectionEvent/port",
@@ -406,16 +421,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -453,9 +474,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIConnectionEvent.json",
             "name": "MIDIConnectionEvent",
             "slug": "API/MIDIConnectionEvent",
@@ -470,16 +488,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -517,9 +541,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIInput.json",
             "name": "onmidimessage",
             "slug": "API/MIDIInput/onmidimessage",
@@ -534,16 +555,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -581,9 +608,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIInput.json",
             "name": "MIDIInput",
             "slug": "API/MIDIInput",
@@ -598,16 +622,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -645,9 +675,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIInputMap.json",
             "name": "MIDIInputMap",
             "slug": "API/MIDIInputMap",
@@ -662,16 +689,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -707,9 +740,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIOutputMap.json",
             "name": "MIDIOutputMap",
             "slug": "API/MIDIOutputMap",
@@ -724,16 +754,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -771,9 +807,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIMessageEvent.json",
             "name": "MIDIMessageEvent",
             "slug": "API/MIDIMessageEvent/MIDIMessageEvent",
@@ -788,16 +821,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -835,9 +874,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIMessageEvent.json",
             "name": "data",
             "slug": "API/MIDIMessageEvent/data",
@@ -852,16 +888,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -899,9 +941,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIMessageEvent.json",
             "name": "MIDIMessageEvent",
             "slug": "API/MIDIMessageEvent",
@@ -916,16 +955,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -962,9 +1007,6 @@
             "engines": [
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIOutput.json",
             "name": "clear",
             "slug": "API/MIDIOutput/clear",
@@ -980,16 +1022,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1028,9 +1076,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIOutput.json",
             "name": "send",
             "slug": "API/MIDIOutput/send",
@@ -1045,16 +1090,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1092,9 +1143,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIOutput.json",
             "name": "MIDIOutput",
             "slug": "API/MIDIOutput",
@@ -1109,16 +1157,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1156,9 +1210,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "close",
             "slug": "API/MIDIPort/close",
@@ -1173,16 +1224,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1220,9 +1277,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "connection",
             "slug": "API/MIDIPort/connection",
@@ -1237,16 +1291,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1284,9 +1344,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "id",
             "slug": "API/MIDIPort/id",
@@ -1301,16 +1358,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1348,9 +1411,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "manufacturer",
             "slug": "API/MIDIPort/manufacturer",
@@ -1365,16 +1425,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1412,9 +1478,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "name",
             "slug": "API/MIDIPort/name",
@@ -1429,16 +1492,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1476,9 +1545,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "onstatechange",
             "slug": "API/MIDIPort/onstatechange",
@@ -1493,16 +1559,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1540,9 +1612,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "open",
             "slug": "API/MIDIPort/open",
@@ -1557,16 +1626,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1604,9 +1679,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "state",
             "slug": "API/MIDIPort/state",
@@ -1621,16 +1693,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1668,9 +1746,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "type",
             "slug": "API/MIDIPort/type",
@@ -1685,16 +1760,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1732,9 +1813,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "version",
             "slug": "API/MIDIPort/version",
@@ -1749,16 +1827,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1796,9 +1880,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/MIDIPort.json",
             "name": "MIDIPort",
             "slug": "API/MIDIPort",
@@ -1813,16 +1894,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webmidi.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
@@ -1852,6 +1939,73 @@
                 }
             },
             "title": "MIDIPort"
+        }
+    ],
+    "dom-navigator-requestmidiaccess": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "requestMIDIAccess",
+            "slug": "API/Navigator/requestMIDIAccess",
+            "summary": "The requestMIDIAccess() method of the Navigator interface returns a Promise representing a request for access to MIDI devices on a user's system. This method is part of the Web MIDI API, which provides a means for accessing, enumerating, and manipulating MIDI devices.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator.requestMIDIAccess()"
         }
     ],
     "permissions-policy-integration": [
