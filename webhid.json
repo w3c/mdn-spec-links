@@ -431,7 +431,7 @@
             "filename": "api/HIDDevice.json",
             "name": "oninputreport",
             "slug": "API/HIDDevice/oninputreport",
-            "summary": "The oninputreport event handler of the HIDDevice interface processes inputreport events.",
+            "summary": "The inputreport event of the HIDDevice interface fires when a new report is received from the HID device.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -473,7 +473,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "HIDDevice.oninputreport"
+            "title": "HIDDevice: inputreport event"
         }
     ],
     "dom-hiddevice-open": [
@@ -1120,7 +1120,7 @@
             "filename": "api/HIDInputReportEvent.json",
             "name": "HIDInputReportEvent",
             "slug": "API/HIDInputReportEvent",
-            "summary": "The HIDInputReportEvent interface of the WebHID API is passed to HIDDevice.oninputreport when an input report is received from any associated HID device.",
+            "summary": "The HIDInputReportEvent interface of the WebHID API is passed to HIDDevice.inputreport_event when an input report is received from any associated HID device.",
             "support": {
                 "chrome": {
                     "version_added": "89"

@@ -394,7 +394,7 @@
             "filename": "api/RTCDTMFSender.json",
             "name": "ontonechange",
             "slug": "API/RTCDTMFSender/ontonechange",
-            "summary": "The ontonechange property of the RTCDTMFSender interface is used to set the event handler for the tonechange event, which is sent to the RTCDTMFSender each time a tone begins or ends. The event handler receives as input a single parameter of type RTCDTMFToneChangeEvent, which describes the change.",
+            "summary": "The tonechange event is sent to an RTCDTMFSender by the WebRTC API to indicate when DTMF tones previously queued for sending (by calling RTCDTMFSender.insertDTMF()) begin and end.",
             "support": {
                 "chrome": {
                     "version_added": "27"
@@ -436,7 +436,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDTMFSender.ontonechange"
+            "title": "RTCDTMFSender: tonechange event"
         }
     ],
     "dom-RTCDTMFSender-tonebuffer": [

@@ -696,16 +696,16 @@
             "title": "PictureInPictureWindow.height"
         }
     ],
-    "dom-pictureinpicturewindow-onresize": [
+    "eventdef-pictureinpicturewindow-resize": [
         {
             "engines": [
                 "blink",
                 "webkit"
             ],
             "filename": "api/PictureInPictureWindow.json",
-            "name": "onresize",
-            "slug": "API/PictureInPictureWindow/onresize",
-            "summary": "The onresize property of the PictureInPictureWindow interface is an event handler that processes PictureInPictureWindow.resize events.",
+            "name": "resize_event",
+            "slug": "API/PictureInPictureWindow/resize_event",
+            "summary": "The resize event fires when the floating video window has been resized.",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -747,10 +747,10 @@
                     "version_added": "79"
                 }
             },
-            "title": "PictureInPictureWindow.onresize"
+            "title": "PictureInPictureWindow: resize event"
         }
     ],
-    "eventdef-pictureinpicturewindow-resize": [
+    "dom-pictureinpicturewindow-onresize": [
         {
             "engines": [
                 "blink",

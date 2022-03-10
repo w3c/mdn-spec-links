@@ -12412,15 +12412,13 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "partial": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/Document.json",
             "name": "onvisibilitychange",
             "slug": "API/Document/onvisibilitychange",
-            "summary": "The Document.onvisibilitychange property represents the event handler that is called when a visibilitychange event reaches this object.",
+            "summary": "The visibilitychange event is fired at the document when the contents of its tab have become visible or have been hidden.",
             "support": {
                 "chrome": {
                     "version_added": "62",
@@ -12451,22 +12449,34 @@
                     "version_added": "46",
                     "notes": "Before Opera Android 46, this event handler attribute is not supported; however, the event itself is supported since Opera Android 20. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
                 },
-                "safari": {
-                    "version_added": "10.1",
-                    "partial_implementation": true,
-                    "notes": [
-                        "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
-                        "Before Safari 10.1, this event handler attribute was not supported; however, the event itself was supported since Safari 7. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    ]
-                },
-                "safari_ios": {
-                    "version_added": "10.3",
-                    "partial_implementation": true,
-                    "notes": [
-                        "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
-                        "Before Safari iOS 10.3, this event handler attribute was not supported; however, the event itself was supported since Safari iOS 7. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    ]
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_removed": "14.1",
+                        "version_added": "10.1",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
+                            "Before Safari 10.1, this event handler attribute was not supported; however, the event itself was supported since Safari 7. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
+                        ]
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_removed": "14.5",
+                        "version_added": "10.3",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
+                            "Before Safari 10.1, this event handler attribute was not supported; however, the event itself was supported since Safari 7. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
+                        ]
+                    }
+                ],
                 "samsunginternet_android": {
                     "version_added": "8.0",
                     "notes": "Before Samsung Internet 8.0, this event handler attribute is not supported; however, the event itself is supported since Samsung Internet 2.0. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
@@ -12480,14 +12490,12 @@
                     "notes": "Before Chrome 62, this event handler attribute is not supported; however, the event itself is supported since Chrome 33. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
                 }
             },
-            "title": "Document.onvisibilitychange"
+            "title": "Document: visibilitychange event"
         },
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "partial": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/Document.json",
@@ -12556,24 +12564,36 @@
                         "version_removed": "14"
                     }
                 ],
-                "safari": {
-                    "version_added": "7",
-                    "partial_implementation": true,
-                    "notes": [
-                        "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
-                        "Before Safari 14, the event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not.",
-                        "Before Safari 10.1, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Safari, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    ]
-                },
-                "safari_ios": {
-                    "version_added": "7",
-                    "partial_implementation": true,
-                    "notes": [
-                        "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
-                        "Before Safari iOS 14, the event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not.",
-                        "Before Safari iOS 10.3, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Safari iOS, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    ]
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_removed": "14.1",
+                        "version_added": "7",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
+                            "The event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not.",
+                            "Before Safari 10.1, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Safari, use <code>document.addEventListener('visibilitychange', function() {});</code>."
+                        ]
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14.5"
+                    },
+                    {
+                        "version_removed": "14.5",
+                        "version_added": "7",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
+                            "Before Safari iOS 14, the event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not.",
+                            "Before Safari iOS 10.3, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Safari iOS, use <code>document.addEventListener('visibilitychange', function() {});</code>."
+                        ]
+                    }
+                ],
                 "samsunginternet_android": [
                     {
                         "version_added": "2.0",
@@ -40247,9 +40267,9 @@
                 "gecko"
             ],
             "filename": "api/SharedWorker.json",
-            "name": "onerror",
-            "slug": "API/SharedWorker/onerror",
-            "summary": "The onerror property of the SharedWorker interface represents an event handler, that is a function to be called when the error event occurs.",
+            "name": "error_event",
+            "slug": "API/SharedWorker/error_event",
+            "summary": "The error event of the SharedWorker interface fires when an error occurs in the worker.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -40295,7 +40315,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SharedWorker.onerror"
+            "title": "SharedWorker: error event"
         },
         {
             "engines": [
