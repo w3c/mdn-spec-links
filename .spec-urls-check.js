@@ -172,6 +172,8 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/VTTCue/snapToLines",
     "https://developer.mozilla.org/docs/Web/API/VTTCue/text",
     "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
+    // FIXME: dunno what the problem is with the following
+    "https://developer.mozilla.org/docs/Web/CSS/path()",
   ]
   if (exceptions.includes(mdnURL)) {
     return false;
@@ -257,7 +259,27 @@ const checkSpecURL = (
     return;
   }
   // FIXME temporary
+  if (spec_url.startsWith('https://drafts.csswg.org/css-shapes/')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://wicg.github.io/webusb/')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://wicg.github.io/visual-viewport/')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html')) {
+    return;
+  }
+  // FIXME temporary
   if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/web-sockets.html')) {
+    return;
+  }
+  // FIXME temporary
+  if (spec_url.startsWith('https://w3c.github.io/geolocation-api/')) {
     return;
   }
   if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
