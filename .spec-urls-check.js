@@ -282,10 +282,6 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/web-sockets.html')) {
     return;
   }
-  // FIXME temporary
-  if (spec_url.startsWith('https://w3c.github.io/geolocation-api/')) {
-    return;
-  }
   if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
     return;
   }
