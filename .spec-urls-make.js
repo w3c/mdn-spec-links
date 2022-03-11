@@ -61,7 +61,6 @@ const respecRawSpecs = [
   "https://w3c.github.io/beacon/", // OUT OF DATE TR
   "https://w3c.github.io/gamepad/", // yes
   "https://w3c.github.io/gamepad/extensions.html", // NO TR
-  "https://w3c.github.io/geolocation-api/", // yes
   "https://w3c.github.io/hr-time/", // yes
   "https://w3c.github.io/html-media-capture/", // ca. 2018 TR Rec
   "https://w3c.github.io/input-events/", // yes
