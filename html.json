@@ -14635,7 +14635,7 @@
             "filename": "api/EventSource.json",
             "name": "onerror",
             "slug": "API/EventSource/onerror",
-            "summary": "The onerror property of the EventSource interface is an event handler called when an error occurs and the error event is dispatched on an EventSource object.",
+            "summary": "The error event of the EventSource API is fired when a connection with an event source fails to be opened.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -14680,7 +14680,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EventSource.onerror"
+            "title": "EventSource: error event"
         }
     ],
     "handler-eventsource-onmessage": [
@@ -14693,7 +14693,7 @@
             "filename": "api/EventSource.json",
             "name": "onmessage",
             "slug": "API/EventSource/onmessage",
-            "summary": "The onmessage property of the EventSource interface is an event handler called when a message event is received, that is when a message is coming from the source.",
+            "summary": "The message event of the EventSource API is fired when data is received through an event source.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -14738,7 +14738,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EventSource.onmessage"
+            "title": "EventSource: message event"
         }
     ],
     "handler-eventsource-onopen": [
@@ -14751,7 +14751,7 @@
             "filename": "api/EventSource.json",
             "name": "onopen",
             "slug": "API/EventSource/onopen",
-            "summary": "The onopen property of the EventSource interface is an event handler called when an open event is received, that is when the connection was just opened.",
+            "summary": "The open event of the EventSource API is fired when a connection with an event source is opened.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -14796,7 +14796,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "EventSource.onopen"
+            "title": "EventSource: open event"
         }
     ],
     "event-open": [

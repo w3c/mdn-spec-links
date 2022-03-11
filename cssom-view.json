@@ -1727,7 +1727,7 @@
             "filename": "api/MediaQueryList.json",
             "name": "onchange",
             "slug": "API/MediaQueryList/onchange",
-            "summary": "The onchange property of the MediaQueryList interface is an event handler property representing a function that is invoked when the change event fires — that is, when the status of media query support changes. The event object is a MediaQueryListEvent instance, which is recognized as a MediaListQuery instance in older browsers, for backwards compatibility purposes.",
+            "summary": "The change event of the MediaQueryList interface fires when the status of media query support changes.",
             "support": {
                 "chrome": {
                     "version_added": "45"
@@ -1769,7 +1769,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaQueryList.onchange"
+            "title": "MediaQueryList: change event"
         }
     ],
     "the-mediaquerylist-interface": [
@@ -1837,7 +1837,7 @@
             "filename": "api/MediaQueryListEvent.json",
             "name": "MediaQueryListEvent",
             "slug": "API/MediaQueryListEvent",
-            "summary": "The MediaQueryListEvent object stores information on the changes that have happened to a MediaQueryList object — instances are available as the event object on a function referenced by a MediaQueryList.onchange property or MediaQueryList.addListener() call.",
+            "summary": "The MediaQueryListEvent object stores information on the changes that have happened to a MediaQueryList object — instances are available as the event object on a function referenced by a change event.",
             "support": {
                 "chrome": {
                     "version_added": "39"
