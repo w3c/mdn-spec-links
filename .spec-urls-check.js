@@ -259,10 +259,6 @@ const checkSpecURL = (
     return;
   }
   // FIXME temporary
-  if (spec_url.startsWith('https://drafts.csswg.org/css-shapes/')) {
-    return;
-  }
-  // FIXME temporary
   if (spec_url.startsWith('https://wicg.github.io/webusb/')) {
     return;
   }
