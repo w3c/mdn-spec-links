@@ -187,8 +187,8 @@ const needsSpecURL = mdnURL => {
 log('loading SPECURLS.json...');
 const SPECURLS = JSON.parse(fs.readFileSync('SPECURLS.json', 'utf-8'));
 
-var MDNURLS = [];
-var file;
+const MDNURLS = [];
+let file;
 
 chalk.level = 3;
 
@@ -216,7 +216,7 @@ const checkSpecURLs = (key, data) => {
         warn(`${file}:${feature}: no mdn_url`);
       }
     }
-    let spec_url = bcdFeatureData.spec_url;
+    const spec_url = bcdFeatureData.spec_url;
     if (spec_url && spec_url.length !== 0) {
       if (deprecated) {
         warn(`${file}:${feature}: deprecated but has spec_url`);
