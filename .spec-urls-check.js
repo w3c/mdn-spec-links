@@ -267,14 +267,6 @@ const checkSpecURL = (
     return;
   }
   // FIXME temporary
-  if (spec_url.startsWith('https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html')) {
-    return;
-  }
-  // FIXME temporary
-  if (spec_url.startsWith('https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html')) {
-    return;
-  }
-  // FIXME temporary
   if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/web-sockets.html')) {
     return;
   }
