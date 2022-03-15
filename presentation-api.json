@@ -1526,7 +1526,7 @@
             "filename": "api/PresentationRequest.json",
             "name": "onconnectionavailable",
             "slug": "API/PresentationRequest/onconnectionavailable",
-            "summary": "The following are event handlers (and their corresponding event handler event types) which must be supported, as event handler IDL attributes, by objects implementing the PresentationRequest interface:",
+            "summary": "A PresentationRequest object is used to initiate or reconnect to a presentation made by a controlling browsing context. The PresentationRequest object MUST be implemented in a controlling browsing context provided by a controlling user agent.",
             "support": {
                 "chrome": {
                     "version_added": "47"
@@ -1584,7 +1584,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PresentationRequest.onconnectionavailable"
+            "title": "PresentationRequest"
         }
     ],
     "reconnecting-to-a-presentation": [
