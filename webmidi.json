@@ -535,6 +535,73 @@
             "title": "MIDIConnectionEvent"
         }
     ],
+    "dom-midiinput-onmidimessage": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/MIDIInput.json",
+            "name": "midimessage_event",
+            "slug": "API/MIDIInput/midimessage_event",
+            "summary": "The midimessage event of the Web MIDI API is fired when the MIDI port corresponding to this MIDIInput finishes receiving one or more MIDI messages. An instance of MIDIMessageEvent containing the message that was received is passed to the event handler.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIInput: midimessage event"
+        }
+    ],
     "midiinput-interface": [
         {
             "engines": [

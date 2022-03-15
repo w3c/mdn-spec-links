@@ -2,6 +2,7 @@
     "layering": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -11,12 +12,10 @@
             "summary": "The @layer CSS at-rule declares a cascade layer. Rules within a cascade layer cascade together, giving more control over the cascade to web developers.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "See Chromium <a href='https://crbug.com/1164367'>bug 1164367</a>."
+                    "version_added": "99"
                 },
                 "chrome_android": {
-                    "version_added": false,
-                    "notes": "See Chromium <a href='https://crbug.com/1164367'>bug 1164367</a>."
+                    "version_added": "99"
                 },
                 "edge": {
                     "version_added": false
@@ -60,12 +59,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false,
-                    "notes": "See Chromium <a href='https://crbug.com/1164367'>bug 1164367</a>."
+                    "version_added": "99"
                 },
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "See Chromium <a href='https://crbug.com/1164367'>bug 1164367</a>."
+                    "version_added": "99"
                 }
             },
             "title": "@layer"
