@@ -21749,6 +21749,121 @@
             "title": "HTMLElement.hidden"
         }
     ],
+    "dom-inert": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "inert",
+            "slug": "API/HTMLElement/inert",
+            "summary": "The HTMLElement property inert is a boolean value that, when present, makes the browser \"ignore\" user input events for the element, including focus events and events from assistive technologies. The browser may also ignore page search and text selection in the element. This can be useful when building UIs such as modals where you would want to \"trap\" the focus inside the modal when it's visible.",
+            "support": {
+                "chrome": {
+                    "version_added": "60",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "chrome_android": {
+                    "version_added": "60",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "81",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "html5.inert.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "81",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "html5.inert.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "47",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "opera_android": {
+                    "version_added": "44",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                },
+                "safari": {
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "name": "inert attribute",
+                            "type": "preference"
+                        }
+                    ]
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
+                }
+            },
+            "title": "HTMLElement.inert"
+        }
+    ],
     "the-innertext-idl-attribute": [
         {
             "engines": [
