@@ -439,6 +439,61 @@
             "title": "MediaDevices: devicechange event"
         }
     ],
+    "dom-mediadevices-ondevicechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaDevices.json",
+            "name": "devicechange_event",
+            "slug": "API/MediaDevices/devicechange_event",
+            "summary": "A devicechange event is sent to a MediaDevices instance whenever a media device such as a camera, microphone, or speaker is connected to or removed from the system.",
+            "support": {
+                "chrome": {
+                    "version_added": "57"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "52"
+                },
+                "firefox_android": {
+                    "version_added": "52"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "34"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaDevices: devicechange event"
+        }
+    ],
     "dom-mediadevices-enumeratedevices": [
         {
             "engines": [
@@ -645,61 +700,6 @@
                 }
             },
             "title": "MediaDevices.getUserMedia()"
-        }
-    ],
-    "dom-mediadevices-ondevicechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaDevices.json",
-            "name": "ondevicechange",
-            "slug": "API/MediaDevices/ondevicechange",
-            "summary": "A devicechange event is sent to a MediaDevices instance whenever a media device such as a camera, microphone, or speaker is connected to or removed from the system.",
-            "support": {
-                "chrome": {
-                    "version_added": "57"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "52"
-                },
-                "firefox_android": {
-                    "version_added": "52"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "34"
-                },
-                "opera_android": {
-                    "version_added": "34"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaDevices: devicechange event"
         }
     ],
     "mediadevices": [
@@ -1416,7 +1416,7 @@
             "filename": "api/MediaStream.json",
             "name": "onaddtrack",
             "slug": "API/MediaStream/onaddtrack",
-            "summary": "The MediaStream.onaddtrack property is an event handler which specifies a function to be called when the addtrack event occurs on a MediaStream instance. This happens when a new track of any kind is added to the media stream.",
+            "summary": "The addtrack event is fired when a new MediaStreamTrack object has been added to a MediaStream.",
             "support": {
                 "chrome": {
                     "version_added": "26"
@@ -1458,7 +1458,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaStream.onaddtrack"
+            "title": "MediaStream: addtrack event"
         }
     ],
     "dom-mediastream-onremovetrack": [
@@ -1471,7 +1471,7 @@
             "filename": "api/MediaStream.json",
             "name": "onremovetrack",
             "slug": "API/MediaStream/onremovetrack",
-            "summary": "The MediaStream.onremovetrack property is an event handler which specifies a function to be called when the removetrack event occurs on a MediaStream instance. This happens when a track of any kind is removed from the media stream.",
+            "summary": "The removetrack event is fired when a new MediaStreamTrack object has been removed from a MediaStream.",
             "support": {
                 "chrome": {
                     "version_added": "26"
@@ -1513,7 +1513,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaStream.onremovetrack"
+            "title": "MediaStream: removetrack event"
         }
     ],
     "event-mediastream-removetrack": [

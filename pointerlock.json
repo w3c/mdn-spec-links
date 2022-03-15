@@ -124,7 +124,7 @@
             "support": {
                 "chrome": [
                     {
-                        "version_added": "45"
+                        "version_added": "36"
                     },
                     {
                         "version_added": "22",
@@ -134,7 +134,7 @@
                 ],
                 "chrome_android": [
                     {
-                        "version_added": "45"
+                        "version_added": "36"
                     },
                     {
                         "version_added": "25",
@@ -170,7 +170,7 @@
                 },
                 "opera": [
                     {
-                        "version_added": "32"
+                        "version_added": "23"
                     },
                     {
                         "version_added": "15",
@@ -180,7 +180,7 @@
                 ],
                 "opera_android": [
                     {
-                        "version_added": "32"
+                        "version_added": "24"
                     },
                     {
                         "version_added": "14",
@@ -196,7 +196,7 @@
                 },
                 "samsunginternet_android": [
                     {
-                        "version_added": "5.0"
+                        "version_added": "3.0"
                     },
                     {
                         "prefix": "webkit",
@@ -206,7 +206,7 @@
                 ],
                 "webview_android": [
                     {
-                        "version_added": "45"
+                        "version_added": "37"
                     },
                     {
                         "version_added": "37",
@@ -240,7 +240,7 @@
             "support": {
                 "chrome": [
                     {
-                        "version_added": "45"
+                        "version_added": "36"
                     },
                     {
                         "version_added": "22",
@@ -250,7 +250,7 @@
                 ],
                 "chrome_android": [
                     {
-                        "version_added": "45"
+                        "version_added": "36"
                     },
                     {
                         "version_added": "25",
@@ -286,7 +286,7 @@
                 },
                 "opera": [
                     {
-                        "version_added": "32"
+                        "version_added": "23"
                     },
                     {
                         "version_added": "15",
@@ -296,7 +296,7 @@
                 ],
                 "opera_android": [
                     {
-                        "version_added": "32"
+                        "version_added": "24"
                     },
                     {
                         "version_added": "14",
@@ -312,7 +312,7 @@
                 },
                 "samsunginternet_android": [
                     {
-                        "version_added": "5.0"
+                        "version_added": "3.0"
                     },
                     {
                         "prefix": "webkit",
@@ -322,7 +322,243 @@
                 ],
                 "webview_android": [
                     {
-                        "version_added": "45"
+                        "version_added": "37"
+                    },
+                    {
+                        "version_added": "37",
+                        "version_removed": "45",
+                        "prefix": "webkit"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "45",
+                        "prefix": "webkit"
+                    }
+                ]
+            },
+            "title": "Document: pointerlockerror event"
+        }
+    ],
+    "dom-document-onpointerlockchange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Document.json",
+            "name": "pointerlockchange_event",
+            "slug": "API/Document/pointerlockchange_event",
+            "summary": "The pointerlockchange event is fired when the pointer is locked/unlocked.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "36"
+                    },
+                    {
+                        "version_added": "22",
+                        "version_removed": "45",
+                        "prefix": "webkit"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "36"
+                    },
+                    {
+                        "version_added": "25",
+                        "version_removed": "45",
+                        "prefix": "webkit"
+                    }
+                ],
+                "edge": {
+                    "version_added": "13"
+                },
+                "firefox": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "50",
+                        "prefix": "moz"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "50",
+                        "prefix": "moz"
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "23"
+                    },
+                    {
+                        "version_added": "15",
+                        "version_removed": "32",
+                        "prefix": "webkit"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "24"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "32",
+                        "prefix": "webkit"
+                    }
+                ],
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "1.5",
+                        "version_removed": "5.0"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "37"
+                    },
+                    {
+                        "version_added": "37",
+                        "version_removed": "45",
+                        "prefix": "webkit"
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "45",
+                        "prefix": "webkit"
+                    }
+                ]
+            },
+            "title": "Document: pointerlockchange event"
+        }
+    ],
+    "dom-document-onpointerlockerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Document.json",
+            "name": "pointerlockerror_event",
+            "slug": "API/Document/pointerlockerror_event",
+            "summary": "The pointerlockerror event is fired when locking the pointer failed (for technical reasons or because the permission was denied).",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "36"
+                    },
+                    {
+                        "version_added": "22",
+                        "version_removed": "45",
+                        "prefix": "webkit"
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "36"
+                    },
+                    {
+                        "version_added": "25",
+                        "version_removed": "45",
+                        "prefix": "webkit"
+                    }
+                ],
+                "edge": {
+                    "version_added": "13"
+                },
+                "firefox": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "50",
+                        "prefix": "moz"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "50",
+                        "prefix": "moz"
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "23"
+                    },
+                    {
+                        "version_added": "15",
+                        "version_removed": "32",
+                        "prefix": "webkit"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "24"
+                    },
+                    {
+                        "version_added": "14",
+                        "version_removed": "32",
+                        "prefix": "webkit"
+                    }
+                ],
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0"
+                    },
+                    {
+                        "prefix": "webkit",
+                        "version_added": "1.5",
+                        "version_removed": "5.0"
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "37"
                     },
                     {
                         "version_added": "37",
