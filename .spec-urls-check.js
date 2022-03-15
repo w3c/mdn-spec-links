@@ -174,6 +174,8 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
     // FIXME: dunno what the problem is with the following
     "https://developer.mozilla.org/docs/Web/CSS/path()",
+    // FIXME: https://github.com/mdn/browser-compat-data/pull/15376
+    "https://developer.mozilla.org/docs/Web/API/MIDIInput/midimessage_event",
   ]
   if (exceptions.includes(mdnURL)) {
     return false;
