@@ -266,10 +266,6 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://wicg.github.io/visual-viewport/')) {
     return;
   }
-  // FIXME temporary
-  if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/web-sockets.html')) {
-    return;
-  }
   if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
     return;
   }
