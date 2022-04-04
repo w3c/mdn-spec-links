@@ -258,6 +258,10 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
     return;
   }
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/15649
+  if (spec_url.startsWith('https://w3c.github.io/sensors/')) {
+    return;
+  }
   // FIXME temporary
   if (spec_url.startsWith('https://wicg.github.io/webusb/')) {
     return;
