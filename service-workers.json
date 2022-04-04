@@ -2239,7 +2239,7 @@
             "filename": "api/FetchEvent.json",
             "name": "preloadResponse",
             "slug": "API/FetchEvent/preloadResponse",
-            "summary": "The preloadResponse read-only property of the FetchEvent interface returns a Promise that resolves to the navigation preload Response if navigation preload was triggered or undefined otherwise.",
+            "summary": "The preloadResponse read-only property of the FetchEvent interface returns a Promise that resolves to the navigation preload Response if navigation preload was triggered, or undefined otherwise.",
             "support": {
                 "chrome": {
                     "version_added": "59"
@@ -2581,6 +2581,274 @@
             "title": "FetchEvent"
         }
     ],
+    "dom-navigationpreloadmanager-disable": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NavigationPreloadManager.json",
+            "name": "disable",
+            "slug": "API/NavigationPreloadManager/disable",
+            "summary": "The disable() method of the NavigationPreloadManager interface halts the automatic preloading of service-worker-managed resources previously started using enable() It returns a promise that resolves with undefined.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "97",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.serviceWorkers.navigationPreload.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NavigationPreloadManager.disable()"
+        }
+    ],
+    "dom-navigationpreloadmanager-enable": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NavigationPreloadManager.json",
+            "name": "enable",
+            "slug": "API/NavigationPreloadManager/enable",
+            "summary": "The enable() method of the NavigationPreloadManager interface is used to enable preloading of resources managed by the service worker. It returns a promise that resolves with undefined.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "97",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.serviceWorkers.navigationPreload.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NavigationPreloadManager.enable()"
+        }
+    ],
+    "dom-navigationpreloadmanager-getstate": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NavigationPreloadManager.json",
+            "name": "getState",
+            "slug": "API/NavigationPreloadManager/getState",
+            "summary": "The getState() method of the NavigationPreloadManager interface returns a Promise that resolves to an object with properties that indicate whether preload is enabled and what value will be sent in the Service-Worker-Navigation-Preload HTTP header.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "97",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.serviceWorkers.navigationPreload.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NavigationPreloadManager.getState()"
+        }
+    ],
+    "dom-navigationpreloadmanager-setheadervalue": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NavigationPreloadManager.json",
+            "name": "setHeaderValue",
+            "slug": "API/NavigationPreloadManager/setHeaderValue",
+            "summary": "The setHeaderValue() method of the NavigationPreloadManager interface sets the value of the Service-Worker-Navigation-Preload header that will be sent with requests resulting from a fetch() operation made during service worker navigation preloading. It returns an empty Promise that resolves with undefined.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "97",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.serviceWorkers.navigationPreload.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NavigationPreloadManager.setHeaderValue()"
+        }
+    ],
     "navigation-preload-manager": [
         {
             "engines": [
@@ -2591,7 +2859,7 @@
             "filename": "api/NavigationPreloadManager.json",
             "name": "NavigationPreloadManager",
             "slug": "API/NavigationPreloadManager",
-            "summary": "The NavigationPreloadManager interface of the Service Worker API provides methods for managing the preloading of resources with a service worker.",
+            "summary": "The NavigationPreloadManager interface of the Service Worker API provides methods for managing the preloading of resources in parallel with service worker bootup.",
             "support": {
                 "chrome": {
                     "version_added": "59"
@@ -2702,62 +2970,6 @@
                 }
             },
             "title": "Navigator.serviceWorker"
-        }
-    ],
-    "dom-serviceworker-onstatechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorker.json",
-            "name": "onstatechange",
-            "slug": "API/ServiceWorker/onstatechange",
-            "summary": "An EventListener property called whenever an event of type statechange is fired; it is basically fired anytime the ServiceWorker.state changes.",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "27"
-                },
-                "opera_android": {
-                    "version_added": "27"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorker.onstatechange"
         }
     ],
     "service-worker-url": [
@@ -2872,6 +3084,62 @@
             "title": "ServiceWorker.state"
         }
     ],
+    "dom-serviceworker-onstatechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ServiceWorker.json",
+            "name": "statechange_event",
+            "slug": "API/ServiceWorker/statechange_event",
+            "summary": "The statechange event fires anytime the ServiceWorker.state changes.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "27"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorker: statechange event"
+        }
+    ],
     "serviceworker-interface": [
         {
             "engines": [
@@ -2982,6 +3250,62 @@
                 }
             },
             "title": "ServiceWorkerContainer.controller"
+        }
+    ],
+    "dom-serviceworkercontainer-oncontrollerchange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ServiceWorkerContainer.json",
+            "name": "controllerchange_event",
+            "slug": "API/ServiceWorkerContainer/controllerchange_event",
+            "summary": "The controllerchange event of the ServiceWorkerContainer interface fires when the document's associated ServiceWorkerRegistration acquires a new active worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "27"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerContainer: controllerchange event"
         }
     ],
     "navigator-service-worker-getRegistration": [
@@ -3150,172 +3474,6 @@
                 }
             },
             "title": "ServiceWorkerContainer: message event"
-        }
-    ],
-    "dom-serviceworkercontainer-oncontrollerchange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorkerContainer.json",
-            "name": "oncontrollerchange",
-            "slug": "API/ServiceWorkerContainer/oncontrollerchange",
-            "summary": "The oncontrollerchange property of the ServiceWorkerContainer interface is an event handler fired whenever a controllerchange event occurs — when the document's associated ServiceWorkerRegistration acquires a new active worker.",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "27"
-                },
-                "opera_android": {
-                    "version_added": "27"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerContainer.oncontrollerchange"
-        }
-    ],
-    "dom-serviceworkerglobalscope-onmessage": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorkerContainer.json",
-            "name": "onmessage",
-            "slug": "API/ServiceWorkerContainer/onmessage",
-            "summary": "The onmessage property of the ServiceWorkerContainer interface is an event handler fired whenever a message event occurs — when incoming messages are received to the ServiceWorkerContainer object (e.g., via a Client.postMessage() call).",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "27"
-                },
-                "opera_android": {
-                    "version_added": "27"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerContainer.onmessage"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onmessage",
-            "slug": "API/ServiceWorkerGlobalScope/onmessage",
-            "summary": "The onmessage property of the ServiceWorkerGlobalScope interface is an event handler fired whenever a message event occurs — when incoming messages are received.",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerGlobalScope.onmessage"
         }
     ],
     "navigator-service-worker-ready": [
@@ -3597,6 +3755,62 @@
             "title": "ServiceWorkerGlobalScope: activate event"
         }
     ],
+    "dom-serviceworkerglobalscope-onactivate": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ServiceWorkerGlobalScope.json",
+            "name": "activate_event",
+            "slug": "API/ServiceWorkerGlobalScope/activate_event",
+            "summary": "The activate event of the ServiceWorkerGlobalScope interface is fired when a ServiceWorkerRegistration acquires a new ServiceWorkerRegistration.active worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerGlobalScope: activate event"
+        }
+    ],
     "service-worker-global-scope-clients": [
         {
             "engines": [
@@ -3653,7 +3867,63 @@
             "title": "ServiceWorkerGlobalScope.clients"
         }
     ],
-    "service-worker-global-scope-install-event": [
+    "dom-serviceworkerglobalscope-onfetch": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ServiceWorkerGlobalScope.json",
+            "name": "fetch_event",
+            "slug": "API/ServiceWorkerGlobalScope/fetch_event",
+            "summary": "The fetch event is fired when the fetch() method is called.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerGlobalScope: fetch event"
+        }
+    ],
+    "dom-serviceworkerglobalscope-oninstall": [
         {
             "engines": [
                 "blink",
@@ -3765,7 +4035,7 @@
             "title": "ServiceWorkerGlobalScope: message event"
         }
     ],
-    "dom-serviceworkerglobalscope-onactivate": [
+    "dom-serviceworkerglobalscope-onmessage": [
         {
             "engines": [
                 "blink",
@@ -3773,9 +4043,9 @@
                 "webkit"
             ],
             "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onactivate",
-            "slug": "API/ServiceWorkerGlobalScope/onactivate",
-            "summary": "The onactivate property of the ServiceWorkerGlobalScope interface is an event handler fired whenever an activate event occurs (when the service worker activates). This happens after installation, when the page to be controlled by the service worker refreshes.",
+            "name": "message_event",
+            "slug": "API/ServiceWorkerGlobalScope/message_event",
+            "summary": "The message event of the ServiceWorkerGlobalScope interface occurs when incoming messages are received. Controlled pages can use the ServiceWorker.postMessage() method to send messages to service workers. The service worker can optionally send a response back via the Client.postMessage(), corresponding to the controlled page.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -3818,119 +4088,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ServiceWorkerGlobalScope.onactivate"
-        }
-    ],
-    "dom-serviceworkerglobalscope-onfetch": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onfetch",
-            "slug": "API/ServiceWorkerGlobalScope/onfetch",
-            "summary": "The onfetch property of the ServiceWorkerGlobalScope interface is an event handler fired whenever a fetch event occurs (usually when the fetch() method is called.)",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerGlobalScope.onfetch"
-        }
-    ],
-    "dom-serviceworkerglobalscope-oninstall": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "oninstall",
-            "slug": "API/ServiceWorkerGlobalScope/oninstall",
-            "summary": "The oninstall property of the ServiceWorkerGlobalScope interface is an event handler fired whenever an install event occurs (when the service worker installs). This happens before activation.",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "24"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerGlobalScope.oninstall"
+            "title": "ServiceWorkerGlobalScope: message event"
         }
     ],
     "service-worker-global-scope-registration": [
@@ -4269,62 +4427,6 @@
             "title": "ServiceWorkerRegistration.navigationPreload"
         }
     ],
-    "dom-serviceworkerregistration-onupdatefound": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/ServiceWorkerRegistration.json",
-            "name": "onupdatefound",
-            "slug": "API/ServiceWorkerRegistration/onupdatefound",
-            "summary": "The onupdatefound property of the ServiceWorkerRegistration interface is an EventListener property called whenever an event of type statechange is fired; it is fired any time the ServiceWorkerRegistration.installing property acquires a new service worker.",
-            "support": {
-                "chrome": {
-                    "version_added": "40"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "27"
-                },
-                "opera_android": {
-                    "version_added": "27"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "40"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerRegistration.onupdatefound"
-        }
-    ],
     "service-worker-registration-scope": [
         {
             "engines": [
@@ -4521,6 +4623,62 @@
             "title": "ServiceWorkerRegistration.update()"
         }
     ],
+    "dom-serviceworkerregistration-onupdatefound": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ServiceWorkerRegistration.json",
+            "name": "updatefound_event",
+            "slug": "API/ServiceWorkerRegistration/updatefound_event",
+            "summary": "The updatefound event of the ServiceWorkerRegistration interface is fired any time the ServiceWorkerRegistration.installing property acquires a new service worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "27"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerRegistration: updatefound event"
+        }
+    ],
     "service-worker-registration-updateviacache": [
         {
             "engines": [
@@ -4531,7 +4689,7 @@
             "filename": "api/ServiceWorkerRegistration.json",
             "name": "updateViaCache",
             "slug": "API/ServiceWorkerRegistration/updateViaCache",
-            "summary": "The updateViaCache() method of the ServiceWorkerRegistration interface updates the cache using the mode specified in the call to ServiceWorkerContainer.register. Requests for `importScripts` still go via the HTTP cache. `updateViaCache` offers control over this behavior.",
+            "summary": "The updateViaCache read-only property of the ServiceWorkerRegistration interface updates the cache using the mode specified in the call to ServiceWorkerContainer.register. Requests for `importScripts` still go via the HTTP cache. `updateViaCache` offers control over this behavior.",
             "support": {
                 "chrome": {
                     "version_added": "68"
@@ -4804,7 +4962,9 @@
         {
             "engines": [
                 "blink",
-                "gecko",
+                "gecko"
+            ],
+            "partial": [
                 "webkit"
             ],
             "filename": "api/WindowClient.json",
@@ -4838,10 +4998,14 @@
                     "version_added": "36"
                 },
                 "safari": {
-                    "version_added": "11.1"
+                    "version_added": "11.1",
+                    "partial_implementation": true,
+                    "notes": "This method exists, but always throws <code>NotSupportedError</code>."
                 },
                 "safari_ios": {
-                    "version_added": "11.3"
+                    "version_added": "11.3",
+                    "partial_implementation": true,
+                    "notes": "This method exists, but always throws <code>NotSupportedError</code>."
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -5024,6 +5188,73 @@
                 }
             },
             "title": "caches"
+        }
+    ],
+    "handle-fetch": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/service-worker-navigation-preload.json",
+            "name": "Service-Worker-Navigation-Preload",
+            "slug": "HTTP/Headers/Service-Worker-Navigation-Preload",
+            "summary": "The Service-Worker-Navigation-Preload request header indicates that the request was the result of a fetch() operation made during service worker navigation preloading. It allows a server to respond with a different resource than for a normal fetch().",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "97",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.serviceWorkers.navigationPreload.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Service-Worker-Navigation-Preload"
         }
     ]
 }

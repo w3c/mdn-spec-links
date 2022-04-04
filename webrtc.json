@@ -384,61 +384,6 @@
             "title": "RTCDTMFSender.insertDTMF()"
         }
     ],
-    "dom-rtcdtmfsender-ontonechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCDTMFSender.json",
-            "name": "ontonechange",
-            "slug": "API/RTCDTMFSender/ontonechange",
-            "summary": "The tonechange event is sent to an RTCDTMFSender by the WebRTC API to indicate when DTMF tones previously queued for sending (by calling RTCDTMFSender.insertDTMF()) begin and end.",
-            "support": {
-                "chrome": {
-                    "version_added": "27"
-                },
-                "chrome_android": {
-                    "version_added": "27"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "52"
-                },
-                "firefox_android": {
-                    "version_added": "52"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": {
-                    "version_added": "13.4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCDTMFSender: tonechange event"
-        }
-    ],
     "dom-RTCDTMFSender-tonebuffer": [
         {
             "engines": [
@@ -941,6 +886,68 @@
             "title": "RTCDataChannel: bufferedamountlow event"
         }
     ],
+    "dom-rtcdatachannel-onbufferedamountlow": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "bufferedamountlow_event",
+            "slug": "API/RTCDataChannel/bufferedamountlow_event",
+            "summary": "A bufferedamountlow event is sent to an RTCDataChannel when the number of bytes currently in the outbound data transfer buffer falls below the threshold specified in bufferedAmountLowThreshold. bufferedamountlow events aren't sent if bufferedAmountLowThreshold is 0.",
+            "support": {
+                "chrome": {
+                    "version_added": "57",
+                    "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
+                },
+                "chrome_android": {
+                    "version_added": "57",
+                    "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "44"
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "44",
+                    "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
+                },
+                "opera_android": {
+                    "version_added": "43",
+                    "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0",
+                    "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
+                },
+                "webview_android": {
+                    "version_added": "57",
+                    "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
+                },
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": "The default for <code>rtcpMuxPolicy<code> is <code>require<code>."
+                }
+            },
+            "title": "RTCDataChannel: bufferedamountlow event"
+        }
+    ],
     "dom-rtcdatachannel-bufferedamountlowthreshold": [
         {
             "engines": [
@@ -1061,7 +1068,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "close_event",
             "slug": "API/RTCDataChannel/close_event",
-            "summary": "The close event is sent to the onclose event handler on an RTCDataChannel instance when the data transport being used for the data channel has closed. Before any further data can be transferred using RTCDataChannel, a new data channel instance must be created.",
+            "summary": "The close event is sent to the onclose event handler on an RTCDataChannel instance when the data transport for the data channel has closed. Before any further data can be transferred using RTCDataChannel, a new 'RTCDataChannel' instance must be created.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -1106,6 +1113,169 @@
             "title": "RTCDataChannel: close event"
         }
     ],
+    "dom-rtcdatachannel-onclose": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "close_event",
+            "slug": "API/RTCDataChannel/close_event",
+            "summary": "The close event is sent to the onclose event handler on an RTCDataChannel instance when the data transport for the data channel has closed. Before any further data can be transferred using RTCDataChannel, a new 'RTCDataChannel' instance must be created.",
+            "support": {
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCDataChannel: close event"
+        }
+    ],
+    "event-datachannel-closing": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "closing_event",
+            "slug": "API/RTCDataChannel/closing_event",
+            "summary": "The closing event is sent to an RTCDataChannel just before the channel begins the process of shutting down its underlying data transport.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "68"
+                },
+                "opera_android": {
+                    "version_added": "58"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": "81"
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "RTCDataChannel: closing event"
+        }
+    ],
+    "dom-rtcdatachannel-onclosing": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "closing_event",
+            "slug": "API/RTCDataChannel/closing_event",
+            "summary": "The closing event is sent to an RTCDataChannel just before the channel begins the process of shutting down its underlying data transport.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": {
+                    "version_added": "81"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "68"
+                },
+                "opera_android": {
+                    "version_added": "58"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "13.0"
+                },
+                "webview_android": {
+                    "version_added": "81"
+                },
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "RTCDataChannel: closing event"
+        }
+    ],
     "event-datachannel-error": [
         {
             "engines": [
@@ -1116,7 +1286,62 @@
             "filename": "api/RTCDataChannel.json",
             "name": "error_event",
             "slug": "API/RTCDataChannel/error_event",
-            "summary": "A WebRTC error event is sent to an RTCDataChannel object's onerror error handler when an error occurs on the data channel.",
+            "summary": "A WebRTC error event is sent to an RTCDataChannel object's onerror event handler when an error occurs on the data channel.",
+            "support": {
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCDataChannel: error event"
+        }
+    ],
+    "dom-rtcdatachannel-onerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "error_event",
+            "slug": "API/RTCDataChannel/error_event",
+            "summary": "A WebRTC error event is sent to an RTCDataChannel object's onerror event handler when an error occurs on the data channel.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -1436,6 +1661,61 @@
             "title": "RTCDataChannel: message event"
         }
     ],
+    "dom-rtcdatachannel-onmessage": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "message_event",
+            "slug": "API/RTCDataChannel/message_event",
+            "summary": "The WebRTC message event is sent to the onmessage event handler on an RTCDataChannel object when a message has been received from the remote peer.",
+            "support": {
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCDataChannel: message event"
+        }
+    ],
     "dom-datachannel-negotiated": [
         {
             "engines": [
@@ -1491,342 +1771,6 @@
             "title": "RTCDataChannel.negotiated"
         }
     ],
-    "dom-rtcdatachannel-onbufferedamountlow": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCDataChannel.json",
-            "name": "onbufferedamountlow",
-            "slug": "API/RTCDataChannel/onbufferedamountlow",
-            "summary": "The RTCDataChannel.onbufferedamountlow property is an event handler which specifies a function the browser calls when the bufferedamountlow event is sent to the RTCDataChannel. This event, which is represented by a simple Event object, is sent when the amount of data buffered to be sent falls to or below the threshold specified by the channel's bufferedAmountLowThreshold.",
-            "support": {
-                "chrome": {
-                    "version_added": "46",
-                    "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
-                },
-                "chrome_android": {
-                    "version_added": "46",
-                    "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "44"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "33",
-                    "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
-                },
-                "opera_android": {
-                    "version_added": "33",
-                    "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0",
-                    "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
-                },
-                "webview_android": {
-                    "version_added": "46",
-                    "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "notes": "The default for <code>rtcpMuxPolicy</code> is <code>require</code>."
-                }
-            },
-            "title": "RTCDataChannel.onbufferedamountlow"
-        }
-    ],
-    "dom-rtcdatachannel-onclose": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCDataChannel.json",
-            "name": "onclose",
-            "slug": "API/RTCDataChannel/onclose",
-            "summary": "The RTCDataChannel.onclose property is an event handler which specifies a function to be called by the browser when the close event is received by the RTCDataChannel. This is a simple Event which indicates that the data channel has closed down.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCDataChannel.onclose"
-        }
-    ],
-    "dom-rtcdatachannel-onclosing": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/RTCDataChannel.json",
-            "name": "onclosing",
-            "slug": "API/RTCDataChannel/onclosing",
-            "summary": "The RTCDataChannel.onclosing property is an event handler which specifies a function to be called by the browser when the closing event is received by the RTCDataChannel. This is a simple Event which indicates that the data channel is being closed, that is, RTCDataChannel transitions to \"closing\" state. For example, after RTCDataChannel.close() was called but the underlying data transport might not have been closed yet.",
-            "support": {
-                "chrome": {
-                    "version_added": "81"
-                },
-                "chrome_android": {
-                    "version_added": "81"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "68"
-                },
-                "opera_android": {
-                    "version_added": "58"
-                },
-                "safari": {
-                    "version_added": "15.4"
-                },
-                "safari_ios": {
-                    "version_added": "15.4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "13.0"
-                },
-                "webview_android": {
-                    "version_added": "81"
-                },
-                "edge_blink": {
-                    "version_added": "81"
-                }
-            },
-            "title": "RTCDataChannel.onclosing"
-        }
-    ],
-    "dom-rtcdatachannel-onerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCDataChannel.json",
-            "name": "onerror",
-            "slug": "API/RTCDataChannel/onerror",
-            "summary": "The RTCDataChannel.onerror property is an event handler which specifies a function to be called when the error event is received. When an error occurs on the data channel, the function receives as input an RTCErrorEvent object describing the error which occurred.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCDataChannel.onerror"
-        }
-    ],
-    "dom-rtcdatachannel-onmessage": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCDataChannel.json",
-            "name": "onmessage",
-            "slug": "API/RTCDataChannel/onmessage",
-            "summary": "The RTCDataChannel.onmessage property stores an event handler which specifies a function to be called when the message event is fired on the channel. This event is represented by the MessageEvent interface. This event is sent to the channel when a message is received from the other peer.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCDataChannel.onmessage"
-        }
-    ],
-    "dom-rtcdatachannel-onopen": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCDataChannel.json",
-            "name": "onopen",
-            "slug": "API/RTCDataChannel/onopen",
-            "summary": "The RTCDataChannel.onopen property is an event handler which specifies a function to be called when the open event is fired; this is a simple Event which is sent when the data channel's underlying data transport—the link over which the RTCDataChannel's messages flow—is established or re-established.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCDataChannel.onopen"
-        }
-    ],
     "event-datachannel-open": [
         {
             "engines": [
@@ -1837,7 +1781,62 @@
             "filename": "api/RTCDataChannel.json",
             "name": "open_event",
             "slug": "API/RTCDataChannel/open_event",
-            "summary": "The WebRTC open event is sent to an RTCDataChannel object's onopen event handler when the underlying transport used to send and receive the data channel's messages is opened or re-opened.",
+            "summary": "The WebRTC open event is sent to an RTCDataChannel object's onopen event handler when the underlying transport used to send and receive the data channel's messages is opened or reopened.",
+            "support": {
+                "chrome": {
+                    "version_added": "24"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCDataChannel: open event"
+        }
+    ],
+    "dom-rtcdatachannel-onopen": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "open_event",
+            "slug": "API/RTCDataChannel/open_event",
+            "summary": "The WebRTC open event is sent to an RTCDataChannel object's onopen event handler when the underlying transport used to send and receive the data channel's messages is opened or reopened.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -3883,7 +3882,7 @@
             "filename": "api/RTCIceCredentialType.json",
             "name": "RTCIceCredentialType",
             "slug": "API/RTCIceCredentialType",
-            "summary": "The WebRTC API's RTCIceCredentialType enumerated string type defines the authentication method used to gain access to an ICE server identified by an RTCIceServer object.",
+            "summary": "The RTCIceServer dictionary's credentialType property is a string value which indicates what type of credential the RTCIceServer.credential value is. The default is password.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -3925,7 +3924,7 @@
                     "version_added": false
                 }
             },
-            "title": "RTCIceCredentialType"
+            "title": "RTCIceServer.credentialType"
         }
     ],
     "dom-rtciceserver-credential": [
@@ -3991,7 +3990,7 @@
             "filename": "api/RTCIceServer.json",
             "name": "credentialType",
             "slug": "API/RTCIceServer/credentialType",
-            "summary": "The RTCIceServer dictionary's credentialType property is a string value from the RTCIceCredentialType enum which indicates what type of credential the RTCIceServer.credential value is. The default is password.",
+            "summary": "The RTCIceServer dictionary's credentialType property is a string value which indicates what type of credential the RTCIceServer.credential value is. The default is password.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -4309,7 +4308,8 @@
     "event-icetransport-gatheringstatechange": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceTransport.json",
             "name": "gatheringstatechange_event",
@@ -4341,10 +4341,64 @@
                     "version_added": "54"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "15.4"
                 },
                 "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.0"
+                },
+                "webview_android": {
+                    "version_added": "75"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCIceTransport: gatheringstatechange event"
+        }
+    ],
+    "dom-rtcicetransport-ongatheringstatechange": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCIceTransport.json",
+            "name": "gatheringstatechange_event",
+            "slug": "API/RTCIceTransport/gatheringstatechange_event",
+            "summary": "A gatheringstatechange event is sent to an RTCIceTransport when its ICE candidate gathering state changes.",
+            "support": {
+                "chrome": {
+                    "version_added": "75"
+                },
+                "chrome_android": {
+                    "version_added": "75"
+                },
+                "edge": {
                     "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "62"
+                },
+                "opera_android": {
+                    "version_added": "54"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -4624,167 +4678,6 @@
             "title": "RTCIceTransport.getSelectedCandidatePair()"
         }
     ],
-    "dom-rtcicetransport-ongatheringstatechange": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/RTCIceTransport.json",
-            "name": "ongatheringstatechange",
-            "slug": "API/RTCIceTransport/ongatheringstatechange",
-            "summary": "The ongatheringstatechange event handler for the RTCIceTransport interface specifies an event handler that is to be called when the gatheringstatechange event occurs on the transport.",
-            "support": {
-                "chrome": {
-                    "version_added": "75"
-                },
-                "chrome_android": {
-                    "version_added": "75"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "62"
-                },
-                "opera_android": {
-                    "version_added": "54"
-                },
-                "safari": {
-                    "version_added": "15.4"
-                },
-                "safari_ios": {
-                    "version_added": "15.4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.0"
-                },
-                "webview_android": {
-                    "version_added": "75"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCIceTransport.ongatheringstatechange"
-        }
-    ],
-    "dom-rtcicetransport-onselectedcandidatepairchange": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/RTCIceTransport.json",
-            "name": "onselectedcandidatepairchange",
-            "slug": "API/RTCIceTransport/onselectedcandidatepairchange",
-            "summary": "The RTCIceTransport interface's onselectedcandidatepairchange event handler specifies a function to be called to handle the selectedcandidatepairchange event, which is fired when the ICE agent selects a new candidate pair to be used for the connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "75"
-                },
-                "chrome_android": {
-                    "version_added": "75"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "62"
-                },
-                "opera_android": {
-                    "version_added": "54"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.0"
-                },
-                "webview_android": {
-                    "version_added": "75"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCIceTransport.onselectedcandidatepairchange"
-        }
-    ],
-    "dom-rtcicetransport-onstatechange": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/RTCIceTransport.json",
-            "name": "onstatechange",
-            "slug": "API/RTCIceTransport/onstatechange",
-            "summary": "The onstatechange event handler for the RTCIceTransport interface is a property which specifies a function to serve as the event handler for the statechange event that is fired whenever the transport's state changes.",
-            "support": {
-                "chrome": {
-                    "version_added": "75"
-                },
-                "chrome_android": {
-                    "version_added": "75"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "62"
-                },
-                "opera_android": {
-                    "version_added": "54"
-                },
-                "safari": {
-                    "version_added": "15.4"
-                },
-                "safari_ios": {
-                    "version_added": "15.4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.0"
-                },
-                "webview_android": {
-                    "version_added": "75"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCIceTransport.onstatechange"
-        }
-    ],
     "dom-icetransport-role": [
         {
             "engines": [
@@ -4839,6 +4732,59 @@
         }
     ],
     "event-icetransport-selectedcandidatepairchange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCIceTransport.json",
+            "name": "selectedcandidatepairchange_event",
+            "slug": "API/RTCIceTransport/selectedcandidatepairchange_event",
+            "summary": "A selectedcandidatepairchange event is sent to an RTCIceTransport when the ICE agent selects a new pair of candidates that describe the endpoints of a viable connection.",
+            "support": {
+                "chrome": {
+                    "version_added": "75"
+                },
+                "chrome_android": {
+                    "version_added": "75"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "62"
+                },
+                "opera_android": {
+                    "version_added": "54"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.0"
+                },
+                "webview_android": {
+                    "version_added": "75"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCIceTransport: selectedcandidatepairchange event"
+        }
+    ],
+    "dom-rtcicetransport-onselectedcandidatepairchange": [
         {
             "engines": [
                 "blink"
@@ -4948,7 +4894,8 @@
     "event-icetransport-statechange": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceTransport.json",
             "name": "statechange_event",
@@ -4980,10 +4927,64 @@
                     "version_added": "54"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "15.4"
                 },
                 "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.0"
+                },
+                "webview_android": {
+                    "version_added": "75"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCIceTransport: statechange event"
+        }
+    ],
+    "dom-rtcicetransport-onstatechange": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCIceTransport.json",
+            "name": "statechange_event",
+            "slug": "API/RTCIceTransport/statechange_event",
+            "summary": "A statechange event occurs when the RTCIceTransport changes state. The state can be used to determine how far through the process of examining, verifying, and selecting a valid candidate pair is prior to successfully connecting the two peers for WebRTC communications.",
+            "support": {
+                "chrome": {
+                    "version_added": "75"
+                },
+                "chrome_android": {
+                    "version_added": "75"
+                },
+                "edge": {
                     "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "62"
+                },
+                "opera_android": {
+                    "version_added": "54"
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -5498,7 +5499,7 @@
             "title": "RTCPeerConnection.connectionState"
         }
     ],
-    "event-connectionstatechange": [
+    "dom-rtcpeerconnection-onconnectionstatechange": [
         {
             "engines": [
                 "blink",
@@ -5537,7 +5538,7 @@
                     "version_added": "11"
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "11"
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -5827,7 +5828,7 @@
             "title": "RTCPeerConnection.currentRemoteDescription"
         }
     ],
-    "event-datachannel": [
+    "dom-rtcpeerconnection-ondatachannel": [
         {
             "engines": [
                 "blink",
@@ -6212,7 +6213,7 @@
             "title": "RTCPeerConnection.getTransceivers()"
         }
     ],
-    "event-icecandidate": [
+    "dom-rtcpeerconnection-onicecandidate": [
         {
             "engines": [
                 "blink",
@@ -6267,7 +6268,7 @@
             "title": "RTCPeerConnection: icecandidate event"
         }
     ],
-    "event-icecandidateerror": [
+    "dom-rtcpeerconnection-onicecandidateerror": [
         {
             "engines": [
                 "blink",
@@ -6378,7 +6379,7 @@
             "title": "RTCPeerConnection.iceConnectionState"
         }
     ],
-    "event-iceconnectionstatechange": [
+    "dom-rtcpeerconnection-oniceconnectionstatechange": [
         {
             "engines": [
                 "blink",
@@ -6409,10 +6410,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "opera_android": {
-                    "version_added": "43"
+                    "version_added": "15"
                 },
                 "safari": {
                     "version_added": "11"
@@ -6488,7 +6489,7 @@
             "title": "RTCPeerConnection.iceGatheringState"
         }
     ],
-    "event-icegatheringstatechange": [
+    "dom-rtcpeerconnection-onicegatheringstatechange": [
         {
             "engines": [
                 "blink",
@@ -6598,7 +6599,7 @@
             "title": "RTCPeerConnection.localDescription"
         }
     ],
-    "event-negotiation": [
+    "dom-rtcpeerconnection-onnegotiationneeded": [
         {
             "engines": [
                 "blink",
@@ -6651,499 +6652,6 @@
                 }
             },
             "title": "RTCPeerConnection: negotiationneeded event"
-        }
-    ],
-    "dom-rtcpeerconnection-onconnectionstatechange": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "onconnectionstatechange",
-            "slug": "API/RTCPeerConnection/onconnectionstatechange",
-            "summary": "The RTCPeerConnection.onconnectionstatechange property specifies an event handler which is called to handle the connectionstatechange event when it occurs on an instance of RTCPeerConnection. This happens whenever the aggregate state of the connection changes. The aggregate state is a combination of the states of all of the individual network transports being used by the connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "72"
-                },
-                "chrome_android": {
-                    "version_added": "72"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.0"
-                },
-                "webview_android": {
-                    "version_added": "72"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.onconnectionstatechange"
-        }
-    ],
-    "dom-rtcpeerconnection-ondatachannel": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "ondatachannel",
-            "slug": "API/RTCPeerConnection/ondatachannel",
-            "summary": "The RTCPeerConnection.ondatachannel property is an event handler which specifies a function which is called when the datachannel event occurs on an RTCPeerConnection. This event, of type RTCDataChannelEvent, is sent when an RTCDataChannel is added to the connection by the remote peer calling createDataChannel().",
-            "support": {
-                "chrome": {
-                    "version_added": "25"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.ondatachannel"
-        }
-    ],
-    "dom-rtcpeerconnection-onicecandidate": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "onicecandidate",
-            "slug": "API/RTCPeerConnection/onicecandidate",
-            "summary": "The RTCPeerConnection property onicecandidate property is an event handler which specifies a function to be called when the icecandidate event occurs on an RTCPeerConnection instance. This happens whenever the local ICE agent needs to deliver a message to the other peer through the signaling server.This lets the ICE agent perform negotiation with the remote peer without the browser itself needing to know any specifics about the technology being used for signaling; implement this method to use whatever messaging technology you choose to send the ICE candidate to the remote peer.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.onicecandidate"
-        }
-    ],
-    "dom-rtcpeerconnection-onicecandidateerror": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "onicecandidateerror",
-            "slug": "API/RTCPeerConnection/onicecandidateerror",
-            "summary": "The RTCPeerConnection.onicecandidateerror property is an event handler which specifies a function which is called to handle the icecandidateerror event when it occurs on an RTCPeerConnection instance. This event is fired when an error occurs during the ICE candidate gathering process.",
-            "support": {
-                "chrome": {
-                    "version_added": "77"
-                },
-                "chrome_android": {
-                    "version_added": "77"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "64"
-                },
-                "opera_android": {
-                    "version_added": "55"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "12.0"
-                },
-                "webview_android": {
-                    "version_added": "77"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.onicecandidateerror"
-        }
-    ],
-    "dom-rtcpeerconnection-oniceconnectionstatechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "oniceconnectionstatechange",
-            "slug": "API/RTCPeerConnection/oniceconnectionstatechange",
-            "summary": "The RTCPeerConnection.oniceconnectionstatechange property is an event handler which specifies a function to be called when the iceconnectionstatechange event is fired on an RTCPeerConnection instance. This happens when the state of the connection's ICE agent, as represented by the iceConnectionState property, changes.",
-            "support": {
-                "chrome": {
-                    "version_added": "28"
-                },
-                "chrome_android": {
-                    "version_added": "28"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "15"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.oniceconnectionstatechange"
-        }
-    ],
-    "dom-rtcpeerconnection-onicegatheringstatechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "onicegatheringstatechange",
-            "slug": "API/RTCPeerConnection/onicegatheringstatechange",
-            "summary": "The RTCPeerConnection.onicegatheringstatechange property is an event handler which specifies a function to be called when the icegatheringstatechange event is sent to an RTCPeerConnection instance. This happens when the ICE gathering state—that is, whether or not the ICE agent is actively gathering candidates—changes.",
-            "support": {
-                "chrome": {
-                    "version_added": "59"
-                },
-                "chrome_android": {
-                    "version_added": "59"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "46"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
-                "webview_android": {
-                    "version_added": "59"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.onicegatheringstatechange"
-        }
-    ],
-    "dom-rtcpeerconnection-onnegotiationneeded": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "onnegotiationneeded",
-            "slug": "API/RTCPeerConnection/onnegotiationneeded",
-            "summary": "The RTCPeerConnection interface's onnegotiationneeded property is an EventListener which specifies a function which is called to handle the negotiationneeded event when it occurs on an RTCPeerConnection instance. This event is fired when a change has occurred which requires session negotiation. This negotiation should be carried out as the offerer, because some session changes cannot be negotiated as the answerer.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.onnegotiationneeded"
-        }
-    ],
-    "dom-rtcpeerconnection-onsignalingstatechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "onsignalingstatechange",
-            "slug": "API/RTCPeerConnection/onsignalingstatechange",
-            "summary": "The onsignalingstatechange event handler property of the RTCPeerConnection interface specifies a function to be called when the signalingstatechange event occurs on an RTCPeerConnection interface. The function receives as input the event object of type Event; this event is sent when the peer connection's signalingState changes, which may happen either because of a call to setLocalDescription() or to setRemoteDescription().",
-            "support": {
-                "chrome": {
-                    "version_added": "28"
-                },
-                "chrome_android": {
-                    "version_added": "28"
-                },
-                "edge": {
-                    "version_added": "15"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "15"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.onsignalingstatechange"
-        }
-    ],
-    "dom-rtcpeerconnection-ontrack": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCPeerConnection.json",
-            "name": "ontrack",
-            "slug": "API/RTCPeerConnection/ontrack",
-            "summary": "The RTCPeerConnection property ontrack is an event handler which specifies a function to be called when the track event occurs, indicating that a track has been added to the RTCPeerConnection. The function receives as input the event object, of type RTCTrackEvent; this event is sent when a new incoming MediaStreamTrack has been created and associated with an RTCRtpReceiver object which has been added to the set of receivers on connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "64"
-                },
-                "chrome_android": {
-                    "version_added": "64"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "51"
-                },
-                "opera_android": {
-                    "version_added": "47"
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "64"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCPeerConnection.ontrack"
         }
     ],
     "dom-peerconnection-pendinglocaldesc": [
@@ -10565,7 +10073,7 @@
             "filename": "api/RTCSessionDescription.json",
             "name": "type",
             "slug": "API/RTCSessionDescription/type",
-            "summary": "The property RTCSessionDescription.type is a read-only value of type RTCSdpType which describes the description's type.",
+            "summary": "The property RTCSessionDescription.type is a read-only string value which describes the description's type.",
             "support": {
                 "chrome": {
                     "version_added": "23"

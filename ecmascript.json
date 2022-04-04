@@ -14098,7 +14098,7 @@
             "filename": "javascript/builtins/Map.json",
             "name": "entries",
             "slug": "JavaScript/Reference/Global_Objects/Map/entries",
-            "summary": "The entries() method returns a new Iterator object that contains the [key, value] pairs for each element in the Map object in insertion order. In this particular case, this iterator object is also an iterable, so the for-of loop can be used. When the protocol [Symbol.iterator] is used, it returns a function that, when invoked, returns this iterator itself.",
+            "summary": "The entries() method returns a new iterator object that contains the [key, value] pairs for each element in the Map object in insertion order. In this particular case, this iterator object is also an iterable, so the for-of loop can be used. When the protocol [Symbol.iterator] is used, it returns a function that, when invoked, returns this iterator itself.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -14364,7 +14364,7 @@
             "filename": "javascript/builtins/Map.json",
             "name": "keys",
             "slug": "JavaScript/Reference/Global_Objects/Map/keys",
-            "summary": "The keys() method returns a new Iterator object that contains the keys for each element in the Map object in insertion order.",
+            "summary": "The keys() method returns a new iterator object that contains the keys for each element in the Map object in insertion order. In this particular case, this iterator object is also an iterable, so a for...of loop can be used.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -14562,7 +14562,7 @@
             "filename": "javascript/builtins/Map.json",
             "name": "values",
             "slug": "JavaScript/Reference/Global_Objects/Map/values",
-            "summary": "The values() method returns a new Iterator object that contains the values for each element in the Map object in insertion order.",
+            "summary": "The values() method returns a new iterator object that contains the values for each element in the Map object in insertion order.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -37638,7 +37638,7 @@
             "filename": "javascript/grammar.json",
             "name": "template_literals",
             "slug": "JavaScript/Reference/Template_literals",
-            "summary": "Template literals are literals delimited with backticks (`), allowing embedded expressions called substitutions.",
+            "summary": "Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, for string interpolation with embedded expressions, and for special constructs called tagged templates.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -41608,7 +41608,7 @@
                     "version_added": "67"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "57"
                 },
                 "safari": {
                     "version_added": "13.1"
@@ -42486,7 +42486,7 @@
             "filename": "javascript/operators/yield.json",
             "name": "yield",
             "slug": "JavaScript/Reference/Operators/yield",
-            "summary": "The yield keyword is used to pause and resume a generator function (function* or legacy generator function).",
+            "summary": "The yield keyword is used to pause and resume a generator function.",
             "support": {
                 "chrome": {
                     "version_added": "39"

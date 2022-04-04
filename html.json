@@ -3345,62 +3345,6 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/WebSocket.json",
-            "name": "message_event",
-            "slug": "API/WebSocket/message_event",
-            "summary": "The message event is fired when data is received through a WebSocket.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket: message event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
             "filename": "api/Window.json",
             "name": "message_event",
             "slug": "API/Window/message_event",
@@ -7307,7 +7251,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -7316,7 +7260,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -7337,7 +7281,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -7361,7 +7305,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 }
@@ -8192,126 +8136,6 @@
                 }
             },
             "title": "CanvasRenderingContext2D"
-        }
-    ],
-    "the-closeevent-interface:dom-event-constructor": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CloseEvent.json",
-            "name": "CloseEvent",
-            "slug": "API/CloseEvent/CloseEvent",
-            "summary": "The CloseEvent() constructor creates a new CloseEvent.",
-            "support": {
-                "chrome": {
-                    "version_added": "16"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "8"
-                },
-                "firefox_android": {
-                    "version_added": "8"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CloseEvent()"
-        }
-    ],
-    "the-closeevent-interface": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CloseEvent.json",
-            "name": "CloseEvent",
-            "slug": "API/CloseEvent",
-            "summary": "A CloseEvent is sent to clients using WebSockets when the connection is closed. This is delivered to the listener indicated by the WebSocket object's onclose attribute.",
-            "support": {
-                "chrome": {
-                    "version_added": "13"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "8",
-                    "notes": [
-                        "Before Firefox 12, the close code <code>CLOSE_NORMAL</code> was used when the channel was closed due to an unexpected error or unspecified error condition.",
-                        "Before Firefox 8, the <code>WebSocket</code> close event was sent to the listener as a simple event."
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "8"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CloseEvent"
         }
     ],
     "dom-customelementregistry-define-dev": [
@@ -10237,6 +10061,123 @@
             "title": "DedicatedWorkerGlobalScope.close()"
         }
     ],
+    "handler-dedicatedworkerglobalscope-onmessage": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/DedicatedWorkerGlobalScope.json",
+            "name": "message_event",
+            "slug": "API/DedicatedWorkerGlobalScope/message_event",
+            "summary": "The message event is fired on a DedicatedWorkerGlobalScope object when the worker receives a message from its parent (i.e. when the parent sends a message using Worker.postMessage()).",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "10.6"
+                },
+                "opera_android": {
+                    "version_added": "11.5"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "DedicatedWorkerGlobalScope: message event"
+        }
+    ],
+    "handler-dedicatedworkerglobalscope-onmessageerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/DedicatedWorkerGlobalScope.json",
+            "name": "messageerror_event",
+            "slug": "API/DedicatedWorkerGlobalScope/messageerror_event",
+            "summary": "The messageerror event is fired on a DedicatedWorkerGlobalScope object when it receives a message that can't be deserialized.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": {
+                    "version_added": "60"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "57"
+                },
+                "firefox_android": {
+                    "version_added": "57"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "47"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "60"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "DedicatedWorkerGlobalScope: messageerror event"
+        }
+    ],
     "dom-dedicatedworkerglobalscope-name-dev": [
         {
             "engines": [
@@ -10293,123 +10234,6 @@
                 }
             },
             "title": "DedicatedWorkerGlobalScope.name"
-        }
-    ],
-    "handler-dedicatedworkerglobalscope-onmessage": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/DedicatedWorkerGlobalScope.json",
-            "name": "onmessage",
-            "slug": "API/DedicatedWorkerGlobalScope/onmessage",
-            "summary": "The onmessage property of the DedicatedWorkerGlobalScope interface represents an event handler to be called when the message event occurs — i.e. when a message is sent to the worker using the Worker.postMessage method.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.5"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "10.6"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "DedicatedWorkerGlobalScope.onmessage"
-        }
-    ],
-    "handler-dedicatedworkerglobalscope-onmessageerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/DedicatedWorkerGlobalScope.json",
-            "name": "onmessageerror",
-            "slug": "API/DedicatedWorkerGlobalScope/onmessageerror",
-            "summary": "The onmessageerror event handler of the DedicatedWorkerGlobalScope interface is an EventListener, called whenever an MessageEvent of type messageerror is fired on the worker—that is, when it receives a message that cannot be deserialized.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": {
-                    "version_added": "60"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "57"
-                },
-                "firefox_android": {
-                    "version_added": "57"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "47"
-                },
-                "opera_android": {
-                    "version_added": "44"
-                },
-                "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "60"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "DedicatedWorkerGlobalScope.onmessageerror"
         }
     ],
     "dom-dedicatedworkerglobalscope-postmessage-dev": [
@@ -12408,226 +12232,6 @@
             "title": "Window.location"
         }
     ],
-    "handler-onvisibilitychange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "onvisibilitychange",
-            "slug": "API/Document/onvisibilitychange",
-            "summary": "The visibilitychange event is fired at the document when the contents of its tab have become visible or have been hidden.",
-            "support": {
-                "chrome": {
-                    "version_added": "62",
-                    "notes": "Before Chrome 62, this event handler attribute is not supported; however, the event itself is supported since Chrome 33. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                },
-                "chrome_android": {
-                    "version_added": "62",
-                    "notes": "Before Chrome 62, this event handler attribute is not supported; however, the event itself is supported since Chrome 33. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "56"
-                },
-                "firefox_android": {
-                    "version_added": "56"
-                },
-                "ie": {
-                    "version_added": false,
-                    "notes": "This event handler attribute is not supported; however, the event itself is supported since IE 10. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                },
-                "opera": {
-                    "version_added": "49",
-                    "notes": "Before Opera 49, this event handler attribute is not supported; however, the event itself is supported since Opera 20. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                },
-                "opera_android": {
-                    "version_added": "46",
-                    "notes": "Before Opera Android 46, this event handler attribute is not supported; however, the event itself is supported since Opera Android 20. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                },
-                "safari": [
-                    {
-                        "version_added": "14.1"
-                    },
-                    {
-                        "version_removed": "14.1",
-                        "version_added": "10.1",
-                        "partial_implementation": true,
-                        "notes": [
-                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
-                            "Before Safari 10.1, this event handler attribute was not supported; however, the event itself was supported since Safari 7. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                        ]
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "14.5"
-                    },
-                    {
-                        "version_removed": "14.5",
-                        "version_added": "10.3",
-                        "partial_implementation": true,
-                        "notes": [
-                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
-                            "Before Safari 10.1, this event handler attribute was not supported; however, the event itself was supported since Safari 7. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                        ]
-                    }
-                ],
-                "samsunginternet_android": {
-                    "version_added": "8.0",
-                    "notes": "Before Samsung Internet 8.0, this event handler attribute is not supported; however, the event itself is supported since Samsung Internet 2.0. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                },
-                "webview_android": {
-                    "version_added": "62",
-                    "notes": "Before WebView 62, this event handler attribute is not supported; however, the event itself is supported since WebView 4.4.3. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "notes": "Before Chrome 62, this event handler attribute is not supported; however, the event itself is supported since Chrome 33. The event can be listened to via <code>document.addEventListener('visibilitychange', function() {});</code>."
-                }
-            },
-            "title": "Document: visibilitychange event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "visibilitychange_event",
-            "slug": "API/Document/visibilitychange_event",
-            "summary": "The visibilitychange event is fired at the document when the contents of its tab have become visible or have been hidden.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "33",
-                        "notes": "Before Chrome 62, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Chrome, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    },
-                    {
-                        "version_added": "13",
-                        "prefix": "webkit"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "33",
-                        "notes": "Before Chrome 62, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Chrome, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    },
-                    {
-                        "version_added": "18",
-                        "prefix": "webkit"
-                    }
-                ],
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "56"
-                },
-                "firefox_android": {
-                    "version_added": "56"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "notes": "The <code>onvisibilitychange</code> attribute is not supported in IE. To listen to this event, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                },
-                "opera": [
-                    {
-                        "version_added": "20",
-                        "notes": "Before Opera 49, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Opera, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "20",
-                        "notes": "Before Opera Android 46, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Opera Android, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": [
-                    {
-                        "version_added": "14.1"
-                    },
-                    {
-                        "version_removed": "14.1",
-                        "version_added": "7",
-                        "partial_implementation": true,
-                        "notes": [
-                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
-                            "The event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not.",
-                            "Before Safari 10.1, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Safari, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                        ]
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "14.5"
-                    },
-                    {
-                        "version_removed": "14.5",
-                        "version_added": "7",
-                        "partial_implementation": true,
-                        "notes": [
-                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
-                            "Before Safari iOS 14, the event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not.",
-                            "Before Safari iOS 10.3, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Safari iOS, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                        ]
-                    }
-                ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0",
-                        "notes": "Before Samsung Internet 8.0, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Samsung Internet, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    },
-                    {
-                        "version_added": "1.0",
-                        "prefix": "webkit"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "4.4.3",
-                        "notes": "Before WebView 62, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of WebView, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    },
-                    {
-                        "version_added": "37",
-                        "prefix": "webkit"
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "Before Chrome 62, the <code>onvisibilitychange</code> attribute is not supported. To listen to this event in earlier versions of Chrome, use <code>document.addEventListener('visibilitychange', function() {});</code>."
-                    },
-                    {
-                        "version_added": "79",
-                        "prefix": "webkit"
-                    }
-                ]
-            },
-            "title": "Document: visibilitychange event"
-        }
-    ],
     "dom-document-open-dev": [
         {
             "engines": [
@@ -13170,6 +12774,210 @@
                 }
             },
             "title": "Document.title"
+        }
+    ],
+    "handler-onvisibilitychange": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "partial": [
+                "webkit"
+            ],
+            "filename": "api/Document.json",
+            "name": "visibilitychange_event",
+            "slug": "API/Document/visibilitychange_event",
+            "summary": "The visibilitychange event is fired at the document when the contents of its tab have become visible or have been hidden.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "33",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "13",
+                        "prefix": "webkit",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "33",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "18",
+                        "prefix": "webkit",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    }
+                ],
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "56"
+                },
+                "firefox_android": {
+                    "version_added": "56"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                },
+                "opera": [
+                    {
+                        "version_added": "49"
+                    },
+                    {
+                        "version_added": "20",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "15",
+                        "prefix": "webkit",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "15",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "46"
+                    },
+                    {
+                        "version_added": "20",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "14",
+                        "prefix": "webkit",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "14",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    }
+                ],
+                "safari": [
+                    {
+                        "version_added": "14",
+                        "partial_implementation": true,
+                        "notes": "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>."
+                    },
+                    {
+                        "version_added": "10.1",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
+                            "Before Safari 14, the event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not."
+                        ]
+                    },
+                    {
+                        "version_added": "7",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
+                            "Before Safari 14, the event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not.",
+                            "The <code>onvisibilitychange</code> event handler property is not supported."
+                        ]
+                    }
+                ],
+                "safari_ios": [
+                    {
+                        "version_added": "14",
+                        "partial_implementation": true,
+                        "notes": "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>."
+                    },
+                    {
+                        "version_added": "10.3",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
+                            "Before Safari 14, the event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not."
+                        ]
+                    },
+                    {
+                        "version_added": "7",
+                        "partial_implementation": true,
+                        "notes": [
+                            "Doesn't fire the <code>visibilitychange</code> event when navigating away from a document, so also include code to check for the <code>pagehide</code> event (which does fire for that case in all current browsers). See WebKit bugs <a href='https://webkit.org/b/116769'>116769</a>, <a href='https://webkit.org/b/151234'>151234</a>, <a href='https://webkit.org/b/151610'>151610</a>, and <a href='https://webkit.org/b/194897'>194897</a>.",
+                            "Before Safari 14, the event does not bubble, so <code>document.addEventListener('visibilitychange', ...)</code> works, but <code>window.addEventListener('visibilitychange', ...)</code> does not.",
+                            "The <code>onvisibilitychange</code> event handler property is not supported."
+                        ]
+                    }
+                ],
+                "samsunginternet_android": [
+                    {
+                        "version_added": "8.0"
+                    },
+                    {
+                        "version_added": "2.0",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "1.0",
+                        "prefix": "webkit",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "4.4.3",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "37",
+                        "prefix": "webkit",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    },
+                    {
+                        "version_added": "79",
+                        "prefix": "webkit",
+                        "partial_implementation": true,
+                        "notes": "The <code>onvisibilitychange</code> event handler property is not supported."
+                    }
+                ]
+            },
+            "title": "Document: visibilitychange event"
         }
     ],
     "dom-document-visibilitystate": [
@@ -14567,62 +14375,6 @@
                 }
             },
             "title": "EventSource: error event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "error_event",
-            "slug": "API/WebSocket/error_event",
-            "summary": "The error event is fired when a connection with a WebSocket has been closed due to an error (some data couldn't be sent for example).",
-            "support": {
-                "chrome": {
-                    "version_added": "5"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket: error event"
         }
     ],
     "handler-eventsource-onerror": [
@@ -14797,62 +14549,6 @@
                 }
             },
             "title": "EventSource: open event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "open_event",
-            "slug": "API/WebSocket/open_event",
-            "summary": "The open event is fired when a connection with a WebSocket is opened.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket: open event"
         }
     ],
     "handler-eventsource-onopen": [
@@ -20490,62 +20186,6 @@
                 }
             },
             "title": "HTMLDialogElement: close event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "close_event",
-            "slug": "API/WebSocket/close_event",
-            "summary": "The close event is fired when a connection with a WebSocket is closed.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket: close event"
         }
     ],
     "dom-dialog-open": [
@@ -21408,6 +21048,130 @@
             "title": "HTMLElement.contentEditable"
         }
     ],
+    "handler-oncopy": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "copy_event",
+            "slug": "API/HTMLElement/copy_event",
+            "summary": "The copy event fires when the user initiates a copy action through the browser's user interface.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": [
+                    {
+                        "version_added": "9"
+                    },
+                    {
+                        "version_added": "5.5",
+                        "partial_implementation": true,
+                        "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>."
+                    }
+                ],
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLElement: copy event"
+        }
+    ],
+    "handler-oncut": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "cut_event",
+            "slug": "API/HTMLElement/cut_event",
+            "summary": "The cut event fires when the user initiates a cut action through the browser's user interface.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "9"
+                },
+                "firefox_android": {
+                    "version_added": "9"
+                },
+                "ie": [
+                    {
+                        "version_added": "9"
+                    },
+                    {
+                        "version_added": "5.5",
+                        "partial_implementation": true,
+                        "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>."
+                    }
+                ],
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLElement: cut event"
+        }
+    ],
     "dom-dataset-dev": [
         {
             "engines": [
@@ -22200,6 +21964,68 @@
                 }
             },
             "title": "HTMLElement.outerText"
+        }
+    ],
+    "handler-onpaste": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "paste_event",
+            "slug": "API/HTMLElement/paste_event",
+            "summary": "The paste event fires when the user initiates a paste action through the browser's user interface.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "9"
+                },
+                "firefox_android": {
+                    "version_added": "9"
+                },
+                "ie": [
+                    {
+                        "version_added": "9"
+                    },
+                    {
+                        "version_added": "5.5",
+                        "partial_implementation": true,
+                        "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>."
+                    }
+                ],
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLElement: paste event"
         }
     ],
     "dom-tabindex": [
@@ -23281,7 +23107,7 @@
             "filename": "api/HTMLFormElement.json",
             "name": "reset",
             "slug": "API/HTMLFormElement/reset",
-            "summary": "The HTMLFormElement.reset() method restores a form element's default values. This method does the same thing as clicking the form's reset button.",
+            "summary": "The HTMLFormElement.reset() method restores a form element's default values. This method does the same thing as clicking the form's <input type=\"reset\"> control.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -28480,6 +28306,71 @@
             "title": "HTMLMediaElement: playing event"
         }
     ],
+    "dom-media-preservespitch-dev": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "prefixed": [
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "preservesPitch",
+            "slug": "API/HTMLMediaElement/preservesPitch",
+            "summary": "The HTMLMediaElement.preservesPitch property determines whether or not the browser should adjust the pitch of the audio to compensate for changes to the playback rate made by setting HTMLMediaElement.playbackRate.",
+            "support": {
+                "chrome": {
+                    "version_added": "86"
+                },
+                "chrome_android": {
+                    "version_added": "86"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "prefix": "moz",
+                    "version_added": "20",
+                    "notes": "See <a href='https://bugzil.la/1652950'>bug 1652950</a>."
+                },
+                "firefox_android": {
+                    "prefix": "moz",
+                    "version_added": "20",
+                    "notes": "See <a href='https://bugzil.la/1652950'>bug 1652950</a>."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "72"
+                },
+                "opera_android": {
+                    "version_added": "61"
+                },
+                "safari": {
+                    "prefix": "webkit",
+                    "version_added": "4",
+                    "notes": "See <a href='https://webkit.org/b/214922'>bug 214922</a>."
+                },
+                "safari_ios": {
+                    "prefix": "webkit",
+                    "version_added": "4",
+                    "notes": "See <a href='https://webkit.org/b/214922'>bug 214922</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "86"
+                },
+                "edge_blink": {
+                    "version_added": "86"
+                }
+            },
+            "title": "HTMLMediaElement.preservesPitch"
+        }
+    ],
     "event-media-progress": [
         {
             "engines": [
@@ -32587,7 +32478,7 @@
             "filename": "api/HTMLTableCaptionElement.json",
             "name": "HTMLTableCaptionElement",
             "slug": "API/HTMLTableCaptionElement",
-            "summary": "The HTMLTableCaptionElement interface special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating table caption elements.",
+            "summary": "The HTMLTableCaptionElement interface provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating table caption elements.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -32904,7 +32795,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLTableElement: createTBody()"
+            "title": "HTMLTableElement.createTBody()"
         }
     ],
     "dom-table-createtfoot-dev": [
@@ -32959,7 +32850,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLTableElement: createTFoot()"
+            "title": "HTMLTableElement.createTFoot()"
         }
     ],
     "dom-table-createthead-dev": [
@@ -33014,7 +32905,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLTableElement: createTHead()"
+            "title": "HTMLTableElement.createTHead()"
         }
     ],
     "dom-table-deletecaption-dev": [
@@ -36227,7 +36118,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: ancestorOrigins"
+            "title": "location.ancestorOrigins"
         }
     ],
     "dom-location-assign-dev": [
@@ -36285,7 +36176,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: assign()"
+            "title": "location.assign()"
         }
     ],
     "dom-location-hash-dev": [
@@ -36343,7 +36234,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: hash"
+            "title": "location.hash"
         }
     ],
     "dom-location-host-dev": [
@@ -36401,7 +36292,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: host"
+            "title": "location.host"
         }
     ],
     "dom-location-hostname-dev": [
@@ -36459,7 +36350,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: hostname"
+            "title": "location.hostname"
         }
     ],
     "dom-location-href-dev": [
@@ -36517,7 +36408,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: href"
+            "title": "location.href"
         },
         {
             "engines": [
@@ -36574,7 +36465,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: toString()"
+            "title": "location.toString()"
         }
     ],
     "dom-location-origin-dev": [
@@ -36635,7 +36526,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: origin"
+            "title": "location.origin"
         }
     ],
     "dom-location-pathname-dev": [
@@ -36696,7 +36587,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: pathname"
+            "title": "location.pathname"
         }
     ],
     "dom-location-port-dev": [
@@ -36754,7 +36645,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: port"
+            "title": "location.port"
         }
     ],
     "dom-location-protocol-dev": [
@@ -36812,7 +36703,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: protocol"
+            "title": "location.protocol"
         }
     ],
     "dom-location-reload-dev": [
@@ -36871,7 +36762,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: reload()"
+            "title": "location.reload()"
         }
     ],
     "dom-location-replace-dev": [
@@ -36929,7 +36820,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: replace()"
+            "title": "location.replace()"
         }
     ],
     "dom-location-search-dev": [
@@ -36989,7 +36880,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Location: search"
+            "title": "location.search"
         }
     ],
     "dom-mediaerror-code-dev": [
@@ -37924,9 +37815,9 @@
                 "webkit"
             ],
             "filename": "api/MessagePort.json",
-            "name": "onmessage",
-            "slug": "API/MessagePort/onmessage",
-            "summary": "The onmessage event handler of the MessagePort interface is an EventListener, called whenever an MessageEvent of type message is fired on the port — that is, when the port receives a message.",
+            "name": "message_event",
+            "slug": "API/MessagePort/message_event",
+            "summary": "The message event is fired on a MessagePort object when a message arrives on that channel.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -37949,14 +37840,22 @@
                 "ie": {
                     "version_added": "10"
                 },
-                "nodejs": {
-                    "version_added": false
-                },
+                "nodejs": [
+                    {
+                        "version_added": "14.7.0"
+                    },
+                    {
+                        "version_added": "10.5.0",
+                        "version_removed": "14.7.0",
+                        "partial_implementation": true,
+                        "notes": "Supports the event, but only via Node <code>EventEmitter</code>."
+                    }
+                ],
                 "opera": {
                     "version_added": "10.6"
                 },
                 "opera_android": {
-                    "version_added": "11"
+                    "version_added": "11.5"
                 },
                 "safari": {
                     "version_added": "5"
@@ -37968,13 +37867,13 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "4.4"
+                    "version_added": "37"
                 },
                 "edge_blink": {
                     "version_added": "79"
                 }
             },
-            "title": "MessagePort.onmessage"
+            "title": "MessagePort: message event"
         }
     ],
     "handler-messageport-onmessageerror": [
@@ -37984,9 +37883,9 @@
                 "gecko"
             ],
             "filename": "api/MessagePort.json",
-            "name": "onmessageerror",
-            "slug": "API/MessagePort/onmessageerror",
-            "summary": "The onmessageerror event handler of the MessagePort interface is an EventListener, called whenever an MessageEvent of type messageerror is fired on the port—that is, when it receives a message that cannot be deserialized.",
+            "name": "messageerror_event",
+            "slug": "API/MessagePort/messageerror_event",
+            "summary": "The messageerror event is fired on a MessagePort object when it receives a message that can't be deserialized.",
             "support": {
                 "chrome": {
                     "version_added": "60"
@@ -38009,14 +37908,22 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": {
-                    "version_added": false
-                },
+                "nodejs": [
+                    {
+                        "version_added": "14.7.0"
+                    },
+                    {
+                        "version_added": "14.5.0",
+                        "version_removed": "14.7.0",
+                        "partial_implementation": true,
+                        "notes": "Supports the event, but only via Node <code>EventEmitter</code>."
+                    }
+                ],
                 "opera": {
                     "version_added": "47"
                 },
                 "opera_android": {
-                    "version_added": "44"
+                    "version_added": "47"
                 },
                 "safari": {
                     "version_added": false,
@@ -38036,7 +37943,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MessagePort.onmessageerror"
+            "title": "MessagePort: messageerror event"
         }
     ],
     "dom-messageport-postmessage-dev": [
@@ -38122,7 +38029,7 @@
             "filename": "api/MessagePort.json",
             "name": "start",
             "slug": "API/MessagePort/start",
-            "summary": "The start() method of the MessagePort interface starts the sending of messages queued on the port. This method is only needed when using EventTarget.addEventListener; it is implied when using MessageChannel.onmessage.",
+            "summary": "The start() method of the MessagePort interface starts the sending of messages queued on the port. This method is only needed when using EventTarget.addEventListener; it is implied when using onmessage.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -38768,6 +38675,119 @@
                 }
             },
             "title": "WorkerNavigator.onLine"
+        }
+    ],
+    "dom-navigator-pdfviewerenabled": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "pdfViewerEnabled",
+            "slug": "API/Navigator/pdfViewerEnabled",
+            "summary": "The pdfViewerEnabled property of the Navigator interface indicates whether the browser supports inline display of PDF files when navigating to them.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "99"
+                },
+                "firefox_android": {
+                    "version_added": "99"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "80"
+                },
+                "opera_android": {
+                    "version_added": "66"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "Navigator.pdfViewerEnabled"
+        }
+    ],
+    "dom-navigator-platform-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "platform",
+            "slug": "API/Navigator/platform",
+            "summary": "The platform property read-only property of the Navigator interface returns a string identifying the platform on which the user’s browser is running.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "notes": [
+                        "Before Firefox 69, <code>platform</code> would report running on a 32-bit CPU if running the 32-bit version of Firefox on a 64-bit system.",
+                        "You can override the value returned by <code>platform</code> by setting the preference <code>general.platform.override</code> to the string you wish to be returned instead."
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "4"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "navigator.platform"
         }
     ],
     "custom-handlers": [
@@ -40330,9 +40350,9 @@
                 "webkit"
             ],
             "filename": "api/ServiceWorker.json",
-            "name": "onerror",
-            "slug": "API/ServiceWorker/onerror",
-            "summary": "The onerror property of the ServiceWorker interface represents an event handler, that is a function to be called when the error event occurs.",
+            "name": "error_event",
+            "slug": "API/ServiceWorker/error_event",
+            "summary": "The error event fires whenever an error occurs in the service worker.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -40374,7 +40394,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ServiceWorker.onerror"
+            "title": "ServiceWorker: error event"
         },
         {
             "engines": [
@@ -40439,8 +40459,8 @@
                 "webkit"
             ],
             "filename": "api/Worker.json",
-            "name": "onerror",
-            "slug": "API/Worker/onerror",
+            "name": "error_event",
+            "slug": "API/Worker/error_event",
             "summary": "The error event of the Worker interface fires when an error occurs in the worker.",
             "support": {
                 "chrome": {
@@ -40774,6 +40794,62 @@
             "title": "SharedWorkerGlobalScope: connect event"
         }
     ],
+    "handler-sharedworkerglobalscope-onconnect": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/SharedWorkerGlobalScope.json",
+            "name": "connect_event",
+            "slug": "API/SharedWorkerGlobalScope/connect_event",
+            "summary": "The connect event is fired in shared workers at their SharedWorkerGlobalScope when a new client connects.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "29",
+                    "notes": "Before version 65 the <code>data</code> property of the event object was <code>null</code>; it is now initialized to an empty string, as per spec."
+                },
+                "firefox_android": {
+                    "version_added": "29",
+                    "notes": "Before version 65 the <code>data</code> property of the event object was <code>null</code>; it is now initialized to an empty string, as per spec."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "10.6"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SharedWorkerGlobalScope: connect event"
+        }
+    ],
     "dom-sharedworkerglobalscope-name-dev": [
         {
             "engines": [
@@ -40826,60 +40902,6 @@
                 }
             },
             "title": "SharedWorkerGlobalScope.name"
-        }
-    ],
-    "handler-sharedworkerglobalscope-onconnect": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/SharedWorkerGlobalScope.json",
-            "name": "onconnect",
-            "slug": "API/SharedWorkerGlobalScope/onconnect",
-            "summary": "The connect event is fired in shared workers at their SharedWorkerGlobalScope when a new client connects.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "29"
-                },
-                "firefox_android": {
-                    "version_added": "29"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "10.6"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SharedWorkerGlobalScope: connect event"
         }
     ],
     "shared-workers-and-the-sharedworkerglobalscope-interface": [
@@ -41878,7 +41900,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -41888,7 +41910,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -41935,7 +41957,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 }
@@ -41964,7 +41986,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -41973,7 +41995,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -42019,7 +42041,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 }
@@ -42048,7 +42070,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -42057,7 +42079,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -42103,7 +42125,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 }
@@ -42136,7 +42158,7 @@
                         "flags": [
                             {
                                 "type": "preference",
-                                "name": "Experimental Web Platform Features"
+                                "name": "#enable-experimental-web-platform-features"
                             }
                         ]
                     }
@@ -42151,7 +42173,7 @@
                         "flags": [
                             {
                                 "type": "preference",
-                                "name": "Experimental Web Platform Features"
+                                "name": "#enable-experimental-web-platform-features"
                             }
                         ]
                     }
@@ -42203,7 +42225,7 @@
                         "flags": [
                             {
                                 "type": "preference",
-                                "name": "Experimental Web Platform Features"
+                                "name": "#enable-experimental-web-platform-features"
                             }
                         ]
                     }
@@ -42237,7 +42259,7 @@
                         "flags": [
                             {
                                 "type": "preference",
-                                "name": "Experimental Web Platform Features"
+                                "name": "#enable-experimental-web-platform-features"
                             }
                         ]
                     }
@@ -42252,7 +42274,7 @@
                         "flags": [
                             {
                                 "type": "preference",
-                                "name": "Experimental Web Platform Features"
+                                "name": "#enable-experimental-web-platform-features"
                             }
                         ]
                     }
@@ -42304,7 +42326,7 @@
                         "flags": [
                             {
                                 "type": "preference",
-                                "name": "Experimental Web Platform Features"
+                                "name": "#enable-experimental-web-platform-features"
                             }
                         ]
                     }
@@ -42333,7 +42355,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -42343,7 +42365,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -42390,7 +42412,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 }
@@ -42418,7 +42440,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -42428,7 +42450,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 },
@@ -42475,7 +42497,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "Experimental Web Platform Features"
+                            "name": "#enable-experimental-web-platform-features"
                         }
                     ]
                 }
@@ -45501,884 +45523,6 @@
             "title": "WebGLRenderingContext.commit()"
         }
     ],
-    "dom-websocket-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "WebSocket",
-            "slug": "API/WebSocket/WebSocket",
-            "summary": "The WebSocket() constructor returns a new WebSocket object.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": [
-                    {
-                        "version_added": "11"
-                    },
-                    {
-                        "version_added": "7",
-                        "version_removed": "11",
-                        "prefix": "Moz"
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "14"
-                    },
-                    {
-                        "version_added": "7",
-                        "version_removed": "14",
-                        "prefix": "Moz"
-                    }
-                ],
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket()"
-        }
-    ],
-    "dom-websocket-binarytype-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "binaryType",
-            "slug": "API/WebSocket/binaryType",
-            "summary": "The WebSocket.binaryType property controls the type of binary data being received over the WebSocket connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "15"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "11"
-                },
-                "firefox_android": {
-                    "version_added": "14"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket.binaryType"
-        }
-    ],
-    "dom-websocket-bufferedamount-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "bufferedAmount",
-            "slug": "API/WebSocket/bufferedAmount",
-            "summary": "The WebSocket.bufferedAmount read-only property returns the number of bytes of data that have been queued using calls to send() but not yet transmitted to the network. This value resets to zero once all queued data has been sent. This value does not reset to zero when the connection is closed; if you keep calling send(), this will continue to climb.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket.bufferedAmount"
-        }
-    ],
-    "dom-websocket-close-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "close",
-            "slug": "API/WebSocket/close",
-            "summary": "The WebSocket.close() method closes the WebSocket connection or connection attempt, if any. If the connection is already CLOSED, this method does nothing.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket.close()"
-        }
-    ],
-    "handler-websocket-onclose": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "close_event",
-            "slug": "API/WebSocket/close_event",
-            "summary": "The close event is fired when a connection with a WebSocket is closed.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket: close event"
-        }
-    ],
-    "handler-websocket-onerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "error_event",
-            "slug": "API/WebSocket/error_event",
-            "summary": "The error event is fired when a connection with a WebSocket has been closed due to an error (some data couldn't be sent for example).",
-            "support": {
-                "chrome": {
-                    "version_added": "5"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket: error event"
-        }
-    ],
-    "dom-websocket-extensions-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "extensions",
-            "slug": "API/WebSocket/extensions",
-            "summary": "The WebSocket.extensions read-only property returns the extensions selected by the server. This is currently only the empty string or a list of extensions as negotiated by the connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "16"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "8"
-                },
-                "firefox_android": {
-                    "version_added": "8"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket.extensions"
-        }
-    ],
-    "handler-websocket-onmessage": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "message_event",
-            "slug": "API/WebSocket/message_event",
-            "summary": "The message event is fired when data is received through a WebSocket.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket: message event"
-        }
-    ],
-    "handler-websocket-onopen": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "open_event",
-            "slug": "API/WebSocket/open_event",
-            "summary": "The open event is fired when a connection with a WebSocket is opened.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket: open event"
-        }
-    ],
-    "dom-websocket-protocol-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "protocol",
-            "slug": "API/WebSocket/protocol",
-            "summary": "The WebSocket.protocol read-only property returns the name of the sub-protocol the server selected; this will be one of the strings specified in the protocols parameter when creating the WebSocket object, or the empty string if no connection is established.",
-            "support": {
-                "chrome": {
-                    "version_added": "15"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket.protocol"
-        }
-    ],
-    "dom-websocket-readystate-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "readyState",
-            "slug": "API/WebSocket/readyState",
-            "summary": "The WebSocket.readyState read-only property returns the current state of the WebSocket connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket.readyState"
-        }
-    ],
-    "dom-websocket-send-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "send",
-            "slug": "API/WebSocket/send",
-            "summary": "The WebSocket.send() method enqueues the specified data to be transmitted to the server over the WebSocket connection, increasing the value of bufferedAmount by the number of bytes needed to contain the data. If the data can't be sent (for example, because it needs to be buffered but the buffer is full), the socket is closed automatically. The browser will throw an exception if you call send() when the connection is in the CONNECTING state. If you call send() when the connection is in the CLOSING or CLOSED states, the browser will silently discard the data.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": [
-                    {
-                        "version_added": "18",
-                        "notes": "See <a href='https://bugzil.la/775368'>bug 775368</a>."
-                    },
-                    {
-                        "version_added": "11",
-                        "version_removed": "18",
-                        "notes": "Only parameter of type <code>ArrayBuffer</code> and <code>String</code> supported."
-                    },
-                    {
-                        "version_added": "8",
-                        "version_removed": "11",
-                        "notes": "Only parameter of type <code>String</code> supported."
-                    },
-                    {
-                        "version_added": "7",
-                        "version_removed": "8",
-                        "notes": "Only parameter of type <code>String</code> supported. Returns <code>boolean</code>."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "18",
-                        "notes": "See <a href='https://bugzil.la/775368'>bug 775368</a>."
-                    },
-                    {
-                        "version_added": "14",
-                        "version_removed": "18",
-                        "notes": "Only parameter of type <code>ArrayBuffer</code> and <code>String</code> supported."
-                    },
-                    {
-                        "version_added": "8",
-                        "version_removed": "14",
-                        "notes": "Only parameter of type <code>String</code> supported."
-                    },
-                    {
-                        "version_added": "7",
-                        "version_removed": "8",
-                        "notes": "Only parameter of type <code>String</code> supported. Returns <code>boolean</code>."
-                    }
-                ],
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket.send()"
-        }
-    ],
-    "dom-websocket-url-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "url",
-            "slug": "API/WebSocket/url",
-            "summary": "The WebSocket.url read-only property returns the absolute URL of the WebSocket as resolved by the constructor.",
-            "support": {
-                "chrome": {
-                    "version_added": "18"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "7"
-                },
-                "firefox_android": {
-                    "version_added": "7"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": {
-                    "version_added": "6"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket.url"
-        }
-    ],
-    "the-websocket-interface": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WebSocket.json",
-            "name": "WebSocket",
-            "slug": "API/WebSocket",
-            "summary": "The WebSocket object provides the API for creating and managing a WebSocket connection to a server, as well as for sending and receiving data on the connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.4"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": [
-                    {
-                        "version_added": "11"
-                    },
-                    {
-                        "version_added": "7",
-                        "version_removed": "11",
-                        "prefix": "Moz",
-                        "notes": "Message size limited to 16 MB (see <a href='https://bugzil.la/711205'>bug 711205</a>)."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "14"
-                    },
-                    {
-                        "version_added": "7",
-                        "version_removed": "14",
-                        "prefix": "Moz",
-                        "notes": "Message size limited to 16 MB (see <a href='https://bugzil.la/711205'>bug 711205</a>)."
-                    }
-                ],
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebSocket"
-        }
-    ],
     "event-domcontentloaded": [
         {
             "engines": [
@@ -47734,6 +46878,117 @@
             "title": "Window.menubar"
         }
     ],
+    "handler-window-onmessage": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Window.json",
+            "name": "message_event",
+            "slug": "API/Window/message_event",
+            "summary": "The message event is fired on a Window object when the window receives a message, for example from a call to Window.postMessage() from another browsing context.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": {
+                    "version_added": "60"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "9"
+                },
+                "firefox_android": {
+                    "version_added": "9"
+                },
+                "ie": {
+                    "version_added": "8"
+                },
+                "opera": {
+                    "version_added": "47"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "60"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window: message event"
+        }
+    ],
+    "handler-window-onmessageerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Window.json",
+            "name": "messageerror_event",
+            "slug": "API/Window/messageerror_event",
+            "summary": "The messageerror event is fired on a Window object when it receives a message that can't be deserialized.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": {
+                    "version_added": "60"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "57"
+                },
+                "firefox_android": {
+                    "version_added": "57"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "47"
+                },
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "60"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window: messageerror event"
+        }
+    ],
     "dom-name-dev": [
         {
             "engines": [
@@ -48041,7 +47296,7 @@
             "filename": "api/Window.json",
             "name": "open",
             "slug": "API/Window/open",
-            "summary": "The Window interface's open() method loads the specified resource into the new or existing browsing context (window, <iframe> or tab) with the specified name. If the name doesn't exist, then a new browsing context is opened in a new tab or a new window, and the specified resource is loaded into it.",
+            "summary": "The open() method of the Window interface loads a specified resource into a new or existing browsing context (that is, tab, window, or <iframe>) under a specified name.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -49716,7 +48971,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onhashchange",
             "slug": "API/WindowEventHandlers/onhashchange",
-            "summary": "The WindowEventHandlers.onhashchange property of the WindowEventHandlers mixin is the event handler for processing hashchange events.",
+            "summary": "The hashchange event is fired when the fragment identifier of the URL has changed (the part of the URL beginning with and following the # symbol).",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -49758,7 +49013,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onhashchange"
+            "title": "Window: hashchange event"
         }
     ],
     "handler-window-onlanguagechange": [
@@ -49814,117 +49069,6 @@
                 }
             },
             "title": "WindowEventHandlers.onlanguagechange"
-        }
-    ],
-    "handler-window-onmessage": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WindowEventHandlers.json",
-            "name": "onmessage",
-            "slug": "API/WindowEventHandlers/onmessage",
-            "summary": "The onmessage property of the WindowEventHandlers mixin is the event handler called whenever an object receives a message event.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": {
-                    "version_added": "60"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": {
-                    "version_added": "9"
-                },
-                "ie": {
-                    "version_added": "8"
-                },
-                "opera": {
-                    "version_added": "47"
-                },
-                "opera_android": {
-                    "version_added": "44"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "60"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowEventHandlers.onmessage"
-        }
-    ],
-    "handler-window-onmessageerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/WindowEventHandlers.json",
-            "name": "onmessageerror",
-            "slug": "API/WindowEventHandlers/onmessageerror",
-            "summary": "The onmessageerror event handler of the WindowEventHandlers interface is an EventListener, called whenever an MessageEvent of type messageerror is fired on a window—that is, when it receives a message that cannot be deserialized.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": {
-                    "version_added": "60"
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "57"
-                },
-                "firefox_android": {
-                    "version_added": "57"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "47"
-                },
-                "opera_android": {
-                    "version_added": "44"
-                },
-                "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "60"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WindowEventHandlers.onmessageerror"
         }
     ],
     "handler-window-onpopstate": [
@@ -50416,129 +49560,6 @@
             "title": "Worker()"
         }
     ],
-    "handler-worker-onmessage": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Worker.json",
-            "name": "onmessage",
-            "slug": "API/Worker/onmessage",
-            "summary": "The onmessage property of the Worker interface represents an event handler, that is a function to be called when the message event occurs. These events are of type MessageEvent and will be called when the worker's parent receives a message (i.e. from the DedicatedWorkerGlobalScope.postMessage method).",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.5"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "nodejs": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "10.6"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Worker.onmessage"
-        }
-    ],
-    "handler-worker-onmessageerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Worker.json",
-            "name": "onmessageerror",
-            "slug": "API/Worker/onmessageerror",
-            "summary": "The onmessageerror event handler of the Worker interface is an EventListener, called whenever an MessageEvent of type messageerror is fired on the Worker instance — that is, when it receives a message that cannot be deserialized.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": {
-                    "version_added": "60"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "57"
-                },
-                "firefox_android": {
-                    "version_added": "57"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "47"
-                },
-                "opera_android": {
-                    "version_added": "44"
-                },
-                "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "safari_ios": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "samsunginternet_android": {
-                    "version_added": "8.0"
-                },
-                "webview_android": {
-                    "version_added": "60"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Worker.onmessageerror"
-        }
-    ],
     "dom-worker-postmessage-dev": [
         {
             "engines": [
@@ -50786,6 +49807,64 @@
             "title": "Worker"
         }
     ],
+    "handler-workerglobalscope-onerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WorkerGlobalScope.json",
+            "name": "error_event",
+            "slug": "API/WorkerGlobalScope/error_event",
+            "summary": "The error event of the WorkerGlobalScope interface fires when an error occurs in the worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "11.5"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerGlobalScope: error event"
+        }
+    ],
     "dom-workerglobalscope-importscripts-dev": [
         {
             "engines": [
@@ -50842,6 +49921,64 @@
                 }
             },
             "title": "WorkerGlobalScope.importScripts()"
+        }
+    ],
+    "handler-workerglobalscope-onlanguagechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WorkerGlobalScope.json",
+            "name": "languagechange_event",
+            "slug": "API/WorkerGlobalScope/languagechange_event",
+            "summary": "The languagechange event is fired at the global scope object when the user's preferred language changes.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "74"
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "11.5"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerGlobalScope: languagechange event"
         }
     ],
     "dom-workerglobalscope-location-dev": [
@@ -50960,122 +50097,6 @@
             "title": "WorkerGlobalScope.navigator"
         }
     ],
-    "handler-workerglobalscope-onerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WorkerGlobalScope.json",
-            "name": "onerror",
-            "slug": "API/WorkerGlobalScope/onerror",
-            "summary": "The onerror property of the WorkerGlobalScope interface represents an event handler to be called when the error event occurs.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.5"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "11.5"
-                },
-                "opera_android": {
-                    "version_added": "27"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WorkerGlobalScope.onerror"
-        }
-    ],
-    "handler-workerglobalscope-onlanguagechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WorkerGlobalScope.json",
-            "name": "onlanguagechange",
-            "slug": "API/WorkerGlobalScope/onlanguagechange",
-            "summary": "The onlanguagechange property of the WorkerGlobalScope interface represents an event handler to be called when the languagechange event occurs.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "40"
-                },
-                "deno": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "74"
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "11.5"
-                },
-                "opera_android": {
-                    "version_added": "27"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WorkerGlobalScope.onlanguagechange"
-        }
-    ],
     "handler-workerglobalscope-onoffline": [
         {
             "engines": [
@@ -51083,9 +50104,9 @@
                 "webkit"
             ],
             "filename": "api/WorkerGlobalScope.json",
-            "name": "onoffline",
-            "slug": "API/WorkerGlobalScope/onoffline",
-            "summary": "The onoffline property of the WorkerGlobalScope interface represents an event handler to be called when the offline event occurs.",
+            "name": "offline_event",
+            "slug": "API/WorkerGlobalScope/offline_event",
+            "summary": "The offline event of the WorkerGlobalScope fires when the device loses connection to the internet.",
             "support": {
                 "chrome": {
                     "version_added": false,
@@ -51137,7 +50158,7 @@
                     "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 }
             },
-            "title": "WorkerGlobalScope.onoffline"
+            "title": "WorkerGlobalScope: offline event"
         }
     ],
     "handler-workerglobalscope-ononline": [
@@ -51147,9 +50168,9 @@
                 "webkit"
             ],
             "filename": "api/WorkerGlobalScope.json",
-            "name": "ononline",
-            "slug": "API/WorkerGlobalScope/ononline",
-            "summary": "The ononline property of the WorkerGlobalScope interface represents an event handler to be called when the online event occurs.",
+            "name": "online_event",
+            "slug": "API/WorkerGlobalScope/online_event",
+            "summary": "The online event of the WorkerGlobalScope fires when the device reconnects to the internet.",
             "support": {
                 "chrome": {
                     "version_added": false,
@@ -51201,7 +50222,7 @@
                     "notes": "See <a href='https://crbug.com/114475'>bug 114475</a>."
                 }
             },
-            "title": "WorkerGlobalScope.ononline"
+            "title": "WorkerGlobalScope: online event"
         }
     ],
     "dom-workerglobalscope-self-dev": [
@@ -61177,7 +60198,7 @@
             "filename": "html/elements/menu.json",
             "name": "menu",
             "slug": "HTML/Element/menu",
-            "summary": "The <menu> HTML element is a semantic alternative to <ul>. It represents an unordered list of items (represented by <li> elements), each of these represent a link or other command that the user can activate.",
+            "summary": "The <menu> HTML element is a semantic alternative to <ul>. It represents an unordered list of items (represented by <li> elements), each of which represents a link or other command that the user can activate.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -62025,7 +61046,7 @@
             "filename": "html/elements/pre.json",
             "name": "pre",
             "slug": "HTML/Element/pre",
-            "summary": "The <pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or \"monospaced, font. Whitespace inside this element is displayed as written.",
+            "summary": "The <pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written.",
             "support": {
                 "chrome": {
                     "version_added": true

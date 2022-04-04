@@ -4470,7 +4470,7 @@
                     "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4487,9 +4487,9 @@
                 "webkit"
             ],
             "filename": "api/IDBOpenDBRequest.json",
-            "name": "onblocked",
-            "slug": "API/IDBOpenDBRequest/onblocked",
-            "summary": "The onblocked event handler of the IDBOpenDBRequest interface is the event handler for the blocked event. This event is triggered when the upgradeneeded should be triggered because of a version change but the database is still in use (that is, not closed) somewhere, even after the versionchange event was sent.",
+            "name": "blocked_event",
+            "slug": "API/IDBOpenDBRequest/blocked_event",
+            "summary": "The blocked handler is executed when an open connection to a database is blocking a versionchange transaction on the same database.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -4532,63 +4532,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "IDBOpenDBRequest.onblocked"
-        }
-    ],
-    "dom-idbopendbrequest-onupgradeneeded": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBOpenDBRequest.json",
-            "name": "onupgradeneeded",
-            "slug": "API/IDBOpenDBRequest/onupgradeneeded",
-            "summary": "The onupgradeneeded property of the IDBOpenDBRequest interface is the event handler for the upgradeneeded event, triggered when a database of a bigger version number than the existing stored database is loaded.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBOpenDBRequest.onupgradeneeded"
+            "title": "IDBOpenDBRequest: blocked event"
         }
     ],
     "eventdef-request-upgradeneeded": [
@@ -4638,7 +4582,63 @@
                     "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBOpenDBRequest: upgradeneeded event"
+        }
+    ],
+    "dom-idbopendbrequest-onupgradeneeded": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBOpenDBRequest.json",
+            "name": "upgradeneeded_event",
+            "slug": "API/IDBOpenDBRequest/upgradeneeded_event",
+            "summary": "The upgradeneeded event is fired when an attempt was made to open a database with a version number higher than its current version.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4848,7 +4848,7 @@
                     "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -4919,9 +4919,9 @@
                 "webkit"
             ],
             "filename": "api/IDBRequest.json",
-            "name": "onerror",
-            "slug": "API/IDBRequest/onerror",
-            "summary": "The onerror event handler of the IDBRequest interface handles the error event, fired when a request returns an error.",
+            "name": "error_event",
+            "slug": "API/IDBRequest/error_event",
+            "summary": "The error handler is executed when an error caused a request to fail.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -4964,63 +4964,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "IDBRequest.onerror"
-        }
-    ],
-    "dom-idbrequest-onsuccess": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/IDBRequest.json",
-            "name": "onsuccess",
-            "slug": "API/IDBRequest/onsuccess",
-            "summary": "The onsuccess event handler of the IDBRequest interface handles the success event, fired when the result of a request is successfully returned.",
-            "support": {
-                "chrome": {
-                    "version_added": "23"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "10"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": "10",
-                    "partial_implementation": true
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "8"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "IDBRequest.onsuccess"
+            "title": "IDBRequest: error event"
         }
     ],
     "ref-for-dom-idbrequest-readystate①": [
@@ -5238,7 +5182,63 @@
                     "version_added": "1.5"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "IDBRequest: success event"
+        }
+    ],
+    "dom-idbrequest-onsuccess": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/IDBRequest.json",
+            "name": "success_event",
+            "slug": "API/IDBRequest/success_event",
+            "summary": "The success event is fired when an IDBRequest succeeds.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "10"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -6345,7 +6345,7 @@
             "filename": "api/IDBVersionChangeEvent.json",
             "name": "IDBVersionChangeEvent",
             "slug": "API/IDBVersionChangeEvent/IDBVersionChangeEvent",
-            "summary": "The IDBVersionChangeEvent() constructor creates a new IDBVersionChangeEvent object, which is used to represent when a version of the database has changed, as a result of the IDBOpenDBRequest.onupgradeneeded event handler.",
+            "summary": "The IDBVersionChangeEvent() constructor creates a new IDBVersionChangeEvent object, which is used to represent when a version of the database has changed, as a result of the onupgradeneeded event handler.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -6512,7 +6512,7 @@
             "filename": "api/IDBVersionChangeEvent.json",
             "name": "IDBVersionChangeEvent",
             "slug": "API/IDBVersionChangeEvent",
-            "summary": "The IDBVersionChangeEvent interface of the IndexedDB API indicates that the version of the database has changed, as the result of an IDBOpenDBRequest.onupgradeneeded event handler function.",
+            "summary": "The IDBVersionChangeEvent interface of the IndexedDB API indicates that the version of the database has changed, as the result of an onupgradeneeded event handler function.",
             "support": {
                 "chrome": [
                     {

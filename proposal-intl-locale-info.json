@@ -5,34 +5,43 @@
                 "blink",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "javascript/builtins/intl/Locale.json",
             "name": "calendars",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/calendars",
             "summary": "The Intl.Locale.prototype.calendars property is an accessor property which returns an array of one or more unique calendar identifiers for the Locale.",
             "support": {
-                "chrome": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "deno": {
                     "version_added": false
                 },
@@ -51,9 +60,22 @@
                 "nodejs": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
+                "opera": [
+                    {
+                        "version_added": "85"
+                    },
+                    {
+                        "version_added": "78",
+                        "version_removed": "85",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "opera_android": {
                     "version_added": false
                 },
@@ -67,18 +89,24 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "99"
                 },
-                "edge_blink": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Intl.Locale.prototype.calendars"
         }
@@ -89,34 +117,43 @@
                 "blink",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "javascript/builtins/intl/Locale.json",
             "name": "hourCycles",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/hourCycles",
             "summary": "The Intl.Locale.prototype.hourCycles property is an accessor property which returns a list of one or more unique hour cycle identifiers for the Locale.",
             "support": {
-                "chrome": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "deno": {
                     "version_added": false
                 },
@@ -135,9 +172,22 @@
                 "nodejs": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
+                "opera": [
+                    {
+                        "version_added": "85"
+                    },
+                    {
+                        "version_added": "78",
+                        "version_removed": "85",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "opera_android": {
                     "version_added": false
                 },
@@ -151,18 +201,24 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "99"
                 },
-                "edge_blink": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Intl.Locale.prototype.hourCycles"
         }
@@ -173,34 +229,43 @@
                 "blink",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "javascript/builtins/intl/Locale.json",
             "name": "numberingSystems",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystems",
             "summary": "The Intl.Locale.prototype.numberingSystems property is an accessor property that returns one or more unique numbering system identifiers according to the numeral system used by the Locale.",
             "support": {
-                "chrome": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "deno": {
                     "version_added": false
                 },
@@ -219,9 +284,22 @@
                 "nodejs": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
+                "opera": [
+                    {
+                        "version_added": "85"
+                    },
+                    {
+                        "version_added": "78",
+                        "version_removed": "85",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "opera_android": {
                     "version_added": false
                 },
@@ -235,18 +313,24 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "99"
                 },
-                "edge_blink": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Intl.Locale.prototype.numberingSystems"
         }
@@ -257,34 +341,43 @@
                 "blink",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "javascript/builtins/intl/Locale.json",
             "name": "textInfo",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/textInfo",
             "summary": "The Intl.Locale.prototype.textInfo property is an accessor property which returns the ordering of characters indicated by either ltr (left-to-right) or by rtl (right-to-left) for the associated Locale.",
             "support": {
-                "chrome": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "deno": {
                     "version_added": false
                 },
@@ -303,9 +396,22 @@
                 "nodejs": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
+                "opera": [
+                    {
+                        "version_added": "85"
+                    },
+                    {
+                        "version_added": "78",
+                        "version_removed": "85",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "opera_android": {
                     "version_added": false
                 },
@@ -319,18 +425,24 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "99"
                 },
-                "edge_blink": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Intl.Locale.prototype.textInfo"
         }
@@ -341,34 +453,43 @@
                 "blink",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "javascript/builtins/intl/Locale.json",
             "name": "timeZones",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/timeZones",
             "summary": "The Intl.Locale.prototype.timeZones property is an accessor property which returns an array of supported time zones for a chosen Locale.",
             "support": {
-                "chrome": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "deno": {
                     "version_added": false
                 },
@@ -387,9 +508,22 @@
                 "nodejs": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
+                "opera": [
+                    {
+                        "version_added": "85"
+                    },
+                    {
+                        "version_added": "78",
+                        "version_removed": "85",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "opera_android": {
                     "version_added": false
                 },
@@ -403,18 +537,24 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "99"
                 },
-                "edge_blink": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Intl.Locale.prototype.timeZones"
         }
@@ -425,34 +565,43 @@
                 "blink",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "javascript/builtins/intl/Locale.json",
             "name": "weekInfo",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/weekInfo",
             "summary": "The Intl.Locale.prototype.weekInfo property is an accessor property which returns a weekInfo object with the properties firstDay, weekend and minimalDays for the associated Locale.",
             "support": {
-                "chrome": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
-                "chrome_android": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": "92",
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "deno": {
                     "version_added": false
                 },
@@ -471,9 +620,22 @@
                 "nodejs": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
+                "opera": [
+                    {
+                        "version_added": "85"
+                    },
+                    {
+                        "version_added": "78",
+                        "version_removed": "85",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "opera_android": {
                     "version_added": false
                 },
@@ -487,18 +649,24 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "99"
                 },
-                "edge_blink": {
-                    "version_added": "92",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-javascript-harmony",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "99"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "99",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Intl.Locale.prototype.weekInfo"
         }

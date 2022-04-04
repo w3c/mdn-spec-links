@@ -21,11 +21,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -66,73 +66,6 @@
             "title": "MIDIAccess.inputs"
         }
     ],
-    "dom-midiaccess-onstatechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/MIDIAccess.json",
-            "name": "onstatechange",
-            "slug": "API/MIDIAccess/onstatechange",
-            "summary": "The onstatechange Event Handler of the MIDIAccess interface processes statechange events.",
-            "support": {
-                "chrome": {
-                    "version_added": "43"
-                },
-                "chrome_android": {
-                    "version_added": "43"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "99"
-                    },
-                    {
-                        "version_added": "97",
-                        "version_removed": "99",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.webmidi.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "30"
-                },
-                "opera_android": {
-                    "version_added": "30"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "43"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MIDIAccess.onstatechange"
-        }
-    ],
     "dom-midiaccess-outputs": [
         {
             "engines": [
@@ -155,11 +88,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -200,6 +133,73 @@
             "title": "MIDIAccess.outputs"
         }
     ],
+    "dom-midiaccess-onstatechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/MIDIAccess.json",
+            "name": "statechange_event",
+            "slug": "API/MIDIAccess/statechange_event",
+            "summary": "The statechange event of the MIDIAccess interface is fired when a new MIDI port is added or when an existing port changes state.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIAccess: statechange event"
+        }
+    ],
     "dom-midiaccess-sysexenabled": [
         {
             "engines": [
@@ -222,11 +222,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -289,11 +289,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -343,7 +343,7 @@
             "filename": "api/MIDIConnectionEvent.json",
             "name": "MIDIConnectionEvent",
             "slug": "API/MIDIConnectionEvent/MIDIConnectionEvent",
-            "summary": "The MIDIConnectionEvent() constructor creates a new MIDIConnectionEvent object. Typically this constructor is not used as events are created when a new port becomes available, and the object is passed to the MIDIAccess.onstagechange event handler.",
+            "summary": "The MIDIConnectionEvent() constructor creates a new MIDIConnectionEvent object. Typically this constructor is not used as events are created when a new port becomes available, and the object is passed to the statechange event.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -356,11 +356,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -423,11 +423,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -477,7 +477,7 @@
             "filename": "api/MIDIConnectionEvent.json",
             "name": "MIDIConnectionEvent",
             "slug": "API/MIDIConnectionEvent",
-            "summary": "The MIDIConnectionEvent interface of the Web MIDI API is the event passed to the onstatechange event handler of the MIDIAccess interface and the onstatechange event of the MIDIPort interface. This occurs any time a new port becomes available, or when a previously available port becomes unavailable. For example, this event is fired whenever a MIDI device is either plugged in to or unplugged from a computer.",
+            "summary": "The MIDIConnectionEvent interface of the Web MIDI API is the event passed to the statechange event of the MIDIAccess interface and the statechange event of the MIDIPort interface. This occurs any time a new port becomes available, or when a previously available port becomes unavailable. For example, this event is fired whenever a MIDI device is either plugged in to or unplugged from a computer.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -490,11 +490,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -557,11 +557,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -624,11 +624,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -691,11 +691,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -756,11 +756,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -823,11 +823,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -890,11 +890,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -957,11 +957,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1024,11 +1024,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1092,11 +1092,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1159,11 +1159,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1226,11 +1226,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1293,11 +1293,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1360,11 +1360,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1427,11 +1427,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1494,11 +1494,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1539,73 +1539,6 @@
             "title": "MIDIPort.name"
         }
     ],
-    "dom-midiport-onstatechange": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/MIDIPort.json",
-            "name": "onstatechange",
-            "slug": "API/MIDIPort/onstatechange",
-            "summary": "The onstatechange event handler of the MIDIPort interface processes statechange events.",
-            "support": {
-                "chrome": {
-                    "version_added": "43"
-                },
-                "chrome_android": {
-                    "version_added": "43"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "99"
-                    },
-                    {
-                        "version_added": "97",
-                        "version_removed": "99",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.webmidi.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "30"
-                },
-                "opera_android": {
-                    "version_added": "30"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "43"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MIDIPort.onstatechange"
-        }
-    ],
     "dom-midiport-open": [
         {
             "engines": [
@@ -1628,11 +1561,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1695,11 +1628,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1740,6 +1673,73 @@
             "title": "MIDIPort.state"
         }
     ],
+    "dom-midiport-onstatechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/MIDIPort.json",
+            "name": "statechange_event",
+            "slug": "API/MIDIPort/statechange_event",
+            "summary": "The statechange event of the MIDIPort interface is fired when a port changes from open to closed, or closed to open.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": {
+                    "version_added": "43"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webmidi.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "30"
+                },
+                "opera_android": {
+                    "version_added": "30"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MIDIPort: statechange event"
+        }
+    ],
     "dom-midiport-type": [
         {
             "engines": [
@@ -1762,11 +1762,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1829,11 +1829,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1896,11 +1896,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1963,11 +1963,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "99"
+                        "version_added": "100"
                     },
                     {
                         "version_added": "97",
-                        "version_removed": "99",
+                        "version_removed": "100",
                         "flags": [
                             {
                                 "type": "preference",

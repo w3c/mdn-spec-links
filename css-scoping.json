@@ -2,59 +2,6 @@
     "host-selector": [
         {
             "engines": [
-                "blink"
-            ],
-            "filename": "css/selectors/host-context.json",
-            "name": "host-context",
-            "slug": "CSS/:host-context()",
-            "summary": "The :host-context() CSS pseudo-class function selects the shadow host of the shadow DOM containing the CSS it is used inside (so you can select a custom element from inside its shadow DOM) — but only if the selector given as the function's parameter matches the shadow host's ancestor(s) in the place it sits inside the DOM hierarchy.",
-            "support": {
-                "chrome": {
-                    "version_added": "54"
-                },
-                "chrome_android": {
-                    "version_added": "54"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1082060'>bug 1082060</a>."
-                },
-                "firefox_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1082060'>bug 1082060</a>."
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "41"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "54"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": ":host-context()"
-        },
-        {
-            "engines": [
                 "blink",
                 "gecko",
                 "webkit"

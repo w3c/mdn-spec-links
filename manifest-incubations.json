@@ -81,12 +81,28 @@
             "slug": "API/Window/beforeinstallprompt_event",
             "summary": "The beforeinstallprompt event fires on devices when a user is about to be prompted to \"install\" a web application. It may be saved for later and used to prompt the user at a more suitable time.",
             "support": {
-                "chrome": {
-                    "version_added": "44"
-                },
-                "chrome_android": {
-                    "version_added": "44"
-                },
+                "chrome": [
+                    {
+                        "version_added": "61"
+                    },
+                    {
+                        "version_added": "44",
+                        "version_removed": "61",
+                        "partial_implementation": true,
+                        "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "61"
+                    },
+                    {
+                        "version_added": "44",
+                        "version_removed": "61",
+                        "partial_implementation": true,
+                        "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
@@ -99,27 +115,67 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "31"
-                },
-                "opera_android": {
-                    "version_added": "32"
-                },
+                "opera": [
+                    {
+                        "version_added": "48"
+                    },
+                    {
+                        "version_added": "31",
+                        "version_removed": "48",
+                        "partial_implementation": true,
+                        "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "45"
+                    },
+                    {
+                        "version_added": "32",
+                        "version_removed": "45",
+                        "partial_implementation": true,
+                        "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
                     "version_added": false
                 },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "44"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "8.0"
+                    },
+                    {
+                        "version_added": "5.0",
+                        "version_removed": "8.0",
+                        "partial_implementation": true,
+                        "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "61"
+                    },
+                    {
+                        "version_added": "44",
+                        "version_removed": "61",
+                        "partial_implementation": true,
+                        "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "61",
+                        "partial_implementation": true,
+                        "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                    }
+                ]
             },
             "title": "Window: beforeinstallprompt event"
         }

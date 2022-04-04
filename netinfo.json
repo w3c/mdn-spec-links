@@ -34,6 +34,7 @@
                 },
                 "firefox_android": {
                     "version_added": "14",
+                    "version_removed": "99",
                     "notes": "The Network API is enabled by default. Can be disabled using the <code>dom.netinfo.enabled</code> preference."
                 },
                 "ie": {
@@ -46,10 +47,12 @@
                     "version_added": "37"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/185697'>bug 185697</a>."
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/185697'>bug 185697</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": "3.0"
@@ -101,6 +104,62 @@
                     "version_added": "37"
                 },
                 "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/185697'>bug 185697</a>."
+                },
+                "safari_ios": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/185697'>bug 185697</a>."
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": "50"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerNavigator.connection"
+        }
+    ],
+    "dom-networkinformation-onchange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/NetworkInformation.json",
+            "name": "change_event",
+            "slug": "API/NetworkInformation/change_event",
+            "summary": "The change event fires when connection information changes, and the change is received by the NetworkInformation object.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": {
+                    "version_added": "38"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "On Firefox, the event handler property corresponding to the <code>change</code> event is <code>ontypechange</code>."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
                     "version_added": false
                 },
                 "safari_ios": {
@@ -116,7 +175,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WorkerNavigator.connection"
+            "title": "NetworkInformation: change event"
         }
     ],
     "dom-networkinformation-downlink": [
@@ -287,60 +346,6 @@
             "title": "NetworkInformation.effectiveType"
         }
     ],
-    "dom-networkinformation-onchange": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/NetworkInformation.json",
-            "name": "onchange",
-            "slug": "API/NetworkInformation/onchange",
-            "summary": "The NetworkInformation.onchange event handler contains the code that is fired when connection information changes, and the change is received by the NetworkInformation object.",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": {
-                    "version_added": "38"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false,
-                    "notes": "On Firefox, the event handler property corresponding to the <code>change</code> event is <code>ontypechange</code>."
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "48"
-                },
-                "opera_android": {
-                    "version_added": "45"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": "50"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "NetworkInformation.onchange"
-        }
-    ],
     "dom-networkinformation-rtt": [
         {
             "engines": [
@@ -407,6 +412,9 @@
                 "blink",
                 "gecko"
             ],
+            "needsflag": [
+                "gecko"
+            ],
             "filename": "api/NetworkInformation.json",
             "name": "type",
             "slug": "API/NetworkInformation/type",
@@ -423,10 +431,18 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "31",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.netinfo.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": "31"
+                    "version_added": "31",
+                    "version_removed": "99"
                 },
                 "ie": {
                     "version_added": false
@@ -463,6 +479,9 @@
                 "blink",
                 "gecko"
             ],
+            "needsflag": [
+                "gecko"
+            ],
             "filename": "api/NetworkInformation.json",
             "name": "NetworkInformation",
             "slug": "API/NetworkInformation",
@@ -478,10 +497,18 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "31",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.netinfo.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": {
-                    "version_added": "31"
+                    "version_added": "31",
+                    "version_removed": "99"
                 },
                 "ie": {
                     "version_added": false
@@ -493,10 +520,12 @@
                     "version_added": "25"
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/185697'>bug 185697</a>."
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/185697'>bug 185697</a>."
                 },
                 "samsunginternet_android": {
                     "version_added": "3.0"

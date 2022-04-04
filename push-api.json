@@ -1290,115 +1290,6 @@
             "title": "PushSubscriptionOptions"
         }
     ],
-    "dom-serviceworkerglobalscope-onpush": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onpush",
-            "slug": "API/ServiceWorkerGlobalScope/onpush",
-            "summary": "The ServiceWorkerGlobalScope.onpush event of the ServiceWorkerGlobalScope interface is fired whenever a push message is received by a service worker via a push server.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": {
-                    "version_added": "42"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "26"
-                },
-                "opera_android": {
-                    "version_added": "26"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "42"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ServiceWorkerGlobalScope.onpush"
-        }
-    ],
-    "dom-serviceworkerglobalscope-onpushsubscriptionchange": [
-        {
-            "engines": [
-                "gecko"
-            ],
-            "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onpushsubscriptionchange",
-            "slug": "API/ServiceWorkerGlobalScope/onpushsubscriptionchange",
-            "summary": "The ServiceWorkerGlobalScope.onpushsubscriptionchange event of the ServiceWorkerGlobalScope interface is fired to indicate a change in push subscription that was triggered outside the application's control; for example, when the browser refreshes the push subscription.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "44",
-                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
-                },
-                "firefox_android": {
-                    "version_added": "44"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "ServiceWorkerGlobalScope.onpushsubscriptionchange"
-        }
-    ],
     "extensions-to-the-serviceworkerglobalscope-interface": [
         {
             "engines": [
@@ -1454,7 +1345,116 @@
             "title": "ServiceWorkerGlobalScope: push event"
         }
     ],
+    "dom-serviceworkerglobalscope-onpush": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/ServiceWorkerGlobalScope.json",
+            "name": "push_event",
+            "slug": "API/ServiceWorkerGlobalScope/push_event",
+            "summary": "The push event is sent to a service worker's global scope (represented by the ServiceWorkerGlobalScope interface) when the service worker has received a push message.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "24"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerGlobalScope: push event"
+        }
+    ],
     "the-pushsubscriptionchange-event": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/ServiceWorkerGlobalScope.json",
+            "name": "pushsubscriptionchange_event",
+            "slug": "API/ServiceWorkerGlobalScope/pushsubscriptionchange_event",
+            "summary": "The pushsubscriptionchange event is sent to the global scope of a ServiceWorker to indicate a change in push subscription that was triggered outside the application's control.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "44",
+                    "notes": "<a href='https://www.mozilla.org/en-US/firefox/organizations/'>Extended Support Releases (ESR)</a> before Firefox 78 ESR do not support service workers and the Push API."
+                },
+                "firefox_android": {
+                    "version_added": "44"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "ServiceWorkerGlobalScope: pushsubscriptionchange event"
+        }
+    ],
+    "dom-serviceworkerglobalscope-onpushsubscriptionchange": [
         {
             "engines": [
                 "gecko"

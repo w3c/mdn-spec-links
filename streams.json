@@ -1568,6 +1568,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/ReadableStream.json",
@@ -1587,11 +1588,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.pipeTo.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -3687,9 +3701,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStream.json",
             "name": "WritableStream",
             "slug": "API/WritableStream/WritableStream",
@@ -3707,18 +3718,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -3758,9 +3775,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStream.json",
             "name": "abort",
             "slug": "API/WritableStream/abort",
@@ -3778,18 +3792,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -3829,9 +3849,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStream.json",
             "name": "getWriter",
             "slug": "API/WritableStream/getWriter",
@@ -3849,18 +3866,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -3900,9 +3923,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStream.json",
             "name": "locked",
             "slug": "API/WritableStream/locked",
@@ -3920,18 +3940,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -3971,9 +3997,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStream.json",
             "name": "WritableStream",
             "slug": "API/WritableStream",
@@ -3991,18 +4014,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4046,9 +4075,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultController.json",
             "name": "error",
             "slug": "API/WritableStreamDefaultController/error",
@@ -4066,18 +4092,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4117,9 +4149,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultController.json",
             "name": "WritableStreamDefaultController",
             "slug": "API/WritableStreamDefaultController",
@@ -4137,18 +4166,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4191,9 +4226,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "WritableStreamDefaultWriter",
             "slug": "API/WritableStreamDefaultWriter/WritableStreamDefaultWriter",
@@ -4211,18 +4243,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4262,9 +4300,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "abort",
             "slug": "API/WritableStreamDefaultWriter/abort",
@@ -4282,18 +4317,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4333,9 +4374,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "close",
             "slug": "API/WritableStreamDefaultWriter/close",
@@ -4353,18 +4391,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4404,9 +4448,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "closed",
             "slug": "API/WritableStreamDefaultWriter/closed",
@@ -4424,18 +4465,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4475,9 +4522,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "desiredSize",
             "slug": "API/WritableStreamDefaultWriter/desiredSize",
@@ -4495,18 +4539,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4546,9 +4596,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "ready",
             "slug": "API/WritableStreamDefaultWriter/ready",
@@ -4566,18 +4613,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4617,9 +4670,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "releaseLock",
             "slug": "API/WritableStreamDefaultWriter/releaseLock",
@@ -4637,18 +4687,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4688,9 +4744,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "write",
             "slug": "API/WritableStreamDefaultWriter/write",
@@ -4708,18 +4761,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false
@@ -4759,9 +4818,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "WritableStreamDefaultWriter",
             "slug": "API/WritableStreamDefaultWriter",
@@ -4779,18 +4835,24 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.writable_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "100"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "100",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.writable_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "100"
                 },
                 "ie": {
                     "version_added": false

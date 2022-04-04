@@ -60,7 +60,7 @@
             "filename": "api/NDEFMessage.json",
             "name": "NDEFMessage",
             "slug": "API/NDEFMessage",
-            "summary": "The NDEFMessage interface of the Web NFC API represents the content of an NDEF message that has been read from or could be written to an NFC tag. An instance is acquired by calling the NDEFMessage() constructor or from the NDEFReadingEvent.message property, which is passed to NDEFReader.onreading.",
+            "summary": "The NDEFMessage interface of the Web NFC API represents the content of an NDEF message that has been read from or could be written to an NFC tag. An instance is acquired by calling the NDEFMessage() constructor or from the NDEFReadingEvent.message property, which is passed to the reading event.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -164,9 +164,9 @@
                 "blink"
             ],
             "filename": "api/NDEFReader.json",
-            "name": "onreading",
-            "slug": "API/NDEFReader/onreading",
-            "summary": "The onreading property of the NDEFReader interface is called whenever a new reading is available from compatible NFC devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.",
+            "name": "reading_event",
+            "slug": "API/NDEFReader/reading_event",
+            "summary": "The reading event of the NDEFReader interface is fired whenever a new reading is available from compatible NFC devices (e.g. NFC tags supporting NDEF) when these devices are within the reader's magnetic induction field.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -208,7 +208,7 @@
                     "version_added": false
                 }
             },
-            "title": "NDEFReader.onreading"
+            "title": "NDEFReader: reading event"
         }
     ],
     "dom-ndefreader-onreadingerror": [
@@ -217,9 +217,9 @@
                 "blink"
             ],
             "filename": "api/NDEFReader.json",
-            "name": "onreadingerror",
-            "slug": "API/NDEFReader/onreadingerror",
-            "summary": "The onreadingerror property of the NDEFReader interface is called whenever an error occurs during reading of NFC tags, e.g. when tags leave the reader's magnetic induction field.",
+            "name": "readingerror_event",
+            "slug": "API/NDEFReader/readingerror_event",
+            "summary": "The readingerror event of the NDEFReader interface is fired whenever an error occurs during reading of NFC tags, e.g. when tags leave the reader's magnetic induction field.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -261,7 +261,7 @@
                     "version_added": false
                 }
             },
-            "title": "NDEFReader: onreadingerror"
+            "title": "NDEFReader: readingerror_event"
         }
     ],
     "dom-ndefreader-scan": [

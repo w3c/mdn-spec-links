@@ -938,7 +938,9 @@
         {
             "engines": [
                 "blink",
-                "gecko",
+                "gecko"
+            ],
+            "partial": [
                 "webkit"
             ],
             "filename": "api/SVGAnimationElement.json",
@@ -946,45 +948,121 @@
             "slug": "API/SVGAnimationElement/beginEvent_event",
             "summary": "The beginEvent event of the SVGAnimationElement interface is fired when the element local timeline begins to play. It will be raised each time the element begins the active duration (i.e., when it restarts, but not when it repeats).",
             "support": {
-                "chrome": {
-                    "version_added": "31"
-                },
-                "chrome_android": {
-                    "version_added": "31"
-                },
+                "chrome": [
+                    {
+                        "version_added": "35",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "31",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "35",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "31",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
+                "firefox": [
+                    {
+                        "version_added": "93",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "93",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "18"
-                },
-                "opera_android": {
-                    "version_added": "18"
-                },
+                "opera": [
+                    {
+                        "version_added": "22",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "18",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "22",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "18",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ],
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The event handler, <code>onbegin</code>, is not supported."
                 },
                 "safari_ios": {
-                    "version_added": "10"
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The event handler, <code>onbegin</code>, is not supported."
                 },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "2.0",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "37",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "4.4.3",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "The event handler is <code>onbegin</code> for this event."
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onbegin</code>, is not supported."
+                    }
+                ]
             },
             "title": "SVGAnimationElement: beginEvent event"
         }
@@ -993,7 +1071,9 @@
         {
             "engines": [
                 "blink",
-                "gecko",
+                "gecko"
+            ],
+            "partial": [
                 "webkit"
             ],
             "filename": "api/SVGAnimationElement.json",
@@ -1001,45 +1081,121 @@
             "slug": "API/SVGAnimationElement/endEvent_event",
             "summary": "The endEvent event of the SVGAnimationElement interface is fired when at the active end of the animation is reached.",
             "support": {
-                "chrome": {
-                    "version_added": "31"
-                },
-                "chrome_android": {
-                    "version_added": "31"
-                },
+                "chrome": [
+                    {
+                        "version_added": "35",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "31",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "35",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "31",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
+                "firefox": [
+                    {
+                        "version_added": "93",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "93",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "18"
-                },
-                "opera_android": {
-                    "version_added": "18"
-                },
+                "opera": [
+                    {
+                        "version_added": "22",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "18",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "22",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "18",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ],
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The event handler, <code>onend</code>, is not supported."
                 },
                 "safari_ios": {
-                    "version_added": "10"
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The event handler, <code>onend</code>, is not supported."
                 },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "2.0",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "37",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "4.4.3",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "The event handler is <code>onend</code> for this event."
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onend</code>, is not supported."
+                    }
+                ]
             },
             "title": "SVGAnimationElement: endEvent event"
         }
@@ -1050,50 +1206,129 @@
                 "blink",
                 "gecko"
             ],
+            "partial": [
+                "webkit"
+            ],
             "filename": "api/SVGAnimationElement.json",
             "name": "repeatEvent_event",
             "slug": "API/SVGAnimationElement/repeatEvent_event",
             "summary": "The repeatEvent event of the SVGAnimationElement interface is fired when the element's local timeline repeats. It will be fired each time the element repeats, after the first iteration.",
             "support": {
-                "chrome": {
-                    "version_added": "31"
-                },
-                "chrome_android": {
-                    "version_added": "31"
-                },
+                "chrome": [
+                    {
+                        "version_added": "35",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "31",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "35",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "31",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ],
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
+                "firefox": [
+                    {
+                        "version_added": "93",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "93",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "6",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "18"
-                },
-                "opera_android": {
-                    "version_added": "18"
-                },
+                "opera": [
+                    {
+                        "version_added": "22",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "18",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "22",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "18",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ],
                 "safari": {
-                    "version_added": false
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The event handler, <code>onrepeat</code>, is not supported."
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The event handler, <code>onrepeat</code>, is not supported."
                 },
-                "samsunginternet_android": {
-                    "version_added": "2.0"
-                },
-                "webview_android": {
-                    "version_added": "4.4.3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "samsunginternet_android": [
+                    {
+                        "version_added": "3.0",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "2.0",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ],
+                "webview_android": [
+                    {
+                        "version_added": "37",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "4.4.3",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ],
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "The event handler is <code>onrepeat</code> for this event."
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The event handler, <code>onrepeat</code>, is not supported."
+                    }
+                ]
             },
             "title": "SVGAnimationElement: repeatEvent event"
         }

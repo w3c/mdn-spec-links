@@ -7,7 +7,7 @@
             "filename": "api/PeriodicSyncEvent.json",
             "name": "PeriodicSyncEvent",
             "slug": "API/PeriodicSyncEvent/PeriodicSyncEvent",
-            "summary": "The PeriodicSyncEvent() constructor creates a new PeriodicSyncEvent object. This constructor is not typically used. The browser creates these objects itself and provides them to ServiceWorkerGlobalScope.onperiodicsync callback.",
+            "summary": "The PeriodicSyncEvent() constructor creates a new PeriodicSyncEvent object. This constructor is not typically used. The browser creates these objects itself and provides them to onperiodicsync callback.",
             "support": {
                 "chrome": {
                     "version_added": "80"
@@ -427,9 +427,9 @@
                 "blink"
             ],
             "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onperiodicsync",
-            "slug": "API/ServiceWorkerGlobalScope/onperiodicsync",
-            "summary": "The onperiodicsync property of the ServiceWorkerGlobalScope interface is an event handler fired at timed intervals, specified when registering a PeriodicSyncManager.",
+            "name": "periodicsync_event",
+            "slug": "API/ServiceWorkerGlobalScope/periodicsync_event",
+            "summary": "The periodicsync event of the ServiceWorkerGlobalScope interface is fired at timed intervals, specified when registering a PeriodicSyncManager.",
             "support": {
                 "chrome": {
                     "version_added": "80"
@@ -471,7 +471,7 @@
                     "version_added": "80"
                 }
             },
-            "title": "ServiceWorkerGlobalScope.onperiodicsync"
+            "title": "ServiceWorkerGlobalScope: periodicsync event"
         }
     ],
     "dom-serviceworkerregistration-periodicsync": [

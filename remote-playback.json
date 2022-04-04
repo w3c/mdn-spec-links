@@ -115,9 +115,9 @@
                 "webkit"
             ],
             "filename": "api/RemotePlayback.json",
-            "name": "onconnect",
-            "slug": "API/RemotePlayback/onconnect",
-            "summary": "The onconnect event handler of the RemotePlayback interface processes the events fired when the user agent connects to the remote device.",
+            "name": "connect_event",
+            "slug": "API/RemotePlayback/connect_event",
+            "summary": "The connect event of the RemotePlayback interface fires when the user agent connects to the remote device.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -159,7 +159,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RemotePlayback.onconnect"
+            "title": "RemotePlayback: connect event"
         }
     ],
     "dom-remoteplayback-onconnecting": [
@@ -169,9 +169,9 @@
                 "webkit"
             ],
             "filename": "api/RemotePlayback.json",
-            "name": "onconnecting",
-            "slug": "API/RemotePlayback/onconnecting",
-            "summary": "The onconnecting event handler of the RemotePlayback interface processes the events fired when the user agent initiates remote playback.",
+            "name": "connecting_event",
+            "slug": "API/RemotePlayback/connecting_event",
+            "summary": "The connecting event of the RemotePlayback interface fires when the user agent initiates remote playback.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -213,7 +213,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RemotePlayback.onconnecting"
+            "title": "RemotePlayback: connecting event"
         }
     ],
     "dom-remoteplayback-ondisconnect": [
@@ -223,9 +223,9 @@
                 "webkit"
             ],
             "filename": "api/RemotePlayback.json",
-            "name": "ondisconnect",
-            "slug": "API/RemotePlayback/ondisconnect",
-            "summary": "The ondisconnect event handler of the RemotePlayback interface processes the events fired when the user agent disconnects from the remote device.",
+            "name": "disconnect_event",
+            "slug": "API/RemotePlayback/disconnect_event",
+            "summary": "The disconnect event of the RemotePlayback interface fires when the user agent disconnects from the remote device.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -267,7 +267,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RemotePlayback.ondisconnect"
+            "title": "RemotePlayback: disconnect event"
         }
     ],
     "dom-remoteplayback-prompt": [

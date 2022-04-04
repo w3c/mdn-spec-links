@@ -623,7 +623,7 @@
             "title": "PaymentRequest.prototype.id"
         }
     ],
-    "onpaymentmethodchange-attribute": [
+    "dfn-paymentmethodchange": [
         {
             "engines": [
                 "blink",
@@ -634,9 +634,9 @@
                 "gecko"
             ],
             "filename": "api/PaymentRequest.json",
-            "name": "onpaymentmethodchange",
-            "slug": "API/PaymentRequest/onpaymentmethodchange",
-            "summary": "The PaymentRequest event handler onpaymentmethodchange is invoked when the paymentmethodchange is fired, indicating that the user has changed payment methods within a given payment handler.",
+            "name": "paymentmethodchange_event",
+            "slug": "API/PaymentRequest/paymentmethodchange_event",
+            "summary": "The paymentmethodchange event is delivered the Payment Request API to a PaymentRequest object when the user changes the payment method within a given payment handler.",
             "support": {
                 "chrome": {
                     "version_added": "76"
@@ -693,10 +693,10 @@
                     "version_added": "79"
                 }
             },
-            "title": "PaymentRequest.onpaymentmethodchange"
+            "title": "PaymentRequest: paymentmethodchange event"
         }
     ],
-    "dfn-paymentmethodchange": [
+    "onpaymentmethodchange-attribute": [
         {
             "engines": [
                 "blink",
@@ -709,7 +709,7 @@
             "filename": "api/PaymentRequest.json",
             "name": "paymentmethodchange_event",
             "slug": "API/PaymentRequest/paymentmethodchange_event",
-            "summary": "paymentmethodchange events are delivered by the Payment Request API to a PaymentRequest object when the user changes payment methods within a given payment handler.",
+            "summary": "The paymentmethodchange event is delivered the Payment Request API to a PaymentRequest object when the user changes the payment method within a given payment handler.",
             "support": {
                 "chrome": {
                     "version_added": "76"

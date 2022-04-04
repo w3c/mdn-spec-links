@@ -1231,9 +1231,9 @@
                 "webkit"
             ],
             "filename": "api/Window.json",
-            "name": "ondevicemotion",
-            "slug": "API/Window/ondevicemotion",
-            "summary": "An event handler for the devicemotion events sent to the window.",
+            "name": "devicemotion_event",
+            "slug": "API/Window/devicemotion_event",
+            "summary": "The devicemotion event is fired at a regular interval and indicates the amount of physical force of acceleration the device is receiving at that time. It also provides information about the rate of rotation, if available.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -1245,10 +1245,10 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "9"
+                    "version_added": "6"
                 },
                 "firefox_android": {
-                    "version_added": "9"
+                    "version_added": "6"
                 },
                 "ie": {
                     "version_added": "11"
@@ -1275,7 +1275,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.ondevicemotion"
+            "title": "Window: devicemotion event"
         }
     ],
     "ref-for-dom-window-ondeviceorientation": [
@@ -1286,9 +1286,9 @@
                 "webkit"
             ],
             "filename": "api/Window.json",
-            "name": "ondeviceorientation",
-            "slug": "API/Window/ondeviceorientation",
-            "summary": "An event handler for the deviceorientation event, which contains information about a relative device orientation change.",
+            "name": "deviceorientation_event",
+            "slug": "API/Window/deviceorientation_event",
+            "summary": "The deviceorientation event is fired when fresh data is available from an orientation sensor about the current orientation of the device as compared to the Earth coordinate frame. This data is gathered from a magnetometer inside the device.",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -1299,20 +1299,34 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": {
-                    "version_added": "9"
-                },
+                "firefox": [
+                    {
+                        "version_added": "6"
+                    },
+                    {
+                        "version_added": "3.6",
+                        "version_removed": "6",
+                        "alternative_name": "mozOrientation"
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "6"
+                    },
+                    {
+                        "version_added": "4",
+                        "version_removed": "6",
+                        "alternative_name": "mozOrientation"
+                    }
+                ],
                 "ie": {
                     "version_added": "11"
                 },
                 "opera": {
-                    "version_added": "15"
+                    "version_added": "12"
                 },
                 "opera_android": {
-                    "version_added": "14"
+                    "version_added": "12"
                 },
                 "safari": {
                     "version_added": false
@@ -1330,7 +1344,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.ondeviceorientation"
+            "title": "Window: deviceorientation event"
         }
     ],
     "dom-window-ondeviceorientationabsolute": [
@@ -1339,9 +1353,9 @@
                 "blink"
             ],
             "filename": "api/Window.json",
-            "name": "ondeviceorientationabsolute",
-            "slug": "API/Window/ondeviceorientationabsolute",
-            "summary": "An event handler for the deviceorientationabsolute event containing information about an absolute device orientation change.",
+            "name": "deviceorientationabsolute_event",
+            "slug": "API/Window/deviceorientationabsolute_event",
+            "summary": "The deviceorientationabsolute event is sent to the ondeviceorientationabsolute event handler on a Window event when absolute device orientation changes.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -1383,7 +1397,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.ondeviceorientationabsolute"
+            "title": "Window: deviceorientationabsolute event"
         }
     ]
 }

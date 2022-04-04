@@ -328,7 +328,62 @@
             "title": "MediaRecorder.audioBitsPerSecond"
         }
     ],
-    "errorevent-section": [
+    "dom-mediarecorder-ondataavailable": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaRecorder.json",
+            "name": "dataavailable_event",
+            "slug": "API/MediaRecorder/dataavailable_event",
+            "summary": "The dataavailable event is fired when the MediaRecorder delivers media data to your application for its use. The data is provided in a Blob object that contains the data. This occurs in four situations:",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "25"
+                },
+                "firefox_android": {
+                    "version_added": "25"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": {
+                    "version_added": "14"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaRecorder: dataavailable event"
+        }
+    ],
+    "dom-mediarecorder-onerror": [
         {
             "engines": [
                 "gecko",
@@ -397,65 +452,6 @@
                 }
             },
             "title": "MediaRecorder: error event"
-        },
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaRecorderErrorEvent.json",
-            "name": "MediaRecorderErrorEvent",
-            "slug": "API/MediaRecorderErrorEvent",
-            "summary": "The MediaRecorderErrorEvent interface represents errors returned by the MediaStream Recording API. It is an Event object that encapsulates a reference to a DOMException describing the error that occurred.",
-            "support": {
-                "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "chrome_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "57"
-                },
-                "firefox_android": {
-                    "version_added": "57"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "opera_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": {
-                    "version_added": "14"
-                },
-                "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "webview_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                }
-            },
-            "title": "MediaRecorderErrorEvent"
         }
     ],
     "dom-mediarecorder-istypesupported": [
@@ -601,352 +597,6 @@
             "title": "MediaRecorder.mimeType"
         }
     ],
-    "dom-mediarecorder-ondataavailable": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaRecorder.json",
-            "name": "ondataavailable",
-            "slug": "API/MediaRecorder/ondataavailable",
-            "summary": "The MediaRecorder.ondataavailable event handler (part of the MediaStream Recording API) handles the dataavailable event, letting you run code in response to Blob data being made available for use.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "25"
-                },
-                "firefox_android": {
-                    "version_added": "25"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": {
-                    "version_added": "14"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaRecorder.ondataavailable"
-        }
-    ],
-    "dom-mediarecorder-onerror": [
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "partial": [
-                "blink"
-            ],
-            "filename": "api/MediaRecorder.json",
-            "name": "onerror",
-            "slug": "API/MediaRecorder/onerror",
-            "summary": "The MediaRecorder interface's onerror event handler is called by the MediaStream Recording API when an error occurs. You can provide an event handler to deal with errors that occur while creating or using a media recorder.",
-            "support": {
-                "chrome": {
-                    "version_added": "49",
-                    "partial_implementation": true,
-                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "chrome_android": {
-                    "version_added": "49",
-                    "partial_implementation": true,
-                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "25"
-                },
-                "firefox_android": {
-                    "version_added": "25"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36",
-                    "partial_implementation": true,
-                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "opera_android": {
-                    "version_added": "36",
-                    "partial_implementation": true,
-                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": {
-                    "version_added": "14"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0",
-                    "partial_implementation": true,
-                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "webview_android": {
-                    "version_added": "49",
-                    "partial_implementation": true,
-                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "partial_implementation": true,
-                    "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
-                }
-            },
-            "title": "MediaRecorder.onerror"
-        }
-    ],
-    "dom-mediarecorder-onpause": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaRecorder.json",
-            "name": "onpause",
-            "slug": "API/MediaRecorder/onpause",
-            "summary": "The MediaRecorder.onpause event handler (part of the MediaRecorder API) handles the pause event, allowing you to run code in response to the media recording being paused.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaRecorder.onpause"
-        }
-    ],
-    "dom-mediarecorder-onresume": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaRecorder.json",
-            "name": "onresume",
-            "slug": "API/MediaRecorder/onresume",
-            "summary": "The MediaRecorder.onresume event handler (part of the MediaRecorder API) handles the resume event, allowing you to run code in response to the media recording being resumed after pausing.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaRecorder.onresume"
-        }
-    ],
-    "dom-mediarecorder-onstart": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaRecorder.json",
-            "name": "onstart",
-            "slug": "API/MediaRecorder/onstart",
-            "summary": "The MediaRecorder.onstart event handler (part of the MediaRecorder API) handles the start event, allowing you to run code in response to media recording being started by a MediaRecorder.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "25"
-                },
-                "firefox_android": {
-                    "version_added": "25"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": {
-                    "version_added": "14"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaRecorder.onstart"
-        }
-    ],
-    "dom-mediarecorder-onstop": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaRecorder.json",
-            "name": "onstop",
-            "slug": "API/MediaRecorder/onstop",
-            "summary": "The MediaRecorder.onstop event handler (part of the MediaRecorder API) handles the stop event, allowing you to run code in response to media recording via a MediaRecorder being stopped.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "25"
-                },
-                "firefox_android": {
-                    "version_added": "25"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": {
-                    "version_added": "14"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaRecorder.onstop"
-        }
-    ],
     "dom-mediarecorder-pause": [
         {
             "engines": [
@@ -1000,6 +650,61 @@
                 }
             },
             "title": "MediaRecorder.pause()"
+        }
+    ],
+    "dom-mediarecorder-onpause": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaRecorder.json",
+            "name": "pause_event",
+            "slug": "API/MediaRecorder/pause_event",
+            "summary": "The pause event is thrown as a result of the MediaRecorder.pause() method being invoked.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "65"
+                },
+                "firefox_android": {
+                    "version_added": "65"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaRecorder: pause event"
         }
     ],
     "dom-mediarecorder-requestdata": [
@@ -1112,6 +817,61 @@
             "title": "MediaRecorder.resume()"
         }
     ],
+    "dom-mediarecorder-onresume": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaRecorder.json",
+            "name": "resume_event",
+            "slug": "API/MediaRecorder/resume_event",
+            "summary": "The resume event is thrown when MediaRecorder.resume() is called.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "65"
+                },
+                "firefox_android": {
+                    "version_added": "65"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": {
+                    "version_added": "14.5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaRecorder: resume event"
+        }
+    ],
     "dom-mediarecorder-start": [
         {
             "engines": [
@@ -1165,6 +925,61 @@
                 }
             },
             "title": "MediaRecorder.start()"
+        }
+    ],
+    "dom-mediarecorder-onstart": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaRecorder.json",
+            "name": "start_event",
+            "slug": "API/MediaRecorder/start_event",
+            "summary": "The start event is fired when MediaRecorder.start() is called. At this point, the data starts being gathered into a Blob.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "25"
+                },
+                "firefox_android": {
+                    "version_added": "25"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": {
+                    "version_added": "14"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaRecorder: start event"
         }
     ],
     "dom-mediarecorder-state": [
@@ -1307,6 +1122,61 @@
                 }
             },
             "title": "MediaRecorder.stop()"
+        }
+    ],
+    "dom-mediarecorder-onstop": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaRecorder.json",
+            "name": "stop_event",
+            "slug": "API/MediaRecorder/stop_event",
+            "summary": "The stop event is fired when MediaRecorder.stop() is called, or when the media stream being captured ends. In each case, the stop event is preceded by a dataavailable event, making the Blob captured up to that point available for you to use in your application.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "25"
+                },
+                "firefox_android": {
+                    "version_added": "25"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": {
+                    "version_added": "14"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "49"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaRecorder: stop event"
         }
     ],
     "dom-mediarecorder-stream": [
@@ -1606,6 +1476,67 @@
                 }
             },
             "title": "MediaRecorderErrorEvent.error"
+        }
+    ],
+    "errorevent-section": [
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaRecorderErrorEvent.json",
+            "name": "MediaRecorderErrorEvent",
+            "slug": "API/MediaRecorderErrorEvent",
+            "summary": "The MediaRecorderErrorEvent interface represents errors returned by the MediaStream Recording API. It is an Event object that encapsulates a reference to a DOMException describing the error that occurred.",
+            "support": {
+                "chrome": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
+                },
+                "chrome_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "57"
+                },
+                "firefox_android": {
+                    "version_added": "57"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
+                },
+                "opera_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
+                },
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": {
+                    "version_added": "14"
+                },
+                "samsunginternet_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1250432'>bug 1250432</a>."
+                }
+            },
+            "title": "MediaRecorderErrorEvent"
         }
     ]
 }

@@ -280,6 +280,61 @@
             "title": "Notification.body"
         }
     ],
+    "dom-notification-onclick": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Notification.json",
+            "name": "click_event",
+            "slug": "API/Notification/click_event",
+            "summary": "The click event of the Notification interface fires when the user clicks on displayed Notification.",
+            "support": {
+                "chrome": {
+                    "version_added": "20"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "23"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Notification: click event"
+        }
+    ],
     "dom-notification-close": [
         {
             "engines": [
@@ -333,6 +388,61 @@
                 }
             },
             "title": "Notification.close()"
+        }
+    ],
+    "dom-notification-onclose": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Notification.json",
+            "name": "close_event",
+            "slug": "API/Notification/close_event",
+            "summary": "The close event of the Notification interface fires when a Notification is closed.",
+            "support": {
+                "chrome": {
+                    "version_added": "20"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "23"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Notification: close event"
         }
     ],
     "dom-notification-data": [
@@ -442,6 +552,61 @@
                 }
             },
             "title": "Notification.dir"
+        }
+    ],
+    "dom-notification-onerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Notification.json",
+            "name": "error_event",
+            "slug": "API/Notification/error_event",
+            "summary": "The error event of the Notification interface fires when something goes wrong with a Notification (in many cases an error preventing the notification from being displayed.)",
+            "support": {
+                "chrome": {
+                    "version_added": "20"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "23"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Notification: error event"
         }
     ],
     "dom-notification-icon": [
@@ -658,226 +823,6 @@
                 }
             },
             "title": "Notification.maxActions"
-        }
-    ],
-    "dom-notification-onclick": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Notification.json",
-            "name": "onclick",
-            "slug": "API/Notification/onclick",
-            "summary": "The onclick property of the Notification interface specifies an event listener to receive click events. These events occur when the user clicks on a displayed Notification.",
-            "support": {
-                "chrome": {
-                    "version_added": "20"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "23"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Notification.onclick"
-        }
-    ],
-    "dom-notification-onclose": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Notification.json",
-            "name": "onclose",
-            "slug": "API/Notification/onclose",
-            "summary": "The onclose property of the Notification interface specifies an event listener to receive close events. These events occur when a Notification is closed.",
-            "support": {
-                "chrome": {
-                    "version_added": "20"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "23"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Notification.onclose"
-        }
-    ],
-    "dom-notification-onerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Notification.json",
-            "name": "onerror",
-            "slug": "API/Notification/onerror",
-            "summary": "The onerror property of the Notification interface specifies an event listener to receive error events. These events occur when something goes wrong with a Notification (in many cases an error preventing the notification from being displayed.)",
-            "support": {
-                "chrome": {
-                    "version_added": "20"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "23"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Notification.onerror"
-        }
-    ],
-    "dom-notification-onshow": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Notification.json",
-            "name": "onshow",
-            "slug": "API/Notification/onshow",
-            "summary": "The onshow property of the Notification interface specifies an event listener to receive show events. These events occur when a Notification is displayed.",
-            "support": {
-                "chrome": {
-                    "version_added": "20"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": {
-                    "version_added": "22"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "23"
-                },
-                "opera_android": {
-                    "version_added": "24"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Notification.onshow"
         }
     ],
     "dom-notification-permission": [
@@ -1106,6 +1051,61 @@
                 }
             },
             "title": "Notification.requireInteraction"
+        }
+    ],
+    "dom-notification-onshow": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Notification.json",
+            "name": "show_event",
+            "slug": "API/Notification/show_event",
+            "summary": "The show event of the Notification interface fires when a Notification is displayed.",
+            "support": {
+                "chrome": {
+                    "version_added": "20"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": {
+                    "version_added": "22"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "23"
+                },
+                "opera_android": {
+                    "version_added": "24"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Notification: show event"
         }
     ],
     "dom-notification-silent": [
@@ -1672,7 +1672,7 @@
                     "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "40"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1688,9 +1688,9 @@
                 "gecko"
             ],
             "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onnotificationclick",
-            "slug": "API/ServiceWorkerGlobalScope/onnotificationclick",
-            "summary": "The ServiceWorkerGlobalScope.onnotificationclick property is an event handler called whenever the notificationclick event is dispatched on the ServiceWorkerGlobalScope object, that is when a user clicks on a displayed notification spawned by ServiceWorkerRegistration.showNotification().",
+            "name": "notificationclick_event",
+            "slug": "API/ServiceWorkerGlobalScope/notificationclick_event",
+            "summary": "The notificationclick event is fired to indicate that a system notification spawned by ServiceWorkerRegistration.showNotification() has been clicked.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -1715,7 +1715,7 @@
                     "version_added": "24"
                 },
                 "opera_android": {
-                    "version_added": "24"
+                    "version_added": "27"
                 },
                 "safari": {
                     "version_added": false
@@ -1733,7 +1733,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ServiceWorkerGlobalScope.onnotificationclick"
+            "title": "ServiceWorkerGlobalScope: notificationclick event"
         }
     ],
     "dom-serviceworkerglobalscope-onnotificationclose": [
@@ -1743,9 +1743,9 @@
                 "gecko"
             ],
             "filename": "api/ServiceWorkerGlobalScope.json",
-            "name": "onnotificationclose",
-            "slug": "API/ServiceWorkerGlobalScope/onnotificationclose",
-            "summary": "The ServiceWorkerGlobalScope.onnotificationclose property is an event handler called whenever the notificationclose event is dispatched on the ServiceWorkerGlobalScope object, that is when a user closes a displayed notification spawned by ServiceWorkerRegistration.showNotification().",
+            "name": "notificationclose_event",
+            "slug": "API/ServiceWorkerGlobalScope/notificationclose_event",
+            "summary": "The notificationclose event fires when a user closes a displayed notification spawned by ServiceWorkerRegistration.showNotification().",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -1788,7 +1788,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ServiceWorkerGlobalScope.onnotificationclose"
+            "title": "ServiceWorkerGlobalScope: notificationclose event"
         }
     ],
     "dom-serviceworkerregistration-getnotifications": [

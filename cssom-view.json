@@ -889,11 +889,17 @@
                 },
                 "safari": {
                     "version_added": "3",
-                    "notes": "No support for <code>smooth</code> behavior or <code>center</code> options."
+                    "notes": [
+                        "No support for <code>center</code> option.",
+                        "Before Safari 15.4, there was no support for the <code>smooth</code> behavior."
+                    ]
                 },
                 "safari_ios": {
                     "version_added": "1",
-                    "notes": "No support for <code>smooth</code> behavior or <code>center</code> options."
+                    "notes": [
+                        "No support for <code>center</code> option.",
+                        "Before iOS 15.4, there was no support for the <code>smooth</code> behavior."
+                    ]
                 },
                 "samsunginternet_android": {
                     "version_added": "1.0"
@@ -1373,7 +1379,7 @@
             "filename": "api/HTMLElement.json",
             "name": "offsetTop",
             "slug": "API/HTMLElement/offsetTop",
-            "summary": "The HTMLElement.offsetTop read-only property returns the distance of the outer border of the current element relative to the inner border of the top of the offsetParent node.",
+            "summary": "The HTMLElement.offsetTop read-only property returns the distance of the outer border of the current element relative to the inner border of the top of the offsetParent, closest relatively positioned parent element.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -3372,7 +3378,7 @@
             "filename": "api/Window.json",
             "name": "open",
             "slug": "API/Window/open",
-            "summary": "The Window interface's open() method loads the specified resource into the new or existing browsing context (window, <iframe> or tab) with the specified name. If the name doesn't exist, then a new browsing context is opened in a new tab or a new window, and the specified resource is loaded into it.",
+            "summary": "The open() method of the Window interface loads a specified resource into a new or existing browsing context (that is, tab, window, or <iframe>) under a specified name.",
             "support": {
                 "chrome": {
                     "version_added": "1"
