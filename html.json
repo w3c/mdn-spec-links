@@ -48806,7 +48806,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onafterprint",
             "slug": "API/WindowEventHandlers/onafterprint",
-            "summary": "The onafterprint property of the WindowEventHandlers mixin is the event handler for processing afterprint events for the current window. These events are raised after the user prints, or if they abort the print dialog.",
+            "summary": "The afterprint event is fired after the associated document has started printing or the print preview has been closed.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -48848,7 +48848,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onafterprint"
+            "title": "Window: afterprint event"
         }
     ],
     "handler-window-onbeforeprint": [
@@ -48861,7 +48861,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onbeforeprint",
             "slug": "API/WindowEventHandlers/onbeforeprint",
-            "summary": "The onbeforeprint property of the WindowEventHandlers mixin is the event handler for processing beforeprint events for the current window. These events are raised before the print dialog window is opened.",
+            "summary": "The beforeprint event is fired when the associated document is about to be printed or previewed for printing.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -48903,7 +48903,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onbeforeprint"
+            "title": "Window: beforeprint event"
         }
     ],
     "handler-window-onbeforeunload": [
