@@ -258,10 +258,6 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
     return;
   }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/15790
-  if (spec_url.startsWith('https://tc39.es/ecma262/multipage/#sec-async-function-definitions')) {
-    return;
-  }
   if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
     return;
   }
