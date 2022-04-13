@@ -34400,11 +34400,11 @@
                 },
                 "firefox": {
                     "version_added": "31",
-                    "notes": "Before Firefox 50, text tracks would only load if the <track> element is in a document."
+                    "notes": "Before Firefox 50, text tracks would only load if the <code>&lt;track&gt;</code> element is in a document."
                 },
                 "firefox_android": {
                     "version_added": "31",
-                    "notes": "Before Firefox 50, text tracks would only load if the <track> element is in a document."
+                    "notes": "Before Firefox 50, text tracks would only load if the <code>&lt;track&gt;</code> element is in a document."
                 },
                 "ie": {
                     "version_added": "10"
@@ -36536,11 +36536,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>pathname</code> would return \"/x?a=true&b=false\" rather than \"/x\"."
+                    "notes": "Before Firefox 53, the <code>pathname</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&amp;b=false, <code>pathname</code> would return \"/x?a=true&amp;b=false\" rather than \"/x\"."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Before Firefox 53, the <code>pathname</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>pathname</code> would return \"/x?a=true&b=false\" rather than \"/x\"."
+                    "notes": "Before Firefox 53, the <code>pathname</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&amp;b=false, <code>pathname</code> would return \"/x?a=true&amp;b=false\" rather than \"/x\"."
                 },
                 "ie": {
                     "version_added": "3",
@@ -36830,11 +36830,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>search</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>search</code> would return \"\", rather than \"?a=true&b=false\"."
+                    "notes": "Before Firefox 53, the <code>search</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&amp;b=false, <code>search</code> would return \"\", rather than \"?a=true&amp;b=false\"."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Before Firefox 53, the <code>search</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&b=false, <code>search</code> would return \"\", rather than \"?a=true&b=false\"."
+                    "notes": "Before Firefox 53, the <code>search</code> property returned wrong parts of the URL. For example, for a URL of http://z.com/x?a=true&amp;b=false, <code>search</code> would return \"\", rather than \"?a=true&amp;b=false\"."
                 },
                 "ie": {
                     "version_added": "3"
@@ -38160,7 +38160,7 @@
                 },
                 "ie": {
                     "version_added": "4",
-                    "notes": "<code>navigator.cookieEnabled</code> returns <code>true</true> even if the browser is set to block cookies (for example, if the page is in the <em>Restricted sites</em> security zone)."
+                    "notes": "<code>navigator.cookieEnabled</code> returns <code>true</code> even if the browser is set to block cookies (for example, if the page is in the <em>Restricted sites</em> security zone)."
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -52845,11 +52845,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&b=false</code>, <code>pathname</code> would return <code>'/x?a=true&b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&b=false'</code> respectively. This has now been fixed."
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&b=false</code>, <code>pathname</code> would return <code>'/x?a=true&b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&b=false'</code> respectively. This has now been fixed."
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "ie": {
                     "version_added": "5"
@@ -52900,11 +52900,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&b=false</code>, <code>pathname</code> would return <code>'/x?a=true&b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&b=false'</code> respectively. This has now been fixed."
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&b=false</code>, <code>pathname</code> would return <code>'/x?a=true&b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&b=false'</code> respectively. This has now been fixed."
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "ie": {
                     "version_added": "5"
@@ -53173,11 +53173,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&b=false</code>, <code>pathname</code> would return <code>'/x?a=true&b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&b=false'</code> respectively. This has now been fixed."
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&b=false</code>, <code>pathname</code> would return <code>'/x?a=true&b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&b=false'</code> respectively. This has now been fixed."
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "ie": {
                     "version_added": "5"
@@ -53228,11 +53228,11 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&b=false</code>, <code>pathname</code> would return <code>'/x?a=true&b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&b=false'</code> respectively. This has now been fixed."
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "firefox_android": {
                     "version_added": "4",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&b=false</code>, <code>pathname</code> would return <code>'/x?a=true&b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&b=false'</code> respectively. This has now been fixed."
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "ie": {
                     "version_added": "5"
