@@ -6,9 +6,6 @@
                 "gecko",
                 "webkit"
             ],
-            "partial": [
-                "blink"
-            ],
             "needsflag": [
                 "gecko"
             ],
@@ -17,11 +14,17 @@
             "slug": "API/Navigator/canShare",
             "summary": "The Navigator.canShare() method of the Web Share API returns true if the equivalent call to navigator.share() would succeed.",
             "support": {
-                "chrome": {
-                    "version_added": "89",
-                    "partial_implementation": true,
-                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
-                },
+                "chrome": [
+                    {
+                        "version_added": "93"
+                    },
+                    {
+                        "version_added": "89",
+                        "version_removed": "93",
+                        "partial_implementation": true,
+                        "notes": "Not supported on macOS."
+                    }
+                ],
                 "chrome_android": {
                     "version_added": "75"
                 },
@@ -44,11 +47,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "75",
-                    "partial_implementation": true,
-                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
-                },
+                "opera": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "75",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Not supported on macOS."
+                    }
+                ],
                 "opera_android": {
                     "version_added": "54"
                 },
@@ -64,11 +73,17 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "89",
-                    "partial_implementation": true,
-                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "93"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "93",
+                        "partial_implementation": true,
+                        "notes": "Not supported on macOS."
+                    }
+                ]
             },
             "title": "Navigator.canShare()"
         }
@@ -81,7 +96,6 @@
                 "webkit"
             ],
             "partial": [
-                "blink",
                 "gecko"
             ],
             "needsflag": [
@@ -92,11 +106,17 @@
             "slug": "API/Navigator/share",
             "summary": "The navigator.share() method of the Web Share API invokes the native sharing mechanism of the device to share data such as text, URLs, or files. The available share targets depend on the device, but might include the clipboard, contacts and email applications, websites, bluetooth, etc.",
             "support": {
-                "chrome": {
-                    "version_added": "89",
-                    "partial_implementation": true,
-                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
-                },
+                "chrome": [
+                    {
+                        "version_added": "93"
+                    },
+                    {
+                        "version_added": "89",
+                        "version_removed": "93",
+                        "partial_implementation": true,
+                        "notes": "Not supported on macOS."
+                    }
+                ],
                 "chrome_android": {
                     "version_added": "61"
                 },
@@ -120,9 +140,17 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "75"
-                },
+                "opera": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "75",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "Not supported on macOS."
+                    }
+                ],
                 "opera_android": {
                     "version_added": "48"
                 },
@@ -138,11 +166,17 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "89",
-                    "partial_implementation": true,
-                    "notes": "Not supported on macOS, see <a href='https://crbug.com/1144920'>bug 1144920</a>."
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "93"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "93",
+                        "partial_implementation": true,
+                        "notes": "Not supported on macOS."
+                    }
+                ]
             },
             "title": "Navigator.share()"
         }

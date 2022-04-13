@@ -36,10 +36,10 @@
                     "version_added": "15.0.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "71"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "60"
                 },
                 "safari": {
                     "version_added": "14"
@@ -97,10 +97,10 @@
                     "version_added": "15.0.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "71"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "60"
                 },
                 "safari": {
                     "version_added": "14"
@@ -180,6 +180,67 @@
                 }
             },
             "title": "Array() constructor"
+        }
+    ],
+    "sec-array.prototype.at": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Array.json",
+            "name": "at",
+            "slug": "JavaScript/Reference/Global_Objects/Array/at",
+            "summary": "The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.",
+            "support": {
+                "chrome": {
+                    "version_added": "92"
+                },
+                "chrome_android": {
+                    "version_added": "92"
+                },
+                "deno": {
+                    "version_added": "1.12"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "90"
+                },
+                "firefox_android": {
+                    "version_added": "90"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.6.0"
+                },
+                "opera": {
+                    "version_added": "78"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "16.0"
+                },
+                "webview_android": {
+                    "version_added": "92"
+                },
+                "edge_blink": {
+                    "version_added": "92"
+                }
+            },
+            "title": "Array.prototype.at()"
         }
     ],
     "sec-array.prototype.concat": [
@@ -13634,7 +13695,7 @@
             "filename": "javascript/builtins/GeneratorFunction.json",
             "name": "GeneratorFunction",
             "slug": "JavaScript/Reference/Global_Objects/GeneratorFunction",
-            "summary": "The GeneratorFunction constructor creates a new generator function object. In JavaScript, every generator function is actually a GeneratorFunction object.",
+            "summary": "In JavaScript, every generator function is actually a GeneratorFunction object. There is no global object with the name GeneratorFunction, but you can create a GeneratorFunction() constructor using the following code:",
             "support": {
                 "chrome": {
                     "version_added": "39"
@@ -19834,6 +19895,67 @@
             "title": "Object.getPrototypeOf()"
         }
     ],
+    "sec-object.hasown": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Object.json",
+            "name": "hasOwn",
+            "slug": "JavaScript/Reference/Global_Objects/Object/hasOwn",
+            "summary": "The Object.hasOwn() static method returns true if the specified object has the indicated property as its own property. If the property is inherited, or does not exist, the method returns false.",
+            "support": {
+                "chrome": {
+                    "version_added": "93"
+                },
+                "chrome_android": {
+                    "version_added": "93"
+                },
+                "deno": {
+                    "version_added": "1.13"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "92"
+                },
+                "firefox_android": {
+                    "version_added": "92"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.9.0"
+                },
+                "opera": {
+                    "version_added": "79"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "17.0"
+                },
+                "webview_android": {
+                    "version_added": "93"
+                },
+                "edge_blink": {
+                    "version_added": "93"
+                }
+            },
+            "title": "Object.hasOwn()"
+        }
+    ],
     "sec-object.prototype.hasownproperty": [
         {
             "engines": [
@@ -21050,10 +21172,10 @@
                     "version_added": "15.0.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "71"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "60"
                 },
                 "safari": {
                     "version_added": "14"
@@ -23783,6 +23905,67 @@
             "title": "RegExp.prototype.global"
         }
     ],
+    "sec-get-regexp.prototype.hasIndices": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/RegExp.json",
+            "name": "hasIndices",
+            "slug": "JavaScript/Reference/Global_Objects/RegExp/hasIndices",
+            "summary": "The hasIndices property indicates whether or not the \"d\" flag is used with the regular expression. hasIndices is a read-only property of an individual regular expression instance.",
+            "support": {
+                "chrome": {
+                    "version_added": "90"
+                },
+                "chrome_android": {
+                    "version_added": "90"
+                },
+                "deno": {
+                    "version_added": "1.8"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "88"
+                },
+                "firefox_android": {
+                    "version_added": "88"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "76"
+                },
+                "opera_android": {
+                    "version_added": "64"
+                },
+                "safari": {
+                    "version_added": "15"
+                },
+                "safari_ios": {
+                    "version_added": "15"
+                },
+                "samsunginternet_android": {
+                    "version_added": "15.0"
+                },
+                "webview_android": {
+                    "version_added": "90"
+                },
+                "edge_blink": {
+                    "version_added": "90"
+                }
+            },
+            "title": "RegExp.prototype.hasIndices"
+        }
+    ],
     "sec-get-regexp.prototype.ignorecase": [
         {
             "engines": [
@@ -26307,6 +26490,67 @@
             "title": "String() constructor"
         }
     ],
+    "sec-string.prototype.at": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/String.json",
+            "name": "at",
+            "slug": "JavaScript/Reference/Global_Objects/String/at",
+            "summary": "The at() method takes an integer value and returns a new String consisting of the single UTF-16 code unit located at the specified offset. This method allows for positive and negative integers. Negative integers count back from the last string character.",
+            "support": {
+                "chrome": {
+                    "version_added": "92"
+                },
+                "chrome_android": {
+                    "version_added": "92"
+                },
+                "deno": {
+                    "version_added": "1.12"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "90"
+                },
+                "firefox_android": {
+                    "version_added": "90"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.6.0"
+                },
+                "opera": {
+                    "version_added": "78"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "16.0"
+                },
+                "webview_android": {
+                    "version_added": "92"
+                },
+                "edge_blink": {
+                    "version_added": "92"
+                }
+            },
+            "title": "String.prototype.at()"
+        }
+    ],
     "sec-string.prototype.charat": [
         {
             "engines": [
@@ -27564,7 +27808,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "replace",
             "slug": "JavaScript/Reference/Global_Objects/String/replace",
-            "summary": "The replace() method returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. If pattern is a string, only the first occurrence will be replaced.",
+            "summary": "The replace() method returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function called for each match. If pattern is a string, only the first occurrence will be replaced.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -30340,6 +30584,67 @@
                 }
             },
             "title": "TypedArray.BYTES_PER_ELEMENT"
+        }
+    ],
+    "sec-%typedarray%.prototype.at": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/TypedArray.json",
+            "name": "at",
+            "slug": "JavaScript/Reference/Global_Objects/TypedArray/at",
+            "summary": "The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.",
+            "support": {
+                "chrome": {
+                    "version_added": "92"
+                },
+                "chrome_android": {
+                    "version_added": "92"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "90"
+                },
+                "firefox_android": {
+                    "version_added": "90"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.6.0"
+                },
+                "opera": {
+                    "version_added": "78"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": {
+                    "version_added": "15.4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "16.0"
+                },
+                "webview_android": {
+                    "version_added": "92"
+                },
+                "edge_blink": {
+                    "version_added": "92"
+                }
+            },
+            "title": "TypedArray.prototype.at()"
         }
     ],
     "sec-get-%typedarray%.prototype.buffer": [
@@ -34553,17 +34858,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "chrome_android": [
@@ -34574,17 +34868,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "deno": {
@@ -34633,17 +34916,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "opera_android": [
@@ -34654,17 +34926,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "safari": {
@@ -34701,17 +34962,6 @@
                         "version_removed": "49",
                         "version_added": false,
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": false,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ]
             },
@@ -34738,17 +34988,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "chrome_android": [
@@ -34759,17 +34998,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "deno": {
@@ -34818,17 +35046,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "opera_android": [
@@ -34839,17 +35056,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "safari": {
@@ -34886,17 +35092,6 @@
                         "version_removed": "49",
                         "version_added": false,
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": false,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ]
             },
@@ -34925,17 +35120,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "chrome_android": [
@@ -34946,17 +35130,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "deno": {
@@ -35005,17 +35178,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "opera_android": [
@@ -35026,24 +35188,13 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": "9"
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": "9"
                 },
                 "samsunginternet_android": [
                     {
@@ -35073,17 +35224,6 @@
                         "version_removed": "49",
                         "version_added": false,
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": false,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ]
             },
@@ -35112,17 +35252,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "chrome_android": [
@@ -35133,17 +35262,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "deno": {
@@ -35192,17 +35310,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "opera_android": [
@@ -35213,17 +35320,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "safari": {
@@ -35260,17 +35356,6 @@
                         "version_removed": "49",
                         "version_added": false,
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": false,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ]
             },
@@ -35373,17 +35458,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "chrome_android": [
@@ -35394,17 +35468,6 @@
                         "version_removed": "49",
                         "version_added": "42",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": "42",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "deno": {
@@ -35433,17 +35496,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "opera_android": [
@@ -35454,17 +35506,6 @@
                         "version_removed": "36",
                         "version_added": "29",
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "36",
-                        "version_added": "29",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ],
                 "safari": {
@@ -35501,17 +35542,6 @@
                         "version_removed": "49",
                         "version_added": false,
                         "notes": "Strict mode is required."
-                    },
-                    {
-                        "version_removed": "49",
-                        "version_added": false,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "Experimental JavaScript",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
                     }
                 ]
             },
@@ -35637,6 +35667,67 @@
                 },
                 "edge_blink": {
                     "version_added": "84"
+                }
+            },
+            "title": "Private class features"
+        }
+    ],
+    "prod-00OK517S": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/classes.json",
+            "name": "private_class_fields_in",
+            "slug": "JavaScript/Reference/Classes/Private_class_fields",
+            "summary": "Class fields are public by default, but private class members can be created by using a hash # prefix. The privacy encapsulation of these class features is enforced by JavaScript itself.",
+            "support": {
+                "chrome": {
+                    "version_added": "91"
+                },
+                "chrome_android": {
+                    "version_added": "91"
+                },
+                "deno": {
+                    "version_added": "1.9"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "90"
+                },
+                "firefox_android": {
+                    "version_added": "90"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.4.0"
+                },
+                "opera": {
+                    "version_added": "77"
+                },
+                "opera_android": {
+                    "version_added": "64"
+                },
+                "safari": {
+                    "version_added": "15"
+                },
+                "safari_ios": {
+                    "version_added": "15"
+                },
+                "samsunginternet_android": {
+                    "version_added": "16.0"
+                },
+                "webview_android": {
+                    "version_added": "91"
+                },
+                "edge_blink": {
+                    "version_added": "91"
                 }
             },
             "title": "Private class features"
@@ -39395,6 +39486,94 @@
                 "title": "Async functions"
             },
             "title": "async function expression"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/await.json",
+            "name": "top_level",
+            "slug": "JavaScript/Reference/Operators/await#top_level_await",
+            "summary": "The await operator is used to wait for a Promise. It can only be used inside an async function within regular JavaScript code; however it can be used on its own with JavaScript modules.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": {
+                    "version_added": "89"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "89"
+                },
+                "firefox_android": {
+                    "version_added": "89"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "14.8.0",
+                        "notes": "Not supported in CommonJS modules."
+                    },
+                    {
+                        "version_added": "14.3.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--experimental-top-level-await"
+                            }
+                        ],
+                        "notes": "Not supported in CommonJS modules."
+                    }
+                ],
+                "opera": [
+                    {
+                        "version_added": "75"
+                    },
+                    {
+                        "version_added": "73",
+                        "version_removed": "75",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-javascript-harmony"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": {
+                    "version_added": "63"
+                },
+                "safari": {
+                    "version_added": "15"
+                },
+                "safari_ios": {
+                    "version_added": "15"
+                },
+                "samsunginternet_android": {
+                    "version_added": "15.0"
+                },
+                "webview_android": {
+                    "version_added": "89"
+                },
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "caniuse": {
+                "feature": "async-functions",
+                "title": "Async functions"
+            },
+            "title": "await"
         },
         {
             "engines": [
