@@ -2,7 +2,11 @@
     "contacts-manager-getproperties": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
+            ],
+            "needsflag": [
+                "webkit"
             ],
             "filename": "api/ContactsManager.json",
             "name": "getProperties",
@@ -37,7 +41,13 @@
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5",
+                    "flags": [
+                        {
+                            "name": "Contact Picker API",
+                            "type": "preference"
+                        }
+                    ]
                 },
                 "samsunginternet_android": {
                     "version_added": "13.0"
@@ -55,7 +65,11 @@
     "contacts-manager-select": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
+            ],
+            "needsflag": [
+                "webkit"
             ],
             "filename": "api/ContactsManager.json",
             "name": "select",
@@ -90,7 +104,13 @@
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5",
+                    "flags": [
+                        {
+                            "name": "Contact Picker API",
+                            "type": "preference"
+                        }
+                    ]
                 },
                 "samsunginternet_android": {
                     "version_added": "13.0"
@@ -108,7 +128,11 @@
     "contacts-manager": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
+            ],
+            "needsflag": [
+                "webkit"
             ],
             "filename": "api/ContactsManager.json",
             "name": "ContactsManager",
@@ -134,7 +158,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "57"
+                    "version_added": false
                 },
                 "opera_android": {
                     "version_added": "57"
@@ -143,7 +167,13 @@
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5",
+                    "flags": [
+                        {
+                            "name": "Contact Picker API",
+                            "type": "preference"
+                        }
+                    ]
                 },
                 "samsunginternet_android": {
                     "version_added": "13.0"
@@ -161,7 +191,11 @@
     "dom-navigator-contacts": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
+            ],
+            "needsflag": [
+                "webkit"
             ],
             "filename": "api/Navigator.json",
             "name": "contacts",
@@ -196,7 +230,13 @@
                     "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": false
+                    "version_added": "14.5",
+                    "flags": [
+                        {
+                            "name": "Contact Picker API",
+                            "type": "preference"
+                        }
+                    ]
                 },
                 "samsunginternet_android": {
                     "version_added": "13.0"
