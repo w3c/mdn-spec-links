@@ -1112,9 +1112,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLInputElement.json",
             "name": "webkitdirectory",
             "slug": "API/HTMLInputElement/webkitdirectory",
@@ -1133,14 +1130,7 @@
                     "version_added": "50"
                 },
                 "firefox_android": {
-                    "version_added": "50",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.webkitBlink.dirPicker.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
