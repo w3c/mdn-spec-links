@@ -6,9 +6,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "css/properties/contain.json",
             "name": "contain",
             "slug": "CSS/contain",
@@ -40,14 +37,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": "41",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.contain.enabled",
-                            "value_to_set": "true"
-                        }
-                    ],
+                    "version_added": "79",
                     "notes": "Firefox does not support the <code>style</code> value."
                 },
                 "ie": {
