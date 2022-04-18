@@ -5339,6 +5339,7 @@
     "dom-rtcpeerconnection-cantrickleicecandidates": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -5348,10 +5349,10 @@
             "summary": "The read-only RTCPeerConnection property canTrickleIceCandidates returns a boolean value which indicates whether or not the remote peer can accept trickled ICE candidates.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "83"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": "83"
                 },
                 "edge": {
                     "version_added": false
@@ -5366,10 +5367,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "69"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "59"
                 },
                 "safari": {
                     "version_added": "15.4"
@@ -5381,10 +5382,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": false
+                    "version_added": "83"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "83"
                 }
             },
             "title": "RTCPeerConnection.canTrickleIceCandidates"
