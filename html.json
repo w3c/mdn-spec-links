@@ -39524,7 +39524,7 @@
             "filename": "api/PopStateEvent.json",
             "name": "PopStateEvent",
             "slug": "API/PopStateEvent",
-            "summary": "PopStateEvent is an event handler for the popstate event on the window.",
+            "summary": "PopStateEvent is an interface for the popstate event.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -48615,7 +48615,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onpopstate",
             "slug": "API/WindowEventHandlers/onpopstate",
-            "summary": "The onpopstate property of the WindowEventHandlers mixin is the event handler for processing popstate events on the window.",
+            "summary": "The popstate event of the Window interface is fired when the active history entry changes while the user navigates the session history. It changes the current history entry to that of the last page the user visited or, if history.pushState() has been used to add a history entry to the history stack, that history entry is used instead.",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -48657,7 +48657,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onpopstate"
+            "title": "Window: popstate event"
         }
     ],
     "handler-window-onrejectionhandled": [
