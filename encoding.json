@@ -90,7 +90,7 @@
             "filename": "api/TextDecoder.json",
             "name": "decode",
             "slug": "API/TextDecoder/decode",
-            "summary": "The TextDecoder.prototype.decode() method returns a DOMString containing the text, given in parameters, decoded with the specific method for that TextDecoder object.",
+            "summary": "The TextDecoder.prototype.decode() method returns a string containing the text, given in parameters, decoded with the specific method for that TextDecoder object.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -700,7 +700,7 @@
             "filename": "api/TextEncoder.json",
             "name": "encode",
             "slug": "API/TextEncoder/encode",
-            "summary": "The TextEncoder.prototype.encode() method takes a USVString as input, and returns a Uint8Array containing the text given in parameters encoded with the specific method for that TextEncoder object.",
+            "summary": "The TextEncoder.prototype.encode() method takes a string as input, and returns a Uint8Array containing the text given in parameters encoded with the specific method for that TextEncoder object.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -761,7 +761,7 @@
             "filename": "api/TextEncoder.json",
             "name": "encodeInto",
             "slug": "API/TextEncoder/encodeInto",
-            "summary": "The TextEncoder.prototype.encodeInto() method takes a USVString to encode and a destination Uint8Array to put resulting UTF-8 encoded text into, and returns a dictionary object indicating the progress of the encoding. This is potentially more performant than the older encode() method especially when the target buffer is a view into a Wasm heap.",
+            "summary": "The TextEncoder.prototype.encodeInto() method takes a string to encode and a destination Uint8Array to put resulting UTF-8 encoded text into, and returns a dictionary object indicating the progress of the encoding. This is potentially more performant than the older encode() method especially when the target buffer is a view into a Wasm heap.",
             "support": {
                 "chrome": {
                     "version_added": "74"
