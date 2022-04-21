@@ -690,9 +690,6 @@
                 "gecko",
                 "webkit"
             ],
-            "altname": [
-                "gecko"
-            ],
             "filename": "api/GeolocationCoordinates.json",
             "name": "GeolocationCoordinates",
             "slug": "API/GeolocationCoordinates",
@@ -731,10 +728,16 @@
                         "alternative_name": "Coordinates"
                     }
                 ],
-                "firefox_android": {
-                    "alternative_name": "Coordinates",
-                    "version_added": "4"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "Coordinates",
+                        "version_added": "4",
+                        "version_removed": "79"
+                    }
+                ],
                 "ie": {
                     "alternative_name": "Coordinates",
                     "version_added": "9"
@@ -923,9 +926,6 @@
                 "gecko",
                 "webkit"
             ],
-            "altname": [
-                "gecko"
-            ],
             "filename": "api/GeolocationPosition.json",
             "name": "GeolocationPosition",
             "slug": "API/GeolocationPosition",
@@ -964,10 +964,16 @@
                         "alternative_name": "Position"
                     }
                 ],
-                "firefox_android": {
-                    "alternative_name": "Position",
-                    "version_added": "4"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "Position",
+                        "version_added": "4",
+                        "version_removed": "79"
+                    }
+                ],
                 "ie": {
                     "alternative_name": "Position",
                     "version_added": "9"
@@ -1151,7 +1157,6 @@
                 "gecko"
             ],
             "altname": [
-                "gecko",
                 "webkit"
             ],
             "filename": "api/GeolocationPositionError.json",
@@ -1192,10 +1197,16 @@
                         "alternative_name": "PositionError"
                     }
                 ],
-                "firefox_android": {
-                    "alternative_name": "PositionError",
-                    "version_added": "4"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "PositionError",
+                        "version_added": "4",
+                        "version_removed": "79"
+                    }
+                ],
                 "ie": {
                     "alternative_name": "PositionError",
                     "version_added": "9"
