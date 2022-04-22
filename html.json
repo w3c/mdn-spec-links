@@ -39593,21 +39593,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -39663,21 +39651,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -39733,21 +39709,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -39803,21 +39767,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -47471,21 +47423,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -48560,7 +48500,7 @@
             "filename": "api/WindowEventHandlers.json",
             "name": "onlanguagechange",
             "slug": "API/WindowEventHandlers/onlanguagechange",
-            "summary": "The onlanguagechange property of the WindowEventHandlers mixin is the event handler for processing languagechange events.",
+            "summary": "The languagechange event is fired at the global scope object when the user's preferred language changes.",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -48602,7 +48542,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WindowEventHandlers.onlanguagechange"
+            "title": "Window: languagechange event"
         }
     ],
     "handler-window-onpopstate": [
@@ -48681,33 +48621,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "55",
-                        "partial_implementation": true,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "This event handler was added in Firefox 55 but was disabled since it wasn't fully implemented. It was fully implemented in Firefox 68 and enabled by default in Firefox 69."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
@@ -48815,33 +48731,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "55",
-                        "partial_implementation": true,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "This event handler was added in Firefox 55 but was disabled since it wasn't fully implemented. It was fully implemented in Firefox 68 and enabled by default in Firefox 69."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": {
                     "version_added": "79"
                 },
