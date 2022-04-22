@@ -258,14 +258,6 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
     return;
   }
-  // FIXME temporary
-  if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlparamelement')) {
-    return;
-  }
-  // FIXME temporary
-  if (spec_url.startsWith('https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-param-element')) {
-    return;
-  }
   if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
     return;
   }
