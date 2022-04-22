@@ -2,11 +2,7 @@
     "dom-window-onappinstalled": [
         {
             "engines": [
-                "blink",
-                "gecko"
-            ],
-            "needsflag": [
-                "gecko"
+                "blink"
             ],
             "filename": "api/Window.json",
             "name": "appinstalled_event",
@@ -23,25 +19,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "49",
-                    "version_removed": "76",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.manifest.onappinstall",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "firefox_android": {
-                    "version_added": "49",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.manifest.onappinstall",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
