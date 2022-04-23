@@ -255,13 +255,19 @@
                 "blink",
                 "gecko"
             ],
+            "partial": [
+                "blink",
+                "gecko"
+            ],
             "filename": "api/ScreenOrientation.json",
             "name": "unlock",
             "slug": "API/ScreenOrientation/unlock",
             "summary": "The unlock() property of the ScreenOrientation interface unlocks the orientation of the containing document from its default orientation.",
             "support": {
                 "chrome": {
-                    "version_added": "38"
+                    "version_added": "38",
+                    "partial_implementation": true,
+                    "notes": "Always throws <code>NotSupportedError</code>."
                 },
                 "chrome_android": {
                     "version_added": "38"
@@ -270,7 +276,9 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "43"
+                    "version_added": "43",
+                    "partial_implementation": true,
+                    "notes": "Always throws <code>NotSupportedError</code>."
                 },
                 "firefox_android": {
                     "version_added": "43"
@@ -279,7 +287,9 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "25"
+                    "version_added": "25",
+                    "partial_implementation": true,
+                    "notes": "Always throws <code>NotSupportedError</code>."
                 },
                 "opera_android": {
                     "version_added": "25"
@@ -297,7 +307,9 @@
                     "version_added": "38"
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "Always throws <code>NotSupportedError</code>."
                 }
             },
             "title": "ScreenOrientation.unlock()"
