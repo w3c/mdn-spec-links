@@ -155,7 +155,7 @@ const processSpecURL = async (specURL, specJSONfile, seconds) => {
       "https://labs.w3.org/spec-generator/?type=respec&url=" + requestURL;
   }
   const contents = getRemoteContents(specURL, requestURL, seconds);
-  if (contents.match(/respec-w3c-/)) {
+  if (contents && contents.match(/respec-w3c-/)) {
     warn(`${specURL} loads respec`);
   }
   const dom = new JSDOM(contents);
