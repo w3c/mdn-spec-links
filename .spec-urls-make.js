@@ -74,6 +74,7 @@ const respecRawSpecs = [
   "https://w3c.github.io/mediacapture-main/", // yes
   "https://w3c.github.io/mediacapture-output/", // yes
   "https://w3c.github.io/mediacapture-screen-share/", // yes
+  "https://w3c.github.io/mst-content-hint/",
   "https://w3c.github.io/navigation-timing/", // yes
   "https://w3c.github.io/network-error-logging/", // OUT OF DATE TR
   "https://w3c.github.io/page-visibility/", // OUT OF DATE TR
