@@ -729,7 +729,10 @@ const getSpecShortnameAndLocationKey = (url, feature, mdnURL) => {
   if (baseurl in SPECMAP) {
     shortname = SPECMAP[baseurl].slice(0, -5);
   } else {
-    SPECMAP[baseurl] = shortname + '.json';
+    if (!(baseurl === 'https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/'
+      || baseurl === 'https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/')) {
+      SPECMAP[baseurl] = shortname + '.json';
+    }
   }
   if (!(shortname in specs)) {
     specs[shortname] = Object.create(null);
