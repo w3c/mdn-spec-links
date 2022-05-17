@@ -64,7 +64,7 @@
             "filename": "api/File.json",
             "name": "webkitRelativePath",
             "slug": "API/File/webkitRelativePath",
-            "summary": "The File.webkitRelativePath is a read-only property that contains a USVString which specifies the file's path relative to the directory selected by the user in an <input> element with its webkitdirectory attribute set.",
+            "summary": "The File.webkitRelativePath is a read-only property that contains a string which specifies the file's path relative to the directory selected by the user in an <input> element with its webkitdirectory attribute set.",
             "support": {
                 "chrome": {
                     "version_added": "13"
@@ -122,7 +122,7 @@
             "filename": "api/FileSystem.json",
             "name": "name",
             "slug": "API/FileSystem/name",
-            "summary": "The read-only name property of the FileSystem interface indicates the file system's name. This USVString is unique among all file systems currently exposed by the File and Directory Entries API.",
+            "summary": "The read-only name property of the FileSystem interface indicates the file system's name. This string is unique among all file systems currently exposed by the File and Directory Entries API.",
             "support": {
                 "chrome": {
                     "version_added": "7"
@@ -676,7 +676,7 @@
             "filename": "api/FileSystemEntry.json",
             "name": "fullPath",
             "slug": "API/FileSystemEntry/fullPath",
-            "summary": "The read-only fullPath property of the FileSystemEntry interface returns a USVString specifying the full, absolute path from the file system's root to the file represented by the entry.",
+            "summary": "The read-only fullPath property of the FileSystemEntry interface returns a string specifying the full, absolute path from the file system's root to the file represented by the entry.",
             "support": {
                 "chrome": {
                     "version_added": "8"
@@ -895,7 +895,7 @@
             "filename": "api/FileSystemEntry.json",
             "name": "name",
             "slug": "API/FileSystemEntry/name",
-            "summary": "The read-only name property of the FileSystemEntry interface returns a USVString specifying the entry's name; this is the entry within its parent directory (the last component of the path as indicated by the fullPath property).",
+            "summary": "The read-only name property of the FileSystemEntry interface returns a string specifying the entry's name; this is the entry within its parent directory (the last component of the path as indicated by the fullPath property).",
             "support": {
                 "chrome": {
                     "version_added": "8"
@@ -1060,7 +1060,7 @@
             "filename": "api/FileSystemFileEntry.json",
             "name": "FileSystemFileEntry",
             "slug": "API/FileSystemFileEntry",
-            "summary": "The FileSystemFileEntry interface of the File System API represents a file in a file system. It offers properties describing the file's attributes, as well as the file() method, which creates a File object that can be used to read the file.",
+            "summary": "The FileSystemFileEntry interface of the File and Directory Entries API represents a file in a file system. It offers properties describing the file's attributes, as well as the file() method, which creates a File object that can be used to read the file.",
             "support": {
                 "chrome": {
                     "version_added": "8"

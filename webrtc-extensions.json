@@ -1,0 +1,120 @@
+{
+    "rtcdatachannel-extensions": [
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "api/RTCDataChannel.json",
+            "name": "transferable",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects",
+            "summary": "Transferable objects are objects that own resources that can be transferred from one context to another, ensuring that the resources are only available in one context at a time. Following a transfer, the original object is no longer usable; it no longer points to the transferred resource, and any attempt to read or write the object will throw an exception.",
+            "support": {
+                "chrome": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1244165'>bug 1244165</a>"
+                },
+                "chrome_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1244165'>bug 1244165</a>"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1209163'>bug 1209163</a>"
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1209163'>bug 1209163</a>"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "15"
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1244165'>bug 1244165</a>"
+                }
+            },
+            "title": "Transferable objects"
+        }
+    ],
+    "dom-rtcrtpencodingparameters-maxframerate": [
+        {
+            "engines": [
+                "webkit"
+            ],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCRtpEncodingParameters.json",
+            "name": "maxFramerate",
+            "slug": "API/RTCRtpEncodingParameters/maxFramerate",
+            "summary": "The maxFramerate property of the RTCRtpEncodingParameters dictionary specifies the maximum framerate that can be used to send the encoding, in frames per second.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "101",
+                    "partial_implementation": true,
+                    "notes": "Zero is treated as 'no fps limit' (see <a href='https://bugzil.la/1611957'>bug 1611957</a>)."
+                },
+                "firefox_android": {
+                    "version_added": "101",
+                    "partial_implementation": true,
+                    "notes": "Zero is treated as 'no fps limit' (see <a href='https://bugzil.la/1611957'>bug 1611957</a>)."
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "RTCRtpEncodingParameters.maxFramerate"
+        }
+    ]
+}

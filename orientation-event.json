@@ -8,7 +8,7 @@
             "filename": "api/DeviceMotionEvent.json",
             "name": "DeviceMotionEvent",
             "slug": "API/DeviceMotionEvent/DeviceMotionEvent",
-            "summary": "The DeviceMotionEvent() constructor creates a new DeviceMotionEvent.",
+            "summary": "The DeviceMotionEvent() constructor creates a new DeviceMotionEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "59"
@@ -173,7 +173,7 @@
             "filename": "api/DeviceMotionEvent.json",
             "name": "interval",
             "slug": "API/DeviceMotionEvent/interval",
-            "summary": "Returns the interval, in milliseconds, at which data is obtained from the underlying hardware. You can use this to determine the granularity of motion events.",
+            "summary": "The DeviceMotionEvent.interval property returns the interval, in milliseconds, at which data is obtained from the underlying hardware. You can use this to determine the granularity of motion events.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -228,7 +228,7 @@
             "filename": "api/DeviceMotionEvent.json",
             "name": "rotationRate",
             "slug": "API/DeviceMotionEvent/rotationRate",
-            "summary": "Returns the rate at which the device is rotating around each of its axes in degrees per second.",
+            "summary": "The DeviceMotionEvent.rotationRate read-only property returns the rate at which the device is rotating around each of its axes in degrees per second.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -283,7 +283,7 @@
             "filename": "api/DeviceMotionEvent.json",
             "name": "DeviceMotionEvent",
             "slug": "API/DeviceMotionEvent",
-            "summary": "The DeviceMotionEvent provides web developers with information about the speed of changes for the device's position and orientation.",
+            "summary": "The DeviceMotionEvent interface provides web developers with information about the speed of changes for the device's position and orientation.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -391,7 +391,7 @@
             "filename": "api/DeviceMotionEventAcceleration.json",
             "name": "x",
             "slug": "API/DeviceMotionEventAcceleration/x",
-            "summary": "This read-only property indicates the amount of acceleration that occurred along the X axis in a DeviceMotionEventAcceleration object.",
+            "summary": "The DeviceMotionEventAcceleration.x read-only property indicates the amount of acceleration that occurred along the X axis in a DeviceMotionEventAcceleration object.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -446,7 +446,7 @@
             "filename": "api/DeviceMotionEventAcceleration.json",
             "name": "y",
             "slug": "API/DeviceMotionEventAcceleration/y",
-            "summary": "This read-only property indicates the amount of acceleration that occurred along the Y axis in a DeviceMotionEventAcceleration object.",
+            "summary": "The DeviceMotionEventAcceleration.x read-only property indicates the amount of acceleration that occurred along the Y axis in a DeviceMotionEventAcceleration object.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -501,7 +501,7 @@
             "filename": "api/DeviceMotionEventAcceleration.json",
             "name": "z",
             "slug": "API/DeviceMotionEventAcceleration/z",
-            "summary": "This read-only property indicates the amount of acceleration that occurred along the Z axis in a DeviceMotionEventAcceleration object.",
+            "summary": "The DeviceMotionEventAcceleration.x read-only property indicates the amount of acceleration that occurred along the Z axis in a DeviceMotionEventAcceleration object.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -556,7 +556,7 @@
             "filename": "api/DeviceMotionEventAcceleration.json",
             "name": "DeviceMotionEventAcceleration",
             "slug": "API/DeviceMotionEventAcceleration",
-            "summary": "A DeviceMotionEventAcceleration object provides information about the amount of acceleration the device is experiencing along all three axes.",
+            "summary": "The DeviceMotionEventAcceleration object provides information about the amount of acceleration the device is experiencing along all three axes.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -611,7 +611,7 @@
             "filename": "api/DeviceMotionEventRotationRate.json",
             "name": "alpha",
             "slug": "API/DeviceMotionEventRotationRate/alpha",
-            "summary": "This property indicates the rate of rotation around the Z axis -- in degrees per second -- in a DeviceMotionEventRotationRate object.",
+            "summary": "The DeviceMotionEventRotationRate.alpha read-only property indicates the rate of rotation around the Z axis, in degrees per second.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -666,7 +666,7 @@
             "filename": "api/DeviceMotionEventRotationRate.json",
             "name": "beta",
             "slug": "API/DeviceMotionEventRotationRate/beta",
-            "summary": "This property indicates the rate of rotation around the X axis -- in degrees per second -- in a DeviceMotionEventRotationRate object.",
+            "summary": "The DeviceMotionEventRotationRate.alpha read-only property indicates the rate of rotation around the X axis, in degrees per second.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -721,7 +721,7 @@
             "filename": "api/DeviceMotionEventRotationRate.json",
             "name": "gamma",
             "slug": "API/DeviceMotionEventRotationRate/gamma",
-            "summary": "This property indicates the rate of rotation around the Y axis -- in degrees per second -- in a DeviceMotionEventRotationRate object.",
+            "summary": "This property indicates the rate of rotation around the Y axis, in degrees per second.",
             "support": {
                 "chrome": {
                     "version_added": "31"
@@ -830,7 +830,7 @@
             "filename": "api/DeviceOrientationEvent.json",
             "name": "DeviceOrientationEvent",
             "slug": "API/DeviceOrientationEvent/DeviceOrientationEvent",
-            "summary": "The DeviceOrientationEvent() constructor creates a new DeviceOrientationEvent.",
+            "summary": "The DeviceOrientationEvent() constructor creates a new DeviceOrientationEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "59"
@@ -1104,7 +1104,7 @@
             "filename": "api/DeviceOrientationEvent.json",
             "name": "DeviceOrientationEvent",
             "slug": "API/DeviceOrientationEvent",
-            "summary": "The DeviceOrientationEvent provides web developers with information from the physical orientation of the device running the web page.",
+            "summary": "Creates a new DeviceOrientationEvent.",
             "support": {
                 "chrome": {
                     "version_added": "7",

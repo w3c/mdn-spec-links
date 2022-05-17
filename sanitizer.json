@@ -260,12 +260,10 @@
     "dom-sanitizer-sanitizefor": [
         {
             "engines": [
-                "blink",
-                "gecko"
+                "blink"
             ],
             "needsflag": [
-                "blink",
-                "gecko"
+                "blink"
             ],
             "filename": "api/Sanitizer.json",
             "name": "sanitizeFor",
@@ -289,14 +287,7 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "94",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.sanitizer.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "firefox_android": {
                     "version_added": false

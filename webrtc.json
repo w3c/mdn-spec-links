@@ -559,7 +559,7 @@
             "filename": "api/RTCDTMFToneChangeEvent.json",
             "name": "RTCDTMFToneChangeEvent",
             "slug": "API/RTCDTMFToneChangeEvent/RTCDTMFToneChangeEvent",
-            "summary": "The RTCDTMFToneChangeEvent() constructor creates a new RTCDTMFToneChangeEvent.",
+            "summary": "A string with the name of the event. It is case-sensitive and browsers always set it to tonechange.",
             "support": {
                 "chrome": {
                     "version_added": "27"
@@ -724,7 +724,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "binaryType",
             "slug": "API/RTCDataChannel/binaryType",
-            "summary": "The property binaryType on the RTCDataChannel interface is a DOMString which specifies the type of object which should be used to represent binary data received on the RTCDataChannel. Values allowed by the WebSocket.binaryType property are also permitted here: blob if Blob objects are being used or arraybuffer if ArrayBuffer objects are being used. The default is blob.",
+            "summary": "The property binaryType on the RTCDataChannel interface is a string which specifies the type of object which should be used to represent binary data received on the RTCDataChannel. Values allowed by the WebSocket.binaryType property are also permitted here: blob if Blob objects are being used or arraybuffer if ArrayBuffer objects are being used. The default is blob.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -1451,7 +1451,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "label",
             "slug": "API/RTCDataChannel/label",
-            "summary": "The read-only RTCDataChannel property label returns a DOMString containing a name describing the data channel. These labels are not required to be unique.",
+            "summary": "The read-only RTCDataChannel property label returns a string containing a name describing the data channel. These labels are not required to be unique.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -2166,7 +2166,7 @@
             "filename": "api/RTCDataChannelEvent.json",
             "name": "RTCDataChannelEvent",
             "slug": "API/RTCDataChannelEvent/RTCDataChannelEvent",
-            "summary": "The RTCDataChannelEvent() constructor creates a new RTCDataChannelEvent.",
+            "summary": "The RTCDataChannelEvent() constructor creates a new RTCDataChannelEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -3056,7 +3056,7 @@
             "filename": "api/RTCIceCandidate.json",
             "name": "candidate",
             "slug": "API/RTCIceCandidate/candidate",
-            "summary": "The read-only property candidate on the RTCIceCandidate interface returns a DOMString describing the candidate in detail. Most of the other properties of RTCIceCandidate are actually extracted from this string.",
+            "summary": "The read-only property candidate on the RTCIceCandidate interface returns a string describing the candidate in detail. Most of the other properties of RTCIceCandidate are actually extracted from this string.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -3489,7 +3489,7 @@
             "filename": "api/RTCIceCandidate.json",
             "name": "sdpMid",
             "slug": "API/RTCIceCandidate/sdpMid",
-            "summary": "The read-only property sdpMid on the RTCIceCandidate interface returns a DOMString specifying the media stream identification tag of the media component with which the candidate is associated. This ID uniquely identifies a given stream for the component with which the candidate is associated.",
+            "summary": "The read-only property sdpMid on the RTCIceCandidate interface returns a string specifying the media stream identification tag of the media component with which the candidate is associated. This ID uniquely identifies a given stream for the component with which the candidate is associated.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -4260,7 +4260,7 @@
             "filename": "api/RTCIceTransport.json",
             "name": "gatheringState",
             "slug": "API/RTCIceTransport/gatheringState",
-            "summary": "The read-only RTCIceTransport property gatheringState returns a DOMString that indicates the current gathering state of the ICE agent: \"new\", \"gathering\", or \"complete\".",
+            "summary": "The read-only property gatheringState property of the RTCIceTransport interface returns a string that indicates the current gathering state of the ICE agent: \"new\", \"gathering\", or \"complete\".",
             "support": {
                 "chrome": {
                     "version_added": "75"
@@ -7544,7 +7544,7 @@
             "filename": "api/RTCPeerConnectionIceEvent.json",
             "name": "RTCPeerConnectionIceEvent",
             "slug": "API/RTCPeerConnectionIceEvent/RTCPeerConnectionIceEvent",
-            "summary": "The RTCPeerConnectionIceEvent() constructor creates a new RTCPeerConnectionIceEvent.",
+            "summary": "The RTCPeerConnectionIceEvent() constructor creates a new RTCPeerConnectionIceEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -9908,7 +9908,7 @@
             "filename": "api/RTCSessionDescription.json",
             "name": "sdp",
             "slug": "API/RTCSessionDescription/sdp",
-            "summary": "The property RTCSessionDescription.sdp is a read-only DOMString containing the SDP which describes the session.",
+            "summary": "The property RTCSessionDescription.sdp is a read-only string containing the SDP which describes the session.",
             "support": {
                 "chrome": {
                     "version_added": "23"

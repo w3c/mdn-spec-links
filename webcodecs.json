@@ -1377,6 +1377,59 @@
             "title": "AudioEncoder.encodeQueueSize"
         }
     ],
+    "dom-audioencoder-flush": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioEncoder.json",
+            "name": "flush",
+            "slug": "API/AudioEncoder/flush",
+            "summary": "The flush() method of the AudioEncoder interface returns a Promise that resolves once all pending messages in the queue have been completed.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": {
+                    "version_added": "94"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "80"
+                },
+                "opera_android": {
+                    "version_added": "66"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "17.0"
+                },
+                "webview_android": {
+                    "version_added": "94"
+                },
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "AudioEncoder.flush()"
+        }
+    ],
     "dom-audioencoder-reset": [
         {
             "engines": [
@@ -1491,7 +1544,7 @@
             "filename": "api/AudioEncoder.json",
             "name": "AudioEncoder",
             "slug": "API/AudioEncoder",
-            "summary": "The AudioEncoder interface of the WebCodecs API encodes AudioData objects.",
+            "summary": "Creates a new AudioEncoder object.",
             "support": {
                 "chrome": {
                     "version_added": "94"

@@ -9,7 +9,7 @@
             "filename": "api/AnimationEvent.json",
             "name": "AnimationEvent",
             "slug": "API/AnimationEvent/AnimationEvent",
-            "summary": "The AnimationEvent() constructor returns a newly created AnimationEvent, representing an event in relation with an animation.",
+            "summary": "The AnimationEvent() constructor returns a new AnimationEvent object, representing an event in relation with an animation.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -76,7 +76,7 @@
             "filename": "api/AnimationEvent.json",
             "name": "animationName",
             "slug": "API/AnimationEvent/animationName",
-            "summary": "The AnimationEvent.animationName read-only property is a DOMString containing the value of the animation-name CSS property associated with the transition.",
+            "summary": "The AnimationEvent.animationName read-only property is a string containing the value of the animation-name CSS property associated with the transition.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -186,7 +186,7 @@
             "filename": "api/AnimationEvent.json",
             "name": "pseudoElement",
             "slug": "API/AnimationEvent/pseudoElement",
-            "summary": "The AnimationEvent.pseudoElement read-only property is a DOMString, starting with '::', containing the name of the pseudo-element the animation runs on. If the animation doesn't run on a pseudo-element but on the element, an empty string: ''``.",
+            "summary": "The AnimationEvent.pseudoElement read-only property is a string, starting with '::', containing the name of the pseudo-element the animation runs on. If the animation doesn't run on a pseudo-element but on the element, an empty string: ''``.",
             "support": {
                 "chrome": {
                     "version_added": "68"
@@ -766,10 +766,10 @@
             "summary": "The read-only cssRules property of the CSSKeyframeRule interface returns a CSSRuleList containing the rules in the keyframes at-rule.",
             "support": {
                 "chrome": {
-                    "version_added": "44"
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "44"
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -784,22 +784,22 @@
                     "version_added": "10"
                 },
                 "opera": {
-                    "version_added": "31"
+                    "version_added": "12"
                 },
                 "opera_android": {
-                    "version_added": "32"
+                    "version_added": "12"
                 },
                 "safari": {
-                    "version_added": "9.1"
+                    "version_added": "4"
                 },
                 "safari_ios": {
-                    "version_added": "9.3"
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": "4.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "44"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -931,10 +931,10 @@
             "summary": "The name property of the CSSKeyframeRule interface gets and sets the name of the animation as used by the animation-name property.",
             "support": {
                 "chrome": {
-                    "version_added": "44"
+                    "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "44"
+                    "version_added": "18"
                 },
                 "edge": {
                     "version_added": "12"
@@ -949,22 +949,22 @@
                     "version_added": "10"
                 },
                 "opera": {
-                    "version_added": "31"
+                    "version_added": "12"
                 },
                 "opera_android": {
-                    "version_added": "32"
+                    "version_added": "12"
                 },
                 "safari": {
-                    "version_added": "9.1"
+                    "version_added": "4"
                 },
                 "safari_ios": {
-                    "version_added": "9.3"
+                    "version_added": "3.2"
                 },
                 "samsunginternet_android": {
-                    "version_added": "4.0"
+                    "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "44"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1170,10 +1170,10 @@
                     "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "safari": {
-                    "version_added": "13.1"
+                    "version_added": "12"
                 },
                 "safari_ios": {
-                    "version_added": "13.4"
+                    "version_added": "12"
                 },
                 "samsunginternet_android": {
                     "version_added": "13.0",
@@ -1239,10 +1239,10 @@
                     "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "safari": {
-                    "version_added": "13.1"
+                    "version_added": "12"
                 },
                 "safari_ios": {
-                    "version_added": "13.4"
+                    "version_added": "12"
                 },
                 "samsunginternet_android": {
                     "version_added": "13.0",
@@ -1308,10 +1308,10 @@
                     "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>window.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "safari": {
-                    "version_added": "13.1"
+                    "version_added": "12"
                 },
                 "safari_ios": {
-                    "version_added": "13.4"
+                    "version_added": "12"
                 },
                 "samsunginternet_android": {
                     "version_added": "13.0",
