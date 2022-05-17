@@ -82,9 +82,7 @@ const respecRawSpecs = [
   "https://w3c.github.io/pointerevents/", // yes
   "https://w3c.github.io/pointerlock/", // OUT OF DATE TR
   "https://w3c.github.io/preload/", // OUT OF DATE TR
-  "https://w3c.github.io/presentation-api/", // OUT OF DATE TR
   "https://w3c.github.io/push-api/", // yes
-  "https://w3c.github.io/remote-playback/", // OUT OF DATE TR
   "https://w3c.github.io/requestidlecallback/", // OUT OF DATE TR
   "https://w3c.github.io/resource-timing/", // OUT OF DATE TR
   "https://w3c.github.io/screen-orientation/", // yes
