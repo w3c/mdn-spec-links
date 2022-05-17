@@ -258,6 +258,10 @@ const checkSpecURL = (
   if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
     return;
   }
+  // FIXME https://github.com/mdn/browser-compat-data/pull/16317
+  if (spec_url.startsWith('https://www.w3.org/TR/CSP3')) {
+    return;
+  }
   if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
     return;
   }
