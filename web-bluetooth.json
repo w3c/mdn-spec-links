@@ -1037,7 +1037,7 @@
             "filename": "api/BluetoothDevice.json",
             "name": "id",
             "slug": "API/BluetoothDevice/id",
-            "summary": "The BluetoothDevice.id read-only property returns a DOMString that uniquely identifies a device.",
+            "summary": "The BluetoothDevice.id read-only property returns a string that uniquely identifies a device.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1090,7 +1090,7 @@
             "filename": "api/BluetoothDevice.json",
             "name": "name",
             "slug": "API/BluetoothDevice/name",
-            "summary": "The BluetoothDevice.name read-only property returns a DOMString that provides a human-readable name for the device.",
+            "summary": "The BluetoothDevice.name read-only property returns a string that provides a human-readable name for the device.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -1616,7 +1616,7 @@
             "filename": "api/BluetoothRemoteGATTCharacteristic.json",
             "name": "uuid",
             "slug": "API/BluetoothRemoteGATTCharacteristic/uuid",
-            "summary": "The BluetoothRemoteGATTCharacteristic.uuid read-only property returns DOMString containing the UUID of the characteristic, for example '00002a37-0000-1000-8000-00805f9b34fb' for the Heart Rate Measurement characteristic.",
+            "summary": "The BluetoothRemoteGATTCharacteristic.uuid read-only property returns a string containing the UUID of the characteristic, for example '00002a37-0000-1000-8000-00805f9b34fb' for the Heart Rate Measurement characteristic.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -2929,7 +2929,7 @@
             "filename": "api/BluetoothRemoteGATTService.json",
             "name": "uuid",
             "slug": "API/BluetoothRemoteGATTService/uuid",
-            "summary": "The BluetoothGATTService.uuid read-only property returns a DOMString representing the UUID of this service.",
+            "summary": "The BluetoothGATTService.uuid read-only property returns a string representing the UUID of this service.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -3074,6 +3074,320 @@
                 ]
             },
             "title": "BluetoothRemoteGATTService"
+        }
+    ],
+    "dom-bluetoothuuid-canonicaluuid": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BluetoothUUID.json",
+            "name": "canonicalUUID",
+            "slug": "API/BluetoothUUID/canonicalUUID",
+            "summary": "The canonicalUUID() method of the BluetoothUUID interface returns the 128-bit UUID when passed a 16- or 32-bit UUID alias.",
+            "support": {
+                "chrome": {
+                    "version_added": "56"
+                },
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "43"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BluetoothUUID.canonicalUUID()"
+        }
+    ],
+    "dom-bluetoothuuid-getcharacteristic": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BluetoothUUID.json",
+            "name": "getCharacteristic",
+            "slug": "API/BluetoothUUID/getCharacteristic",
+            "summary": "The getCharacteristic() method of the BluetoothUUID interface returns a UUID representing a registered characteristic when passed a name or the 16- or 32-bit UUID alias.",
+            "support": {
+                "chrome": {
+                    "version_added": "56"
+                },
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "43"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BluetoothUUID.getCharacteristic()"
+        }
+    ],
+    "dom-bluetoothuuid-getdescriptor": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BluetoothUUID.json",
+            "name": "getDescriptor",
+            "slug": "API/BluetoothUUID/getDescriptor",
+            "summary": "The getDescriptor() method of the BluetoothUUID interface returns a UUID representing a registered descriptor when passed a name or the 16- or 32-bit UUID alias.",
+            "support": {
+                "chrome": {
+                    "version_added": "56"
+                },
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "43"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BluetoothUUID.getDescriptor()"
+        }
+    ],
+    "dom-bluetoothuuid-getservice": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BluetoothUUID.json",
+            "name": "getService",
+            "slug": "API/BluetoothUUID/getService",
+            "summary": "The getService() method of the BluetoothUUID interface returns a UUID representing a registered service when passed a name or the 16- or 32-bit UUID alias.",
+            "support": {
+                "chrome": {
+                    "version_added": "56"
+                },
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "43"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "BluetoothUUID.getService()"
+        }
+    ],
+    "bluetoothuuid": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "needsflag": [
+                "blink"
+            ],
+            "filename": "api/BluetoothUUID.json",
+            "name": "BluetoothUUID",
+            "slug": "API/BluetoothUUID",
+            "summary": "The BluetoothUUID interface of the Web Bluetooth API provides a way to look up Universally Unique Identifier (UUID) values by name in the registry maintained by the Bluetooth SIG.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "56",
+                        "partial_implementation": true,
+                        "notes": "Before Chrome 70, this feature was only supported in macOS. In Chrome 70, support was added for Windows 10. Linux support is not enabled by default."
+                    },
+                    {
+                        "version_added": "56",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "43",
+                        "partial_implementation": true,
+                        "notes": "Before Opera 57, this feature was only supported in macOS. In Opera 57, support was added for Windows 10. Linux support is not enabled by default."
+                    },
+                    {
+                        "version_added": "43",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1100993'>bug 1100993</a>."
+                },
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Before Chrome 70, this feature was only supported in macOS. In Chrome 70, support was added for Windows 10. Linux support is not enabled by default."
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "In Linux and versions of Windows earlier than 10, this flag must be enabled.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "title": "BluetoothUUID"
         }
     ]
 }

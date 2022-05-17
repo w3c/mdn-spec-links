@@ -232,7 +232,7 @@
             "filename": "api/IDBCursor.json",
             "name": "direction",
             "slug": "API/IDBCursor/direction",
-            "summary": "The direction read-only property of the IDBCursor interface is a DOMString that returns the direction of traversal of the cursor (set using IDBObjectStore.openCursor for example). See the Values section below for possible values.",
+            "summary": "The direction read-only property of the IDBCursor interface is a string that returns the direction of traversal of the cursor (set using IDBObjectStore.openCursor for example). See the Values section below for possible values.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -892,10 +892,10 @@
             "summary": "The close event is fired on IDBDatabase when the database connection is unexpectedly closed. This could happen, for example, if the underlying storage is removed or if the user clears the database in the browser's history preferences.",
             "support": {
                 "chrome": {
-                    "version_added": "31"
+                    "version_added": "30"
                 },
                 "chrome_android": {
-                    "version_added": "31"
+                    "version_added": "30"
                 },
                 "edge": {
                     "version_added": false
@@ -910,7 +910,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "18"
+                    "version_added": "17"
                 },
                 "opera_android": {
                     "version_added": "18"
@@ -947,10 +947,10 @@
             "summary": "The close event is fired on IDBDatabase when the database connection is unexpectedly closed. This could happen, for example, if the underlying storage is removed or if the user clears the database in the browser's history preferences.",
             "support": {
                 "chrome": {
-                    "version_added": "31"
+                    "version_added": "30"
                 },
                 "chrome_android": {
-                    "version_added": "31"
+                    "version_added": "30"
                 },
                 "edge": {
                     "version_added": false
@@ -965,7 +965,7 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "18"
+                    "version_added": "17"
                 },
                 "opera_android": {
                     "version_added": "18"
@@ -1111,7 +1111,7 @@
             "filename": "api/IDBDatabase.json",
             "name": "name",
             "slug": "API/IDBDatabase/name",
-            "summary": "The name read-only property of the IDBDatabase interface is a DOMString that contains the name of the connected database.",
+            "summary": "The name read-only property of the IDBDatabase interface is a string that contains the name of the connected database.",
             "support": {
                 "chrome": {
                     "version_added": "23"
@@ -5906,7 +5906,7 @@
             "filename": "api/IDBTransaction.json",
             "name": "error",
             "slug": "API/IDBTransaction/error",
-            "summary": "The IDBTransaction.error property of the IDBTransaction interface returns one of several types of error when there is an unsuccessful transaction.",
+            "summary": "The IDBTransaction.error property of the IDBTransaction interface returns the type of error when there is an unsuccessful transaction.",
             "support": {
                 "chrome": {
                     "version_added": "23"

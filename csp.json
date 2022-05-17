@@ -9,7 +9,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "SecurityPolicyViolationEvent",
             "slug": "API/SecurityPolicyViolationEvent/SecurityPolicyViolationEvent",
-            "summary": "The SecurityPolicyViolationEvent constructor creates a new SecurityPolicyViolationEvent object instance.",
+            "summary": "The SecurityPolicyViolationEvent() constructor creates a new SecurityPolicyViolationEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -64,7 +64,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "blockedURI",
             "slug": "API/SecurityPolicyViolationEvent/blockedURI",
-            "summary": "The blockedURI read-only property of the SecurityPolicyViolationEvent interface is a USVString representing the URI of the resource that was blocked because it violates a policy.",
+            "summary": "The blockedURI read-only property of the SecurityPolicyViolationEvent interface is a string representing the URI of the resource that was blocked because it violates a policy.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -229,7 +229,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "documentURI",
             "slug": "API/SecurityPolicyViolationEvent/documentURI",
-            "summary": "The documentURI read-only property of the SecurityPolicyViolationEvent interface is a USVString representing the URI of the document or worker in which the violation was found.",
+            "summary": "The documentURI read-only property of the SecurityPolicyViolationEvent interface is a string representing the URI of the document or worker in which the violation was found.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -284,7 +284,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "effectiveDirective",
             "slug": "API/SecurityPolicyViolationEvent/effectiveDirective",
-            "summary": "The effectiveDirective read-only property of the SecurityPolicyViolationEvent interface is a DOMString representing the directive whose enforcement uncovered the violation.",
+            "summary": "The effectiveDirective read-only property of the SecurityPolicyViolationEvent interface is a string representing the directive whose enforcement uncovered the violation.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -394,7 +394,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "originalPolicy",
             "slug": "API/SecurityPolicyViolationEvent/originalPolicy",
-            "summary": "The originalPolicy read-only property of the SecurityPolicyViolationEvent interface is a DOMString containing the policy whose enforcement uncovered the violation.",
+            "summary": "The originalPolicy read-only property of the SecurityPolicyViolationEvent interface is a string containing the policy whose enforcement uncovered the violation.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -449,7 +449,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "referrer",
             "slug": "API/SecurityPolicyViolationEvent/referrer",
-            "summary": "The referrer read-only property of the SecurityPolicyViolationEvent interface is a USVString representing the referrer of the resources whose policy was violated. This will be a URL or null.",
+            "summary": "The referrer read-only property of the SecurityPolicyViolationEvent interface is a string representing the referrer of the resources whose policy was violated. This will be a URL or null.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -504,7 +504,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "sample",
             "slug": "API/SecurityPolicyViolationEvent/sample",
-            "summary": "The sample read-only property of the SecurityPolicyViolationEvent interface is a DOMString representing a sample of the resource that caused the violation.",
+            "summary": "The sample read-only property of the SecurityPolicyViolationEvent interface is a string representing a sample of the resource that caused the violation.",
             "support": {
                 "chrome": {
                     "version_added": "59"
@@ -559,7 +559,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "sourceFile",
             "slug": "API/SecurityPolicyViolationEvent/sourceFile",
-            "summary": "The sourceFile read-only property of the SecurityPolicyViolationEvent interface is a USVString representing the URI of the document or worker in which the violation was found.",
+            "summary": "The sourceFile read-only property of the SecurityPolicyViolationEvent interface is a string representing the URI of the document or worker in which the violation was found.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -669,7 +669,7 @@
             "filename": "api/SecurityPolicyViolationEvent.json",
             "name": "violatedDirective",
             "slug": "API/SecurityPolicyViolationEvent/violatedDirective",
-            "summary": "The violatedDirective read-only property of the SecurityPolicyViolationEvent interface is a DOMString representing the directive whose enforcement uncovered the violation.",
+            "summary": "The violatedDirective read-only property of the SecurityPolicyViolationEvent interface is a string representing the directive whose enforcement uncovered the violation.",
             "support": {
                 "chrome": {
                     "version_added": "41"

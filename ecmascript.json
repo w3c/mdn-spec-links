@@ -3196,28 +3196,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "add",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/add",
             "summary": "The static Atomics.add() method adds a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -3225,65 +3213,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -3291,50 +3226,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.add()"
         }
@@ -3346,28 +3257,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "and",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/and",
             "summary": "The static Atomics.and() method computes a bitwise AND with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -3375,65 +3274,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -3441,50 +3287,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.and()"
         }
@@ -3496,28 +3318,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "compareExchange",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/compareExchange",
             "summary": "The static Atomics.compareExchange() method exchanges a given replacement value at a given position in the array, if a given expected value equals the old value. It returns the old value at that position whether it was equal to the expected value or not. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -3525,65 +3335,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -3591,50 +3348,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.compareExchange()"
         }
@@ -3646,28 +3379,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "exchange",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/exchange",
             "summary": "The static Atomics.exchange() method stores a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens between the read of the old value and the write of the new value.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -3675,65 +3396,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -3741,50 +3409,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.exchange()"
         }
@@ -3796,28 +3440,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "isLockFree",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/isLockFree",
             "summary": "The static Atomics.isLockFree() method is used to determine whether the Atomics methods use locks or atomic hardware operations when applied to typed arrays with the given element byte size. It returns false if the given size is not one of the BYTES_PER_ELEMENT property of integer TypedArray types.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -3825,65 +3457,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -3891,50 +3470,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.isLockFree()"
         }
@@ -3946,28 +3501,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "load",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/load",
             "summary": "The static Atomics.load() method returns a value at a given position in the array.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -3975,65 +3518,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -4041,50 +3531,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.load()"
         }
@@ -4096,30 +3562,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "notify",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/notify",
             "summary": "The static Atomics.notify() method notifies up some agents that are sleeping in the wait queue.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "alternative_name": "wake",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "alternative_name": "wake",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -4127,169 +3579,39 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "57",
-                        "alternative_name": "wake",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "48",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "48",
-                        "alternative_name": "futexWake",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "The <code>count</code> parameter defaults to <code>0</code> instead of the later-specified <code>+Infinity</code>."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "63",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "57",
-                        "alternative_name": "wake",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "48",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "48",
-                        "alternative_name": "futexWake",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "The <code>count</code> parameter defaults to <code>0</code> instead of the later-specified <code>+Infinity</code>."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "8.10.0",
-                    "alternative_name": "wake"
+                    "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1",
-                        "alternative_name": "wake"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "alternative_name": "wake",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "alternative_name": "wake",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.notify()"
         }
@@ -4301,28 +3623,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "or",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/or",
             "summary": "The static Atomics.or() method computes a bitwise OR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -4330,65 +3640,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -4396,50 +3653,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.or()"
         }
@@ -4451,28 +3684,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "store",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/store",
             "summary": "The static Atomics.store() method stores a given value at the given position in the array and returns that value.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -4480,65 +3701,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -4546,50 +3714,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.store()"
         }
@@ -4601,28 +3745,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "sub",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/sub",
             "summary": "The static Atomics.sub() method subtracts a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -4630,65 +3762,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -4696,50 +3775,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.sub()"
         }
@@ -4751,28 +3806,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "wait",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/wait",
             "summary": "The static Atomics.wait() method verifies that a given position in an Int32Array still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either \"ok\", \"not-equal\", or \"timed-out\".",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -4780,91 +3823,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "48",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "48",
-                        "alternative_name": "futexWait",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "The method returns values <code>Atomics.OK</code>, <code>Atomics.TIMEDOUT</code>, and <code>Atomics.NOTEQUAL</code>, instead of the later-specified strings."
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "48",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "48",
-                        "alternative_name": "futexWait",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "The method returns values <code>Atomics.OK</code>, <code>Atomics.TIMEDOUT</code>, and <code>Atomics.NOTEQUAL</code>, instead of the later-specified strings."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -4872,50 +3836,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.wait()"
         }
@@ -4927,28 +3867,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "xor",
             "slug": "JavaScript/Reference/Global_Objects/Atomics/xor",
             "summary": "The static Atomics.xor() method computes a bitwise XOR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -4956,65 +3884,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -5022,50 +3897,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics.xor()"
         }
@@ -5077,28 +3928,16 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "Atomics",
             "slug": "JavaScript/Reference/Global_Objects/Atomics",
             "summary": "The Atomics object provides atomic operations as static methods. They are used with SharedArrayBuffer and ArrayBuffer objects.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
                 "chrome_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -5106,65 +3945,12 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -5172,50 +3958,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11.1"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "Like <code>SharedArrayBuffer</code>, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11.3"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "Atomics"
         }
@@ -25811,95 +24573,24 @@
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer/SharedArrayBuffer",
             "summary": "The SharedArrayBuffer() constructor is used to create a SharedArrayBuffer object representing a generic, fixed-length raw binary data buffer, similar to the ArrayBuffer object.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "89",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
+                "chrome_android": {
+                    "version_added": "89"
+                },
                 "deno": {
                     "version_added": "1.0"
                 },
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -25907,50 +24598,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": "15.0",
-                    "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "SharedArrayBuffer() constructor"
         }
@@ -25967,95 +24634,24 @@
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength",
             "summary": "The byteLength accessor property represents the length of an SharedArrayBuffer in bytes.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "89",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
+                "chrome_android": {
+                    "version_added": "89"
+                },
                 "deno": {
                     "version_added": "1.0"
                 },
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -26063,50 +24659,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": "15.0",
-                    "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "SharedArrayBuffer.prototype.byteLength"
         }
@@ -26123,95 +24695,24 @@
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer/slice",
             "summary": "The SharedArrayBuffer.prototype.slice() method returns a new SharedArrayBuffer whose contents are a copy of this SharedArrayBuffer's bytes from begin, inclusive, up to end, exclusive. If either begin or end is negative, it refers to an index from the end of the array, as opposed to from the beginning. This method has the same algorithm as Array.prototype.slice().",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "89",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
+                "chrome_android": {
+                    "version_added": "89"
+                },
                 "deno": {
                     "version_added": "1.0"
                 },
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -26219,50 +24720,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": "15.0",
-                    "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "SharedArrayBuffer.prototype.slice()"
         }
@@ -26279,95 +24756,24 @@
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer",
             "summary": "The SharedArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer, similar to the ArrayBuffer object, but in a way that they can be used to create views on shared memory. A SharedArrayBuffer is not a Transferable Object, unlike an ArrayBuffer which is transferable.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "68"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "89",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "68"
+                },
+                "chrome_android": {
+                    "version_added": "89"
+                },
                 "deno": {
                     "version_added": "1.0"
                 },
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "57",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": "Support was disabled by default to mitigate <a href='https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/'>speculative execution side-channel attacks (Mozilla Security Blog)</a>."
-                    },
-                    {
-                        "version_added": "55",
-                        "version_removed": "57"
-                    },
-                    {
-                        "version_added": "46",
-                        "version_removed": "55",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "javascript.options.shared_memory",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -26375,50 +24781,26 @@
                     "version_added": "8.10.0"
                 },
                 "opera": {
-                    "version_added": false
+                    "version_added": "55"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "63"
                 },
-                "safari": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.1",
-                        "version_removed": "11"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "15.2",
-                        "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
-                    },
-                    {
-                        "version_added": "10.3",
-                        "version_removed": "11"
-                    }
-                ],
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": {
+                    "version_added": "15.2"
+                },
                 "samsunginternet_android": {
-                    "version_added": "15.0",
-                    "notes": "<code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
+                    "version_added": "15.0"
                 },
                 "webview_android": {
-                    "version_added": "60",
-                    "version_removed": "63",
-                    "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place."
+                    "version_added": "89"
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "63",
-                        "notes": "Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href='https://www.chromium.org/Home/chromium-security/ssca'>speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "caniuse": {
                 "feature": "sharedarraybuffer",
@@ -26681,7 +25063,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "codePointAt",
             "slug": "JavaScript/Reference/Global_Objects/String/codePointAt",
-            "summary": "The codePointAt() method returns a non-negative integer that is the Unicode code point value at the given position.",
+            "summary": "The codePointAt() method returns a non-negative integer that is the Unicode code point value at the given position. Note that this function does not give the nth code point in a string, but the code point starting at the specified string index.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -30170,10 +28552,10 @@
             "summary": "The Symbol.unscopables well-known symbol is used to specify an object value of whose own and inherited property names are excluded from the with environment bindings of the associated object.",
             "support": {
                 "chrome": {
-                    "version_added": "45"
+                    "version_added": "38"
                 },
                 "chrome_android": {
-                    "version_added": "45"
+                    "version_added": "38"
                 },
                 "deno": {
                     "version_added": "1.0"
@@ -30194,10 +28576,10 @@
                     "version_added": "0.12.0"
                 },
                 "opera": {
-                    "version_added": "32"
+                    "version_added": "25"
                 },
                 "opera_android": {
-                    "version_added": "32"
+                    "version_added": "25"
                 },
                 "safari": {
                     "version_added": "9"
@@ -30206,10 +28588,10 @@
                     "version_added": "9"
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "3.0"
                 },
                 "webview_android": {
-                    "version_added": "45"
+                    "version_added": "38"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -42541,7 +40923,7 @@
             "filename": "javascript/operators/unsigned_right_shift.json",
             "name": "unsigned_right_shift",
             "slug": "JavaScript/Reference/Operators/Unsigned_right_shift",
-            "summary": "The unsigned right shift operator (>>>) (zero-fill right shift) shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. The sign bit becomes 0, so the result is always non-negative. Unlike the other bitwise operators, zero-fill right shift returns an unsigned 32-bit integer.",
+            "summary": "The unsigned right shift operator (>>>) (zero-fill right shift) shifts the first operand the specified number of bits to the right.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -43944,7 +42326,7 @@
             "filename": "javascript/statements.json",
             "name": "import",
             "slug": "JavaScript/Reference/Statements/import",
-            "summary": "The static import statement is used to import read only live bindings which are exported by another module.",
+            "summary": "The static import statement is used to import read-only live bindings which are exported by another module.",
             "support": {
                 "chrome": {
                     "version_added": "61"
@@ -44016,6 +42398,96 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
+            },
+            "title": "import"
+        }
+    ],
+    "sec-import-calls": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/statements.json",
+            "name": "import",
+            "slug": "JavaScript/Reference/Statements/import",
+            "summary": "The static import statement is used to import read-only live bindings which are exported by another module.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": {
+                    "version_added": "61"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "60"
+                },
+                "firefox_android": {
+                    "version_added": "60"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "13.2.0",
+                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    },
+                    {
+                        "version_added": "12.0.0",
+                        "version_removed": "13.2.0",
+                        "flags": [
+                            {
+                                "name": "--experimental-modules",
+                                "type": "runtime_flag"
+                            }
+                        ],
+                        "notes": "Modules must either have a filename ending in <code>.mjs</code>, or the nearest parent <code>package.json</code> file must contain <code>\"type\": \"module\"</code>. See Node's <a href='https://nodejs.org/docs/latest-v12.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    },
+                    {
+                        "version_added": "8.5.0",
+                        "version_removed": "12.0.0",
+                        "flags": [
+                            {
+                                "name": "--experimental-modules",
+                                "type": "runtime_flag"
+                            }
+                        ],
+                        "notes": "Module filenames must end with <code>.mjs</code>, not <code>.js</code>. See Node's <a href='https://nodejs.org/docs/latest-v8.x/api/esm.html#esm_enabling'>ECMAScript Modules documentation</a> for more details."
+                    }
+                ],
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": {
+                    "version_added": "61"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "caniuse": {
+                "feature": "es6-module-dynamic-import",
+                "title": "JavaScript modules: dynamic import()"
             },
             "title": "import"
         }

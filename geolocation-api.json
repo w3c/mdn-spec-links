@@ -174,7 +174,7 @@
             "filename": "api/Geolocation.json",
             "name": "Geolocation",
             "slug": "API/Geolocation",
-            "summary": "The Geolocation interface represents an object able to programmatically obtain the position of the device. It gives Web content access to the location of the device. This allows a Web site or app to offer customized results based on the user's location.",
+            "summary": "The Geolocation interface represents an object able to obtain the position of the device programmatically. It gives Web content access to the location of the device. This allows a website or app to offer customized results based on the user's location.",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -187,7 +187,7 @@
                 },
                 "firefox": {
                     "version_added": "3.5",
-                    "notes": "<a href='http://catb.org/gpsd/'>GPSD</a> (GPS daemon) support added in Firefox 3.6. WiFi-based location is provided by Google (<a href='https://support.mozilla.org/en-US/kb/does-firefox-share-my-location-websites'>privacy</a>) or a custom provider (<a href='https://wiki.mozilla.org/CloudServices/Location/Software'>MLS instructions</a>)."
+                    "notes": "<a href='https://gpsd.gitlab.io/gpsd/index.html'>GPSD</a> (GPS daemon) support added in Firefox 3.6. WiFi-based location is provided by Google (<a href='https://support.mozilla.org/en-US/kb/does-firefox-share-my-location-websites'>privacy</a>) or a custom provider (<a href='https://wiki.mozilla.org/CloudServices/Location/Software'>MLS instructions</a>)."
                 },
                 "firefox_android": {
                     "version_added": "4"
@@ -1105,7 +1105,7 @@
             "filename": "api/GeolocationPositionError.json",
             "name": "message",
             "slug": "API/GeolocationPositionError/message",
-            "summary": "The GeolocationPositionError.message read-only property returns a human-readable DOMString describing the details of the error.",
+            "summary": "The GeolocationPositionError.message read-only property returns a human-readable string describing the details of the error.",
             "support": {
                 "chrome": {
                     "version_added": "5"
