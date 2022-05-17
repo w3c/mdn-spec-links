@@ -914,7 +914,7 @@
                     "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -1075,7 +1075,7 @@
                     "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -1236,7 +1236,7 @@
                     "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -1397,7 +1397,7 @@
                     "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -1558,7 +1558,7 @@
                     "version_added": "69"
                 },
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "79"
                 },
                 "ie": {
                     "version_added": false
@@ -2201,7 +2201,7 @@
             "filename": "api/DocumentType.json",
             "name": "after",
             "slug": "API/DocumentType/after",
-            "summary": "The DocumentType.after() method inserts a set of Node or DOMString objects in the children list of the DocumentType's parent, just after the DocumentType. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The DocumentType.after() method inserts a set of Node or string objects in the children list of the DocumentType's parent, just after the DocumentType. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -2254,7 +2254,7 @@
             "filename": "api/Element.json",
             "name": "after",
             "slug": "API/Element/after",
-            "summary": "The Element.after() method inserts a set of Node or DOMString objects in the children list of the Element's parent, just after the Element. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The Element.after() method inserts a set of Node or string objects in the children list of the Element's parent, just after the Element. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -2417,7 +2417,7 @@
             "filename": "api/DocumentType.json",
             "name": "before",
             "slug": "API/DocumentType/before",
-            "summary": "The DocumentType.before() method inserts a set of Node or DOMString objects in the children list of the DocumentType's parent, just before the DocumentType. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The DocumentType.before() method inserts a set of Node or string objects in the children list of the DocumentType's parent, just before the DocumentType. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -2470,7 +2470,7 @@
             "filename": "api/Element.json",
             "name": "before",
             "slug": "API/Element/before",
-            "summary": "The Element.before() method inserts a set of Node or DOMString objects in the children list of this Element's parent, just before this Element. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The Element.before() method inserts a set of Node or string objects in the children list of this Element's parent, just before this Element. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -3283,7 +3283,7 @@
             "filename": "api/Element.json",
             "name": "replaceWith",
             "slug": "API/Element/replaceWith",
-            "summary": "The Element.replaceWith() method replaces this Element in the children list of its parent with a set of Node or DOMString objects. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The Element.replaceWith() method replaces this Element in the children list of its parent with a set of Node or string objects. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -3558,7 +3558,7 @@
             "filename": "api/CustomEvent.json",
             "name": "CustomEvent",
             "slug": "API/CustomEvent/CustomEvent",
-            "summary": "The CustomEvent() constructor creates a new CustomEvent.",
+            "summary": "The CustomEvent() constructor creates a new CustomEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "15"
@@ -4983,7 +4983,7 @@
             "filename": "api/Document.json",
             "name": "createAttribute",
             "slug": "API/Document/createAttribute",
-            "summary": "The Document.createAttribute() method creates a new attribute node, and returns it. The object created a node implementing the Attr interface. The DOM does not enforce what sort of attributes can be added to a particular element in this manner.",
+            "summary": "The Document.createAttribute() method creates a new attribute node, and returns it. The object created is a node implementing the Attr interface. The DOM does not enforce what sort of attributes can be added to a particular element in this manner.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -5040,6 +5040,61 @@
                 }
             },
             "title": "Document.createAttribute()"
+        }
+    ],
+    "dom-document-createattributens": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Document.json",
+            "name": "createAttributeNS",
+            "slug": "API/Document/createAttributeNS",
+            "summary": "The Document.createAttributeNS() method creates a new attribute node with the specified namespace URI and qualified name, and returns it. The object created is a node implementing the Attr interface. The DOM does not enforce what sort of attributes can be added to a particular element in this manner.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Document.createAttributeNS()"
         }
     ],
     "ref-for-dom-document-createcomment①": [
@@ -6039,7 +6094,7 @@
             "filename": "api/Document.json",
             "name": "evaluate",
             "slug": "API/Document/evaluate",
-            "summary": "Returns an XPathResult based on an XPath expression and other given parameters.",
+            "summary": "The evaluate() method of the Document interface selects elements based on the XPath expression given in parameters.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -6724,10 +6779,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -6777,10 +6832,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -7123,7 +7178,7 @@
             "filename": "api/Element.json",
             "name": "closest",
             "slug": "API/Element/closest",
-            "summary": "The closest() method traverses the Element and its parents (heading toward the document root) until it finds a node that matches the provided selector string. Will return itself or the matching ancestor. If no such element exists, it returns null.",
+            "summary": "The closest() method of the Element interface traverses the element and its parents (heading toward the document root) until it finds a node that matches the specified CSS selector.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -8082,7 +8137,7 @@
             "filename": "api/Element.json",
             "name": "matches",
             "slug": "API/Element/matches",
-            "summary": "The matches() method checks to see if the Element would be selected by the provided selectorString -- in other words -- checks if the element \"is\" the selector.",
+            "summary": "The matches() method of the Element interface tests whether the element would be selected by the specified CSS selector.",
             "support": {
                 "chrome": [
                     {
@@ -8632,7 +8687,7 @@
                 },
                 "ie": {
                     "version_added": "9",
-                    "notes": "Returns a <code>ClientRectList</code> with <a href='http://msdn.microsoft.com/en-us/library/hh826029(VS.85).aspx'>ClientRect</a> objects (which do not contain <code>x</code> and <code>y</code> properties) instead of <a href='https://developer.mozilla.org/docs/Web/API/DOMRect'><code>DOMRect</code></a> objects."
+                    "notes": "Returns a <code>ClientRectList</code> with <a href='https://docs.microsoft.com/en-us/previous-versions/hh826029(v=vs.85)'><code>ClientRect</code></a> objects (which do not contain <code>x</code> and <code>y</code> properties) instead of <a href='https://developer.mozilla.org/docs/Web/API/DOMRect'><code>DOMRect</code></a> objects."
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -15531,10 +15586,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -15641,10 +15696,10 @@
                     "version_added": "41"
                 },
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": "10"
                 },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": "10"
                 },
                 "samsunginternet_android": {
                     "version_added": "6.0"
@@ -17515,7 +17570,7 @@
             "filename": "api/_mixins/ParentNode__Document.json",
             "name": "append",
             "slug": "API/Document/append",
-            "summary": "The Document.append() method inserts a set of Node objects or DOMString objects after the last child of the document. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The Document.append() method inserts a set of Node objects or string objects after the last child of the document. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -17568,7 +17623,7 @@
             "filename": "api/_mixins/ParentNode__DocumentFragment.json",
             "name": "append",
             "slug": "API/DocumentFragment/append",
-            "summary": "The DocumentFragment.append() method inserts a set of Node objects or DOMString objects after the last child of the document fragment. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The DocumentFragment.append() method inserts a set of Node objects or string objects after the last child of the document fragment. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -17621,7 +17676,7 @@
             "filename": "api/_mixins/ParentNode__Element.json",
             "name": "append",
             "slug": "API/Element/append",
-            "summary": "The Element.append() method inserts a set of Node objects or DOMString objects after the last child of the Element. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The Element.append() method inserts a set of Node objects or string objects after the last child of the Element. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -18327,7 +18382,7 @@
             "filename": "api/_mixins/ParentNode__Document.json",
             "name": "prepend",
             "slug": "API/Document/prepend",
-            "summary": "The Document.prepend() method inserts a set of Node objects or DOMString objects before the first child of the document. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The Document.prepend() method inserts a set of Node objects or string objects before the first child of the document. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -18380,7 +18435,7 @@
             "filename": "api/_mixins/ParentNode__DocumentFragment.json",
             "name": "prepend",
             "slug": "API/DocumentFragment/prepend",
-            "summary": "The DocumentFragment.prepend() method inserts a set of Node objects or DOMString objects before the first child of the document fragment. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The DocumentFragment.prepend() method inserts a set of Node objects or string objects before the first child of the document fragment. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -18433,7 +18488,7 @@
             "filename": "api/_mixins/ParentNode__Element.json",
             "name": "prepend",
             "slug": "API/Element/prepend",
-            "summary": "The Element.prepend() method inserts a set of Node objects or DOMString objects before the first child of the Element. DOMString objects are inserted as equivalent Text nodes.",
+            "summary": "The Element.prepend() method inserts a set of Node objects or string objects before the first child of the Element. String objects are inserted as equivalent Text nodes.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -18905,7 +18960,7 @@
             "filename": "api/_mixins/ParentNode__DocumentFragment.json",
             "name": "replaceChildren",
             "slug": "API/DocumentFragment/replaceChildren",
-            "summary": "The DocumentFragment.replaceChildren() method replaces the existing children of a DocumentFragment with a specified new set of children. These can be DOMString or Node objects.",
+            "summary": "The DocumentFragment.replaceChildren() method replaces the existing children of a DocumentFragment with a specified new set of children. These can be string or Node objects.",
             "support": {
                 "chrome": {
                     "version_added": "86"
@@ -18958,7 +19013,7 @@
             "filename": "api/_mixins/ParentNode__Element.json",
             "name": "replaceChildren",
             "slug": "API/Element/replaceChildren",
-            "summary": "The Element.replaceChildren() method replaces the existing children of a Node with a specified new set of children. These can be DOMString or Node objects.",
+            "summary": "The Element.replaceChildren() method replaces the existing children of a Node with a specified new set of children. These can be string or Node objects.",
             "support": {
                 "chrome": {
                     "version_added": "86"

@@ -4326,7 +4326,7 @@
             "filename": "api/AudioParamMap.json",
             "name": "AudioParamMap",
             "slug": "API/AudioParamMap",
-            "summary": "The Web Audio API interface AudioParamMap represents a set of multiple audio parameters, each described as a mapping of a DOMString identifying the parameter to the AudioParam object representing its value.",
+            "summary": "The Web Audio API interface AudioParamMap represents a set of multiple audio parameters, each described as a mapping of a string identifying the parameter to the AudioParam object representing its value.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -9478,7 +9478,7 @@
             "filename": "api/OfflineAudioCompletionEvent.json",
             "name": "OfflineAudioCompletionEvent",
             "slug": "API/OfflineAudioCompletionEvent/OfflineAudioCompletionEvent",
-            "summary": "The OfflineAudioCompletionEvent() constructor of the Web Audio API creates a new OfflineAudioCompletionEvent object instance.",
+            "summary": "The OfflineAudioCompletionEvent() constructor of the Web Audio API creates a new OfflineAudioCompletionEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "57",
@@ -9929,7 +9929,7 @@
             "filename": "api/OfflineAudioContext.json",
             "name": "resume",
             "slug": "API/OfflineAudioContext/resume",
-            "summary": "The resume() method of the OfflineAudioContext interface resumes the progression of time in an audio context that has been suspended. The promise resolves immediately because the OfflineAudioContext does not require the audio hardware. If the context is not currently suspended or the rendering has not started, the promise is rejected with InvalidStateError.",
+            "summary": "The resume() method of the OfflineAudioContext interface resumes the progression of time in an audio context that has been suspended. The promise resolves immediately because the OfflineAudioContext does not require the audio hardware.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -11046,7 +11046,7 @@
             "filename": "api/PannerNode.json",
             "name": "panningModel",
             "slug": "API/PannerNode/panningModel",
-            "summary": "The panningModel property of the PannerNode interface is an enumerated value determining which spatialisation algorithm to use to position the audio in 3D space.",
+            "summary": "The panningModel property of the PannerNode interface is an enumerated value determining which spatialization algorithm to use to position the audio in 3D space.",
             "support": {
                 "chrome": {
                     "version_added": "14"
@@ -11376,7 +11376,7 @@
             "filename": "api/PannerNode.json",
             "name": "PannerNode",
             "slug": "API/PannerNode",
-            "summary": "The PannerNode interface represents the position and behavior of an audio source signal in space. It is an AudioNode audio-processing module describing its position with right-hand Cartesian coordinates, its movement using a velocity vector and its directionality using a directionality cone.",
+            "summary": "The PannerNode interface defines an audio-processing object that represents the location, direction, and behavior of an audio source signal in a simulated physical space. This AudioNode uses right-hand Cartesian coordinates to describe the source's position as a vector and its orientation as a 3D directional cone.",
             "support": {
                 "chrome": {
                     "version_added": "14"

@@ -1626,10 +1626,10 @@
             "summary": "The change event of the MediaQueryList interface fires when the status of media query support changes.",
             "support": {
                 "chrome": {
-                    "version_added": "45"
+                    "version_added": "39"
                 },
                 "chrome_android": {
-                    "version_added": "45"
+                    "version_added": "39"
                 },
                 "edge": {
                     "version_added": false
@@ -1644,10 +1644,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "32"
+                    "version_added": "26"
                 },
                 "opera_android": {
-                    "version_added": "32"
+                    "version_added": "26"
                 },
                 "safari": {
                     "version_added": "14"
@@ -1656,10 +1656,10 @@
                     "version_added": "14"
                 },
                 "samsunginternet_android": {
-                    "version_added": "5.0"
+                    "version_added": "4.0"
                 },
                 "webview_android": {
-                    "version_added": "45"
+                    "version_added": "39"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -1733,7 +1733,7 @@
             "filename": "api/MediaQueryList.json",
             "name": "media",
             "slug": "API/MediaQueryList/media",
-            "summary": "The media read-only property of the MediaQueryList interface is a DOMString representing a serialized media query.",
+            "summary": "The media read-only property of the MediaQueryList interface is a string representing a serialized media query.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -1898,7 +1898,7 @@
             "filename": "api/MediaQueryListEvent.json",
             "name": "MediaQueryListEvent",
             "slug": "API/MediaQueryListEvent/MediaQueryListEvent",
-            "summary": "The MediaQueryListEvent() constructor creates a new MediaQueryListEvent instance.",
+            "summary": "The MediaQueryListEvent() constructor creates a new MediaQueryListEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "39"
@@ -2008,7 +2008,7 @@
             "filename": "api/MediaQueryListEvent.json",
             "name": "media",
             "slug": "API/MediaQueryListEvent/media",
-            "summary": "The media read-only property of the MediaQueryListEvent interface is a DOMString representing a serialized media query.",
+            "summary": "The media read-only property of the MediaQueryListEvent interface is a string representing a serialized media query.",
             "support": {
                 "chrome": {
                     "version_added": "39"
@@ -4559,7 +4559,7 @@
             "filename": "api/_mixins/DocumentOrShadowRoot__Document.json",
             "name": "elementsFromPoint",
             "slug": "API/Document/elementsFromPoint",
-            "summary": "The elementsFromPoint() method of the Document interface returns an array of all elements at the specified coordinates (relative to the viewport).",
+            "summary": "The elementsFromPoint() method of the Document interface returns an array of all elements at the specified coordinates (relative to the viewport). The elements are ordered from the topmost to the bottommost box of the viewport.",
             "support": {
                 "chrome": {
                     "version_added": "43",

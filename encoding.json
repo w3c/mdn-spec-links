@@ -90,7 +90,7 @@
             "filename": "api/TextDecoder.json",
             "name": "decode",
             "slug": "API/TextDecoder/decode",
-            "summary": "The TextDecoder.prototype.decode() method returns a string containing the text, given in parameters, decoded with the specific method for that TextDecoder object.",
+            "summary": "The TextDecode.decode() method returns a string containing the text, given in parameters, decoded with the specific method for that TextDecoder> object.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -159,7 +159,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoder.prototype.decode()"
+            "title": "TextDecoder.decode()"
         }
     ],
     "ref-for-dom-textdecoder-encoding①": [
@@ -172,7 +172,7 @@
             "filename": "api/TextDecoder.json",
             "name": "encoding",
             "slug": "API/TextDecoder/encoding",
-            "summary": "The TextDecoder.prototype.encoding read-only property returns a DOMString containing the name of the decoding algorithm used by the specific decoder.",
+            "summary": "The TextDecoder.encoding read-only property returns a string containing the name of the decoding algorithm used by the specific decoder.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -234,7 +234,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoder.prototype.encoding"
+            "title": "TextDecoder.encoding"
         }
     ],
     "interface-textdecoder": [
@@ -388,7 +388,7 @@
             "filename": "api/TextDecoderStream.json",
             "name": "encoding",
             "slug": "API/TextDecoderStream/encoding",
-            "summary": "The encoding read-only property of the TextDecoderStream interface returns a DOMString containing the name of the encoding algorithm used by the specific encoder.",
+            "summary": "The encoding read-only property of the TextDecoderStream interface returns a string containing the name of the encoding algorithm used by the specific encoder.",
             "support": {
                 "chrome": {
                     "version_added": "71"
@@ -700,7 +700,7 @@
             "filename": "api/TextEncoder.json",
             "name": "encode",
             "slug": "API/TextEncoder/encode",
-            "summary": "The TextEncoder.prototype.encode() method takes a string as input, and returns a Uint8Array containing the text given in parameters encoded with the specific method for that TextEncoder object.",
+            "summary": "The TextEncoder.encode() method takes a string as input, and returns a Uint8Array containing the text given in parameters encoded with the specific method for that TextEncoder object.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -748,7 +748,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoder.prototype.encode()"
+            "title": "TextEncode.encode()"
         }
     ],
     "ref-for-dom-textencoder-encodeinto①": [
@@ -761,7 +761,7 @@
             "filename": "api/TextEncoder.json",
             "name": "encodeInto",
             "slug": "API/TextEncoder/encodeInto",
-            "summary": "The TextEncoder.prototype.encodeInto() method takes a string to encode and a destination Uint8Array to put resulting UTF-8 encoded text into, and returns a dictionary object indicating the progress of the encoding. This is potentially more performant than the older encode() method especially when the target buffer is a view into a Wasm heap.",
+            "summary": "The TextEncoder.encodeInto() method takes a string to encode and a destination Uint8Array to put resulting UTF-8 encoded text into, and returns a dictionary object indicating the progress of the encoding. This is potentially more performant than the older encode() method especially when the target buffer is a view into a Wasm heap.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -809,7 +809,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoder.prototype.encodeInto()"
+            "title": "TextEncoder.encodeInto()"
         }
     ],
     "dom-textencoder-encoding": [
@@ -822,7 +822,7 @@
             "filename": "api/TextEncoder.json",
             "name": "encoding",
             "slug": "API/TextEncoder/encoding",
-            "summary": "The TextEncoder.encoding read-only property returns a DOMString containing the name of the encoding algorithm used by the specific encoder.",
+            "summary": "The TextEncoder.encoding read-only property returns a string containing the name of the encoding algorithm used by the specific encoder.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -880,7 +880,7 @@
             "filename": "api/TextEncoderStream.json",
             "name": "encoding",
             "slug": "API/TextEncoderStream/encoding",
-            "summary": "The encoding read-only property of the TextEncoderStream interface returns a DOMString containing the name of the encoding algorithm used by the current TextEncoderStream object.",
+            "summary": "The encoding read-only property of the TextEncoderStream interface returns a string containing the name of the encoding algorithm used by the current TextEncoderStream object.",
             "support": {
                 "chrome": {
                     "version_added": "71"
