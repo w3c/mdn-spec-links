@@ -11,7 +11,6 @@ const request = require('sync-request');
 const util = require('util');
 const { JSDOM } = require('jsdom');
 const { URL } = require('url');
-
 const waitImmediate = util.promisify(setImmediate);
 
 let allURLs = [];
