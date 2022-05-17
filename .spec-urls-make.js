@@ -10,6 +10,7 @@ const request = require('sync-request');
 
 const util = require('util');
 const { JSDOM } = require('jsdom');
+const { URL } = require('url');
 const waitImmediate = util.promisify(setImmediate);
 
 let allURLs = [];
@@ -146,11 +147,17 @@ const getRemoteContents = (specURL, requestURL, seconds) => {
   }
 };
 
-const processSpecURL = async (specURL, specJSONfile, seconds) => {
+const processSpecURL =
+    async (specURL, specJSONfile, seconds, originalURL = null) => {
   let requestURL = specURL;
   if (respecRawSpecs.includes(requestURL)) {
     requestURL =
       "https://labs.w3.org/spec-generator/?type=respec&url=" + requestURL;
+  }
+  if (requestURL.startsWith('https://drafts.csswg.org/')) {
+    requestURL =
+      'https://andreubotella.com/csswg-auto-build/'
+        + requestURL.substring(25);
   }
   const contents = getRemoteContents(specURL, requestURL, seconds);
   if (contents && contents.match(/respec-w3c-/)) {
@@ -159,6 +166,13 @@ const processSpecURL = async (specURL, specJSONfile, seconds) => {
   const dom = new JSDOM(contents);
   const document = dom.window.document;
 
+  const meta = document.querySelector('meta[http-equiv=refresh]');
+  if (meta) {
+    const redirectURL =
+      new URL(meta.content.split('=')[1], requestURL).href;
+    processSpecURL(redirectURL, specJSONfile, seconds, requestURL);
+    return;
+  }
   if (document.querySelector('script[src*="respec"]') ||
       document.querySelector('meta[content*="ReSpec"]')) {
     if (!respecSpecs.includes(specJSONfile)) {
@@ -180,9 +194,18 @@ const processSpecURL = async (specURL, specJSONfile, seconds) => {
   const allNameElements =
     [...document.querySelectorAll('*:not(meta)[name]')];
 
+  if (originalURL) {
+    requestURL = originalURL;
+  }
+
   if (requestURL
       .startsWith('https://labs.w3.org/spec-generator/')) {
     requestURL = requestURL.substring(52);
+  }
+
+  if (requestURL.startsWith('https://andreubotella.com')) {
+    requestURL =
+      'https://drafts.csswg.org' + requestURL.substring(42);
   }
 
   if (specJSONfile === 'mathml.json') {
