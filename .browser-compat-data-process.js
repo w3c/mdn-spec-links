@@ -7,7 +7,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const request = require('sync-request');
 const PATH = require('path');
-const URL = require('url');
+const { URL } = require('url');
 
 const log = msg => console.log(`${msg}`);
 const note = msg => console.log(chalk`{cyanBright     ${msg}}`);
@@ -617,13 +617,13 @@ const fixCanIUseSpecURLs = (key, data) => {
     if (specURL.endsWith('ecma262/#')) {
       specURL = 'https://tc39.es/ecma262/#sec-generator-function-definitions';
     }
-    const parsedURL = URL.parse(specURL);
+    const parsedURL = new URL(specURL);
     if (!parsedURL.hash) {
       return data;
     }
     if (!specURL.startsWith('https://html.spec.whatwg.org/')
       && !specURL.startsWith('https://tc39.es/ecma262/')) {
-      const base = parsedURL.host + parsedURL.path;
+      const base = parsedURL.host + parsedURL.pathname;
       if (isObsolete(base)) {
         return data;
       }
@@ -691,9 +691,14 @@ const getSpecShortnameAndLocationKey = (url, feature, mdnURL) => {
   }
   let locationkey = '';
   let baseurl = '';
-  let path = URL.parse(url).path;
-  const host = URL.parse(url).host;
-  const fragment = URL.parse(url).hash.slice(1);
+  let path = new URL(url).pathname;
+  const host = new URL(url).host;
+  let fragment = new URL(url).hash.slice(1);
+  try {
+    fragment = decodeURIComponent(fragment);
+  } catch {
+    warn(`${feature}: odd fragment: ${fragment}`);
+  }
   const filename = path.split('/').slice(-1)[0];
   if (filename !== '') {
     locationkey = filename + '#' + fragment;
@@ -1036,12 +1041,12 @@ const addSpecLink = (
 };
 
 const isBrokenURL = url => {
-  const parsedURL = URL.parse(url);
+  const parsedURL = new URL(url);
   return (
     url.startsWith("https://www.khronos.org/registry/webgl/extensions/") ||
     !parsedURL.host ||
     !url.includes('#') ||
-    parsedURL.path.includes('http://') ||
+    parsedURL.pathname.includes('http://') ||
     parsedURL.hash.includes('http://')
   );
 };
@@ -1066,7 +1071,7 @@ const isForTargetJSONfile = (specURL, feature, mdnURL)  => {
 };
 
 const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
-  const parsedURL = URL.parse(url);
+  const parsedURL = new URL(url);
   if (url.startsWith('https://www.rfc-editor.org/rfc/rfc2324')) {
     return; // 'I'm a teapot' RFC; ignore
   }
@@ -1155,7 +1160,7 @@ const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
 };
 
 const processMdnURL = (mdnURL, feature) => {
-  const mdnURLjson = (mdnOrigin + URL.parse(mdnURL).path) + '/index.json';
+  const mdnURLjson = (mdnOrigin + new URL(mdnURL).pathname) + '/index.json';
   const options = {
     headers: { 'User-Agent': 'mdn-spec-links-script' },
     gzip: false, // prevent Z_BUF_ERROR 'unexpected end of file'
@@ -1205,7 +1210,7 @@ const processBCD = (key, data) => {
       return data;
     }
     let mdnURL = 'https://developer.mozilla.org/en-US' +
-      URL.parse(bcdData.mdn_url).path;
+      new URL(bcdData.mdn_url).pathname;
     const specURLs = bcdData.spec_url;
     if (targetJSONfile !== '') {
       if (specURLs instanceof Array) {
@@ -1225,8 +1230,8 @@ const processBCD = (key, data) => {
         }
       }
     }
-    if (URL.parse(bcdData.mdn_url).hash) {
-      mdnURL += URL.parse(bcdData.mdn_url).hash;
+    if (new URL(bcdData.mdn_url).hash) {
+      mdnURL += new URL(bcdData.mdn_url).hash;
     }
     const mdnData = processMdnURL(mdnURL, feature);
     if (mdnData === null) {
