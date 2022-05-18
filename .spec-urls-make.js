@@ -14,9 +14,9 @@ const { URL } = require('url');
 const waitImmediate = util.promisify(setImmediate);
 
 let allURLs = [];
-let bikeshedSpecs = [];
-let respecSpecs = [];
-let otherSpecs = [];
+const bikeshedSpecs = [];
+const respecSpecs = [];
+const otherSpecs = [];
 const allURLsFile = 'SPECURLS.json';
 const bikeshedSpecsFile = 'BIKESHED_SPECS.txt';
 const respecSpecsFile = 'RESPEC_SPECS.txt';
@@ -153,7 +153,7 @@ const processSpecURL =
   let requestURL = specURL;
   if (respecRawSpecs.includes(requestURL)) {
     requestURL =
-      "https://labs.w3.org/spec-generator/?type=respec&url=" + requestURL;
+      'https://labs.w3.org/spec-generator/?type=respec&url=' + requestURL;
   }
   if (requestURL.startsWith('https://drafts.csswg.org/')) {
     requestURL =
