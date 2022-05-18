@@ -33,18 +33,10 @@ const response = request(
   'https://raw.githubusercontent.com/Fyrd/caniuse/master/data.json',
   options,
 );
-let specs = Object.create(null);
+const specs = Object.create(null);
 
 let bcdJSONfilename = '';
 let targetJSONfile = '';
-
-const sleep = ms => {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < ms * 1000);
-};
 
 chalk.level = 3;
 
@@ -517,10 +509,9 @@ const fixCanIUseSpecURLs = (key, data) => {
         'https://tc39.es/ecma262/',
       );
     }
-    for (var specBaseURL in urlAdjustmentMap) {
+    for (const specBaseURL in urlAdjustmentMap) {
       if (url.startsWith(specBaseURL)) {
-        var target, replacement;
-        [target, replacement] = urlAdjustmentMap[specBaseURL];
+        const [target, replacement] = urlAdjustmentMap[specBaseURL];
         return url.replace(target, replacement);
       }
     }
@@ -784,7 +775,7 @@ const getDataForEngine = engineSupport => {
     'altname': false,
   };
   if (engineSupport instanceof Array) {
-    for (var versionDetails of engineSupport) {
+    for (const versionDetails of engineSupport) {
       if ('version_removed' in versionDetails) {
         continue;
       }
@@ -913,12 +904,12 @@ const getSupportData = support => {
 };
 
 const adjustSupport = support => {
-  for (var browser in support) {
+  for (const browser in support) {
     if ('chrome' == browser) {
       const chromeSupport = support.chrome;
       support.edge_blink = JSON.parse(JSON.stringify(chromeSupport));
       if (chromeSupport instanceof Array) {
-        for (var i = 0; i < chromeSupport.length; i++) {
+        for (let i = 0; i < chromeSupport.length; i++) {
           if (!('version_removed' in chromeSupport[i])) {
             support.edge_blink[i].version_added = fixEdgeBlinkVersion(
               chromeSupport[i].version_added
@@ -977,7 +968,7 @@ const addSpecLink = (
   support,
   caniuse
 ) => {
-  let featureDetails = Object.create(null);
+  const featureDetails = Object.create(null);
   const supportData = getSupportData(support);
   if ('status' in bcdData && !bcdData.status.experimental &&
     supportData.engines.length < 2) {
@@ -1052,8 +1043,7 @@ const isBrokenURL = url => {
 };
 
 const isForTargetJSONfile = (specURL, feature, mdnURL)  => {
-  var baseurl;
-  [baseurl] = getSpecShortnameAndLocationKey(
+  const [baseurl] = getSpecShortnameAndLocationKey(
     specURL,
     feature,
     mdnURL
@@ -1137,8 +1127,7 @@ const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
       .split('.')
       .reduce((o, i) => o[i], data);
   }
-  var shortname, baseurl, locationkey;
-  [shortname, baseurl, locationkey] = getSpecShortnameAndLocationKey(
+  const [shortname, baseurl, locationkey] = getSpecShortnameAndLocationKey(
     url,
     feature,
     mdnURL
@@ -1215,7 +1204,7 @@ const processBCD = (key, data) => {
     if (targetJSONfile !== '') {
       if (specURLs instanceof Array) {
         let hasAnchorForTargetJSONfile = false;
-        for (var i = 0; i < specURLs.length; i++) {
+        for (let i = 0; i < specURLs.length; i++) {
           if (isForTargetJSONfile(specURLs[i], feature, mdnURL)) {
             hasAnchorForTargetJSONfile = true;
           }
@@ -1256,7 +1245,7 @@ const processBCD = (key, data) => {
  */
 const processFile = filename => {
   log(`Processing ${filename}`);
-  let bcdFile = fs.readFileSync(filename, 'utf-8').trim();
+  const bcdFile = fs.readFileSync(filename, 'utf-8').trim();
   bcdJSONfilename = filename;
   JSON.parse(bcdFile, processBCD);
 };
@@ -1317,7 +1306,7 @@ if (require.main === module) {
     JSON.stringify(SPECMAP, null, 4) + '\n',
     'utf-8'
   );
-  for (var shortname in specs) {
+  for (const shortname in specs) {
     const filename = shortname + '.json';
     if ('' != targetJSONfile && filename !== targetJSONfile) {
       continue;
