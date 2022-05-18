@@ -2,22 +2,25 @@
 /* Any copyright is dedicated to the Public Domain.
  * http://creativecommons.org/publicdomain/zero/1.0/ */
 
-'use strict';
-const chalk = require('chalk');
-const fs = require('fs');
-const request = require('sync-request');
-const PATH = require('path');
-const URL = require('url');
-const zlib = require('zlib');
+"use strict";
+import chalk from "chalk";
+import { readFileSync, existsSync, statSync, readdirSync } from "fs";
+import request from "sync-request";
+import { resolve, extname, join, basename } from "path";
+import { gunzipSync } from "zlib";
+import path from "path";
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const { JSDOM } = require('jsdom');
+import { JSDOM } from "jsdom";
 
-const log = msg => console.log(`${msg}`);
-const info = msg => console.log(chalk`{keyword('dimgrey')     ${msg}}`);
-const warn = msg => console.warn(chalk`{yellowBright     ${msg}}`);
-const error = msg => console.error(chalk`{redBright     ${msg}}`);
+const log = (msg) => console.log(`${msg}`);
+const info = (msg) => console.log(chalk`{keyword('dimgrey')     ${msg}}`);
+const warn = (msg) => console.warn(chalk`{yellowBright     ${msg}}`);
+const error = (msg) => console.error(chalk`{redBright     ${msg}}`);
 
-const needsSpecURL = mdnURL => {
+const needsSpecURL = (mdnURL) => {
   const exceptions = [
     "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createConicGradient",
     "https://developer.mozilla.org/docs/Web/API/Document/featurePolicy",
@@ -174,18 +177,18 @@ const needsSpecURL = mdnURL => {
     "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
     // FIXME: dunno what the problem is with the following
     "https://developer.mozilla.org/docs/Web/CSS/path()",
-  ]
+  ];
   if (exceptions.includes(mdnURL)) {
     return false;
   }
   const slugSubstringsNotNeedingSpecURLs = [];
-  return !slugSubstringsNotNeedingSpecURLs.some(substring =>
-    mdnURL.includes(substring),
+  return !slugSubstringsNotNeedingSpecURLs.some((substring) =>
+    mdnURL.includes(substring)
   );
 };
 
-log('loading SPECURLS.json...');
-const SPECURLS = JSON.parse(fs.readFileSync('SPECURLS.json', 'utf-8'));
+log("loading SPECURLS.json...");
+const SPECURLS = JSON.parse(readFileSync("SPECURLS.json", "utf-8"));
 
 const MDNURLS = [];
 let file;
@@ -195,24 +198,24 @@ chalk.level = 3;
 const checkSpecURLs = (key, data) => {
   let deprecated = false;
   let standard = true;
-  if (data && data instanceof Object && '__compat' in data) {
+  if (data && data instanceof Object && "__compat" in data) {
     const feature = key;
     const bcdFeatureData = data.__compat;
     const mdn_url = bcdFeatureData.mdn_url;
-    if ('standard_track' in bcdFeatureData.status) {
+    if ("standard_track" in bcdFeatureData.status) {
       standard = bcdFeatureData.status.standard_track;
       if (!standard) {
         info(`${file}:${feature}: non-standard`);
       }
     }
-    if ('deprecated' in bcdFeatureData.status) {
+    if ("deprecated" in bcdFeatureData.status) {
       deprecated = bcdFeatureData.status.deprecated;
       if (!deprecated) {
         info(`${file}:${feature}: deprecated`);
       }
     }
     if (!mdn_url && !(deprecated || !standard)) {
-      if (!key.includes('_')) {
+      if (!key.includes("_")) {
         warn(`${file}:${feature}: no mdn_url`);
       }
     }
@@ -231,7 +234,7 @@ const checkSpecURLs = (key, data) => {
       } else {
         checkSpecURL(file, feature, spec_url, mdn_url, standard, deprecated);
       }
-    } else if (mdn_url && !URL.parse(mdn_url).hash && standard && !deprecated) {
+    } else if (mdn_url && !new URL(mdn_url).hash && standard && !deprecated) {
       if (needsSpecURL(mdn_url) && MDNURLS.includes(mdn_url)) {
         error(`${file}:${feature}: ${mdn_url} needs spec URL`);
       }
@@ -246,7 +249,7 @@ const checkSpecURL = (
   spec_url,
   mdn_url,
   standard,
-  deprecated,
+  deprecated
 ) => {
   /*
    * // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12171
@@ -255,34 +258,38 @@ const checkSpecURL = (
    * }
    */
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14600
-  if (spec_url.startsWith('https://wicg.github.io/savedata/#save-data-request-header-field')) {
+  if (
+    spec_url.startsWith(
+      "https://wicg.github.io/savedata/#save-data-request-header-field"
+    )
+  ) {
     return;
   }
   // FIXME https://github.com/mdn/browser-compat-data/pull/16317
-  if (spec_url.startsWith('https://www.w3.org/TR/CSP3')) {
+  if (spec_url.startsWith("https://www.w3.org/TR/CSP3")) {
     return;
   }
   // FIXME https://github.com/mdn/browser-compat-data/pull/16318
-  if (spec_url.startsWith('https://drafts.fxtf.org/filter-effects-1')) {
+  if (spec_url.startsWith("https://drafts.fxtf.org/filter-effects-1")) {
     return;
   }
   // FIXME https://github.com/mdn/browser-compat-data/pull/16319
-  if (spec_url.startsWith('https://tc39.es/proposal-temporal')) {
+  if (spec_url.startsWith("https://tc39.es/proposal-temporal")) {
     return;
   }
-  if (spec_url.startsWith('https://www.w3.org/TR/SVG11/')) {
+  if (spec_url.startsWith("https://www.w3.org/TR/SVG11/")) {
     return;
   }
   if (
-    spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc2324') ||
-    spec_url.startsWith('https://www.rfc-editor.org/rfc/rfc7168')
+    spec_url.startsWith("https://www.rfc-editor.org/rfc/rfc2324") ||
+    spec_url.startsWith("https://www.rfc-editor.org/rfc/rfc7168")
   ) {
     // "I'm a teapot" RFC; ignore
     return;
   }
   if (
     spec_url.match(
-      /https:\/\/www.khronos.org\/registry\/webgl\/extensions\/[^/]+\//,
+      /https:\/\/www.khronos.org\/registry\/webgl\/extensions\/[^/]+\//
     )
   ) {
     return;
@@ -298,44 +305,44 @@ const checkSpecURL = (
 /**
  * @param {Promise<void>} filename
  */
-const processFile = filename => {
+const processFile = (filename) => {
   log(`Processing ${filename}`);
-  JSON.parse(fs.readFileSync(filename, 'utf-8').trim(), checkSpecURLs);
+  JSON.parse(readFileSync(filename, "utf-8").trim(), checkSpecURLs);
 };
 
-if (require.main === module) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   /**
    * @param {string[]} files
    */
   const load = (...files) => {
     const options = {
-      headers: { 'User-Agent': 'bcd-maintenance-script' },
+      headers: { "User-Agent": "bcd-maintenance-script" },
       gzip: true,
     };
     const response = request(
-      'GET',
-      'https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz',
-      options,
+      "GET",
+      "https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz",
+      options
     );
-    const xml = zlib.gunzipSync(response.getBody()).toString('utf8');
+    const xml = gunzipSync(response.getBody()).toString("utf8");
     const dom = new JSDOM("");
     const DOMParser = dom.window.DOMParser;
-    const parser = new DOMParser;
+    const parser = new DOMParser();
     const doc = parser.parseFromString(xml, "text/xml");
     const loc_elements = doc.documentElement.querySelectorAll("loc");
     for (let i = 0; i < loc_elements.length; i++) {
       const path = loc_elements[i].textContent.substring(36);
-      MDNURLS.push('https://developer.mozilla.org/' + path);
+      MDNURLS.push("https://developer.mozilla.org/" + path);
     }
     for (file of files) {
       if (file.indexOf(__dirname) !== 0) {
-        file = PATH.resolve(__dirname, file);
+        file = resolve(__dirname, file);
       }
-      if (!fs.existsSync(file)) {
+      if (!existsSync(file)) {
         continue; // Ignore non-existent files
       }
-      if (fs.statSync(file).isFile()) {
-        if (PATH.extname(file) === '.json') {
+      if (statSync(file).isFile()) {
+        if (extname(file) === ".json") {
           processFile(file);
         }
         continue;
@@ -344,30 +351,30 @@ if (require.main === module) {
     }
   };
 
-  const subFiles = file =>
-    fs.readdirSync(file).map(subfile => {
-      return PATH.join(file, subfile);
+  const subFiles = (file) =>
+    readdirSync(file).map((subfile) => {
+      return join(file, subfile);
     });
 
   let subdir = "";
-  if (PATH.basename(process.env.PWD) !== "browser-compat-data") {
-    subdir = "browser-compat-data/"
+  if (basename(process.env.PWD) !== "browser-compat-data") {
+    subdir = "browser-compat-data/";
   }
 
-  if (process.argv[2] && process.argv[2] !== 'all') {
+  if (process.argv[2] && process.argv[2] !== "all") {
     load(subdir + process.argv[2]);
   } else {
     load(
-      subdir + 'api',
-      subdir + 'css',
-      subdir + 'html',
-      subdir + 'http',
-      subdir + 'javascript',
-      subdir + 'mathml',
-      subdir + 'svg',
-      subdir + 'webdriver',
+      subdir + "api",
+      subdir + "css",
+      subdir + "html",
+      subdir + "http",
+      subdir + "javascript",
+      subdir + "mathml",
+      subdir + "svg",
+      subdir + "webdriver"
     );
   }
 }
 
-module.exports = { checkSpecURLs, processFile };
+export default { checkSpecURLs, processFile };
