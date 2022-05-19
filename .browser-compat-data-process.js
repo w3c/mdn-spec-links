@@ -780,6 +780,10 @@ const getSpecShortnameAndLocationKey = (url, feature, mdnURL) => {
      * directory of the file). */
     shortname = path.split("/").slice(-2).reverse().pop().toLowerCase();
   }
+  if (url.startsWith("https://sourcemaps.info/")) {
+    baseurl = "https://sourcemaps.info/spec.html";
+    shortname = "sourcemaps";
+  }
   if (baseurl in SPECMAP) {
     shortname = SPECMAP[baseurl].slice(0, -5);
   } else {

@@ -265,14 +265,6 @@ const checkSpecURL = (
   ) {
     return;
   }
-  // FIXME https://github.com/mdn/browser-compat-data/pull/16317
-  if (spec_url.startsWith("https://www.w3.org/TR/CSP3")) {
-    return;
-  }
-  // FIXME https://github.com/mdn/browser-compat-data/pull/16318
-  if (spec_url.startsWith("https://drafts.fxtf.org/filter-effects-1")) {
-    return;
-  }
   // FIXME https://github.com/mdn/browser-compat-data/pull/16319
   if (spec_url.startsWith("https://tc39.es/proposal-temporal")) {
     return;
