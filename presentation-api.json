@@ -923,7 +923,7 @@
             "filename": "api/PresentationConnectionAvailableEvent.json",
             "name": "connection",
             "slug": "API/PresentationConnectionAvailableEvent/connection",
-            "summary": "When an incoming connection is created, a receiving user agent fires a trusted event, named connectionavailable, on a PresentationReceiver. The trusted event is fired at the presentation controller's monitor, using the PresentationConnectionAvailableEvent interface, with the connection attribute set to the PresentationConnection object that was created.",
+            "summary": "The event is fired for all connections that are created when monitoring incoming presentation connections.",
             "support": {
                 "chrome": {
                     "version_added": "47"
@@ -1350,7 +1350,7 @@
             "filename": "api/PresentationRequest.json",
             "name": "reconnect",
             "slug": "API/PresentationRequest/reconnect",
-            "summary": "When the reconnect(presentationId) method is called on a PresentationRequest presentationRequest, the user agent MUST run the following steps to reconnect to a presentation:",
+            "summary": "P, a Promise.",
             "support": {
                 "chrome": {
                     "version_added": "47"
