@@ -12,28 +12,46 @@
             "summary": "The MediaCapabilities.decodingInfo() method, part of the Media Capabilities API, returns a promise with the tested media configuration's capabilities info. This contains the three boolean properties supported, smooth, and powerefficient, which describe whether decoding the media described would be supported, smooth, and powerefficient.",
             "support": {
                 "chrome": {
-                    "version_added": "66"
+                    "version_added": "66",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
                 },
                 "chrome_android": {
-                    "version_added": "66"
+                    "version_added": "66",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "63"
+                    "version_added": "63",
+                    "notes": "Before Firefox 101, <code>decodingInfo()</code> ignored <code>codecs</code> parameter options for <code>av01</code> codecs (treating them as <code>av1</code>)."
                 },
                 "firefox_android": {
-                    "version_added": "63"
+                    "version_added": "63",
+                    "notes": "Before Firefox 101, <code>decodingInfo()</code> ignored <code>codecs</code> parameter options for <code>av01</code> codecs (treating them as <code>av1</code>)."
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "53"
+                    "version_added": "53",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
                 },
                 "opera_android": {
-                    "version_added": "48"
+                    "version_added": "48",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
                 },
                 "safari": {
                     "version_added": "13"
@@ -42,13 +60,25 @@
                     "version_added": "13"
                 },
                 "samsunginternet_android": {
-                    "version_added": "9.0"
+                    "version_added": "9.0",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
                 },
                 "webview_android": {
-                    "version_added": "66"
+                    "version_added": "66",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": [
+                        "<code>codecs</code> string can contain any subset of optional parameters (should be all or none).",
+                        "Errors if <code>codecs</code> string contains unexpected characters (should evaluate string up to character)."
+                    ]
                 }
             },
             "title": "MediaCapabilities.decodingInfo()"
