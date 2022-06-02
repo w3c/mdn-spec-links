@@ -265,6 +265,14 @@ const checkSpecURL = (
   ) {
     return;
   }
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16520
+  if (spec_url.startsWith("https://drafts.css-houdini.org/css-paint-api-1/")) {
+    return;
+  }
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16520
+  if (spec_url.startsWith("https://drafts.css-houdini.org/css-typed-om-1/")) {
+    return;
+  }
   if (spec_url.startsWith("https://www.w3.org/TR/SVG11/")) {
     return;
   }
