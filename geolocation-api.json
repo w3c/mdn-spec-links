@@ -1319,10 +1319,9 @@
     "dfn-geolocation": [
         {
             "engines": [
-                "blink",
-                "gecko"
+                "blink"
             ],
-            "needsflag": [
+            "partial": [
                 "gecko"
             ],
             "filename": "http/headers/feature-policy.json",
@@ -1339,40 +1338,16 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "74",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "65",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.security.featurePolicy.header.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "79",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "65",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.security.featurePolicy.header.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "74",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                },
+                "firefox_android": {
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                },
                 "ie": {
                     "version_added": false
                 },

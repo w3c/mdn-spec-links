@@ -1388,7 +1388,7 @@
             "filename": "api/MediaKeySystemAccess.json",
             "name": "keySystem",
             "slug": "API/MediaKeySystemAccess/keySystem",
-            "summary": "The MediaKeySystemAccess.keySystem read-only property returns a DOMString identifying the key system being used.",
+            "summary": "The MediaKeySystemAccess.keySystem read-only property returns a string identifying the key system being used.",
             "support": {
                 "chrome": {
                     "version_added": "42"
@@ -1770,7 +1770,7 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "65",
+                    "version_added": "74",
                     "flags": [
                         {
                             "type": "preference",
@@ -1780,14 +1780,7 @@
                     ]
                 },
                 "firefox_android": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.security.featurePolicy.header.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false

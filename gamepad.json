@@ -1066,12 +1066,13 @@
     "permission-policy": [
         {
             "engines": [
-                "blink",
+                "blink"
+            ],
+            "partial": [
                 "gecko"
             ],
             "needsflag": [
-                "blink",
-                "gecko"
+                "blink"
             ],
             "filename": "http/headers/feature-policy.json",
             "name": "gamepad",
@@ -1101,48 +1102,22 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "91",
-                        "partial_implementation": true,
-                        "notes": [
-                            "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
-                            "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification)."
-                        ]
-                    },
-                    {
-                        "version_added": "91",
-                        "notes": "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification).",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.security.featurePolicy.header.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": [
-                    {
-                        "version_added": "91",
-                        "partial_implementation": true,
-                        "notes": [
-                            "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
-                            "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification)."
-                        ]
-                    },
-                    {
-                        "version_added": "91",
-                        "notes": "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification).",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.security.featurePolicy.header.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "91",
+                    "partial_implementation": true,
+                    "notes": [
+                        "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
+                        "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification)."
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "91",
+                    "partial_implementation": true,
+                    "notes": [
+                        "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
+                        "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification)."
+                    ]
+                },
                 "ie": {
                     "version_added": false
                 },

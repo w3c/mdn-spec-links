@@ -490,14 +490,11 @@
     "permissions-policy-integration": [
         {
             "engines": [
-                "blink",
-                "gecko"
+                "blink"
             ],
             "partial": [
+                "gecko",
                 "webkit"
-            ],
-            "needsflag": [
-                "gecko"
             ],
             "filename": "http/headers/feature-policy.json",
             "name": "display-capture",
@@ -513,23 +510,11 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "74",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "67",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.security.featurePolicy.header.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "74",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                },
                 "firefox_android": {
                     "version_added": false
                 },
