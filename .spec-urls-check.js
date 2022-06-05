@@ -177,6 +177,8 @@ const needsSpecURL = (mdnURL) => {
     "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
     // FIXME: dunno what the problem is with the following
     "https://developer.mozilla.org/docs/Web/CSS/path()",
+    // FIXME: temporary https://github.com/mdn/browser-compat-data/pull/16539
+    "https://developer.mozilla.org/docs/Web/CSS/@media/update-frequency",
   ];
   if (exceptions.includes(mdnURL)) {
     return false;
