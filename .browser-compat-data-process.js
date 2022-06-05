@@ -849,8 +849,14 @@ const getDataForEngine = (engineSupport) => {
     prefixed: false,
     altname: false,
   };
+  if (engineSupport === "mirror") {
+    return engineData;
+  }
   if (engineSupport instanceof Array) {
     for (const versionDetails of engineSupport) {
+      if (versionDetails === "mirror") {
+        continue;
+      }
       if ("version_removed" in versionDetails) {
         continue;
       }
@@ -1003,6 +1009,9 @@ const adjustSupport = (support) => {
     }
     if ("edge" == browser) {
       const edgeLegacySupport = support.edge;
+      if (edgeLegacySupport === "mirror") {
+        continue;
+      }
       support.edge = Object.create(null);
       if (edgeLegacySupport instanceof Array) {
         if (!("version_removed" in edgeLegacySupport[0])) {
