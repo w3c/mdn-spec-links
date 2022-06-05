@@ -762,7 +762,10 @@ const getSpecShortnameAndLocationKey = (url, feature, mdnURL) => {
     baseurl = url.split("#")[0];
   }
   if (baseurl.slice(-2) === "//") {
-    error(`${feature}: ${mdnURL} has bad spec URL ${url}`);
+    // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16527
+    if (!url.startsWith("https://www.w3.org/TR/largest-contentful-paint")) {
+      error(`${feature}: ${mdnURL} has bad spec URL ${url}`);
+    }
     baseurl = baseurl.slice(0, -1);
   }
   baseurl = baseurl.slice(-1) !== "/" ? baseurl + "/" : baseurl;

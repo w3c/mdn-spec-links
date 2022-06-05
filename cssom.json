@@ -1986,9 +1986,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/CSSStyleSheet.json",
             "name": "CSSStyleSheet",
             "slug": "API/CSSStyleSheet/CSSStyleSheet",
@@ -2003,19 +2000,25 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "73",
-                    "notes": "See <a href='https://bugzil.la/1520690'>bug 1520690</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.constructable-stylesheets.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "101"
+                    },
+                    {
+                        "version_added": "73",
+                        "version_removed": "101",
+                        "notes": "See <a href='https://bugzil.la/1520690'>bug 1520690</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.constructable-stylesheets.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "101"
                 },
                 "ie": {
                     "version_added": false
@@ -2271,9 +2274,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/CSSStyleSheet.json",
             "name": "replace",
             "slug": "API/CSSStyleSheet/replace",
@@ -2288,19 +2288,25 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "75",
-                    "notes": "See <a href='https://bugzil.la/1613746'>bug 1613746</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.constructable-stylesheets.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "101"
+                    },
+                    {
+                        "version_added": "75",
+                        "version_removed": "101",
+                        "notes": "See <a href='https://bugzil.la/1613746'>bug 1613746</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.constructable-stylesheets.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "101"
                 },
                 "ie": {
                     "version_added": false
@@ -2336,9 +2342,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/CSSStyleSheet.json",
             "name": "replaceSync",
             "slug": "API/CSSStyleSheet/replaceSync",
@@ -2353,19 +2356,25 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "75",
-                    "notes": "See <a href='https://bugzil.la/1613746'>bug 1613746</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.constructable-stylesheets.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "101"
+                    },
+                    {
+                        "version_added": "75",
+                        "version_removed": "101",
+                        "notes": "See <a href='https://bugzil.la/1613746'>bug 1613746</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.constructable-stylesheets.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "101"
                 },
                 "ie": {
                     "version_added": false
@@ -3442,6 +3451,61 @@
                 }
             },
             "title": "ProcessingInstruction.sheet"
+        }
+    ],
+    "css-style-sheet-collections": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "alternate_stylesheet",
+            "slug": "CSS/Alternative_style_sheets",
+            "summary": "Specifying alternative style sheets in a web page provides a way for users to see multiple versions of a page, based on their needs or preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": "1",
+                    "version_removed": "48"
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "8"
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "version_removed": "48"
+                }
+            },
+            "title": "Alternative style sheets"
         }
     ]
 }

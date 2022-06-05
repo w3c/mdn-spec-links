@@ -834,9 +834,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "byobRequest",
             "slug": "API/ReadableByteStreamController/byobRequest",
@@ -854,18 +851,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -904,9 +907,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "close",
             "slug": "API/ReadableByteStreamController/close",
@@ -924,18 +924,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -974,9 +980,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "desiredSize",
             "slug": "API/ReadableByteStreamController/desiredSize",
@@ -994,18 +997,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -1044,9 +1053,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "enqueue",
             "slug": "API/ReadableByteStreamController/enqueue",
@@ -1064,18 +1070,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -1114,9 +1126,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "error",
             "slug": "API/ReadableByteStreamController/error",
@@ -1134,18 +1143,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -1184,9 +1199,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableByteStreamController.json",
             "name": "ReadableByteStreamController",
             "slug": "API/ReadableByteStreamController",
@@ -1212,18 +1224,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -1530,10 +1548,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -1544,7 +1563,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -1712,6 +1731,78 @@
             "title": "ReadableStream.tee()"
         }
     ],
+    "rs-transfer": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/ReadableStream.json",
+            "name": "transferable",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects",
+            "summary": "Transferable objects are objects that own resources that can be transferred from one context to another, ensuring that the resources are only available in one context at a time. Following a transfer, the original object is no longer usable; it no longer points to the transferred resource, and any attempt to read or write the object will throw an exception.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.transferable.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "Transferable objects"
+        }
+    ],
     "rs-class": [
         {
             "engines": [
@@ -1783,9 +1874,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "ReadableStreamBYOBReader",
             "slug": "API/ReadableStreamBYOBReader/ReadableStreamBYOBReader",
@@ -1803,18 +1891,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -1853,9 +1947,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "cancel",
             "slug": "API/ReadableStreamBYOBReader/cancel",
@@ -1873,18 +1964,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -1981,9 +2078,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "closed",
             "slug": "API/ReadableStreamBYOBReader/closed",
@@ -2001,18 +2095,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -2109,9 +2209,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "read",
             "slug": "API/ReadableStreamBYOBReader/read",
@@ -2129,18 +2226,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -2176,7 +2279,8 @@
     "ref-for-byob-reader-release-lock②": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "releaseLock",
@@ -2195,12 +2299,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -2239,9 +2355,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "ReadableStreamBYOBReader",
             "slug": "API/ReadableStreamBYOBReader",
@@ -2259,18 +2372,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -2313,9 +2432,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "respond",
             "slug": "API/ReadableStreamBYOBRequest/respond",
@@ -2333,18 +2449,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -2383,9 +2505,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "respondWithNewView",
             "slug": "API/ReadableStreamBYOBRequest/respondWithNewView",
@@ -2403,18 +2522,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -2453,9 +2578,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "view",
             "slug": "API/ReadableStreamBYOBRequest/view",
@@ -2473,18 +2595,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -2523,9 +2651,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "ReadableStreamBYOBRequest",
             "slug": "API/ReadableStreamBYOBRequest",
@@ -2543,18 +2668,24 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "99",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.streams.byte_streams.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "99",
+                        "version_removed": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.byte_streams.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3181,10 +3312,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3195,7 +3327,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3254,10 +3386,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3268,7 +3401,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3301,6 +3434,78 @@
             "title": "TransformStream.readable"
         }
     ],
+    "ts-transfer": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/TransformStream.json",
+            "name": "transferable",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects",
+            "summary": "Transferable objects are objects that own resources that can be transferred from one context to another, ensuring that the resources are only available in one context at a time. Following a transfer, the original object is no longer usable; it no longer points to the transferred resource, and any attempt to read or write the object will throw an exception.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.transferable.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "Transferable objects"
+        }
+    ],
     "ref-for-ts-writable②": [
         {
             "engines": [
@@ -3327,10 +3532,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3341,7 +3547,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3400,10 +3606,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3414,7 +3621,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3477,10 +3684,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3491,7 +3699,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3550,10 +3758,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3564,7 +3773,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3623,10 +3832,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3637,7 +3847,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3696,10 +3906,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3710,7 +3921,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -3777,10 +3988,11 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "102"
                     },
                     {
                         "version_added": "101",
+                        "version_removed": "102",
                         "flags": [
                             {
                                 "type": "preference",
@@ -3791,7 +4003,7 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": false
+                    "version_added": "102"
                 },
                 "ie": {
                     "version_added": false
@@ -4118,6 +4330,78 @@
                 }
             },
             "title": "WritableStream.locked"
+        }
+    ],
+    "ws-transfer": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/WritableStream.json",
+            "name": "transferable",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects",
+            "summary": "Transferable objects are objects that own resources that can be transferred from one context to another, ensuring that the resources are only available in one context at a time. Following a transfer, the original object is no longer usable; it no longer points to the transferred resource, and any attempt to read or write the object will throw an exception.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "87"
+                },
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "102",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.transferable.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "73"
+                },
+                "opera_android": {
+                    "version_added": "62"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "14.0"
+                },
+                "webview_android": {
+                    "version_added": "87"
+                },
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "Transferable objects"
         }
     ],
     "ws-class": [

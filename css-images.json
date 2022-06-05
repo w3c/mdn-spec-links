@@ -502,16 +502,16 @@
                         "notes": "Before Firefox 36, gradients weren't applied on the pre-multiplied color space, leading to shades of grey unexpectedly appearing when used with transparency."
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "49"
+                    },
+                    {
                         "prefix": "-moz-",
                         "version_added": "3.6",
                         "notes": [
                             "Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>.",
                             "Considers <code>&lt;angle&gt;</code> to start to the right, instead of the top. I.e. it considered an angle of <code>0deg</code> as a direction indicator pointing to the right."
                         ]
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
                     }
                 ],
                 "firefox_android": [
@@ -520,16 +520,16 @@
                         "notes": "Before Firefox 36, gradients weren't applied on the pre-multiplied color space, leading to shades of grey unexpectedly appearing when used with transparency."
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "49"
+                    },
+                    {
                         "prefix": "-moz-",
                         "version_added": "4",
                         "notes": [
                             "Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>.",
                             "Considers <code>&lt;angle&gt;</code> to start to the right, instead of the top. I.e. it considered an angle of <code>0deg</code> as a direction indicator pointing to the right."
                         ]
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
                     }
                 ],
                 "ie": {
@@ -541,14 +541,14 @@
                         "version_added": "12.1"
                     },
                     {
-                        "prefix": "-o-",
-                        "version_added": "11",
-                        "version_removed": "15",
+                        "prefix": "-webkit-",
+                        "version_added": "15",
                         "notes": "Considers <code>&lt;angle&gt;</code> to start to the right, instead of the top. I.e. it considered an angle of <code>0deg</code> as a direction indicator pointing to the right."
                     },
                     {
-                        "prefix": "-webkit-",
-                        "version_added": "15",
+                        "prefix": "-o-",
+                        "version_added": "11",
+                        "version_removed": "15",
                         "notes": "Considers <code>&lt;angle&gt;</code> to start to the right, instead of the top. I.e. it considered an angle of <code>0deg</code> as a direction indicator pointing to the right."
                     }
                 ],
@@ -557,14 +557,14 @@
                         "version_added": "12.1"
                     },
                     {
-                        "prefix": "-o-",
-                        "version_added": "11",
-                        "version_removed": "14",
+                        "prefix": "-webkit-",
+                        "version_added": "14",
                         "notes": "Considers <code>&lt;angle&gt;</code> to start to the right, instead of the top. I.e. it considered an angle of <code>0deg</code> as a direction indicator pointing to the right."
                     },
                     {
-                        "prefix": "-webkit-",
-                        "version_added": "14",
+                        "prefix": "-o-",
+                        "version_added": "11",
+                        "version_removed": "14",
                         "notes": "Considers <code>&lt;angle&gt;</code> to start to the right, instead of the top. I.e. it considered an angle of <code>0deg</code> as a direction indicator pointing to the right."
                     }
                 ],
@@ -664,13 +664,13 @@
                         "notes": "Before Firefox 36, gradients weren't applied on the pre-multiplied color space, leading to shades of grey unexpectedly appearing when used with transparency."
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "49"
+                    },
+                    {
                         "prefix": "-moz-",
                         "version_added": "3.6",
                         "notes": "Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
                     }
                 ],
                 "firefox_android": [
@@ -679,13 +679,13 @@
                         "notes": "Before Firefox 36, gradients weren't applied on the pre-multiplied color space, leading to shades of grey unexpectedly appearing when used with transparency."
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "49"
+                    },
+                    {
                         "prefix": "-moz-",
                         "version_added": "4",
                         "notes": "Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
                     }
                 ],
                 "ie": {
@@ -697,13 +697,13 @@
                         "version_added": "12.1"
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "15"
+                    },
+                    {
                         "prefix": "-o-",
                         "version_added": "11.6",
                         "version_removed": "15"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "15"
                     }
                 ],
                 "opera_android": [
@@ -711,13 +711,13 @@
                         "version_added": "12.1"
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "14"
+                    },
+                    {
                         "prefix": "-o-",
                         "version_added": "12",
                         "version_removed": "14"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "14"
                     }
                 ],
                 "safari": [
@@ -810,16 +810,16 @@
                         "notes": "Before Firefox 36, gradients weren't applied on the pre-multiplied color space, leading to shades of grey unexpectedly appearing when used with transparency."
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "49"
+                    },
+                    {
                         "prefix": "-moz-",
                         "version_added": "3.6",
                         "notes": [
                             "Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>.",
                             "Considers <code>&lt;angle&gt;</code> to start to the right, instead of the top. I.e. it considered an angle of <code>0deg</code> as a direction indicator pointing to the right."
                         ]
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
                     }
                 ],
                 "firefox_android": [
@@ -828,16 +828,16 @@
                         "notes": "Before Firefox 36, gradients weren't applied on the pre-multiplied color space, leading to shades of grey unexpectedly appearing when used with transparency."
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "49"
+                    },
+                    {
                         "prefix": "-moz-",
                         "version_added": "4",
                         "notes": [
                             "Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>.",
                             "Considers <code>&lt;angle&gt;</code> to start to the right, instead of the top. I.e. it considered an angle of <code>0deg</code> as a direction indicator pointing to the right."
                         ]
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
                     }
                 ],
                 "ie": {
@@ -974,13 +974,13 @@
                         "notes": "Before Firefox 36, gradients weren't applied on the pre-multiplied color space, leading to shades of grey unexpectedly appearing when used with transparency."
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "49"
+                    },
+                    {
                         "prefix": "-moz-",
                         "version_added": "3.6",
                         "notes": "Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
                     }
                 ],
                 "firefox_android": [
@@ -989,13 +989,13 @@
                         "notes": "Before Firefox 36, gradients weren't applied on the pre-multiplied color space, leading to shades of grey unexpectedly appearing when used with transparency."
                     },
                     {
+                        "prefix": "-webkit-",
+                        "version_added": "49"
+                    },
+                    {
                         "prefix": "-moz-",
                         "version_added": "10",
                         "notes": "Since Firefox 42, the prefixed version of gradients can be disabled by setting <code>layout.css.prefixes.gradients</code> to <code>false</code>."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
                     }
                 ],
                 "ie": {

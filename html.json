@@ -12778,7 +12778,7 @@
             "filename": "api/Document.json",
             "name": "write",
             "slug": "API/Document/write",
-            "summary": "The Document.write() method writes a string of text to a document stream opened by document.open().",
+            "summary": "The document.write() method writes a string of text to a document stream opened by document.open().",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -12820,7 +12820,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.write()"
+            "title": "document.write()"
         }
     ],
     "dom-document-writeln-dev": [
@@ -12947,7 +12947,7 @@
                     }
                 ]
             },
-            "title": "Document.writeln()"
+            "title": "document.writeln()"
         }
     ],
     "the-document-object": [
@@ -14734,61 +14734,6 @@
                 }
             },
             "title": "FormDataEvent.formData"
-        }
-    ],
-    "handler-onabort": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "onabort",
-            "slug": "API/GlobalEventHandlers/onabort",
-            "summary": "The onabort property of the GlobalEventHandlers mixin is the event handler for processing abort events.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": {
-                    "version_added": "9"
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "GlobalEventHandlers.onabort"
         }
     ],
     "handler-onblur": [
@@ -17773,7 +17718,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -17883,7 +17828,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -18103,7 +18048,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -24703,6 +24648,167 @@
             "title": "HTMLImageElement"
         }
     ],
+    "dom-cva-checkvalidity-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLInputElement.json",
+            "name": "checkValidity",
+            "slug": "API/HTMLInputElement/checkValidity",
+            "summary": "The HTMLInputElement.checkValidity() method returns a boolean value which indicates validity of the value of the element. If the value is invalid, this method also fires the invalid event on the element.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLInputElement.checkValidity()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLObjectElement.json",
+            "name": "checkValidity",
+            "slug": "API/HTMLObjectElement/checkValidity",
+            "summary": "The checkValidity() method of the HTMLObjectElement interface returns a boolean value that always is true, because object objects are never candidates for constraint validation.",
+            "support": {
+                "chrome": {
+                    "version_added": "10"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5.1"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLObjectElement.checkValidity()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLSelectElement.json",
+            "name": "checkValidity",
+            "slug": "API/HTMLSelectElement/checkValidity",
+            "summary": "The HTMLSelectElement.checkValidity() method checks whether the element has any constraints and whether it satisfies them. If the element fails its constraints, the browser fires a cancelable invalid event at the element, and then returns false.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "9"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLSelectElement.checkValidity()"
+        }
+    ],
     "event-invalid": [
         {
             "engines": [
@@ -25754,7 +25860,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -25864,7 +25970,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -29316,114 +29422,6 @@
             "title": "HTMLOListElement"
         }
     ],
-    "dom-cva-checkvalidity-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLObjectElement.json",
-            "name": "checkValidity",
-            "slug": "API/HTMLObjectElement/checkValidity",
-            "summary": "The checkValidity() method of the HTMLObjectElement interface returns a boolean value that always is true, because object objects are never candidates for constraint validation.",
-            "support": {
-                "chrome": {
-                    "version_added": "10"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "4"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5.1"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLObjectElement.checkValidity()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLSelectElement.json",
-            "name": "checkValidity",
-            "slug": "API/HTMLSelectElement/checkValidity",
-            "summary": "The HTMLSelectElement.checkValidity() method checks whether the element has any constraints and whether it satisfies them. If the element fails its constraints, the browser fires a cancelable invalid event at the element, and then returns false.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "4"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "9"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLSelectElement.checkValidity()"
-        }
-    ],
     "dom-object-contentdocument": [
         {
             "engines": [
@@ -30918,10 +30916,10 @@
             "summary": "The supports() static method of the HTMLScriptElement interface provides a simple and consistent method to feature-detect what types of scripts are supported by the user agent.",
             "support": {
                 "chrome": {
-                    "version_added": "97"
+                    "version_added": "96"
                 },
                 "chrome_android": {
-                    "version_added": "97"
+                    "version_added": "96"
                 },
                 "edge": {
                     "version_added": false
@@ -30936,10 +30934,10 @@
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "83"
+                    "version_added": "82"
                 },
                 "opera_android": {
-                    "version_added": false
+                    "version_added": "67"
                 },
                 "safari": {
                     "version_added": false
@@ -30948,13 +30946,13 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": false
+                    "version_added": "17.0"
                 },
                 "webview_android": {
-                    "version_added": "97"
+                    "version_added": "96"
                 },
                 "edge_blink": {
-                    "version_added": "97"
+                    "version_added": "96"
                 }
             },
             "title": "HTMLScriptElement.supports()"
@@ -31988,7 +31986,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -32043,7 +32041,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "safari_ios": {
                     "version_added": "1"
@@ -42055,6 +42053,117 @@
             "title": "TextMetrics"
         }
     ],
+    "dom-texttrack-activecues-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "activeCues",
+            "slug": "API/TextTrack/activeCues",
+            "summary": "The activeCues read-only property of the TextTrack interface returns a TextTrackCueList object listing the currently active cues.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31",
+                    "notes": "Starting in Firefox 69, cues are no longer incorrectly loaded when the <code>TextTrack</code>'s <code>mode</code> is <code>disabled</code>; if that's the case, the returned list is empty."
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack.activeCues"
+        }
+    ],
+    "dom-texttrack-addcue-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "addCue",
+            "slug": "API/TextTrack/addCue",
+            "summary": "The addCue() method of the TextTrack interface adds a new cue to the list of cues.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack.addCue()"
+        }
+    ],
     "handler-texttrack-oncuechange": [
         {
             "engines": [
@@ -42108,6 +42217,343 @@
                 }
             },
             "title": "TextTrack: cuechange event"
+        }
+    ],
+    "dom-texttrack-cues-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "cues",
+            "slug": "API/TextTrack/cues",
+            "summary": "The cues read-only property of the TextTrack interface returns a TextTrackCueList object containing all of the track's cues.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31",
+                    "notes": "Starting in Firefox 69, cues are no longer incorrectly loaded when the <code>TextTrack</code>'s <code>mode</code> is <code>disabled</code>; if that's the case, the returned list is empty."
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack.cues"
+        }
+    ],
+    "dom-texttrack-id-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "id",
+            "slug": "API/TextTrack/id",
+            "summary": "The id read-only property of the TextTrack interface returns the ID of the track if it has one.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "20"
+                },
+                "opera_android": {
+                    "version_added": "20"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "2.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack.id"
+        }
+    ],
+    "dom-texttrack-inbandmetadatatrackdispatchtype-dev": [
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "inBandMetadataTrackDispatchType",
+            "slug": "API/TextTrack/inBandMetadataTrackDispatchType",
+            "summary": "The inBandMetadataTrackDispatchType read-only property of the TextTrack interface returns the text track's in-band metadata dispatch type of the text track represented by the TextTrack object.",
+            "support": {
+                "chrome": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/754093'>bug 754093</a>."
+                },
+                "chrome_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/754093'>bug 754093</a>."
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/754093'>bug 754093</a>."
+                },
+                "opera_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/754093'>bug 754093</a>."
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/754093'>bug 754093</a>."
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/754093'>bug 754093</a>."
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/754093'>bug 754093</a>."
+                }
+            },
+            "title": "TextTrack.inBandMetadataTrackDispatchType"
+        }
+    ],
+    "dom-texttrack-kind-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "kind",
+            "slug": "API/TextTrack/kind",
+            "summary": "The kind read-only property of the TextTrack interface returns the kind of text track this object represents. This decides how the track will be handled by a user agent.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack.kind"
+        }
+    ],
+    "dom-texttrack-label-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "label",
+            "slug": "API/TextTrack/label",
+            "summary": "The label read-only property of the TextTrack interface returns a human-readable label for the text track, if it is available.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack.label"
+        }
+    ],
+    "dom-texttrack-language-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "language",
+            "slug": "API/TextTrack/language",
+            "summary": "The language read-only property of the TextTrack interface returns the language of the text track.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack.language"
         }
     ],
     "dom-texttrack-mode-dev": [
@@ -42164,6 +42610,61 @@
                 }
             },
             "title": "TextTrack.mode"
+        }
+    ],
+    "dom-texttrack-removecue-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/TextTrack.json",
+            "name": "removeCue",
+            "slug": "API/TextTrack/removeCue",
+            "summary": "The removeCue() method of the TextTrack interface removes a cue from the list of cues.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "31"
+                },
+                "firefox_android": {
+                    "version_added": "31"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "TextTrack.removeCue()"
         }
     ],
     "texttrack": [
@@ -50451,20 +50952,20 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "1"
-                    },
-                    {
                         "version_added": "27",
                         "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
+                    },
+                    {
+                        "version_added": "1"
                     }
                 ],
                 "firefox_android": [
                     {
-                        "version_added": "4"
-                    },
-                    {
                         "version_added": "27",
                         "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
+                    },
+                    {
+                        "version_added": "4"
                     }
                 ],
                 "ie": {
@@ -51386,7 +51887,7 @@
                     "notes": "From Firefox 29 to Firefox 40, the returned value was incorrectly percent-decoded."
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -51441,7 +51942,7 @@
                     "notes": "From Firefox 29 to Firefox 40, the returned value was incorrectly percent-decoded."
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -51496,7 +51997,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5",
+                    "version_added": "5.5",
                     "notes": "In Internet Explorer 9, the host of an <a href='https://developer.mozilla.org/docs/Web/HTML/Element/a'><code>&lt;a&gt;</code></a> always include the port (e.g. <code>developer.mozilla.org:443</code>), even if there is no explicit port in the <code>href</code> attribute value."
                 },
                 "opera": {
@@ -51550,7 +52051,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5",
+                    "version_added": "5.5",
                     "notes": "In Internet Explorer 9, the host of an <a href='https://developer.mozilla.org/docs/Web/HTML/Element/a'><code>&lt;a&gt;</code></a> always include the port (e.g. <code>developer.mozilla.org:443</code>), even if there is no explicit port in the <code>href</code> attribute value."
                 },
                 "opera": {
@@ -51606,7 +52107,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -51659,7 +52160,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -51714,7 +52215,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -51820,7 +52321,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -52150,7 +52651,7 @@
                     "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -52205,7 +52706,7 @@
                     "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -52260,7 +52761,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -52313,7 +52814,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -52368,7 +52869,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -52421,7 +52922,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -52478,7 +52979,7 @@
                     "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -52533,7 +53034,7 @@
                     "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
                 },
                 "ie": {
-                    "version_added": "5"
+                    "version_added": "5.5"
                 },
                 "opera": {
                     "version_added": "15"
@@ -54989,6 +55490,274 @@
             "title": "<br>: The Line Break element"
         }
     ],
+    "attr-fe-disabled": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/button.json",
+            "name": "disabled",
+            "slug": "HTML/Attributes/disabled",
+            "summary": "The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: disabled"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/fieldset.json",
+            "name": "disabled",
+            "slug": "HTML/Attributes/disabled",
+            "summary": "The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true,
+                    "notes": "Not all form control descendants of a disabled fieldset are properly disabled in IE11; see IE <a href='https://connect.microsoft.com/IE/feedbackdetail/view/817488'>bug 817488: input[type='file'] not disabled inside disabled fieldset</a> and IE <a href='https://connect.microsoft.com/IE/feedbackdetail/view/962368/can-still-edit-input-type-text-within-fieldset-disabled'>bug 962368: Can still edit input[type='text'] within fieldset[disabled]</a>."
+                },
+                "opera": {
+                    "version_added": "12"
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "6"
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: disabled"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "disabled",
+            "slug": "HTML/Attributes/disabled",
+            "summary": "The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: disabled"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/select.json",
+            "name": "disabled",
+            "slug": "HTML/Attributes/disabled",
+            "summary": "The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: disabled"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/textarea.json",
+            "name": "disabled",
+            "slug": "HTML/Attributes/disabled",
+            "summary": "The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "6"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: disabled"
+        }
+    ],
     "the-button-element": [
         {
             "engines": [
@@ -57172,6 +57941,1635 @@
             "title": "<img>: The Image Embed element"
         }
     ],
+    "attr-input-accept": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "accept",
+            "slug": "HTML/Attributes/accept",
+            "summary": "The accept attribute takes as its value a comma-separated list of one or more file types, or unique file type specifiers, describing which file types to allow.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "6"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: accept"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "attr-input-accept#attr-accept",
+            "slug": "HTML/Element/input#attr-accept",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "26"
+                },
+                "chrome_android": {
+                    "version_added": "26"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "37"
+                },
+                "firefox_android": {
+                    "version_added": "37"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "15"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-input-alt": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "alt",
+            "slug": "HTML/Element/input#alt",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-input-checked": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "checked",
+            "slug": "HTML/Element/input#checked",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-fe-dirname": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "dirname",
+            "slug": "HTML/Element/input#dirname",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "17"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "6"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "4.4"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-fae-form": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "form",
+            "slug": "HTML/Element/input#form",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "Attributes#attr-form",
+            "slug": "HTML/Attributes#attr-form",
+            "summary": "Elements in HTML have attributes; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "≤6"
+                },
+                "opera": {
+                    "version_added": "≤12.1"
+                },
+                "opera_android": {
+                    "version_added": "≤12.1"
+                },
+                "safari": {
+                    "version_added": "≤4"
+                },
+                "safari_ios": {
+                    "version_added": "≤3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute reference"
+        }
+    ],
+    "attr-fs-formaction": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "formaction",
+            "slug": "HTML/Element/input#formaction",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "9"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-fs-formenctype": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "formenctype",
+            "slug": "HTML/Element/input#formenctype",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "9"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-fs-formmethod": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "formmethod",
+            "slug": "HTML/Element/input#formmethod",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "9"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-fs-formnovalidate": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "formnovalidate",
+            "slug": "HTML/Element/input#formnovalidate",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-fs-formtarget": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "formtarget",
+            "slug": "HTML/Element/input#formtarget",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "9"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-input-list": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "list",
+            "slug": "HTML/Element/input#list",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "20"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": {
+                    "version_added": "12.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "4.4.3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "the-min-and-max-attributes": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "max",
+            "slug": "HTML/Attributes/max",
+            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails constraint validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present by is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "16"
+                },
+                "firefox_android": {
+                    "version_added": "16"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: max"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "min",
+            "slug": "HTML/Attributes/min",
+            "summary": "The min attribute defines the minimum value that is acceptable and valid for the input containing the attribute. If the value of the element is less than this, the element fails constraint validation. This value must be less than or equal to the value of the max attribute. If a value is specified for min that isn't a valid number, the input has no minimum value.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "16"
+                },
+                "firefox_android": {
+                    "version_added": "16"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: min"
+        }
+    ],
+    "the-maxlength-and-minlength-attributes": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "maxlength",
+            "slug": "HTML/Attributes/maxlength",
+            "summary": "The maxlength attribute defines the maximum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: maxlength"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "minlength",
+            "slug": "HTML/Attributes/minlength",
+            "summary": "The minlength attribute defines the minimum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher. If no minlength is specified, or an invalid value is specified, the input has no minimum length. This value must be less than or equal to the value of maxlength, otherwise the value will never be valid, as it is impossible to meet both criteria.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "51"
+                },
+                "firefox_android": {
+                    "version_added": "51"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "27"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: minlength"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/textarea.json",
+            "name": "maxlength",
+            "slug": "HTML/Attributes/maxlength",
+            "summary": "The maxlength attribute defines the maximum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: maxlength"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/textarea.json",
+            "name": "minlength",
+            "slug": "HTML/Attributes/minlength",
+            "summary": "The minlength attribute defines the minimum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher. If no minlength is specified, or an invalid value is specified, the input has no minimum length. This value must be less than or equal to the value of maxlength, otherwise the value will never be valid, as it is impossible to meet both criteria.",
+            "support": {
+                "chrome": {
+                    "version_added": "40"
+                },
+                "chrome_android": {
+                    "version_added": "40"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "51"
+                },
+                "firefox_android": {
+                    "version_added": "51"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "27"
+                },
+                "opera_android": {
+                    "version_added": "27"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "40"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: minlength"
+        }
+    ],
+    "attr-input-multiple": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "multiple",
+            "slug": "HTML/Attributes/multiple",
+            "summary": "The Boolean multiple attribute, if set, means the form control accepts one or more values. Valid for the email and file input types and the <select>, the manner by which the user opts for multiple values depends on the form control.",
+            "support": {
+                "chrome": {
+                    "version_added": "2"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.6"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: multiple"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "input#attr-multiple",
+            "slug": "HTML/Element/input#attr-multiple",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "2"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.6"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "≤12.1"
+                },
+                "opera_android": {
+                    "version_added": "≤12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "≤37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-fe-name": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "name",
+            "slug": "HTML/Element/input#name",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-input-pattern": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "pattern",
+            "slug": "HTML/Attributes/pattern",
+            "summary": "The pattern attribute specifies a regular expression the form control's value should match. If a non-null value doesn't conform to the constraints set by the pattern value, the ValidityState object's read-only patternMismatch property will be true.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: pattern"
+        }
+    ],
+    "attr-input-placeholder": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "placeholder",
+            "slug": "HTML/Element/input#placeholder",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "input#attr-placeholder",
+            "slug": "HTML/Element/input#attr-placeholder",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "≤12.1"
+                },
+                "opera_android": {
+                    "version_added": "≤12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "≤37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "the-readonly-attribute": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "readonly",
+            "slug": "HTML/Attributes/readonly",
+            "summary": "The Boolean readonly attribute, when present, makes the element not mutable, meaning the user can not edit the control.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: readonly"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/textarea.json",
+            "name": "readonly",
+            "slug": "HTML/Attributes/readonly",
+            "summary": "The Boolean readonly attribute, when present, makes the element not mutable, meaning the user can not edit the control.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "6"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: readonly"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "readonly",
+            "slug": "HTML/Attributes/readonly",
+            "summary": "The Boolean readonly attribute, when present, makes the element not mutable, meaning the user can not edit the control.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "≤6"
+                },
+                "opera": {
+                    "version_added": "≤12.1"
+                },
+                "opera_android": {
+                    "version_added": "≤12.1"
+                },
+                "safari": {
+                    "version_added": "≤4"
+                },
+                "safari_ios": {
+                    "version_added": "≤3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: readonly"
+        }
+    ],
+    "attr-input-src": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "src",
+            "slug": "HTML/Element/input#src",
+            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<input>: The Input (Form Input) element"
+        }
+    ],
+    "attr-input-step": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/input/attributes.json",
+            "name": "step",
+            "slug": "HTML/Attributes/step",
+            "summary": "The step attribute is a number that specifies the granularity that the value must adhere to or the keyword any. It is valid for the numeric input types, including the date, month, week, time, datetime-local, number and range types.",
+            "support": {
+                "chrome": {
+                    "version_added": "5"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "16"
+                },
+                "firefox_android": {
+                    "version_added": "16"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: step"
+        }
+    ],
     "button-state-(type=button)": [
         {
             "engines": [
@@ -58583,6 +60981,61 @@
             "title": "<kbd>: The Keyboard Input element"
         }
     ],
+    "attr-label-for": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/label.json",
+            "name": "for",
+            "slug": "HTML/Attributes/for",
+            "summary": "The for attribute is an allowed attribute for <label> and <output>. When used on a <label> element it indicates the form element that this label describes. When used on an <output> element it allows for an explicit relationship between the elements that represent values which are used in the output.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: for"
+        }
+    ],
     "the-label-element": [
         {
             "engines": [
@@ -58748,7 +61201,227 @@
             "title": "<li>: The List Item element"
         }
     ],
+    "attr-link-integrity": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "integrity",
+            "slug": "Security/Subresource_Integrity",
+            "summary": "Subresource Integrity (SRI) is a security feature that enables browsers to verify that resources they fetch (for example, from a CDN) are delivered without unexpected manipulation. It works by allowing you to provide a cryptographic hash that a fetched resource must match.",
+            "support": {
+                "chrome": {
+                    "version_added": "45"
+                },
+                "chrome_android": {
+                    "version_added": "45"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "43"
+                },
+                "firefox_android": {
+                    "version_added": "43"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "32"
+                },
+                "opera_android": {
+                    "version_added": "32"
+                },
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": {
+                    "version_added": "11.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "45"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Subresource Integrity"
+        }
+    ],
     "rel-alternate": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "alternate_stylesheet",
+            "slug": "CSS/Alternative_style_sheets",
+            "summary": "Specifying alternative style sheets in a web page provides a way for users to see multiple versions of a page, based on their needs or preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": "1",
+                    "version_removed": "48"
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "8"
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "version_removed": "48"
+                }
+            },
+            "title": "Alternative style sheets"
+        }
+    ],
+    "the-link-is-an-alternative-stylesheet": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "alternate_stylesheet",
+            "slug": "CSS/Alternative_style_sheets",
+            "summary": "Specifying alternative style sheets in a web page provides a way for users to see multiple versions of a page, based on their needs or preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": "1",
+                    "version_removed": "48"
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "8"
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "version_removed": "48"
+                }
+            },
+            "title": "Alternative style sheets"
+        }
+    ],
+    "attr-style-title": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "html/elements/link.json",
+            "name": "alternate_stylesheet",
+            "slug": "CSS/Alternative_style_sheets",
+            "summary": "Specifying alternative style sheets in a web page provides a way for users to see multiple versions of a page, based on their needs or preferences.",
+            "support": {
+                "chrome": {
+                    "version_added": "1",
+                    "version_removed": "48"
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "8"
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "version_removed": "48"
+                }
+            },
+            "title": "Alternative style sheets"
+        }
+    ],
+    "attr-meta-http-equiv-default-style": [
         {
             "engines": [
                 "gecko"
@@ -59738,6 +62411,114 @@
             "title": "<meta>: The metadata element"
         }
     ],
+    "attr-meter-max": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/meter.json",
+            "name": "max",
+            "slug": "HTML/Attributes/max",
+            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails constraint validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present by is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
+            "support": {
+                "chrome": {
+                    "version_added": "6"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "16"
+                },
+                "firefox_android": {
+                    "version_added": "16"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "11"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: max"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/meter.json",
+            "name": "min",
+            "slug": "HTML/Attributes/min",
+            "summary": "The min attribute defines the minimum value that is acceptable and valid for the input containing the attribute. If the value of the element is less than this, the element fails constraint validation. This value must be less than or equal to the value of the max attribute. If a value is specified for min that isn't a valid number, the input has no minimum value.",
+            "support": {
+                "chrome": {
+                    "version_added": "6"
+                },
+                "chrome_android": {
+                    "version_added": "18"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "16"
+                },
+                "firefox_android": {
+                    "version_added": "16"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "11"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: min"
+        }
+    ],
     "the-meter-element": [
         {
             "engines": [
@@ -60013,6 +62794,61 @@
             "title": "<ol>: The Ordered List element"
         }
     ],
+    "attr-optgroup-disabled": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/optgroup.json",
+            "name": "disabled",
+            "slug": "HTML/Attributes/disabled",
+            "summary": "The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": "8"
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: disabled"
+        }
+    ],
     "the-optgroup-element": [
         {
             "engines": [
@@ -60068,6 +62904,61 @@
             "title": "<optgroup>: The Option Group element"
         }
     ],
+    "attr-option-disabled": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/option.json",
+            "name": "disabled",
+            "slug": "HTML/Attributes/disabled",
+            "summary": "The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: disabled"
+        }
+    ],
     "the-option-element": [
         {
             "engines": [
@@ -60121,6 +63012,61 @@
                 }
             },
             "title": "<option>: The HTML Option element"
+        }
+    ],
+    "attr-output-for": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/output.json",
+            "name": "for",
+            "slug": "HTML/Attributes/for",
+            "summary": "The for attribute is an allowed attribute for <label> and <output>. When used on a <label> element it indicates the form element that this label describes. When used on an <output> element it allows for an explicit relationship between the elements that represent values which are used in the output.",
+            "support": {
+                "chrome": {
+                    "version_added": "10"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": "4"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "11"
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: for"
         }
     ],
     "the-output-element": [
@@ -60341,6 +63287,61 @@
                 }
             },
             "title": "<pre>: The Preformatted Text element"
+        }
+    ],
+    "attr-progress-max": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/progress.json",
+            "name": "max",
+            "slug": "HTML/Attributes/max",
+            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails constraint validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present by is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
+            "support": {
+                "chrome": {
+                    "version_added": "6"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "6"
+                },
+                "firefox_android": {
+                    "version_added": "6"
+                },
+                "ie": {
+                    "version_added": "10"
+                },
+                "opera": {
+                    "version_added": "11"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTML attribute: max"
         }
     ],
     "the-progress-element": [
@@ -63283,6 +66284,10 @@
                         "version_added": "95"
                     },
                     {
+                        "version_added": "17",
+                        "version_removed": "23"
+                    },
+                    {
                         "version_added": "23",
                         "version_removed": "95",
                         "flags": [
@@ -63296,10 +66301,6 @@
                             "Before version 77, Firefox does not support <code>inputmode</code> when <code>contenteditable</code> is <code>true</code>.",
                             "Before version 75, Firefox accepts values from an earlier specification. From version 75, it accepts values from the WHATWG Living Standard. See <a href='https://bugzil.la/1509527'>bug 1509527</a>."
                         ]
-                    },
-                    {
-                        "version_added": "17",
-                        "version_removed": "23"
                     }
                 ],
                 "firefox_android": [
@@ -64512,61 +67513,6 @@
             "title": "import.meta"
         }
     ],
-    "attr-fae-form": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": null,
-            "name": "Attributes#attr-form",
-            "slug": "HTML/Attributes#attr-form",
-            "summary": "Elements in HTML have attributes; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "≤6"
-                },
-                "opera": {
-                    "version_added": "≤12.1"
-                },
-                "opera_android": {
-                    "version_added": "≤12.1"
-                },
-                "safari": {
-                    "version_added": "≤4"
-                },
-                "safari_ios": {
-                    "version_added": "≤3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTML attribute reference"
-        }
-    ],
     "attr-fieldset-disabled": [
         {
             "engines": [
@@ -64843,61 +67789,6 @@
             "title": "<img>: The Image Embed element"
         }
     ],
-    "attr-input-accept": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": null,
-            "name": "attr-input-accept#attr-accept",
-            "slug": "HTML/Element/input#attr-accept",
-            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
-            "support": {
-                "chrome": {
-                    "version_added": "26"
-                },
-                "chrome_android": {
-                    "version_added": "26"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "37"
-                },
-                "firefox_android": {
-                    "version_added": "37"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "15"
-                },
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": {
-                    "version_added": "11.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "4.4"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "<input>: The Input (Form Input) element"
-        }
-    ],
     "attr-input-maxlength": [
         {
             "engines": [
@@ -65012,116 +67903,6 @@
             "caniuse": {
                 "feature": "input-minlength",
                 "title": "Minimum length attribute for input fields"
-            },
-            "title": "<input>: The Input (Form Input) element"
-        }
-    ],
-    "attr-input-multiple": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": null,
-            "name": "input#attr-multiple",
-            "slug": "HTML/Element/input#attr-multiple",
-            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
-            "support": {
-                "chrome": {
-                    "version_added": "2"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.6"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "≤12.1"
-                },
-                "opera_android": {
-                    "version_added": "≤12.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "3.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "≤37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "<input>: The Input (Form Input) element"
-        }
-    ],
-    "attr-input-placeholder": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": null,
-            "name": "input#attr-placeholder",
-            "slug": "HTML/Element/input#attr-placeholder",
-            "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
-            "support": {
-                "chrome": {
-                    "version_added": "3"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "4"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "10"
-                },
-                "opera": {
-                    "version_added": "≤12.1"
-                },
-                "opera_android": {
-                    "version_added": "≤12.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "3.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "≤37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
             },
             "title": "<input>: The Input (Form Input) element"
         }
@@ -66650,61 +69431,6 @@
                 }
             },
             "title": "HTML attribute: pattern"
-        }
-    ],
-    "the-readonly-attribute": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": null,
-            "name": "readonly",
-            "slug": "HTML/Attributes/readonly",
-            "summary": "The Boolean readonly attribute, when present, makes the element not mutable, meaning the user can not edit the control.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "≤6"
-                },
-                "opera": {
-                    "version_added": "≤12.1"
-                },
-                "opera_android": {
-                    "version_added": "≤12.1"
-                },
-                "safari": {
-                    "version_added": "≤4"
-                },
-                "safari_ios": {
-                    "version_added": "≤3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTML attribute: readonly"
         }
     ],
     "the-xhtml-syntax": [

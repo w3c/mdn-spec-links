@@ -494,6 +494,61 @@
             "title": "GamepadButton.pressed"
         }
     ],
+    "dom-gamepadbutton-touched": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/GamepadButton.json",
+            "name": "touched",
+            "slug": "API/GamepadButton/touched",
+            "summary": "The touched property of the GamepadButton interface returns a boolean indicating whether a button capable of detecting touch is currently touched (true) or not touched (false).",
+            "support": {
+                "chrome": {
+                    "version_added": "73"
+                },
+                "chrome_android": {
+                    "version_added": "73"
+                },
+                "edge": {
+                    "version_added": "15"
+                },
+                "firefox": {
+                    "version_added": "56"
+                },
+                "firefox_android": {
+                    "version_added": "56"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "60"
+                },
+                "opera_android": {
+                    "version_added": "52"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "11.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "GamepadButton.touched"
+        }
+    ],
     "dom-gamepadbutton-value": [
         {
             "engines": [
@@ -724,7 +779,7 @@
             "filename": "api/GamepadEvent.json",
             "name": "GamepadEvent",
             "slug": "API/GamepadEvent",
-            "summary": "The GamepadEvent interface of the Gamepad API contains references to gamepads connected to the system, which is what the gamepad events Window.gamepadconnected and Window.gamepaddisconnected are fired in response to.",
+            "summary": "The GamepadEvent interface of the Gamepad API contains references to gamepads connected to the system, which is what the gamepad events gamepadconnected and gamepaddisconnected are fired in response to.",
             "support": {
                 "chrome": {
                     "version_added": "21"

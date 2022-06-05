@@ -487,11 +487,11 @@
                 },
                 "samsunginternet_android": [
                     {
-                        "version_added": "4.0"
-                    },
-                    {
                         "notes": "Some default values for the init parameter changed in Samsung Internet 5.0. See the Properties section for details.",
                         "version_added": "5.0"
+                    },
+                    {
+                        "version_added": "4.0"
                     }
                 ],
                 "webview_android": {
@@ -3547,6 +3547,9 @@
                 "gecko",
                 "webkit"
             ],
+            "needsflag": [
+                "gecko"
+            ],
             "filename": "http/headers/origin.json",
             "name": "Origin",
             "slug": "HTTP/Headers/Origin",
@@ -3566,6 +3569,11 @@
                         "version_added": "70"
                     },
                     {
+                        "version_added": true,
+                        "partial_implementation": true,
+                        "notes": "Not sent with <code>POST</code> requests until Firefox 58, see <a href='https://bugzil.la/446344'>bug 446344</a>."
+                    },
+                    {
                         "version_added": "59",
                         "flags": [
                             {
@@ -3575,15 +3583,15 @@
                             }
                         ],
                         "notes": "Sent with non-CORS requests since Fx59, unless they are <code>GET</code> or <code>HEAD</code>."
-                    },
-                    {
-                        "version_added": true,
-                        "partial_implementation": true,
-                        "notes": "Not sent with <code>POST</code> requests until Firefox 58, see <a href='https://bugzil.la/446344'>bug 446344</a>."
                     }
                 ],
                 "firefox_android": [
                     {
+                        "version_added": true,
+                        "partial_implementation": true,
+                        "notes": "Not sent with <code>POST</code> requests until Firefox 58, see <a href='https://bugzil.la/446344'>bug 446344</a>."
+                    },
+                    {
                         "version_added": "59",
                         "flags": [
                             {
@@ -3593,11 +3601,6 @@
                             }
                         ],
                         "notes": "Sent with non-CORS requests since Fx59, unless they are <code>GET</code> or <code>HEAD</code>."
-                    },
-                    {
-                        "version_added": true,
-                        "partial_implementation": true,
-                        "notes": "Not sent with <code>POST</code> requests until Firefox 58, see <a href='https://bugzil.la/446344'>bug 446344</a>."
                     }
                 ],
                 "ie": {
