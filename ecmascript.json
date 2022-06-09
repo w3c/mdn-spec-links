@@ -39763,7 +39763,7 @@
             "filename": "javascript/operators/left_shift.json",
             "name": "left_shift",
             "slug": "JavaScript/Reference/Operators/Left_shift",
-            "summary": "The left shift operator (<<) shifts the first operand the specified number of bits to the left. Excess bits shifted off to the left are discarded. Zero bits are shifted in from the right.",
+            "summary": "The left shift operator (<<) shifts the first operand the specified number of bits, modulo 32, to the left. Excess bits shifted off to the left are discarded. Zero bits are shifted in from the right.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -40488,7 +40488,7 @@
             "filename": "javascript/operators/right_shift.json",
             "name": "right_shift",
             "slug": "JavaScript/Reference/Operators/Right_shift",
-            "summary": "The right shift operator (>>) shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name \"sign-propagating\".",
+            "summary": "The right shift operator (>>) shifts the first operand the specified number of bits, modulo 32, to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name \"sign-propagating\".",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -40915,7 +40915,7 @@
             "filename": "javascript/operators/unsigned_right_shift.json",
             "name": "unsigned_right_shift",
             "slug": "JavaScript/Reference/Operators/Unsigned_right_shift",
-            "summary": "The unsigned right shift operator (>>>) (zero-fill right shift) shifts the first operand the specified number of bits to the right.",
+            "summary": "The unsigned right shift operator (>>>) (zero-fill right shift) shifts the first operand the specified number of bits, modulo 32, to the right.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -41384,7 +41384,7 @@
             "filename": "javascript/statements.json",
             "name": "let",
             "slug": "JavaScript/Reference/Statements/let",
-            "summary": "The let statement declares a block-scoped local variable, optionally initializing it to a value.",
+            "summary": "The let declaration declares a block-scoped local variable, optionally initializing it to a value.",
             "support": {
                 "chrome": [
                     {
