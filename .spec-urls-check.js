@@ -275,6 +275,10 @@ const checkSpecURL = (
   ) {
     return;
   }
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16746
+  if (spec_url.startsWith("https://www.w3.org/TR/mediaqueries-5/")) {
+    return;
+  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16527
   if (spec_url.startsWith("https://www.w3.org/TR/largest-contentful-paint")) {
     return;
