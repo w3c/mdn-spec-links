@@ -267,10 +267,6 @@ const checkSpecURL = (
   ) {
     return;
   }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16748
-  if (spec_url.startsWith("https://w3c.github.io/webrtc-stats")) {
-    return;
-  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16527
   if (spec_url.startsWith("https://www.w3.org/TR/largest-contentful-paint")) {
     return;
