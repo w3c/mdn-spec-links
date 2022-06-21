@@ -1,26 +1,22 @@
 {
-    "sec-array.prototype.groupby": [
+    "sec-array.prototype.group": [
         {
             "engines": [
                 "gecko"
             ],
             "filename": "javascript/builtins/Array.json",
-            "name": "groupBy",
-            "slug": "JavaScript/Reference/Global_Objects/Array/groupBy",
-            "summary": "The groupBy() method groups the elements of the calling array according to the string values returned by a provided testing function. The returned object has separate properties for each group, containing arrays with the elements in the group.",
+            "name": "group",
+            "slug": "JavaScript/Reference/Global_Objects/Array/group",
+            "summary": "The group() method groups the elements of the calling array according to the string values returned by a provided testing function. The returned object has separate properties for each group, containing arrays with the elements in the group.",
             "support": {
                 "chrome": {
                     "version_added": false
                 },
-                "chrome_android": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
                 "deno": {
                     "version_added": false
                 },
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "preview"
                 },
@@ -33,53 +29,39 @@
                 "nodejs": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": false
                 },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": false
                 }
             },
-            "title": "Array.prototype.groupBy()"
+            "title": "Array.prototype.group()"
         }
     ],
-    "sec-array.prototype.groupbymap": [
+    "sec-array.prototype.grouptomap": [
         {
             "engines": [
                 "gecko"
             ],
             "filename": "javascript/builtins/Array.json",
-            "name": "groupByToMap",
-            "slug": "JavaScript/Reference/Global_Objects/Array/groupByToMap",
-            "summary": "The groupByToMap() method groups the elements of the calling array using the values returned by a provided testing function. The final returned Map uses the unique values from the test function as keys, which can be used to get the array of elements in each group.",
+            "name": "groupToMap",
+            "slug": "JavaScript/Reference/Global_Objects/Array/groupToMap",
+            "summary": "The groupToMap() method groups the elements of the calling array using the values returned by a provided testing function. The final returned Map uses the unique values from the test function as keys, which can be used to get the array of elements in each group.",
             "support": {
                 "chrome": {
                     "version_added": false
                 },
-                "chrome_android": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
                 "deno": {
                     "version_added": false
                 },
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "preview"
                 },
@@ -92,29 +74,19 @@
                 "nodejs": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": false
                 },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": false
                 }
             },
-            "title": "Array.prototype.groupByToMap()"
+            "title": "Array.prototype.groupToMap()"
         }
     ]
 }

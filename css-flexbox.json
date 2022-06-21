@@ -20,15 +20,7 @@
                         "version_added": "21"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "29"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -41,15 +33,7 @@
                         "version_added": "49"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "28"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": "11"
                 },
@@ -77,15 +61,7 @@
                         "version_added": "7"
                     }
                 ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "1.5"
-                    }
-                ],
+                "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
                         "version_added": "4.4"
@@ -130,24 +106,18 @@
                 "firefox": {
                     "version_added": "52"
                 },
-                "firefox_android": {
-                    "version_added": "52"
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "44"
-                },
+                "opera": "mirror",
                 "opera_android": {
                     "version_added": "43"
                 },
                 "safari": {
                     "version_added": "10.1"
                 },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": {
                     "version_added": "6.2"
                 },
@@ -187,20 +157,7 @@
                         "version_added": "21"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "52"
-                    },
-                    {
-                        "version_added": "29",
-                        "partial_implementation": true,
-                        "notes": "Older versions of the specification treat absolute positioned children as though they are a 0 by 0 flex item. Later specification versions take the children out of the flow and set their positions based on align and justify properties. Chrome implements the new behavior beginning with Chrome 52."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -214,16 +171,7 @@
                         "version_added": "49"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "20",
-                        "notes": "Multi-line flexbox has been supported since Firefox 28."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": "11",
                     "notes": "In Internet Explorer 10 and 11, if column flex items have <code>align-items: center;</code> set on them and their content is too large, then they will overflow the bounds of their container. See <a href='https://github.com/philipwalton/flexbugs#2-column-flex-items-set-to-align-itemscenter-overflow-their-container'>Flexbug #2</a>."
@@ -320,24 +268,18 @@
                 "firefox": {
                     "version_added": "52"
                 },
-                "firefox_android": {
-                    "version_added": "52"
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "44"
-                },
+                "opera": "mirror",
                 "opera_android": {
                     "version_added": "43"
                 },
                 "safari": {
                     "version_added": "10.1"
                 },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": {
                     "version_added": "6.2"
                 },
@@ -375,20 +317,7 @@
                         "version_added": "21"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "36"
-                    },
-                    {
-                        "version_added": "29",
-                        "partial_implementation": true,
-                        "notes": "Older versions of the specification treat absolute positioned children as though they are a 0 by 0 flex item. Later specification versions take the children out of the flow and set their positions based on align and justify properties. Chrome implements the new behavior beginning with Chrome 52."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -402,16 +331,7 @@
                         "version_added": "49"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "20",
-                        "notes": "Before Firefox 27, only single-line flexbox is supported."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": "11"
                 },
@@ -507,27 +427,21 @@
                 "firefox": {
                     "version_added": "52"
                 },
-                "firefox_android": {
-                    "version_added": "52"
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "prefix": "-ms-",
                     "version_added": "10",
                     "partial_implementation": true,
                     "notes": "Internet Explorer 10 and 11 have the property <code>-ms-grid-row-align</code>, which acts in a similar way to <code>align-self</code>."
                 },
-                "opera": {
-                    "version_added": "44"
-                },
+                "opera": "mirror",
                 "opera_android": {
                     "version_added": "43"
                 },
                 "safari": {
                     "version_added": "10.1"
                 },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": {
                     "version_added": "6.2"
                 },
@@ -562,15 +476,7 @@
                         "version_added": "22"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "29"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -584,16 +490,7 @@
                         "version_added": "49"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "22",
-                        "notes": "Since Firefox 28, multi-line flexbox is supported."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": "11",
                     "notes": "When a non-<code>auto</code> <code>flex-basis</code> is specified, Internet Explorer 10 and 11 always uses a <code>content-box</code> box model to calculate the size of a flex item, even if <a href='https://developer.mozilla.org/docs/Web/CSS/box-sizing'><code>box-sizing: border-box</code></a> is applied to the element. See <a href='https://github.com/philipwalton/flexbugs#7-flex-basis-doesnt-account-for-box-sizingborder-box'>Flexbug #7</a> for more info."
@@ -634,15 +531,7 @@
                         "version_added": "7"
                     }
                 ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "1.5"
-                    }
-                ],
+                "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
                         "version_added": "4.4"
@@ -686,15 +575,7 @@
                         "version_added": "21"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "29"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -715,23 +596,7 @@
                         "version_added": "49"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "81"
-                    },
-                    {
-                        "version_added": "20",
-                        "partial_implementation": true,
-                        "notes": [
-                            "Since Firefox 28, multi-line flexbox is supported.",
-                            "Before Firefox 81, overflow with <code>*-reverse</code> is unsupported. See <a href='https://bugzil.la/1042151'>bug 1042151</a>."
-                        ]
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": [
                     {
                         "version_added": "11"
@@ -777,15 +642,7 @@
                         "version_added": "7"
                     }
                 ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "1.5"
-                    }
-                ],
+                "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
                         "version_added": "4.4"
@@ -829,15 +686,7 @@
                         "version_added": "21"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "29"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -850,15 +699,7 @@
                         "version_added": "49"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "28"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": "11"
                 },
@@ -898,15 +739,7 @@
                         "version_added": "7"
                     }
                 ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "1.5"
-                    }
-                ],
+                "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
                         "version_added": "4.4"
@@ -950,15 +783,7 @@
                         "version_added": "22"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "29"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -966,10 +791,7 @@
                     "version_added": "20",
                     "notes": "Since Firefox 28, multi-line flexbox is supported."
                 },
-                "firefox_android": {
-                    "version_added": "20",
-                    "notes": "Since Firefox 28, multi-line flexbox is supported."
-                },
+                "firefox_android": "mirror",
                 "ie": [
                     {
                         "version_added": "11"
@@ -1015,15 +837,7 @@
                         "version_added": "7"
                     }
                 ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "1.5"
-                    }
-                ],
+                "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
                         "version_added": "4.4"
@@ -1067,15 +881,7 @@
                         "version_added": "22"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "29"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -1092,19 +898,7 @@
                         "version_added": "49"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "20",
-                        "notes": [
-                            "Since Firefox 28, multi-line flexbox is supported.",
-                            "Before Firefox 32, Firefox wasn't able to animate values starting or stopping at <code>0</code>."
-                        ]
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": "10",
                     "notes": "Internet Explorer 10 uses <code>0</code> instead of <code>1</code> as the initial value for the <code>flex-shrink</code> property. A workaround is to always set an explicit value for <code>flex-shrink</code>. See <a href='https://github.com/philipwalton/flexbugs#6-the-default-flex-value-has-changed'>Flexbug #6</a> for more info."
@@ -1136,24 +930,8 @@
                         "version_added": "8"
                     }
                 ],
-                "safari_ios": [
-                    {
-                        "version_added": "9"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "8"
-                    }
-                ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "1.5"
-                    }
-                ],
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
                         "version_added": "4.4"
@@ -1197,15 +975,7 @@
                         "version_added": "21"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "29"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -1244,15 +1014,7 @@
                         "version_added": "7"
                     }
                 ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "1.5"
-                    }
-                ],
+                "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
                         "version_added": "4.4"
@@ -1296,15 +1058,7 @@
                         "version_added": "21"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "29"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -1377,15 +1131,7 @@
                         "version_added": "7"
                     }
                 ],
-                "samsunginternet_android": [
-                    {
-                        "version_added": "2.0"
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "1.5"
-                    }
-                ],
+                "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
                         "version_added": "4.4"
@@ -1434,20 +1180,7 @@
                         "version_added": "21"
                     }
                 ],
-                "chrome_android": [
-                    {
-                        "version_added": "52"
-                    },
-                    {
-                        "version_added": "29",
-                        "partial_implementation": true,
-                        "notes": "Older versions of the specification treat absolute positioned children as though they are a 0 by 0 flex item. Later specification versions take the children out of the flow and set their positions based on align and justify properties. Chrome implements the new behavior beginning with Chrome 52."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "25"
-                    }
-                ],
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -1461,16 +1194,7 @@
                         "version_added": "49"
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "20",
-                        "notes": "Before Firefox 27, Firefox supported only single-line flexbox."
-                    },
-                    {
-                        "prefix": "-webkit-",
-                        "version_added": "49"
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": "11"
                 },
@@ -1566,24 +1290,18 @@
                 "firefox": {
                     "version_added": "52"
                 },
-                "firefox_android": {
-                    "version_added": "52"
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "44"
-                },
+                "opera": "mirror",
                 "opera_android": {
                     "version_added": "43"
                 },
                 "safari": {
                     "version_added": "10.1"
                 },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": {
                     "version_added": "6.2"
                 },

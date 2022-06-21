@@ -14,46 +14,70 @@
                 "chrome": {
                     "version_added": "42"
                 },
-                "chrome_android": {
-                    "version_added": "42"
-                },
-                "edge": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "47",
                     "notes": "Firefox 47 and later support <code>display-mode</code> values <code>fullscreen</code> and <code>browser</code>. Firefox 57 added support for <code>minimal-ui</code> and <code>standalone</code> values."
                 },
-                "firefox_android": {
-                    "version_added": "47",
-                    "notes": "Firefox 47 and later support <code>display-mode</code> values <code>fullscreen</code> and <code>browser</code>. Firefox 57 added support for <code>minimal-ui</code> and <code>standalone</code> values."
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "13"
                 },
                 "safari_ios": {
                     "version_added": "12.2"
                 },
-                "samsunginternet_android": {
-                    "version_added": "4.0"
-                },
-                "webview_android": {
-                    "version_added": "42"
-                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
             },
             "title": "display-mode"
+        }
+    ],
+    "dynamic-range": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/at-rules/media.json",
+            "name": "dynamic-range",
+            "slug": "CSS/@media/dynamic-range",
+            "summary": "The dynamic-range CSS media feature can be used to test the combination of brightness, contrast ratio, and color depth that are supported by the user agent and the output device.",
+            "support": {
+                "chrome": {
+                    "version_added": "98"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "100"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "98"
+                }
+            },
+            "title": "dynamic-range"
         }
     ],
     "forced-colors": [
@@ -105,9 +129,7 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": "89"
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -120,17 +142,9 @@
                 "safari": {
                     "version_added": false
                 },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
-                },
-                "webview_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
-                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
                 "edge_blink": [
                     {
                         "version_added": "89"
@@ -164,39 +178,25 @@
                 "chrome": {
                     "version_added": false
                 },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
                 "firefox": {
                     "version_added": false
                 },
-                "firefox_android": {
-                    "version_added": false
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "9.1"
                 },
                 "safari_ios": {
                     "version_added": "10"
                 },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": false
                 }
@@ -219,27 +219,19 @@
                 "chrome": {
                     "version_added": "76"
                 },
-                "chrome_android": {
-                    "version_added": "76"
-                },
-                "edge": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "67"
                 },
-                "firefox_android": {
-                    "version_added": "67"
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
                     "version_added": "62"
                 },
-                "opera_android": {
-                    "version_added": "54"
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "12.1"
                 },
@@ -249,9 +241,7 @@
                 "samsunginternet_android": {
                     "version_added": "14.2"
                 },
-                "webview_android": {
-                    "version_added": "76"
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -278,12 +268,8 @@
                 "chrome": {
                     "version_added": "96"
                 },
-                "chrome_android": {
-                    "version_added": "96"
-                },
-                "edge": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
                 "firefox": [
                     {
                         "version_added": "101"
@@ -299,30 +285,20 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": "101"
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "82"
-                },
+                "opera": "mirror",
                 "opera_android": {
                     "version_added": false
                 },
                 "safari": {
                     "version_added": "14.1"
                 },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "17.0"
-                },
-                "webview_android": {
-                    "version_added": "96"
-                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "96"
                 }
@@ -371,27 +347,17 @@
                 "firefox": {
                     "version_added": false
                 },
-                "firefox_android": {
-                    "version_added": false
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": false
                 },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": false,
                     "notes": "See <a href='https://crbug.com/1051189'>bug 1051189</a>."
@@ -426,12 +392,8 @@
                 "chrome": {
                     "version_added": "74"
                 },
-                "chrome_android": {
-                    "version_added": "74"
-                },
-                "edge": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "63"
                 },
@@ -441,24 +403,14 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "62"
-                },
-                "opera_android": {
-                    "version_added": "53"
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "10.1"
                 },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.0"
-                },
-                "webview_android": {
-                    "version_added": "74"
-                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -482,21 +434,13 @@
                     "version_added": false,
                     "notes": "See <a href='https://crbug.com/489957'>bug 489957</a>."
                 },
-                "chrome_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/489957'>bug 489957</a>."
-                },
-                "edge": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
                 "firefox": {
                     "version_added": false,
                     "notes": "See <a href='https://bugzil.la/1166581'>bug 1166581</a>."
                 },
-                "firefox_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1166581'>bug 1166581</a>."
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -509,23 +453,54 @@
                 "safari": {
                     "version_added": false
                 },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/489957'>bug 489957</a>."
-                },
-                "webview_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/489957'>bug 489957</a>."
-                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": false,
                     "notes": "See <a href='https://crbug.com/489957'>bug 489957</a>."
                 }
             },
             "title": "scripting"
+        }
+    ],
+    "video-dynamic-range": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/at-rules/media.json",
+            "name": "video-dynamic-range",
+            "slug": "CSS/@media/video-dynamic-range",
+            "summary": "The video-dynamic-range CSS media feature can be used to test the combination of brightness, contrast ratio, and color depth that are supported by the video plane of the user agent and the output device.",
+            "support": {
+                "chrome": {
+                    "version_added": "98"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "100"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "98"
+                }
+            },
+            "title": "video-dynamic-range"
         }
     ]
 }
