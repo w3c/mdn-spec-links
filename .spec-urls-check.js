@@ -267,6 +267,12 @@ const checkSpecURL = (
   ) {
     return;
   }
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16749
+  if (
+    spec_url.startsWith("https://drafts.csswg.org/css-color-5/#colorcontrast")
+  ) {
+    return;
+  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16527
   if (spec_url.startsWith("https://www.w3.org/TR/largest-contentful-paint")) {
     return;
