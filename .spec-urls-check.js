@@ -177,8 +177,8 @@ const needsSpecURL = (mdnURL) => {
     "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
     // FIXME: dunno what the problem is with the following
     "https://developer.mozilla.org/docs/Web/CSS/path()",
-    // FIXME: temporary https://github.com/mdn/browser-compat-data/pull/16539
-    "https://developer.mozilla.org/docs/Web/CSS/@media/update-frequency",
+    // FIXME: temporary https://github.com/mdn/browser-compat-data/pull/16752
+    "https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent",
   ];
   if (exceptions.includes(mdnURL)) {
     return false;
@@ -265,6 +265,10 @@ const checkSpecURL = (
       "https://wicg.github.io/savedata/#save-data-request-header-field"
     )
   ) {
+    return;
+  }
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16754
+  if (spec_url.startsWith("https://www.w3.org/TR/mediaqueries-5/")) {
     return;
   }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16749
