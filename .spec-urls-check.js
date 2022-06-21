@@ -267,14 +267,6 @@ const checkSpecURL = (
   ) {
     return;
   }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16745
-  if (
-    spec_url.startsWith(
-      "https://drafts.csswg.org/css-animations/#eventdef-animationevent-"
-    )
-  ) {
-    return;
-  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/16527
   if (spec_url.startsWith("https://www.w3.org/TR/largest-contentful-paint")) {
     return;
