@@ -6,9 +6,9 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/Document.json",
+            "filename": "api/Element.json",
             "name": "touchcancel_event",
-            "slug": "API/Document/touchcancel_event",
+            "slug": "API/Element/touchcancel_event",
             "summary": "The touchcancel event is fired when one or more touch points have been disrupted in an implementation-specific manner (for example, too many touch points are created).",
             "support": {
                 "chrome": {
@@ -27,6 +27,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": false
                 },
@@ -43,8 +44,10 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document: touchcancel event"
-        },
+            "title": "Element: touchcancel event"
+        }
+    ],
+    "dom-globaleventhandlers-ontouchcancel": [
         {
             "engines": [
                 "blink",
@@ -72,6 +75,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": false
                 },
@@ -92,51 +96,6 @@
         }
     ],
     "event-touchend": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "touchend_event",
-            "slug": "API/Document/touchend_event",
-            "summary": "The touchend event fires when one or more touch points are removed from the touch surface.",
-            "support": {
-                "chrome": {
-                    "version_added": "22"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "52"
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: touchend event"
-        },
         {
             "engines": [
                 "blink",
@@ -164,6 +123,55 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: touchend event"
+        }
+    ],
+    "dom-globaleventhandlers-ontouchend": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "touchend_event",
+            "slug": "API/Element/touchend_event",
+            "summary": "The touchend event fires when one or more touch points are removed from the touch surface.",
+            "support": {
+                "chrome": {
+                    "version_added": "22"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "52"
+                },
+                "firefox_android": {
+                    "version_added": "6"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": false
                 },
@@ -184,51 +192,6 @@
         }
     ],
     "event-touchmove": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "touchmove_event",
-            "slug": "API/Document/touchmove_event",
-            "summary": "The touchmove event is fired when one or more touch points are moved along the touch surface.",
-            "support": {
-                "chrome": {
-                    "version_added": "22"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "52"
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: touchmove event"
-        },
         {
             "engines": [
                 "blink",
@@ -256,6 +219,55 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: touchmove event"
+        }
+    ],
+    "dom-globaleventhandlers-ontouchmove": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "touchmove_event",
+            "slug": "API/Element/touchmove_event",
+            "summary": "The touchmove event is fired when one or more touch points are moved along the touch surface.",
+            "support": {
+                "chrome": {
+                    "version_added": "22"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "52"
+                },
+                "firefox_android": {
+                    "version_added": "6"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": false
                 },
@@ -276,51 +288,6 @@
         }
     ],
     "event-touchstart": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "touchstart_event",
-            "slug": "API/Document/touchstart_event",
-            "summary": "The touchstart event is fired when one or more touch points are placed on the touch surface.",
-            "support": {
-                "chrome": {
-                    "version_added": "22"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "52"
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: touchstart event"
-        },
         {
             "engines": [
                 "blink",
@@ -348,6 +315,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": false
                 },
@@ -367,153 +335,6 @@
             "title": "Element: touchstart event"
         }
     ],
-    "dom-globaleventhandlers-ontouchcancel": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "ontouchcancel",
-            "slug": "API/GlobalEventHandlers/ontouchcancel",
-            "summary": "The ontouchcancel property of the GlobalEventHandlers mixin is an event handler that processes touchcancel events.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "GlobalEventHandlers.ontouchcancel"
-        }
-    ],
-    "dom-globaleventhandlers-ontouchend": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "ontouchend",
-            "slug": "API/GlobalEventHandlers/ontouchend",
-            "summary": "The ontouchstart is a global event handler for the touchend event.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "GlobalEventHandlers.ontouchend"
-        }
-    ],
-    "dom-globaleventhandlers-ontouchmove": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "ontouchmove",
-            "slug": "API/GlobalEventHandlers/ontouchmove",
-            "summary": "A global event handler for the touchmove event.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": "6"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "GlobalEventHandlers.ontouchmove"
-        }
-    ],
     "dom-globaleventhandlers-ontouchstart": [
         {
             "engines": [
@@ -521,20 +342,20 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "ontouchstart",
-            "slug": "API/GlobalEventHandlers/ontouchstart",
-            "summary": "The ontouchstart property of the GlobalEventHandlers mixin is an event handler that processes touchstart events.",
+            "filename": "api/Element.json",
+            "name": "touchstart_event",
+            "slug": "API/Element/touchstart_event",
+            "summary": "The touchstart event is fired when one or more touch points are placed on the touch surface.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "22"
                 },
-                "chrome_android": {
-                    "version_added": "18"
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
                 },
-                "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "52"
                 },
                 "firefox_android": {
                     "version_added": "6"
@@ -542,10 +363,11 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": false
                 },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": false
                 },
@@ -553,14 +375,12 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
-            "title": "GlobalEventHandlers.ontouchstart"
+            "title": "Element: touchstart event"
         }
     ],
     "dom-touch-constructor": [
@@ -589,6 +409,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -641,6 +462,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -693,6 +515,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -752,6 +575,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -811,6 +635,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -863,6 +688,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -915,6 +741,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -974,6 +801,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1040,6 +868,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1074,7 +903,7 @@
             "filename": "api/Touch.json",
             "name": "rotationAngle",
             "slug": "API/Touch/rotationAngle",
-            "summary": "The radiusX read-only property of the Touch interface returns the rotation angle, in degrees, of the contact area ellipse defined by Touch.radiusX and Touch.radiusY. The value may be between 0 and 90. Together, these three values describe an ellipse that approximates the size and shape of the area of contact between the user and the screen. This may be a relatively large ellipse representing the contact between a fingertip and the screen or a small area representing the tip of a stylus, for example.",
+            "summary": "The rotationAngle read-only property of the Touch interface returns the rotation angle, in degrees, of the contact area ellipse defined by Touch.radiusX and Touch.radiusY. The value may be between 0 and 90. Together, these three values describe an ellipse that approximates the size and shape of the area of contact between the user and the screen. This may be a relatively large ellipse representing the contact between a fingertip and the screen or a small area representing the tip of a stylus, for example.",
             "support": {
                 "chrome": [
                     {
@@ -1106,6 +935,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1165,6 +995,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1217,6 +1048,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1269,6 +1101,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1321,6 +1154,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1365,6 +1199,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1416,6 +1251,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1466,6 +1302,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1516,6 +1353,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1566,6 +1404,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1616,6 +1455,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1666,6 +1506,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1716,6 +1557,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1766,6 +1608,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1818,6 +1661,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1870,6 +1714,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1922,6 +1767,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {

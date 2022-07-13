@@ -31,6 +31,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -78,6 +79,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -129,6 +131,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -170,8 +173,9 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "16.7.0"
+                    "version_added": "17.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -211,8 +215,9 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "16.7.0"
+                    "version_added": "17.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -255,6 +260,7 @@
                 "nodejs": {
                     "version_added": "16.6.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -297,6 +303,7 @@
                 "nodejs": {
                     "version_added": "16.6.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -338,8 +345,9 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "16.7.0"
+                    "version_added": "17.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -379,8 +387,9 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "16.7.0"
+                    "version_added": "17.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -423,6 +432,7 @@
                 "nodejs": {
                     "version_added": "16.6.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -465,6 +475,7 @@
                 "nodejs": {
                     "version_added": "16.6.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -509,6 +520,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -553,6 +565,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -601,6 +614,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -625,7 +639,7 @@
             "filename": "api/ReadableByteStreamController.json",
             "name": "byobRequest",
             "slug": "API/ReadableByteStreamController/byobRequest",
-            "summary": "The byobRequest read-only property of the ReadableByteStreamController interface returns the current BYOB pull request, or undefined if there are no pending requests.",
+            "summary": "The byobRequest read-only property of the ReadableByteStreamController interface returns the current BYOB request, or null if there are no pending requests.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -658,6 +672,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -715,6 +730,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -739,7 +755,7 @@
             "filename": "api/ReadableByteStreamController.json",
             "name": "desiredSize",
             "slug": "API/ReadableByteStreamController/desiredSize",
-            "summary": "The desiredSize read-only property of the ReadableByteStreamController interface returns the desired size required to fill the stream's internal queue.",
+            "summary": "The desiredSize read-only property of the ReadableByteStreamController interface returns the number of bytes required to fill the stream's internal queue to its \"desired size\".",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -772,6 +788,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -796,7 +813,7 @@
             "filename": "api/ReadableByteStreamController.json",
             "name": "enqueue",
             "slug": "API/ReadableByteStreamController/enqueue",
-            "summary": "The enqueue() method of the ReadableByteStreamController interface enqueues a given chunk in the associated stream.",
+            "summary": "The enqueue() method of the ReadableByteStreamController interface enqueues a given chunk on the associated readable byte stream (the chunk is copied into the stream's internal queues).",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -829,6 +846,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -853,7 +871,7 @@
             "filename": "api/ReadableByteStreamController.json",
             "name": "error",
             "slug": "API/ReadableByteStreamController/error",
-            "summary": "The error() method of the ReadableByteStreamController interface causes any future interactions with the associated stream to error.",
+            "summary": "The error() method of the ReadableByteStreamController interface causes any future interactions with the associated stream to error with the specified reason.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -886,6 +904,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -910,7 +929,7 @@
             "filename": "api/ReadableByteStreamController.json",
             "name": "ReadableByteStreamController",
             "slug": "API/ReadableByteStreamController",
-            "summary": "The ReadableByteStreamController interface of the Streams API represents a controller allowing control of a ReadableStream's state and internal queue. Byte stream controllers are for byte streams.",
+            "summary": "The ReadableByteStreamController interface of the Streams API represents a controller for a readable byte stream. It allows control of the state and internal queue of a ReadableStream with an underlying byte source, and enables efficient zero-copy transfer of data from the underlying source to a consumer when the stream's internal queue is empty.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -955,6 +974,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1000,6 +1020,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1047,6 +1068,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1094,6 +1116,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1141,6 +1164,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1199,6 +1223,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1257,6 +1282,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1302,6 +1328,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1338,7 +1365,7 @@
                 "edge": "mirror",
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "103"
                     },
                     {
                         "version_added": "102",
@@ -1351,15 +1378,14 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": false
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
                 "nodejs": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1411,6 +1437,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1468,6 +1495,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1525,6 +1553,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1567,6 +1596,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1591,7 +1621,7 @@
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "closed",
             "slug": "API/ReadableStreamBYOBReader/closed",
-            "summary": "The closed read-only property of the ReadableStreamBYOBReader interface returns a Promise that fulfills when the stream closes, or rejects if the stream throws an error or the reader's lock is released. This property enables you to write code that responds to an end to the streaming process.",
+            "summary": "The closed read-only property of the ReadableStreamBYOBReader interface returns a Promise that fulfills when the stream closes, or rejects if the stream throws an error or the reader's lock is released.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -1624,6 +1654,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1666,6 +1697,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1690,7 +1722,7 @@
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "read",
             "slug": "API/ReadableStreamBYOBReader/read",
-            "summary": "The read() method of the ReadableStreamBYOBReader interface returns a Promise that resolves with an object representing the next chunk in the stream's queue.",
+            "summary": "The read() method of the ReadableStreamBYOBReader interface is used to read data into a view on a user-supplied buffer from an associated readable byte stream. A request for data will be statisfied from the stream's internal queues if there is any data present. If the stream queues are empty, the request may be supplied as a zero-copy transfer from the underlying byte source.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -1723,6 +1755,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1780,6 +1813,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1804,7 +1838,7 @@
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "ReadableStreamBYOBReader",
             "slug": "API/ReadableStreamBYOBReader",
-            "summary": "The ReadableStreamBYOBReader interface of the Streams API represents a BYOB (\"bring your own buffer\") reader that can be used to read stream data supplied by the developer (e.g. a custom ReadableStream() constructor).",
+            "summary": "The ReadableStreamBYOBReader interface of the Streams API defines a reader for a ReadableStream that supports zero-copy reading from an underlying byte source. It is used for efficient copying from underlying sources where the data is delivered as an \"anonymous\" sequence of bytes, such as files.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -1841,6 +1875,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1865,7 +1900,7 @@
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "respond",
             "slug": "API/ReadableStreamBYOBRequest/respond",
-            "summary": "The error() method of the ReadableStreamBYOBRequest interface xxx",
+            "summary": "The respond() method of the ReadableStreamBYOBRequest interface is used to signal to the associated readable byte stream that the specified number of bytes were written into the ReadableStreamBYOBRequest.view.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -1898,6 +1933,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1922,7 +1958,7 @@
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "respondWithNewView",
             "slug": "API/ReadableStreamBYOBRequest/respondWithNewView",
-            "summary": "The respondWithNewView() method of the ReadableStreamBYOBRequest interface xxx",
+            "summary": "The respondWithNewView() method of the ReadableStreamBYOBRequest interface specifies a new view that the consumer of the associated readable byte stream should write to instead of ReadableStreamBYOBRequest.view.",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -1955,6 +1991,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2012,6 +2049,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2036,7 +2074,7 @@
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "ReadableStreamBYOBRequest",
             "slug": "API/ReadableStreamBYOBRequest",
-            "summary": "The ReadableStreamBYOBRequest interface of the Streams API represents a pull request into a ReadableByteStreamController view.",
+            "summary": "The ReadableStreamBYOBRequest interface of the Streams API represents a \"pull request\" for data from an underlying source that will made as a zero-copy transfer to a consumer (bypassing the stream's internal queues).",
             "support": {
                 "chrome": {
                     "version_added": "89"
@@ -2073,6 +2111,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2117,6 +2156,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2161,6 +2201,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2205,6 +2246,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2249,6 +2291,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2305,6 +2348,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2349,6 +2393,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2393,6 +2438,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2437,6 +2483,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2461,7 +2508,7 @@
             "filename": "api/ReadableStreamDefaultReader.json",
             "name": "ReadableStreamDefaultReader",
             "slug": "API/ReadableStreamDefaultReader",
-            "summary": "The ReadableStreamDefaultReader interface of the Streams API represents a default reader that can be used to read stream data supplied from a network (e.g. a fetch request).",
+            "summary": "The ReadableStreamDefaultReader interface of the Streams API represents a default reader that can be used to read stream data supplied from a network (such as a fetch request).",
             "support": {
                 "chrome": {
                     "version_added": "78"
@@ -2493,6 +2540,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2551,6 +2599,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2609,6 +2658,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2645,7 +2695,7 @@
                 "edge": "mirror",
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "103"
                     },
                     {
                         "version_added": "102",
@@ -2658,15 +2708,14 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": false
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
                 "nodejs": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2725,6 +2774,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2750,7 +2800,7 @@
             "filename": "api/TransformStream.json",
             "name": "TransformStream",
             "slug": "API/TransformStream",
-            "summary": "The TransformStream interface of the Streams API represents a set of transformable data.",
+            "summary": "The TransformStream interface of the Streams API represents a concrete implementation of the pipe chain transform stream concept.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -2787,6 +2837,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2845,6 +2896,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2903,6 +2955,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2961,6 +3014,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3019,6 +3073,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3085,6 +3140,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3145,6 +3201,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "47"
                 },
@@ -3209,6 +3266,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "47"
                 },
@@ -3273,6 +3331,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "47"
                 },
@@ -3337,6 +3396,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "47"
                 },
@@ -3377,7 +3437,7 @@
                 "edge": "mirror",
                 "firefox": [
                     {
-                        "version_added": "preview"
+                        "version_added": "103"
                     },
                     {
                         "version_added": "102",
@@ -3390,15 +3450,14 @@
                         ]
                     }
                 ],
-                "firefox_android": {
-                    "version_added": false
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
                 "nodejs": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3463,6 +3522,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "47"
                 },
@@ -3527,6 +3587,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3593,6 +3654,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3652,6 +3714,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3712,6 +3775,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3772,6 +3836,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3832,6 +3897,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3892,6 +3958,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3952,6 +4019,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -4012,6 +4080,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -4072,6 +4141,7 @@
                 "nodejs": {
                     "version_added": "16.5.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -4136,6 +4206,7 @@
                         "Experimental implementation."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {

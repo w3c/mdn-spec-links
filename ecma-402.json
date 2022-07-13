@@ -31,6 +31,7 @@
                 "nodejs": {
                     "version_added": "0.10.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "4"
                 },
@@ -62,7 +63,7 @@
             "filename": "javascript/builtins/BigInt.json",
             "name": "toLocaleString",
             "slug": "JavaScript/Reference/Global_Objects/BigInt/toLocaleString",
-            "summary": "The toLocaleString() method returns a string with a language-sensitive representation of this BigInt.",
+            "summary": "The toLocaleString() method returns a string with a language-sensitive representation of this BigInt. In implementations with Intl.NumberFormat API support, this method simply calls Intl.NumberFormat.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -82,6 +83,7 @@
                 "nodejs": {
                     "version_added": "10.4.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -107,7 +109,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "toLocaleDateString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toLocaleDateString",
-            "summary": "The toLocaleDateString() method returns a string with a language sensitive representation of the date portion of the specified date in the user agent's timezone.",
+            "summary": "The toLocaleDateString() method returns a string with a language-sensitive representation of the date portion of the specified date in the user agent's timezone. In implementations with Intl.DateTimeFormat API support, this method simply calls Intl.DateTimeFormat.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -129,6 +131,7 @@
                 "nodejs": {
                     "version_added": "0.10.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "5"
                 },
@@ -162,7 +165,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "toLocaleString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toLocaleString",
-            "summary": "The toLocaleString() method returns a string with a language sensitive representation of this date.",
+            "summary": "The toLocaleString() method returns a string with a language-sensitive representation of this date. In implementations with Intl.DateTimeFormat API support, this method simply calls Intl.DateTimeFormat.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -184,6 +187,7 @@
                 "nodejs": {
                     "version_added": "0.10.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "3"
                 },
@@ -213,7 +217,7 @@
             "filename": "javascript/builtins/Date.json",
             "name": "toLocaleTimeString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toLocaleTimeString",
-            "summary": "The toLocaleTimeString() method returns a string with a language-sensitive representation of the time portion of the date. The newer locales and options arguments let applications specify the language formatting conventions to use. These arguments can also customize the behavior of the function.",
+            "summary": "The toLocaleTimeString() method returns a string with a language-sensitive representation of the time portion of the date. In implementations with Intl.DateTimeFormat API support, this method simply calls Intl.DateTimeFormat.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -235,6 +239,7 @@
                 "nodejs": {
                     "version_added": "0.10.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "5"
                 },
@@ -264,7 +269,7 @@
             "filename": "javascript/builtins/Number.json",
             "name": "toLocaleString",
             "slug": "JavaScript/Reference/Global_Objects/Number/toLocaleString",
-            "summary": "The toLocaleString() method returns a string with a language-sensitive representation of this number.",
+            "summary": "The toLocaleString() method returns a string with a language-sensitive representation of this number. In implementations with Intl.NumberFormat API support, this method simply calls Intl.NumberFormat.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -287,6 +292,7 @@
                 "nodejs": {
                     "version_added": "0.10.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "4"
                 },
@@ -316,7 +322,7 @@
             "filename": "javascript/builtins/String.json",
             "name": "localeCompare",
             "slug": "JavaScript/Reference/Global_Objects/String/localeCompare",
-            "summary": "The localeCompare() method returns a number indicating whether a reference string comes before, or after, or is the same as the given string in sort order.",
+            "summary": "The localeCompare() method returns a number indicating whether a reference string comes before, or after, or is the same as the given string in sort order. In implementations with Intl.Collator API support, this method simply calls Intl.Collator.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -338,6 +344,7 @@
                 "nodejs": {
                     "version_added": "0.10.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "7"
                 },
@@ -395,6 +402,7 @@
                 "nodejs": {
                     "version_added": "0.10.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "4"
                 },
@@ -446,6 +454,7 @@
                 "nodejs": {
                     "version_added": "0.10.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "4"
                 },
@@ -506,6 +515,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>Collator</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -556,6 +566,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator'>the <code>Collator()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -606,6 +617,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator'>the <code>Collator()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -662,6 +674,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -712,6 +725,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator'>the <code>Collator()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -768,6 +782,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>DateTimeFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -818,6 +833,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -864,6 +880,7 @@
                     "version_added": "12.9.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -910,6 +927,7 @@
                     "version_added": "12.9.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -964,6 +982,7 @@
                         "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "44",
                     "notes": "Before version 58, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 58 and later use the specification defined <code>dayPeriod</code>. See <a href='https://crbug.com/865351'>Chromium bug 865351</a>."
@@ -1024,6 +1043,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1080,6 +1100,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1130,6 +1151,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat'>the <code>DateTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1175,6 +1197,7 @@
                 "nodejs": {
                     "version_added": "14.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1220,6 +1243,7 @@
                 "nodejs": {
                     "version_added": "14.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1265,6 +1289,7 @@
                 "nodejs": {
                     "version_added": "14.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1310,6 +1335,7 @@
                 "nodejs": {
                     "version_added": "14.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1355,6 +1381,7 @@
                 "nodejs": {
                     "version_added": "14.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1406,6 +1433,7 @@
                 "nodejs": {
                     "version_added": "7.0.0"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": false
                 },
@@ -1453,6 +1481,7 @@
                 "nodejs": {
                     "version_added": "15.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1502,6 +1531,7 @@
                 "nodejs": {
                     "version_added": "0.12.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1554,6 +1584,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>ListFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1603,6 +1634,7 @@
                     "version_added": "12.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/ListFormat'>the <code>ListFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1652,6 +1684,7 @@
                     "version_added": "12.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/ListFormat'>the <code>ListFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1701,6 +1734,7 @@
                     "version_added": "12.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/ListFormat'>the <code>ListFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1756,6 +1790,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1805,6 +1840,7 @@
                     "version_added": "12.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/ListFormat'>the <code>ListFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1853,6 +1889,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1898,6 +1935,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1943,6 +1981,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1988,6 +2027,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2033,6 +2073,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2078,6 +2119,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2123,6 +2165,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2168,6 +2211,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2213,6 +2257,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2258,6 +2303,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2303,6 +2349,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2348,6 +2395,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2393,6 +2441,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2438,6 +2487,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2483,6 +2533,7 @@
                 "nodejs": {
                     "version_added": "12.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2539,6 +2590,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>NumberFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2590,6 +2642,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat'>the <code>NumberFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2638,6 +2691,7 @@
                     "version_added": "10.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat'>the <code>NumberFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2688,6 +2742,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat'>the <code>NumberFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2744,6 +2799,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2794,6 +2850,7 @@
                     "version_added": "0.12.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat'>the <code>NumberFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2848,6 +2905,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>PluralRules</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2900,6 +2958,7 @@
                     "version_added": "10.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules'>the <code>PluralRules()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2948,6 +3007,7 @@
                     "version_added": "10.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules'>the <code>PluralRules()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2996,6 +3056,7 @@
                     "version_added": "10.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules'>the <code>PluralRules()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3044,6 +3105,7 @@
                     "version_added": "10.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules'>the <code>PluralRules()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3096,6 +3158,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. When other locales are specified, the <code>RelativeTimeFormat</code> instance silently falls back to <code>en-US</code>. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3142,6 +3205,7 @@
                     "version_added": "12.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat'>the <code>RelativeTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3188,6 +3252,7 @@
                     "version_added": "12.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat'>the <code>RelativeTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3234,6 +3299,7 @@
                     "version_added": "12.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat'>the <code>RelativeTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3286,6 +3352,7 @@
                         "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. To make full ICU (locale) data available before version 13, see <a href='https://nodejs.org/docs/latest/api/intl.html#intl_options_for_building_node_js'>Node.js documentation on the <code>--with-intl</code> option</a> and how to provide the data."
                     }
                 ],
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3332,6 +3399,7 @@
                     "version_added": "12.0.0",
                     "notes": "Before version 13.0.0, only the locale data for <code>en-US</code> is available by default. See <a href='https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat'>the <code>RelativeTimeFormat()</code> constructor</a> for more details."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3376,6 +3444,7 @@
                 "nodejs": {
                     "version_added": "16.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3420,6 +3489,7 @@
                 "nodejs": {
                     "version_added": "16.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3464,6 +3534,7 @@
                 "nodejs": {
                     "version_added": "16.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3508,6 +3579,7 @@
                 "nodejs": {
                     "version_added": "16.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3552,6 +3624,7 @@
                 "nodejs": {
                     "version_added": "16.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3596,6 +3669,7 @@
                 "nodejs": {
                     "version_added": "16.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3640,6 +3714,7 @@
                 "nodejs": {
                     "version_added": "16.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3684,6 +3759,7 @@
                 "nodejs": {
                     "version_added": "16.0.0"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {

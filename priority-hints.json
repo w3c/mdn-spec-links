@@ -23,6 +23,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": false
                 },
@@ -47,8 +48,7 @@
     ],
     "img": [
         {
-            "engines": [],
-            "altname": [
+            "engines": [
                 "blink"
             ],
             "filename": "api/HTMLImageElement.json",
@@ -56,10 +56,16 @@
             "slug": "API/HTMLImageElement/fetchPriority",
             "summary": "The fetchPriority property of the HTMLImageElement interface represents a hint given to the browser on how it should prioritize the fetch of the image relative to other images.",
             "support": {
-                "chrome": {
-                    "version_added": "101",
-                    "alternative_name": "fetchpriority"
-                },
+                "chrome": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "101",
+                        "version_removed": "102",
+                        "alternative_name": "fetchpriority"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -69,32 +75,32 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": false
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "101",
-                    "alternative_name": "fetchpriority"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "102",
+                        "alternative_name": "fetchpriority"
+                    }
+                ]
             },
             "title": "HTMLImageElement.fetchPriority"
         }
     ],
     "link": [
         {
-            "engines": [],
-            "altname": [
+            "engines": [
                 "blink"
             ],
             "filename": "api/HTMLLinkElement.json",
@@ -102,10 +108,16 @@
             "slug": "API/HTMLLinkElement/fetchPriority",
             "summary": "The fetchPriority property of the HTMLLinkElement interface represents a hint given to the browser on how it should prioritize the preload of the given resource relative to other resources of the same type.",
             "support": {
-                "chrome": {
-                    "version_added": "101",
-                    "alternative_name": "fetchpriority"
-                },
+                "chrome": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "101",
+                        "version_removed": "102",
+                        "alternative_name": "fetchpriority"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -115,24 +127,25 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": false
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": false
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "101",
-                    "alternative_name": "fetchpriority"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "102",
+                        "alternative_name": "fetchpriority"
+                    }
+                ]
             },
             "title": "HTMLLinkElement.fetchPriority"
         }

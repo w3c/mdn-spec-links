@@ -25,9 +25,7 @@
                     ]
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "94",
                     "flags": [
@@ -42,16 +40,8 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "oculus": "mirror",
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": false
@@ -80,7 +70,6 @@
                 "gecko"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/Sanitizer.json",
@@ -88,20 +77,24 @@
             "slug": "API/Sanitizer/Sanitizer",
             "summary": "The Sanitizer() constructor creates a new Sanitizer object, which can be used to sanitize untrusted strings of HTML, or untrusted Document or DocumentFragment objects, making them safe for insertion into a document's DOM.",
             "support": {
-                "chrome": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "83",
                     "flags": [
@@ -116,6 +109,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "79",
                     "flags": [
@@ -133,16 +127,22 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Sanitizer()"
         }
@@ -154,7 +154,6 @@
                 "gecko"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/Sanitizer.json",
@@ -162,20 +161,24 @@
             "slug": "API/Sanitizer/sanitize",
             "summary": "The sanitize() method of the Sanitizer interface is used to sanitize a tree of DOM nodes, removing any unwanted elements or attributes.",
             "support": {
-                "chrome": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "83",
                     "flags": [
@@ -190,6 +193,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "79",
                     "flags": [
@@ -207,16 +211,22 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Sanitizer.sanitize()"
         }
@@ -226,28 +236,29 @@
             "engines": [
                 "blink"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "api/Sanitizer.json",
             "name": "sanitizeFor",
             "slug": "API/Sanitizer/sanitizeFor",
             "summary": "The sanitizeFor() method of the Sanitizer interface is used to parse and sanitize a string of HTML for insertion into the DOM at some later point.",
             "support": {
-                "chrome": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": false
                 },
@@ -255,6 +266,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "79",
                     "flags": [
@@ -272,16 +284,22 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Sanitizer.sanitizeFor()"
         }
@@ -293,7 +311,6 @@
                 "gecko"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/Sanitizer.json",
@@ -301,20 +318,24 @@
             "slug": "API/Sanitizer",
             "summary": "The Sanitizer interface of the HTML Sanitizer API provides methods to sanitize untrusted strings of HTML, Document and DocumentFragment objects. After sanitization, unwanted elements or attributes are removed, and the returned objects can safely be inserted into a document's DOM.",
             "support": {
-                "chrome": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "83",
                     "flags": [
@@ -329,6 +350,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "79",
                     "flags": [
@@ -346,16 +368,22 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Sanitizer"
         }

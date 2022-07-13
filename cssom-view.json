@@ -21,6 +21,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -58,6 +59,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -99,6 +101,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -116,6 +119,76 @@
                 }
             },
             "title": "Document: scroll event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "scroll_event",
+            "slug": "API/VisualViewport/scroll_event",
+            "summary": "The scroll event of the VisualViewport interface is fired when the visual viewport is scrolled.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "partial_implementation": true,
+                        "notes": "The <code>onscroll</code> property is not supported."
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "66",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onscroll</code> property is not supported."
+                    }
+                ]
+            },
+            "title": "VisualViewport: scroll event"
         }
     ],
     "dom-document-scrollingelement": [
@@ -144,6 +217,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -189,6 +263,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "3"
                 },
@@ -236,6 +311,7 @@
                 "ie": {
                     "version_added": "5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -283,6 +359,7 @@
                 "ie": {
                     "version_added": "5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -330,6 +407,7 @@
                 "ie": {
                     "version_added": "5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -377,6 +455,7 @@
                 "ie": {
                     "version_added": "5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -424,6 +503,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "9.5"
                 },
@@ -478,6 +558,7 @@
                 "ie": {
                     "version_added": "5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "9.5"
                 },
@@ -523,6 +604,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -564,6 +646,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -607,6 +690,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -657,6 +741,7 @@
                     "version_added": "5",
                     "notes": "In Internet Explorer 5 through 7, if padding is set, the value of <code>scrollHeight</code> is equal to the sum of the top and bottom padding. This behavior was fixed in Internet Explorer 8."
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -707,6 +792,7 @@
                         "No support for <code>smooth</code> behavior or <code>center</code> options."
                     ]
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -768,6 +854,7 @@
                     "version_added": "5",
                     "notes": "For right-to-left elements, this property uses 100-0 (most left to most right) instead of negative values."
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -812,6 +899,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -853,6 +941,7 @@
                 "ie": {
                     "version_added": "5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -899,6 +988,7 @@
                     "version_added": "5",
                     "notes": "In Internet Explorer 5 through 7, if padding is set, the value of <code>scrollWidth</code> is equal to the sum of the left and right padding. This behavior was fixed in Internet Explorer 8."
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -944,6 +1034,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -995,6 +1086,7 @@
                 "ie": {
                     "version_added": "5.5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -1042,6 +1134,7 @@
                 "ie": {
                     "version_added": "5.5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -1089,6 +1182,7 @@
                 "ie": {
                     "version_added": "5.5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -1136,6 +1230,7 @@
                 "ie": {
                     "version_added": "5.5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -1183,6 +1278,7 @@
                 "ie": {
                     "version_added": "5.5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "8"
                 },
@@ -1236,6 +1332,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1289,6 +1386,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1334,6 +1432,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1375,6 +1474,7 @@
                 "ie": {
                     "version_added": "10"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1424,6 +1524,7 @@
                 "ie": {
                     "version_added": "10"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1473,6 +1574,7 @@
                 "ie": {
                     "version_added": "10"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1520,6 +1622,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1559,6 +1662,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1598,6 +1702,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1637,6 +1742,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1680,6 +1786,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1729,6 +1836,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1776,6 +1884,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1823,6 +1932,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1870,6 +1980,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1917,6 +2028,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1964,6 +2076,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "10.6"
                 },
@@ -2009,6 +2122,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2058,6 +2172,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2108,6 +2223,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "9"
                 },
@@ -2153,6 +2269,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2198,6 +2315,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2244,6 +2362,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2293,6 +2412,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2339,6 +2459,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2388,6 +2509,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2433,6 +2555,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2450,6 +2573,510 @@
                 }
             },
             "title": "Screen"
+        }
+    ],
+    "dom-visualviewport-height": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "height",
+            "slug": "API/VisualViewport/height",
+            "summary": "The height read-only property of the VisualViewport interface returns the height of the visual viewport, in CSS pixels.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "VisualViewport.height"
+        }
+    ],
+    "dom-visualviewport-offsetleft": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "offsetLeft",
+            "slug": "API/VisualViewport/offsetLeft",
+            "summary": "The offsetLeft read-only property of the VisualViewport interface returns the offset of the left edge of the visual viewport from the left edge of the layout viewport in CSS pixels.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "VisualViewport.offsetleft"
+        }
+    ],
+    "dom-visualviewport-offsettop": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "offsetTop",
+            "slug": "API/VisualViewport/offsetTop",
+            "summary": "The offsetTop read-only property of the VisualViewport interface returns the offset of the top edge of the visual viewport from the top edge of the layout viewport in CSS pixels.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "VisualViewport.offsetTop"
+        }
+    ],
+    "dom-visualviewport-pageleft": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "pageLeft",
+            "slug": "API/VisualViewport/pageLeft",
+            "summary": "The pageLeft read-only property of the VisualViewport interface returns the x coordinate of the left edge of the visual viewport relative to the initial containing block origin, in CSS pixels.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "VisualViewport.pageLeft"
+        }
+    ],
+    "dom-visualviewport-pagetop": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "pageTop",
+            "slug": "API/VisualViewport/pageTop",
+            "summary": "The pageTop read-only property of the VisualViewport interface returns the y coordinate of the top edge of the visual viewport relative to the initial containing block origin, in CSS pixels.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "VisualViewport.pageTop"
+        }
+    ],
+    "eventdef-window-resize": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "resize_event",
+            "slug": "API/VisualViewport/resize_event",
+            "summary": "The resize event of the VisualViewport interface is fired when the visual viewport is resized.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "partial_implementation": true,
+                        "notes": "The <code>onresize</code> property is not supported."
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "66",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": {
+                    "version_added": "8.0"
+                },
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onresize</code> property is not supported."
+                    }
+                ]
+            },
+            "title": "VisualViewport: resize event"
+        }
+    ],
+    "dom-visualviewport-scale": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "scale",
+            "slug": "API/VisualViewport/scale",
+            "summary": "The scale read-only property of the VisualViewport interface returns the pinch-zoom scaling factor applied to the visual viewport.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "VisualViewport.scale"
+        }
+    ],
+    "dom-visualviewport-width": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "width",
+            "slug": "API/VisualViewport/width",
+            "summary": "The width read-only property of the VisualViewport interface returns the width of the visual viewport, in CSS pixels.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "VisualViewport.width"
+        }
+    ],
+    "the-visualviewport-interface": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/VisualViewport.json",
+            "name": "VisualViewport",
+            "slug": "API/VisualViewport",
+            "summary": "The VisualViewport interface of the Visual Viewport API represents the visual viewport for a given window. For a page containing iframes, each iframe, as well as the containing page, will have a unique window object. Each window on a page will have a unique VisualViewport representing the properties associated with that window.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "VisualViewport"
         }
     ],
     "dom-window-devicepixelratio": [
@@ -2478,6 +3105,7 @@
                 "ie": {
                     "version_added": "11"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.1"
                 },
@@ -2533,6 +3161,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "9"
                 },
@@ -2585,6 +3214,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "9"
                 },
@@ -2633,6 +3263,7 @@
                 "ie": {
                     "version_added": "10"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2686,6 +3317,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2731,6 +3363,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2776,6 +3409,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "3"
                 },
@@ -2821,6 +3455,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "9"
                 },
@@ -2868,6 +3503,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "9"
                 },
@@ -2915,6 +3551,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "3"
                 },
@@ -2960,6 +3597,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "3"
                 },
@@ -2993,7 +3631,7 @@
             "support": {
                 "chrome": {
                     "version_added": "1",
-                    "notes": "Chrome does not emit a <code>resize</code> event on page load."
+                    "notes": "Chrome does not fire a <code>resize</code> event on page load."
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -3001,19 +3639,20 @@
                 },
                 "firefox": {
                     "version_added": "1",
-                    "notes": "Before Firefox 68, Firefox emitted a <code>resize</code> event on page load. This is no longer the case."
+                    "notes": "Before Firefox 68, Firefox fired a <code>resize</code> event on page load. This is no longer the case."
                 },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "7",
-                    "notes": "Opera does not emit a <code>resize</code> event on page load."
+                    "notes": "Opera does not fire a <code>resize</code> event on page load."
                 },
                 "opera_android": {
                     "version_added": "10.1",
-                    "notes": "Opera does not emit a <code>resize</code> event on page load."
+                    "notes": "Opera does not fire a <code>resize</code> event on page load."
                 },
                 "safari": {
                     "version_added": "1.1"
@@ -3022,11 +3661,11 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "1",
-                    "notes": "Webview does not emit a <code>resize</code> event on page load."
+                    "notes": "WebView does not fire a <code>resize</code> event on page load."
                 },
                 "edge_blink": {
                     "version_added": "79",
-                    "notes": "Chrome does not emit a <code>resize</code> event on page load."
+                    "notes": "Chrome does not fire a <code>resize</code> event on page load."
                 }
             },
             "title": "Window: resize event"
@@ -3061,6 +3700,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3109,6 +3749,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3154,6 +3795,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3199,6 +3841,7 @@
                 "ie": {
                     "version_added": "5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3244,6 +3887,7 @@
                 "ie": {
                     "version_added": "5"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3290,6 +3934,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3336,6 +3981,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3381,6 +4027,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "3"
                 },
@@ -3426,6 +4073,7 @@
                 "ie": {
                     "version_added": "11"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "3"
                 },
@@ -3471,6 +4119,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "4"
                 },
@@ -3529,6 +4178,7 @@
                     "version_added": "9",
                     "alternative_name": "pageXOffset"
                 },
+                "oculus": "mirror",
                 "opera": [
                     {
                         "version_added": "9.6"
@@ -3611,6 +4261,7 @@
                     "version_added": "9",
                     "alternative_name": "pageYOffset"
                 },
+                "oculus": "mirror",
                 "opera": [
                     {
                         "version_added": "9.6"
@@ -3654,6 +4305,60 @@
             "title": "Window.scrollY"
         }
     ],
+    "dom-window-visualviewport": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Window.json",
+            "name": "visualViewport",
+            "slug": "API/Window/visualViewport",
+            "summary": "The visualViewport read-only property of the Window interface returns a VisualViewport object representing the visual viewport for a given window.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "91"
+                    },
+                    {
+                        "version_added": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.visualviewport.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": {
+                    "version_added": "68"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window.visualViewport"
+        }
+    ],
     "dom-document-elementfrompoint": [
         {
             "engines": [
@@ -3681,6 +4386,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1",
                     "notes": "Before Opera 53, this method returned <code>null</code> when the element was a child of a host node. See <a href='https://crbug.com/759947'>issue 759947</a>."
@@ -3739,6 +4445,7 @@
                     "prefix": "ms",
                     "notes": "Returns a <code>NodeList</code> instead of an array. See <a href='https://msdn.microsoft.com/en-us/library/hh772121(v=vs.85).aspx'>the MSDN documentation</a>. Returns <code>null</code> when the point provided has no elements beneath it (e.g., when given a point outside the document)."
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "30"
                 },

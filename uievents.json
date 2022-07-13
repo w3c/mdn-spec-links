@@ -25,6 +25,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -68,6 +69,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -113,6 +115,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -128,268 +131,6 @@
                 }
             },
             "title": "CompositionEvent"
-        }
-    ],
-    "event-type-keydown": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "keydown_event",
-            "slug": "API/Document/keydown_event",
-            "summary": "The keydown event is fired when a key is pressed.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "14"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "11.6"
-                },
-                "opera_android": {
-                    "version_added": "12"
-                },
-                "safari": {
-                    "version_added": "2"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: keydown event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Element.json",
-            "name": "keydown_event",
-            "slug": "API/Element/keydown_event",
-            "summary": "The keydown event is fired when a key is pressed.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1.2"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: keydown event"
-        }
-    ],
-    "event-type-keyup": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "keyup_event",
-            "slug": "API/Document/keyup_event",
-            "summary": "The keyup event is fired when a key is released.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "14"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "11.6"
-                },
-                "opera_android": {
-                    "version_added": "12"
-                },
-                "safari": {
-                    "version_added": "2"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: keyup event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Element.json",
-            "name": "keyup_event",
-            "slug": "API/Element/keyup_event",
-            "summary": "The keyup event is fired when a key is released.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1.2"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: keyup event"
-        }
-    ],
-    "event-type-wheel": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "wheel_event",
-            "slug": "API/Document/wheel_event",
-            "summary": "The wheel event fires when the user rotates a wheel button on a pointing device (typically a mouse).",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "17"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9",
-                    "notes": "Internet Explorer only exposes the wheel event via <code>addEventListener</code>; there is no <code>onwheel</code> attribute on DOM objects. See <a href='https://connect.microsoft.com/IE/feedback/details/782835/missing-onwheel-attribute-for-the-wheel-event-although-its-supported-via-addeventlistener'>IE bug 782835</a>."
-                },
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: wheel event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Element.json",
-            "name": "wheel_event",
-            "slug": "API/Element/wheel_event",
-            "summary": "The wheel event fires when the user rotates a wheel button on a pointing device (typically a mouse).",
-            "support": {
-                "chrome": {
-                    "version_added": "61"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "17"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9",
-                    "notes": "Internet Explorer only exposes the wheel event via <code>addEventListener</code>; there is no <code>onwheel</code> attribute on DOM objects. See <a href='https://connect.microsoft.com/IE/feedback/details/782835/missing-onwheel-attribute-for-the-wheel-event-although-its-supported-via-addeventlistener'>IE bug 782835</a>."
-                },
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: wheel event"
         }
     ],
     "event-type-auxclick": [
@@ -418,6 +159,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -435,46 +177,6 @@
                 "title": "Auxclick"
             },
             "title": "Element: auxclick event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "onauxclick",
-            "slug": "API/GlobalEventHandlers/onauxclick",
-            "summary": "The onauxclick property of the GlobalEventHandlers mixin is an event handler for processing auxclick events.",
-            "support": {
-                "chrome": {
-                    "version_added": "55"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "caniuse": {
-                "feature": "auxclick",
-                "title": "Auxclick"
-            },
-            "title": "GlobalEventHandlers.onauxclick"
         }
     ],
     "event-type-blur": [
@@ -510,6 +212,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -557,6 +260,7 @@
                 "ie": {
                     "version_added": "11"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -609,6 +313,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -656,6 +361,7 @@
                 "ie": {
                     "version_added": "11"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "15"
                 },
@@ -705,6 +411,7 @@
                 "ie": {
                     "version_added": "11"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "15"
                 },
@@ -754,6 +461,7 @@
                 "ie": {
                     "version_added": "11"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -799,6 +507,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "10.5"
                 },
@@ -852,6 +561,7 @@
                 "ie": {
                     "version_added": "8"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -899,6 +609,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -916,50 +627,6 @@
                 }
             },
             "title": "Element: error event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "error_event",
-            "slug": "API/Window/error_event",
-            "summary": "The error event is fired on a Window object when a resource failed to load or couldn't be used — for example if a script has an execution error.",
-            "support": {
-                "chrome": {
-                    "version_added": "10"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "5.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Window: error event"
         }
     ],
     "event-type-focus": [
@@ -995,6 +662,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -1042,6 +710,7 @@
                 "ie": {
                     "version_added": "11"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1091,6 +760,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -1138,6 +808,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -1157,6 +828,98 @@
                 }
             },
             "title": "Element: focusout event"
+        }
+    ],
+    "event-type-keydown": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "keydown_event",
+            "slug": "API/Element/keydown_event",
+            "summary": "The keydown event is fired when a key is pressed.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "6"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1.2"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: keydown event"
+        }
+    ],
+    "event-type-keyup": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "keyup_event",
+            "slug": "API/Element/keyup_event",
+            "summary": "The keyup event is fired when a key is released.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "6"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1.2"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: keyup event"
         }
     ],
     "event-type-mousedown": [
@@ -1185,6 +948,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -1232,6 +996,7 @@
                 "ie": {
                     "version_added": "5.5"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1277,6 +1042,7 @@
                 "ie": {
                     "version_added": "5.5"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1322,6 +1088,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -1369,6 +1136,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1416,6 +1184,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "9.5"
                 },
@@ -1463,6 +1232,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "11.6"
                 },
@@ -1484,7 +1254,7 @@
             "title": "Element: mouseup event"
         }
     ],
-    "event-type-select": [
+    "event-type-wheel": [
         {
             "engines": [
                 "blink",
@@ -1492,41 +1262,41 @@
                 "webkit"
             ],
             "filename": "api/Element.json",
-            "name": "select_event",
-            "slug": "API/Element/select_event",
-            "summary": "The select event fires when some text has been selected.",
+            "name": "wheel_event",
+            "slug": "API/Element/wheel_event",
+            "summary": "The wheel event fires when the user rotates a wheel button on a pointing device (typically a mouse).",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "31"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "6"
+                    "version_added": "17"
                 },
                 "firefox_android": "mirror",
                 "ie": {
-                    "version_added": "9"
+                    "version_added": "9",
+                    "notes": "Internet Explorer only exposes the wheel event via <code>addEventListener</code>; there is no <code>onwheel</code> attribute on DOM objects. See <a href='https://connect.microsoft.com/IE/feedback/details/782835/missing-onwheel-attribute-for-the-wheel-event-although-its-supported-via-addeventlistener'>IE bug 782835</a>."
                 },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
-                    "version_added": "1"
+                    "version_added": "7"
                 },
-                "safari_ios": "mirror",
+                "safari_ios": {
+                    "version_added": false
+                },
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
             },
-            "title": "Element: select event"
+            "title": "Element: wheel event"
         }
     ],
     "dom-focusevent-focusevent": [
@@ -1555,6 +1325,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1598,6 +1369,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1641,6 +1413,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1695,6 +1468,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1736,6 +1510,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1777,6 +1552,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1815,6 +1591,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1854,6 +1631,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1895,6 +1673,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -1938,6 +1717,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -1983,6 +1763,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2028,6 +1809,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2075,6 +1857,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2118,6 +1901,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2160,6 +1944,7 @@
                     "version_added": "9",
                     "notes": "IE's implementation does not completely match the current spec because it is based on an older version of the spec."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2205,6 +1990,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2250,6 +2036,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2297,6 +2084,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2338,6 +2126,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2385,6 +2174,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2432,6 +2222,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2475,6 +2266,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2522,6 +2314,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "10.6"
                 },
@@ -2572,6 +2365,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2613,6 +2407,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "10.6"
                 },
@@ -2660,6 +2455,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2707,6 +2503,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2754,6 +2551,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -2795,6 +2593,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2842,6 +2641,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2889,6 +2689,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2936,6 +2737,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -2983,6 +2785,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3030,6 +2833,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "10.6"
                 },
@@ -3075,6 +2879,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3124,6 +2929,7 @@
                     "partial_implementation": true,
                     "notes": "Always <code>0</code> on <code>click</code> and <code>dblclick</code> events. On <code>mousedown</code> and <code>mouseup</code> events, the count is not unique to the element, but is rather the global click count for the current document -- even across refreshes."
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3171,6 +2977,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3218,6 +3025,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "12.1"
                 },
@@ -3265,6 +3073,7 @@
                 "ie": {
                     "version_added": false
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3310,6 +3119,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3356,6 +3166,7 @@
                     "version_added": "9",
                     "notes": "IE9 supports an old draft of the spec where this value was a <code>long</code> instead of a <code>double</code>."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3400,6 +3211,7 @@
                     "version_added": "9",
                     "notes": "IE9 supports an old draft of the spec where this value was a <code>long</code> instead of a <code>double</code>."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3444,6 +3256,7 @@
                     "version_added": "9",
                     "notes": "IE9 supports an old draft of the spec where this value was a <code>long</code> instead of a <code>double</code>."
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3487,6 +3300,7 @@
                 "ie": {
                     "version_added": "9"
                 },
+                "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
@@ -3535,6 +3349,7 @@
                 "ie": {
                     "version_added": "4"
                 },
+                "oculus": "mirror",
                 "opera": {
                     "version_added": "4"
                 },

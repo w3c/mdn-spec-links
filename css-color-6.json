@@ -1,18 +1,16 @@
 {
-    "color-mix": [
+    "colorcontrast": [
         {
             "engines": [
-                "gecko",
                 "webkit"
             ],
             "needsflag": [
-                "gecko",
                 "webkit"
             ],
             "filename": "css/types/color.json",
-            "name": "color-mix",
-            "slug": "CSS/color_value/color-mix",
-            "summary": "The color-mix() functional notation takes two color values and returns the result of mixing them in a given colorspace by a given amount.",
+            "name": "color-contrast",
+            "slug": "CSS/color_value/color-contrast",
+            "summary": "The color-contrast() functional notation takes a color value and compares it to a list of other color values, selecting the one with the highest contrast from the list.",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -20,14 +18,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.color-mix.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -41,7 +32,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "CSS color-mix()"
+                            "name": "CSS color-contrast()"
                         }
                     ]
                 },
@@ -50,7 +41,7 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "CSS color-mix()"
+                            "name": "CSS color-contrast()"
                         }
                     ]
                 },
@@ -60,7 +51,7 @@
                     "version_added": false
                 }
             },
-            "title": "color-mix()"
+            "title": "color-contrast()"
         }
     ]
 }
