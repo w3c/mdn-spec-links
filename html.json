@@ -13926,9 +13926,16 @@
             "slug": "API/HTMLAnchorElement/referrerPolicy",
             "summary": "The HTMLAnchorElement.referrerPolicy property reflect the HTML referrerpolicy attribute of the <a> element defining which referrer is sent when fetching the resource.",
             "support": {
-                "chrome": {
-                    "version_added": "53"
-                },
+                "chrome": [
+                    {
+                        "version_added": "52"
+                    },
+                    {
+                        "alternative_name": "referrerpolicy",
+                        "version_added": "51",
+                        "version_removed": "52"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -13945,13 +13952,18 @@
                     "version_added": "14"
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": "7.2"
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "referrerpolicy",
+                        "version_added": false,
+                        "version_removed": "52"
+                    }
+                ]
             },
             "title": "HTMLAnchorElement.referrerPolicy"
         }
@@ -14104,9 +14116,16 @@
             "slug": "API/HTMLAreaElement/referrerPolicy",
             "summary": "The HTMLAreaElement.referrerPolicy property reflect the HTML referrerpolicy attribute of the <area> element defining which referrer is sent when fetching the resource.",
             "support": {
-                "chrome": {
-                    "version_added": "53"
-                },
+                "chrome": [
+                    {
+                        "version_added": "52"
+                    },
+                    {
+                        "alternative_name": "referrerpolicy",
+                        "version_added": "51",
+                        "version_removed": "52"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -14123,13 +14142,18 @@
                     "version_added": "14.1"
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": "7.2"
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "referrerpolicy",
+                        "version_added": false,
+                        "version_removed": "52"
+                    }
+                ]
             },
             "title": "HTMLAreaElement.referrerPolicy"
         }
@@ -18907,9 +18931,16 @@
             "slug": "API/HTMLIFrameElement/referrerPolicy",
             "summary": "The HTMLIFrameElement.referrerPolicy property reflects the HTML referrerpolicy attribute of the <iframe> element defining which referrer is sent when fetching the resource.",
             "support": {
-                "chrome": {
-                    "version_added": "53"
-                },
+                "chrome": [
+                    {
+                        "version_added": "52"
+                    },
+                    {
+                        "alternative_name": "referrerpolicy",
+                        "version_added": "51",
+                        "version_removed": "52"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -18920,9 +18951,7 @@
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": "38"
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": "14"
@@ -18930,9 +18959,16 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "referrerpolicy",
+                        "version_added": false,
+                        "version_removed": "52"
+                    }
+                ]
             },
             "title": "HTMLIFrameElement.referrerPolicy"
         }
@@ -19704,9 +19740,16 @@
             "slug": "API/HTMLImageElement/referrerPolicy",
             "summary": "The HTMLImageElement.referrerPolicy property reflects the HTML referrerpolicy attribute of the <img> element defining which referrer is sent when fetching the resource.",
             "support": {
-                "chrome": {
-                    "version_added": "53"
-                },
+                "chrome": [
+                    {
+                        "version_added": "52"
+                    },
+                    {
+                        "alternative_name": "referrerpolicy",
+                        "version_added": "51",
+                        "version_removed": "52"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -19725,9 +19768,16 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "alternative_name": "referrerpolicy",
+                        "version_added": false,
+                        "version_removed": "52"
+                    }
+                ]
             },
             "title": "HTMLImageElement.referrerPolicy"
         }
@@ -38832,9 +38882,7 @@
                 "chrome": {
                     "version_added": "4"
                 },
-                "chrome_android": {
-                    "version_added": "40"
-                },
+                "chrome_android": "mirror",
                 "deno": {
                     "version_added": false
                 },
@@ -41422,9 +41470,7 @@
                 "chrome": {
                     "version_added": "4"
                 },
-                "chrome_android": {
-                    "version_added": "40"
-                },
+                "chrome_android": "mirror",
                 "deno": {
                     "version_added": "1.0"
                 },
@@ -41526,9 +41572,7 @@
                 "chrome": {
                     "version_added": "4"
                 },
-                "chrome_android": {
-                    "version_added": "40"
-                },
+                "chrome_android": "mirror",
                 "deno": {
                     "version_added": false
                 },
@@ -41577,9 +41621,7 @@
                 "chrome": {
                     "version_added": "4"
                 },
-                "chrome_android": {
-                    "version_added": "40"
-                },
+                "chrome_android": "mirror",
                 "deno": {
                     "version_added": "1.7"
                 },
@@ -41630,9 +41672,7 @@
                 "chrome": {
                     "version_added": "4"
                 },
-                "chrome_android": {
-                    "version_added": "40"
-                },
+                "chrome_android": "mirror",
                 "deno": {
                     "version_added": "1.8"
                 },
@@ -41771,9 +41811,7 @@
                 "chrome": {
                     "version_added": "4"
                 },
-                "chrome_android": {
-                    "version_added": "40"
-                },
+                "chrome_android": "mirror",
                 "deno": {
                     "version_added": "1.0"
                 },
