@@ -36,7 +36,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document: transitioncancel event"
+            "title": "Element: transitioncancel event"
         },
         {
             "engines": [
@@ -74,7 +74,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement: transitioncancel event"
+            "title": "Element: transitioncancel event"
         },
         {
             "engines": [
@@ -112,7 +112,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window: transitioncancel event"
+            "title": "Element: transitioncancel event"
         }
     ],
     "transitionend": [
@@ -154,7 +154,7 @@
                     "version_added": false
                 }
             },
-            "title": "Document: transitionend event"
+            "title": "Element: transitionend event"
         },
         {
             "engines": [
@@ -254,7 +254,7 @@
                     }
                 ]
             },
-            "title": "HTMLElement: transitionend event"
+            "title": "Element: transitionend event"
         },
         {
             "engines": [
@@ -291,7 +291,7 @@
                     "version_added": false
                 }
             },
-            "title": "Window: transitionend event"
+            "title": "Element: transitionend event"
         }
     ],
     "transitionrun": [
@@ -333,7 +333,7 @@
                     "version_added": false
                 }
             },
-            "title": "Document: transitionrun event"
+            "title": "Element: transitionrun event"
         },
         {
             "engines": [
@@ -371,7 +371,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement: transitionrun event"
+            "title": "Element: transitionrun event"
         },
         {
             "engines": [
@@ -408,7 +408,7 @@
                     "version_added": false
                 }
             },
-            "title": "Window: transitionrun event"
+            "title": "Element: transitionrun event"
         }
     ],
     "transitionstart": [
@@ -450,7 +450,7 @@
                     "version_added": false
                 }
             },
-            "title": "Document: transitionstart event"
+            "title": "Element: transitionstart event"
         },
         {
             "engines": [
@@ -490,7 +490,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement: transitionstart event"
+            "title": "Element: transitionstart event"
         },
         {
             "engines": [
@@ -527,7 +527,7 @@
                     "version_added": false
                 }
             },
-            "title": "Window: transitionstart event"
+            "title": "Element: transitionstart event"
         }
     ],
     "ref-for-dom-globaleventhandlers-ontransitioncancel": [
@@ -540,7 +540,7 @@
             "filename": "api/GlobalEventHandlers.json",
             "name": "ontransitioncancel",
             "slug": "API/GlobalEventHandlers/ontransitioncancel",
-            "summary": "The ontransitioncancel property of the GlobalEventHandlers mixin is an event handler that processes transitioncancel events.",
+            "summary": "The transitioncancel event is fired when a CSS transition is canceled.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -576,7 +576,7 @@
                     "version_added": "87"
                 }
             },
-            "title": "GlobalEventHandlers.ontransitioncancel"
+            "title": "Element: transitioncancel event"
         }
     ],
     "ref-for-dom-globaleventhandlers-ontransitionend": [
@@ -589,7 +589,7 @@
             "filename": "api/GlobalEventHandlers.json",
             "name": "ontransitionend",
             "slug": "API/GlobalEventHandlers/ontransitionend",
-            "summary": "The ontransitionend property of the GlobalEventHandlers mixin is an event handler that processes transitionend events.",
+            "summary": "The transitionend event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the transition-property is removed or display is set to none, then the event will not be generated.",
             "support": {
                 "chrome": [
                     {
@@ -671,7 +671,7 @@
                     }
                 ]
             },
-            "title": "GlobalEventHandlers.ontransitionend"
+            "title": "Element: transitionend event"
         }
     ],
     "dom-transitionevent-transitionevent": [
