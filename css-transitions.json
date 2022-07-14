@@ -6,349 +6,21 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/Document.json",
+            "filename": "api/Element.json",
             "name": "transitioncancel_event",
-            "slug": "API/Document/transitioncancel_event",
+            "slug": "API/Element/transitioncancel_event",
             "summary": "The transitioncancel event is fired when a CSS transition is canceled.",
-            "support": {
-                "chrome": {
-                    "version_added": "74"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: transitioncancel event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "transitioncancel_event",
-            "slug": "API/HTMLElement/transitioncancel_event",
-            "summary": "The transitioncancel event is fired when a CSS transition is canceled.",
-            "support": {
-                "chrome": {
-                    "version_added": "74"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: transitioncancel event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "transitioncancel_event",
-            "slug": "API/Window/transitioncancel_event",
-            "summary": "The transitioncancel event is fired when a CSS transition is canceled.",
-            "support": {
-                "chrome": {
-                    "version_added": "74"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: transitioncancel event"
-        }
-    ],
-    "transitionend": [
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "transitionend_event",
-            "slug": "API/Document/transitionend_event",
-            "summary": "The transitionend event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the transition-property is removed or display is set to none, then the event will not be generated.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "51"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "10",
-                    "notes": "The <code>ontransitionend</code> attribute is not supported in IE. To listen to this event, use <code>document.addEventListener('transitionend', function() {});</code>."
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "Element: transitionend event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "transitionend_event",
-            "slug": "API/HTMLElement/transitionend_event",
-            "summary": "The transitionend event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the transition-property is removed or display is set to none, then the event will not be generated.",
             "support": {
                 "chrome": [
                     {
-                        "version_added": "26"
+                        "version_added": "87"
                     },
                     {
-                        "alternative_name": "webkitTransitionEnd",
-                        "version_added": "1"
+                        "version_added": "74",
+                        "partial_implementation": true,
+                        "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
                     }
                 ],
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "51"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "10"
-                },
-                "oculus": "mirror",
-                "opera": [
-                    {
-                        "version_added": "12.1"
-                    },
-                    {
-                        "alternative_name": "webkitTransitionEnd",
-                        "version_added": "15"
-                    },
-                    {
-                        "alternative_name": "oTransitionEnd",
-                        "version_added": "11.6",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "12.1"
-                    },
-                    {
-                        "alternative_name": "webkitTransitionEnd",
-                        "version_added": "14"
-                    },
-                    {
-                        "alternative_name": "oTransitionEnd",
-                        "version_added": "12",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": [
-                    {
-                        "version_added": "7"
-                    },
-                    {
-                        "alternative_name": "webkitTransitionEnd",
-                        "version_added": "4"
-                    }
-                ],
-                "safari_ios": [
-                    {
-                        "version_added": "7"
-                    },
-                    {
-                        "alternative_name": "webkitTransitionEnd",
-                        "version_added": "3.2"
-                    }
-                ],
-                "samsunginternet_android": "mirror",
-                "webview_android": [
-                    {
-                        "version_added": "37"
-                    },
-                    {
-                        "alternative_name": "webkitTransitionEnd",
-                        "version_added": "37"
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "alternative_name": "webkitTransitionEnd",
-                        "version_added": "79"
-                    }
-                ]
-            },
-            "title": "Element: transitionend event"
-        },
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "transitionend_event",
-            "slug": "API/Window/transitionend_event",
-            "summary": "The transitionend event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the transition-property is removed or display is set to none, then the event will not be generated.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "51"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "Element: transitionend event"
-        }
-    ],
-    "transitionrun": [
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "transitionrun_event",
-            "slug": "API/Document/transitionrun_event",
-            "summary": "The transitionrun event is fired when a CSS transition is first created, i.e. before any transition-delay has begun.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "10",
-                    "notes": "The <code>ontransitionrun</code> attribute is not supported in IE. To listen to this event, use <code>document.addEventListener('transitionrun', function() {});</code>."
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "Element: transitionrun event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "transitionrun_event",
-            "slug": "API/HTMLElement/transitionrun_event",
-            "summary": "The transitionrun event is fired when a CSS transition is first created, i.e. before any transition-delay has begun.",
-            "support": {
-                "chrome": {
-                    "version_added": "74"
-                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -361,204 +33,6 @@
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: transitionrun event"
-        },
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "transitionrun_event",
-            "slug": "API/Window/transitionrun_event",
-            "summary": "The transitionrun event is fired when a CSS transition is first created, i.e. before any transition-delay has begun.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "Element: transitionrun event"
-        }
-    ],
-    "transitionstart": [
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "transitionstart_event",
-            "slug": "API/Document/transitionstart_event",
-            "summary": "The transitionstart event is fired when a CSS transition has actually started, i.e., after any transition-delay has ended.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "10",
-                    "notes": "The <code>ontransitionstart</code> attribute is not supported in IE. To listen to this event, use <code>document.addEventListener('transitionstart', function() {});</code>."
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "Element: transitionstart event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "transitionstart_event",
-            "slug": "API/HTMLElement/transitionstart_event",
-            "summary": "The transitionstart event is fired when a CSS transition has actually started, i.e., after any transition-delay has ended.",
-            "support": {
-                "chrome": {
-                    "version_added": "74"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "10"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element: transitionstart event"
-        },
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "transitionstart_event",
-            "slug": "API/Window/transitionstart_event",
-            "summary": "The transitionstart event is fired when a CSS transition has actually started, i.e., after any transition-delay has ended.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "Element: transitionstart event"
-        }
-    ],
-    "ref-for-dom-globaleventhandlers-ontransitioncancel": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "ontransitioncancel",
-            "slug": "API/GlobalEventHandlers/ontransitioncancel",
-            "summary": "The transitioncancel event is fired when a CSS transition is canceled.",
-            "support": {
-                "chrome": {
-                    "version_added": "87"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "53"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": {
-                    "version_added": false
-                },
                 "safari": [
                     {
                         "version_added": "13.1"
@@ -566,44 +40,106 @@
                     {
                         "version_added": "12",
                         "partial_implementation": true,
-                        "notes": "The event handler is exposed but will not actually be called unless both the \"Web Animations\" and \"CSS Animations via Web Animations\" preferences are enabled."
+                        "notes": "Although the <code>ontransitioncancel</code> property is supported, the <code>transitioncancel</code> event is never fired."
                     }
                 ],
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "87"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "87"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
+                    }
+                ]
             },
             "title": "Element: transitioncancel event"
         }
     ],
-    "ref-for-dom-globaleventhandlers-ontransitionend": [
+    "dom-globaleventhandlers-ontransitioncancel": [
         {
             "engines": [
                 "blink",
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "ontransitionend",
-            "slug": "API/GlobalEventHandlers/ontransitionend",
+            "filename": "api/Element.json",
+            "name": "transitioncancel_event",
+            "slug": "API/Element/transitioncancel_event",
+            "summary": "The transitioncancel event is fired when a CSS transition is canceled.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "87"
+                    },
+                    {
+                        "version_added": "74",
+                        "partial_implementation": true,
+                        "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "53"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": [
+                    {
+                        "version_added": "13.1"
+                    },
+                    {
+                        "version_added": "12",
+                        "partial_implementation": true,
+                        "notes": "Although the <code>ontransitioncancel</code> property is supported, the <code>transitioncancel</code> event is never fired."
+                    }
+                ],
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "87"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>ontransitioncancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitioncancel', function() {});</code>."
+                    }
+                ]
+            },
+            "title": "Element: transitioncancel event"
+        }
+    ],
+    "transitionend": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "transitionend_event",
+            "slug": "API/Element/transitionend_event",
             "summary": "The transitionend event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the transition-property is removed or display is set to none, then the event will not be generated.",
             "support": {
                 "chrome": [
                     {
-                        "version_added": "79"
+                        "version_added": "26"
                     },
                     {
-                        "version_added": "81",
-                        "alternative_name": "onwebkittransitionend"
-                    },
-                    {
-                        "version_added": "26",
-                        "version_removed": "79",
-                        "partial_implementation": true,
-                        "notes": "Only supported on the <code>Window</code> interface."
+                        "alternative_name": "webkittransitionend",
+                        "version_added": "1"
                     }
                 ],
                 "chrome_android": "mirror",
@@ -615,63 +151,164 @@
                 },
                 "firefox_android": "mirror",
                 "ie": {
-                    "version_added": false,
-                    "notes": "The <code>ontransitionend</code> attribute is not supported in IE. To listen to this event, use <code>document.addEventListener('transitionend', function() {});</code>."
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The <code>ontransitionend</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitionend', function() {});</code>."
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
+                "opera": [
+                    {
+                        "version_added": "12.1"
+                    },
+                    {
+                        "alternative_name": "webkittransitionend",
+                        "version_added": "15"
+                    },
+                    {
+                        "alternative_name": "otransitionend",
+                        "version_added": "11.6",
+                        "version_removed": "15"
+                    }
+                ],
                 "opera_android": [
                     {
-                        "version_added": "57"
+                        "version_added": "12.1"
                     },
                     {
-                        "version_added": "59",
-                        "alternative_name": "onwebkittransitionend"
+                        "alternative_name": "webkittransitionend",
+                        "version_added": "14"
                     },
                     {
-                        "version_added": "14",
-                        "version_removed": "57",
-                        "partial_implementation": true,
-                        "notes": "Only supported on the <code>Window</code> interface."
+                        "alternative_name": "otransitionend",
+                        "version_added": "12",
+                        "version_removed": "14"
                     }
                 ],
-                "safari": {
-                    "version_added": "11"
-                },
+                "safari": [
+                    {
+                        "version_added": "7"
+                    },
+                    {
+                        "alternative_name": "webkittransitionend",
+                        "version_added": "4"
+                    }
+                ],
                 "safari_ios": "mirror",
-                "samsunginternet_android": [
-                    {
-                        "version_added": "11.0"
-                    },
-                    {
-                        "version_added": "13.0",
-                        "alternative_name": "onwebkittransitionend"
-                    },
-                    {
-                        "version_added": "1.5",
-                        "version_removed": "11.0",
-                        "partial_implementation": true,
-                        "notes": "Only supported on the <code>Window</code> interface."
-                    }
-                ],
+                "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": [
                     {
                         "version_added": "79"
                     },
                     {
-                        "version_added": "81",
-                        "alternative_name": "onwebkittransitionend"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "79",
-                        "partial_implementation": true,
-                        "notes": "Only supported on the <code>Window</code> interface."
+                        "alternative_name": "webkittransitionend",
+                        "version_added": "79"
                     }
                 ]
             },
             "title": "Element: transitionend event"
+        }
+    ],
+    "transitionrun": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "transitionrun_event",
+            "slug": "API/Element/transitionrun_event",
+            "summary": "The transitionrun event is fired when a CSS transition is first created, i.e. before any transition-delay has begun.",
+            "support": {
+                "chrome": {
+                    "version_added": "74"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "53"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The <code>ontransitionrun</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitionrun', function() {});</code>."
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": [
+                    {
+                        "version_added": "13.1"
+                    },
+                    {
+                        "version_added": "12",
+                        "partial_implementation": true,
+                        "notes": "The event handler exists but will never be called."
+                    }
+                ],
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: transitionrun event"
+        }
+    ],
+    "transitionstart": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "transitionstart_event",
+            "slug": "API/Element/transitionstart_event",
+            "summary": "The transitionstart event is fired when a CSS transition has actually started, i.e., after any transition-delay has ended.",
+            "support": {
+                "chrome": {
+                    "version_added": "74"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "53"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "10",
+                    "partial_implementation": true,
+                    "notes": "The <code>ontransitionstart</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('transitionstart', function() {});</code>."
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": [
+                    {
+                        "version_added": "13.1"
+                    },
+                    {
+                        "version_added": "12",
+                        "partial_implementation": true,
+                        "notes": "The event handler exists but will never be called."
+                    }
+                ],
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: transitionstart event"
         }
     ],
     "dom-transitionevent-transitionevent": [
