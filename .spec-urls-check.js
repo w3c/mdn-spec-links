@@ -177,6 +177,10 @@ const needsSpecURL = (mdnURL) => {
     "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
     // FIXME: dunno what the problem is with the following
     "https://developer.mozilla.org/docs/Web/CSS/path()",
+    // ES spec has no one “spread syntax” anchor we can link to; multiple
+    // sections instead, in different parts of the spec, for subitems/
+    // subfeatures — specific spread types — we already have spec_url’s for
+    "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax",
   ];
   if (exceptions.includes(mdnURL)) {
     return false;
