@@ -1110,42 +1110,16 @@
             "slug": "API/Clients/openWindow",
             "summary": "The openWindow() method of the Clients interface creates a new top level browsing context and loads a given URL. If the calling script doesn't have permission to show popups, openWindow() will throw an InvalidAccessError.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "51",
-                        "notes": "URLs may open inside an existing browsing context provided by a standalone web app"
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Can open any URL. "
-                    },
-                    {
-                        "version_added": "42",
-                        "notes": "Can only open URLs on the same origin."
-                    },
-                    {
-                        "version_added": "40"
-                    }
-                ],
-                "chrome_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "URLs may open inside an existing browsing context provided by a standalone web app"
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Can open any URL. "
-                    },
-                    {
-                        "version_added": "42",
-                        "notes": "Can only open URLs on the same origin."
-                    },
-                    {
-                        "version_added": "40"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "40",
+                    "notes": [
+                        "Before Chrome 43, this method could only open URLs on the same origin.",
+                        "Since Chrome 51, URLs may open inside an existing browsing context provided by a standalone web app."
+                    ]
+                },
+                "chrome_android": "mirror",
                 "edge": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "firefox": {
                     "version_added": "45",
@@ -1168,49 +1142,15 @@
                     "version_added": "11.1"
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": [
-                    {
-                        "version_added": "5.0",
-                        "notes": "URLs may open inside an existing browsing context provided by a standalone web app"
-                    },
-                    {
-                        "version_added": "4.0"
-                    }
-                ],
-                "webview_android": [
-                    {
-                        "version_added": "51",
-                        "notes": "URLs may open inside an existing browsing context provided by a standalone web app"
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Can open any URL. "
-                    },
-                    {
-                        "version_added": "42",
-                        "notes": "Can only open URLs on the same origin."
-                    },
-                    {
-                        "version_added": "40"
-                    }
-                ],
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "URLs may open inside an existing browsing context provided by a standalone web app"
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Can open any URL. "
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Can only open URLs on the same origin."
-                    },
-                    {
-                        "version_added": "79"
-                    }
-                ]
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79",
+                    "notes": [
+                        "Before Chrome 43, this method could only open URLs on the same origin.",
+                        "Since Chrome 51, URLs may open inside an existing browsing context provided by a standalone web app."
+                    ]
+                }
             },
             "title": "Clients.openWindow()"
         }

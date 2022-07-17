@@ -2123,23 +2123,7 @@
                         "notes": "A placeholder property named <code>iterator</code> is used."
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "36"
-                    },
-                    {
-                        "alternative_name": "@@iterator",
-                        "version_added": "27",
-                        "version_removed": "36",
-                        "notes": "A placeholder property named <code>@@iterator</code> is used."
-                    },
-                    {
-                        "alternative_name": "iterator",
-                        "version_added": "17",
-                        "version_removed": "27",
-                        "notes": "A placeholder property named <code>iterator</code> is used."
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -2471,9 +2455,7 @@
                 "safari": {
                     "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": "7"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -2710,6 +2692,291 @@
                 }
             },
             "title": "AsyncFunction"
+        }
+    ],
+    "sec-asyncgenerator-prototype-next": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncGenerator.json",
+            "name": "next",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncGenerator/next",
+            "summary": "The next() method returns the next value in the sequence.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "55"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.10.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncGenerator.prototype.next()"
+        }
+    ],
+    "sec-asyncgenerator-prototype-return": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncGenerator.json",
+            "name": "return",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncGenerator/return",
+            "summary": "The return() method of an async generator acts as if a return statement is inserted in the generator's body at the current suspended position, which finishes the generator and allows the generator to perform any cleanup tasks when combined with a try...finally block.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "55"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.10.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncGenerator.prototype.return()"
+        }
+    ],
+    "sec-asyncgenerator-prototype-throw": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncGenerator.json",
+            "name": "throw",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncGenerator/throw",
+            "summary": "The throw() method of an async generator acts as if a throw statement is inserted in the generator's body at the current suspended position, which informs the generator of an error condition and allows it to handle the error, or perform cleanup and close itself.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "55"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.10.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncGenerator.prototype.throw()"
+        }
+    ],
+    "sec-asyncgenerator-objects": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncGenerator.json",
+            "name": "AsyncGenerator",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncGenerator",
+            "summary": "The AsyncGenerator object is returned by an async generator function and it conforms to both the async iterable protocol and the async iterator protocol.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "55"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.10.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncGenerator"
+        }
+    ],
+    "sec-asyncgeneratorfunction-objects": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncGeneratorFunction.json",
+            "name": "AsyncGeneratorFunction",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncGeneratorFunction",
+            "summary": "The AsyncGeneratorFunction constructor creates a new async generator function object. In JavaScript, every async generator function is actually an AsyncGeneratorFunction object.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "55"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.10.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncGeneratorFunction"
         }
     ],
     "sec-atomics.add": [
@@ -3652,9 +3919,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -3698,9 +3963,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -4232,9 +4495,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -4282,9 +4543,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -4824,9 +5083,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -4872,9 +5129,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -5368,9 +5623,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -5416,9 +5669,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -9962,7 +10213,7 @@
             "filename": "javascript/builtins/Function.json",
             "name": "Function",
             "slug": "JavaScript/Reference/Global_Objects/Function/Function",
-            "summary": "The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically, but suffers from security and similar (but far less significant) performance issues to Global_Objects/eval. However, unlike eval, the Function constructor creates functions which execute in the global scope only.",
+            "summary": "The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically, but suffers from security and similar (but far less significant) performance issues as eval(). However, unlike eval (which may have access to the local scope), the Function constructor creates functions which execute in the global scope only.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -10014,7 +10265,7 @@
             "filename": "javascript/builtins/Function.json",
             "name": "apply",
             "slug": "JavaScript/Reference/Global_Objects/Function/apply",
-            "summary": "The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object).",
+            "summary": "The apply() method calls the specified function with a given this value, and arguments provided as an array (or an array-like object).",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -10120,7 +10371,7 @@
             "filename": "javascript/builtins/Function.json",
             "name": "call",
             "slug": "JavaScript/Reference/Global_Objects/Function/call",
-            "summary": "The call() method calls a function with a given this value and arguments provided individually.",
+            "summary": "The call() method calls the function with a given this value and arguments provided individually.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -10173,7 +10424,7 @@
             "filename": "javascript/builtins/Function.json",
             "name": "length",
             "slug": "JavaScript/Reference/Global_Objects/Function/length",
-            "summary": "The length property indicates the number of parameters expected by the function.",
+            "summary": "A Function object's length property indicates the number of parameters expected by the function.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -10212,7 +10463,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Function.length"
+            "title": "Function.prototype.length"
         }
     ],
     "sec-function-instances-name": [
@@ -10264,7 +10515,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Function.name"
+            "title": "Function.prototype.name"
         }
     ],
     "sec-function.prototype.tostring": [
@@ -10277,7 +10528,7 @@
             "filename": "javascript/builtins/Function.json",
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/Function/toString",
-            "summary": "The toString() method returns a string representing the source code of the function.",
+            "summary": "The toString() method returns a string representing the source code of the specified Function.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -10329,7 +10580,7 @@
             "filename": "javascript/builtins/Function.json",
             "name": "Function",
             "slug": "JavaScript/Reference/Global_Objects/Function",
-            "summary": "Every JavaScript function is actually a Function object. This can be seen with the code (function(){}).constructor === Function, which returns true.",
+            "summary": "Every JavaScript function is actually a Function object. This can be seen with the code (function () {}).constructor === Function, which returns true.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11267,7 +11518,7 @@
             "filename": "javascript/builtins/Map.json",
             "name": "set",
             "slug": "JavaScript/Reference/Global_Objects/Map/set",
-            "summary": "The set() method adds or updates an element with a specified key and a value to a Map object.",
+            "summary": "The set() method adds or updates an entry in a Map object with a specified key and a value.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -11454,23 +11705,7 @@
                         "notes": "A placeholder property named <code>iterator</code> is used."
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "36"
-                    },
-                    {
-                        "alternative_name": "@@iterator",
-                        "version_added": "27",
-                        "version_removed": "36",
-                        "notes": "A placeholder property named <code>@@iterator</code> is used."
-                    },
-                    {
-                        "alternative_name": "iterator",
-                        "version_added": "17",
-                        "version_removed": "27",
-                        "notes": "A placeholder property named <code>iterator</code> is used."
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -12619,9 +12854,7 @@
                 "safari": {
                     "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": "7"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -13019,9 +13252,7 @@
                 "safari": {
                     "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": "7"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -19044,9 +19275,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -19881,7 +20110,7 @@
             "filename": "javascript/builtins/Set.json",
             "name": "add",
             "slug": "JavaScript/Reference/Global_Objects/Set/add",
-            "summary": "The add() method appends a new element with a specified value to the end of a Set object.",
+            "summary": "The add() method inserts a new element with a specified value in to a Set object, if there isn't an element with the same value already in the Set.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -20366,23 +20595,7 @@
                         "notes": "A placeholder property named <code>iterator</code> is used."
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "36"
-                    },
-                    {
-                        "alternative_name": "@@iterator",
-                        "version_added": "27",
-                        "version_removed": "36",
-                        "notes": "A placeholder property named <code>@@iterator</code> is used."
-                    },
-                    {
-                        "alternative_name": "iterator",
-                        "version_added": "17",
-                        "version_removed": "27",
-                        "notes": "A placeholder property named <code>iterator</code> is used."
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -22822,23 +23035,7 @@
                         "notes": "A placeholder property named <code>iterator</code> is used."
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "36"
-                    },
-                    {
-                        "alternative_name": "@@iterator",
-                        "version_added": "27",
-                        "version_removed": "36",
-                        "notes": "A placeholder property named <code>@@iterator</code> is used."
-                    },
-                    {
-                        "alternative_name": "iterator",
-                        "version_added": "17",
-                        "version_removed": "27",
-                        "notes": "A placeholder property named <code>iterator</code> is used."
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -22971,7 +23168,7 @@
             "filename": "javascript/builtins/Symbol.json",
             "name": "asyncIterator",
             "slug": "JavaScript/Reference/Global_Objects/Symbol/asyncIterator",
-            "summary": "The Symbol.asyncIterator well-known symbol specifies the default AsyncIterator for an object. If this property is set on an object, it is an async iterable and can be used in a for await...of loop.",
+            "summary": "The Symbol.asyncIterator well-known symbol specifies the default async iterator for an object. If this property is set on an object, it is an async iterable and can be used in a for await...of loop.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -25859,23 +26056,7 @@
                         "notes": "A placeholder property named <code>iterator</code> is used."
                     }
                 ],
-                "firefox_android": [
-                    {
-                        "version_added": "36"
-                    },
-                    {
-                        "alternative_name": "@@iterator",
-                        "version_added": "27",
-                        "version_removed": "36",
-                        "notes": "A placeholder property named <code>@@iterator</code> is used."
-                    },
-                    {
-                        "alternative_name": "iterator",
-                        "version_added": "17",
-                        "version_removed": "27",
-                        "notes": "A placeholder property named <code>iterator</code> is used."
-                    }
-                ],
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -27988,9 +28169,7 @@
                 "safari": {
                     "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": "7"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -28148,9 +28327,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -28196,9 +28373,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -31386,9 +31561,7 @@
                 "safari": {
                     "version_added": "15"
                 },
-                "safari_ios": {
-                    "version_added": "15"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -31522,6 +31695,118 @@
                 "title": "Async functions"
             },
             "title": "async function"
+        }
+    ],
+    "sec-async-generator-function-definitions": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/async_generator_function.json",
+            "name": "async_generator_function",
+            "slug": "JavaScript/Reference/Operators/async_function*",
+            "summary": "The async function* keywords can be used to define an asynchronous generator function inside an expression.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "55"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.10.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "async function* expression"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/statements.json",
+            "name": "async_generator_function",
+            "slug": "JavaScript/Reference/Statements/async_function*",
+            "summary": "The async function* declaration defines an async generator function, which returns an AsyncGenerator object.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "55"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.10.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "async function*"
         }
     ],
     "prod-BitwiseANDExpression": [
@@ -33823,9 +34108,7 @@
                 "safari": {
                     "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": "7"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -35141,9 +35424,7 @@
                 "safari": {
                     "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": "7"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
