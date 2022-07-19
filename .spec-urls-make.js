@@ -65,6 +65,7 @@ const respecRawSpecs = [
   "https://w3c.github.io/manifest/", // OUT OF DATE TR
   "https://w3c.github.io/manifest-app-info/", // yes
   "https://w3c.github.io/mathml-core/", // NO TR
+  "https://w3c.github.io/mathml/",
   "https://w3c.github.io/mediacapture-fromelement/", // yes
   "https://w3c.github.io/media-playback-quality/", // NO TR
   "https://w3c.github.io/mediacapture-main/", // yes
