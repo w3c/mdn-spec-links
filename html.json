@@ -10483,6 +10483,104 @@
             "title": "Element: click event"
         }
     ],
+    "handler-oncopy": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "copy_event",
+            "slug": "API/Element/copy_event",
+            "summary": "The copy event fires when the user initiates a copy action through the browser's user interface.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9",
+                    "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>; however, the event handler is supported since IE 5.5. The event can be listened to via <code>element.oncopy</code>."
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: copy event"
+        }
+    ],
+    "handler-oncut": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "cut_event",
+            "slug": "API/Element/cut_event",
+            "summary": "The cut event is fired when the user has initiated a \"cut\" action through the browser's user interface.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9",
+                    "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>; however, the event handler is supported since IE 5.5. The event can be listened to via <code>element.oncopy</code>."
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: cut event"
+        }
+    ],
     "handler-ondblclick": [
         {
             "engines": [
@@ -11061,6 +11159,60 @@
             "title": "Element: mouseup event"
         }
     ],
+    "handler-onpaste": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "paste_event",
+            "slug": "API/Element/paste_event",
+            "summary": "The paste event is fired when the user has initiated a \"paste\" action through the browser's user interface.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9",
+                    "notes": [
+                        "Before Internet Explorer 11, copying files does not trigger the <code>paste</code> event.",
+                        "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>; however, the event handler is supported since IE 5.5. The event can be listened to via <code>element.oncopy</code>."
+                    ]
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: paste event"
+        }
+    ],
     "handler-onwheel": [
         {
             "engines": [
@@ -11557,7 +11709,7 @@
             "filename": "api/ElementInternals.json",
             "name": "ElementInternals",
             "slug": "API/ElementInternals",
-            "summary": "The ElementInternals interface of the Document_Object_Model gives web developers a way to allow custom elements to fully participate in HTML forms. It provides utilities for working with these elements in the same way you would work with any standard HTML form element, and also exposes the Accessibility Object Model to the element.",
+            "summary": "The ElementInternals interface of the Document Object Model gives web developers a way to allow custom elements to fully participate in HTML forms. It provides utilities for working with these elements in the same way you would work with any standard HTML form element, and also exposes the Accessibility Object Model to the element.",
             "support": {
                 "chrome": {
                     "version_added": "77"
@@ -12505,56 +12657,6 @@
             "title": "Window: error event"
         }
     ],
-    "handler-oninvalid": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "oninvalid",
-            "slug": "API/GlobalEventHandlers/oninvalid",
-            "summary": "The oninvalid property of the GlobalEventHandlers mixin is an event handler that processes invalid events.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "13"
-                },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "GlobalEventHandlers.oninvalid"
-        }
-    ],
     "handler-onload": [
         {
             "engines": [
@@ -12780,50 +12882,6 @@
                 }
             },
             "title": "GlobalEventHandlers.onloadstart"
-        }
-    ],
-    "handler-onslotchange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "onslotchange",
-            "slug": "API/GlobalEventHandlers/onslotchange",
-            "summary": "The onslotchange property of the GlobalEventHandlers mixin is an event handler that processes slotchange events.",
-            "support": {
-                "chrome": {
-                    "version_added": "97"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "93"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "preview"
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "97"
-                }
-            },
-            "title": "GlobalEventHandlers.onslotchange"
         }
     ],
     "globaleventhandlers": [
@@ -15532,116 +15590,6 @@
             "title": "HTMLElement.contentEditable"
         }
     ],
-    "handler-oncopy": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "copy_event",
-            "slug": "API/HTMLElement/copy_event",
-            "summary": "The copy event fires when the user initiates a copy action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3"
-                },
-                "firefox_android": "mirror",
-                "ie": [
-                    {
-                        "version_added": "9"
-                    },
-                    {
-                        "version_added": "5.5",
-                        "partial_implementation": true,
-                        "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>."
-                    }
-                ],
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLElement: copy event"
-        }
-    ],
-    "handler-oncut": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "cut_event",
-            "slug": "API/HTMLElement/cut_event",
-            "summary": "The cut event fires when the user initiates a cut action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": "mirror",
-                "ie": [
-                    {
-                        "version_added": "9"
-                    },
-                    {
-                        "version_added": "5.5",
-                        "partial_implementation": true,
-                        "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>."
-                    }
-                ],
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLElement: cut event"
-        }
-    ],
     "dom-dataset-dev": [
         {
             "engines": [
@@ -16986,61 +16934,6 @@
                 }
             },
             "title": "HTMLElement.outerText"
-        }
-    ],
-    "handler-onpaste": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "paste_event",
-            "slug": "API/HTMLElement/paste_event",
-            "summary": "The paste event fires when the user initiates a paste action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": "mirror",
-                "ie": [
-                    {
-                        "version_added": "9"
-                    },
-                    {
-                        "version_added": "5.5",
-                        "partial_implementation": true,
-                        "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>."
-                    }
-                ],
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLElement: paste event"
         }
     ],
     "dom-tabindex": [
@@ -23630,6 +23523,9 @@
                 "gecko",
                 "webkit"
             ],
+            "partial": [
+                "webkit"
+            ],
             "filename": "api/HTMLMediaElement.json",
             "name": "volume",
             "slug": "API/HTMLMediaElement/volume",
@@ -23660,7 +23556,9 @@
                     "version_added": "3.1"
                 },
                 "safari_ios": {
-                    "version_added": "3"
+                    "version_added": "3",
+                    "partial_implementation": true,
+                    "notes": "<code>volume</code> returns a value and is writable; however, the value is always 1, and setting a value has no effect on the volume of the media object."
                 },
                 "samsunginternet_android": "mirror",
                 "webview_android": {
@@ -26026,6 +25924,46 @@
         }
     ],
     "event-slotchange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLSlotElement.json",
+            "name": "slotchange_event",
+            "slug": "API/HTMLSlotElement/slotchange_event",
+            "summary": "The slotchange event is fired on an HTMLSlotElement instance (<slot> element) when the node(s) contained in that slot change.",
+            "support": {
+                "chrome": {
+                    "version_added": "53"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "63"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLSlotElement: slotchange event"
+        }
+    ],
+    "handler-onslotchange": [
         {
             "engines": [
                 "blink",
@@ -39204,7 +39142,7 @@
             "filename": "api/Window.json",
             "name": "open",
             "slug": "API/Window/open",
-            "summary": "The open() method of the Window interface loads a specified resource into a new or existing browsing context (that is, tab, window, or <iframe>) under a specified name.",
+            "summary": "The open() method of the Window interface loads a specified resource into a new or existing browsing context (that is, a tab, a window, or an iframe) under a specified name.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -45260,7 +45198,7 @@
             "filename": "html/elements/abbr.json",
             "name": "abbr",
             "slug": "HTML/Element/abbr",
-            "summary": "The <abbr> HTML element represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else.",
+            "summary": "The <abbr> HTML element represents an abbreviation or acronym.",
             "support": {
                 "chrome": {
                     "version_added": "2"
@@ -47501,7 +47439,7 @@
             "filename": "html/elements/hgroup.json",
             "name": "hgroup",
             "slug": "HTML/Element/hgroup",
-            "summary": "The <hgroup> HTML element represents a multi-level heading for a section of a document. It groups a set of <h1>–<h6> elements.",
+            "summary": "The <hgroup> HTML element represents a heading and related content. It groups a single <h1>–<h6> element with one or more <p>.",
             "support": {
                 "chrome": {
                     "version_added": "5"
@@ -55612,6 +55550,337 @@
                 }
             },
             "title": "103 Early Hints"
+        }
+    ],
+    "serializable-objects": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "javascript/builtins/Error.json",
+            "name": "serializable_object",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Serializable_object",
+            "summary": "Serializable objects are objects that can be serialized and later deserialized in any JavaScript environment (\"realm\"). This allows them to, for example, be stored on disk and later restored, or cloned with structuredClone(), or shared between workers using DedicatedWorkerGlobalScope.postMessage().",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "notes": [
+                        "Version 103 serialized properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
+                        "Version 104 additionally supports serialization of <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Serializable object"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "javascript/builtins/EvalError.json",
+            "name": "serializable_object",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Serializable_object",
+            "summary": "Serializable objects are objects that can be serialized and later deserialized in any JavaScript environment (\"realm\"). This allows them to, for example, be stored on disk and later restored, or cloned with structuredClone(), or shared between workers using DedicatedWorkerGlobalScope.postMessage().",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "notes": [
+                        "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Serializable object"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "javascript/builtins/RangeError.json",
+            "name": "serializable_object",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Serializable_object",
+            "summary": "Serializable objects are objects that can be serialized and later deserialized in any JavaScript environment (\"realm\"). This allows them to, for example, be stored on disk and later restored, or cloned with structuredClone(), or shared between workers using DedicatedWorkerGlobalScope.postMessage().",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "notes": [
+                        "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Serializable object"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "javascript/builtins/ReferenceError.json",
+            "name": "serializable_object",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Serializable_object",
+            "summary": "Serializable objects are objects that can be serialized and later deserialized in any JavaScript environment (\"realm\"). This allows them to, for example, be stored on disk and later restored, or cloned with structuredClone(), or shared between workers using DedicatedWorkerGlobalScope.postMessage().",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "notes": [
+                        "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Serializable object"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "javascript/builtins/SyntaxError.json",
+            "name": "serializable_object",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Serializable_object",
+            "summary": "Serializable objects are objects that can be serialized and later deserialized in any JavaScript environment (\"realm\"). This allows them to, for example, be stored on disk and later restored, or cloned with structuredClone(), or shared between workers using DedicatedWorkerGlobalScope.postMessage().",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "notes": [
+                        "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Serializable object"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "javascript/builtins/TypeError.json",
+            "name": "serializable_object",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Serializable_object",
+            "summary": "Serializable objects are objects that can be serialized and later deserialized in any JavaScript environment (\"realm\"). This allows them to, for example, be stored on disk and later restored, or cloned with structuredClone(), or shared between workers using DedicatedWorkerGlobalScope.postMessage().",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "notes": [
+                        "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Serializable object"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "javascript/builtins/URIError.json",
+            "name": "serializable_object",
+            "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Serializable_object",
+            "summary": "Serializable objects are objects that can be serialized and later deserialized in any JavaScript environment (\"realm\"). This allows them to, for example, be stored on disk and later restored, or cloned with structuredClone(), or shared between workers using DedicatedWorkerGlobalScope.postMessage().",
+            "support": {
+                "chrome": {
+                    "version_added": "77"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "notes": [
+                        "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Serializable object"
         }
     ],
     "incumbent-settings-object-tracking-in-promises": [

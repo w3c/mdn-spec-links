@@ -108,11 +108,13 @@
             "summary": "A WebAssembly.Global() constructor creates a new Global object representing a global variable instance, accessible from both JavaScript and importable/exportable across one or more WebAssembly.Module instances. This allows dynamic linking of multiple modules.",
             "support": {
                 "chrome": {
-                    "version_added": "69"
+                    "version_added": "69",
+                    "notes": "Constructing a <code>Global</code> with a value of <code>v128</code> produces a <code>TypeError</code>."
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": "1.0"
+                    "version_added": "1.0",
+                    "notes": "Constructing a <code>Global</code> with a value of <code>v128</code> produces a <code>TypeError</code>."
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -123,7 +125,8 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": "11.0.0"
+                    "version_added": "11.0.0",
+                    "notes": "Constructing a <code>Global</code> with a value of <code>v128</code> produces a <code>TypeError</code>."
                 },
                 "oculus": "mirror",
                 "opera": {
@@ -139,7 +142,8 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Constructing a <code>Global</code> with a value of <code>v128</code> produces a <code>TypeError</code>."
                 }
             },
             "title": "WebAssembly.Global() constructor"

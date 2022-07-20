@@ -745,52 +745,6 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/Document.json",
-            "name": "copy_event",
-            "slug": "API/Document/copy_event",
-            "summary": "The copy event fires when the user initiates a copy action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9",
-                    "partial_implementation": true,
-                    "notes": "The <code>oncopy</code> event handler property is not supported."
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "2"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: copy event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
             "filename": "api/Element.json",
             "name": "copy_event",
             "slug": "API/Element/copy_event",
@@ -812,8 +766,12 @@
                     "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>; however, the event handler is supported since IE 5.5. The event can be listened to via <code>element.oncopy</code>."
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
                     "version_added": "3"
                 },
@@ -827,97 +785,9 @@
                 }
             },
             "title": "Element: copy event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "copy_event",
-            "slug": "API/Window/copy_event",
-            "summary": "The copy event fires when the user initiates a copy action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Window: copy event"
         }
     ],
     "clipboard-event-cut": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "cut_event",
-            "slug": "API/Document/cut_event",
-            "summary": "The cut event fires when the user initiates a cut action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9",
-                    "partial_implementation": true,
-                    "notes": "The <code>oncut</code> event handler property is not supported."
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "2"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: cut event"
-        },
         {
             "engines": [
                 "blink",
@@ -945,8 +815,12 @@
                     "notes": "Before Internet Explorer 9, this event is not supported via <code>addEventListener</code>; however, the event handler is supported since IE 5.5. The event can be listened to via <code>element.oncopy</code>."
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
                     "version_added": "3"
                 },
@@ -960,97 +834,9 @@
                 }
             },
             "title": "Element: cut event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "cut_event",
-            "slug": "API/Window/cut_event",
-            "summary": "The cut event is fired when the user has initiated a \"cut\" action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Window: cut event"
         }
     ],
     "clipboard-event-paste": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "paste_event",
-            "slug": "API/Document/paste_event",
-            "summary": "The paste event fires when the user initiates a paste action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9",
-                    "partial_implementation": true,
-                    "notes": "The <code>onpaste</code> event handler property is not supported."
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "2"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: paste event"
-        },
         {
             "engines": [
                 "blink",
@@ -1081,8 +867,12 @@
                     ]
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
                     "version_added": "3"
                 },
@@ -1098,48 +888,6 @@
                 }
             },
             "title": "Element: paste event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Window.json",
-            "name": "paste_event",
-            "slug": "API/Window/paste_event",
-            "summary": "The paste event is fired when the user has initiated a \"paste\" action through the browser's user interface.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "11"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Window: paste event"
         }
     ],
     "navigator-clipboard": [

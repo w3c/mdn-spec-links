@@ -1,90 +1,4 @@
 {
-    "the-gotpointercapture-event": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "gotpointercapture_event",
-            "slug": "API/Document/gotpointercapture_event",
-            "summary": "The gotpointercapture event is fired when an element captures a pointer using setPointerCapture().",
-            "support": {
-                "chrome": {
-                    "version_added": "57"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "59"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document: gotpointercapture event"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "gotpointercapture_event",
-            "slug": "API/HTMLElement/gotpointercapture_event",
-            "summary": "The gotpointercapture event is fired when an element captures a pointer using setPointerCapture().",
-            "support": {
-                "chrome": {
-                    "version_added": "57"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "59"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLElement: gotpointercapture event"
-        }
-    ],
     "the-lostpointercapture-event": [
         {
             "engines": [
@@ -134,7 +48,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "api/HTMLElement.json",
+            "filename": "api/Element.json",
             "name": "lostpointercapture_event",
             "slug": "API/HTMLElement/lostpointercapture_event",
             "summary": "The lostpointercapture event is fired when a captured pointer is released.",
@@ -168,7 +82,181 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement: lostpointercapture event"
+            "title": "Element: lostpointercapture event"
+        }
+    ],
+    "dom-globaleventhandlers-onlostpointercapture": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Document.json",
+            "name": "lostpointercapture_event",
+            "slug": "API/Document/lostpointercapture_event",
+            "summary": "The lostpointercapture event is fired when a captured pointer is released.",
+            "support": {
+                "chrome": {
+                    "version_added": "57"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "59"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Document: lostpointercapture event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "lostpointercapture_event",
+            "slug": "API/HTMLElement/lostpointercapture_event",
+            "summary": "The lostpointercapture event is fired when a captured pointer is released.",
+            "support": {
+                "chrome": {
+                    "version_added": "57"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "59"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: lostpointercapture event"
+        }
+    ],
+    "the-gotpointercapture-event": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "gotpointercapture_event",
+            "slug": "API/Element/gotpointercapture_event",
+            "summary": "The gotpointercapture event is fired when an element captures a pointer using setPointerCapture().",
+            "support": {
+                "chrome": {
+                    "version_added": "57"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "59"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: gotpointercapture event"
+        }
+    ],
+    "dom-globaleventhandlers-ongotpointercapture": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "gotpointercapture_event",
+            "slug": "API/Element/gotpointercapture_event",
+            "summary": "The gotpointercapture event is fired when an element captures a pointer using setPointerCapture().",
+            "support": {
+                "chrome": {
+                    "version_added": "57"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "59"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: gotpointercapture event"
         }
     ],
     "dom-element-haspointercapture": [
@@ -1161,94 +1249,6 @@
                 }
             },
             "title": "Element"
-        }
-    ],
-    "dom-globaleventhandlers-ongotpointercapture": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "ongotpointercapture",
-            "slug": "API/GlobalEventHandlers/ongotpointercapture",
-            "summary": "The ongotpointercapture property of the GlobalEventHandlers mixin is an event handler that processes gotpointercapture events.",
-            "support": {
-                "chrome": {
-                    "version_added": "57"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "59"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "GlobalEventHandlers.ongotpointercapture"
-        }
-    ],
-    "dom-globaleventhandlers-onlostpointercapture": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "onlostpointercapture",
-            "slug": "API/GlobalEventHandlers/onlostpointercapture",
-            "summary": "The onlostpointercapture property of the GlobalEventHandlers mixin is an event handler that processes lostpointercapture events.",
-            "support": {
-                "chrome": {
-                    "version_added": "57"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "59"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "GlobalEventHandlers.onlostpointercapture"
         }
     ],
     "dom-navigator-maxtouchpoints": [

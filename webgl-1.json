@@ -3451,7 +3451,7 @@
             "filename": "api/WebGLRenderingContext.json",
             "name": "deleteBuffer",
             "slug": "API/WebGLRenderingContext/deleteBuffer",
-            "summary": "The WebGLRenderingContext.deleteBuffer() method of the WebGL API deletes a given WebGLBuffer. This method has no effect if the buffer has already been deleted.",
+            "summary": "The WebGLRenderingContext.deleteBuffer() method of the WebGL API deletes a given WebGLBuffer. This method has no effect if the buffer has already been deleted. Normally you don't need to call this method yourself, when the buffer object is dereferenced it will be marked as free.",
             "support": {
                 "chrome": {
                     "version_added": "9"
