@@ -1928,6 +1928,9 @@
                     "version_added": "30"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.24"
+                },
                 "edge": {
                     "version_added": "12"
                 },
@@ -11238,7 +11241,7 @@
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "9",
-                    "notes": "Internet Explorer only exposes the wheel event via <code>addEventListener</code>; there is no <code>onwheel</code> attribute on DOM objects. See <a href='https://connect.microsoft.com/IE/feedback/details/782835/missing-onwheel-attribute-for-the-wheel-event-although-its-supported-via-addeventlistener'>IE bug 782835</a>."
+                    "notes": "The <code>onwheel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('wheel', function() {});</code>. See <a href='https://connect.microsoft.com/IE/feedback/details/782835/missing-onwheel-attribute-for-the-wheel-event-although-its-supported-via-addeventlistener'>IE bug 782835</a>."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -32422,7 +32425,7 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.24"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -32467,7 +32470,7 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.24"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -32512,7 +32515,7 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.24"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -32557,7 +32560,7 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.24"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -37741,6 +37744,9 @@
                     "version_added": "1"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.24"
+                },
                 "edge": {
                     "version_added": "12"
                 },
@@ -40313,6 +40319,9 @@
                     "version_added": "49"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.24"
+                },
                 "edge": "mirror",
                 "firefox": [
                     {
@@ -40367,6 +40376,9 @@
                     "version_added": "49"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.24"
+                },
                 "edge": "mirror",
                 "firefox": [
                     {

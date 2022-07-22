@@ -112,7 +112,7 @@
             "filename": "mathml/elements/maction.json",
             "name": "maction",
             "slug": "MathML/Element/maction",
-            "summary": "The MathML <maction> element provides a possibility to bind actions to (sub-) expressions. The action itself is specified by the actiontype attribute, which accepts several values. To specify which child elements are addressed by the action, you can make use of the selection attribute.",
+            "summary": "The deprecated MathML <maction> element used to provide a possibility to bind an actions to mathematical expressions. Nowadays, it is recommended to rely on JavaScript and other Web technologies to implement this use case. Some browsers will just render the first child of an <maction> element and ignore its actiontype and selection attributes.",
             "support": {
                 "chrome": {
                     "version_added": false,
@@ -155,7 +155,7 @@
             "filename": "mathml/elements/math.json",
             "name": "math",
             "slug": "MathML/Element/math",
-            "summary": "The top-level element in MathML is <math>. Every valid MathML instance must be wrapped in <math> tags. In addition you must not nest a second <math> element in another, but you can have an arbitrary number of other child elements in it.",
+            "summary": "The <math> element is the top-level MathML element, used to write a single mathematical formula. It can be placed in HTML content where flow content is permitted.",
             "support": {
                 "chrome": {
                     "version_added": "24",
@@ -898,7 +898,7 @@
             "filename": "mathml/elements/mstyle.json",
             "name": "mstyle",
             "slug": "MathML/Element/mstyle",
-            "summary": "The MathML <mstyle> element is used change the style of its children. It accepts all attributes of all MathML presentation elements with some exceptions and additional attributes listed below.",
+            "summary": "The MathML <mstyle> element is used to change the style of its children.",
             "support": {
                 "chrome": {
                     "version_added": false,
@@ -1246,7 +1246,11 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "1"
+                    "version_added": "1",
+                    "notes": [
+                        "<code>annotation</code> and <code>annotation-xml</code> elements are ignored if the <code>src</code> attribute is set.",
+                        "The algorithm for determining the visible child has been corrected in Firefox 23 to match the MathML specification. In prior versions only the first child element was rendered."
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1364,7 +1368,7 @@
                 "firefox": {
                     "version_added": "83",
                     "impl_url": "https://hg.mozilla.org/mozilla-central/rev/60a72a6c7c1d",
-                    "notes": "Prior to Firefox 83, the attribute was only accepted on a few elements, as specified in MathML 3."
+                    "notes": "Prior to Firefox 83, the attribute was only accepted on a few elements, as specified in MathML 3, and was not implemented via <code>math-style</code>."
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1377,7 +1381,8 @@
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": "14",
-                    "impl_url": "https://trac.webkit.org/changeset/267578"
+                    "impl_url": "https://trac.webkit.org/changeset/267578",
+                    "notes": "Since Safari 14.1, this attribute is implemented via <code>math-style</code>."
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1429,7 +1434,10 @@
                 "firefox": {
                     "version_added": "70",
                     "impl_url": "https://hg.mozilla.org/mozilla-central/rev/3b30c8db537c",
-                    "notes": "Prior to Firefox 70, the attribute was only accepted on a few elements, as specified in MathML 3."
+                    "notes": [
+                        "Prior to Firefox 70, the attribute was only accepted on a few elements, as specified in MathML 3.",
+                        "Implementation does not rely on the CSS approach described in MathML Core (via <code>text-transform</code>."
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1444,7 +1452,10 @@
                     "version_added": "10",
                     "impl_url": "https://trac.webkit.org/changeset/203679",
                     "partial_implementation": true,
-                    "notes": "Safari only accepts the attribute on a few elements, as specified in MathML 3."
+                    "notes": [
+                        "Safari only accepts the attribute on a few elements, as specified in MathML 3.",
+                        "Implementation does not rely on the CSS approach described in MathML Core (via <code>text-transform</code>."
+                    ]
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1496,7 +1507,10 @@
                 "firefox": {
                     "version_added": "70",
                     "impl_url": "https://hg.mozilla.org/mozilla-central/rev/3b30c8db537c",
-                    "notes": "Prior to Firefox 70, the attribute was only accepted on a few elements, as specified in MathML 3."
+                    "notes": [
+                        "Prior to Firefox 70, the attribute was only accepted on a few elements, as specified in MathML 3.",
+                        "Implementation does not rely on the CSS approach described in MathML Core (via <code>math-depth</code> and <code>font-size: math</code>)."
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {

@@ -1117,6 +1117,7 @@
     "relational": [
         {
             "engines": [
+                "blink",
                 "webkit"
             ],
             "filename": "css/selectors/has.json",
@@ -1125,8 +1126,7 @@
             "summary": "The :has() CSS pseudo-class represents an element if any of the selectors passed as parameters (relative to the :scope of the given element) match at least one element.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/669058'>bug 669058</a>."
+                    "version_added": "105"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -1148,8 +1148,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/669058'>bug 669058</a>."
+                    "version_added": "105"
                 }
             },
             "caniuse": {

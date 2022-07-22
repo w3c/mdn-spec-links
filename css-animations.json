@@ -888,7 +888,7 @@
                 "chrome": {
                     "version_added": "83",
                     "partial_implementation": true,
-                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
+                    "notes": "The <code>onanimationcancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -908,8 +908,9 @@
                     },
                     {
                         "version_added": "12",
+                        "version_removed": "13.1",
                         "partial_implementation": true,
-                        "notes": "The event handler is exposed but will never be called."
+                        "notes": "Although the <code>onanimationcancel</code> event handler property is supported, the <code>animationcancel</code> event is never fired."
                     }
                 ],
                 "safari_ios": "mirror",
@@ -918,7 +919,7 @@
                 "edge_blink": {
                     "version_added": "83",
                     "partial_implementation": true,
-                    "notes": "The <code>onanimationcancel</code> property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
+                    "notes": "The <code>onanimationcancel</code> event handler property is not supported. To listen to this event, use <code>element.addEventListener('animationcancel', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
                 }
             },
             "title": "Element: animationcancel event"
@@ -941,13 +942,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": "43",
-                        "partial_implementation": true,
-                        "notes": "The <code>onanimationend</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
-                    },
-                    {
                         "version_added": "81",
                         "prefix": "webkit"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onanimationend</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>."
                     }
                 ],
                 "chrome_android": "mirror",
@@ -960,15 +962,16 @@
                     },
                     {
                         "version_added": "5",
+                        "version_removed": "51",
                         "partial_implementation": true,
-                        "notes": "The <code>onanimationend</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
+                        "notes": "The <code>onanimationend</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>."
                     }
                 ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "10",
                     "partial_implementation": true,
-                    "notes": "The <code>onanimationend</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
+                    "notes": "The <code>onanimationend</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -984,13 +987,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": "79",
-                        "partial_implementation": true,
-                        "notes": "The <code>onanimationend</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
-                    },
-                    {
                         "version_added": "81",
                         "prefix": "webkit"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onanimationend</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationend', function() {});</code>."
                     }
                 ]
             },
@@ -1014,13 +1018,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": "43",
-                        "partial_implementation": true,
-                        "notes": "The <code>onanimationiteration</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
-                    },
-                    {
                         "version_added": "81",
                         "prefix": "webkit"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onanimationiteration</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>."
                     }
                 ],
                 "chrome_android": "mirror",
@@ -1033,15 +1038,16 @@
                     },
                     {
                         "version_added": "5",
+                        "version_removed": "51",
                         "partial_implementation": true,
-                        "notes": "The <code>onanimationiteration</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
+                        "notes": "The <code>onanimationiteration</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>."
                     }
                 ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "10",
                     "partial_implementation": true,
-                    "notes": "The <code>onanimationiteration</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
+                    "notes": "The <code>onanimationiteration</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -1057,13 +1063,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": "79",
-                        "partial_implementation": true,
-                        "notes": "The <code>onanimationiteration</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
-                    },
-                    {
                         "version_added": "81",
                         "prefix": "webkit"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onanimationiteration</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationiteration', function() {});</code>."
                     }
                 ]
             },
@@ -1087,13 +1094,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": "43",
-                        "partial_implementation": true,
-                        "notes": "The <code>onanimationstart</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
-                    },
-                    {
                         "version_added": "81",
                         "prefix": "webkit"
+                    },
+                    {
+                        "version_added": "43",
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onanimationstart</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>."
                     }
                 ],
                 "chrome_android": "mirror",
@@ -1106,15 +1114,16 @@
                     },
                     {
                         "version_added": "5",
+                        "version_removed": "51",
                         "partial_implementation": true,
-                        "notes": "The <code>onanimationstart</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
+                        "notes": "The <code>onanimationstart</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>."
                     }
                 ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "10",
                     "partial_implementation": true,
-                    "notes": "The <code>onanimationstart</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
+                    "notes": "The <code>onanimationstart</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -1130,13 +1139,14 @@
                         "version_added": "79"
                     },
                     {
-                        "version_added": "79",
-                        "partial_implementation": true,
-                        "notes": "The <code>onanimationstart</code> property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>. See <a href='https://crbug.com/868224'>bug 868224</a>."
-                    },
-                    {
                         "version_added": "81",
                         "prefix": "webkit"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "79",
+                        "partial_implementation": true,
+                        "notes": "The <code>onanimationstart</code> event handler property is not supported. To listen to this event, use <code>document.addEventListener('animationstart', function() {});</code>."
                     }
                 ]
             },
