@@ -15638,7 +15638,7 @@
             "filename": "javascript/builtins/Object.json",
             "name": "freeze",
             "slug": "JavaScript/Reference/Global_Objects/Object/freeze",
-            "summary": "The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed. freeze() returns the same object that was passed in.",
+            "summary": "The Object.freeze() method freezes an object. Freezing an object prevents extensions and makes existing properties non-writable and non-configurable. A frozen object can no longer be changed: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned. freeze() returns the same object that was passed in.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -16424,7 +16424,7 @@
             "filename": "javascript/builtins/Object.json",
             "name": "preventExtensions",
             "slug": "JavaScript/Reference/Global_Objects/Object/preventExtensions",
-            "summary": "The Object.preventExtensions() method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).",
+            "summary": "The Object.preventExtensions() method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object). It also prevents the object's prototype from being re-assigned.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -16530,7 +16530,7 @@
             "filename": "javascript/builtins/Object.json",
             "name": "seal",
             "slug": "JavaScript/Reference/Global_Objects/Object/seal",
-            "summary": "The Object.seal() method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.",
+            "summary": "The Object.seal() method seals an object. Sealing an object prevents extensions and makes existing properties non-configurable. A sealed object has a fixed set of properties: new properties cannot be added, existing properties cannot be removed, their enumerability and configurability cannot be changed, and its prototype cannot be re-assigned. Values of existing properties can still be changed as long as they are writable. seal() returns the same object that was passed in.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -35780,7 +35780,7 @@
             "filename": "javascript/statements.json",
             "name": "switch",
             "slug": "JavaScript/Reference/Statements/switch",
-            "summary": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.",
+            "summary": "The switch statement evaluates an expression, matching the expression's value against a series of case clauses, and executes statements after the first case clause with a matching value, until a break statement is encountered. The default clause of a switch statement will be jumped to if no case matches the expression's value.",
             "support": {
                 "chrome": {
                     "version_added": "1"

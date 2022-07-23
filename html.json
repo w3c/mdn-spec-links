@@ -12708,185 +12708,6 @@
             "title": "GlobalEventHandlers.onload"
         }
     ],
-    "handler-onloadeddata": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "onloadeddata",
-            "slug": "API/GlobalEventHandlers/onloadeddata",
-            "summary": "The onloadeddata property of the GlobalEventHandlers mixin is the event handler for processing loadeddata events.",
-            "support": {
-                "chrome": {
-                    "version_added": "32"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "oculus": "mirror",
-                "opera": [
-                    {
-                        "version_added": "19"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "19"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "9"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "GlobalEventHandlers.onloadeddata"
-        }
-    ],
-    "handler-onloadedmetadata": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "onloadedmetadata",
-            "slug": "API/GlobalEventHandlers/onloadedmetadata",
-            "summary": "The onloadedmetadata property of the GlobalEventHandlers mixin is the event handler for processing loadedmetadata events.",
-            "support": {
-                "chrome": {
-                    "version_added": "32"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "oculus": "mirror",
-                "opera": [
-                    {
-                        "version_added": "19"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "19"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "9"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "GlobalEventHandlers.onloadedmetadata"
-        }
-    ],
-    "handler-onloadstart": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/GlobalEventHandlers.json",
-            "name": "onloadstart",
-            "slug": "API/GlobalEventHandlers/onloadstart",
-            "summary": "The onloadstart property of the GlobalEventHandlers mixin is an event handler representing the code to be called when the loadstart event is raised (when progress has begun on the loading of a resource.)",
-            "support": {
-                "chrome": {
-                    "version_added": "32",
-                    "notes": "The <code>loadstart</code> event is not fired on <code>&lt;img&gt;</code> elements."
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "9"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "oculus": "mirror",
-                "opera": [
-                    {
-                        "version_added": "19",
-                        "notes": "The <code>loadstart</code> event is not fired on <code>&lt;img&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "19",
-                        "notes": "The <code>loadstart</code> event is not fired on <code>&lt;img&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "9",
-                    "notes": "The <code>loadstart</code> event is not fired on <code>&lt;img&gt;</code> elements."
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79",
-                    "notes": "The <code>loadstart</code> event is not fired on <code>&lt;img&gt;</code> elements."
-                }
-            },
-            "title": "GlobalEventHandlers.onloadstart"
-        }
-    ],
     "globaleventhandlers": [
         {
             "engines": [
@@ -21014,6 +20835,54 @@
             "title": "HTMLMediaElement: abort event"
         }
     ],
+    "handler-onabort": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "abort_event",
+            "slug": "API/HTMLMediaElement/abort_event",
+            "summary": "The abort event is fired when the resource was not fully loaded, but not as the result of an error.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "9"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: abort event"
+        }
+    ],
     "dom-media-audiotracks-dev": [
         {
             "engines": [
@@ -21231,7 +21100,107 @@
             "title": "HTMLMediaElement: canplay event"
         }
     ],
+    "handler-oncanplay": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "canplay_event",
+            "slug": "API/HTMLMediaElement/canplay_event",
+            "summary": "The canplay event is fired when the user agent can play the media, but estimates that not enough data has been loaded to play the media up to its end without having to stop for further buffering of content.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: canplay event"
+        }
+    ],
     "event-media-canplaythrough": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "canplaythrough_event",
+            "slug": "API/HTMLMediaElement/canplaythrough_event",
+            "summary": "The canplaythrough event is fired when the user agent can play the media, and estimates that enough data has been loaded to play the media up to its end without having to stop for further buffering of content.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: canplaythrough event"
+        }
+    ],
+    "handler-oncanplaythrough": [
         {
             "engines": [
                 "blink",
@@ -21750,7 +21719,107 @@
             "title": "HTMLMediaElement: durationchange event"
         }
     ],
+    "handler-ondurationchange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "durationchange_event",
+            "slug": "API/HTMLMediaElement/durationchange_event",
+            "summary": "The durationchange event is fired when the duration attribute has been updated.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: durationchange event"
+        }
+    ],
     "event-media-emptied": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "emptied_event",
+            "slug": "API/HTMLMediaElement/emptied_event",
+            "summary": "The emptied event is fired when the media has become empty; for example, this event is sent if the media has already been loaded (or partially loaded), and the load() method is called to reload it.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: emptied event"
+        }
+    ],
+    "handler-onemptied": [
         {
             "engines": [
                 "blink",
@@ -22048,6 +22117,96 @@
             "title": "HTMLMediaElement: error event"
         }
     ],
+    "handler-window-onmessageerror": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "error_event",
+            "slug": "API/HTMLMediaElement/error_event",
+            "summary": "The error event is fired when the resource could not be loaded due to an error (for example, a network connectivity problem).",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "6"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "11.6"
+                },
+                "opera_android": {
+                    "version_added": "12"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: error event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Window.json",
+            "name": "messageerror_event",
+            "slug": "API/Window/messageerror_event",
+            "summary": "The messageerror event is fired on a Window object when it receives a message that can't be deserialized.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "57"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": {
+                    "version_added": "47"
+                },
+                "safari": {
+                    "version_added": false,
+                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Window: messageerror event"
+        }
+    ],
     "dom-media-fastseek-dev": [
         {
             "engines": [
@@ -22189,6 +22348,56 @@
             "title": "HTMLMediaElement: loadeddata event"
         }
     ],
+    "handler-onloadeddata": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "loadeddata_event",
+            "slug": "API/HTMLMediaElement/loadeddata_event",
+            "summary": "The loadeddata event is fired when the frame at the current playback position of the media has finished loading; often the first frame.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: loadeddata event"
+        }
+    ],
     "event-media-loadedmetadata": [
         {
             "engines": [
@@ -22239,7 +22448,105 @@
             "title": "HTMLMediaElement: loadedmetadata event"
         }
     ],
+    "handler-onloadedmetadata": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "loadedmetadata_event",
+            "slug": "API/HTMLMediaElement/loadedmetadata_event",
+            "summary": "The loadedmetadata event is fired when the metadata has been loaded.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: loadedmetadata event"
+        }
+    ],
     "event-media-loadstart": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "loadstart_event",
+            "slug": "API/HTMLMediaElement/loadstart_event",
+            "summary": "The loadstart event is fired when the browser has started to load a resource.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "6"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: loadstart event"
+        }
+    ],
+    "handler-onloadstart": [
         {
             "engines": [
                 "blink",
@@ -22540,6 +22847,56 @@
             "title": "HTMLMediaElement: pause event"
         }
     ],
+    "handler-onpause": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "pause_event",
+            "slug": "API/HTMLMediaElement/pause_event",
+            "summary": "The pause event is sent when a request to pause an activity is handled and the activity has entered its paused state, most commonly after the media has been paused through a call to the element's pause() method.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: pause event"
+        }
+    ],
     "dom-media-paused-dev": [
         {
             "engines": [
@@ -22690,6 +23047,56 @@
             "title": "HTMLMediaElement: play event"
         }
     ],
+    "handler-onplay": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "play_event",
+            "slug": "API/HTMLMediaElement/play_event",
+            "summary": "The play event is fired when the paused property is changed from true to false, as a result of the play method, or the autoplay attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: play event"
+        }
+    ],
     "dom-media-playbackrate-dev": [
         {
             "engines": [
@@ -22741,6 +23148,56 @@
         }
     ],
     "event-media-playing": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "playing_event",
+            "slug": "API/HTMLMediaElement/playing_event",
+            "summary": "The playing event is fired after playback is first started, and whenever it is restarted. For example it is fired when playback resumes after having been paused or delayed due to lack of data.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: playing event"
+        }
+    ],
+    "handler-onplaying": [
         {
             "engines": [
                 "blink",
@@ -22893,7 +23350,105 @@
             "title": "HTMLMediaElement: progress event"
         }
     ],
+    "handler-onprogress": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "progress_event",
+            "slug": "API/HTMLMediaElement/progress_event",
+            "summary": "The progress event is fired periodically as the browser loads a resource.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "6"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: progress event"
+        }
+    ],
     "event-media-ratechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "ratechange_event",
+            "slug": "API/HTMLMediaElement/ratechange_event",
+            "summary": "The ratechange event is fired when the playback rate has changed.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: ratechange event"
+        }
+    ],
+    "handler-onratechange": [
         {
             "engines": [
                 "blink",
@@ -23093,7 +23648,107 @@
             "title": "HTMLMediaElement: seeked event"
         }
     ],
+    "handler-onseeked": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "seeked_event",
+            "slug": "API/HTMLMediaElement/seeked_event",
+            "summary": "The seeked event is fired when a seek operation completed, the current playback position has changed, and the Boolean seeking attribute is changed to false.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: seeked event"
+        }
+    ],
     "event-media-seeking": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "seeking_event",
+            "slug": "API/HTMLMediaElement/seeking_event",
+            "summary": "The seeking event is fired when a seek operation starts, meaning the Boolean seeking attribute has changed to true and the media is seeking a new position.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: seeking event"
+        }
+    ],
+    "handler-onseeking": [
         {
             "engines": [
                 "blink",
@@ -23304,7 +23959,107 @@
             "title": "HTMLMediaElement: stalled event"
         }
     ],
+    "handler-onstalled": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "stalled_event",
+            "slug": "API/HTMLMediaElement/stalled_event",
+            "summary": "The stalled event is fired when the user agent is trying to fetch media data, but data is unexpectedly not forthcoming.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: stalled event"
+        }
+    ],
     "event-media-suspend": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "suspend_event",
+            "slug": "API/HTMLMediaElement/suspend_event",
+            "summary": "The suspend event is fired when media data loading has been suspended.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: suspend event"
+        }
+    ],
+    "handler-onsuspend": [
         {
             "engines": [
                 "blink",
@@ -23403,6 +24158,56 @@
         }
     ],
     "event-media-timeupdate": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "timeupdate_event",
+            "slug": "API/HTMLMediaElement/timeupdate_event",
+            "summary": "The timeupdate event is fired when the time indicated by the currentTime attribute has been updated.",
+            "support": {
+                "chrome": {
+                    "version_added": "3"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: timeupdate event"
+        }
+    ],
+    "handler-ontimeupdate": [
         {
             "engines": [
                 "blink",
@@ -23624,7 +24429,107 @@
             "title": "HTMLMediaElement: volumechange event"
         }
     ],
+    "handler-onvolumechange": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "volumechange_event",
+            "slug": "API/HTMLMediaElement/volumechange_event",
+            "summary": "The volumechange event is fired when the volume has changed.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "6"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: volumechange event"
+        }
+    ],
     "event-media-waiting": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "waiting_event",
+            "slug": "API/HTMLMediaElement/waiting_event",
+            "summary": "The waiting event is fired when playback has stopped because of a temporary lack of data.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "6"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "9"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": {
+                    "version_added": "3"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement: waiting event"
+        }
+    ],
+    "handler-onwaiting": [
         {
             "engines": [
                 "blink",
@@ -38770,50 +39675,6 @@
                 }
             },
             "title": "Window: message event"
-        }
-    ],
-    "handler-window-onmessageerror": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/Window.json",
-            "name": "messageerror_event",
-            "slug": "API/Window/messageerror_event",
-            "summary": "The messageerror event is fired on a Window object when it receives a message that can't be deserialized.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": "57"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": {
-                    "version_added": "47"
-                },
-                "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Window: messageerror event"
         }
     ],
     "dom-name-dev": [
