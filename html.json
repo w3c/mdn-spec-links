@@ -12577,7 +12577,7 @@
             "filename": "api/GlobalEventHandlers.json",
             "name": "onerror",
             "slug": "API/GlobalEventHandlers/onerror",
-            "summary": "The onerror property of the GlobalEventHandlers mixin is an event handler that processes error events.",
+            "summary": "The error event is fired on a Window object when a resource failed to load or couldn't be used — for example if a script has an execution error.",
             "support": {
                 "chrome": {
                     "version_added": "10"
@@ -12612,7 +12612,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "GlobalEventHandlers.onerror"
+            "title": "Window: error event"
         },
         {
             "engines": [
@@ -42964,15 +42964,9 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": [
-                    {
-                        "version_added": "27",
-                        "notes": "<code>atob()</code> ignores all space characters in the argument to comply with the latest HTML5 spec (see <a href='https://bugzil.la/711180'>bug 711180</a>)."
-                    },
-                    {
-                        "version_added": "1"
-                    }
-                ],
+                "firefox": {
+                    "version_added": "1"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "10"
