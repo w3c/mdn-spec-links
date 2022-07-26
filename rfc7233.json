@@ -6,7 +6,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/accept-ranges.json",
+            "filename": "http/headers/Accept-Ranges.json",
             "name": "Accept-Ranges",
             "slug": "HTTP/Headers/Accept-Ranges",
             "summary": "The Accept-Ranges HTTP response header is a marker used by the server to advertise its support for partial requests from the client for file downloads. The value of this field indicates the unit that can be used to define a range.",
@@ -48,7 +48,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/content-range.json",
+            "filename": "http/headers/Content-Range.json",
             "name": "Content-Range",
             "slug": "HTTP/Headers/Content-Range",
             "summary": "The Content-Range response HTTP header indicates where in a full body message a partial message belongs.",
@@ -90,7 +90,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/content-type.json",
+            "filename": "http/headers/Content-Type.json",
             "name": "Content-Type",
             "slug": "HTTP/Headers/Content-Type",
             "summary": "The Content-Type representation header is used to indicate the original media type of the resource (prior to any content encoding applied for sending).",
@@ -172,7 +172,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/if-range.json",
+            "filename": "http/headers/If-Range.json",
             "name": "If-Range",
             "slug": "HTTP/Headers/If-Range",
             "summary": "The If-Range HTTP request header makes a range request conditional: if the condition is fulfilled, the range request is issued, and the server sends back a 206 Partial Content answer with the appropriate body. If the condition is not fulfilled, the full resource is sent back with a 200 OK status.",
@@ -214,7 +214,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/range.json",
+            "filename": "http/headers/Range.json",
             "name": "Range",
             "slug": "HTTP/Headers/Range",
             "summary": "The Range HTTP request header indicates the part of a document that the server should return. Several parts can be requested with one Range header at once, and the server may send back these ranges in a multipart document. If the server sends back ranges, it uses the 206 Partial Content for the response. If the ranges are invalid, the server returns the 416 Range Not Satisfiable error. The server can also ignore the Range header and return the whole document with a 200 status code.",
