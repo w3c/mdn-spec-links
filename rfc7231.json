@@ -6,7 +6,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/accept-encoding.json",
+            "filename": "http/headers/Accept-Encoding.json",
             "name": "Accept-Encoding",
             "slug": "HTTP/Headers/Accept-Encoding",
             "summary": "The Accept-Encoding request HTTP header indicates the content encoding (usually a compression algorithm) that the client can understand. The server uses content negotiation to select one of the proposals and informs the client of that choice with the Content-Encoding response header.",
@@ -48,7 +48,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/accept-language.json",
+            "filename": "http/headers/Accept-Language.json",
             "name": "Accept-Language",
             "slug": "HTTP/Headers/Accept-Language",
             "summary": "The Accept-Language request HTTP header indicates the natural language and locale that the client prefers. The server uses content negotiation to select one of the proposals and informs the client of the choice with the Content-Language response header. Browsers set required values for this header according to their active user interface language. Users rarely change it, and such changes are not recommended because they may lead to fingerprinting.",
@@ -90,7 +90,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/accept.json",
+            "filename": "http/headers/Accept.json",
             "name": "Accept",
             "slug": "HTTP/Headers/Accept",
             "summary": "The Accept request HTTP header indicates which content types, expressed as MIME types, the client is able to understand. The server uses content negotiation to select one of the proposals and informs the client of the choice with the Content-Type response header. Browsers set required values for this header based on the context of the request. For example, a browser uses different values in a request when fetches a CSS stylesheet, image, video, or a script.",
@@ -133,7 +133,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/content-encoding.json",
+            "filename": "http/headers/Content-Encoding.json",
             "name": "Content-Encoding",
             "slug": "HTTP/Headers/Content-Encoding",
             "summary": "The Content-Encoding representation header lists any encodings that have been applied to the representation (message payload), and in what order. This lets the recipient know how to decode the representation in order to obtain the original payload format. Content encoding is mainly used to compress the message data without losing information about the origin media type.",
@@ -175,7 +175,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/content-language.json",
+            "filename": "http/headers/Content-Language.json",
             "name": "Content-Language",
             "slug": "HTTP/Headers/Content-Language",
             "summary": "The Content-Language representation header is used to describe the language(s) intended for the audience, so users can differentiate it according to their own preferred language.",
@@ -217,7 +217,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/content-location.json",
+            "filename": "http/headers/Content-Location.json",
             "name": "Content-Location",
             "slug": "HTTP/Headers/Content-Location",
             "summary": "The Content-Location header indicates an alternate location for the returned data. The principal use is to indicate the URL of a resource transmitted as the result of content negotiation.",
@@ -259,7 +259,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/content-type.json",
+            "filename": "http/headers/Content-Type.json",
             "name": "Content-Type",
             "slug": "HTTP/Headers/Content-Type",
             "summary": "The Content-Type representation header is used to indicate the original media type of the resource (prior to any content encoding applied for sending).",
@@ -301,7 +301,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/date.json",
+            "filename": "http/headers/Date.json",
             "name": "Date",
             "slug": "HTTP/Headers/Date",
             "summary": "The Date general HTTP header contains the date and time at which the message originated.",
@@ -339,7 +339,7 @@
     "header.expect": [
         {
             "engines": [],
-            "filename": "http/headers/expect.json",
+            "filename": "http/headers/Expect.json",
             "name": "Expect",
             "slug": "HTTP/Headers/Expect",
             "summary": "The Expect HTTP request header indicates expectations that need to be met by the server to handle the request successfully.",
@@ -379,7 +379,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/from.json",
+            "filename": "http/headers/From.json",
             "name": "From",
             "slug": "HTTP/Headers/From",
             "summary": "The From request header contains an Internet email address for a human user who controls the requesting user agent.",
@@ -421,7 +421,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/location.json",
+            "filename": "http/headers/Location.json",
             "name": "Location",
             "slug": "HTTP/Headers/Location",
             "summary": "The Location response header indicates the URL to redirect a page to. It only provides a meaning when served with a 3xx (redirection) or 201 (created) status response.",
@@ -463,7 +463,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/referer.json",
+            "filename": "http/headers/Referer.json",
             "name": "Referer",
             "slug": "HTTP/Headers/Referer",
             "summary": "The Referer HTTP request header contains an absolute or partial address of the page that makes the request. The Referer header allows a server to identify a page where people are visiting it from. This data can be used for analytics, logging, optimized caching, and more.",
@@ -501,7 +501,7 @@
     "header.retry-after": [
         {
             "engines": [],
-            "filename": "http/headers/retry-after.json",
+            "filename": "http/headers/Retry-After.json",
             "name": "Retry-After",
             "slug": "HTTP/Headers/Retry-After",
             "summary": "The Retry-After response HTTP header indicates how long the user agent should wait before making a follow-up request. There are three main cases this header is used:",
@@ -544,7 +544,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/server.json",
+            "filename": "http/headers/Server.json",
             "name": "Server",
             "slug": "HTTP/Headers/Server",
             "summary": "The Server header describes the software used by the origin server that handled the request — that is, the server that generated the response.",
@@ -585,7 +585,7 @@
                 "blink",
                 "gecko"
             ],
-            "filename": "http/headers/upgrade.json",
+            "filename": "http/headers/Upgrade.json",
             "name": "Upgrade",
             "slug": "HTTP/Headers/Upgrade",
             "summary": "The HTTP 1.1 (only) Upgrade header can be used to upgrade an already established client/server connection to a different protocol (over the same transport protocol). For example, it can be used by a client to upgrade a connection from HTTP 1.1 to HTTP 2.0, or an HTTP or HTTPS connection into a WebSocket.",
@@ -625,7 +625,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/user-agent.json",
+            "filename": "http/headers/User-Agent.json",
             "name": "User-Agent",
             "slug": "HTTP/Headers/User-Agent",
             "summary": "The User-Agent request header is a characteristic string that lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent.",
@@ -667,7 +667,7 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "http/headers/vary.json",
+            "filename": "http/headers/Vary.json",
             "name": "Vary",
             "slug": "HTTP/Headers/Vary",
             "summary": "The Vary HTTP response header describes the parts of the request message aside from the method and URL that influenced the content of the response it occurs in. Most often, this is used to create a cache key when content negotiation is in use.",
