@@ -7959,6 +7959,92 @@
             "title": "Document: DOMContentLoaded event"
         }
     ],
+    "dom-documentorshadowroot-activeelement-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Document.json",
+            "name": "activeElement",
+            "slug": "API/Document/activeElement",
+            "summary": "The activeElement read-only property of the Document interface returns the Element within the DOM that currently has focus.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "6"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Document.activeElement"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ShadowRoot.json",
+            "name": "activeElement",
+            "slug": "API/ShadowRoot/activeElement",
+            "summary": "The activeElement read-only property of the ShadowRoot interface returns the element within the shadow tree that has focus.",
+            "support": {
+                "chrome": {
+                    "version_added": "53"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "63"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ShadowRoot.activeElement"
+        }
+    ],
     "dom-document-body-dev": [
         {
             "engines": [
@@ -12609,6 +12695,846 @@
             "title": "HTMLAnchorElement.download"
         }
     ],
+    "dom-hyperlink-hash-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "hash",
+            "slug": "API/HTMLAnchorElement/hash",
+            "summary": "The HTMLAnchorElement.hash property returns a string containing a '#' followed by the fragment identifier of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "notes": "From Firefox 29 to Firefox 40, the returned value was incorrectly percent-decoded."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.hash"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "hash",
+            "slug": "API/HTMLAreaElement/hash",
+            "summary": "The HTMLAreaElement.hash property returns a string containing a '#' followed by the fragment identifier of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "notes": "From Firefox 29 to Firefox 40, the returned value was incorrectly percent-decoded."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.hash"
+        }
+    ],
+    "dom-hyperlink-host-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "host",
+            "slug": "API/HTMLAnchorElement/host",
+            "summary": "The HTMLAnchorElement.host property is a string containing the host, that is the hostname, and then, if the port of the URL is nonempty, a ':', and the port of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5",
+                    "notes": "In Internet Explorer 9, the host of an <a href='https://developer.mozilla.org/docs/Web/HTML/Element/a'><code>&lt;a&gt;</code></a> always include the port (e.g. <code>developer.mozilla.org:443</code>), even if there is no explicit port in the <code>href</code> attribute value."
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.host"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "host",
+            "slug": "API/HTMLAreaElement/host",
+            "summary": "The HTMLAreaElement.host property is a string containing the host, that is the hostname, and then, if the port of the URL is nonempty, a ':', and the port of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5",
+                    "notes": "In Internet Explorer 9, the host of an <a href='https://developer.mozilla.org/docs/Web/HTML/Element/a'><code>&lt;a&gt;</code></a> always include the port (e.g. <code>developer.mozilla.org:443</code>), even if there is no explicit port in the <code>href</code> attribute value."
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.host"
+        }
+    ],
+    "dom-hyperlink-hostname-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "hostname",
+            "slug": "API/HTMLAnchorElement/hostname",
+            "summary": "The HTMLAnchorElement.hostname property is a string containing the domain of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.hostname"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "hostname",
+            "slug": "API/HTMLAreaElement/hostname",
+            "summary": "The HTMLAreaElement.hostname property is a string containing the domain of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.hostname"
+        }
+    ],
+    "dom-hyperlink-href-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "href",
+            "slug": "API/HTMLAnchorElement/href",
+            "summary": "The HTMLAnchorElement.href property is a stringifier that returns a string containing the whole URL, and allows the href to be updated.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.href"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "toString",
+            "slug": "API/HTMLAnchorElement/toString",
+            "summary": "The HTMLAnchorElement.toString() stringifier method returns a string containing the whole URL. It is a read-only version of HTMLAnchorElement.href.",
+            "support": {
+                "chrome": {
+                    "version_added": "52"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.toString()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "href",
+            "slug": "API/HTMLAreaElement/href",
+            "summary": "The HTMLAreaElement.href property is a stringifier that returns a string containing the whole URL, and allows the href to be updated.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.href"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "toString",
+            "slug": "API/HTMLAreaElement/toString",
+            "summary": "The HTMLAreaElement.toString() stringifier method returns a string containing the whole URL. It is a read-only version of HTMLAreaElement.href.",
+            "support": {
+                "chrome": {
+                    "version_added": "52"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "22"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.toString()"
+        }
+    ],
+    "dom-hyperlink-origin-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "origin",
+            "slug": "API/HTMLAnchorElement/origin",
+            "summary": "The HTMLAnchorElement.origin read-only property is a string containing the Unicode serialization of the origin of the represented URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "8"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "26",
+                    "notes": "Before Firefox 49, results for URL using the <code>blob</code> scheme incorrectly returned <code>null</code>."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "5.1"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.origin"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "origin",
+            "slug": "API/HTMLAreaElement/origin",
+            "summary": "The HTMLAreaElement.origin read-only property is a string containing the Unicode serialization of the origin of the represented URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "8"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "26",
+                    "notes": "Before Firefox 49, results for URL using the <code>blob</code> scheme incorrectly returned <code>null</code>."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "5.1"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.origin"
+        }
+    ],
+    "dom-hyperlink-password-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "password",
+            "slug": "API/HTMLAnchorElement/password",
+            "summary": "The HTMLAnchorElement.password property is a string containing the password specified before the domain name.",
+            "support": {
+                "chrome": {
+                    "version_added": "32"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "26"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.password"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "password",
+            "slug": "API/HTMLAreaElement/password",
+            "summary": "The HTMLAreaElement.password property is a string containing the password specified before the domain name.",
+            "support": {
+                "chrome": {
+                    "version_added": "32"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "26"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.password"
+        }
+    ],
+    "dom-hyperlink-pathname-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "pathname",
+            "slug": "API/HTMLAnchorElement/pathname",
+            "summary": "The HTMLAnchorElement.pathname property is a string containing an initial '/' followed by the path of the URL not including the query string or fragment (or the empty string if there is no path).",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.pathname"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "pathname",
+            "slug": "API/HTMLAreaElement/pathname",
+            "summary": "The HTMLAreaElement.pathname property is a string containing an initial '/' followed by the path of the URL not including the query string or fragment (or the empty string if there is no path).",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.pathname"
+        }
+    ],
+    "dom-hyperlink-port-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "port",
+            "slug": "API/HTMLAnchorElement/port",
+            "summary": "The HTMLAnchorElement.port property is a string containing the port number of the URL. If the URL does not contain an explicit port number, it will be set to ''.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.port"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "port",
+            "slug": "API/HTMLAreaElement/port",
+            "summary": "The HTMLAreaElement.port property is a string containing the port number of the URL. If the URL does not contain an explicit port number, it will be set to ''.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.port"
+        }
+    ],
+    "dom-hyperlink-protocol-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "protocol",
+            "slug": "API/HTMLAnchorElement/protocol",
+            "summary": "The HTMLAnchorElement.protocol property is a string representing the protocol scheme of the URL, including the final ':'.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.protocol"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "protocol",
+            "slug": "API/HTMLAreaElement/protocol",
+            "summary": "The HTMLAreaElement.protocol property is a string representing the protocol scheme of the URL, including the final ':'.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.protocol"
+        }
+    ],
     "dom-a-referrerpolicy": [
         {
             "engines": [
@@ -12749,6 +13675,168 @@
                 }
             },
             "title": "HTMLAnchorElement.relList"
+        }
+    ],
+    "dom-hyperlink-search-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "search",
+            "slug": "API/HTMLAnchorElement/search",
+            "summary": "The HTMLAnchorElement.search property is a search string, also called a query string, that is a string containing a '?' followed by the parameters of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.search"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "search",
+            "slug": "API/HTMLAreaElement/search",
+            "summary": "The HTMLAreaElement.search property is a search string, also called a query string, that is a string containing a '?' followed by the parameters of the URL.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1",
+                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.search"
+        }
+    ],
+    "dom-hyperlink-username-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAnchorElement.json",
+            "name": "username",
+            "slug": "API/HTMLAnchorElement/username",
+            "summary": "The HTMLAnchorElement.username property is a string containing the username specified before the domain name.",
+            "support": {
+                "chrome": {
+                    "version_added": "32"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "26"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAnchorElement.username"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLAreaElement.json",
+            "name": "username",
+            "slug": "API/HTMLAreaElement/username",
+            "summary": "The HTMLAreaElement.username property is a string containing the username specified before the domain name.",
+            "support": {
+                "chrome": {
+                    "version_added": "32"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "26"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLAreaElement.username"
         }
     ],
     "htmlanchorelement": [
@@ -43469,1094 +44557,6 @@
                 }
             },
             "title": "structuredClone()"
-        }
-    ],
-    "dom-documentorshadowroot-activeelement-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/DocumentOrShadowRoot__Document.json",
-            "name": "activeElement",
-            "slug": "API/Document/activeElement",
-            "summary": "The activeElement read-only property of the Document interface returns the Element within the DOM that currently has focus.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "6"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document.activeElement"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/DocumentOrShadowRoot__ShadowRoot.json",
-            "name": "activeElement",
-            "slug": "API/ShadowRoot/activeElement",
-            "summary": "The activeElement read-only property of the ShadowRoot interface returns the element within the shadow tree that has focus.",
-            "support": {
-                "chrome": {
-                    "version_added": "53"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ShadowRoot.activeElement"
-        }
-    ],
-    "dom-hyperlink-hash-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "hash",
-            "slug": "API/HTMLAnchorElement/hash",
-            "summary": "The HTMLAnchorElement.hash property returns a string containing a '#' followed by the fragment identifier of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": "From Firefox 29 to Firefox 40, the returned value was incorrectly percent-decoded."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.hash"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "hash",
-            "slug": "API/HTMLAreaElement/hash",
-            "summary": "The HTMLAreaElement.hash property returns a string containing a '#' followed by the fragment identifier of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": "From Firefox 29 to Firefox 40, the returned value was incorrectly percent-decoded."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.hash"
-        }
-    ],
-    "dom-hyperlink-host-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "host",
-            "slug": "API/HTMLAnchorElement/host",
-            "summary": "The HTMLAnchorElement.host property is a string containing the host, that is the hostname, and then, if the port of the URL is nonempty, a ':', and the port of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5",
-                    "notes": "In Internet Explorer 9, the host of an <a href='https://developer.mozilla.org/docs/Web/HTML/Element/a'><code>&lt;a&gt;</code></a> always include the port (e.g. <code>developer.mozilla.org:443</code>), even if there is no explicit port in the <code>href</code> attribute value."
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.host"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "host",
-            "slug": "API/HTMLAreaElement/host",
-            "summary": "The HTMLAreaElement.host property is a string containing the host, that is the hostname, and then, if the port of the URL is nonempty, a ':', and the port of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5",
-                    "notes": "In Internet Explorer 9, the host of an <a href='https://developer.mozilla.org/docs/Web/HTML/Element/a'><code>&lt;a&gt;</code></a> always include the port (e.g. <code>developer.mozilla.org:443</code>), even if there is no explicit port in the <code>href</code> attribute value."
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.host"
-        }
-    ],
-    "dom-hyperlink-hostname-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "hostname",
-            "slug": "API/HTMLAnchorElement/hostname",
-            "summary": "The HTMLAnchorElement.hostname property is a string containing the domain of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.hostname"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "hostname",
-            "slug": "API/HTMLAreaElement/hostname",
-            "summary": "The HTMLAreaElement.hostname property is a string containing the domain of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.hostname"
-        }
-    ],
-    "dom-hyperlink-href-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "href",
-            "slug": "API/HTMLAnchorElement/href",
-            "summary": "The HTMLAnchorElement.href property is a stringifier that returns a string containing the whole URL, and allows the href to be updated.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.href"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "toString",
-            "slug": "API/HTMLAnchorElement/toString",
-            "summary": "The HTMLAnchorElement.toString() stringifier method returns a string containing the whole URL. It is a read-only version of HTMLAnchorElement.href.",
-            "support": {
-                "chrome": {
-                    "version_added": "52"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.toString()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "href",
-            "slug": "API/HTMLAreaElement/href",
-            "summary": "The HTMLAreaElement.href property is a stringifier that returns a string containing the whole URL, and allows the href to be updated.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.href"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "toString",
-            "slug": "API/HTMLAreaElement/toString",
-            "summary": "The HTMLAreaElement.toString() stringifier method returns a string containing the whole URL. It is a read-only version of HTMLAreaElement.href.",
-            "support": {
-                "chrome": {
-                    "version_added": "52"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "22"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.toString()"
-        }
-    ],
-    "dom-hyperlink-origin-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "origin",
-            "slug": "API/HTMLAnchorElement/origin",
-            "summary": "The HTMLAnchorElement.origin read-only property is a string containing the Unicode serialization of the origin of the represented URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "8"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "26",
-                    "notes": "Before Firefox 49, results for URL using the <code>blob</code> scheme incorrectly returned <code>null</code>."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "5.1"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "3"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.origin"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "origin",
-            "slug": "API/HTMLAreaElement/origin",
-            "summary": "The HTMLAreaElement.origin read-only property is a string containing the Unicode serialization of the origin of the represented URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "8"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "26",
-                    "notes": "Before Firefox 49, results for URL using the <code>blob</code> scheme incorrectly returned <code>null</code>."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "5.1"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.origin"
-        }
-    ],
-    "dom-hyperlink-password-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "password",
-            "slug": "API/HTMLAnchorElement/password",
-            "summary": "The HTMLAnchorElement.password property is a string containing the password specified before the domain name.",
-            "support": {
-                "chrome": {
-                    "version_added": "32"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "26"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.password"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "password",
-            "slug": "API/HTMLAreaElement/password",
-            "summary": "The HTMLAreaElement.password property is a string containing the password specified before the domain name.",
-            "support": {
-                "chrome": {
-                    "version_added": "32"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "26"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.password"
-        }
-    ],
-    "dom-hyperlink-pathname-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "pathname",
-            "slug": "API/HTMLAnchorElement/pathname",
-            "summary": "The HTMLAnchorElement.pathname property is a string containing an initial '/' followed by the path of the URL not including the query string or fragment (or the empty string if there is no path).",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.pathname"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "pathname",
-            "slug": "API/HTMLAreaElement/pathname",
-            "summary": "The HTMLAreaElement.pathname property is a string containing an initial '/' followed by the path of the URL not including the query string or fragment (or the empty string if there is no path).",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.pathname"
-        }
-    ],
-    "dom-hyperlink-port-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "port",
-            "slug": "API/HTMLAnchorElement/port",
-            "summary": "The HTMLAnchorElement.port property is a string containing the port number of the URL. If the URL does not contain an explicit port number, it will be set to ''.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.port"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "port",
-            "slug": "API/HTMLAreaElement/port",
-            "summary": "The HTMLAreaElement.port property is a string containing the port number of the URL. If the URL does not contain an explicit port number, it will be set to ''.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.port"
-        }
-    ],
-    "dom-hyperlink-protocol-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "protocol",
-            "slug": "API/HTMLAnchorElement/protocol",
-            "summary": "The HTMLAnchorElement.protocol property is a string representing the protocol scheme of the URL, including the final ':'.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.protocol"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "protocol",
-            "slug": "API/HTMLAreaElement/protocol",
-            "summary": "The HTMLAreaElement.protocol property is a string representing the protocol scheme of the URL, including the final ':'.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.protocol"
-        }
-    ],
-    "dom-hyperlink-search-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "search",
-            "slug": "API/HTMLAnchorElement/search",
-            "summary": "The HTMLAnchorElement.search property is a search string, also called a query string, that is a string containing a '?' followed by the parameters of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.search"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "search",
-            "slug": "API/HTMLAreaElement/search",
-            "summary": "The HTMLAreaElement.search property is a search string, also called a query string, that is a string containing a '?' followed by the parameters of the URL.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": "Before Firefox 53, the <code>pathname</code> and <code>search</code> <code>HTMLHyperlinkElementUtils</code> properties returned the wrong parts of the URL. For example, for a URL of <code>http://z.com/x?a=true&amp;b=false</code>, <code>pathname</code> would return <code>'/x?a=true&amp;b=false'</code> and <code>search</code> would return '', rather than <code>'/x'</code> and <code>'?a=true&amp;b=false'</code> respectively. This has now been fixed."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5.5"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.search"
-        }
-    ],
-    "dom-hyperlink-username-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAnchorElement.json",
-            "name": "username",
-            "slug": "API/HTMLAnchorElement/username",
-            "summary": "The HTMLAnchorElement.username property is a string containing the username specified before the domain name.",
-            "support": {
-                "chrome": {
-                    "version_added": "32"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "26"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAnchorElement.username"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/HTMLHyperlinkElementUtils__HTMLAreaElement.json",
-            "name": "username",
-            "slug": "API/HTMLAreaElement/username",
-            "summary": "The HTMLAreaElement.username property is a string containing the username specified before the domain name.",
-            "support": {
-                "chrome": {
-                    "version_added": "32"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "26"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLAreaElement.username"
         }
     ],
     "selector-active": [

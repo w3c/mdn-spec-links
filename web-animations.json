@@ -1500,6 +1500,139 @@
             "title": "AnimationTimeline"
         }
     ],
+    "dom-documentorshadowroot-getanimations": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Document.json",
+            "name": "getAnimations",
+            "slug": "API/Document/getAnimations",
+            "summary": "The getAnimations() method of the Document interface returns an array of all Animation objects currently in effect whose target elements are descendants of the document. This array includes CSS Animations, CSS Transitions, and Web Animations.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "84"
+                    },
+                    {
+                        "version_added": "61",
+                        "partial_implementation": true,
+                        "notes": "Implements an older version of the specification.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "75"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": [
+                    {
+                        "version_added": "14"
+                    },
+                    {
+                        "version_added": "13.1",
+                        "partial_implementation": true,
+                        "notes": "Implements an older version of the specification, see Webkit bug <a href='https://webkit.org/b/179536'>179536</a>."
+                    }
+                ],
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "84"
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Implements an older version of the specification.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "title": "Document.getAnimations()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ShadowRoot.json",
+            "name": "getAnimations",
+            "slug": "API/ShadowRoot/getAnimations",
+            "summary": "The getAnimations() method of the ShadowRoot interface returns an array of all Animation objects currently in effect whose target elements are descendants of the shadow tree. This array includes CSS Animations, CSS Transitions, and Web Animations.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "84"
+                    },
+                    {
+                        "version_added": "83",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "75"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "84"
+                    },
+                    {
+                        "version_added": "83",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "title": "ShadowRoot.getAnimations()"
+        }
+    ],
     "dom-document-timeline": [
         {
             "engines": [
@@ -1944,139 +2077,6 @@
                 }
             },
             "title": "KeyframeEffect"
-        }
-    ],
-    "dom-documentorshadowroot-getanimations": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/DocumentOrShadowRoot__Document.json",
-            "name": "getAnimations",
-            "slug": "API/Document/getAnimations",
-            "summary": "The getAnimations() method of the Document interface returns an array of all Animation objects currently in effect whose target elements are descendants of the document. This array includes CSS Animations, CSS Transitions, and Web Animations.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "84"
-                    },
-                    {
-                        "version_added": "61",
-                        "partial_implementation": true,
-                        "notes": "Implements an older version of the specification.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ],
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "75"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": [
-                    {
-                        "version_added": "14"
-                    },
-                    {
-                        "version_added": "13.1",
-                        "partial_implementation": true,
-                        "notes": "Implements an older version of the specification, see Webkit bug <a href='https://webkit.org/b/179536'>179536</a>."
-                    }
-                ],
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "84"
-                    },
-                    {
-                        "version_added": "79",
-                        "partial_implementation": true,
-                        "notes": "Implements an older version of the specification.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "title": "Document.getAnimations()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/DocumentOrShadowRoot__ShadowRoot.json",
-            "name": "getAnimations",
-            "slug": "API/ShadowRoot/getAnimations",
-            "summary": "The getAnimations() method of the ShadowRoot interface returns an array of all Animation objects currently in effect whose target elements are descendants of the shadow tree. This array includes CSS Animations, CSS Transitions, and Web Animations.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "84"
-                    },
-                    {
-                        "version_added": "83",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ],
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "75"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "84"
-                    },
-                    {
-                        "version_added": "83",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "title": "ShadowRoot.getAnimations()"
         }
     ]
 }
