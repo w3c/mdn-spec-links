@@ -299,6 +299,99 @@
             "title": "Element: fullscreenchange event"
         }
     ],
+    "ref-for-dom-document-fullscreenelement①": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "prefixed": [
+                "webkit"
+            ],
+            "filename": "api/Document.json",
+            "name": "fullscreenElement",
+            "slug": "API/Document/fullscreenElement",
+            "summary": "The Document.fullscreenElement read-only property returns the Element that is currently being presented in fullscreen mode in this document, or null if fullscreen mode is not currently in use.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "71"
+                    },
+                    {
+                        "version_added": "20",
+                        "prefix": "webkit"
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "64"
+                    },
+                    {
+                        "version_added": "9",
+                        "alternative_name": "mozFullScreenElement"
+                    }
+                ],
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "11",
+                    "alternative_name": "msFullscreenElement"
+                },
+                "oculus": "mirror",
+                "opera": [
+                    {
+                        "version_added": "58"
+                    },
+                    {
+                        "version_added": "15",
+                        "prefix": "webkit"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "15"
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "50"
+                    },
+                    {
+                        "version_added": "14",
+                        "prefix": "webkit"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "14"
+                    }
+                ],
+                "safari": {
+                    "version_added": "6",
+                    "prefix": "webkit"
+                },
+                "safari_ios": {
+                    "version_added": "12",
+                    "prefix": "webkit",
+                    "partial_implementation": true,
+                    "notes": "Only available on iPad, not on iPhone."
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "prefix": "webkit"
+                    }
+                ]
+            },
+            "title": "Document.fullscreenElement"
+        }
+    ],
     "ref-for-dom-document-fullscreenenabled①": [
         {
             "engines": [
@@ -750,106 +843,13 @@
             "title": "Element"
         }
     ],
-    "ref-for-dom-document-fullscreenelement①": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "prefixed": [
-                "webkit"
-            ],
-            "filename": "api/_mixins/DocumentOrShadowRoot__Document.json",
-            "name": "fullscreenElement",
-            "slug": "API/Document/fullscreenElement",
-            "summary": "The Document.fullscreenElement read-only property returns the Element that is currently being presented in fullscreen mode in this document, or null if fullscreen mode is not currently in use.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "71"
-                    },
-                    {
-                        "version_added": "20",
-                        "prefix": "webkit"
-                    }
-                ],
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": [
-                    {
-                        "version_added": "64"
-                    },
-                    {
-                        "version_added": "9",
-                        "alternative_name": "mozFullScreenElement"
-                    }
-                ],
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "11",
-                    "alternative_name": "msFullscreenElement"
-                },
-                "oculus": "mirror",
-                "opera": [
-                    {
-                        "version_added": "58"
-                    },
-                    {
-                        "version_added": "15",
-                        "prefix": "webkit"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "15"
-                    }
-                ],
-                "opera_android": [
-                    {
-                        "version_added": "50"
-                    },
-                    {
-                        "version_added": "14",
-                        "prefix": "webkit"
-                    },
-                    {
-                        "version_added": "12.1",
-                        "version_removed": "14"
-                    }
-                ],
-                "safari": {
-                    "version_added": "6",
-                    "prefix": "webkit"
-                },
-                "safari_ios": {
-                    "version_added": "12",
-                    "prefix": "webkit",
-                    "partial_implementation": true,
-                    "notes": "Only available on iPad, not on iPhone."
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "prefix": "webkit"
-                    }
-                ]
-            },
-            "title": "Document.fullscreenElement"
-        }
-    ],
     "ref-for-dom-document-fullscreenelement②": [
         {
             "engines": [
                 "blink",
                 "gecko"
             ],
-            "filename": "api/_mixins/DocumentOrShadowRoot__ShadowRoot.json",
+            "filename": "api/ShadowRoot.json",
             "name": "fullscreenElement",
             "slug": "API/ShadowRoot/fullscreenElement",
             "summary": "The fullscreenElement read-only property of the ShadowRoot interface returns the element within the shadow tree that is currently displayed in full screen.",

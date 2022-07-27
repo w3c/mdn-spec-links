@@ -415,6 +415,357 @@
             "title": "Request()"
         }
     ],
+    "ref-for-dom-body-arraybuffer①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Request.json",
+            "name": "arrayBuffer",
+            "slug": "API/Request/arrayBuffer",
+            "summary": "The arrayBuffer() method of the Request interface reads the request body and returns it as a promise that resolves with an ArrayBuffer.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Request.arrayBuffer()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "arrayBuffer",
+            "slug": "API/Response/arrayBuffer",
+            "summary": "The arrayBuffer() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with an ArrayBuffer.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.arrayBuffer()"
+        }
+    ],
+    "ref-for-dom-body-blob①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Request.json",
+            "name": "blob",
+            "slug": "API/Request/blob",
+            "summary": "The blob() method of the Request interface reads the request body and returns it as a promise that resolves with a Blob.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Request.blob()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "blob",
+            "slug": "API/Response/blob",
+            "summary": "The blob() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with a Blob.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.blob()"
+        }
+    ],
+    "ref-for-dom-body-body①": [
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "api/Request.json",
+            "name": "body",
+            "slug": "API/Request/body",
+            "summary": "The read-only body property of the Request interface contains a ReadableStream with the body contents that have been added to the request. Note that a request using the GET or HEAD method cannot have a body and null is return in these cases.",
+            "support": {
+                "chrome": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/688906'>bug 688906</a>."
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1387483'>bug 1387483</a>."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/688906'>bug 688906</a>."
+                }
+            },
+            "title": "Request.body"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "body",
+            "slug": "API/Response/body",
+            "summary": "The body read-only property of the Response interface is a ReadableStream of the body contents.",
+            "support": {
+                "chrome": {
+                    "version_added": "43"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "65"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.body"
+        }
+    ],
+    "ref-for-dom-body-bodyused①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Request.json",
+            "name": "bodyUsed",
+            "slug": "API/Request/bodyUsed",
+            "summary": "The read-only bodyUsed property of the Request interface is a boolean value that indicates whether the request body has been read yet.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Request.bodyUsed"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "bodyUsed",
+            "slug": "API/Response/bodyUsed",
+            "summary": "The bodyUsed read-only property of the Response interface is a boolean value that indicates whether the body has been read yet.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.bodyUsed"
+        }
+    ],
     "ref-for-dom-request-cache②": [
         {
             "engines": [
@@ -595,6 +946,104 @@
             "title": "Request.destination"
         }
     ],
+    "ref-for-dom-body-formdata①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Request.json",
+            "name": "formData",
+            "slug": "API/Request/formData",
+            "summary": "The formData() method of the Request interface reads the request body and returns it as a promise that resolves with a FormData object.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "11.1",
+                        "partial_implementation": true,
+                        "notes": "The method exists but always rejects with <code>NotSupportedError</code>. See <a href='https://webkit.org/b/215671'>bug 215671</a>."
+                    }
+                ],
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Request.formData()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "formData",
+            "slug": "API/Response/formData",
+            "summary": "The formData() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with a FormData object.",
+            "support": {
+                "chrome": {
+                    "version_added": "60"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "10.1",
+                        "partial_implementation": true,
+                        "notes": "The method exists but always rejects with <code>NotSupportedError</code>. See <a href='https://webkit.org/b/215671'>bug 215671</a>."
+                    }
+                ],
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.formData()"
+        }
+    ],
     "ref-for-dom-request-headers②": [
         {
             "engines": [
@@ -683,6 +1132,94 @@
                 }
             },
             "title": "Request.integrity"
+        }
+    ],
+    "ref-for-dom-body-json①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Request.json",
+            "name": "json",
+            "slug": "API/Request/json",
+            "summary": "The json() method of the Request interface reads the request body and returns it as a promise that resolves with the result of parsing the body text as JSON.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Request.json()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "json",
+            "slug": "API/Response/json",
+            "summary": "The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as JSON.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.json()"
         }
     ],
     "ref-for-dom-request-method②": [
@@ -911,6 +1448,94 @@
                 }
             },
             "title": "Request.referrerPolicy"
+        }
+    ],
+    "ref-for-dom-body-text①": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Request.json",
+            "name": "text",
+            "slug": "API/Request/text",
+            "summary": "The text() method of the Request interface reads the request body and returns it as a promise that resolves with a String. The response is always decoded using UTF-8.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Request.text()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Response.json",
+            "name": "text",
+            "slug": "API/Response/text",
+            "summary": "The text() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with a String. The response is always decoded using UTF-8.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "39"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Response.text()"
         }
     ],
     "ref-for-dom-request-url③": [
@@ -1697,631 +2322,6 @@
                 }
             },
             "title": "fetch()"
-        }
-    ],
-    "ref-for-dom-body-arraybuffer①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Request.json",
-            "name": "arrayBuffer",
-            "slug": "API/Request/arrayBuffer",
-            "summary": "The arrayBuffer() method of the Request interface reads the request body and returns it as a promise that resolves with an ArrayBuffer.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Request.arrayBuffer()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Response.json",
-            "name": "arrayBuffer",
-            "slug": "API/Response/arrayBuffer",
-            "summary": "The arrayBuffer() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with an ArrayBuffer.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.arrayBuffer()"
-        }
-    ],
-    "ref-for-dom-body-blob①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Request.json",
-            "name": "blob",
-            "slug": "API/Request/blob",
-            "summary": "The blob() method of the Request interface reads the request body and returns it as a promise that resolves with a Blob.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Request.blob()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Response.json",
-            "name": "blob",
-            "slug": "API/Response/blob",
-            "summary": "The blob() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with a Blob.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.blob()"
-        }
-    ],
-    "ref-for-dom-body-body①": [
-        {
-            "engines": [
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Request.json",
-            "name": "body",
-            "slug": "API/Request/body",
-            "summary": "The read-only body property of the Request interface contains a ReadableStream with the body contents that have been added to the request. Note that a request using the GET or HEAD method cannot have a body and null is return in these cases.",
-            "support": {
-                "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/688906'>bug 688906</a>."
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1387483'>bug 1387483</a>."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "11.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/688906'>bug 688906</a>."
-                }
-            },
-            "title": "Request.body"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Response.json",
-            "name": "body",
-            "slug": "API/Response/body",
-            "summary": "The body read-only property of the Response interface is a ReadableStream of the body contents.",
-            "support": {
-                "chrome": {
-                    "version_added": "43"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.body"
-        }
-    ],
-    "ref-for-dom-body-bodyused①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Request.json",
-            "name": "bodyUsed",
-            "slug": "API/Request/bodyUsed",
-            "summary": "The read-only bodyUsed property of the Request interface is a boolean value that indicates whether the request body has been read yet.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Request.bodyUsed"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Response.json",
-            "name": "bodyUsed",
-            "slug": "API/Response/bodyUsed",
-            "summary": "The bodyUsed read-only property of the Response interface is a boolean value that indicates whether the body has been read yet.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.bodyUsed"
-        }
-    ],
-    "ref-for-dom-body-formdata①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Request.json",
-            "name": "formData",
-            "slug": "API/Request/formData",
-            "summary": "The formData() method of the Request interface reads the request body and returns it as a promise that resolves with a FormData object.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": [
-                    {
-                        "version_added": "14.1"
-                    },
-                    {
-                        "version_added": "11.1",
-                        "partial_implementation": true,
-                        "notes": "The method exists but always rejects with <code>NotSupportedError</code>. See <a href='https://webkit.org/b/215671'>bug 215671</a>."
-                    }
-                ],
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Request.formData()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Response.json",
-            "name": "formData",
-            "slug": "API/Response/formData",
-            "summary": "The formData() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with a FormData object.",
-            "support": {
-                "chrome": {
-                    "version_added": "60"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": [
-                    {
-                        "version_added": "14.1"
-                    },
-                    {
-                        "version_added": "10.1",
-                        "partial_implementation": true,
-                        "notes": "The method exists but always rejects with <code>NotSupportedError</code>. See <a href='https://webkit.org/b/215671'>bug 215671</a>."
-                    }
-                ],
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.formData()"
-        }
-    ],
-    "ref-for-dom-body-json①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Request.json",
-            "name": "json",
-            "slug": "API/Request/json",
-            "summary": "The json() method of the Request interface reads the request body and returns it as a promise that resolves with the result of parsing the body text as JSON.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Request.json()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Response.json",
-            "name": "json",
-            "slug": "API/Response/json",
-            "summary": "The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as JSON.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.json()"
-        }
-    ],
-    "ref-for-dom-body-text①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Request.json",
-            "name": "text",
-            "slug": "API/Request/text",
-            "summary": "The text() method of the Request interface reads the request body and returns it as a promise that resolves with a String. The response is always decoded using UTF-8.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Request.text()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/Body__Response.json",
-            "name": "text",
-            "slug": "API/Response/text",
-            "summary": "The text() method of the Response interface takes a Response stream and reads it to completion. It returns a promise that resolves with a String. The response is always decoded using UTF-8.",
-            "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Response.text()"
         }
     ],
     "http-access-control-allow-credentials": [
