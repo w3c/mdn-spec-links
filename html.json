@@ -27942,6 +27942,52 @@
             "title": "HTMLSpanElement"
         }
     ],
+    "dom-style-disabled": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLStyleElement.json",
+            "name": "disabled",
+            "slug": "API/HTMLStyleElement/disabled",
+            "summary": "The HTMLStyleElement.disabled property can be used to get and set whether the stylesheet is disabled (true) or not (false).",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "13"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5.5"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLStyleElement.disabled"
+        }
+    ],
     "dom-style-media": [
         {
             "engines": [
@@ -39133,6 +39179,52 @@
             "needsflag": [
                 "gecko"
             ],
+            "filename": "api/WebGL2RenderingContext.json",
+            "name": "commit",
+            "slug": "API/WebGLRenderingContext/commit",
+            "summary": "The WebGLRenderingContext.commit() method pushes frames back to the original HTMLCanvasElement, if the context is not directly fixed to a specific canvas.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "44",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "gfx.offscreencanvas.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "WebGLRenderingContext.commit()"
+        },
+        {
+            "engines": [
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
             "filename": "api/WebGLRenderingContext.json",
             "name": "commit",
             "slug": "API/WebGLRenderingContext/commit",
@@ -44605,24 +44697,21 @@
     "selector-autofill": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
+            ],
+            "prefixed": [
+                "blink"
             ],
             "filename": "css/selectors/autofill.json",
             "name": "autofill",
             "slug": "CSS/:autofill",
             "summary": "The :autofill CSS pseudo-class matches when an <input> element has its value autofilled by the browser. The class stops matching if the user edits the field.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "96"
-                    },
-                    {
-                        "version_added": "1",
-                        "prefix": "-webkit-"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "1",
+                    "prefix": "-webkit-"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": [
@@ -44667,15 +44756,10 @@
                     "prefix": "-webkit-"
                 },
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "96"
-                    },
-                    {
-                        "version_added": "79",
-                        "prefix": "-webkit-"
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79",
+                    "prefix": "-webkit-"
+                }
             },
             "title": ":autofill"
         }
@@ -56346,7 +56430,7 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -56393,7 +56477,7 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -56440,7 +56524,7 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -56487,7 +56571,7 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -56534,7 +56618,7 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -56581,7 +56665,7 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
+                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
                     ]
                 },
                 "firefox_android": "mirror",
