@@ -61,24 +61,27 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "api/MediaCapabilities.json",
             "name": "encodingInfo",
             "slug": "API/MediaCapabilities/encodingInfo",
             "summary": "The MediaCapabilities.encodingInfo() method, part of the MediaCapabilities interface of the Media Capabilities API, returns a promise with the tested media configuration's capabilities information. This contains the three boolean properties supported, smooth, and powerefficient, which describe how compatible the device is with the type of media.",
             "support": {
-                "chrome": {
-                    "version_added": "67",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "chrome://flags/#enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "101"
+                    },
+                    {
+                        "version_added": "67",
+                        "version_removed": "101",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "chrome://flags/#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -97,16 +100,22 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "chrome://flags/#enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "101"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "101",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "chrome://flags/#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "MediaCapabilities.encodingInfo()"
         }
