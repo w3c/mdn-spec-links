@@ -269,6 +269,10 @@ const checkSpecURL = (
   ) {
     return;
   }
+  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17209
+  if (spec_url.startsWith("https://www.w3.org/TR/selectors-4/")) {
+    return;
+  }
   // FIXME temporary https://github.com/w3c/svgwg/pull/879
   // PR merged but spec output not regenerated yet...
   if (
