@@ -537,10 +537,6 @@ const fixCanIUseSpecURLs = (key, data) => {
       // "I'm a teapot" RFC; ignore
       return false;
     }
-    if (url.startsWith("https://w3c.github.io/device-memory/")) {
-      // redirects to https://www.w3.org/TR/device-memory/
-      return false;
-    }
     return !SPECURLS.includes(url);
   };
   if (data && data instanceof Object && "spec" in data) {
@@ -1152,6 +1148,9 @@ const isForTargetJSONfile = (specURL, feature, mdnURL) => {
 
 const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
   const parsedURL = new URL(url);
+  if (url.startsWith("https://w3c.github.io/device-memory/")) {
+    return; // redirects to https://www.w3.org/TR/device-memory/
+  }
   if (url.startsWith("https://www.rfc-editor.org/rfc/rfc2324")) {
     return; // 'I'm a teapot' RFC; ignore
   }
