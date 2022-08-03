@@ -296,6 +296,10 @@ const checkSpecURL = (
   if (spec_url.startsWith("https://www.w3.org/TR/WOFF/")) {
     return;
   }
+  // Permanently broken; redirects to https://www.w3.org/TR/device-memory/
+  if (spec_url.startsWith("https://w3c.github.io/device-memory/")) {
+    return;
+  }
   if (
     spec_url.startsWith("https://www.rfc-editor.org/rfc/rfc2324") ||
     spec_url.startsWith("https://www.rfc-editor.org/rfc/rfc7168")
