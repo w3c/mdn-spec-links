@@ -537,6 +537,10 @@ const fixCanIUseSpecURLs = (key, data) => {
       // "I'm a teapot" RFC; ignore
       return false;
     }
+    if (url.startsWith("https://w3c.github.io/device-memory/")) {
+      // redirects to https://www.w3.org/TR/device-memory/
+      return false;
+    }
     return !SPECURLS.includes(url);
   };
   if (data && data instanceof Object && "spec" in data) {
