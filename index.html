@@ -79,592 +79,1477 @@
 <p>To regenerate the data, just type <code>make</code>. To build from local BCD and MDN clones:</p>
 <pre><code>BCD_REPO=/path/to/mdn/browser-compat-data MDN_REPO=/path/to/mdn/content make -e
 </code></pre>
-<ul>
-<li>
-<a href="accelerometer.json">accelerometer</a> [<a href="less-than-2.html?spec=accelerometer">status</a>]</li>
-<li>
-<a href="ambient-light.json">ambient-light</a> [<a href="less-than-2.html?spec=ambient-light">status</a>]</li>
-<li>
-<a href="appmanifest.json">appmanifest</a> [<a href="less-than-2.html?spec=appmanifest">status</a>]</li>
-<li>
-<a href="aria.json">aria</a> [<a href="less-than-2.html?spec=aria">status</a>]</li>
-<li>
-<a href="audio-output.json">audio-output</a> [<a href="less-than-2.html?spec=audio-output">status</a>]</li>
-<li>
-<a href="background-fetch.json">background-fetch</a> [<a href="less-than-2.html?spec=background-fetch">status</a>]</li>
-<li>
-<a href="background-sync.json">background-sync</a> [<a href="less-than-2.html?spec=background-sync">status</a>]</li>
-<li>
-<a href="badging.json">badging</a> [<a href="less-than-2.html?spec=badging">status</a>]</li>
-<li>
-<a href="battery.json">battery</a> [<a href="less-than-2.html?spec=battery">status</a>]</li>
-<li>
-<a href="beacon.json">beacon</a> [<a href="less-than-2.html?spec=beacon">status</a>]</li>
-<li>
-<a href="clear-site-data.json">clear-site-data</a> [<a href="less-than-2.html?spec=clear-site-data">status</a>]</li>
-<li>
-<a href="clipboard-apis.json">clipboard-apis</a> [<a href="less-than-2.html?spec=clipboard-apis">status</a>]</li>
-<li>
-<a href="compat.json">compat</a> [<a href="less-than-2.html?spec=compat">status</a>]</li>
-<li>
-<a href="compositing.json">compositing</a> [<a href="less-than-2.html?spec=compositing">status</a>]</li>
-<li>
-<a href="compression.json">compression</a> [<a href="less-than-2.html?spec=compression">status</a>]</li>
-<li>
-<a href="console.json">console</a> [<a href="less-than-2.html?spec=console">status</a>]</li>
-<li>
-<a href="contact-api.json">contact-api</a> [<a href="less-than-2.html?spec=contact-api">status</a>]</li>
-<li>
-<a href="content-index.json">content-index</a> [<a href="less-than-2.html?spec=content-index">status</a>]</li>
-<li>
-<a href="controls-list.json">controls-list</a> [<a href="less-than-2.html?spec=controls-list">status</a>]</li>
-<li>
-<a href="cookie-store.json">cookie-store</a> [<a href="less-than-2.html?spec=cookie-store">status</a>]</li>
-<li>
-<a href="crash-reporting.json">crash-reporting</a> [<a href="less-than-2.html?spec=crash-reporting">status</a>]</li>
-<li>
-<a href="credential-management.json">credential-management</a> [<a href="less-than-2.html?spec=credential-management">status</a>]</li>
-<li>
-<a href="csp-embedded-enforcement.json">csp-embedded-enforcement</a> [<a href="less-than-2.html?spec=csp-embedded-enforcement">status</a>]</li>
-<li>
-<a href="csp.json">csp</a> [<a href="less-than-2.html?spec=csp">status</a>]</li>
-<li>
-<a href="css-align.json">css-align</a> [<a href="less-than-2.html?spec=css-align">status</a>]</li>
-<li>
-<a href="css-animations-2.json">css-animations-2</a> [<a href="less-than-2.html?spec=css-animations-2">status</a>]</li>
-<li>
-<a href="css-animations.json">css-animations</a> [<a href="less-than-2.html?spec=css-animations">status</a>]</li>
-<li>
-<a href="css-backgrounds-4.json">css-backgrounds-4</a> [<a href="less-than-2.html?spec=css-backgrounds-4">status</a>]</li>
-<li>
-<a href="css-backgrounds.json">css-backgrounds</a> [<a href="less-than-2.html?spec=css-backgrounds">status</a>]</li>
-<li>
-<a href="css-box-4.json">css-box-4</a> [<a href="less-than-2.html?spec=css-box-4">status</a>]</li>
-<li>
-<a href="css-box.json">css-box</a> [<a href="less-than-2.html?spec=css-box">status</a>]</li>
-<li>
-<a href="css-break.json">css-break</a> [<a href="less-than-2.html?spec=css-break">status</a>]</li>
-<li>
-<a href="css-cascade-5.json">css-cascade-5</a> [<a href="less-than-2.html?spec=css-cascade-5">status</a>]</li>
-<li>
-<a href="css-cascade.json">css-cascade</a> [<a href="less-than-2.html?spec=css-cascade">status</a>]</li>
-<li>
-<a href="css-color-5.json">css-color-5</a> [<a href="less-than-2.html?spec=css-color-5">status</a>]</li>
-<li>
-<a href="css-color-6.json">css-color-6</a> [<a href="less-than-2.html?spec=css-color-6">status</a>]</li>
-<li>
-<a href="css-color-adjust.json">css-color-adjust</a> [<a href="less-than-2.html?spec=css-color-adjust">status</a>]</li>
-<li>
-<a href="css-color.json">css-color</a> [<a href="less-than-2.html?spec=css-color">status</a>]</li>
-<li>
-<a href="css-conditional-3.json">css-conditional-3</a> [<a href="less-than-2.html?spec=css-conditional-3">status</a>]</li>
-<li>
-<a href="css-conditional-4.json">css-conditional-4</a> [<a href="less-than-2.html?spec=css-conditional-4">status</a>]</li>
-<li>
-<a href="css-contain.json">css-contain</a> [<a href="less-than-2.html?spec=css-contain">status</a>]</li>
-<li>
-<a href="css-content.json">css-content</a> [<a href="less-than-2.html?spec=css-content">status</a>]</li>
-<li>
-<a href="css-counter-styles.json">css-counter-styles</a> [<a href="less-than-2.html?spec=css-counter-styles">status</a>]</li>
-<li>
-<a href="css-device-adapt.json">css-device-adapt</a> [<a href="less-than-2.html?spec=css-device-adapt">status</a>]</li>
-<li>
-<a href="css-display.json">css-display</a> [<a href="less-than-2.html?spec=css-display">status</a>]</li>
-<li>
-<a href="css-easing.json">css-easing</a> [<a href="less-than-2.html?spec=css-easing">status</a>]</li>
-<li>
-<a href="css-env.json">css-env</a> [<a href="less-than-2.html?spec=css-env">status</a>]</li>
-<li>
-<a href="css-flexbox.json">css-flexbox</a> [<a href="less-than-2.html?spec=css-flexbox">status</a>]</li>
-<li>
-<a href="css-font-loading.json">css-font-loading</a> [<a href="less-than-2.html?spec=css-font-loading">status</a>]</li>
-<li>
-<a href="css-fonts-5.json">css-fonts-5</a> [<a href="less-than-2.html?spec=css-fonts-5">status</a>]</li>
-<li>
-<a href="css-fonts.json">css-fonts</a> [<a href="less-than-2.html?spec=css-fonts">status</a>]</li>
-<li>
-<a href="css-grid-3.json">css-grid-3</a> [<a href="less-than-2.html?spec=css-grid-3">status</a>]</li>
-<li>
-<a href="css-grid.json">css-grid</a> [<a href="less-than-2.html?spec=css-grid">status</a>]</li>
-<li>
-<a href="css-images-4.json">css-images-4</a> [<a href="less-than-2.html?spec=css-images-4">status</a>]</li>
-<li>
-<a href="css-images.json">css-images</a> [<a href="less-than-2.html?spec=css-images">status</a>]</li>
-<li>
-<a href="css-inline.json">css-inline</a> [<a href="less-than-2.html?spec=css-inline">status</a>]</li>
-<li>
-<a href="css-lists.json">css-lists</a> [<a href="less-than-2.html?spec=css-lists">status</a>]</li>
-<li>
-<a href="css-logical.json">css-logical</a> [<a href="less-than-2.html?spec=css-logical">status</a>]</li>
-<li>
-<a href="css-masking.json">css-masking</a> [<a href="less-than-2.html?spec=css-masking">status</a>]</li>
-<li>
-<a href="css-mediaqueries.json">css-mediaqueries</a> [<a href="less-than-2.html?spec=css-mediaqueries">status</a>]</li>
-<li>
-<a href="css-multicol.json">css-multicol</a> [<a href="less-than-2.html?spec=css-multicol">status</a>]</li>
-<li>
-<a href="css-namespaces.json">css-namespaces</a> [<a href="less-than-2.html?spec=css-namespaces">status</a>]</li>
-<li>
-<a href="css-overflow.json">css-overflow</a> [<a href="less-than-2.html?spec=css-overflow">status</a>]</li>
-<li>
-<a href="css-overscroll.json">css-overscroll</a> [<a href="less-than-2.html?spec=css-overscroll">status</a>]</li>
-<li>
-<a href="css-page.json">css-page</a> [<a href="less-than-2.html?spec=css-page">status</a>]</li>
-<li>
-<a href="css-paint-api.json">css-paint-api</a> [<a href="less-than-2.html?spec=css-paint-api">status</a>]</li>
-<li>
-<a href="css-position.json">css-position</a> [<a href="less-than-2.html?spec=css-position">status</a>]</li>
-<li>
-<a href="css-properties-values-api.json">css-properties-values-api</a> [<a href="less-than-2.html?spec=css-properties-values-api">status</a>]</li>
-<li>
-<a href="css-pseudo.json">css-pseudo</a> [<a href="less-than-2.html?spec=css-pseudo">status</a>]</li>
-<li>
-<a href="css-regions.json">css-regions</a> [<a href="less-than-2.html?spec=css-regions">status</a>]</li>
-<li>
-<a href="css-rhythm.json">css-rhythm</a> [<a href="less-than-2.html?spec=css-rhythm">status</a>]</li>
-<li>
-<a href="css-ruby.json">css-ruby</a> [<a href="less-than-2.html?spec=css-ruby">status</a>]</li>
-<li>
-<a href="css-scoping.json">css-scoping</a> [<a href="less-than-2.html?spec=css-scoping">status</a>]</li>
-<li>
-<a href="css-scroll-anchoring.json">css-scroll-anchoring</a> [<a href="less-than-2.html?spec=css-scroll-anchoring">status</a>]</li>
-<li>
-<a href="css-scroll-snap.json">css-scroll-snap</a> [<a href="less-than-2.html?spec=css-scroll-snap">status</a>]</li>
-<li>
-<a href="css-scrollbars.json">css-scrollbars</a> [<a href="less-than-2.html?spec=css-scrollbars">status</a>]</li>
-<li>
-<a href="css-shadow-parts.json">css-shadow-parts</a> [<a href="less-than-2.html?spec=css-shadow-parts">status</a>]</li>
-<li>
-<a href="css-shapes.json">css-shapes</a> [<a href="less-than-2.html?spec=css-shapes">status</a>]</li>
-<li>
-<a href="css-size-adjust.json">css-size-adjust</a> [<a href="less-than-2.html?spec=css-size-adjust">status</a>]</li>
-<li>
-<a href="css-sizing-3.json">css-sizing-3</a> [<a href="less-than-2.html?spec=css-sizing-3">status</a>]</li>
-<li>
-<a href="css-sizing-4.json">css-sizing-4</a> [<a href="less-than-2.html?spec=css-sizing-4">status</a>]</li>
-<li>
-<a href="css-text-4.json">css-text-4</a> [<a href="less-than-2.html?spec=css-text-4">status</a>]</li>
-<li>
-<a href="css-text-decor-4.json">css-text-decor-4</a> [<a href="less-than-2.html?spec=css-text-decor-4">status</a>]</li>
-<li>
-<a href="css-text-decor.json">css-text-decor</a> [<a href="less-than-2.html?spec=css-text-decor">status</a>]</li>
-<li>
-<a href="css-text.json">css-text</a> [<a href="less-than-2.html?spec=css-text">status</a>]</li>
-<li>
-<a href="css-transforms-2.json">css-transforms-2</a> [<a href="less-than-2.html?spec=css-transforms-2">status</a>]</li>
-<li>
-<a href="css-transforms.json">css-transforms</a> [<a href="less-than-2.html?spec=css-transforms">status</a>]</li>
-<li>
-<a href="css-transitions-2.json">css-transitions-2</a> [<a href="less-than-2.html?spec=css-transitions-2">status</a>]</li>
-<li>
-<a href="css-transitions.json">css-transitions</a> [<a href="less-than-2.html?spec=css-transitions">status</a>]</li>
-<li>
-<a href="css-typed-om.json">css-typed-om</a> [<a href="less-than-2.html?spec=css-typed-om">status</a>]</li>
-<li>
-<a href="css-ui.json">css-ui</a> [<a href="less-than-2.html?spec=css-ui">status</a>]</li>
-<li>
-<a href="css-values-5.json">css-values-5</a> [<a href="less-than-2.html?spec=css-values-5">status</a>]</li>
-<li>
-<a href="css-values.json">css-values</a> [<a href="less-than-2.html?spec=css-values">status</a>]</li>
-<li>
-<a href="css-variables.json">css-variables</a> [<a href="less-than-2.html?spec=css-variables">status</a>]</li>
-<li>
-<a href="css-will-change.json">css-will-change</a> [<a href="less-than-2.html?spec=css-will-change">status</a>]</li>
-<li>
-<a href="css-writing-modes.json">css-writing-modes</a> [<a href="less-than-2.html?spec=css-writing-modes">status</a>]</li>
-<li>
-<a href="css2.json">css2</a> [<a href="less-than-2.html?spec=css2">status</a>]</li>
-<li>
-<a href="cssom-view.json">cssom-view</a> [<a href="less-than-2.html?spec=cssom-view">status</a>]</li>
-<li>
-<a href="cssom.json">cssom</a> [<a href="less-than-2.html?spec=cssom">status</a>]</li>
-<li>
-<a href="deprecation-reporting.json">deprecation-reporting</a> [<a href="less-than-2.html?spec=deprecation-reporting">status</a>]</li>
-<li>
-<a href="device-memory.json">device-memory</a> [<a href="less-than-2.html?spec=device-memory">status</a>]</li>
-<li>
-<a href="dom-parsing.json">dom-parsing</a> [<a href="less-than-2.html?spec=dom-parsing">status</a>]</li>
-<li>
-<a href="dom.json">dom</a> [<a href="less-than-2.html?spec=dom">status</a>]</li>
-<li>
-<a href="draft-ietf-httpbis-digest-headers.json">draft-ietf-httpbis-digest-headers</a> [<a href="less-than-2.html?spec=draft-ietf-httpbis-digest-headers">status</a>]</li>
-<li>
-<a href="draft-ietf-httpbis-expect-ct.json">draft-ietf-httpbis-expect-ct</a> [<a href="less-than-2.html?spec=draft-ietf-httpbis-expect-ct">status</a>]</li>
-<li>
-<a href="draft-ietf-httpbis-rfc6265bis.json">draft-ietf-httpbis-rfc6265bis</a> [<a href="less-than-2.html?spec=draft-ietf-httpbis-rfc6265bis">status</a>]</li>
-<li>
-<a href="ecma-402.json">ecma-402</a> [<a href="less-than-2.html?spec=ecma-402">status</a>]</li>
-<li>
-<a href="ecmascript.json">ecmascript</a> [<a href="less-than-2.html?spec=ecmascript">status</a>]</li>
-<li>
-<a href="element-timing.json">element-timing</a> [<a href="less-than-2.html?spec=element-timing">status</a>]</li>
-<li>
-<a href="encoding.json">encoding</a> [<a href="less-than-2.html?spec=encoding">status</a>]</li>
-<li>
-<a href="encrypted-media.json">encrypted-media</a> [<a href="less-than-2.html?spec=encrypted-media">status</a>]</li>
-<li>
-<a href="entries-api.json">entries-api</a> [<a href="less-than-2.html?spec=entries-api">status</a>]</li>
-<li>
-<a href="event-timing.json">event-timing</a> [<a href="less-than-2.html?spec=event-timing">status</a>]</li>
-<li>
-<a href="eyedropper-api.json">eyedropper-api</a> [<a href="less-than-2.html?spec=eyedropper-api">status</a>]</li>
-<li>
-<a href="fetch-metadata.json">fetch-metadata</a> [<a href="less-than-2.html?spec=fetch-metadata">status</a>]</li>
-<li>
-<a href="fetch.json">fetch</a> [<a href="less-than-2.html?spec=fetch">status</a>]</li>
-<li>
-<a href="file-system-access.json">file-system-access</a> [<a href="less-than-2.html?spec=file-system-access">status</a>]</li>
-<li>
-<a href="file-system.json">file-system</a> [<a href="less-than-2.html?spec=file-system">status</a>]</li>
-<li>
-<a href="fileapi.json">fileapi</a> [<a href="less-than-2.html?spec=fileapi">status</a>]</li>
-<li>
-<a href="filter-effects-2.json">filter-effects-2</a> [<a href="less-than-2.html?spec=filter-effects-2">status</a>]</li>
-<li>
-<a href="filter-effects.json">filter-effects</a> [<a href="less-than-2.html?spec=filter-effects">status</a>]</li>
-<li>
-<a href="fullscreen.json">fullscreen</a> [<a href="less-than-2.html?spec=fullscreen">status</a>]</li>
-<li>
-<a href="gamepad-extensions.json">gamepad-extensions</a> [<a href="less-than-2.html?spec=gamepad-extensions">status</a>]</li>
-<li>
-<a href="gamepad.json">gamepad</a> [<a href="less-than-2.html?spec=gamepad">status</a>]</li>
-<li>
-<a href="generic-sensor.json">generic-sensor</a> [<a href="less-than-2.html?spec=generic-sensor">status</a>]</li>
-<li>
-<a href="geolocation-api.json">geolocation-api</a> [<a href="less-than-2.html?spec=geolocation-api">status</a>]</li>
-<li>
-<a href="geometry.json">geometry</a> [<a href="less-than-2.html?spec=geometry">status</a>]</li>
-<li>
-<a href="gyroscope.json">gyroscope</a> [<a href="less-than-2.html?spec=gyroscope">status</a>]</li>
-<li>
-<a href="hr-time.json">hr-time</a> [<a href="less-than-2.html?spec=hr-time">status</a>]</li>
-<li>
-<a href="html-media-capture.json">html-media-capture</a> [<a href="less-than-2.html?spec=html-media-capture">status</a>]</li>
-<li>
-<a href="html.json">html</a> [<a href="less-than-2.html?spec=html">status</a>]</li>
-<li>
-<a href="idle-detection.json">idle-detection</a> [<a href="less-than-2.html?spec=idle-detection">status</a>]</li>
-<li>
-<a href="image-capture.json">image-capture</a> [<a href="less-than-2.html?spec=image-capture">status</a>]</li>
-<li>
-<a href="indexeddb.json">indexeddb</a> [<a href="less-than-2.html?spec=indexeddb">status</a>]</li>
-<li>
-<a href="input-device-capabilities.json">input-device-capabilities</a> [<a href="less-than-2.html?spec=input-device-capabilities">status</a>]</li>
-<li>
-<a href="input-events.json">input-events</a> [<a href="less-than-2.html?spec=input-events">status</a>]</li>
-<li>
-<a href="intersection-observer.json">intersection-observer</a> [<a href="less-than-2.html?spec=intersection-observer">status</a>]</li>
-<li>
-<a href="intervention-reporting.json">intervention-reporting</a> [<a href="less-than-2.html?spec=intervention-reporting">status</a>]</li>
-<li>
-<a href="keyboard-lock.json">keyboard-lock</a> [<a href="less-than-2.html?spec=keyboard-lock">status</a>]</li>
-<li>
-<a href="keyboard-map.json">keyboard-map</a> [<a href="less-than-2.html?spec=keyboard-map">status</a>]</li>
-<li>
-<a href="largest-contentful-paint.json">largest-contentful-paint</a> [<a href="less-than-2.html?spec=largest-contentful-paint">status</a>]</li>
-<li>
-<a href="layout-instability.json">layout-instability</a> [<a href="less-than-2.html?spec=layout-instability">status</a>]</li>
-<li>
-<a href="longtasks.json">longtasks</a> [<a href="less-than-2.html?spec=longtasks">status</a>]</li>
-<li>
-<a href="magnetometer.json">magnetometer</a> [<a href="less-than-2.html?spec=magnetometer">status</a>]</li>
-<li>
-<a href="manifest-app-info.json">manifest-app-info</a> [<a href="less-than-2.html?spec=manifest-app-info">status</a>]</li>
-<li>
-<a href="manifest-incubations.json">manifest-incubations</a> [<a href="less-than-2.html?spec=manifest-incubations">status</a>]</li>
-<li>
-<a href="mathml.json">mathml</a> [<a href="less-than-2.html?spec=mathml">status</a>]</li>
-<li>
-<a href="media-capabilities.json">media-capabilities</a> [<a href="less-than-2.html?spec=media-capabilities">status</a>]</li>
-<li>
-<a href="media-playback-quality.json">media-playback-quality</a> [<a href="less-than-2.html?spec=media-playback-quality">status</a>]</li>
-<li>
-<a href="media-source.json">media-source</a> [<a href="less-than-2.html?spec=media-source">status</a>]</li>
-<li>
-<a href="mediacapture-fromelement.json">mediacapture-fromelement</a> [<a href="less-than-2.html?spec=mediacapture-fromelement">status</a>]</li>
-<li>
-<a href="mediacapture-screen-share.json">mediacapture-screen-share</a> [<a href="less-than-2.html?spec=mediacapture-screen-share">status</a>]</li>
-<li>
-<a href="mediacapture-streams.json">mediacapture-streams</a> [<a href="less-than-2.html?spec=mediacapture-streams">status</a>]</li>
-<li>
-<a href="mediacapture-transform.json">mediacapture-transform</a> [<a href="less-than-2.html?spec=mediacapture-transform">status</a>]</li>
-<li>
-<a href="mediaqueries-5.json">mediaqueries-5</a> [<a href="less-than-2.html?spec=mediaqueries-5">status</a>]</li>
-<li>
-<a href="mediasession.json">mediasession</a> [<a href="less-than-2.html?spec=mediasession">status</a>]</li>
-<li>
-<a href="mediastream-recording.json">mediastream-recording</a> [<a href="less-than-2.html?spec=mediastream-recording">status</a>]</li>
-<li>
-<a href="motion.json">motion</a> [<a href="less-than-2.html?spec=motion">status</a>]</li>
-<li>
-<a href="navigation-timing.json">navigation-timing</a> [<a href="less-than-2.html?spec=navigation-timing">status</a>]</li>
-<li>
-<a href="netinfo.json">netinfo</a> [<a href="less-than-2.html?spec=netinfo">status</a>]</li>
-<li>
-<a href="network-error-logging.json">network-error-logging</a> [<a href="less-than-2.html?spec=network-error-logging">status</a>]</li>
-<li>
-<a href="notifications.json">notifications</a> [<a href="less-than-2.html?spec=notifications">status</a>]</li>
-<li>
-<a href="numberformat.json">numberformat</a> [<a href="less-than-2.html?spec=numberformat">status</a>]</li>
-<li>
-<a href="orientation-event.json">orientation-event</a> [<a href="less-than-2.html?spec=orientation-event">status</a>]</li>
-<li>
-<a href="orientation-sensor.json">orientation-sensor</a> [<a href="less-than-2.html?spec=orientation-sensor">status</a>]</li>
-<li>
-<a href="paint-timing.json">paint-timing</a> [<a href="less-than-2.html?spec=paint-timing">status</a>]</li>
-<li>
-<a href="payment-handler.json">payment-handler</a> [<a href="less-than-2.html?spec=payment-handler">status</a>]</li>
-<li>
-<a href="payment-request.json">payment-request</a> [<a href="less-than-2.html?spec=payment-request">status</a>]</li>
-<li>
-<a href="performance-timeline.json">performance-timeline</a> [<a href="less-than-2.html?spec=performance-timeline">status</a>]</li>
-<li>
-<a href="periodic-background-sync.json">periodic-background-sync</a> [<a href="less-than-2.html?spec=periodic-background-sync">status</a>]</li>
-<li>
-<a href="permissions-policy.json">permissions-policy</a> [<a href="less-than-2.html?spec=permissions-policy">status</a>]</li>
-<li>
-<a href="permissions.json">permissions</a> [<a href="less-than-2.html?spec=permissions">status</a>]</li>
-<li>
-<a href="picture-in-picture.json">picture-in-picture</a> [<a href="less-than-2.html?spec=picture-in-picture">status</a>]</li>
-<li>
-<a href="pluralrules.json">pluralrules</a> [<a href="less-than-2.html?spec=pluralrules">status</a>]</li>
-<li>
-<a href="pointerevents.json">pointerevents</a> [<a href="less-than-2.html?spec=pointerevents">status</a>]</li>
-<li>
-<a href="pointerlock.json">pointerlock</a> [<a href="less-than-2.html?spec=pointerlock">status</a>]</li>
-<li>
-<a href="portals.json">portals</a> [<a href="less-than-2.html?spec=portals">status</a>]</li>
-<li>
-<a href="presentation-api.json">presentation-api</a> [<a href="less-than-2.html?spec=presentation-api">status</a>]</li>
-<li>
-<a href="priority-hints.json">priority-hints</a> [<a href="less-than-2.html?spec=priority-hints">status</a>]</li>
-<li>
-<a href="proposal-accessible-object-hasownproperty.json">proposal-accessible-object-hasownproperty</a> [<a href="less-than-2.html?spec=proposal-accessible-object-hasownproperty">status</a>]</li>
-<li>
-<a href="proposal-array-find-from-last.json">proposal-array-find-from-last</a> [<a href="less-than-2.html?spec=proposal-array-find-from-last">status</a>]</li>
-<li>
-<a href="proposal-array-grouping.json">proposal-array-grouping</a> [<a href="less-than-2.html?spec=proposal-array-grouping">status</a>]</li>
-<li>
-<a href="proposal-atomics-wait-async.json">proposal-atomics-wait-async</a> [<a href="less-than-2.html?spec=proposal-atomics-wait-async">status</a>]</li>
-<li>
-<a href="proposal-hashbang.json">proposal-hashbang</a> [<a href="less-than-2.html?spec=proposal-hashbang">status</a>]</li>
-<li>
-<a href="proposal-intl-enumeration.json">proposal-intl-enumeration</a> [<a href="less-than-2.html?spec=proposal-intl-enumeration">status</a>]</li>
-<li>
-<a href="proposal-intl-locale-info.json">proposal-intl-locale-info</a> [<a href="less-than-2.html?spec=proposal-intl-locale-info">status</a>]</li>
-<li>
-<a href="proposal-intl-segmenter.json">proposal-intl-segmenter</a> [<a href="less-than-2.html?spec=proposal-intl-segmenter">status</a>]</li>
-<li>
-<a href="proposal-private-fields-in-in.json">proposal-private-fields-in-in</a> [<a href="less-than-2.html?spec=proposal-private-fields-in-in">status</a>]</li>
-<li>
-<a href="proposal-regexp-legacy-features.json">proposal-regexp-legacy-features</a> [<a href="less-than-2.html?spec=proposal-regexp-legacy-features">status</a>]</li>
-<li>
-<a href="proposal-regexp-match-indices.json">proposal-regexp-match-indices</a> [<a href="less-than-2.html?spec=proposal-regexp-match-indices">status</a>]</li>
-<li>
-<a href="proposal-relative-indexing-method.json">proposal-relative-indexing-method</a> [<a href="less-than-2.html?spec=proposal-relative-indexing-method">status</a>]</li>
-<li>
-<a href="proposal-top-level-await.json">proposal-top-level-await</a> [<a href="less-than-2.html?spec=proposal-top-level-await">status</a>]</li>
-<li>
-<a href="push-api.json">push-api</a> [<a href="less-than-2.html?spec=push-api">status</a>]</li>
-<li>
-<a href="referrer-policy.json">referrer-policy</a> [<a href="less-than-2.html?spec=referrer-policy">status</a>]</li>
-<li>
-<a href="remote-playback.json">remote-playback</a> [<a href="less-than-2.html?spec=remote-playback">status</a>]</li>
-<li>
-<a href="reporting.json">reporting</a> [<a href="less-than-2.html?spec=reporting">status</a>]</li>
-<li>
-<a href="requestidlecallback.json">requestidlecallback</a> [<a href="less-than-2.html?spec=requestidlecallback">status</a>]</li>
-<li>
-<a href="resize-observer.json">resize-observer</a> [<a href="less-than-2.html?spec=resize-observer">status</a>]</li>
-<li>
-<a href="resource-timing.json">resource-timing</a> [<a href="less-than-2.html?spec=resource-timing">status</a>]</li>
-<li>
-<a href="rfc2397.json">rfc2397</a> [<a href="less-than-2.html?spec=rfc2397">status</a>]</li>
-<li>
-<a href="rfc6265.json">rfc6265</a> [<a href="less-than-2.html?spec=rfc6265">status</a>]</li>
-<li>
-<a href="rfc6266.json">rfc6266</a> [<a href="less-than-2.html?spec=rfc6266">status</a>]</li>
-<li>
-<a href="rfc6454.json">rfc6454</a> [<a href="less-than-2.html?spec=rfc6454">status</a>]</li>
-<li>
-<a href="rfc6797.json">rfc6797</a> [<a href="less-than-2.html?spec=rfc6797">status</a>]</li>
-<li>
-<a href="rfc7034.json">rfc7034</a> [<a href="less-than-2.html?spec=rfc7034">status</a>]</li>
-<li>
-<a href="rfc7230.json">rfc7230</a> [<a href="less-than-2.html?spec=rfc7230">status</a>]</li>
-<li>
-<a href="rfc7231.json">rfc7231</a> [<a href="less-than-2.html?spec=rfc7231">status</a>]</li>
-<li>
-<a href="rfc7232.json">rfc7232</a> [<a href="less-than-2.html?spec=rfc7232">status</a>]</li>
-<li>
-<a href="rfc7233.json">rfc7233</a> [<a href="less-than-2.html?spec=rfc7233">status</a>]</li>
-<li>
-<a href="rfc7234.json">rfc7234</a> [<a href="less-than-2.html?spec=rfc7234">status</a>]</li>
-<li>
-<a href="rfc7235.json">rfc7235</a> [<a href="less-than-2.html?spec=rfc7235">status</a>]</li>
-<li>
-<a href="rfc7239.json">rfc7239</a> [<a href="less-than-2.html?spec=rfc7239">status</a>]</li>
-<li>
-<a href="rfc7538.json">rfc7538</a> [<a href="less-than-2.html?spec=rfc7538">status</a>]</li>
-<li>
-<a href="rfc7540.json">rfc7540</a> [<a href="less-than-2.html?spec=rfc7540">status</a>]</li>
-<li>
-<a href="rfc7578.json">rfc7578</a> [<a href="less-than-2.html?spec=rfc7578">status</a>]</li>
-<li>
-<a href="rfc7725.json">rfc7725</a> [<a href="less-than-2.html?spec=rfc7725">status</a>]</li>
-<li>
-<a href="rfc7838.json">rfc7838</a> [<a href="less-than-2.html?spec=rfc7838">status</a>]</li>
-<li>
-<a href="rfc8246.json">rfc8246</a> [<a href="less-than-2.html?spec=rfc8246">status</a>]</li>
-<li>
-<a href="rfc8470.json">rfc8470</a> [<a href="less-than-2.html?spec=rfc8470">status</a>]</li>
-<li>
-<a href="rfc8942.json">rfc8942</a> [<a href="less-than-2.html?spec=rfc8942">status</a>]</li>
-<li>
-<a href="sanitizer.json">sanitizer</a> [<a href="less-than-2.html?spec=sanitizer">status</a>]</li>
-<li>
-<a href="savedata.json">savedata</a> [<a href="less-than-2.html?spec=savedata">status</a>]</li>
-<li>
-<a href="scheduling-apis.json">scheduling-apis</a> [<a href="less-than-2.html?spec=scheduling-apis">status</a>]</li>
-<li>
-<a href="screen-orientation.json">screen-orientation</a> [<a href="less-than-2.html?spec=screen-orientation">status</a>]</li>
-<li>
-<a href="screen-wake-lock.json">screen-wake-lock</a> [<a href="less-than-2.html?spec=screen-wake-lock">status</a>]</li>
-<li>
-<a href="scroll-animations.json">scroll-animations</a> [<a href="less-than-2.html?spec=scroll-animations">status</a>]</li>
-<li>
-<a href="selection-api.json">selection-api</a> [<a href="less-than-2.html?spec=selection-api">status</a>]</li>
-<li>
-<a href="selectors.json">selectors</a> [<a href="less-than-2.html?spec=selectors">status</a>]</li>
-<li>
-<a href="serial.json">serial</a> [<a href="less-than-2.html?spec=serial">status</a>]</li>
-<li>
-<a href="server-timing.json">server-timing</a> [<a href="less-than-2.html?spec=server-timing">status</a>]</li>
-<li>
-<a href="service-workers.json">service-workers</a> [<a href="less-than-2.html?spec=service-workers">status</a>]</li>
-<li>
-<a href="setimmediate.json">setimmediate</a> [<a href="less-than-2.html?spec=setimmediate">status</a>]</li>
-<li>
-<a href="shape-detection-api.json">shape-detection-api</a> [<a href="less-than-2.html?spec=shape-detection-api">status</a>]</li>
-<li>
-<a href="sourcemaps.json">sourcemaps</a> [<a href="less-than-2.html?spec=sourcemaps">status</a>]</li>
-<li>
-<a href="speech-api.json">speech-api</a> [<a href="less-than-2.html?spec=speech-api">status</a>]</li>
-<li>
-<a href="storage-access.json">storage-access</a> [<a href="less-than-2.html?spec=storage-access">status</a>]</li>
-<li>
-<a href="storage.json">storage</a> [<a href="less-than-2.html?spec=storage">status</a>]</li>
-<li>
-<a href="streams.json">streams</a> [<a href="less-than-2.html?spec=streams">status</a>]</li>
-<li>
-<a href="subresource-integrity.json">subresource-integrity</a> [<a href="less-than-2.html?spec=subresource-integrity">status</a>]</li>
-<li>
-<a href="svg-animations.json">svg-animations</a> [<a href="less-than-2.html?spec=svg-animations">status</a>]</li>
-<li>
-<a href="svg.json">svg</a> [<a href="less-than-2.html?spec=svg">status</a>]</li>
-<li>
-<a href="touch-events.json">touch-events</a> [<a href="less-than-2.html?spec=touch-events">status</a>]</li>
-<li>
-<a href="trusted-types.json">trusted-types</a> [<a href="less-than-2.html?spec=trusted-types">status</a>]</li>
-<li>
-<a href="ua-client-hints.json">ua-client-hints</a> [<a href="less-than-2.html?spec=ua-client-hints">status</a>]</li>
-<li>
-<a href="uievents.json">uievents</a> [<a href="less-than-2.html?spec=uievents">status</a>]</li>
-<li>
-<a href="upgrade-insecure-requests.json">upgrade-insecure-requests</a> [<a href="less-than-2.html?spec=upgrade-insecure-requests">status</a>]</li>
-<li>
-<a href="url.json">url</a> [<a href="less-than-2.html?spec=url">status</a>]</li>
-<li>
-<a href="urlpattern.json">urlpattern</a> [<a href="less-than-2.html?spec=urlpattern">status</a>]</li>
-<li>
-<a href="user-timing.json">user-timing</a> [<a href="less-than-2.html?spec=user-timing">status</a>]</li>
-<li>
-<a href="vibration.json">vibration</a> [<a href="less-than-2.html?spec=vibration">status</a>]</li>
-<li>
-<a href="visual-viewport.json">visual-viewport</a> [<a href="less-than-2.html?spec=visual-viewport">status</a>]</li>
-<li>
-<a href="wasm-exception-handling.json">wasm-exception-handling</a> [<a href="less-than-2.html?spec=wasm-exception-handling">status</a>]</li>
-<li>
-<a href="wasm-js-api.json">wasm-js-api</a> [<a href="less-than-2.html?spec=wasm-js-api">status</a>]</li>
-<li>
-<a href="wasm-web-embedding.json">wasm-web-embedding</a> [<a href="less-than-2.html?spec=wasm-web-embedding">status</a>]</li>
-<li>
-<a href="web-animations-2.json">web-animations-2</a> [<a href="less-than-2.html?spec=web-animations-2">status</a>]</li>
-<li>
-<a href="web-animations.json">web-animations</a> [<a href="less-than-2.html?spec=web-animations">status</a>]</li>
-<li>
-<a href="web-bluetooth.json">web-bluetooth</a> [<a href="less-than-2.html?spec=web-bluetooth">status</a>]</li>
-<li>
-<a href="web-locks.json">web-locks</a> [<a href="less-than-2.html?spec=web-locks">status</a>]</li>
-<li>
-<a href="web-nfc.json">web-nfc</a> [<a href="less-than-2.html?spec=web-nfc">status</a>]</li>
-<li>
-<a href="web-otp.json">web-otp</a> [<a href="less-than-2.html?spec=web-otp">status</a>]</li>
-<li>
-<a href="web-share.json">web-share</a> [<a href="less-than-2.html?spec=web-share">status</a>]</li>
-<li>
-<a href="webaudio.json">webaudio</a> [<a href="less-than-2.html?spec=webaudio">status</a>]</li>
-<li>
-<a href="webauthn.json">webauthn</a> [<a href="less-than-2.html?spec=webauthn">status</a>]</li>
-<li>
-<a href="webcodecs.json">webcodecs</a> [<a href="less-than-2.html?spec=webcodecs">status</a>]</li>
-<li>
-<a href="webcrypto-uuid.json">webcrypto-uuid</a> [<a href="less-than-2.html?spec=webcrypto-uuid">status</a>]</li>
-<li>
-<a href="webcrypto.json">webcrypto</a> [<a href="less-than-2.html?spec=webcrypto">status</a>]</li>
-<li>
-<a href="webdriver.json">webdriver</a> [<a href="less-than-2.html?spec=webdriver">status</a>]</li>
-<li>
-<a href="webgl-1.json">webgl-1</a> [<a href="less-than-2.html?spec=webgl-1">status</a>]</li>
-<li>
-<a href="webgl-2.json">webgl-2</a> [<a href="less-than-2.html?spec=webgl-2">status</a>]</li>
-<li>
-<a href="webhid.json">webhid</a> [<a href="less-than-2.html?spec=webhid">status</a>]</li>
-<li>
-<a href="webidl.json">webidl</a> [<a href="less-than-2.html?spec=webidl">status</a>]</li>
-<li>
-<a href="webmidi.json">webmidi</a> [<a href="less-than-2.html?spec=webmidi">status</a>]</li>
-<li>
-<a href="webrtc-extensions.json">webrtc-extensions</a> [<a href="less-than-2.html?spec=webrtc-extensions">status</a>]</li>
-<li>
-<a href="webrtc-identity.json">webrtc-identity</a> [<a href="less-than-2.html?spec=webrtc-identity">status</a>]</li>
-<li>
-<a href="webrtc-stats.json">webrtc-stats</a> [<a href="less-than-2.html?spec=webrtc-stats">status</a>]</li>
-<li>
-<a href="webrtc.json">webrtc</a> [<a href="less-than-2.html?spec=webrtc">status</a>]</li>
-<li>
-<a href="websockets.json">websockets</a> [<a href="less-than-2.html?spec=websockets">status</a>]</li>
-<li>
-<a href="webusb.json">webusb</a> [<a href="less-than-2.html?spec=webusb">status</a>]</li>
-<li>
-<a href="webvtt.json">webvtt</a> [<a href="less-than-2.html?spec=webvtt">status</a>]</li>
-<li>
-<a href="webxr-anchors.json">webxr-anchors</a> [<a href="less-than-2.html?spec=webxr-anchors">status</a>]</li>
-<li>
-<a href="webxr-ar.json">webxr-ar</a> [<a href="less-than-2.html?spec=webxr-ar">status</a>]</li>
-<li>
-<a href="webxr-depth-sensing.json">webxr-depth-sensing</a> [<a href="less-than-2.html?spec=webxr-depth-sensing">status</a>]</li>
-<li>
-<a href="webxr-dom-overlays.json">webxr-dom-overlays</a> [<a href="less-than-2.html?spec=webxr-dom-overlays">status</a>]</li>
-<li>
-<a href="webxr-gamepads.json">webxr-gamepads</a> [<a href="less-than-2.html?spec=webxr-gamepads">status</a>]</li>
-<li>
-<a href="webxr-hit-test.json">webxr-hit-test</a> [<a href="less-than-2.html?spec=webxr-hit-test">status</a>]</li>
-<li>
-<a href="webxr-layers.json">webxr-layers</a> [<a href="less-than-2.html?spec=webxr-layers">status</a>]</li>
-<li>
-<a href="webxr-lighting-estimation.json">webxr-lighting-estimation</a> [<a href="less-than-2.html?spec=webxr-lighting-estimation">status</a>]</li>
-<li>
-<a href="webxr.json">webxr</a> [<a href="less-than-2.html?spec=webxr">status</a>]</li>
-<li>
-<a href="window-controls-overlay.json">window-controls-overlay</a> [<a href="less-than-2.html?spec=window-controls-overlay">status</a>]</li>
-<li>
-<a href="woff.json">woff</a> [<a href="less-than-2.html?spec=woff">status</a>]</li>
-<li>
-<a href="woff2.json">woff2</a> [<a href="less-than-2.html?spec=woff2">status</a>]</li>
-<li>
-<a href="xhr.json">xhr</a> [<a href="less-than-2.html?spec=xhr">status</a>]</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Spec shortname</th>
+<th>Status</th>
+<th align="left">Spec URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="accelerometer.json">accelerometer</a></td>
+<td><a href="less-than-2.html?spec=accelerometer">status</a></td>
+<td align="left"><a href="https://w3c.github.io/accelerometer/" rel="nofollow">https://w3c.github.io/accelerometer/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="ambient-light.json">ambient-light</a></td>
+<td><a href="less-than-2.html?spec=ambient-light">status</a></td>
+<td align="left"><a href="https://w3c.github.io/ambient-light/" rel="nofollow">https://w3c.github.io/ambient-light/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="appmanifest.json">appmanifest</a></td>
+<td><a href="less-than-2.html?spec=appmanifest">status</a></td>
+<td align="left"><a href="https://w3c.github.io/manifest/" rel="nofollow">https://w3c.github.io/manifest/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="aria.json">aria</a></td>
+<td><a href="less-than-2.html?spec=aria">status</a></td>
+<td align="left"><a href="https://w3c.github.io/aria/" rel="nofollow">https://w3c.github.io/aria/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="audio-output.json">audio-output</a></td>
+<td><a href="less-than-2.html?spec=audio-output">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mediacapture-output/" rel="nofollow">https://w3c.github.io/mediacapture-output/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="background-fetch.json">background-fetch</a></td>
+<td><a href="less-than-2.html?spec=background-fetch">status</a></td>
+<td align="left"><a href="https://wicg.github.io/background-fetch/" rel="nofollow">https://wicg.github.io/background-fetch/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="background-sync.json">background-sync</a></td>
+<td><a href="less-than-2.html?spec=background-sync">status</a></td>
+<td align="left"><a href="https://wicg.github.io/background-sync/spec/" rel="nofollow">https://wicg.github.io/background-sync/spec/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="badging.json">badging</a></td>
+<td><a href="less-than-2.html?spec=badging">status</a></td>
+<td align="left"><a href="https://w3c.github.io/badging/" rel="nofollow">https://w3c.github.io/badging/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="battery.json">battery</a></td>
+<td><a href="less-than-2.html?spec=battery">status</a></td>
+<td align="left"><a href="https://w3c.github.io/battery/" rel="nofollow">https://w3c.github.io/battery/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="beacon.json">beacon</a></td>
+<td><a href="less-than-2.html?spec=beacon">status</a></td>
+<td align="left"><a href="https://w3c.github.io/beacon/" rel="nofollow">https://w3c.github.io/beacon/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="clear-site-data.json">clear-site-data</a></td>
+<td><a href="less-than-2.html?spec=clear-site-data">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-clear-site-data/" rel="nofollow">https://w3c.github.io/webappsec-clear-site-data/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="clipboard-apis.json">clipboard-apis</a></td>
+<td><a href="less-than-2.html?spec=clipboard-apis">status</a></td>
+<td align="left"><a href="https://w3c.github.io/clipboard-apis/" rel="nofollow">https://w3c.github.io/clipboard-apis/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="compat.json">compat</a></td>
+<td><a href="less-than-2.html?spec=compat">status</a></td>
+<td align="left"><a href="https://compat.spec.whatwg.org/" rel="nofollow">https://compat.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="compositing.json">compositing</a></td>
+<td><a href="less-than-2.html?spec=compositing">status</a></td>
+<td align="left"><a href="https://drafts.fxtf.org/compositing/" rel="nofollow">https://drafts.fxtf.org/compositing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="compression.json">compression</a></td>
+<td><a href="less-than-2.html?spec=compression">status</a></td>
+<td align="left"><a href="https://wicg.github.io/compression/" rel="nofollow">https://wicg.github.io/compression/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="console.json">console</a></td>
+<td><a href="less-than-2.html?spec=console">status</a></td>
+<td align="left"><a href="https://console.spec.whatwg.org/" rel="nofollow">https://console.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="contact-api.json">contact-api</a></td>
+<td><a href="less-than-2.html?spec=contact-api">status</a></td>
+<td align="left"><a href="https://wicg.github.io/contact-api/spec/" rel="nofollow">https://wicg.github.io/contact-api/spec/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="content-index.json">content-index</a></td>
+<td><a href="less-than-2.html?spec=content-index">status</a></td>
+<td align="left"><a href="https://wicg.github.io/content-index/spec/" rel="nofollow">https://wicg.github.io/content-index/spec/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="controls-list.json">controls-list</a></td>
+<td><a href="less-than-2.html?spec=controls-list">status</a></td>
+<td align="left"><a href="https://wicg.github.io/controls-list/" rel="nofollow">https://wicg.github.io/controls-list/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="cookie-store.json">cookie-store</a></td>
+<td><a href="less-than-2.html?spec=cookie-store">status</a></td>
+<td align="left"><a href="https://wicg.github.io/cookie-store/" rel="nofollow">https://wicg.github.io/cookie-store/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="crash-reporting.json">crash-reporting</a></td>
+<td><a href="less-than-2.html?spec=crash-reporting">status</a></td>
+<td align="left"><a href="https://wicg.github.io/crash-reporting/" rel="nofollow">https://wicg.github.io/crash-reporting/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="credential-management.json">credential-management</a></td>
+<td><a href="less-than-2.html?spec=credential-management">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-credential-management/" rel="nofollow">https://w3c.github.io/webappsec-credential-management/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="csp-embedded-enforcement.json">csp-embedded-enforcement</a></td>
+<td><a href="less-than-2.html?spec=csp-embedded-enforcement">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-cspee/" rel="nofollow">https://w3c.github.io/webappsec-cspee/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="csp.json">csp</a></td>
+<td><a href="less-than-2.html?spec=csp">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-csp/" rel="nofollow">https://w3c.github.io/webappsec-csp/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-align.json">css-align</a></td>
+<td><a href="less-than-2.html?spec=css-align">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-align/" rel="nofollow">https://drafts.csswg.org/css-align/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-animations-2.json">css-animations-2</a></td>
+<td><a href="less-than-2.html?spec=css-animations-2">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-animations-2/" rel="nofollow">https://drafts.csswg.org/css-animations-2/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-animations.json">css-animations</a></td>
+<td><a href="less-than-2.html?spec=css-animations">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-animations/" rel="nofollow">https://drafts.csswg.org/css-animations/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-backgrounds-4.json">css-backgrounds-4</a></td>
+<td><a href="less-than-2.html?spec=css-backgrounds-4">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-backgrounds-4/" rel="nofollow">https://drafts.csswg.org/css-backgrounds-4/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-backgrounds.json">css-backgrounds</a></td>
+<td><a href="less-than-2.html?spec=css-backgrounds">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-backgrounds/" rel="nofollow">https://drafts.csswg.org/css-backgrounds/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-box-4.json">css-box-4</a></td>
+<td><a href="less-than-2.html?spec=css-box-4">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-box-4/" rel="nofollow">https://drafts.csswg.org/css-box-4/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-box.json">css-box</a></td>
+<td><a href="less-than-2.html?spec=css-box">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-box/" rel="nofollow">https://drafts.csswg.org/css-box/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-break.json">css-break</a></td>
+<td><a href="less-than-2.html?spec=css-break">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-break/" rel="nofollow">https://drafts.csswg.org/css-break/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-cascade-5.json">css-cascade-5</a></td>
+<td><a href="less-than-2.html?spec=css-cascade-5">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-cascade-5/" rel="nofollow">https://drafts.csswg.org/css-cascade-5/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-cascade.json">css-cascade</a></td>
+<td><a href="less-than-2.html?spec=css-cascade">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-cascade/" rel="nofollow">https://drafts.csswg.org/css-cascade/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-color-5.json">css-color-5</a></td>
+<td><a href="less-than-2.html?spec=css-color-5">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-color-5/" rel="nofollow">https://drafts.csswg.org/css-color-5/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-color-6.json">css-color-6</a></td>
+<td><a href="less-than-2.html?spec=css-color-6">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-color-6/" rel="nofollow">https://drafts.csswg.org/css-color-6/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-color-adjust.json">css-color-adjust</a></td>
+<td><a href="less-than-2.html?spec=css-color-adjust">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-color-adjust/" rel="nofollow">https://drafts.csswg.org/css-color-adjust/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-color.json">css-color</a></td>
+<td><a href="less-than-2.html?spec=css-color">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-color/" rel="nofollow">https://drafts.csswg.org/css-color/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-conditional-3.json">css-conditional-3</a></td>
+<td><a href="less-than-2.html?spec=css-conditional-3">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-conditional-3/" rel="nofollow">https://drafts.csswg.org/css-conditional-3/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-conditional-4.json">css-conditional-4</a></td>
+<td><a href="less-than-2.html?spec=css-conditional-4">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-conditional-4/" rel="nofollow">https://drafts.csswg.org/css-conditional-4/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-contain.json">css-contain</a></td>
+<td><a href="less-than-2.html?spec=css-contain">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-contain/" rel="nofollow">https://drafts.csswg.org/css-contain/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-content.json">css-content</a></td>
+<td><a href="less-than-2.html?spec=css-content">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-content/" rel="nofollow">https://drafts.csswg.org/css-content/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-counter-styles.json">css-counter-styles</a></td>
+<td><a href="less-than-2.html?spec=css-counter-styles">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-counter-styles/" rel="nofollow">https://drafts.csswg.org/css-counter-styles/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-device-adapt.json">css-device-adapt</a></td>
+<td><a href="less-than-2.html?spec=css-device-adapt">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-device-adapt/" rel="nofollow">https://drafts.csswg.org/css-device-adapt/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-display.json">css-display</a></td>
+<td><a href="less-than-2.html?spec=css-display">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-display/" rel="nofollow">https://drafts.csswg.org/css-display/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-easing.json">css-easing</a></td>
+<td><a href="less-than-2.html?spec=css-easing">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-easing/" rel="nofollow">https://drafts.csswg.org/css-easing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-env.json">css-env</a></td>
+<td><a href="less-than-2.html?spec=css-env">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-env/" rel="nofollow">https://drafts.csswg.org/css-env/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-flexbox.json">css-flexbox</a></td>
+<td><a href="less-than-2.html?spec=css-flexbox">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-flexbox/" rel="nofollow">https://drafts.csswg.org/css-flexbox/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-font-loading.json">css-font-loading</a></td>
+<td><a href="less-than-2.html?spec=css-font-loading">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-font-loading/" rel="nofollow">https://drafts.csswg.org/css-font-loading/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-fonts-5.json">css-fonts-5</a></td>
+<td><a href="less-than-2.html?spec=css-fonts-5">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-fonts-5/" rel="nofollow">https://drafts.csswg.org/css-fonts-5/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-fonts.json">css-fonts</a></td>
+<td><a href="less-than-2.html?spec=css-fonts">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-fonts/" rel="nofollow">https://drafts.csswg.org/css-fonts/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-grid-3.json">css-grid-3</a></td>
+<td><a href="less-than-2.html?spec=css-grid-3">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-grid-3/" rel="nofollow">https://drafts.csswg.org/css-grid-3/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-grid.json">css-grid</a></td>
+<td><a href="less-than-2.html?spec=css-grid">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-grid/" rel="nofollow">https://drafts.csswg.org/css-grid/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-images-4.json">css-images-4</a></td>
+<td><a href="less-than-2.html?spec=css-images-4">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-images-4/" rel="nofollow">https://drafts.csswg.org/css-images-4/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-images.json">css-images</a></td>
+<td><a href="less-than-2.html?spec=css-images">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-images/" rel="nofollow">https://drafts.csswg.org/css-images/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-inline.json">css-inline</a></td>
+<td><a href="less-than-2.html?spec=css-inline">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-inline/" rel="nofollow">https://drafts.csswg.org/css-inline/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-lists.json">css-lists</a></td>
+<td><a href="less-than-2.html?spec=css-lists">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-lists/" rel="nofollow">https://drafts.csswg.org/css-lists/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-logical.json">css-logical</a></td>
+<td><a href="less-than-2.html?spec=css-logical">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-logical/" rel="nofollow">https://drafts.csswg.org/css-logical/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-masking.json">css-masking</a></td>
+<td><a href="less-than-2.html?spec=css-masking">status</a></td>
+<td align="left"><a href="https://drafts.fxtf.org/css-masking/" rel="nofollow">https://drafts.fxtf.org/css-masking/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-mediaqueries.json">css-mediaqueries</a></td>
+<td><a href="less-than-2.html?spec=css-mediaqueries">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/mediaqueries/" rel="nofollow">https://drafts.csswg.org/mediaqueries/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-multicol.json">css-multicol</a></td>
+<td><a href="less-than-2.html?spec=css-multicol">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-multicol/" rel="nofollow">https://drafts.csswg.org/css-multicol/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-namespaces.json">css-namespaces</a></td>
+<td><a href="less-than-2.html?spec=css-namespaces">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-namespaces/" rel="nofollow">https://drafts.csswg.org/css-namespaces/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-overflow.json">css-overflow</a></td>
+<td><a href="less-than-2.html?spec=css-overflow">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-overflow/" rel="nofollow">https://drafts.csswg.org/css-overflow/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-overscroll.json">css-overscroll</a></td>
+<td><a href="less-than-2.html?spec=css-overscroll">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-overscroll/" rel="nofollow">https://drafts.csswg.org/css-overscroll/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-page.json">css-page</a></td>
+<td><a href="less-than-2.html?spec=css-page">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-page/" rel="nofollow">https://drafts.csswg.org/css-page/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-paint-api.json">css-paint-api</a></td>
+<td><a href="less-than-2.html?spec=css-paint-api">status</a></td>
+<td align="left"><a href="https://drafts.css-houdini.org/css-paint-api/" rel="nofollow">https://drafts.css-houdini.org/css-paint-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-position.json">css-position</a></td>
+<td><a href="less-than-2.html?spec=css-position">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-position/" rel="nofollow">https://drafts.csswg.org/css-position/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-properties-values-api.json">css-properties-values-api</a></td>
+<td><a href="less-than-2.html?spec=css-properties-values-api">status</a></td>
+<td align="left"><a href="https://drafts.css-houdini.org/css-properties-values-api/" rel="nofollow">https://drafts.css-houdini.org/css-properties-values-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-pseudo.json">css-pseudo</a></td>
+<td><a href="less-than-2.html?spec=css-pseudo">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-pseudo/" rel="nofollow">https://drafts.csswg.org/css-pseudo/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-regions.json">css-regions</a></td>
+<td><a href="less-than-2.html?spec=css-regions">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-regions/" rel="nofollow">https://drafts.csswg.org/css-regions/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-rhythm.json">css-rhythm</a></td>
+<td><a href="less-than-2.html?spec=css-rhythm">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-rhythm/" rel="nofollow">https://drafts.csswg.org/css-rhythm/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-ruby.json">css-ruby</a></td>
+<td><a href="less-than-2.html?spec=css-ruby">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-ruby/" rel="nofollow">https://drafts.csswg.org/css-ruby/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-scoping.json">css-scoping</a></td>
+<td><a href="less-than-2.html?spec=css-scoping">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-scoping/" rel="nofollow">https://drafts.csswg.org/css-scoping/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-scroll-anchoring.json">css-scroll-anchoring</a></td>
+<td><a href="less-than-2.html?spec=css-scroll-anchoring">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-scroll-anchoring/" rel="nofollow">https://drafts.csswg.org/css-scroll-anchoring/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-scroll-snap.json">css-scroll-snap</a></td>
+<td><a href="less-than-2.html?spec=css-scroll-snap">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-scroll-snap/" rel="nofollow">https://drafts.csswg.org/css-scroll-snap/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-scrollbars.json">css-scrollbars</a></td>
+<td><a href="less-than-2.html?spec=css-scrollbars">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-scrollbars/" rel="nofollow">https://drafts.csswg.org/css-scrollbars/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-shadow-parts.json">css-shadow-parts</a></td>
+<td><a href="less-than-2.html?spec=css-shadow-parts">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-shadow-parts/" rel="nofollow">https://drafts.csswg.org/css-shadow-parts/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-shapes.json">css-shapes</a></td>
+<td><a href="less-than-2.html?spec=css-shapes">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-shapes/" rel="nofollow">https://drafts.csswg.org/css-shapes/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-size-adjust.json">css-size-adjust</a></td>
+<td><a href="less-than-2.html?spec=css-size-adjust">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-size-adjust/" rel="nofollow">https://drafts.csswg.org/css-size-adjust/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-sizing-3.json">css-sizing-3</a></td>
+<td><a href="less-than-2.html?spec=css-sizing-3">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-sizing/" rel="nofollow">https://drafts.csswg.org/css-sizing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-sizing-4.json">css-sizing-4</a></td>
+<td><a href="less-than-2.html?spec=css-sizing-4">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-sizing-4/" rel="nofollow">https://drafts.csswg.org/css-sizing-4/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-text-4.json">css-text-4</a></td>
+<td><a href="less-than-2.html?spec=css-text-4">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-text-4/" rel="nofollow">https://drafts.csswg.org/css-text-4/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-text-decor-4.json">css-text-decor-4</a></td>
+<td><a href="less-than-2.html?spec=css-text-decor-4">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-text-decor-4/" rel="nofollow">https://drafts.csswg.org/css-text-decor-4/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-text-decor.json">css-text-decor</a></td>
+<td><a href="less-than-2.html?spec=css-text-decor">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-text-decor/" rel="nofollow">https://drafts.csswg.org/css-text-decor/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-text.json">css-text</a></td>
+<td><a href="less-than-2.html?spec=css-text">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-text/" rel="nofollow">https://drafts.csswg.org/css-text/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-transforms-2.json">css-transforms-2</a></td>
+<td><a href="less-than-2.html?spec=css-transforms-2">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-transforms-2/" rel="nofollow">https://drafts.csswg.org/css-transforms-2/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-transforms.json">css-transforms</a></td>
+<td><a href="less-than-2.html?spec=css-transforms">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-transforms/" rel="nofollow">https://drafts.csswg.org/css-transforms/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-transitions-2.json">css-transitions-2</a></td>
+<td><a href="less-than-2.html?spec=css-transitions-2">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-transitions-2/" rel="nofollow">https://drafts.csswg.org/css-transitions-2/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-transitions.json">css-transitions</a></td>
+<td><a href="less-than-2.html?spec=css-transitions">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-transitions/" rel="nofollow">https://drafts.csswg.org/css-transitions/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-typed-om.json">css-typed-om</a></td>
+<td><a href="less-than-2.html?spec=css-typed-om">status</a></td>
+<td align="left"><a href="https://drafts.css-houdini.org/css-typed-om/" rel="nofollow">https://drafts.css-houdini.org/css-typed-om/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-ui.json">css-ui</a></td>
+<td><a href="less-than-2.html?spec=css-ui">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-ui/" rel="nofollow">https://drafts.csswg.org/css-ui/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-values-5.json">css-values-5</a></td>
+<td><a href="less-than-2.html?spec=css-values-5">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-values-5/" rel="nofollow">https://drafts.csswg.org/css-values-5/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-values.json">css-values</a></td>
+<td><a href="less-than-2.html?spec=css-values">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-values/" rel="nofollow">https://drafts.csswg.org/css-values/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-variables.json">css-variables</a></td>
+<td><a href="less-than-2.html?spec=css-variables">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-variables/" rel="nofollow">https://drafts.csswg.org/css-variables/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-will-change.json">css-will-change</a></td>
+<td><a href="less-than-2.html?spec=css-will-change">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-will-change/" rel="nofollow">https://drafts.csswg.org/css-will-change/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css-writing-modes.json">css-writing-modes</a></td>
+<td><a href="less-than-2.html?spec=css-writing-modes">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css-writing-modes/" rel="nofollow">https://drafts.csswg.org/css-writing-modes/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="css2.json">css2</a></td>
+<td><a href="less-than-2.html?spec=css2">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/css2/" rel="nofollow">https://drafts.csswg.org/css2/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="cssom-view.json">cssom-view</a></td>
+<td><a href="less-than-2.html?spec=cssom-view">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/cssom-view/" rel="nofollow">https://drafts.csswg.org/cssom-view/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="cssom.json">cssom</a></td>
+<td><a href="less-than-2.html?spec=cssom">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/cssom/" rel="nofollow">https://drafts.csswg.org/cssom/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="deprecation-reporting.json">deprecation-reporting</a></td>
+<td><a href="less-than-2.html?spec=deprecation-reporting">status</a></td>
+<td align="left"><a href="https://wicg.github.io/deprecation-reporting/" rel="nofollow">https://wicg.github.io/deprecation-reporting/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="dom-parsing.json">dom-parsing</a></td>
+<td><a href="less-than-2.html?spec=dom-parsing">status</a></td>
+<td align="left"><a href="https://w3c.github.io/DOM-Parsing/" rel="nofollow">https://w3c.github.io/DOM-Parsing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="dom.json">dom</a></td>
+<td><a href="less-than-2.html?spec=dom">status</a></td>
+<td align="left"><a href="https://dom.spec.whatwg.org/" rel="nofollow">https://dom.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="draft-ietf-httpbis-digest-headers.json">draft-ietf-httpbis-digest-headers</a></td>
+<td><a href="less-than-2.html?spec=draft-ietf-httpbis-digest-headers">status</a></td>
+<td align="left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers-05" rel="nofollow">https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers-05</a></td>
+</tr>
+<tr>
+<td align="left"><a href="draft-ietf-httpbis-expect-ct.json">draft-ietf-httpbis-expect-ct</a></td>
+<td><a href="less-than-2.html?spec=draft-ietf-httpbis-expect-ct">status</a></td>
+<td align="left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-expect-ct-08" rel="nofollow">https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-expect-ct-08</a></td>
+</tr>
+<tr>
+<td align="left"><a href="draft-ietf-httpbis-rfc6265bis.json">draft-ietf-httpbis-rfc6265bis</a></td>
+<td><a href="less-than-2.html?spec=draft-ietf-httpbis-rfc6265bis">status</a></td>
+<td align="left"><a href="https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html" rel="nofollow">https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="ecma-402.json">ecma-402</a></td>
+<td><a href="less-than-2.html?spec=ecma-402">status</a></td>
+<td align="left"><a href="https://tc39.es/ecma402/" rel="nofollow">https://tc39.es/ecma402/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="ecmascript.json">ecmascript</a></td>
+<td><a href="less-than-2.html?spec=ecmascript">status</a></td>
+<td align="left"><a href="https://tc39.es/ecma262/multipage/" rel="nofollow">https://tc39.es/ecma262/multipage/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="element-timing.json">element-timing</a></td>
+<td><a href="less-than-2.html?spec=element-timing">status</a></td>
+<td align="left"><a href="https://wicg.github.io/element-timing/" rel="nofollow">https://wicg.github.io/element-timing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="encoding.json">encoding</a></td>
+<td><a href="less-than-2.html?spec=encoding">status</a></td>
+<td align="left"><a href="https://encoding.spec.whatwg.org/" rel="nofollow">https://encoding.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="encrypted-media.json">encrypted-media</a></td>
+<td><a href="less-than-2.html?spec=encrypted-media">status</a></td>
+<td align="left"><a href="https://w3c.github.io/encrypted-media/" rel="nofollow">https://w3c.github.io/encrypted-media/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="entries-api.json">entries-api</a></td>
+<td><a href="less-than-2.html?spec=entries-api">status</a></td>
+<td align="left"><a href="https://wicg.github.io/entries-api/" rel="nofollow">https://wicg.github.io/entries-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="event-timing.json">event-timing</a></td>
+<td><a href="less-than-2.html?spec=event-timing">status</a></td>
+<td align="left"><a href="https://wicg.github.io/event-timing/" rel="nofollow">https://wicg.github.io/event-timing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="eyedropper-api.json">eyedropper-api</a></td>
+<td><a href="less-than-2.html?spec=eyedropper-api">status</a></td>
+<td align="left"><a href="https://wicg.github.io/eyedropper-api/" rel="nofollow">https://wicg.github.io/eyedropper-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="fetch-metadata.json">fetch-metadata</a></td>
+<td><a href="less-than-2.html?spec=fetch-metadata">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-fetch-metadata/" rel="nofollow">https://w3c.github.io/webappsec-fetch-metadata/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="fetch.json">fetch</a></td>
+<td><a href="less-than-2.html?spec=fetch">status</a></td>
+<td align="left"><a href="https://fetch.spec.whatwg.org/" rel="nofollow">https://fetch.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="file-system-access.json">file-system-access</a></td>
+<td><a href="less-than-2.html?spec=file-system-access">status</a></td>
+<td align="left"><a href="https://wicg.github.io/file-system-access/" rel="nofollow">https://wicg.github.io/file-system-access/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="file-system.json">file-system</a></td>
+<td><a href="less-than-2.html?spec=file-system">status</a></td>
+<td align="left"><a href="https://fs.spec.whatwg.org/" rel="nofollow">https://fs.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="fileapi.json">fileapi</a></td>
+<td><a href="less-than-2.html?spec=fileapi">status</a></td>
+<td align="left"><a href="https://w3c.github.io/FileAPI/" rel="nofollow">https://w3c.github.io/FileAPI/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="filter-effects-2.json">filter-effects-2</a></td>
+<td><a href="less-than-2.html?spec=filter-effects-2">status</a></td>
+<td align="left"><a href="https://drafts.fxtf.org/filter-effects-2/" rel="nofollow">https://drafts.fxtf.org/filter-effects-2/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="filter-effects.json">filter-effects</a></td>
+<td><a href="less-than-2.html?spec=filter-effects">status</a></td>
+<td align="left"><a href="https://drafts.fxtf.org/filter-effects/" rel="nofollow">https://drafts.fxtf.org/filter-effects/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="fullscreen.json">fullscreen</a></td>
+<td><a href="less-than-2.html?spec=fullscreen">status</a></td>
+<td align="left"><a href="https://fullscreen.spec.whatwg.org/" rel="nofollow">https://fullscreen.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="gamepad-extensions.json">gamepad-extensions</a></td>
+<td><a href="less-than-2.html?spec=gamepad-extensions">status</a></td>
+<td align="left"><a href="https://w3c.github.io/gamepad/extensions.html" rel="nofollow">https://w3c.github.io/gamepad/extensions.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="gamepad.json">gamepad</a></td>
+<td><a href="less-than-2.html?spec=gamepad">status</a></td>
+<td align="left"><a href="https://w3c.github.io/gamepad/" rel="nofollow">https://w3c.github.io/gamepad/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="generic-sensor.json">generic-sensor</a></td>
+<td><a href="less-than-2.html?spec=generic-sensor">status</a></td>
+<td align="left"><a href="https://w3c.github.io/sensors/" rel="nofollow">https://w3c.github.io/sensors/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="geolocation-api.json">geolocation-api</a></td>
+<td><a href="less-than-2.html?spec=geolocation-api">status</a></td>
+<td align="left"><a href="https://w3c.github.io/geolocation-api/" rel="nofollow">https://w3c.github.io/geolocation-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="geometry.json">geometry</a></td>
+<td><a href="less-than-2.html?spec=geometry">status</a></td>
+<td align="left"><a href="https://drafts.fxtf.org/geometry/" rel="nofollow">https://drafts.fxtf.org/geometry/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="gyroscope.json">gyroscope</a></td>
+<td><a href="less-than-2.html?spec=gyroscope">status</a></td>
+<td align="left"><a href="https://w3c.github.io/gyroscope/" rel="nofollow">https://w3c.github.io/gyroscope/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="hr-time.json">hr-time</a></td>
+<td><a href="less-than-2.html?spec=hr-time">status</a></td>
+<td align="left"><a href="https://w3c.github.io/hr-time/" rel="nofollow">https://w3c.github.io/hr-time/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="html-media-capture.json">html-media-capture</a></td>
+<td><a href="less-than-2.html?spec=html-media-capture">status</a></td>
+<td align="left"><a href="https://w3c.github.io/html-media-capture/" rel="nofollow">https://w3c.github.io/html-media-capture/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="html.json">html</a></td>
+<td><a href="less-than-2.html?spec=html">status</a></td>
+<td align="left"><a href="https://html.spec.whatwg.org/multipage/" rel="nofollow">https://html.spec.whatwg.org/multipage/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="idle-detection.json">idle-detection</a></td>
+<td><a href="less-than-2.html?spec=idle-detection">status</a></td>
+<td align="left"><a href="https://wicg.github.io/idle-detection/" rel="nofollow">https://wicg.github.io/idle-detection/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="image-capture.json">image-capture</a></td>
+<td><a href="less-than-2.html?spec=image-capture">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mediacapture-image/" rel="nofollow">https://w3c.github.io/mediacapture-image/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="indexeddb.json">indexeddb</a></td>
+<td><a href="less-than-2.html?spec=indexeddb">status</a></td>
+<td align="left"><a href="https://w3c.github.io/IndexedDB/" rel="nofollow">https://w3c.github.io/IndexedDB/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="input-device-capabilities.json">input-device-capabilities</a></td>
+<td><a href="less-than-2.html?spec=input-device-capabilities">status</a></td>
+<td align="left"><a href="https://wicg.github.io/input-device-capabilities/" rel="nofollow">https://wicg.github.io/input-device-capabilities/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="input-events.json">input-events</a></td>
+<td><a href="less-than-2.html?spec=input-events">status</a></td>
+<td align="left"><a href="https://w3c.github.io/input-events/" rel="nofollow">https://w3c.github.io/input-events/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="intersection-observer.json">intersection-observer</a></td>
+<td><a href="less-than-2.html?spec=intersection-observer">status</a></td>
+<td align="left"><a href="https://w3c.github.io/IntersectionObserver/" rel="nofollow">https://w3c.github.io/IntersectionObserver/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="intervention-reporting.json">intervention-reporting</a></td>
+<td><a href="less-than-2.html?spec=intervention-reporting">status</a></td>
+<td align="left"><a href="https://wicg.github.io/intervention-reporting/" rel="nofollow">https://wicg.github.io/intervention-reporting/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="keyboard-lock.json">keyboard-lock</a></td>
+<td><a href="less-than-2.html?spec=keyboard-lock">status</a></td>
+<td align="left"><a href="https://wicg.github.io/keyboard-lock/" rel="nofollow">https://wicg.github.io/keyboard-lock/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="keyboard-map.json">keyboard-map</a></td>
+<td><a href="less-than-2.html?spec=keyboard-map">status</a></td>
+<td align="left"><a href="https://wicg.github.io/keyboard-map/" rel="nofollow">https://wicg.github.io/keyboard-map/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="largest-contentful-paint.json">largest-contentful-paint</a></td>
+<td><a href="less-than-2.html?spec=largest-contentful-paint">status</a></td>
+<td align="left"><a href="https://w3c.github.io/largest-contentful-paint/" rel="nofollow">https://w3c.github.io/largest-contentful-paint/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="layout-instability.json">layout-instability</a></td>
+<td><a href="less-than-2.html?spec=layout-instability">status</a></td>
+<td align="left"><a href="https://wicg.github.io/layout-instability/" rel="nofollow">https://wicg.github.io/layout-instability/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="longtasks.json">longtasks</a></td>
+<td><a href="less-than-2.html?spec=longtasks">status</a></td>
+<td align="left"><a href="https://w3c.github.io/longtasks/" rel="nofollow">https://w3c.github.io/longtasks/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="magnetometer.json">magnetometer</a></td>
+<td><a href="less-than-2.html?spec=magnetometer">status</a></td>
+<td align="left"><a href="https://w3c.github.io/magnetometer/" rel="nofollow">https://w3c.github.io/magnetometer/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="manifest-app-info.json">manifest-app-info</a></td>
+<td><a href="less-than-2.html?spec=manifest-app-info">status</a></td>
+<td align="left"><a href="https://w3c.github.io/manifest-app-info/" rel="nofollow">https://w3c.github.io/manifest-app-info/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="manifest-incubations.json">manifest-incubations</a></td>
+<td><a href="less-than-2.html?spec=manifest-incubations">status</a></td>
+<td align="left"><a href="https://wicg.github.io/manifest-incubations/" rel="nofollow">https://wicg.github.io/manifest-incubations/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="mathml.json">mathml</a></td>
+<td><a href="less-than-2.html?spec=mathml">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mathml-core/" rel="nofollow">https://w3c.github.io/mathml-core/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="media-capabilities.json">media-capabilities</a></td>
+<td><a href="less-than-2.html?spec=media-capabilities">status</a></td>
+<td align="left"><a href="https://w3c.github.io/media-capabilities/" rel="nofollow">https://w3c.github.io/media-capabilities/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="media-playback-quality.json">media-playback-quality</a></td>
+<td><a href="less-than-2.html?spec=media-playback-quality">status</a></td>
+<td align="left"><a href="https://w3c.github.io/media-playback-quality/" rel="nofollow">https://w3c.github.io/media-playback-quality/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="media-source.json">media-source</a></td>
+<td><a href="less-than-2.html?spec=media-source">status</a></td>
+<td align="left"><a href="https://w3c.github.io/media-source/" rel="nofollow">https://w3c.github.io/media-source/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="mediacapture-fromelement.json">mediacapture-fromelement</a></td>
+<td><a href="less-than-2.html?spec=mediacapture-fromelement">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mediacapture-fromelement/" rel="nofollow">https://w3c.github.io/mediacapture-fromelement/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="mediacapture-screen-share.json">mediacapture-screen-share</a></td>
+<td><a href="less-than-2.html?spec=mediacapture-screen-share">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mediacapture-screen-share/" rel="nofollow">https://w3c.github.io/mediacapture-screen-share/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="mediacapture-streams.json">mediacapture-streams</a></td>
+<td><a href="less-than-2.html?spec=mediacapture-streams">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mediacapture-main/" rel="nofollow">https://w3c.github.io/mediacapture-main/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="mediacapture-transform.json">mediacapture-transform</a></td>
+<td><a href="less-than-2.html?spec=mediacapture-transform">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mediacapture-transform/" rel="nofollow">https://w3c.github.io/mediacapture-transform/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="mediaqueries-5.json">mediaqueries-5</a></td>
+<td><a href="less-than-2.html?spec=mediaqueries-5">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/mediaqueries-5/" rel="nofollow">https://drafts.csswg.org/mediaqueries-5/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="mediasession.json">mediasession</a></td>
+<td><a href="less-than-2.html?spec=mediasession">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mediasession/" rel="nofollow">https://w3c.github.io/mediasession/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="mediastream-recording.json">mediastream-recording</a></td>
+<td><a href="less-than-2.html?spec=mediastream-recording">status</a></td>
+<td align="left"><a href="https://w3c.github.io/mediacapture-record/" rel="nofollow">https://w3c.github.io/mediacapture-record/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="motion.json">motion</a></td>
+<td><a href="less-than-2.html?spec=motion">status</a></td>
+<td align="left"><a href="https://drafts.fxtf.org/motion/" rel="nofollow">https://drafts.fxtf.org/motion/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="navigation-timing.json">navigation-timing</a></td>
+<td><a href="less-than-2.html?spec=navigation-timing">status</a></td>
+<td align="left"><a href="https://w3c.github.io/navigation-timing/" rel="nofollow">https://w3c.github.io/navigation-timing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="netinfo.json">netinfo</a></td>
+<td><a href="less-than-2.html?spec=netinfo">status</a></td>
+<td align="left"><a href="https://wicg.github.io/netinfo/" rel="nofollow">https://wicg.github.io/netinfo/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="network-error-logging.json">network-error-logging</a></td>
+<td><a href="less-than-2.html?spec=network-error-logging">status</a></td>
+<td align="left"><a href="https://w3c.github.io/network-error-logging/" rel="nofollow">https://w3c.github.io/network-error-logging/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="notifications.json">notifications</a></td>
+<td><a href="less-than-2.html?spec=notifications">status</a></td>
+<td align="left"><a href="https://notifications.spec.whatwg.org/" rel="nofollow">https://notifications.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="numberformat.json">numberformat</a></td>
+<td><a href="less-than-2.html?spec=numberformat">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html" rel="nofollow">https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="orientation-event.json">orientation-event</a></td>
+<td><a href="less-than-2.html?spec=orientation-event">status</a></td>
+<td align="left"><a href="https://w3c.github.io/deviceorientation/" rel="nofollow">https://w3c.github.io/deviceorientation/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="orientation-sensor.json">orientation-sensor</a></td>
+<td><a href="less-than-2.html?spec=orientation-sensor">status</a></td>
+<td align="left"><a href="https://w3c.github.io/orientation-sensor/" rel="nofollow">https://w3c.github.io/orientation-sensor/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="paint-timing.json">paint-timing</a></td>
+<td><a href="less-than-2.html?spec=paint-timing">status</a></td>
+<td align="left"><a href="https://w3c.github.io/paint-timing/" rel="nofollow">https://w3c.github.io/paint-timing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="payment-handler.json">payment-handler</a></td>
+<td><a href="less-than-2.html?spec=payment-handler">status</a></td>
+<td align="left"><a href="https://w3c.github.io/payment-handler/" rel="nofollow">https://w3c.github.io/payment-handler/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="payment-request.json">payment-request</a></td>
+<td><a href="less-than-2.html?spec=payment-request">status</a></td>
+<td align="left"><a href="https://w3c.github.io/payment-request/" rel="nofollow">https://w3c.github.io/payment-request/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="performance-timeline.json">performance-timeline</a></td>
+<td><a href="less-than-2.html?spec=performance-timeline">status</a></td>
+<td align="left"><a href="https://w3c.github.io/performance-timeline/" rel="nofollow">https://w3c.github.io/performance-timeline/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="periodic-background-sync.json">periodic-background-sync</a></td>
+<td><a href="less-than-2.html?spec=periodic-background-sync">status</a></td>
+<td align="left"><a href="https://wicg.github.io/periodic-background-sync/" rel="nofollow">https://wicg.github.io/periodic-background-sync/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="permissions-policy.json">permissions-policy</a></td>
+<td><a href="less-than-2.html?spec=permissions-policy">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-permissions-policy/" rel="nofollow">https://w3c.github.io/webappsec-permissions-policy/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="permissions.json">permissions</a></td>
+<td><a href="less-than-2.html?spec=permissions">status</a></td>
+<td align="left"><a href="https://w3c.github.io/permissions/" rel="nofollow">https://w3c.github.io/permissions/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="picture-in-picture.json">picture-in-picture</a></td>
+<td><a href="less-than-2.html?spec=picture-in-picture">status</a></td>
+<td align="left"><a href="https://w3c.github.io/picture-in-picture/" rel="nofollow">https://w3c.github.io/picture-in-picture/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="pluralrules.json">pluralrules</a></td>
+<td><a href="less-than-2.html?spec=pluralrules">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html" rel="nofollow">https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="pointerevents.json">pointerevents</a></td>
+<td><a href="less-than-2.html?spec=pointerevents">status</a></td>
+<td align="left"><a href="https://w3c.github.io/pointerevents/" rel="nofollow">https://w3c.github.io/pointerevents/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="pointerlock.json">pointerlock</a></td>
+<td><a href="less-than-2.html?spec=pointerlock">status</a></td>
+<td align="left"><a href="https://w3c.github.io/pointerlock/" rel="nofollow">https://w3c.github.io/pointerlock/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="portals.json">portals</a></td>
+<td><a href="less-than-2.html?spec=portals">status</a></td>
+<td align="left"><a href="https://wicg.github.io/portals/" rel="nofollow">https://wicg.github.io/portals/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="presentation-api.json">presentation-api</a></td>
+<td><a href="less-than-2.html?spec=presentation-api">status</a></td>
+<td align="left"><a href="https://w3c.github.io/presentation-api/" rel="nofollow">https://w3c.github.io/presentation-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="priority-hints.json">priority-hints</a></td>
+<td><a href="less-than-2.html?spec=priority-hints">status</a></td>
+<td align="left"><a href="https://wicg.github.io/priority-hints/" rel="nofollow">https://wicg.github.io/priority-hints/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-accessible-object-hasownproperty.json">proposal-accessible-object-hasownproperty</a></td>
+<td><a href="less-than-2.html?spec=proposal-accessible-object-hasownproperty">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-accessible-object-hasownproperty/" rel="nofollow">https://tc39.es/proposal-accessible-object-hasownproperty/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-array-find-from-last.json">proposal-array-find-from-last</a></td>
+<td><a href="less-than-2.html?spec=proposal-array-find-from-last">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-array-find-from-last/" rel="nofollow">https://tc39.es/proposal-array-find-from-last/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-array-grouping.json">proposal-array-grouping</a></td>
+<td><a href="less-than-2.html?spec=proposal-array-grouping">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-array-grouping/" rel="nofollow">https://tc39.es/proposal-array-grouping/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-atomics-wait-async.json">proposal-atomics-wait-async</a></td>
+<td><a href="less-than-2.html?spec=proposal-atomics-wait-async">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-atomics-wait-async/" rel="nofollow">https://tc39.es/proposal-atomics-wait-async/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-hashbang.json">proposal-hashbang</a></td>
+<td><a href="less-than-2.html?spec=proposal-hashbang">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-hashbang/" rel="nofollow">https://tc39.es/proposal-hashbang/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-intl-enumeration.json">proposal-intl-enumeration</a></td>
+<td><a href="less-than-2.html?spec=proposal-intl-enumeration">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-intl-enumeration/" rel="nofollow">https://tc39.es/proposal-intl-enumeration/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-intl-locale-info.json">proposal-intl-locale-info</a></td>
+<td><a href="less-than-2.html?spec=proposal-intl-locale-info">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-intl-locale-info/" rel="nofollow">https://tc39.es/proposal-intl-locale-info/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-intl-segmenter.json">proposal-intl-segmenter</a></td>
+<td><a href="less-than-2.html?spec=proposal-intl-segmenter">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-intl-segmenter/" rel="nofollow">https://tc39.es/proposal-intl-segmenter/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-private-fields-in-in.json">proposal-private-fields-in-in</a></td>
+<td><a href="less-than-2.html?spec=proposal-private-fields-in-in">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-private-fields-in-in/" rel="nofollow">https://tc39.es/proposal-private-fields-in-in/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-regexp-legacy-features.json">proposal-regexp-legacy-features</a></td>
+<td><a href="less-than-2.html?spec=proposal-regexp-legacy-features">status</a></td>
+<td align="left"><a href="https://github.com/tc39/proposal-regexp-legacy-features/">https://github.com/tc39/proposal-regexp-legacy-features/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-regexp-match-indices.json">proposal-regexp-match-indices</a></td>
+<td><a href="less-than-2.html?spec=proposal-regexp-match-indices">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-regexp-match-indices/" rel="nofollow">https://tc39.es/proposal-regexp-match-indices/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-relative-indexing-method.json">proposal-relative-indexing-method</a></td>
+<td><a href="less-than-2.html?spec=proposal-relative-indexing-method">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-relative-indexing-method/" rel="nofollow">https://tc39.es/proposal-relative-indexing-method/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="proposal-top-level-await.json">proposal-top-level-await</a></td>
+<td><a href="less-than-2.html?spec=proposal-top-level-await">status</a></td>
+<td align="left"><a href="https://tc39.es/proposal-top-level-await/" rel="nofollow">https://tc39.es/proposal-top-level-await/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="push-api.json">push-api</a></td>
+<td><a href="less-than-2.html?spec=push-api">status</a></td>
+<td align="left"><a href="https://w3c.github.io/push-api/" rel="nofollow">https://w3c.github.io/push-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="referrer-policy.json">referrer-policy</a></td>
+<td><a href="less-than-2.html?spec=referrer-policy">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-referrer-policy/" rel="nofollow">https://w3c.github.io/webappsec-referrer-policy/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="remote-playback.json">remote-playback</a></td>
+<td><a href="less-than-2.html?spec=remote-playback">status</a></td>
+<td align="left"><a href="https://w3c.github.io/remote-playback/" rel="nofollow">https://w3c.github.io/remote-playback/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="reporting.json">reporting</a></td>
+<td><a href="less-than-2.html?spec=reporting">status</a></td>
+<td align="left"><a href="https://w3c.github.io/reporting/" rel="nofollow">https://w3c.github.io/reporting/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="requestidlecallback.json">requestidlecallback</a></td>
+<td><a href="less-than-2.html?spec=requestidlecallback">status</a></td>
+<td align="left"><a href="https://w3c.github.io/requestidlecallback/" rel="nofollow">https://w3c.github.io/requestidlecallback/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="resize-observer.json">resize-observer</a></td>
+<td><a href="less-than-2.html?spec=resize-observer">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/resize-observer/" rel="nofollow">https://drafts.csswg.org/resize-observer/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="resource-timing.json">resource-timing</a></td>
+<td><a href="less-than-2.html?spec=resource-timing">status</a></td>
+<td align="left"><a href="https://w3c.github.io/resource-timing/" rel="nofollow">https://w3c.github.io/resource-timing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc2397.json">rfc2397</a></td>
+<td><a href="less-than-2.html?spec=rfc2397">status</a></td>
+<td align="left"><a href="https://www.rfc-editor.org/rfc/rfc2397" rel="nofollow">https://www.rfc-editor.org/rfc/rfc2397</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc6265.json">rfc6265</a></td>
+<td><a href="less-than-2.html?spec=rfc6265">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc6265.html" rel="nofollow">https://httpwg.org/specs/rfc6265.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc6266.json">rfc6266</a></td>
+<td><a href="less-than-2.html?spec=rfc6266">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc6266.html" rel="nofollow">https://httpwg.org/specs/rfc6266.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc6454.json">rfc6454</a></td>
+<td><a href="less-than-2.html?spec=rfc6454">status</a></td>
+<td align="left"><a href="https://www.rfc-editor.org/rfc/rfc6454" rel="nofollow">https://www.rfc-editor.org/rfc/rfc6454</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc6797.json">rfc6797</a></td>
+<td><a href="less-than-2.html?spec=rfc6797">status</a></td>
+<td align="left"><a href="https://www.rfc-editor.org/rfc/rfc6797" rel="nofollow">https://www.rfc-editor.org/rfc/rfc6797</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7034.json">rfc7034</a></td>
+<td><a href="less-than-2.html?spec=rfc7034">status</a></td>
+<td align="left"><a href="https://www.rfc-editor.org/rfc/rfc7034" rel="nofollow">https://www.rfc-editor.org/rfc/rfc7034</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7230.json">rfc7230</a></td>
+<td><a href="less-than-2.html?spec=rfc7230">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7230.html" rel="nofollow">https://httpwg.org/specs/rfc7230.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7231.json">rfc7231</a></td>
+<td><a href="less-than-2.html?spec=rfc7231">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7231.html" rel="nofollow">https://httpwg.org/specs/rfc7231.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7232.json">rfc7232</a></td>
+<td><a href="less-than-2.html?spec=rfc7232">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7232.html" rel="nofollow">https://httpwg.org/specs/rfc7232.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7233.json">rfc7233</a></td>
+<td><a href="less-than-2.html?spec=rfc7233">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7233.html" rel="nofollow">https://httpwg.org/specs/rfc7233.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7234.json">rfc7234</a></td>
+<td><a href="less-than-2.html?spec=rfc7234">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7234.html" rel="nofollow">https://httpwg.org/specs/rfc7234.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7235.json">rfc7235</a></td>
+<td><a href="less-than-2.html?spec=rfc7235">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7235.html" rel="nofollow">https://httpwg.org/specs/rfc7235.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7239.json">rfc7239</a></td>
+<td><a href="less-than-2.html?spec=rfc7239">status</a></td>
+<td align="left"><a href="https://www.rfc-editor.org/rfc/rfc7239" rel="nofollow">https://www.rfc-editor.org/rfc/rfc7239</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7538.json">rfc7538</a></td>
+<td><a href="less-than-2.html?spec=rfc7538">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7538.html" rel="nofollow">https://httpwg.org/specs/rfc7538.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7540.json">rfc7540</a></td>
+<td><a href="less-than-2.html?spec=rfc7540">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7540.html" rel="nofollow">https://httpwg.org/specs/rfc7540.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7578.json">rfc7578</a></td>
+<td><a href="less-than-2.html?spec=rfc7578">status</a></td>
+<td align="left"><a href="https://www.rfc-editor.org/rfc/rfc7578" rel="nofollow">https://www.rfc-editor.org/rfc/rfc7578</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7725.json">rfc7725</a></td>
+<td><a href="less-than-2.html?spec=rfc7725">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7725.html" rel="nofollow">https://httpwg.org/specs/rfc7725.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc7838.json">rfc7838</a></td>
+<td><a href="less-than-2.html?spec=rfc7838">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc7838.html" rel="nofollow">https://httpwg.org/specs/rfc7838.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc8246.json">rfc8246</a></td>
+<td><a href="less-than-2.html?spec=rfc8246">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc8246.html" rel="nofollow">https://httpwg.org/specs/rfc8246.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc8470.json">rfc8470</a></td>
+<td><a href="less-than-2.html?spec=rfc8470">status</a></td>
+<td align="left"><a href="https://httpwg.org/specs/rfc8470.html" rel="nofollow">https://httpwg.org/specs/rfc8470.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="rfc8942.json">rfc8942</a></td>
+<td><a href="less-than-2.html?spec=rfc8942">status</a></td>
+<td align="left"><a href="https://www.rfc-editor.org/rfc/rfc8942" rel="nofollow">https://www.rfc-editor.org/rfc/rfc8942</a></td>
+</tr>
+<tr>
+<td align="left"><a href="sanitizer.json">sanitizer</a></td>
+<td><a href="less-than-2.html?spec=sanitizer">status</a></td>
+<td align="left"><a href="https://wicg.github.io/sanitizer-api/" rel="nofollow">https://wicg.github.io/sanitizer-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="savedata.json">savedata</a></td>
+<td><a href="less-than-2.html?spec=savedata">status</a></td>
+<td align="left"><a href="https://wicg.github.io/savedata/" rel="nofollow">https://wicg.github.io/savedata/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="scheduling-apis.json">scheduling-apis</a></td>
+<td><a href="less-than-2.html?spec=scheduling-apis">status</a></td>
+<td align="left"><a href="https://wicg.github.io/scheduling-apis/" rel="nofollow">https://wicg.github.io/scheduling-apis/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="screen-orientation.json">screen-orientation</a></td>
+<td><a href="less-than-2.html?spec=screen-orientation">status</a></td>
+<td align="left"><a href="https://w3c.github.io/screen-orientation/" rel="nofollow">https://w3c.github.io/screen-orientation/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="screen-wake-lock.json">screen-wake-lock</a></td>
+<td><a href="less-than-2.html?spec=screen-wake-lock">status</a></td>
+<td align="left"><a href="https://w3c.github.io/screen-wake-lock/" rel="nofollow">https://w3c.github.io/screen-wake-lock/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="scroll-animations.json">scroll-animations</a></td>
+<td><a href="less-than-2.html?spec=scroll-animations">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/scroll-animations/" rel="nofollow">https://drafts.csswg.org/scroll-animations/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="selection-api.json">selection-api</a></td>
+<td><a href="less-than-2.html?spec=selection-api">status</a></td>
+<td align="left"><a href="https://w3c.github.io/selection-api/" rel="nofollow">https://w3c.github.io/selection-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="selectors-4.json">selectors-4</a></td>
+<td><a href="less-than-2.html?spec=selectors-4">status</a></td>
+<td align="left"><a href="https://www.w3.org/TR/selectors-4/" rel="nofollow">https://www.w3.org/TR/selectors-4/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="selectors.json">selectors</a></td>
+<td><a href="less-than-2.html?spec=selectors">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/selectors/" rel="nofollow">https://drafts.csswg.org/selectors/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="serial.json">serial</a></td>
+<td><a href="less-than-2.html?spec=serial">status</a></td>
+<td align="left"><a href="https://wicg.github.io/serial/" rel="nofollow">https://wicg.github.io/serial/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="server-timing.json">server-timing</a></td>
+<td><a href="less-than-2.html?spec=server-timing">status</a></td>
+<td align="left"><a href="https://w3c.github.io/server-timing/" rel="nofollow">https://w3c.github.io/server-timing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="service-workers.json">service-workers</a></td>
+<td><a href="less-than-2.html?spec=service-workers">status</a></td>
+<td align="left"><a href="https://w3c.github.io/ServiceWorker/" rel="nofollow">https://w3c.github.io/ServiceWorker/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="setimmediate.json">setimmediate</a></td>
+<td><a href="less-than-2.html?spec=setimmediate">status</a></td>
+<td align="left"><a href="https://w3c.github.io/setImmediate/" rel="nofollow">https://w3c.github.io/setImmediate/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="shape-detection-api.json">shape-detection-api</a></td>
+<td><a href="less-than-2.html?spec=shape-detection-api">status</a></td>
+<td align="left"><a href="https://wicg.github.io/shape-detection-api/" rel="nofollow">https://wicg.github.io/shape-detection-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="sourcemaps.json">sourcemaps</a></td>
+<td><a href="less-than-2.html?spec=sourcemaps">status</a></td>
+<td align="left"><a href="https://sourcemaps.info/spec.html" rel="nofollow">https://sourcemaps.info/spec.html</a></td>
+</tr>
+<tr>
+<td align="left"><a href="speech-api.json">speech-api</a></td>
+<td><a href="less-than-2.html?spec=speech-api">status</a></td>
+<td align="left"><a href="https://wicg.github.io/speech-api/" rel="nofollow">https://wicg.github.io/speech-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="storage-access.json">storage-access</a></td>
+<td><a href="less-than-2.html?spec=storage-access">status</a></td>
+<td align="left"><a href="https://privacycg.github.io/storage-access/" rel="nofollow">https://privacycg.github.io/storage-access/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="storage.json">storage</a></td>
+<td><a href="less-than-2.html?spec=storage">status</a></td>
+<td align="left"><a href="https://storage.spec.whatwg.org/" rel="nofollow">https://storage.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="streams.json">streams</a></td>
+<td><a href="less-than-2.html?spec=streams">status</a></td>
+<td align="left"><a href="https://streams.spec.whatwg.org/" rel="nofollow">https://streams.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="subresource-integrity.json">subresource-integrity</a></td>
+<td><a href="less-than-2.html?spec=subresource-integrity">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-subresource-integrity/" rel="nofollow">https://w3c.github.io/webappsec-subresource-integrity/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="svg-animations.json">svg-animations</a></td>
+<td><a href="less-than-2.html?spec=svg-animations">status</a></td>
+<td align="left"><a href="https://svgwg.org/specs/animations/" rel="nofollow">https://svgwg.org/specs/animations/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="svg.json">svg</a></td>
+<td><a href="less-than-2.html?spec=svg">status</a></td>
+<td align="left"><a href="https://svgwg.org/svg2-draft/" rel="nofollow">https://svgwg.org/svg2-draft/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="touch-events.json">touch-events</a></td>
+<td><a href="less-than-2.html?spec=touch-events">status</a></td>
+<td align="left"><a href="https://w3c.github.io/touch-events/" rel="nofollow">https://w3c.github.io/touch-events/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="trusted-types.json">trusted-types</a></td>
+<td><a href="less-than-2.html?spec=trusted-types">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/" rel="nofollow">https://w3c.github.io/webappsec-trusted-types/dist/spec/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="ua-client-hints.json">ua-client-hints</a></td>
+<td><a href="less-than-2.html?spec=ua-client-hints">status</a></td>
+<td align="left"><a href="https://wicg.github.io/ua-client-hints/" rel="nofollow">https://wicg.github.io/ua-client-hints/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="uievents.json">uievents</a></td>
+<td><a href="less-than-2.html?spec=uievents">status</a></td>
+<td align="left"><a href="https://w3c.github.io/uievents/" rel="nofollow">https://w3c.github.io/uievents/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="upgrade-insecure-requests.json">upgrade-insecure-requests</a></td>
+<td><a href="less-than-2.html?spec=upgrade-insecure-requests">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webappsec-upgrade-insecure-requests/" rel="nofollow">https://w3c.github.io/webappsec-upgrade-insecure-requests/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="url.json">url</a></td>
+<td><a href="less-than-2.html?spec=url">status</a></td>
+<td align="left"><a href="https://url.spec.whatwg.org/" rel="nofollow">https://url.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="urlpattern.json">urlpattern</a></td>
+<td><a href="less-than-2.html?spec=urlpattern">status</a></td>
+<td align="left"><a href="https://wicg.github.io/urlpattern/" rel="nofollow">https://wicg.github.io/urlpattern/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="user-timing.json">user-timing</a></td>
+<td><a href="less-than-2.html?spec=user-timing">status</a></td>
+<td align="left"><a href="https://w3c.github.io/user-timing/" rel="nofollow">https://w3c.github.io/user-timing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="vibration.json">vibration</a></td>
+<td><a href="less-than-2.html?spec=vibration">status</a></td>
+<td align="left"><a href="https://w3c.github.io/vibration/" rel="nofollow">https://w3c.github.io/vibration/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="visual-viewport.json">visual-viewport</a></td>
+<td><a href="less-than-2.html?spec=visual-viewport">status</a></td>
+<td align="left"><a href="https://wicg.github.io/visual-viewport/" rel="nofollow">https://wicg.github.io/visual-viewport/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="wasm-exception-handling.json">wasm-exception-handling</a></td>
+<td><a href="less-than-2.html?spec=wasm-exception-handling">status</a></td>
+<td align="left"><a href="https://webassembly.github.io/exception-handling/js-api/" rel="nofollow">https://webassembly.github.io/exception-handling/js-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="wasm-js-api.json">wasm-js-api</a></td>
+<td><a href="less-than-2.html?spec=wasm-js-api">status</a></td>
+<td align="left"><a href="https://webassembly.github.io/spec/js-api/" rel="nofollow">https://webassembly.github.io/spec/js-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="wasm-web-embedding.json">wasm-web-embedding</a></td>
+<td><a href="less-than-2.html?spec=wasm-web-embedding">status</a></td>
+<td align="left"><a href="https://webassembly.github.io/spec/web-api/" rel="nofollow">https://webassembly.github.io/spec/web-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="web-animations-2.json">web-animations-2</a></td>
+<td><a href="less-than-2.html?spec=web-animations-2">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/web-animations-2/" rel="nofollow">https://drafts.csswg.org/web-animations-2/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="web-animations.json">web-animations</a></td>
+<td><a href="less-than-2.html?spec=web-animations">status</a></td>
+<td align="left"><a href="https://drafts.csswg.org/web-animations-1/" rel="nofollow">https://drafts.csswg.org/web-animations-1/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="web-bluetooth.json">web-bluetooth</a></td>
+<td><a href="less-than-2.html?spec=web-bluetooth">status</a></td>
+<td align="left"><a href="https://webbluetoothcg.github.io/web-bluetooth/" rel="nofollow">https://webbluetoothcg.github.io/web-bluetooth/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="web-locks.json">web-locks</a></td>
+<td><a href="less-than-2.html?spec=web-locks">status</a></td>
+<td align="left"><a href="https://w3c.github.io/web-locks/" rel="nofollow">https://w3c.github.io/web-locks/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="web-nfc.json">web-nfc</a></td>
+<td><a href="less-than-2.html?spec=web-nfc">status</a></td>
+<td align="left"><a href="https://w3c.github.io/web-nfc/" rel="nofollow">https://w3c.github.io/web-nfc/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="web-otp.json">web-otp</a></td>
+<td><a href="less-than-2.html?spec=web-otp">status</a></td>
+<td align="left"><a href="https://wicg.github.io/web-otp/" rel="nofollow">https://wicg.github.io/web-otp/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="web-share.json">web-share</a></td>
+<td><a href="less-than-2.html?spec=web-share">status</a></td>
+<td align="left"><a href="https://w3c.github.io/web-share/" rel="nofollow">https://w3c.github.io/web-share/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webaudio.json">webaudio</a></td>
+<td><a href="less-than-2.html?spec=webaudio">status</a></td>
+<td align="left"><a href="https://webaudio.github.io/web-audio-api/" rel="nofollow">https://webaudio.github.io/web-audio-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webauthn.json">webauthn</a></td>
+<td><a href="less-than-2.html?spec=webauthn">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webauthn/" rel="nofollow">https://w3c.github.io/webauthn/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webcodecs.json">webcodecs</a></td>
+<td><a href="less-than-2.html?spec=webcodecs">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webcodecs/" rel="nofollow">https://w3c.github.io/webcodecs/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webcrypto-uuid.json">webcrypto-uuid</a></td>
+<td><a href="less-than-2.html?spec=webcrypto-uuid">status</a></td>
+<td align="left"><a href="https://wicg.github.io/uuid/" rel="nofollow">https://wicg.github.io/uuid/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webcrypto.json">webcrypto</a></td>
+<td><a href="less-than-2.html?spec=webcrypto">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webcrypto/" rel="nofollow">https://w3c.github.io/webcrypto/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webdriver.json">webdriver</a></td>
+<td><a href="less-than-2.html?spec=webdriver">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webdriver/" rel="nofollow">https://w3c.github.io/webdriver/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webgl-1.json">webgl-1</a></td>
+<td><a href="less-than-2.html?spec=webgl-1">status</a></td>
+<td align="left"><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/" rel="nofollow">https://www.khronos.org/registry/webgl/specs/latest/1.0/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webgl-2.json">webgl-2</a></td>
+<td><a href="less-than-2.html?spec=webgl-2">status</a></td>
+<td align="left"><a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/" rel="nofollow">https://www.khronos.org/registry/webgl/specs/latest/2.0/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webhid.json">webhid</a></td>
+<td><a href="less-than-2.html?spec=webhid">status</a></td>
+<td align="left"><a href="https://wicg.github.io/webhid/" rel="nofollow">https://wicg.github.io/webhid/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webidl.json">webidl</a></td>
+<td><a href="less-than-2.html?spec=webidl">status</a></td>
+<td align="left"><a href="https://webidl.spec.whatwg.org/" rel="nofollow">https://webidl.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webmidi.json">webmidi</a></td>
+<td><a href="less-than-2.html?spec=webmidi">status</a></td>
+<td align="left"><a href="https://webaudio.github.io/web-midi-api/" rel="nofollow">https://webaudio.github.io/web-midi-api/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webrtc-extensions.json">webrtc-extensions</a></td>
+<td><a href="less-than-2.html?spec=webrtc-extensions">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webrtc-extensions/" rel="nofollow">https://w3c.github.io/webrtc-extensions/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webrtc-identity.json">webrtc-identity</a></td>
+<td><a href="less-than-2.html?spec=webrtc-identity">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webrtc-identity/" rel="nofollow">https://w3c.github.io/webrtc-identity/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webrtc-stats.json">webrtc-stats</a></td>
+<td><a href="less-than-2.html?spec=webrtc-stats">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webrtc-stats/" rel="nofollow">https://w3c.github.io/webrtc-stats/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webrtc.json">webrtc</a></td>
+<td><a href="less-than-2.html?spec=webrtc">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webrtc-pc/" rel="nofollow">https://w3c.github.io/webrtc-pc/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="websockets.json">websockets</a></td>
+<td><a href="less-than-2.html?spec=websockets">status</a></td>
+<td align="left"><a href="https://websockets.spec.whatwg.org/" rel="nofollow">https://websockets.spec.whatwg.org/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webusb.json">webusb</a></td>
+<td><a href="less-than-2.html?spec=webusb">status</a></td>
+<td align="left"><a href="https://wicg.github.io/webusb/" rel="nofollow">https://wicg.github.io/webusb/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webvtt.json">webvtt</a></td>
+<td><a href="less-than-2.html?spec=webvtt">status</a></td>
+<td align="left"><a href="https://w3c.github.io/webvtt/" rel="nofollow">https://w3c.github.io/webvtt/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr-anchors.json">webxr-anchors</a></td>
+<td><a href="less-than-2.html?spec=webxr-anchors">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/anchors/" rel="nofollow">https://immersive-web.github.io/anchors/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr-ar.json">webxr-ar</a></td>
+<td><a href="less-than-2.html?spec=webxr-ar">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/webxr-ar-module/" rel="nofollow">https://immersive-web.github.io/webxr-ar-module/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr-depth-sensing.json">webxr-depth-sensing</a></td>
+<td><a href="less-than-2.html?spec=webxr-depth-sensing">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/depth-sensing/" rel="nofollow">https://immersive-web.github.io/depth-sensing/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr-dom-overlays.json">webxr-dom-overlays</a></td>
+<td><a href="less-than-2.html?spec=webxr-dom-overlays">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/dom-overlays/" rel="nofollow">https://immersive-web.github.io/dom-overlays/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr-gamepads.json">webxr-gamepads</a></td>
+<td><a href="less-than-2.html?spec=webxr-gamepads">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/webxr-gamepads-module/" rel="nofollow">https://immersive-web.github.io/webxr-gamepads-module/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr-hit-test.json">webxr-hit-test</a></td>
+<td><a href="less-than-2.html?spec=webxr-hit-test">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/hit-test/" rel="nofollow">https://immersive-web.github.io/hit-test/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr-layers.json">webxr-layers</a></td>
+<td><a href="less-than-2.html?spec=webxr-layers">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/layers/" rel="nofollow">https://immersive-web.github.io/layers/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr-lighting-estimation.json">webxr-lighting-estimation</a></td>
+<td><a href="less-than-2.html?spec=webxr-lighting-estimation">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/lighting-estimation/" rel="nofollow">https://immersive-web.github.io/lighting-estimation/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="webxr.json">webxr</a></td>
+<td><a href="less-than-2.html?spec=webxr">status</a></td>
+<td align="left"><a href="https://immersive-web.github.io/webxr/" rel="nofollow">https://immersive-web.github.io/webxr/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="window-controls-overlay.json">window-controls-overlay</a></td>
+<td><a href="less-than-2.html?spec=window-controls-overlay">status</a></td>
+<td align="left"><a href="https://wicg.github.io/window-controls-overlay/" rel="nofollow">https://wicg.github.io/window-controls-overlay/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="woff.json">woff</a></td>
+<td><a href="less-than-2.html?spec=woff">status</a></td>
+<td align="left"><a href="https://www.w3.org/TR/WOFF/" rel="nofollow">https://www.w3.org/TR/WOFF/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="woff2.json">woff2</a></td>
+<td><a href="less-than-2.html?spec=woff2">status</a></td>
+<td align="left"><a href="https://w3c.github.io/woff/woff2/" rel="nofollow">https://w3c.github.io/woff/woff2/</a></td>
+</tr>
+<tr>
+<td align="left"><a href="xhr.json">xhr</a></td>
+<td><a href="less-than-2.html?spec=xhr">status</a></td>
+<td align="left"><a href="https://xhr.spec.whatwg.org/" rel="nofollow">https://xhr.spec.whatwg.org/</a></td>
+</tr>
+</tbody>
+</table>
 
               </article>
             </div>
