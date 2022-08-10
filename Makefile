@@ -73,13 +73,14 @@ index.html: README.md
 	cp $< $<.tmp
 	echo >> $<.tmp
 	echo >> $<.tmp
-	echo "Spec shortname | Status | Spec URL" >> $<.tmp
-	echo ":------------- | ------ | :-------" >> $<.tmp
+	echo "Spec shortname and status | MDN articles | Spec URL" >> $<.tmp
+	echo ":------------------------ | -----------: | :-------" >> $<.tmp
 	for file in *.json; do \
 		specURL=$$(jq -r "to_entries | map(select(.value == \"$$file\") | .key)[0]" SPECMAP.json); \
+		count=$$(jq length $$file); \
 		if [[ "$$file" != "SPECMAP.json" \
 		&& "$$file" != "SPECURLS.json" && "$$file" != "w3c.json" && "$$file" != "package.json" ]]; then \
-		echo "[$${file%.*}]($$file) | [status](less-than-2.html?spec=$${file%.*}) | $$specURL" >> $<.tmp; \
+		echo "[$${file%.*}]($$file) [[status](less-than-2.html?spec=$${file%.*})] | $$count | $$specURL" >> $<.tmp; \
 		fi; \
 	done
 	$(GRIP) --title=$< --export $<.tmp - > $@
