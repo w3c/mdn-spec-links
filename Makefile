@@ -74,58 +74,82 @@ index.html: README.md
 	cp $< $<.tmp
 	echo >> $<.tmp
 	echo >> $<.tmp
-	echo "Spec shortname, status, and data | MDN articles | Source" >> $<.tmp
-	echo ":------------------------------- | ------------:| -----:" >> $<.tmp
+	echo " <span>•</span> | Spec shortname, status, and data | MDN articles" >> $<.tmp
+	echo " -- | :------------------------------- | ------------:" >> $<.tmp
 	for file in *.json; do \
 		specURL=$$(jq -r "to_entries | map(select(.value == \"$$file\") | .key)[0]" SPECMAP.json); \
 		if [[ $$specURL == *"whatwg.org"* ]]; then \
 			source="WHATWG"; \
-		elif [[ $$specURL == *"w3c.github.io"* ]]; then \
+			image="SITE/whatwg.png"; \
+		elif [[ $$specURL == *"webrtc"* ]]; then \
 			source="W3C"; \
-		elif [[ $$specURL == *"www.w3.org"* ]]; then \
-			source="W3C"; \
+			image="SITE/webrtc.png"; \
 		elif [[ $$specURL == *"httpwg.org"* ]]; then \
 			source="HTTPWG"; \
+			image="SITE/httpwg.png"; \
 		elif [[ $$specURL == *"www.rfc-editor.org"* ]]; then \
 			source="IETF"; \
+			image="SITE/ietf.png"; \
 		elif [[ $$specURL == *"datatracker.ietf.org"* ]]; then \
 			source="IETF"; \
+			image="SITE/ietf.png"; \
 		elif [[ $$specURL == *"tc39"* ]]; then \
 			source="TC39"; \
-		elif [[ $$specURL == *"www.khronos.org"* ]]; then \
+			image="SITE/tc39.png"; \
+		elif [[ $$specURL == *"khronos.org"* ]]; then \
 			source="Khronos"; \
-		elif [[ $$specURL == *"wicg.github.io"* ]]; then \
-			source="WICG"; \
-		elif [[ $$specURL == *"drafts.csswg.org"* ]]; then \
-			source="W3C"; \
-		elif [[ $$specURL == *"drafts.fxtf.org"* ]]; then \
-			source="W3C"; \
-		elif [[ $$specURL == *"drafts.css-houdini.org"* ]]; then \
-			source="W3C"; \
-		elif [[ $$specURL == *"svgwg.org"* ]]; then \
-			source="W3C"; \
+			image="SITE/khronos.png"; \
+		elif [[ $$specURL == *"sourcemaps.info"* ]]; then \
+			source="Other"; \
+			image="SITE/sourcemaps.png"; \
 		elif [[ $$specURL == *"immersive-web.github.io"* ]]; then \
 			source="W3C"; \
+			image="SITE/webxr.png"; \
+		elif [[ $$specURL == *"wicg.github.io"* ]]; then \
+			source="WICG"; \
+			image="SITE/wicg.png"; \
+		elif [[ $$specURL == *"drafts.csswg.org"* ]]; then \
+			source="W3C"; \
+			image="SITE/w3.png"; \
+		elif [[ $$specURL == *"drafts.fxtf.org"* ]]; then \
+			source="W3C"; \
+			image="SITE/w3.png"; \
+		elif [[ $$specURL == *"drafts.css-houdini.org"* ]]; then \
+			source="W3C"; \
+			image="SITE/w3.png"; \
+		elif [[ $$specURL == *"svgwg.org"* ]]; then \
+			source="W3C"; \
+			image="SITE/w3.png"; \
 		elif [[ $$specURL == *"privacycg.github.io"* ]]; then \
 			source="W3C"; \
+			image="SITE/w3.png"; \
 		elif [[ $$specURL == *"webassembly.github.io"* ]]; then \
 			source="W3C"; \
+			image="SITE/wasm.png"; \
 		elif [[ $$specURL == *"webaudio.github.io"* ]]; then \
 			source="W3C"; \
+			image="SITE/w3.png"; \
 		elif [[ $$specURL == *"webbluetoothcg.github.io"* ]]; then \
 			source="W3C"; \
-		else \
-			source="Other"; \
+			image="SITE/w3.png"; \
+		elif [[ $$specURL == *"w3c.github.io"* ]]; then \
+			source="W3C"; \
+			image="SITE/w3.png"; \
+		elif [[ $$specURL == *"www.w3.org"* ]]; then \
+			source="W3C"; \
+			image="SITE/w3.png"; \
 		fi; \
 		count=$$(jq length $$file); \
 		if [[ "$$file" != "SPECMAP.json" \
 		&& "$$file" != "SPECURLS.json" && "$$file" != "w3c.json" && "$$file" != "package.json" ]]; then \
-		echo "[$${file%.*}]($$specURL) [[status](less-than-2.html?spec=$${file%.*})] [[data]($$file)] | $$count | $$source" >> $<.tmp; \
+		echo "![$$image]($$image)<span>$$image</span> | [$${file%.*}]($$specURL) [[status](less-than-2.html?spec=$${file%.*})] [[data]($$file)] | $$count | $$source" >> $<.tmp; \
 		fi; \
 	done
 	$(GRIP) --title=$< --export $<.tmp - > $@
 	$(SED) -i .bak "s/<head>/<head>\n  <link rel=stylesheet href=SITE\/sortable.min.css>/" $@; \
 	$(SED) -i .bak "s/<head>/<head>\n  <script src=SITE\/sortable.min.js><\/script>/" $@; \
+	$(SED) -i .bak "s/<head>/<head>\n  <style>.hidden { opacity: 0; font-size: 0px; } img { padding-top: 8px; }<\/style>/" $@; \
+	$(SED) -i .bak "s/<span>/<span class=hidden>/" $@; \
 	$(SED) -i .bak "s/<table>/<table class=sortable>/" $@; \
 	$(RM) $@.bak
 	$(RM) $<.tmp
