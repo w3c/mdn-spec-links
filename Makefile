@@ -5,6 +5,7 @@ GIT=git
 NODE=node
 YARN=yarn
 EGREP=egrep
+SED=sed
 NETSTAT=netstat
 SHELL:=/bin/bash
 
@@ -84,6 +85,10 @@ index.html: README.md
 		fi; \
 	done
 	$(GRIP) --title=$< --export $<.tmp - > $@
+	$(SED) -i .bak "s/<head>/<head>\n  <link rel=stylesheet href=SITE\/sortable.min.css>/" $@; \
+	$(SED) -i .bak "s/<head>/<head>\n  <script src=SITE\/sortable.min.js><\/script>/" $@; \
+	$(SED) -i .bak "s/<table>/<table class=sortable>/" $@; \
+	$(RM) $@.bak
 	$(RM) $<.tmp
 
 .mdn-spec-links.schema.json: .mdn-spec-links.ts
