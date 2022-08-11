@@ -74,14 +74,53 @@ index.html: README.md
 	cp $< $<.tmp
 	echo >> $<.tmp
 	echo >> $<.tmp
-	echo "Spec shortname and status | MDN articles | Spec URL" >> $<.tmp
-	echo ":------------------------ | -----------: | :-------" >> $<.tmp
+	echo "Spec shortname, status, and data | MDN articles | Source" >> $<.tmp
+	echo ":------------------------------- | ------------:| -----:" >> $<.tmp
 	for file in *.json; do \
 		specURL=$$(jq -r "to_entries | map(select(.value == \"$$file\") | .key)[0]" SPECMAP.json); \
+		if [[ $$specURL == *"whatwg.org"* ]]; then \
+			source="WHATWG"; \
+		elif [[ $$specURL == *"w3c.github.io"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"www.w3.org"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"httpwg.org"* ]]; then \
+			source="HTTPWG"; \
+		elif [[ $$specURL == *"www.rfc-editor.org"* ]]; then \
+			source="IETF"; \
+		elif [[ $$specURL == *"datatracker.ietf.org"* ]]; then \
+			source="IETF"; \
+		elif [[ $$specURL == *"tc39"* ]]; then \
+			source="TC39"; \
+		elif [[ $$specURL == *"www.khronos.org"* ]]; then \
+			source="Khronos"; \
+		elif [[ $$specURL == *"wicg.github.io"* ]]; then \
+			source="WICG"; \
+		elif [[ $$specURL == *"drafts.csswg.org"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"drafts.fxtf.org"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"drafts.css-houdini.org"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"svgwg.org"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"immersive-web.github.io"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"privacycg.github.io"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"webassembly.github.io"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"webaudio.github.io"* ]]; then \
+			source="W3C"; \
+		elif [[ $$specURL == *"webbluetoothcg.github.io"* ]]; then \
+			source="W3C"; \
+		else \
+			source="Other"; \
+		fi; \
 		count=$$(jq length $$file); \
 		if [[ "$$file" != "SPECMAP.json" \
 		&& "$$file" != "SPECURLS.json" && "$$file" != "w3c.json" && "$$file" != "package.json" ]]; then \
-		echo "[$${file%.*}]($$file) [[status](less-than-2.html?spec=$${file%.*})] | $$count | $$specURL" >> $<.tmp; \
+		echo "[$${file%.*}]($$specURL) [[status](less-than-2.html?spec=$${file%.*})] [[data]($$file)] | $$count | $$source" >> $<.tmp; \
 		fi; \
 	done
 	$(GRIP) --title=$< --export $<.tmp - > $@
