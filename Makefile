@@ -142,7 +142,7 @@ index.html: README.md
 		count=$$(jq length $$file); \
 		if [[ "$$file" != "SPECMAP.json" \
 		&& "$$file" != "SPECURLS.json" && "$$file" != "w3c.json" && "$$file" != "package.json" ]]; then \
-		echo "![$$image]($$image)<span>$$image</span> | [$${file%.*}]($$specURL) [[status](less-than-2.html?spec=$${file%.*})] [[data]($$file)] | $$count | $$source" >> $<.tmp; \
+		echo "![$$image]($$image)<span>$$image</span> | [$${file%.*}]($$specURL) [Ⓢ](less-than-2.html?spec=$${file%.*}) [Ⓓ]($$file) | $$count | $$source" >> $<.tmp; \
 		fi; \
 	done
 	$(GRIP) --title=$< --export $<.tmp - > $@
