@@ -45,6 +45,7 @@
     "dom-rtcrtpencodingparameters-maxframerate": [
         {
             "engines": [
+                "blink",
                 "webkit"
             ],
             "partial": [
@@ -56,7 +57,7 @@
             "summary": "The maxFramerate property of the RTCRtpEncodingParameters dictionary specifies the maximum framerate that can be used to send the encoding, in frames per second.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "81"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -79,7 +80,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "81"
                 }
             },
             "title": "RTCRtpEncodingParameters.maxFramerate"
