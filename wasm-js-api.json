@@ -493,7 +493,7 @@
             "filename": "javascript/builtins/WebAssembly/Memory.json",
             "name": "buffer",
             "slug": "JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer",
-            "summary": "The buffer prototype property of the WebAssembly.Memory object returns the buffer contained in the memory.",
+            "summary": "The buffer prototype property of the WebAssembly.Memory object returns the buffer contained in the memory. Depending on whether or not the memory was constructed with shared: true, the buffer is either an ArrayBuffer or a SharedArrayBuffer.",
             "support": {
                 "chrome": {
                     "version_added": "57"
