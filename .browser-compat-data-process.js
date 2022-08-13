@@ -1151,6 +1151,9 @@ const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
   if (url.startsWith("https://w3c.github.io/device-memory/")) {
     return; // redirects to https://www.w3.org/TR/device-memory/
   }
+  if (url.startsWith("https://w3c.github.io/setImmediate/")) {
+    return; // ancient and unimplemented
+  }
   if (url.startsWith("https://www.rfc-editor.org/rfc/rfc2324")) {
     return; // 'I'm a teapot' RFC; ignore
   }

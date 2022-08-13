@@ -300,6 +300,10 @@ const checkSpecURL = (
   if (spec_url.startsWith("https://w3c.github.io/device-memory/")) {
     return;
   }
+  // Ancient and unimplemented
+  if (spec_url.startsWith("https://w3c.github.io/setImmediate/")) {
+    return;
+  }
   if (
     spec_url.startsWith("https://www.rfc-editor.org/rfc/rfc2324") ||
     spec_url.startsWith("https://www.rfc-editor.org/rfc/rfc7168")
