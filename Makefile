@@ -74,8 +74,8 @@ index.html: README.md
 	cp $< $<.tmp
 	echo >> $<.tmp
 	echo >> $<.tmp
-	echo " <span>•</span> | Spec shortname, status, and data | MDN articles" >> $<.tmp
-	echo " -- | :------------------------------- | ------------:" >> $<.tmp
+	echo " <span>•</span> | Spec shortname | # MDN articles" >> $<.tmp
+	echo " -------------- | :------------- | --------------:" >> $<.tmp
 	for file in *.json; do \
 		shortname=$${file%.*}; \
 		specURL=$$(jq -r "to_entries | map(select(.value == \"$$file\") | .key)[0]" SPECMAP.json); \
