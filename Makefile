@@ -134,7 +134,7 @@ index.html: README.md
 			echo -n " [Ⓣ]($$testsURL)" >> $<.tmp; \
 		fi; \
 		echo -n " [Ⓢ](less-than-2.html?spec=$${file%.*})" >> $<.tmp; \
-		echo -n " [Ⓓ]($$file)" >> $<.tmp; \
+		echo -n " [Ⓕ ]($$file)" >> $<.tmp; \
 		if [[ -n "$$mdnURL" && "$$mdnURL" != null ]]; then \
 			echo -n " | [$$count]($$mdnURL)" >> $<.tmp; \
 		else \
