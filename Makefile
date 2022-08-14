@@ -74,8 +74,8 @@ index.html: README.md
 	cp $< $<.tmp
 	echo >> $<.tmp
 	echo >> $<.tmp
-	echo " <span>•</span> | Spec | # MDN articles" >> $<.tmp
-	echo " -------------- | :------------- | --------------:" >> $<.tmp
+	echo " <span>•</span> | Spec | # MDN articles | Category" >> $<.tmp
+	echo " -------------- | :--- | --------------:| -------:" >> $<.tmp
 	jq 'sort_by(.spec_name | ascii_downcase)' SPECDATA.json > SPECDATA.json.tmp; \
 	for specURL in $$(jq -r ".[].spec_url" SPECDATA.json.tmp); do \
 		file=$$(jq -r .[\"$$specURL\"] SPECMAP.json); \
@@ -83,6 +83,7 @@ index.html: README.md
 		echo $$specName; \
 		mdnURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").mdn_url" SPECDATA.json.tmp); \
 		testsURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").tests_url" SPECDATA.json.tmp); \
+		specCategory=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").spec_category" SPECDATA.json.tmp); \
 		if [[ $$specURL == *"whatwg.org"* ]]; then \
 			image="SITE/whatwg.png"; \
 		elif [[ $$specURL == *"webrtc"* ]]; then \
@@ -135,10 +136,11 @@ index.html: README.md
 		echo -n " [Ⓢ](less-than-2.html?spec=$${file%.*})" >> $<.tmp; \
 		echo -n " [Ⓓ]($$file)" >> $<.tmp; \
 		if [[ -n "$$mdnURL" && "$$mdnURL" != null ]]; then \
-			echo    " | [$$count]($$mdnURL)" >> $<.tmp; \
+			echo -n " | [$$count]($$mdnURL)" >> $<.tmp; \
 		else \
-			echo    " | $$count" >> $<.tmp; \
+			echo -n " | $$count" >> $<.tmp; \
 		fi; \
+		echo " | $$specCategory" >> $<.tmp; \
 		>> $<.tmp; \
 	done
 	$(GRIP) --title=$< --export $<.tmp - > $@
