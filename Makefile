@@ -148,7 +148,7 @@ index.html: README.md
 	$(SED) -i .bak "s/<head>/<head>\n  <script src=SITE\/sortable.min.js><\/script>/" $@; \
 	$(SED) -i .bak "s/<head>/<head>\n  <style>.hidden { opacity: 0; font-size: 0px; } img { padding-top: 8px; }<\/style>/" $@; \
 	$(SED) -i .bak "s/<span>/<span class=hidden>/" $@; \
-	$(SED) -i .bak "s/<table>/<table>\n<caption>Ⓣ = tests • Ⓢ = status (implementations) • Ⓓ = data (JSON)<\/caption>/" $@; \
+	$(SED) -i .bak "s/<table>/<table>\n<caption>Ⓣ = tests • Ⓢ = status (of features) • Ⓕ = feature data (JSON)<\/caption>/" $@; \
 	$(SED) -i .bak "s/<table>/<table class=sortable>/" $@; \
 	$(RM) $@.bak
 	$(RM) SPECDATA.json.tmp
