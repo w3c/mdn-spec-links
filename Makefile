@@ -74,14 +74,16 @@ index.html: README.md
 	cp $< $<.tmp
 	echo >> $<.tmp
 	echo >> $<.tmp
-	echo " <span>•</span> | Spec | # MDN articles | Category" >> $<.tmp
-	echo " -------------- | :--- | --------------:| -------:" >> $<.tmp
+	echo " <span>•</span> | Spec | Tests | Docs | <span>•</span> | Category" >> $<.tmp
+	echo " -------------- | :--- | -----:| ----:| -------------: | -------:" >> $<.tmp
 	jq 'sort_by(.spec_name | ascii_downcase)' SPECDATA.json > SPECDATA.json.tmp; \
 	for specURL in $$(jq -r ".[].spec_url" SPECDATA.json.tmp); do \
+		testsImage=SITE/wpt.png; \
 		file=$$(jq -r .[\"$$specURL\"] SPECMAP.json); \
 		specName=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").spec_name" SPECDATA.json.tmp); \
 		echo $$specName; \
 		mdnURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").mdn_url" SPECDATA.json.tmp); \
+		caniuseURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").caniuse_url" SPECDATA.json.tmp); \
 		testsURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").tests_url" SPECDATA.json.tmp); \
 		specCategory=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").spec_category" SPECDATA.json.tmp); \
 		if [[ $$specURL == *"whatwg.org"* ]]; then \
@@ -90,12 +92,14 @@ index.html: README.md
 			image="SITE/webrtc.png"; \
 		elif [[ $$specURL == *"httpwg.org"* ]]; then \
 			image="SITE/httpwg.png"; \
+			testsImage=SITE/httpwg.png; \
 		elif [[ $$specURL == *"www.rfc-editor.org"* ]]; then \
 			image="SITE/ietf.png"; \
 		elif [[ $$specURL == *"datatracker.ietf.org"* ]]; then \
 			image="SITE/ietf.png"; \
 		elif [[ $$specURL == *"tc39"* ]]; then \
 			image="SITE/tc39.png"; \
+			testsImage=SITE/test262.png; \
 		elif [[ $$specURL == *"khronos.org"* ]]; then \
 			image="SITE/khronos.png"; \
 		elif [[ $$specURL == *"sourcemaps.info"* ]]; then \
@@ -128,19 +132,22 @@ index.html: README.md
 			image="SITE/w3.png"; \
 		fi; \
 		count=$$(jq length $$file); \
-		echo -n "![$$image]($$image)<span>$$image</span>" >> $<.tmp; \
+		echo -n "<img src=$$image><span>$$image</span>" >> $<.tmp; \
 		echo -n " |	[$$specName]($$specURL)" >> $<.tmp; \
+		echo -n " |" >> $<.tmp; \
 		if [[ -n "$$testsURL" && "$$testsURL" != null ]]; then \
-			echo -n " [Ⓣ]($$testsURL)" >> $<.tmp; \
+			echo -n " <a href=$$testsURL><img src=$$testsImage></a><span>tests</span>" >> $<.tmp; \
 		fi; \
-		echo -n " [Ⓢ](less-than-2.html?spec=$${file%.*})" >> $<.tmp; \
-		echo -n " [Ⓕ ]($$file)" >> $<.tmp; \
 		if [[ -n "$$mdnURL" && "$$mdnURL" != null ]]; then \
 			echo -n " | [$$count]($$mdnURL)" >> $<.tmp; \
 		else \
 			echo -n " | $$count" >> $<.tmp; \
 		fi; \
-		echo " | $$specCategory" >> $<.tmp; \
+		echo -n " | " >> $<.tmp; \
+		if [[ -n "$$caniuseURL" && "$$caniuseURL" != null ]]; then \
+			echo -n " <a href=\"$$caniuseURL\"><img src=SITE/caniuse.png></a><span>caniuse</span>" >> $<.tmp; \
+		fi; \
+		echo " | <kbd>$$specCategory</kbd>" >> $<.tmp; \
 		>> $<.tmp; \
 	done
 	$(GRIP) --title=$< --export $<.tmp - > $@
@@ -148,7 +155,6 @@ index.html: README.md
 	$(SED) -i .bak "s/<head>/<head>\n  <script src=SITE\/sortable.min.js><\/script>/" $@; \
 	$(SED) -i .bak "s/<head>/<head>\n  <style>.hidden { opacity: 0; font-size: 0px; } img { padding-top: 8px; }<\/style>/" $@; \
 	$(SED) -i .bak "s/<span>/<span class=hidden>/" $@; \
-	$(SED) -i .bak "s/<table>/<table>\n<caption>Ⓣ = tests • Ⓢ = status (of features) • Ⓕ = feature data (JSON)<\/caption>/" $@; \
 	$(SED) -i .bak "s/<table>/<table class=sortable>/" $@; \
 	$(RM) $@.bak
 	$(RM) SPECDATA.json.tmp
