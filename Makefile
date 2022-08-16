@@ -74,8 +74,8 @@ index.html: README.md
 	cp $< $<.tmp
 	echo >> $<.tmp
 	echo >> $<.tmp
-	echo " <span>•</span> | Spec | Tests | Docs | <span>•</span> | Category" >> $<.tmp
-	echo " -------------- | :--- | -----:| ----:| -------------: | -------:" >> $<.tmp
+	echo " <span>•</span> | Spec | Tests | Docs | <span>•</span | <span>•</span> | Category" >> $<.tmp
+	echo " -------------- | :--- | -----:| ----:| -------------:| -------------: | -------:" >> $<.tmp
 	jq 'sort_by(.spec_name | ascii_downcase)' SPECDATA.json > SPECDATA.json.tmp; \
 	for specURL in $$(jq -r ".[].spec_url" SPECDATA.json.tmp); do \
 		testsImage=SITE/wpt.png; \
@@ -85,6 +85,7 @@ index.html: README.md
 		mdnURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").mdn_url" SPECDATA.json.tmp); \
 		caniuseURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").caniuse_url" SPECDATA.json.tmp); \
 		testsURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").tests_url" SPECDATA.json.tmp); \
+		enginesCount=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").engines | length" SPECDATA.json.tmp); \
 		specCategory=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").spec_category" SPECDATA.json.tmp); \
 		if [[ $$specURL == *"whatwg.org"* ]]; then \
 			image="SITE/whatwg.png"; \
@@ -147,6 +148,12 @@ index.html: README.md
 		if [[ -n "$$caniuseURL" && "$$caniuseURL" != null ]]; then \
 			echo -n " <a href=\"$$caniuseURL\"><img src=SITE/caniuse.png></a><span>caniuse</span>" >> $<.tmp; \
 		fi; \
+		echo -n " | " >> $<.tmp; \
+		if [[ $$enginesCount -eq 3 ]]; then \
+			echo -n " <strong class=check>✔</strong>" >> $<.tmp; \
+		elif [[ $$enginesCount -lt 2 ]]; then \
+			echo -n " <b class=caution>⚠</b> " >> $<.tmp; \
+		fi; \
 		echo " | <kbd>$$specCategory</kbd>" >> $<.tmp; \
 		>> $<.tmp; \
 	done
@@ -154,6 +161,10 @@ index.html: README.md
 	$(SED) -i .bak "s/<head>/<head>\n  <link rel=stylesheet href=SITE\/sortable.min.css>/" $@; \
 	$(SED) -i .bak "s/<head>/<head>\n  <script src=SITE\/sortable.min.js><\/script>/" $@; \
 	$(SED) -i .bak "s/<head>/<head>\n  <style>.hidden { opacity: 0; font-size: 0px; } img { padding-top: 8px; }<\/style>/" $@; \
+	$(SED) -i .bak "s/<\/head>/  <style>strong { color: green; font-size: 18px; }<\/style>\n<\/head>/" $@; \
+	$(SED) -i .bak "s/<\/head>/  <style>b { color: red; font-size: 11px; }<\/style>\n<\/head>/" $@; \
+	$(SED) -E -i .bak "s/<[\/]?g-emoji[^>]+>//g" $@; \
+	$(SED) -E -i .bak "s/font-family:[^;]+;//g" $@; \
 	$(SED) -i .bak "s/<span>/<span class=hidden>/" $@; \
 	$(SED) -i .bak "s/<table>/<table class=sortable>/" $@; \
 	$(RM) $@.bak
