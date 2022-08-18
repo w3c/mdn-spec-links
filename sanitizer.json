@@ -6,15 +6,24 @@
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/Element.json",
             "name": "setHTML",
             "slug": "API/Element/setHTML",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/setHTML",
             "summary": "The setHTML() method of the Element interface is used to parse and sanitize a string of HTML and then insert it into the DOM as a subtree of the element. It should be used instead of Element.innerHTML for inserting untrusted strings of HTML into an element.",
             "support": {
                 "chrome": {
-                    "version_added": "105"
+                    "version_added": "93",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -42,7 +51,14 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "105"
+                    "version_added": "93",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "Element.setHTML()"
@@ -60,6 +76,7 @@
             "filename": "api/Sanitizer.json",
             "name": "Sanitizer",
             "slug": "API/Sanitizer/Sanitizer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Sanitizer/Sanitizer",
             "summary": "The Sanitizer() constructor creates a new Sanitizer object, which can be used to sanitize untrusted strings of HTML, or untrusted Document or DocumentFragment objects, making them safe for insertion into a document's DOM.",
             "support": {
                 "chrome": [
@@ -139,29 +156,30 @@
                 "gecko"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/Sanitizer.json",
             "name": "sanitize",
             "slug": "API/Sanitizer/sanitize",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Sanitizer/sanitize",
             "summary": "The sanitize() method of the Sanitizer interface is used to sanitize a tree of DOM nodes, removing any unwanted elements or attributes.",
             "support": {
-                "chrome": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        },
-                        {
-                            "type": "preference",
-                            "name": "sanitizer-api",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -196,21 +214,22 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        },
-                        {
-                            "type": "preference",
-                            "name": "sanitizer-api",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Sanitizer.sanitize()"
         }
@@ -220,24 +239,28 @@
             "engines": [
                 "blink"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "api/Sanitizer.json",
             "name": "sanitizeFor",
             "slug": "API/Sanitizer/sanitizeFor",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Sanitizer/sanitizeFor",
             "summary": "The sanitizeFor() method of the Sanitizer interface is used to parse and sanitize a string of HTML for insertion into the DOM at some later point.",
             "support": {
-                "chrome": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": "93",
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -265,16 +288,22 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "93",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Sanitizer.sanitizeFor()"
         }
@@ -291,6 +320,7 @@
             "filename": "api/Sanitizer.json",
             "name": "Sanitizer",
             "slug": "API/Sanitizer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Sanitizer",
             "summary": "The Sanitizer interface of the HTML Sanitizer API provides methods to sanitize untrusted strings of HTML, Document and DocumentFragment objects. After sanitization, unwanted elements or attributes are removed, and the returned objects can safely be inserted into a document's DOM.",
             "support": {
                 "chrome": [

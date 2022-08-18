@@ -14,6 +14,7 @@
             "filename": "api/Clipboard.json",
             "name": "read",
             "slug": "API/Clipboard/read",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read",
             "summary": "The read() method of the Clipboard interface requests a copy of the clipboard's contents, delivering the data to the returned Promise when the promise is resolved. Unlike readText(), the read() method can return arbitrary data, such as images. This method can also return text.",
             "support": {
                 "chrome": [
@@ -155,6 +156,7 @@
             "filename": "api/Clipboard.json",
             "name": "readText",
             "slug": "API/Clipboard/readText",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/readText",
             "summary": "The Clipboard interface's readText() method returns a Promise which resolves with a copy of the textual contents of the system clipboard.",
             "support": {
                 "chrome": {
@@ -199,6 +201,7 @@
             "filename": "api/Clipboard.json",
             "name": "write",
             "slug": "API/Clipboard/write",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write",
             "summary": "The Clipboard method write() writes arbitrary data, such as images, to the clipboard. This can be used to implement cut and copy functionality.",
             "support": {
                 "chrome": {
@@ -277,6 +280,7 @@
             "filename": "api/Clipboard.json",
             "name": "writeText",
             "slug": "API/Clipboard/writeText",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText",
             "summary": "The Clipboard interface's writeText() property writes the specified text string to the system clipboard. Text may be read back using either read() or readText().",
             "support": {
                 "chrome": {
@@ -319,6 +323,7 @@
             "filename": "api/Clipboard.json",
             "name": "Clipboard",
             "slug": "API/Clipboard",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard",
             "summary": "The Clipboard interface implements the Clipboard API, providing—if the user grants permission—both read and write access to the contents of the system clipboard. The Clipboard API can be used to implement cut, copy, and paste features within a web application.",
             "support": {
                 "chrome": {
@@ -359,6 +364,7 @@
             "filename": "api/ClipboardEvent.json",
             "name": "ClipboardEvent",
             "slug": "API/ClipboardEvent/ClipboardEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardEvent/ClipboardEvent",
             "summary": "The ClipboardEvent() constructor returns a new ClipboardEvent, representing an event providing information related to modification of the clipboard, that is cut, copy, and paste events.",
             "support": {
                 "chrome": {
@@ -401,6 +407,7 @@
             "filename": "api/ClipboardEvent.json",
             "name": "clipboardData",
             "slug": "API/ClipboardEvent/clipboardData",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardEvent/clipboardData",
             "summary": "The ClipboardEvent.clipboardData property holds a DataTransfer object, which can be used:",
             "support": {
                 "chrome": {
@@ -443,6 +450,7 @@
             "filename": "api/ClipboardEvent.json",
             "name": "ClipboardEvent",
             "slug": "API/ClipboardEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardEvent",
             "summary": "The ClipboardEvent interface represents events providing information related to modification of the clipboard, that is cut, copy, and paste events.",
             "support": {
                 "chrome": {
@@ -490,6 +498,7 @@
             "filename": "api/ClipboardItem.json",
             "name": "ClipboardItem",
             "slug": "API/ClipboardItem/ClipboardItem",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/ClipboardItem",
             "summary": "The ClipboardItem() constructor of the Clipboard API creates a new ClipboardItem object which represents data to be stored or retrieved via the Clipboard API, that is clipboard.write() and clipboard.read() respectively.",
             "support": {
                 "chrome": {
@@ -552,6 +561,7 @@
             "filename": "api/ClipboardItem.json",
             "name": "getType",
             "slug": "API/ClipboardItem/getType",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/getType",
             "summary": "The getType() method of the ClipboardItem interface returns a Promise that resolves with a Blob of the requested MIME type or an error if the MIME type is not found.",
             "support": {
                 "chrome": {
@@ -601,6 +611,7 @@
             "filename": "api/ClipboardItem.json",
             "name": "presentationStyle",
             "slug": "API/ClipboardItem/presentationStyle",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/presentationStyle",
             "summary": "The read-only presentationStyle property of the ClipboardItem interface returns a string indicating how an item should be presented.",
             "support": {
                 "chrome": {
@@ -651,6 +662,7 @@
             "filename": "api/ClipboardItem.json",
             "name": "types",
             "slug": "API/ClipboardItem/types",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/types",
             "summary": "The read-only types property of the ClipboardItem interface returns an Array of MIME types available within the ClipboardItem",
             "support": {
                 "chrome": {
@@ -701,6 +713,7 @@
             "filename": "api/ClipboardItem.json",
             "name": "ClipboardItem",
             "slug": "API/ClipboardItem",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem",
             "summary": "The ClipboardItem interface of the Clipboard API represents a single item format, used when reading or writing data via the Clipboard API. That is clipboard.read() and clipboard.write() respectively.",
             "support": {
                 "chrome": {
@@ -748,6 +761,7 @@
             "filename": "api/Element.json",
             "name": "copy_event",
             "slug": "API/Element/copy_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/copy_event",
             "summary": "The copy event fires when the user initiates a copy action through the browser's user interface.",
             "support": {
                 "chrome": {
@@ -797,6 +811,7 @@
             "filename": "api/Element.json",
             "name": "cut_event",
             "slug": "API/Element/cut_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/cut_event",
             "summary": "The cut event is fired when the user has initiated a \"cut\" action through the browser's user interface.",
             "support": {
                 "chrome": {
@@ -846,6 +861,7 @@
             "filename": "api/Element.json",
             "name": "paste_event",
             "slug": "API/Element/paste_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/paste_event",
             "summary": "The paste event is fired when the user has initiated a \"paste\" action through the browser's user interface.",
             "support": {
                 "chrome": {
@@ -900,6 +916,7 @@
             "filename": "api/Navigator.json",
             "name": "clipboard",
             "slug": "API/Navigator/clipboard",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard",
             "summary": "The Clipboard API adds to the Navigator interface the read-only clipboard property, which returns the Clipboard object used to read and write the clipboard's contents.",
             "support": {
                 "chrome": {

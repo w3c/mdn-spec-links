@@ -7,6 +7,7 @@
             "filename": "api/RTCDataChannel.json",
             "name": "transferable",
             "slug": "https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects",
             "summary": "Transferable objects are objects that own resources that can be transferred from one context to another, ensuring that the resources are only available in one context at a time. Following a transfer, the original object is no longer usable; it no longer points to the transferred resource, and any attempt to read or write the object will throw an exception.",
             "support": {
                 "chrome": {
@@ -45,7 +46,6 @@
     "dom-rtcrtpencodingparameters-maxframerate": [
         {
             "engines": [
-                "blink",
                 "webkit"
             ],
             "partial": [
@@ -54,10 +54,11 @@
             "filename": "api/RTCRtpEncodingParameters.json",
             "name": "maxFramerate",
             "slug": "API/RTCRtpEncodingParameters/maxFramerate",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpEncodingParameters/maxFramerate",
             "summary": "The maxFramerate property of the RTCRtpEncodingParameters dictionary specifies the maximum framerate that can be used to send the encoding, in frames per second.",
             "support": {
                 "chrome": {
-                    "version_added": "81"
+                    "version_added": false
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -80,7 +81,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "81"
+                    "version_added": false
                 }
             },
             "title": "RTCRtpEncodingParameters.maxFramerate"

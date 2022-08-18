@@ -9,6 +9,7 @@
             "filename": "api/AuthenticatorAssertionResponse.json",
             "name": "authenticatorData",
             "slug": "API/AuthenticatorAssertionResponse/authenticatorData",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAssertionResponse/authenticatorData",
             "summary": "The authenticatorData property of the AuthenticatorAssertionResponse interface returns an ArrayBuffer containing information from the authenticator such as the Relying Party ID Hash (rpIdHash), a signature counter, test of user presence, user verification flags, and any extensions processed by the authenticator.",
             "support": {
                 "chrome": {
@@ -68,6 +69,7 @@
             "filename": "api/AuthenticatorAssertionResponse.json",
             "name": "signature",
             "slug": "API/AuthenticatorAssertionResponse/signature",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAssertionResponse/signature",
             "summary": "The signature read-only property of the AuthenticatorAssertionResponse interface is an ArrayBuffer object which is the signature of the authenticator for both AuthenticatorAssertionResponse.authenticatorData and a SHA-256 hash of the client data (AuthenticatorAssertionResponse.clientDataJSON).",
             "support": {
                 "chrome": {
@@ -127,6 +129,7 @@
             "filename": "api/AuthenticatorAssertionResponse.json",
             "name": "userHandle",
             "slug": "API/AuthenticatorAssertionResponse/userHandle",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAssertionResponse/userHandle",
             "summary": "The userHandle read-only property of the AuthenticatorAssertionResponse interface is an ArrayBuffer object which is an opaque identifier for the given user. Such an identifier can be used by the relying party's server to link the user account with its corresponding credentials and other data.",
             "support": {
                 "chrome": {
@@ -186,6 +189,7 @@
             "filename": "api/AuthenticatorAssertionResponse.json",
             "name": "AuthenticatorAssertionResponse",
             "slug": "API/AuthenticatorAssertionResponse",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAssertionResponse",
             "summary": "The AuthenticatorAssertionResponse interface of the Web Authentication API is returned by CredentialsContainer.get() when a PublicKeyCredential is passed, and provides proof to a service that it has a key pair and that the authentication request is valid and approved.",
             "support": {
                 "chrome": {
@@ -245,6 +249,7 @@
             "filename": "api/AuthenticatorAttestationResponse.json",
             "name": "attestationObject",
             "slug": "API/AuthenticatorAttestationResponse/attestationObject",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse/attestationObject",
             "summary": "The attestationObject property of the AuthenticatorAttestationResponse interface returns an ArrayBuffer containing the new public key, as well as signature over the entire attestationObject with a private key that is stored in the authenticator when it is manufactured.",
             "support": {
                 "chrome": {
@@ -303,6 +308,7 @@
             "filename": "api/AuthenticatorAttestationResponse.json",
             "name": "getTransports",
             "slug": "API/AuthenticatorAttestationResponse/getTransports",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse/getTransports",
             "summary": "getTransports() is a method of the AuthenticatorAttestationResponse interface that returns an Array containing strings describing the different transports which may be used by the authenticator.",
             "support": {
                 "chrome": {
@@ -345,6 +351,7 @@
             "filename": "api/AuthenticatorAttestationResponse.json",
             "name": "AuthenticatorAttestationResponse",
             "slug": "API/AuthenticatorAttestationResponse",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse",
             "summary": "The AuthenticatorAttestationResponse interface of the Web Authentication API is returned by CredentialsContainer.create() when a PublicKeyCredential is passed, and provides a cryptographic root of trust for the new key pair that has been generated. This response should be sent to the relying party's server to complete the creation of the credential.",
             "support": {
                 "chrome": {
@@ -404,6 +411,7 @@
             "filename": "api/AuthenticatorResponse.json",
             "name": "clientDataJSON",
             "slug": "API/AuthenticatorResponse/clientDataJSON",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON",
             "summary": "The clientDataJSON property of the AuthenticatorResponse interface stores a JSON string in an ArrayBuffer, representing the client data that was passed to CredentialsContainer.create() or CredentialsContainer.get(). This property is only accessed on one of the child objects of AuthenticatorResponse, specifically AuthenticatorAttestationResponse or AuthenticatorAssertionResponse.",
             "support": {
                 "chrome": {
@@ -463,6 +471,7 @@
             "filename": "api/AuthenticatorResponse.json",
             "name": "AuthenticatorResponse",
             "slug": "API/AuthenticatorResponse",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse",
             "summary": "The AuthenticatorResponse interface of the Web Authentication API is the base interface for interfaces that provide a cryptographic root of trust for a key pair. The child interfaces include information from the browser such as the challenge origin and either may be returned from PublicKeyCredential.response.",
             "support": {
                 "chrome": {
@@ -522,6 +531,7 @@
             "filename": "api/PublicKeyCredential.json",
             "name": "getClientExtensionResults",
             "slug": "API/PublicKeyCredential/getClientExtensionResults",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults",
             "summary": "getClientExtensionResults() is a method of the PublicKeyCredential interface that returns an ArrayBuffer which contains a map between the extensions identifiers and their results after having being processed by the client.",
             "support": {
                 "chrome": {
@@ -579,6 +589,7 @@
             "filename": "api/PublicKeyCredential.json",
             "name": "isUserVerifyingPlatformAuthenticatorAvailable",
             "slug": "API/PublicKeyCredential/isUserVerifyingPlatformAuthenticatorAvailable",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/isUserVerifyingPlatformAuthenticatorAvailable",
             "summary": "isUserVerifyingPlatformAuthenticatorAvailable() is a static method of the PublicKeyCredential interface that returns a Promise which resolves to true if a user-verifying platform authenticator is available.",
             "support": {
                 "chrome": {
@@ -636,6 +647,7 @@
             "filename": "api/PublicKeyCredential.json",
             "name": "rawId",
             "slug": "API/PublicKeyCredential/rawId",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/rawId",
             "summary": "The rawId read-only property of the PublicKeyCredential interface is an ArrayBuffer object containing the identifier of the credentials.",
             "support": {
                 "chrome": {
@@ -693,6 +705,7 @@
             "filename": "api/PublicKeyCredential.json",
             "name": "response",
             "slug": "API/PublicKeyCredential/response",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/response",
             "summary": "The response read-only property of the PublicKeyCredential interface is an AuthenticatorResponse object which is sent from the authenticator to the user agent for the creation/fetching of credentials. The information contained in this response will be used by the relying party's server to verify the demand is legitimate.",
             "support": {
                 "chrome": {
@@ -750,6 +763,7 @@
             "filename": "api/PublicKeyCredential.json",
             "name": "PublicKeyCredential",
             "slug": "API/PublicKeyCredential",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential",
             "summary": "The PublicKeyCredential interface provides information about a public key / private key pair, which is a credential for logging in to a service using an un-phishable and data-breach resistant asymmetric key pair instead of a password. It inherits from Credential, and was created by the Web Authentication API extension to the Credential Management API. Other interfaces that inherit from Credential are PasswordCredential and FederatedCredential.",
             "support": {
                 "chrome": {
@@ -805,6 +819,7 @@
             "filename": "http/headers/Feature-Policy.json",
             "name": "publickey-credentials-get",
             "slug": "HTTP/Headers/Feature-Policy/publickey-credentials-get",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/publickey-credentials-get",
             "summary": "The HTTP Feature-Policy header publickey-credentials-get directive controls whether the current document is allowed to access the Web Authentication API to retrieve public-key credentials; i.e, via navigator.credentials.get({publicKey: ..., ...}).",
             "support": {
                 "chrome": {

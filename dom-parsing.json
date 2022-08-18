@@ -9,10 +9,12 @@
             "filename": "api/Element.json",
             "name": "innerHTML",
             "slug": "API/Element/innerHTML",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML",
             "summary": "The Element property innerHTML gets or sets the HTML or XML markup contained within the element.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "33",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -33,15 +35,18 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "1"
+                    "version_added": "9",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "4.4",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 }
             },
             "title": "Element.innerHTML"
@@ -57,6 +62,7 @@
             "filename": "api/Element.json",
             "name": "insertAdjacentHTML",
             "slug": "API/Element/insertAdjacentHTML",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML",
             "summary": "The insertAdjacentHTML() method of the Element interface parses the specified text as HTML or XML and inserts the resulting nodes into the DOM tree at a specified position.",
             "support": {
                 "chrome": {
@@ -116,10 +122,12 @@
             "filename": "api/Element.json",
             "name": "outerHTML",
             "slug": "API/Element/outerHTML",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/outerHTML",
             "summary": "The outerHTML attribute of the Element DOM interface gets the serialized HTML fragment describing the element including its descendants. It can also be set to replace the element with nodes parsed from the given string.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "33",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -140,15 +148,17 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "1.3"
+                    "version_added": "9"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
-                    "version_added": "1"
+                    "version_added": "4.4",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "This API was previously available on the <code>Node</code> API."
                 }
             },
             "title": "Element.outerHTML"
@@ -164,6 +174,7 @@
             "filename": "api/Element.json",
             "name": "Element",
             "slug": "API/Element",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element",
             "summary": "Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element.",
             "support": {
                 "chrome": {
@@ -212,6 +223,7 @@
             "filename": "api/Range.json",
             "name": "createContextualFragment",
             "slug": "API/Range/createContextualFragment",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Range/createContextualFragment",
             "summary": "The Range.createContextualFragment() method returns a DocumentFragment by invoking the HTML fragment parsing algorithm or the XML fragment parsing algorithm with the start of the range (the parent of the selected node) as the context node. The HTML fragment parsing algorithm is used if the range belongs to a Document whose HTMLness bit is set. In the HTML case, if the context node would be html, for historical reasons the fragment parsing algorithm is invoked with body as the context instead.",
             "support": {
                 "chrome": {
@@ -258,6 +270,7 @@
             "filename": "api/Range.json",
             "name": "Range",
             "slug": "API/Range",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Range",
             "summary": "The Range interface represents a fragment of a document that can contain nodes and parts of text nodes.",
             "support": {
                 "chrome": {
@@ -305,6 +318,7 @@
             "filename": "api/ShadowRoot.json",
             "name": "innerHTML",
             "slug": "API/ShadowRoot/innerHTML",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/innerHTML",
             "summary": "The innerHTML property of the ShadowRoot interface sets or returns a reference to the DOM tree inside the ShadowRoot.",
             "support": {
                 "chrome": {
@@ -345,6 +359,7 @@
             "filename": "api/XMLSerializer.json",
             "name": "serializeToString",
             "slug": "API/XMLSerializer/serializeToString",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLSerializer/serializeToString",
             "summary": "The XMLSerializer method serializeToString() constructs a string representing the specified DOM tree in XML form.",
             "support": {
                 "chrome": {
@@ -393,6 +408,7 @@
             "filename": "api/XMLSerializer.json",
             "name": "XMLSerializer",
             "slug": "API/XMLSerializer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLSerializer",
             "summary": "The XMLSerializer interface provides the serializeToString() method to construct an XML string representing a DOM tree.",
             "support": {
                 "chrome": {

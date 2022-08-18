@@ -9,6 +9,7 @@
             "filename": "api/HTMLMediaElement.json",
             "name": "setMediaKeys",
             "slug": "API/HTMLMediaElement/setMediaKeys",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/setMediaKeys",
             "summary": "The setMediaKeys() property of the HTMLMediaElement interface returns a Promise that resolves to the passed MediaKeys, which are those used to decrypt media during playback.",
             "support": {
                 "chrome": {
@@ -51,6 +52,7 @@
             "filename": "api/MediaKeyMessageEvent.json",
             "name": "MediaKeyMessageEvent",
             "slug": "API/MediaKeyMessageEvent/MediaKeyMessageEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeyMessageEvent/MediaKeyMessageEvent",
             "summary": "The MediaKeyMessageEvent constructor creates a new MediaKeyMessageEvent object.",
             "support": {
                 "chrome": {
@@ -93,6 +95,7 @@
             "filename": "api/MediaKeyMessageEvent.json",
             "name": "message",
             "slug": "API/MediaKeyMessageEvent/message",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeyMessageEvent/message",
             "summary": "The MediaKeyMessageEvent.message read-only property returns an ArrayBuffer with a message from the content decryption module. Messages vary by key system.",
             "support": {
                 "chrome": {
@@ -135,6 +138,7 @@
             "filename": "api/MediaKeyMessageEvent.json",
             "name": "messageType",
             "slug": "API/MediaKeyMessageEvent/messageType",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeyMessageEvent/messageType",
             "summary": "The MediaKeyMessageEvent.messageType read-only property indicates the type of message. It may be one of license-request, license-renewal, license-release, or individualization-request.",
             "support": {
                 "chrome": {
@@ -177,6 +181,7 @@
             "filename": "api/MediaKeyMessageEvent.json",
             "name": "MediaKeyMessageEvent",
             "slug": "API/MediaKeyMessageEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeyMessageEvent",
             "summary": "The MediaKeyMessageEvent interface of the EncryptedMediaExtensions API contains the content and related data when the content decryption module generates a message for the session.",
             "support": {
                 "chrome": {
@@ -219,6 +224,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "close",
             "slug": "API/MediaKeySession/close",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/close",
             "summary": "The MediaKeySession.close() method notifies that the current media session is no longer needed, and that the content decryption module should release any resources associated with this object and close it. Then, it returns a Promise.",
             "support": {
                 "chrome": {
@@ -263,6 +269,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "closed",
             "slug": "API/MediaKeySession/closed",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/closed",
             "summary": "The MediaKeySession.closed read-only property returns a Promise signaling when a MediaKeySession closes. This promise can only be fulfilled and is never rejected. Closing a session means that licenses and keys associated with it are no longer valid for decrypting media data.",
             "support": {
                 "chrome": {
@@ -307,6 +314,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "expiration",
             "slug": "API/MediaKeySession/expiration",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/expiration",
             "summary": "The MediaKeySession.expiration read-only property returns the time after which the keys in the current session can no longer be used to decrypt media data, or NaN if no such time exists. This value is determined by the CDM and measured in milliseconds since January 1, 1970, UTC. This value may change during a session lifetime, such as when an action triggers the start of a window.",
             "support": {
                 "chrome": {
@@ -351,6 +359,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "generateRequest",
             "slug": "API/MediaKeySession/generateRequest",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/generateRequest",
             "summary": "The MediaKeySession.generateRequest() method returns a Promise after generating a media request based on initialization data.",
             "support": {
                 "chrome": {
@@ -395,6 +404,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "keyStatuses",
             "slug": "API/MediaKeySession/keyStatuses",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/keyStatuses",
             "summary": "The MediaKeySession.keyStatuses read-only property returns a reference to a read-only MediaKeyStatusMap of the current session's keys and their statuses.",
             "support": {
                 "chrome": {
@@ -439,6 +449,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "keystatuseschange_event",
             "slug": "API/MediaKeySession/keystatuseschange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/keystatuseschange_event",
             "summary": "The keystatuseschange event of the MediaKeySession API fires when there has been a change in the keys or their statuses within a session.",
             "support": {
                 "chrome": [
@@ -505,6 +516,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "load",
             "slug": "API/MediaKeySession/load",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/load",
             "summary": "The MediaKeySession.load() method returns a Promise that resolves to a boolean value after loading data for a specified session object.",
             "support": {
                 "chrome": {
@@ -549,6 +561,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "message_event",
             "slug": "API/MediaKeySession/message_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/message_event",
             "summary": "The message event of the MediaKeySession interface fires when a message is generated by the content decryption module.",
             "support": {
                 "chrome": [
@@ -615,6 +628,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "remove",
             "slug": "API/MediaKeySession/remove",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/remove",
             "summary": "The MediaKeySession.remove() method returns a Promise after removing any session data associated with the current object.",
             "support": {
                 "chrome": {
@@ -659,6 +673,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "sessionId",
             "slug": "API/MediaKeySession/sessionId",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/sessionId",
             "summary": "The MediaKeySession.sessionId is a read-only property that contains a unique string generated by the content decryption module (CDM) for the current media object and its associated keys or licenses.",
             "support": {
                 "chrome": {
@@ -703,6 +718,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "update",
             "slug": "API/MediaKeySession/update",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/update",
             "summary": "The MediaKeySession.update() method loads messages and licenses to the CDM, and then returns a Promise .",
             "support": {
                 "chrome": {
@@ -747,6 +763,7 @@
             "filename": "api/MediaKeySession.json",
             "name": "MediaKeySession",
             "slug": "API/MediaKeySession",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession",
             "summary": "The MediaKeySession interface of the EncryptedMediaExtensions API represents a context for message exchange with a content decryption module (CDM).",
             "support": {
                 "chrome": {
@@ -791,6 +808,7 @@
             "filename": "api/MediaKeyStatusMap.json",
             "name": "get",
             "slug": "API/MediaKeyStatusMap/get",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeyStatusMap/get",
             "summary": "The get property of the MediaKeyStatusMap interface returns the value associated with the given key, or undefined if there is none.",
             "support": {
                 "chrome": {
@@ -835,6 +853,7 @@
             "filename": "api/MediaKeyStatusMap.json",
             "name": "has",
             "slug": "API/MediaKeyStatusMap/has",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeyStatusMap/has",
             "summary": "The has property of the MediaKeyStatusMap interface returns a Boolean, asserting whether a value has been associated with the given key.",
             "support": {
                 "chrome": {
@@ -879,6 +898,7 @@
             "filename": "api/MediaKeyStatusMap.json",
             "name": "size",
             "slug": "API/MediaKeyStatusMap/size",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeyStatusMap/size",
             "summary": "The size read-only property of the MediaKeyStatusMap interface returns the number of key/value paIrs in the status map.",
             "support": {
                 "chrome": {
@@ -923,6 +943,7 @@
             "filename": "api/MediaKeyStatusMap.json",
             "name": "MediaKeyStatusMap",
             "slug": "API/MediaKeyStatusMap",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeyStatusMap",
             "summary": "The MediaKeyStatusMap interface of the EncryptedMediaExtensions API is a read-only map of media key statuses by key IDs.",
             "support": {
                 "chrome": {
@@ -967,6 +988,7 @@
             "filename": "api/MediaKeySystemAccess.json",
             "name": "createMediaKeys",
             "slug": "API/MediaKeySystemAccess/createMediaKeys",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySystemAccess/createMediaKeys",
             "summary": "The MediaKeySystemAccess.createMediaKeys() method returns a Promise that resolves to a new MediaKeys object.",
             "support": {
                 "chrome": {
@@ -1011,6 +1033,7 @@
             "filename": "api/MediaKeySystemAccess.json",
             "name": "getConfiguration",
             "slug": "API/MediaKeySystemAccess/getConfiguration",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySystemAccess/getConfiguration",
             "summary": "The MediaKeySystemAccess.getConfiguration() method returns an object with the supported combination of the following configuration options:",
             "support": {
                 "chrome": {
@@ -1056,6 +1079,7 @@
             "filename": "api/MediaKeySystemAccess.json",
             "name": "keySystem",
             "slug": "API/MediaKeySystemAccess/keySystem",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySystemAccess/keySystem",
             "summary": "The MediaKeySystemAccess.keySystem read-only property returns a string identifying the key system being used.",
             "support": {
                 "chrome": {
@@ -1100,6 +1124,7 @@
             "filename": "api/MediaKeySystemAccess.json",
             "name": "MediaKeySystemAccess",
             "slug": "API/MediaKeySystemAccess",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySystemAccess",
             "summary": "The MediaKeySystemAccess interface of the EncryptedMediaExtensions API provides access to a Key System for decryption and/or a content protection provider. You can request an instance of this object using the Navigator.requestMediaKeySystemAccess() method.",
             "support": {
                 "chrome": {
@@ -1144,6 +1169,7 @@
             "filename": "api/MediaKeys.json",
             "name": "createSession",
             "slug": "API/MediaKeys/createSession",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeys/createSession",
             "summary": "The MediaKeys.createSession() method returns a new MediaKeySession object, which represents a context for message exchange with a content decryption module (CDM).",
             "support": {
                 "chrome": {
@@ -1188,6 +1214,7 @@
             "filename": "api/MediaKeys.json",
             "name": "setServerCertificate",
             "slug": "API/MediaKeys/setServerCertificate",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeys/setServerCertificate",
             "summary": "The MediaKeys.setServerCertificate() method provides a server certificate to be used to encrypt messages to the license server.",
             "support": {
                 "chrome": {
@@ -1232,6 +1259,7 @@
             "filename": "api/MediaKeys.json",
             "name": "MediaKeys",
             "slug": "API/MediaKeys",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaKeys",
             "summary": "The MediaKeys interface of EncryptedMediaExtensions API represents a set of keys that an associated HTMLMediaElement can use for decryption of media data during playback.",
             "support": {
                 "chrome": {
@@ -1276,6 +1304,7 @@
             "filename": "api/Navigator.json",
             "name": "requestMediaKeySystemAccess",
             "slug": "API/Navigator/requestMediaKeySystemAccess",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/requestMediaKeySystemAccess",
             "summary": "The Navigator.requestMediaKeySystemAccess() method returns a Promise which delivers a MediaKeySystemAccess object that can be used to access a particular media key system, which can in turn be used to create keys for decrypting a media stream. This method is part of the Encrypted Media Extensions API, which brings support for encrypted media and DRM-protected video to the web.",
             "support": {
                 "chrome": {
@@ -1345,6 +1374,7 @@
             "filename": "http/headers/Feature-Policy.json",
             "name": "encrypted-media",
             "slug": "HTTP/Headers/Feature-Policy/encrypted-media",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/encrypted-media",
             "summary": "The HTTP Feature-Policy header encrypted-media directive controls whether the current document is allowed to use the Encrypted Media Extensions API (EME). When this policy is enabled, the Promise returned by Navigator.requestMediaKeySystemAccess() will reject with a DOMException.",
             "support": {
                 "chrome": {

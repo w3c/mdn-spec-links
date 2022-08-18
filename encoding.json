@@ -9,6 +9,7 @@
             "filename": "api/TextDecoder.json",
             "name": "TextDecoder",
             "slug": "API/TextDecoder/TextDecoder",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/TextDecoder",
             "summary": "The TextDecoder() constructor returns a newly created TextDecoder object for the encoding specified in parameter.",
             "support": {
                 "chrome": {
@@ -70,6 +71,7 @@
             "filename": "api/TextDecoder.json",
             "name": "decode",
             "slug": "API/TextDecoder/decode",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/decode",
             "summary": "The TextDecode.decode() method returns a string containing the text, given in parameters, decoded with the specific method for that TextDecoder object.",
             "support": {
                 "chrome": {
@@ -132,6 +134,7 @@
             "filename": "api/TextDecoder.json",
             "name": "encoding",
             "slug": "API/TextDecoder/encoding",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/encoding",
             "summary": "The TextDecoder.encoding read-only property returns a string containing the name of the decoding algorithm used by the specific decoder.",
             "support": {
                 "chrome": {
@@ -185,6 +188,7 @@
             "filename": "api/TextDecoder.json",
             "name": "fatal",
             "slug": "API/TextDecoder/fatal",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/fatal",
             "summary": "The fatal property of the TextDecoder interface is a Boolean indicating whether the error mode is fatal. If this value is true, the processed text cannot be decoded because of malformed data. If this value is false malformed data is replaced with placeholder characters.",
             "support": {
                 "chrome": {
@@ -231,6 +235,7 @@
             "filename": "api/TextDecoder.json",
             "name": "ignoreBOM",
             "slug": "API/TextDecoder/ignoreBOM",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/ignoreBOM",
             "summary": "The ignoreBOM property of the TextDecoder interface is a Boolean indicating whether the byte order mark is ignored.",
             "support": {
                 "chrome": {
@@ -277,6 +282,7 @@
             "filename": "api/TextDecoder.json",
             "name": "TextDecoder",
             "slug": "API/TextDecoder",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder",
             "summary": "The TextDecoder interface represents a decoder for a specific text encoding, such as UTF-8, ISO-8859-2, KOI8-R, GBK, etc. A decoder takes a stream of bytes as input and emits a stream of code points.",
             "support": {
                 "chrome": {
@@ -337,6 +343,7 @@
             "filename": "api/TextDecoderStream.json",
             "name": "TextDecoderStream",
             "slug": "API/TextDecoderStream/TextDecoderStream",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream/TextDecoderStream",
             "summary": "The TextDecoderStream() constructor creates a new TextDecoderStream object which is used to convert a stream of text in a binary encoding into strings.",
             "support": {
                 "chrome": {
@@ -382,6 +389,7 @@
             "filename": "api/TextDecoderStream.json",
             "name": "encoding",
             "slug": "API/TextDecoderStream/encoding",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream/encoding",
             "summary": "The encoding read-only property of the TextDecoderStream interface returns a string containing the name of the encoding algorithm used by the specific encoder.",
             "support": {
                 "chrome": {
@@ -427,6 +435,7 @@
             "filename": "api/TextDecoderStream.json",
             "name": "fatal",
             "slug": "API/TextDecoderStream/fatal",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream/fatal",
             "summary": "The fatal read-only property of the TextDecoderStream interface is a boolean indicating if the error mode of the TextDecoderStream object is set to fatal.",
             "support": {
                 "chrome": {
@@ -472,6 +481,7 @@
             "filename": "api/TextDecoderStream.json",
             "name": "ignoreBOM",
             "slug": "API/TextDecoderStream/ignoreBOM",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream/ignoreBOM",
             "summary": "The ignoreBOM read-only property of the TextDecoderStream interface returns a boolean indicating if the byte order mark (BOM) is to be ignored.",
             "support": {
                 "chrome": {
@@ -517,6 +527,7 @@
             "filename": "api/TextDecoderStream.json",
             "name": "TextDecoderStream",
             "slug": "API/TextDecoderStream",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream",
             "summary": "The TextDecoderStream interface of the Encoding API converts a stream of text in a binary encoding, such as UTF-8 etc., to a stream of strings. It is the streaming equivalent of TextDecoder.",
             "support": {
                 "chrome": {
@@ -567,6 +578,7 @@
             "filename": "api/TextEncoder.json",
             "name": "TextEncoder",
             "slug": "API/TextEncoder/TextEncoder",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/TextEncoder",
             "summary": "The TextEncoder() constructor returns a newly created TextEncoder object that will generate a byte stream with UTF-8 encoding.",
             "support": {
                 "chrome": {
@@ -621,6 +633,7 @@
             "filename": "api/TextEncoder.json",
             "name": "encode",
             "slug": "API/TextEncoder/encode",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encode",
             "summary": "The TextEncoder.encode() method takes a string as input, and returns a Uint8Array containing the text given in parameters encoded with the specific method for that TextEncoder object.",
             "support": {
                 "chrome": {
@@ -667,6 +680,7 @@
             "filename": "api/TextEncoder.json",
             "name": "encodeInto",
             "slug": "API/TextEncoder/encodeInto",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encodeInto",
             "summary": "The TextEncoder.encodeInto() method takes a string to encode and a destination Uint8Array to put resulting UTF-8 encoded text into, and returns a dictionary object indicating the progress of the encoding. This is potentially more performant than the older encode() method especially when the target buffer is a view into a Wasm heap.",
             "support": {
                 "chrome": {
@@ -715,6 +729,7 @@
             "filename": "api/TextEncoder.json",
             "name": "encoding",
             "slug": "API/TextEncoder/encoding",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encoding",
             "summary": "The TextEncoder.encoding read-only property returns a string containing the name of the encoding algorithm used by the specific encoder.",
             "support": {
                 "chrome": {
@@ -758,6 +773,7 @@
             "filename": "api/TextEncoderStream.json",
             "name": "encoding",
             "slug": "API/TextEncoderStream/encoding",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoderStream/encoding",
             "summary": "The encoding read-only property of the TextEncoderStream interface returns a string containing the name of the encoding algorithm used by the current TextEncoderStream object.",
             "support": {
                 "chrome": {
@@ -804,6 +820,7 @@
             "filename": "api/TextEncoder.json",
             "name": "TextEncoder",
             "slug": "API/TextEncoder",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder",
             "summary": "The TextEncoder interface takes a stream of code points as input and emits a stream of UTF-8 bytes.",
             "support": {
                 "chrome": {
@@ -857,6 +874,7 @@
             "filename": "api/TextEncoderStream.json",
             "name": "TextEncoderStream",
             "slug": "API/TextEncoderStream/TextEncoderStream",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoderStream/TextEncoderStream",
             "summary": "The TextEncoderStream() constructor creates a new TextEncoderStream object which is used to convert a stream of strings into bytes using UTF-8 encoding.",
             "support": {
                 "chrome": {
@@ -902,6 +920,7 @@
             "filename": "api/TextEncoderStream.json",
             "name": "TextEncoderStream",
             "slug": "API/TextEncoderStream",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoderStream",
             "summary": "The TextEncoderStream interface of the Encoding API converts a stream of strings into bytes in the UTF-8 encoding. It is the streaming equivalent of TextEncoder.",
             "support": {
                 "chrome": {

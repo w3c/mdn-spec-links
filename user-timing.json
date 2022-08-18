@@ -9,6 +9,7 @@
             "filename": "api/Performance.json",
             "name": "clearMarks",
             "slug": "API/Performance/clearMarks",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/clearMarks",
             "summary": "The clearMarks() method removes the named mark from the browser's performance entry buffer. If the method is called with no arguments, all performance entries with an entry type of \"mark\" will be removed from the performance entry buffer.",
             "support": {
                 "chrome": [
@@ -77,6 +78,7 @@
             "filename": "api/Performance.json",
             "name": "clearMeasures",
             "slug": "API/Performance/clearMeasures",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/clearMeasures",
             "summary": "The clearMeasures() method removes the named measure from the browser's performance entry buffer. If the method is called with no arguments, all performance entries with an entry type of \"measure\" will be removed from the performance entry buffer.",
             "support": {
                 "chrome": [
@@ -106,7 +108,7 @@
                     "version_added": "10"
                 },
                 "nodejs": {
-                    "version_added": "16.7.0"
+                    "version_added": false
                 },
                 "oculus": "mirror",
                 "opera": {
@@ -145,6 +147,7 @@
             "filename": "api/Performance.json",
             "name": "mark",
             "slug": "API/Performance/mark",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark",
             "summary": "The mark() method creates a timestamp in the browser's performance entry buffer with the given name.",
             "support": {
                 "chrome": [
@@ -213,6 +216,7 @@
             "filename": "api/Performance.json",
             "name": "measure",
             "slug": "API/Performance/measure",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure",
             "summary": "The measure() method creates a named timestamp in the browser's performance entry buffer between marks, the navigation start time, or the current time.",
             "support": {
                 "chrome": [
@@ -281,6 +285,7 @@
             "filename": "api/Performance.json",
             "name": "Performance",
             "slug": "API/Performance",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance",
             "summary": "The Performance interface provides access to performance-related information for the current page. It's part of the High Resolution Time API, but is enhanced by the Performance Timeline API, the Navigation Timing API, the User Timing API, and the Resource Timing API.",
             "support": {
                 "chrome": {
@@ -335,6 +340,7 @@
             "filename": "api/PerformanceMark.json",
             "name": "PerformanceMark",
             "slug": "API/PerformanceMark",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMark",
             "summary": "PerformanceMark is an abstract interface for PerformanceEntry objects with an entryType of \"mark\". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser's performance timeline.",
             "support": {
                 "chrome": {
@@ -385,6 +391,7 @@
             "filename": "api/PerformanceMeasure.json",
             "name": "PerformanceMeasure",
             "slug": "API/PerformanceMeasure",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMeasure",
             "summary": "PerformanceMeasure is an abstract interface for PerformanceEntry objects with an entryType of \"measure\". Entries of this type are created by calling performance.measure() to add a named DOMHighResTimeStamp (the measure) between two marks to the browser's performance timeline.",
             "support": {
                 "chrome": {

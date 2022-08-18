@@ -8,6 +8,7 @@
             "filename": "api/RTCIdentityAssertion.json",
             "name": "RTCIdentityAssertion",
             "slug": "API/RTCIdentityAssertion",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIdentityAssertion",
             "summary": "The RTCIdentityAssertion interface of the WebRTC API represents the identity of a remote peer of the current connection. If no peer has yet been set and verified, then this interface returns null. Once set it can't be changed.",
             "support": {
                 "chrome": {
@@ -48,6 +49,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "getIdentityAssertion",
             "slug": "API/RTCPeerConnection/getIdentityAssertion",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/getIdentityAssertion",
             "summary": "The RTCPeerConnection.getIdentityAssertion() method initiates the gathering of an identity assertion. This has an effect only if the signalingState is not \"closed\".",
             "support": {
                 "chrome": {
@@ -88,6 +90,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "peerIdentity",
             "slug": "API/RTCPeerConnection/peerIdentity",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/peerIdentity",
             "summary": "The read-only RTCPeerConnection property peerIdentity returns a JavaScript Promise that resolves to an RTCIdentityAssertion which contains a string identifying the remote peer. Once this promise resolves successfully, the resulting identity is the target peer identity and cannot change for the duration of the connection.",
             "support": {
                 "chrome": {
@@ -128,6 +131,7 @@
             "filename": "api/RTCPeerConnection.json",
             "name": "setIdentityProvider",
             "slug": "API/RTCPeerConnection/setIdentityProvider",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/setIdentityProvider",
             "summary": "The RTCPeerConnection.setIdentityProvider() method sets the Identity Provider (IdP) to the triplet given in parameter: its name, the protocol used to communicate with it (optional) and an optional username. The IdP will be used only when an assertion is needed.",
             "support": {
                 "chrome": {

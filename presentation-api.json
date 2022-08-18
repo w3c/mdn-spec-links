@@ -7,6 +7,7 @@
             "filename": "api/Navigator.json",
             "name": "presentation",
             "slug": "API/Navigator/presentation",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/presentation",
             "summary": "The presentation property of Navigator serves as the entry point for the Presentation API and returns a reference to Presentation object.",
             "support": {
                 "chrome": {
@@ -56,6 +57,7 @@
             "filename": "api/Presentation.json",
             "name": "defaultRequest",
             "slug": "API/Presentation/defaultRequest",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Presentation/defaultRequest",
             "summary": "In a controlling user agent, the defaultRequest attribute MUST return the default presentation request if any, otherwise null. In a receiving browsing context, it MUST return null.",
             "support": {
                 "chrome": {
@@ -104,6 +106,7 @@
             "filename": "api/Presentation.json",
             "name": "receiver",
             "slug": "API/Presentation/receiver",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Presentation/receiver",
             "summary": "The read-only Presentation attribute receiver, which is only available in browser contexts which are receiving a presentation, returns the PresentationReceiver object which can be used to access and communicate with the browser context which controls the presentation. This property is always null when accessed from outside a browser context which is receiving a presentation.",
             "support": {
                 "chrome": {
@@ -152,6 +155,7 @@
             "filename": "api/Presentation.json",
             "name": "Presentation",
             "slug": "API/Presentation",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Presentation",
             "summary": "The Presentation can be defined as two possible user agents in the context: Controlling user agent and Receiving user agent.",
             "support": {
                 "chrome": {
@@ -200,6 +204,7 @@
             "filename": "api/PresentationAvailability.json",
             "name": "value",
             "slug": "API/PresentationAvailability/value",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationAvailability/value",
             "summary": "The value attribute MUST return the last value from which it was set. The value is updated by the monitor the list of available presentation displays algorithm.",
             "support": {
                 "chrome": {
@@ -248,6 +253,7 @@
             "filename": "api/PresentationAvailability.json",
             "name": "PresentationAvailability",
             "slug": "API/PresentationAvailability",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationAvailability",
             "summary": "A PresentationAvailability object is associated with available presentation displays and represents the presentation display availability for a presentation request. If the controlling user agent can monitor the list of available presentation displays in the background (without a pending request to start()), the PresentationAvailability object MUST be implemented in a controlling browsing context.",
             "support": {
                 "chrome": {
@@ -296,6 +302,7 @@
             "filename": "api/PresentationConnection.json",
             "name": "binaryType",
             "slug": "API/PresentationConnection/binaryType",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnection/binaryType",
             "summary": "When a PresentationConnection object is created, its binaryType IDL attribute MUST be set to the string \"arraybuffer\". Upon getting, the attribute MUST return its most recent value (the value it was last set as). Upon setting, the user agent MUST set the IDL attribute to the new value.",
             "support": {
                 "chrome": {
@@ -344,6 +351,7 @@
             "filename": "api/PresentationConnection.json",
             "name": "close",
             "slug": "API/PresentationConnection/close",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnection/close",
             "summary": "When the close() method is called on a PresentationConnection, the user agent begins the process of closing the connection by sending an empty closeMessage with the closeReason set to closed.",
             "support": {
                 "chrome": {
@@ -392,6 +400,7 @@
             "filename": "api/PresentationConnection.json",
             "name": "id",
             "slug": "API/PresentationConnection/id",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnection/id",
             "summary": "The id attribute specifies the presentation identifier of a presentation connection.",
             "support": {
                 "chrome": {
@@ -440,6 +449,7 @@
             "filename": "api/PresentationConnection.json",
             "name": "send",
             "slug": "API/PresentationConnection/send",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnection/send",
             "summary": "The send() method of the PresentationConnection interface tells a controlling browsing context to send binary or text data to a presenting browsing context.",
             "support": {
                 "chrome": {
@@ -488,6 +498,7 @@
             "filename": "api/PresentationConnection.json",
             "name": "state",
             "slug": "API/PresentationConnection/state",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnection/state",
             "summary": "The state attribute reflects the presentation connection's current state. Depending on the current PresentationConnectionState, the state attribute can hold one of the following values.",
             "support": {
                 "chrome": {
@@ -536,6 +547,7 @@
             "filename": "api/PresentationConnection.json",
             "name": "terminate",
             "slug": "API/PresentationConnection/terminate",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnection/terminate",
             "summary": "When the terminate() method is called on a PresentationConnection, the user agent begins the process of terminating the presentation. The exact process differs depending on whether terminate() is called in the controlling or the presenting context.",
             "support": {
                 "chrome": {
@@ -584,6 +596,7 @@
             "filename": "api/PresentationConnection.json",
             "name": "url",
             "slug": "API/PresentationConnection/url",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnection/url",
             "summary": "The url readonly property of the PresentationConnection interface returns the URL used to create or reconnect to the presentation.",
             "support": {
                 "chrome": {
@@ -632,6 +645,7 @@
             "filename": "api/PresentationConnection.json",
             "name": "PresentationConnection",
             "slug": "API/PresentationConnection",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnection",
             "summary": "The PresentationConnection interface of the Presentation API provides methods and properties for managing a single presentation. Each presentation connection is represented by a PresentationConnection object. Both the controlling user agent and receiving user agent MUST implement PresentationConnection.",
             "support": {
                 "chrome": {
@@ -680,6 +694,7 @@
             "filename": "api/PresentationConnectionAvailableEvent.json",
             "name": "PresentationConnectionAvailableEvent",
             "slug": "API/PresentationConnectionAvailableEvent/PresentationConnectionAvailableEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnectionAvailableEvent/PresentationConnectionAvailableEvent",
             "summary": "A string with the name of the event. It is case-sensitive and browsers set it to connectionavailable.",
             "support": {
                 "chrome": {
@@ -728,6 +743,7 @@
             "filename": "api/PresentationConnectionAvailableEvent.json",
             "name": "connection",
             "slug": "API/PresentationConnectionAvailableEvent/connection",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnectionAvailableEvent/connection",
             "summary": "When an incoming connection is created, a receiving user agent fires a trusted event, named connectionavailable, on a PresentationReceiver. The trusted event is fired at the presentation controller's monitor, using the PresentationConnectionAvailableEvent interface, with the connection attribute set to the PresentationConnection object that was created.",
             "support": {
                 "chrome": {
@@ -776,6 +792,7 @@
             "filename": "api/PresentationConnectionAvailableEvent.json",
             "name": "PresentationConnectionAvailableEvent",
             "slug": "API/PresentationConnectionAvailableEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnectionAvailableEvent",
             "summary": "The PresentationConnectionAvailableEvent interface of the Presentation API is fired on a PresentationRequest when a connection associated with the object is created.",
             "support": {
                 "chrome": {
@@ -824,6 +841,7 @@
             "filename": "api/PresentationConnectionCloseEvent.json",
             "name": "PresentationConnectionCloseEvent",
             "slug": "API/PresentationConnectionCloseEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnectionCloseEvent",
             "summary": "The PresentationConnectionCloseEvent interface of the Presentation API is fired on a PresentationConnection when it is closed.",
             "support": {
                 "chrome": {
@@ -872,6 +890,7 @@
             "filename": "api/PresentationConnectionList.json",
             "name": "PresentationConnectionList",
             "slug": "API/PresentationConnectionList",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationConnectionList",
             "summary": "PresentationConnectionList is the collection of incoming presentation connections.",
             "support": {
                 "chrome": {
@@ -920,6 +939,7 @@
             "filename": "api/PresentationReceiver.json",
             "name": "PresentationReceiver",
             "slug": "API/PresentationReceiver",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationReceiver",
             "summary": "The PresentationReceiver interface of the Presentation API provides a means for a receiving browsing context to access controlling browsing contexts and communicate with them.",
             "support": {
                 "chrome": {
@@ -968,6 +988,7 @@
             "filename": "api/PresentationRequest.json",
             "name": "PresentationRequest",
             "slug": "API/PresentationRequest/PresentationRequest",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationRequest/PresentationRequest",
             "summary": "The PresentationRequest() constructor creates a new PresentationRequest object which creates a new PresentationRequest.",
             "support": {
                 "chrome": {
@@ -1016,6 +1037,7 @@
             "filename": "api/PresentationRequest.json",
             "name": "getAvailability",
             "slug": "API/PresentationRequest/getAvailability",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationRequest/getAvailability",
             "summary": "When the getAvailability() method is called, the user agent MUST run the following steps:",
             "support": {
                 "chrome": {
@@ -1064,6 +1086,7 @@
             "filename": "api/PresentationRequest.json",
             "name": "reconnect",
             "slug": "API/PresentationRequest/reconnect",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationRequest/reconnect",
             "summary": "When the reconnect(presentationId) method is called on a PresentationRequest presentationRequest, the user agent MUST run the following steps to reconnect to a presentation:",
             "support": {
                 "chrome": {
@@ -1112,6 +1135,7 @@
             "filename": "api/PresentationRequest.json",
             "name": "start",
             "slug": "API/PresentationRequest/start",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationRequest/start",
             "summary": "The start() property of the PresentationRequest interface returns a Promise that resolves with a PresentationConnection after the user agent prompts the user to select a display and grant permission to use that display.",
             "support": {
                 "chrome": {
@@ -1160,6 +1184,7 @@
             "filename": "api/PresentationRequest.json",
             "name": "PresentationRequest",
             "slug": "API/PresentationRequest",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PresentationRequest",
             "summary": "A PresentationRequest object is used to initiate or reconnect to a presentation made by a controlling browsing context. The PresentationRequest object MUST be implemented in a controlling browsing context provided by a controlling user agent.",
             "support": {
                 "chrome": {
