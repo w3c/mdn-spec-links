@@ -11,7 +11,7 @@ body {
   white-space: nowrap;
 }
 
-h1, p { width: 724px; background: #fff; column-span: all; }
+h1, p { width: 745px; background: #fff; column-span: all; }
 
 h1 {
   color: darkseagreen;
@@ -29,7 +29,7 @@ p {
   font-style: italic;
   font-size: 14px;
   color: #999;
-  width: 730px;
+  width: 750px;
 }
 
 #main {
@@ -54,8 +54,8 @@ p {
     font-family: Arial Narrow, sans-serif;
   }
 
-  h1 { width: 640px; }
-  p { width: 645px; }
+  h1 { width: 660px; }
+  p { width: 665px; }
 }
 
 a, a:hover, a:visited {
@@ -67,10 +67,12 @@ a:hover, a:focus {
    color: #5f6d7a;
 }
 
-img { padding-top: 4px; }
+img { margin-top: 1px; vertical-align: top; }
 table span { opacity: 0; font-size: 0px; }
-table i { color: green; font-style: none; }
-table b {
+table i { color: green; }
+table a b { color: black; font-size: 140%; }
+table s {
+  text-decoration: none;
   color: red;
   font-family: monospace;
   font-size: 26px;
