@@ -11,6 +11,7 @@
             "filename": "api/Navigator.json",
             "name": "connection",
             "slug": "API/Navigator/connection",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/connection",
             "summary": "The Navigator.connection read-only property returns a NetworkInformation object containing information about the system's connection, such as the current bandwidth of the user's device or whether the connection is metered.",
             "support": {
                 "chrome": {
@@ -66,6 +67,7 @@
             "filename": "api/WorkerNavigator.json",
             "name": "connection",
             "slug": "API/WorkerNavigator/connection",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/connection",
             "summary": "The WorkerNavigator.connection read-only property returns a NetworkInformation object containing information about the system's connection, such as the current bandwidth of the user's device or whether the connection is metered. This could be used to select high definition content or low definition content based on the user's connection.",
             "support": {
                 "chrome": {
@@ -116,6 +118,7 @@
             "filename": "api/NetworkInformation.json",
             "name": "change_event",
             "slug": "API/NetworkInformation/change_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/change_event",
             "summary": "The change event fires when connection information changes, and the change is received by the NetworkInformation object.",
             "support": {
                 "chrome": {
@@ -163,6 +166,7 @@
             "filename": "api/NetworkInformation.json",
             "name": "downlink",
             "slug": "API/NetworkInformation/downlink",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlink",
             "summary": "The downlink read-only property of the NetworkInformation interface returns the effective bandwidth estimate in megabits per second, rounded to the nearest multiple of 25 kilobits per seconds. This value is based on recently observed application layer throughput across recently active connections, excluding connections made to a private address space. In the absence of recent bandwidth measurement data, the attribute value is determined by the properties of the underlying connection technology.",
             "support": {
                 "chrome": {
@@ -209,6 +213,7 @@
             "filename": "api/NetworkInformation.json",
             "name": "downlinkMax",
             "slug": "API/NetworkInformation/downlinkMax",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlinkMax",
             "summary": "The NetworkInformation.downlinkMax read-only property returns the maximum downlink speed, in megabits per second (Mbps), for the underlying connection technology.",
             "support": {
                 "chrome": {
@@ -259,6 +264,7 @@
             "filename": "api/NetworkInformation.json",
             "name": "effectiveType",
             "slug": "API/NetworkInformation/effectiveType",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/effectiveType",
             "summary": "The effectiveType read-only property of the NetworkInformation interface returns the effective type of the connection meaning one of 'slow-2g', '2g', '3g', or '4g'. This value is determined using a combination of recently observed, round-trip time and downlink values.",
             "support": {
                 "chrome": {
@@ -303,6 +309,7 @@
             "filename": "api/NetworkInformation.json",
             "name": "rtt",
             "slug": "API/NetworkInformation/rtt",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/rtt",
             "summary": "The NetworkInformation.rtt read-only property returns the estimated effective round-trip time of the current connection, rounded to the nearest multiple of 25 milliseconds. This value is based on recently observed application-layer RTT measurements across recently active connections. It excludes connections made to a private address space. If no recent measurement data is available, the value is based on the properties of the underlying connection technology.",
             "support": {
                 "chrome": {
@@ -353,6 +360,7 @@
             "filename": "api/NetworkInformation.json",
             "name": "type",
             "slug": "API/NetworkInformation/type",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/type",
             "summary": "The NetworkInformation.type read-only property returns the type of connection a device is using to communicate with the network.",
             "support": {
                 "chrome": {
@@ -417,6 +425,7 @@
             "filename": "api/NetworkInformation.json",
             "name": "NetworkInformation",
             "slug": "API/NetworkInformation",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation",
             "summary": "The NetworkInformation interface of the Network Information API provides information about the connection a device is using to communicate with the network and provides a means for scripts to be notified if the connection type changes. The NetworkInformation interface cannot be instantiated. It is instead accessed through the connection property of the Navigator interface.",
             "support": {
                 "chrome": {
@@ -470,6 +479,7 @@
             "filename": "http/headers/downlink.json",
             "name": "downlink",
             "slug": "HTTP/Headers/downlink",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/downlink",
             "summary": "The Downlink Client hint request header field provides the approximate bandwidth of the client's connection to the server, in Mbps.",
             "support": {
                 "chrome": {
@@ -512,6 +522,7 @@
             "filename": "http/headers/ect.json",
             "name": "ect",
             "slug": "HTTP/Headers/ect",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ect",
             "summary": "The ECT Client hint request header field indicates the effective connection type: slow-2g, 2g, 3g, 4g.",
             "support": {
                 "chrome": {
@@ -552,6 +563,7 @@
             "filename": "http/headers/rtt.json",
             "name": "rtt",
             "slug": "HTTP/Headers/rtt",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/rtt",
             "summary": "The RTT Client hint request header field provides the approximate round trip time on the application layer, in milliseconds. The RTT hint, unlike transport layer RTT, includes server processing time.",
             "support": {
                 "chrome": {

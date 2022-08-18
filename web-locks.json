@@ -9,6 +9,7 @@
             "filename": "api/Lock.json",
             "name": "mode",
             "slug": "API/Lock/mode",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Lock/mode",
             "summary": "The mode read-only property of the Lock interface returns the access mode passed to LockManager.request() when the lock was requested. The mode is either \"exclusive\" (the default) or \"shared\".",
             "support": {
                 "chrome": {
@@ -62,6 +63,7 @@
             "filename": "api/Lock.json",
             "name": "name",
             "slug": "API/Lock/name",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Lock/name",
             "summary": "The name read-only property of the Lock interface returns the name passed to LockManager.request selected when the lock was requested.",
             "support": {
                 "chrome": {
@@ -115,6 +117,7 @@
             "filename": "api/Lock.json",
             "name": "Lock",
             "slug": "API/Lock",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Lock",
             "summary": "The Lock interface of the Web Locks API provides the name and mode of a lock. This may be a newly requested lock that is received in the callback to LockManager.request(), or a record of an active or queued lock returned by LockManager.query().",
             "support": {
                 "chrome": {
@@ -168,6 +171,7 @@
             "filename": "api/LockManager.json",
             "name": "query",
             "slug": "API/LockManager/query",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/LockManager/query",
             "summary": "The query() method of the LockManager interface returns a Promise that resolves with an object containing information about held and pending locks.",
             "support": {
                 "chrome": {
@@ -221,6 +225,7 @@
             "filename": "api/LockManager.json",
             "name": "request",
             "slug": "API/LockManager/request",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request",
             "summary": "The request() method of the LockManager interface requests a Lock object with parameters specifying its name and characteristics. The requested Lock is passed to a callback, while the function itself returns a Promise that resolves with undefined.",
             "support": {
                 "chrome": {
@@ -274,6 +279,7 @@
             "filename": "api/LockManager.json",
             "name": "LockManager",
             "slug": "API/LockManager",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/LockManager",
             "summary": "The LockManager interface of the Web Locks API provides methods for requesting a new Lock object and querying for an existing Lock object. To get an instance of LockManager, call navigator.locks.",
             "support": {
                 "chrome": {
@@ -327,6 +333,7 @@
             "filename": "api/Navigator.json",
             "name": "locks",
             "slug": "API/Navigator/locks",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/locks",
             "summary": "The locks read-only property of the Navigator interface returns a LockManager object which provides methods for requesting a new Lock object and querying for an existing Lock object.",
             "support": {
                 "chrome": {

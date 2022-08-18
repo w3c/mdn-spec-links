@@ -9,6 +9,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "IntersectionObserver",
             "slug": "API/IntersectionObserver/IntersectionObserver",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver",
             "summary": "The IntersectionObserver() constructor creates and returns a new IntersectionObserver object.",
             "support": {
                 "chrome": {
@@ -54,6 +55,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "disconnect",
             "slug": "API/IntersectionObserver/disconnect",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/disconnect",
             "summary": "The IntersectionObserver method disconnect() stops watching all of its target elements for visibility changes.",
             "support": {
                 "chrome": {
@@ -96,6 +98,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "observe",
             "slug": "API/IntersectionObserver/observe",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/observe",
             "summary": "To stop observing the element, call IntersectionObserver.unobserve().",
             "support": {
                 "chrome": {
@@ -138,6 +141,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "root",
             "slug": "API/IntersectionObserver/root",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/root",
             "summary": "The IntersectionObserver interface's read-only root property identifies the Element or Document whose bounds are treated as the bounding box of the viewport for the element which is the observer's target.",
             "support": {
                 "chrome": {
@@ -180,6 +184,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "rootMargin",
             "slug": "API/IntersectionObserver/rootMargin",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin",
             "summary": "The IntersectionObserver interface's read-only rootMargin property is a string with syntax similar to that of the CSS margin property. Each side of the rectangle represented by rootMargin is added to the corresponding side in the root element's bounding box before the intersection test is performed. This lets you, for example, adjust the bounds outward so that the target element is considered 100% visible even if a certain number of pixels worth of width or height is clipped away, or treat the target as partially hidden if an edge is too close to the edge of the root's bounding box.",
             "support": {
                 "chrome": {
@@ -223,6 +228,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "takeRecords",
             "slug": "API/IntersectionObserver/takeRecords",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/takeRecords",
             "summary": "The IntersectionObserver method takeRecords() returns an array of IntersectionObserverEntry objects, one for each targeted element which has experienced an intersection change since the last time the intersections were checked, either explicitly through a call to this method or implicitly by an automatic call to the observer's callback.",
             "support": {
                 "chrome": {
@@ -265,6 +271,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "thresholds",
             "slug": "API/IntersectionObserver/thresholds",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/thresholds",
             "summary": "The IntersectionObserver interface's read-only thresholds property returns the list of intersection thresholds that was specified when the observer was instantiated with IntersectionObserver(). If only one threshold ratio was provided when instantiating the object, this will be an array containing that single value.",
             "support": {
                 "chrome": {
@@ -307,6 +314,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "unobserve",
             "slug": "API/IntersectionObserver/unobserve",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/unobserve",
             "summary": "The IntersectionObserver method unobserve() instructs the IntersectionObserver to stop observing the specified target element.",
             "support": {
                 "chrome": {
@@ -349,6 +357,7 @@
             "filename": "api/IntersectionObserver.json",
             "name": "IntersectionObserver",
             "slug": "API/IntersectionObserver",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver",
             "summary": "The IntersectionObserver interface of the Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport. The ancestor element or viewport is referred to as the root.",
             "support": {
                 "chrome": {
@@ -391,6 +400,7 @@
             "filename": "api/IntersectionObserverEntry.json",
             "name": "boundingClientRect",
             "slug": "API/IntersectionObserverEntry/boundingClientRect",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry/boundingClientRect",
             "summary": "The IntersectionObserverEntry interface's read-only boundingClientRect property returns a DOMRectReadOnly which in essence describes a rectangle describing the smallest rectangle that contains the entire target element.",
             "support": {
                 "chrome": {
@@ -433,6 +443,7 @@
             "filename": "api/IntersectionObserverEntry.json",
             "name": "intersectionRatio",
             "slug": "API/IntersectionObserverEntry/intersectionRatio",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry/intersectionRatio",
             "summary": "The IntersectionObserverEntry interface's read-only intersectionRatio property tells you how much of the target element is currently visible within the root's intersection ratio, as a value between 0.0 and 1.0.",
             "support": {
                 "chrome": {
@@ -475,6 +486,7 @@
             "filename": "api/IntersectionObserverEntry.json",
             "name": "intersectionRect",
             "slug": "API/IntersectionObserverEntry/intersectionRect",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry/intersectionRect",
             "summary": "The IntersectionObserverEntry interface's read-only intersectionRect property is a DOMRectReadOnly object which describes the smallest rectangle that contains the entire portion of the target element which is currently visible within the intersection root.",
             "support": {
                 "chrome": {
@@ -517,6 +529,7 @@
             "filename": "api/IntersectionObserverEntry.json",
             "name": "isIntersecting",
             "slug": "API/IntersectionObserverEntry/isIntersecting",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry/isIntersecting",
             "summary": "The IntersectionObserverEntry interface's read-only isIntersecting property is a Boolean value which is true if the target element intersects with the intersection observer's root. If this is true, then, the IntersectionObserverEntry describes a transition into a state of intersection; if it's false, then you know the transition is from intersecting to not-intersecting.",
             "support": {
                 "chrome": {
@@ -559,6 +572,7 @@
             "filename": "api/IntersectionObserverEntry.json",
             "name": "rootBounds",
             "slug": "API/IntersectionObserverEntry/rootBounds",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry/rootBounds",
             "summary": "The IntersectionObserverEntry interface's read-only rootBounds property is a DOMRectReadOnly corresponding to the target's root intersection rectangle, offset by the IntersectionObserver.rootMargin if one is specified.",
             "support": {
                 "chrome": {
@@ -601,6 +615,7 @@
             "filename": "api/IntersectionObserverEntry.json",
             "name": "target",
             "slug": "API/IntersectionObserverEntry/target",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry/target",
             "summary": "The IntersectionObserverEntry interface's read-only target property indicates which targeted Element has changed its amount of intersection with the intersection root.",
             "support": {
                 "chrome": {
@@ -643,6 +658,7 @@
             "filename": "api/IntersectionObserverEntry.json",
             "name": "time",
             "slug": "API/IntersectionObserverEntry/time",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry/time",
             "summary": "The IntersectionObserverEntry interface's read-only time property is a DOMHighResTimeStamp that indicates the time at which the intersection change occurred relative to the time at which the document was created.",
             "support": {
                 "chrome": {
@@ -685,6 +701,7 @@
             "filename": "api/IntersectionObserverEntry.json",
             "name": "IntersectionObserverEntry",
             "slug": "API/IntersectionObserverEntry",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry",
             "summary": "The IntersectionObserverEntry interface of the Intersection Observer API describes the intersection between the target element and its root container at a specific moment of transition.",
             "support": {
                 "chrome": {

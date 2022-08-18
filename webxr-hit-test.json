@@ -7,6 +7,7 @@
             "filename": "api/XRFrame.json",
             "name": "getHitTestResults",
             "slug": "API/XRFrame/getHitTestResults",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getHitTestResults",
             "summary": "The getHitTestResults() method of the XRFrame interface returns an array of XRHitTestResult objects containing hit test results for a given XRHitTestSource.",
             "support": {
                 "chrome": {
@@ -51,6 +52,7 @@
             "filename": "api/XRFrame.json",
             "name": "getHitTestResultsForTransientInput",
             "slug": "API/XRFrame/getHitTestResultsForTransientInput",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getHitTestResultsForTransientInput",
             "summary": "The getHitTestResultsForTransientInput() method of the XRFrame interface returns an array of XRTransientInputHitTestResult objects containing transient input hit test results for a given XRTransientInputHitTestSource.",
             "support": {
                 "chrome": {
@@ -95,6 +97,7 @@
             "filename": "api/XRHitTestResult.json",
             "name": "XRHitTestResult",
             "slug": "API/XRHitTestResult",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestResult",
             "summary": "The XRHitTestResult interface of the WebXR Device API contains a single result of a hit test. You can get an array of XRHitTestResult objects for a frame by calling XRFrame.getHitTestResults().",
             "support": {
                 "chrome": {
@@ -139,6 +142,7 @@
             "filename": "api/XRHitTestSource.json",
             "name": "cancel",
             "slug": "API/XRHitTestSource/cancel",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestSource/cancel",
             "summary": "The cancel() method of the XRHitTestSource interface unsubscribes a hit test.",
             "support": {
                 "chrome": {
@@ -183,6 +187,7 @@
             "filename": "api/XRHitTestSource.json",
             "name": "XRHitTestSource",
             "slug": "API/XRHitTestSource",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRHitTestSource",
             "summary": "The XRHitTestSource interface of the WebXR Device API handles hit test subscriptions. You can get an XRHitTestSource object by using the XRSession.requestHitTestSource() method.",
             "support": {
                 "chrome": {
@@ -227,6 +232,7 @@
             "filename": "api/XRRay.json",
             "name": "XRRay",
             "slug": "API/XRRay/XRRay",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRay/XRRay",
             "summary": "The XRRay() constructor creates a new XRRay object which is a geometric ray described by an origin point and a direction vector.",
             "support": {
                 "chrome": {
@@ -271,6 +277,7 @@
             "filename": "api/XRRay.json",
             "name": "direction",
             "slug": "API/XRRay/direction",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRay/direction",
             "summary": "The read-only direction property of the XRRay interface is a DOMPointReadOnly representing the ray's 3-dimensional directional vector, normalized to a unit vector with a length of 1.0.",
             "support": {
                 "chrome": {
@@ -315,6 +322,7 @@
             "filename": "api/XRRay.json",
             "name": "matrix",
             "slug": "API/XRRay/matrix",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRay/matrix",
             "summary": "The read-only matrix property of the XRRay interface is a transform that can be used to position objects along the XRRay. This is a 4 by 4 matrix given as a 16 element Float32Array in column major order.",
             "support": {
                 "chrome": {
@@ -359,6 +367,7 @@
             "filename": "api/XRRay.json",
             "name": "origin",
             "slug": "API/XRRay/origin",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRay/origin",
             "summary": "The read-only origin property of the XRRay interface is a DOMPointReadOnly representing the 3-dimensional point in space that the ray originates from, in meters.",
             "support": {
                 "chrome": {
@@ -403,6 +412,7 @@
             "filename": "api/XRRay.json",
             "name": "XRRay",
             "slug": "API/XRRay",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRay",
             "summary": "The XRRay interface of the WebXR Device API is a geometric ray described by an origin point and a direction vector.",
             "support": {
                 "chrome": {
@@ -447,6 +457,7 @@
             "filename": "api/XRSession.json",
             "name": "requestHitTestSource",
             "slug": "API/XRSession/requestHitTestSource",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestHitTestSource",
             "summary": "The requestHitTestSource() method of the XRSession interface returns a Promise that resolves with an XRHitTestSource object that can be passed to XRFrame.getHitTestResults().",
             "support": {
                 "chrome": {
@@ -493,6 +504,7 @@
             "filename": "api/XRSession.json",
             "name": "requestHitTestSourceForTransientInput",
             "slug": "API/XRSession/requestHitTestSourceForTransientInput",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestHitTestSourceForTransientInput",
             "summary": "The requestHitTestSourceForTransientInput() method of the XRSession interface returns a Promise that resolves with an XRTransientInputHitTestSource object that can be passed to XRFrame.getHitTestResultsForTransientInput().",
             "support": {
                 "chrome": {
@@ -537,6 +549,7 @@
             "filename": "api/XRTransientInputHitTestResult.json",
             "name": "inputSource",
             "slug": "API/XRTransientInputHitTestResult/inputSource",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRTransientInputHitTestResult/inputSource",
             "summary": "The read-only inputSource property of the XRTransientInputHitTestResult interface represents an XRInputSource object that was used to compute the results array.",
             "support": {
                 "chrome": {
@@ -581,6 +594,7 @@
             "filename": "api/XRTransientInputHitTestResult.json",
             "name": "results",
             "slug": "API/XRTransientInputHitTestResult/results",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRTransientInputHitTestResult/results",
             "summary": "The read-only results property of the XRTransientInputHitTestResult interface represents an array of XRHitTestResult objects containing the hit test results for the input source, ordered by the distance along the ray used to perform the hit test, with the closest result at position 0.",
             "support": {
                 "chrome": {
@@ -625,6 +639,7 @@
             "filename": "api/XRTransientInputHitTestResult.json",
             "name": "XRTransientInputHitTestResult",
             "slug": "API/XRTransientInputHitTestResult",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRTransientInputHitTestResult",
             "summary": "The XRTransientInputHitTestResult interface of the WebXR Device API contains an array of results of a hit test for transient input, grouped by input source.",
             "support": {
                 "chrome": {
@@ -669,6 +684,7 @@
             "filename": "api/XRTransientInputHitTestSource.json",
             "name": "cancel",
             "slug": "API/XRTransientInputHitTestSource/cancel",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRTransientInputHitTestSource/cancel",
             "summary": "The cancel() method of the XRTransientInputHitTestSource interface unsubscribes a transient input hit test.",
             "support": {
                 "chrome": {
@@ -713,6 +729,7 @@
             "filename": "api/XRTransientInputHitTestSource.json",
             "name": "XRTransientInputHitTestSource",
             "slug": "API/XRTransientInputHitTestSource",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRTransientInputHitTestSource",
             "summary": "The XRTransientInputHitTestSource interface of the WebXR Device API handles transient input hit test subscriptions. You can get an XRTransientInputHitTestSource object by calling the XRSession.requestHitTestSourceForTransientInput().",
             "support": {
                 "chrome": {

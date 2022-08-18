@@ -1047,6 +1047,7 @@ const addSpecLink = (
   baseurl,
   locationkey,
   slug,
+  mdnURL,
   title,
   summary,
   support,
@@ -1101,6 +1102,7 @@ const addSpecLink = (
   }
   featureDetails.name = feature;
   featureDetails.slug = slug;
+  featureDetails.mdn_url = mdnURL;
   featureDetails.summary = summary;
   featureDetails.support = adjustSupport(support);
   if (caniuse) {
@@ -1233,6 +1235,7 @@ const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
     baseurl,
     locationkey,
     slug,
+    mdnURL,
     title,
     summary,
     support,

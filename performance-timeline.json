@@ -9,6 +9,7 @@
             "filename": "api/Performance.json",
             "name": "getEntries",
             "slug": "API/Performance/getEntries",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/getEntries",
             "summary": "The getEntries() method returns a list of all PerformanceEntry objects for the page. The list's members (entries) can be created by making performance marks or measures (for example by calling the mark() method) at explicit points in time. If you are only interested in performance entries of certain types or that have certain names, see getEntriesByType() and getEntriesByName().",
             "support": {
                 "chrome": [
@@ -36,7 +37,7 @@
                     "version_added": "10"
                 },
                 "nodejs": {
-                    "version_added": "16.7.0"
+                    "version_added": false
                 },
                 "oculus": "mirror",
                 "opera": {
@@ -77,6 +78,7 @@
             "filename": "api/Performance.json",
             "name": "getEntriesByName",
             "slug": "API/Performance/getEntriesByName",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/getEntriesByName",
             "summary": "The getEntriesByName() method returns a list of PerformanceEntry objects for the given name and type. The list's members (entries) can be created by making performance marks or measures (for example by calling the mark() method) at explicit points in time.",
             "support": {
                 "chrome": [
@@ -104,7 +106,7 @@
                     "version_added": "10"
                 },
                 "nodejs": {
-                    "version_added": "16.7.0"
+                    "version_added": false
                 },
                 "oculus": "mirror",
                 "opera": {
@@ -145,6 +147,7 @@
             "filename": "api/Performance.json",
             "name": "getEntriesByType",
             "slug": "API/Performance/getEntriesByType",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/getEntriesByType",
             "summary": "The getEntriesByType() method returns a list of PerformanceEntry objects for a given type. The list's members (entries) can be created by making performance marks or measures (for example by calling the mark() method) at explicit points in time.",
             "support": {
                 "chrome": [
@@ -172,7 +175,7 @@
                     "version_added": "10"
                 },
                 "nodejs": {
-                    "version_added": "16.7.0"
+                    "version_added": false
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -209,6 +212,7 @@
             "filename": "api/Performance.json",
             "name": "Performance",
             "slug": "API/Performance",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance",
             "summary": "The Performance interface provides access to performance-related information for the current page. It's part of the High Resolution Time API, but is enhanced by the Performance Timeline API, the Navigation Timing API, the User Timing API, and the Resource Timing API.",
             "support": {
                 "chrome": {
@@ -263,6 +267,7 @@
             "filename": "api/PerformanceEntry.json",
             "name": "duration",
             "slug": "API/PerformanceEntry/duration",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry/duration",
             "summary": "The duration property returns a timestamp that is the duration of the performance entry.",
             "support": {
                 "chrome": {
@@ -313,6 +318,7 @@
             "filename": "api/PerformanceEntry.json",
             "name": "entryType",
             "slug": "API/PerformanceEntry/entryType",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry/entryType",
             "summary": "The entryType property returns a string representing the type of performance metric such as, for example, \"mark\". This property is read only.",
             "support": {
                 "chrome": {
@@ -363,6 +369,7 @@
             "filename": "api/PerformanceEntry.json",
             "name": "name",
             "slug": "API/PerformanceEntry/name",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry/name",
             "summary": "The name property of the PerformanceEntry interface returns a value that further specifies the value returned by the PerformanceEntry.entryType property. This property is read only.",
             "support": {
                 "chrome": {
@@ -413,6 +420,7 @@
             "filename": "api/PerformanceEntry.json",
             "name": "startTime",
             "slug": "API/PerformanceEntry/startTime",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry/startTime",
             "summary": "The startTime property returns the first recorded timestamp of the performance entry.",
             "support": {
                 "chrome": {
@@ -463,6 +471,7 @@
             "filename": "api/PerformanceEntry.json",
             "name": "toJSON",
             "slug": "API/PerformanceEntry/toJSON",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry/toJSON",
             "summary": "The toJSON() method is a serializer; it returns a JSON representation of the performance entry object.",
             "support": {
                 "chrome": {
@@ -511,6 +520,7 @@
             "filename": "api/PerformanceEntry.json",
             "name": "PerformanceEntry",
             "slug": "API/PerformanceEntry",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry",
             "summary": "The PerformanceEntry object encapsulates a single performance metric that is part of the performance timeline. A performance entry can be directly created by making a performance mark or measure (for example by calling the mark() method) at an explicit point in an application. Performance entries are also created in indirect ways such as loading a resource (such as an image).",
             "support": {
                 "chrome": [
@@ -571,6 +581,7 @@
             "filename": "api/PerformanceObserver.json",
             "name": "PerformanceObserver",
             "slug": "API/PerformanceObserver/PerformanceObserver",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/PerformanceObserver",
             "summary": "The PerformanceObserver() constructor creates a new PerformanceObserver object with the given observer callback. The observer callback is invoked when performance entry events are recorded for the entry types that have been registered, via the observe() method.",
             "support": {
                 "chrome": {
@@ -614,6 +625,7 @@
             "filename": "api/PerformanceObserver.json",
             "name": "disconnect",
             "slug": "API/PerformanceObserver/disconnect",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/disconnect",
             "summary": "The disconnect() method of the PerformanceObserver interface is used to stop the performance observer from receiving any performance entry events.",
             "support": {
                 "chrome": {
@@ -659,6 +671,7 @@
             "filename": "api/PerformanceObserver.json",
             "name": "observe",
             "slug": "API/PerformanceObserver/observe",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/observe",
             "summary": "The observe() method of the PerformanceObserver interface is used to specify the set of performance entry types to observe.",
             "support": {
                 "chrome": {
@@ -702,6 +715,7 @@
             "filename": "api/PerformanceObserver.json",
             "name": "supportedEntryTypes",
             "slug": "API/PerformanceObserver/supportedEntryTypes",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/supportedEntryTypes",
             "summary": "The supportedEntryTypes read-only property of the PerformanceObserver interface returns an array of the entryType values supported by the user agent.",
             "support": {
                 "chrome": {
@@ -745,6 +759,7 @@
             "filename": "api/PerformanceObserver.json",
             "name": "takeRecords",
             "slug": "API/PerformanceObserver/takeRecords",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/takeRecords",
             "summary": "The takeRecords() method of the PerformanceObserver interface returns the current list of performance entries stored in the performance observer, emptying it out.",
             "support": {
                 "chrome": {
@@ -788,6 +803,7 @@
             "filename": "api/PerformanceObserver.json",
             "name": "PerformanceObserver",
             "slug": "API/PerformanceObserver",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver",
             "summary": "The PerformanceObserver interface is used to observe performance measurement events and be notified of new performance entries as they are recorded in the browser's performance timeline.",
             "support": {
                 "chrome": {
@@ -833,6 +849,7 @@
             "filename": "api/PerformanceObserverEntryList.json",
             "name": "getEntries",
             "slug": "API/PerformanceObserverEntryList/getEntries",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserverEntryList/getEntries",
             "summary": "The getEntries() method of the PerformanceObserverEntryList interface returns a list of explicitly observed performance entry objects for a given filter. The list's members are determined by the set of entry types specified in the call to the observe() method. The list is available in the observer's callback function (as the first parameter in the callback).",
             "support": {
                 "chrome": {
@@ -876,6 +893,7 @@
             "filename": "api/PerformanceObserverEntryList.json",
             "name": "getEntriesByName",
             "slug": "API/PerformanceObserverEntryList/getEntriesByName",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserverEntryList/getEntriesByName",
             "summary": "The getEntriesByName() method of the PerformanceObserverEntryList interface returns a list of explicitly observed performance entry objects for a given name and entry type. The list's members are determined by the set of entry types specified in the call to the observe() method. The list is available in the observer's callback function (as the first parameter in the callback).",
             "support": {
                 "chrome": {
@@ -919,6 +937,7 @@
             "filename": "api/PerformanceObserverEntryList.json",
             "name": "getEntriesByType",
             "slug": "API/PerformanceObserverEntryList/getEntriesByType",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserverEntryList/getEntriesByType",
             "summary": "The getEntriesByType() method of the PerformanceObserverEntryList returns a list of explicitly observed performance entry objects for a given performance entry type. The list's members are determined by the set of entry types specified in the call to the observe() method. The list is available in the observer's callback function (as the first parameter in the callback).",
             "support": {
                 "chrome": {
@@ -962,6 +981,7 @@
             "filename": "api/PerformanceObserverEntryList.json",
             "name": "PerformanceObserverEntryList",
             "slug": "API/PerformanceObserverEntryList",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserverEntryList",
             "summary": "The PerformanceObserverEntryList interface is a list of performance events that were explicitly observed via the observe() method.",
             "support": {
                 "chrome": {

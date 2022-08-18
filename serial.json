@@ -7,6 +7,7 @@
             "filename": "api/Navigator.json",
             "name": "serial",
             "slug": "API/Navigator/serial",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/serial",
             "summary": "The serial read-only property of the Navigator interface returns a Serial object which represents the entry point into the Web Serial API.",
             "support": {
                 "chrome": {
@@ -47,6 +48,7 @@
             "filename": "api/Serial.json",
             "name": "getPorts",
             "slug": "API/Serial/getPorts",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Serial/getPorts",
             "summary": "The getPorts() method of the Serial interface returns a Promise that resolves with an array of SerialPort objects representing serial ports connected to the host which the origin has permission to access.",
             "support": {
                 "chrome": {
@@ -87,6 +89,7 @@
             "filename": "api/Serial.json",
             "name": "requestPort",
             "slug": "API/Serial/requestPort",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Serial/requestPort",
             "summary": "The Serial.requestPort() method of the Serial interface returns a Promise that resolves with an instance of SerialPort representing the device chosen by the user or rejects if no device was selected.",
             "support": {
                 "chrome": {
@@ -127,6 +130,7 @@
             "filename": "api/Serial.json",
             "name": "Serial",
             "slug": "API/Serial",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Serial",
             "summary": "The Serial interface of the Web Serial API provides attributes and methods for finding and connecting to serial ports from a web page.",
             "support": {
                 "chrome": {
@@ -167,6 +171,7 @@
             "filename": "api/SerialPort.json",
             "name": "close",
             "slug": "API/SerialPort/close",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/close",
             "summary": "The SerialPort.close() method of the SerialPort interface returns a Promise that resolves when the port closes.",
             "support": {
                 "chrome": {
@@ -207,6 +212,7 @@
             "filename": "api/SerialPort.json",
             "name": "connect_event",
             "slug": "API/SerialPort/connect_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/connect_event",
             "summary": "The connect event of the SerialPort interface is fired when a port has connected to the device. This event is only fired for ports associated with removable devices such as those connected via USB.",
             "support": {
                 "chrome": {
@@ -247,6 +253,7 @@
             "filename": "api/SerialPort.json",
             "name": "connect_event",
             "slug": "API/SerialPort/connect_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/connect_event",
             "summary": "The connect event of the SerialPort interface is fired when a port has connected to the device. This event is only fired for ports associated with removable devices such as those connected via USB.",
             "support": {
                 "chrome": {
@@ -287,6 +294,7 @@
             "filename": "api/SerialPort.json",
             "name": "disconnect_event",
             "slug": "API/SerialPort/disconnect_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/disconnect_event",
             "summary": "The disconnect event of the SerialPort interface is fired when the port has disconnected from the device. This event is only fired for ports associated with removable devices such as those connected via USB.",
             "support": {
                 "chrome": {
@@ -327,6 +335,7 @@
             "filename": "api/SerialPort.json",
             "name": "disconnect_event",
             "slug": "API/SerialPort/disconnect_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/disconnect_event",
             "summary": "The disconnect event of the SerialPort interface is fired when the port has disconnected from the device. This event is only fired for ports associated with removable devices such as those connected via USB.",
             "support": {
                 "chrome": {
@@ -367,6 +376,7 @@
             "filename": "api/SerialPort.json",
             "name": "getInfo",
             "slug": "API/SerialPort/getInfo",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/getInfo",
             "summary": "The getInfo() method of the SerialPort interface returns an object whose properties are the vendor ID and product ID of the device.",
             "support": {
                 "chrome": {
@@ -407,6 +417,7 @@
             "filename": "api/SerialPort.json",
             "name": "getSignals",
             "slug": "API/SerialPort/getSignals",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/getSignals",
             "summary": "The SerialPort.getSignals() method of the SerialPort interface returns a Promise that resolves with an object containing the current state of the port's control signals.",
             "support": {
                 "chrome": {
@@ -447,6 +458,7 @@
             "filename": "api/SerialPort.json",
             "name": "open",
             "slug": "API/SerialPort/open",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/open",
             "summary": "The open() method of the SerialPort interface returns a Promise that resolves when the port is opened. By default the port is opened with 8 data bits, 1 stop bit and no parity checking. The baudRate parameter is required.",
             "support": {
                 "chrome": {
@@ -487,6 +499,7 @@
             "filename": "api/SerialPort.json",
             "name": "readable",
             "slug": "API/SerialPort/readable",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/readable",
             "summary": "The readable read-only property of the SerialPort interface returns a ReadableStream for receiving data from the device connected to the port. Chunks read from this stream are instances of Uint8Array. This property is non-null as long as the port is open and has not encountered a fatal error.",
             "support": {
                 "chrome": {
@@ -527,6 +540,7 @@
             "filename": "api/SerialPort.json",
             "name": "setSignals",
             "slug": "API/SerialPort/setSignals",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/setSignals",
             "summary": "The setSignals() method of the SerialPort interface sets control signals on the port and returns a Promise that resolves when they are set.",
             "support": {
                 "chrome": {
@@ -567,6 +581,7 @@
             "filename": "api/SerialPort.json",
             "name": "writable",
             "slug": "API/SerialPort/writable",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort/writable",
             "summary": "The writable read-only property of the SerialPort interface returns a WritableStream for sending data to the device connected to the port. Chunks written to this stream must be instances of ArrayBuffer, TypedArray, or DataView. This property is non-null as long as the port is open and has not encountered a fatal error.",
             "support": {
                 "chrome": {
@@ -607,6 +622,7 @@
             "filename": "api/SerialPort.json",
             "name": "SerialPort",
             "slug": "API/SerialPort",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/SerialPort",
             "summary": "The SerialPort interface of the Web Serial API provides access to a serial port on the host device.",
             "support": {
                 "chrome": {
@@ -647,6 +663,7 @@
             "filename": "api/WorkerNavigator.json",
             "name": "serial",
             "slug": "API/WorkerNavigator/serial",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/serial",
             "summary": "The serial read-only property of the WorkerNavigator interface returns a Serial object which represents the entry point into the Web Serial API.",
             "support": {
                 "chrome": {

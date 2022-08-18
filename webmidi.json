@@ -8,6 +8,7 @@
             "filename": "api/MIDIAccess.json",
             "name": "inputs",
             "slug": "API/MIDIAccess/inputs",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess/inputs",
             "summary": "The inputs read-only property of the MIDIAccess interface provides access to any available MIDI input ports.",
             "support": {
                 "chrome": {
@@ -61,6 +62,7 @@
             "filename": "api/MIDIAccess.json",
             "name": "outputs",
             "slug": "API/MIDIAccess/outputs",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess/outputs",
             "summary": "The outputs read-only property of the MIDIAccess interface provides access to any available MIDI output ports.",
             "support": {
                 "chrome": {
@@ -114,6 +116,7 @@
             "filename": "api/MIDIAccess.json",
             "name": "statechange_event",
             "slug": "API/MIDIAccess/statechange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess/statechange_event",
             "summary": "The statechange event of the MIDIAccess interface is fired when a new MIDI port is added or when an existing port changes state.",
             "support": {
                 "chrome": {
@@ -167,6 +170,7 @@
             "filename": "api/MIDIAccess.json",
             "name": "sysexEnabled",
             "slug": "API/MIDIAccess/sysexEnabled",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess/sysexEnabled",
             "summary": "The sysexEnabled read-only property of the MIDIAccess interface indicates whether system exclusive support is enabled on the current MIDIAccess instance.",
             "support": {
                 "chrome": {
@@ -220,6 +224,7 @@
             "filename": "api/MIDIAccess.json",
             "name": "MIDIAccess",
             "slug": "API/MIDIAccess",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess",
             "summary": "The MIDIAccess interface of the Web MIDI API provides methods for listing MIDI input and output devices, and obtaining access to those devices.",
             "support": {
                 "chrome": {
@@ -273,6 +278,7 @@
             "filename": "api/MIDIConnectionEvent.json",
             "name": "MIDIConnectionEvent",
             "slug": "API/MIDIConnectionEvent/MIDIConnectionEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIConnectionEvent/MIDIConnectionEvent",
             "summary": "The MIDIConnectionEvent() constructor creates a new MIDIConnectionEvent object. Typically this constructor is not used as events are created when a new port becomes available, and the object is passed to the statechange event.",
             "support": {
                 "chrome": {
@@ -326,6 +332,7 @@
             "filename": "api/MIDIConnectionEvent.json",
             "name": "port",
             "slug": "API/MIDIConnectionEvent/port",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIConnectionEvent/port",
             "summary": "The port read-only property of the MIDIConnectionEvent interface returns the port that has been disconnected or connected.",
             "support": {
                 "chrome": {
@@ -379,6 +386,7 @@
             "filename": "api/MIDIConnectionEvent.json",
             "name": "MIDIConnectionEvent",
             "slug": "API/MIDIConnectionEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIConnectionEvent",
             "summary": "The MIDIConnectionEvent interface of the Web MIDI API is the event passed to the statechange event of the MIDIAccess interface and the statechange event of the MIDIPort interface. This occurs any time a new port becomes available, or when a previously available port becomes unavailable. For example, this event is fired whenever a MIDI device is either plugged in to or unplugged from a computer.",
             "support": {
                 "chrome": {
@@ -432,6 +440,7 @@
             "filename": "api/MIDIInput.json",
             "name": "midimessage_event",
             "slug": "API/MIDIInput/midimessage_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIInput/midimessage_event",
             "summary": "The midimessage event of the Web MIDI API is fired when the MIDI port corresponding to this MIDIInput finishes receiving one or more MIDI messages. An instance of MIDIMessageEvent containing the message that was received is passed to the event handler.",
             "support": {
                 "chrome": {
@@ -487,6 +496,7 @@
             "filename": "api/MIDIInput.json",
             "name": "MIDIInput",
             "slug": "API/MIDIInput",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIInput",
             "summary": "The MIDIInput interface of the Web MIDI API receives messages from a MIDI input port.",
             "support": {
                 "chrome": {
@@ -540,6 +550,7 @@
             "filename": "api/MIDIInputMap.json",
             "name": "MIDIInputMap",
             "slug": "API/MIDIInputMap",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIInputMap",
             "summary": "The MIDIInputMap read-only interface of the Web MIDI API provides a Map-like interface to the currently available MIDI input ports. Though it works generally like a map, because it is read-only it does not contain clear(), delete(), or set() functions.",
             "support": {
                 "chrome": {
@@ -591,6 +602,7 @@
             "filename": "api/MIDIOutputMap.json",
             "name": "MIDIOutputMap",
             "slug": "API/MIDIOutputMap",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIOutputMap",
             "summary": "The MIDIOutputMap read-only interface of the Web MIDI API provides a Map-like interface to the currently available MIDI output ports. Although it works like a map, because it is read-only, it does not contain clear(), delete(), or set() functions.",
             "support": {
                 "chrome": {
@@ -644,6 +656,7 @@
             "filename": "api/MIDIMessageEvent.json",
             "name": "MIDIMessageEvent",
             "slug": "API/MIDIMessageEvent/MIDIMessageEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent/MIDIMessageEvent",
             "summary": "The MIDIMessageEvent() constructor creates a new MIDIMessageEvent object. Typically this constructor is not used as events are created when a MIDIInput finishes receiving one or more MIDI messages.",
             "support": {
                 "chrome": {
@@ -699,6 +712,7 @@
             "filename": "api/MIDIMessageEvent.json",
             "name": "data",
             "slug": "API/MIDIMessageEvent/data",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent/data",
             "summary": "The data read-only property of the MIDIMessageEvent interface returns the MIDI data bytes of a single MIDI message.",
             "support": {
                 "chrome": {
@@ -754,6 +768,7 @@
             "filename": "api/MIDIMessageEvent.json",
             "name": "MIDIMessageEvent",
             "slug": "API/MIDIMessageEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent",
             "summary": "The MIDIMessageEvent interface of the Web MIDI API represents the event passed to the midimessage event of the MIDIInput interface. A midimessage event is fired every time a MIDI message is sent from a device represented by a MIDIInput, for example when a MIDI keyboard key is pressed, a knob is tweaked, or a slider is moved.",
             "support": {
                 "chrome": {
@@ -808,6 +823,7 @@
             "filename": "api/MIDIOutput.json",
             "name": "clear",
             "slug": "API/MIDIOutput/clear",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIOutput/clear",
             "summary": "The clear() method of the MIDIOutput interface clears the queue of messages being sent to the output device.",
             "support": {
                 "chrome": {
@@ -863,6 +879,7 @@
             "filename": "api/MIDIOutput.json",
             "name": "send",
             "slug": "API/MIDIOutput/send",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIOutput/send",
             "summary": "The send() method of the MIDIOutput interface queues messages for the corresponding MIDI port. The message can be sent immediately, or with an optional timestamp to delay sending.",
             "support": {
                 "chrome": {
@@ -918,6 +935,7 @@
             "filename": "api/MIDIOutput.json",
             "name": "MIDIOutput",
             "slug": "API/MIDIOutput",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIOutput",
             "summary": "The MIDIOutput interface of the Web MIDI API provides methods to add messages to the queue of an output device, and to clear the queue of messages.",
             "support": {
                 "chrome": {
@@ -973,6 +991,7 @@
             "filename": "api/MIDIPort.json",
             "name": "close",
             "slug": "API/MIDIPort/close",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/close",
             "summary": "The close() method of the MIDIPort interface makes the access to the MIDI device connected to this MIDIPort unavailable.",
             "support": {
                 "chrome": {
@@ -1026,6 +1045,7 @@
             "filename": "api/MIDIPort.json",
             "name": "connection",
             "slug": "API/MIDIPort/connection",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/connection",
             "summary": "The connection property of the MIDIPort interface returns the connection state of the port.",
             "support": {
                 "chrome": {
@@ -1079,6 +1099,7 @@
             "filename": "api/MIDIPort.json",
             "name": "id",
             "slug": "API/MIDIPort/id",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/id",
             "summary": "The id read-only property of the MIDIPort interface returns the unique ID of the port.",
             "support": {
                 "chrome": {
@@ -1132,6 +1153,7 @@
             "filename": "api/MIDIPort.json",
             "name": "manufacturer",
             "slug": "API/MIDIPort/manufacturer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/manufacturer",
             "summary": "The manufacturer read-only property of the MIDIPort interface returns the manufacturer of the port.",
             "support": {
                 "chrome": {
@@ -1185,6 +1207,7 @@
             "filename": "api/MIDIPort.json",
             "name": "name",
             "slug": "API/MIDIPort/name",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/name",
             "summary": "The name read-only property of the MIDIPort interface returns the system name of the port.",
             "support": {
                 "chrome": {
@@ -1238,6 +1261,7 @@
             "filename": "api/MIDIPort.json",
             "name": "open",
             "slug": "API/MIDIPort/open",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/open",
             "summary": "The open() method of the MIDIPort interface makes the MIDI device connected to this MIDIPort explicitly available.",
             "support": {
                 "chrome": {
@@ -1291,6 +1315,7 @@
             "filename": "api/MIDIPort.json",
             "name": "state",
             "slug": "API/MIDIPort/state",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/state",
             "summary": "The state read-only property of the MIDIPort interface returns the state of the port.",
             "support": {
                 "chrome": {
@@ -1344,6 +1369,7 @@
             "filename": "api/MIDIPort.json",
             "name": "statechange_event",
             "slug": "API/MIDIPort/statechange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/statechange_event",
             "summary": "The statechange event of the MIDIPort interface is fired when a port changes from open to closed, or closed to open.",
             "support": {
                 "chrome": {
@@ -1397,6 +1423,7 @@
             "filename": "api/MIDIPort.json",
             "name": "type",
             "slug": "API/MIDIPort/type",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/type",
             "summary": "The type read-only property of the MIDIPort interface returns the type of the port, indicating whether this is an input or output MIDI port.",
             "support": {
                 "chrome": {
@@ -1450,6 +1477,7 @@
             "filename": "api/MIDIPort.json",
             "name": "version",
             "slug": "API/MIDIPort/version",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort/version",
             "summary": "The version read-only property of the MIDIPort interface returns the version of the port.",
             "support": {
                 "chrome": {
@@ -1503,6 +1531,7 @@
             "filename": "api/MIDIPort.json",
             "name": "MIDIPort",
             "slug": "API/MIDIPort",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MIDIPort",
             "summary": "The MIDIPort interface of the Web MIDI API represents a MIDI input or output port.",
             "support": {
                 "chrome": {
@@ -1556,6 +1585,7 @@
             "filename": "api/Navigator.json",
             "name": "requestMIDIAccess",
             "slug": "API/Navigator/requestMIDIAccess",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/requestMIDIAccess",
             "summary": "The requestMIDIAccess() method of the Navigator interface returns a Promise representing a request for access to MIDI devices on a user's system. This method is part of the Web MIDI API, which provides a means for accessing, enumerating, and manipulating MIDI devices.",
             "support": {
                 "chrome": {
@@ -1612,6 +1642,7 @@
             "filename": "http/headers/Feature-Policy.json",
             "name": "midi",
             "slug": "HTTP/Headers/Feature-Policy/midi",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/midi",
             "summary": "The HTTP Feature-Policy header midi directive controls whether the current document is allowed to use the Web MIDI API. When this policy is enabled, the Promise returned by Navigator.requestMIDIAccess() will reject with a DOMException.",
             "support": {
                 "chrome": {

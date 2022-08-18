@@ -9,6 +9,7 @@
             "filename": "api/Performance.json",
             "name": "clearResourceTimings",
             "slug": "API/Performance/clearResourceTimings",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/clearResourceTimings",
             "summary": "The clearResourceTimings() method removes all performance entries with an entryType of \"resource\" from the browser's performance data buffer and sets the size of the performance data buffer to zero. To set the size of the browser's performance data buffer, use the Performance.setResourceTimingBufferSize() method.",
             "support": {
                 "chrome": [
@@ -71,6 +72,7 @@
             "filename": "api/Performance.json",
             "name": "resourcetimingbufferfull_event",
             "slug": "API/Performance/resourcetimingbufferfull_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/resourcetimingbufferfull_event",
             "summary": "The resourcetimingbufferfull event is fired when the browser's resource timing buffer is full.",
             "support": {
                 "chrome": [
@@ -133,6 +135,7 @@
             "filename": "api/Performance.json",
             "name": "setResourceTimingBufferSize",
             "slug": "API/Performance/setResourceTimingBufferSize",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/setResourceTimingBufferSize",
             "summary": "The setResourceTimingBufferSize() method sets the browser's resource timing buffer size to the specified number of \"resource\" performance entry type objects.",
             "support": {
                 "chrome": [
@@ -195,6 +198,7 @@
             "filename": "api/Performance.json",
             "name": "Performance",
             "slug": "API/Performance",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance",
             "summary": "The Performance interface provides access to performance-related information for the current page. It's part of the High Resolution Time API, but is enhanced by the Performance Timeline API, the Navigation Timing API, the User Timing API, and the Resource Timing API.",
             "support": {
                 "chrome": {
@@ -249,6 +253,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "connectEnd",
             "slug": "API/PerformanceResourceTiming/connectEnd",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/connectEnd",
             "summary": "The connectEnd read-only property returns the timestamp immediately after the browser finishes establishing the connection to the server to retrieve the resource. The timestamp value includes the time interval to establish the transport connection, as well as other time intervals such as SSL handshake and SOCKS authentication.",
             "support": {
                 "chrome": {
@@ -295,6 +300,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "connectStart",
             "slug": "API/PerformanceResourceTiming/connectStart",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/connectStart",
             "summary": "The connectStart read-only property returns the timestamp immediately before the user agent starts establishing the connection to the server to retrieve the resource.",
             "support": {
                 "chrome": {
@@ -340,6 +346,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "decodedBodySize",
             "slug": "API/PerformanceResourceTiming/decodedBodySize",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/decodedBodySize",
             "summary": "The decodedBodySize read-only property returns the size (in octets) received from the fetch (HTTP or cache) of the message body, after removing any applied content-codings. If the resource is retrieved from an application cache or local resources, it returns the size of the payload after removing any applied content-codings.",
             "support": {
                 "chrome": {
@@ -382,6 +389,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "domainLookupEnd",
             "slug": "API/PerformanceResourceTiming/domainLookupEnd",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/domainLookupEnd",
             "summary": "The domainLookupEnd read-only property returns the timestamp immediately after the browser finishes the domain name lookup for the resource.",
             "support": {
                 "chrome": {
@@ -424,6 +432,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "domainLookupStart",
             "slug": "API/PerformanceResourceTiming/domainLookupStart",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/domainLookupStart",
             "summary": "The domainLookupStart read-only property returns the timestamp immediately before the browser starts the domain name lookup for the resource.",
             "support": {
                 "chrome": {
@@ -465,6 +474,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "encodedBodySize",
             "slug": "API/PerformanceResourceTiming/encodedBodySize",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/encodedBodySize",
             "summary": "The encodedBodySize read-only property represents the size (in octets) received from the fetch (HTTP or cache), of the payload body, before removing any applied content-codings.",
             "support": {
                 "chrome": {
@@ -507,6 +517,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "fetchStart",
             "slug": "API/PerformanceResourceTiming/fetchStart",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/fetchStart",
             "summary": "The fetchStart read-only property represents a timestamp immediately before the browser starts to fetch the resource.",
             "support": {
                 "chrome": {
@@ -549,6 +560,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "initiatorType",
             "slug": "API/PerformanceResourceTiming/initiatorType",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/initiatorType",
             "summary": "The initiatorType read-only property is a string that represents the type of resource that initiated the performance event.",
             "support": {
                 "chrome": {
@@ -591,6 +603,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "nextHopProtocol",
             "slug": "API/PerformanceResourceTiming/nextHopProtocol",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/nextHopProtocol",
             "summary": "The nextHopProtocol read-only property is a string representing the network protocol used to fetch the resource, as identified by the ALPN Protocol ID (RFC7301).",
             "support": {
                 "chrome": {
@@ -633,6 +646,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "redirectEnd",
             "slug": "API/PerformanceResourceTiming/redirectEnd",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/redirectEnd",
             "summary": "The redirectEnd read-only property returns a timestamp immediately after receiving the last byte of the response of the last redirect.",
             "support": {
                 "chrome": {
@@ -675,6 +689,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "redirectStart",
             "slug": "API/PerformanceResourceTiming/redirectStart",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/redirectStart",
             "summary": "The redirectStart read-only property returns a timestamp representing the start time of the fetch which that initiates the redirect.",
             "support": {
                 "chrome": {
@@ -717,6 +732,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "requestStart",
             "slug": "API/PerformanceResourceTiming/requestStart",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/requestStart",
             "summary": "The requestStart read-only property returns a timestamp of the time immediately before the browser starts requesting the resource from the server, cache, or local resource. If the transport connection fails and the browser retires the request, the value returned will be the start of the retry request.",
             "support": {
                 "chrome": {
@@ -759,6 +775,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "responseEnd",
             "slug": "API/PerformanceResourceTiming/responseEnd",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseEnd",
             "summary": "The responseEnd read-only property returns a timestamp immediately after the browser receives the last byte of the resource or immediately before the transport connection is closed, whichever comes first.",
             "support": {
                 "chrome": {
@@ -801,6 +818,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "responseStart",
             "slug": "API/PerformanceResourceTiming/responseStart",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseStart",
             "summary": "The responseStart read-only property returns a timestamp immediately after the browser receives the first byte of the response from the server, cache, or local resource.",
             "support": {
                 "chrome": {
@@ -843,6 +861,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "secureConnectionStart",
             "slug": "API/PerformanceResourceTiming/secureConnectionStart",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/secureConnectionStart",
             "summary": "The secureConnectionStart read-only property returns a timestamp immediately before the browser starts the handshake process to secure the current connection. If a secure connection is not used, the property returns zero.",
             "support": {
                 "chrome": {
@@ -885,6 +904,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "toJSON",
             "slug": "API/PerformanceResourceTiming/toJSON",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/toJSON",
             "summary": "The toJSON() method is a serializer that returns a JSON representation of the PerformanceResourceTiming object.",
             "support": {
                 "chrome": {
@@ -926,6 +946,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "transferSize",
             "slug": "API/PerformanceResourceTiming/transferSize",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/transferSize",
             "summary": "The transferSize read-only property represents the size (in octets) of the fetched resource. The size includes the response header fields plus the response payload body (as defined by RFC7230).",
             "support": {
                 "chrome": {
@@ -968,6 +989,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "workerStart",
             "slug": "API/PerformanceResourceTiming/workerStart",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/workerStart",
             "summary": "The workerStart read-only property of the PerformanceResourceTiming interface returns a DOMHighResTimeStamp immediately before dispatching the FetchEvent if a Service Worker thread is already running, or immediately before starting the Service Worker thread if it is not already running. If the resource is not intercepted by a Service Worker the property will always return 0.",
             "support": {
                 "chrome": {
@@ -1014,6 +1036,7 @@
             "filename": "api/PerformanceResourceTiming.json",
             "name": "PerformanceResourceTiming",
             "slug": "API/PerformanceResourceTiming",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming",
             "summary": "The PerformanceResourceTiming interface enables retrieval and analysis of detailed network timing data regarding the loading of an application's resources. An application can use the timing metrics to determine, for example, the length of time it takes to fetch a specific resource, such as an XMLHttpRequest, <SVG>, image, or script.",
             "support": {
                 "chrome": {
@@ -1056,6 +1079,7 @@
             "filename": "http/headers/Timing-Allow-Origin.json",
             "name": "Timing-Allow-Origin",
             "slug": "HTTP/Headers/Timing-Allow-Origin",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin",
             "summary": "The Timing-Allow-Origin response header specifies origins that are allowed to see values of attributes retrieved via features of the Resource Timing API, which would otherwise be reported as zero due to cross-origin restrictions.",
             "support": {
                 "chrome": {

@@ -7,6 +7,7 @@
             "filename": "api/Navigator.json",
             "name": "xr",
             "slug": "API/Navigator/xr",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/xr",
             "summary": "The read-only xr property provided by the Navigator interface returns an XRSystem object which can be used to access the WebXR Device API.",
             "support": {
                 "chrome": {
@@ -49,6 +50,7 @@
             "filename": "api/WebGL2RenderingContext.json",
             "name": "makeXRCompatible",
             "slug": "API/WebGLRenderingContext/makeXRCompatible",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/makeXRCompatible",
             "summary": "The WebGLRenderingContext method makeXRCompatible() ensures that the rendering context described by the WebGLRenderingContext is ready to render the scene for the immersive WebXR device on which it will be displayed. If necessary, the WebGL layer may reconfigure the context to be ready to render to a different device than it originally was.",
             "support": {
                 "chrome": {
@@ -89,6 +91,7 @@
             "filename": "api/WebGLRenderingContext.json",
             "name": "makeXRCompatible",
             "slug": "API/WebGLRenderingContext/makeXRCompatible",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/makeXRCompatible",
             "summary": "The WebGLRenderingContext method makeXRCompatible() ensures that the rendering context described by the WebGLRenderingContext is ready to render the scene for the immersive WebXR device on which it will be displayed. If necessary, the WebGL layer may reconfigure the context to be ready to render to a different device than it originally was.",
             "support": {
                 "chrome": {
@@ -135,6 +138,7 @@
             "filename": "api/XRBoundedReferenceSpace.json",
             "name": "boundsGeometry",
             "slug": "API/XRBoundedReferenceSpace/boundsGeometry",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRBoundedReferenceSpace/boundsGeometry",
             "summary": "The read-only XRBoundedReferenceSpace property boundsGeometry is an array of DOMPointReadOnly objects which specifies the points making up a polygon inside which the viewer is allowed to move. Each point is treated as a two-dimensional point, and must be located at ground level (that is, its y coordinate must be 0).",
             "support": {
                 "chrome": {
@@ -181,6 +185,7 @@
             "filename": "api/XRBoundedReferenceSpace.json",
             "name": "XRBoundedReferenceSpace",
             "slug": "API/XRBoundedReferenceSpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRBoundedReferenceSpace",
             "summary": "The WebXR Device API's XRBoundedReferenceSpace interface describes a virtual world reference space which has preset boundaries. This extends XRReferenceSpace, which describes an essentially unrestricted space around the viewer's position. These bounds are defined using an array of points, each of which defines a vertex in a polygon inside which the user is allowed to move.",
             "support": {
                 "chrome": {
@@ -227,6 +232,7 @@
             "filename": "api/XRFrame.json",
             "name": "getPose",
             "slug": "API/XRFrame/getPose",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getPose",
             "summary": "The XRFrame method getPose() returns the relative position and orientation—the pose—of one XRSpace to that of another space. With this, you can observe the motion of objects relative to each other and to fixed locations throughout the scene.",
             "support": {
                 "chrome": {
@@ -273,6 +279,7 @@
             "filename": "api/XRFrame.json",
             "name": "getViewerPose",
             "slug": "API/XRFrame/getViewerPose",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getViewerPose",
             "summary": "The getViewerPose() method, a member of the XRFrame interface, returns a XRViewerPose object which describes the viewer's pose (position and orientation) relative to the specified reference space.",
             "support": {
                 "chrome": {
@@ -319,6 +326,7 @@
             "filename": "api/XRFrame.json",
             "name": "session",
             "slug": "API/XRFrame/session",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/session",
             "summary": "An XRFrame object's read-only session property returns the XRSession object that generated the frame.",
             "support": {
                 "chrome": {
@@ -365,6 +373,7 @@
             "filename": "api/XRFrame.json",
             "name": "XRFrame",
             "slug": "API/XRFrame",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame",
             "summary": "A WebXR Device API XRFrame object is passed into the requestAnimationFrame() callback function and provides access to the information needed in order to render a single frame of animation for an XRSession describing a VR or AR scene. Events which communicate the tracking state of objects also provide an XRFrame reference as part of their structure.",
             "support": {
                 "chrome": {
@@ -411,6 +420,7 @@
             "filename": "api/XRInputSource.json",
             "name": "gripSpace",
             "slug": "API/XRInputSource/gripSpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/gripSpace",
             "summary": "The read-only XRInputSource property gripSpace returns an XRSpace whose native origin tracks the pose used to render virtual objects so they appear to be held in (or part of) the user's hand. For example, if a user were holding a virtual straight rod, the native origin of this XRSpace would be located at the approximate center of mass of the user's fist.",
             "support": {
                 "chrome": {
@@ -457,6 +467,7 @@
             "filename": "api/XRInputSource.json",
             "name": "handedness",
             "slug": "API/XRInputSource/handedness",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/handedness",
             "summary": "The read-only XRInputSource property handedness indicates which of the user's hands the WebXR input source is associated with, or if it's not associated with a hand at all.",
             "support": {
                 "chrome": {
@@ -503,6 +514,7 @@
             "filename": "api/XRInputSource.json",
             "name": "profiles",
             "slug": "API/XRInputSource/profiles",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/profiles",
             "summary": "The read-only XRInputSource property profiles returns an array of strings, each describing a configuration profile for the input source. The profile strings are listed in order of specificity, with the most specific profile listed first.",
             "support": {
                 "chrome": {
@@ -549,6 +561,7 @@
             "filename": "api/XRInputSource.json",
             "name": "targetRayMode",
             "slug": "API/XRInputSource/targetRayMode",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRayMode",
             "summary": "The read-only XRInputSource property targetRayMode indicates the method by which the target ray for the input source should be generated and how it should be presented to the user.",
             "support": {
                 "chrome": {
@@ -595,6 +608,7 @@
             "filename": "api/XRInputSource.json",
             "name": "targetRaySpace",
             "slug": "API/XRInputSource/targetRaySpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRaySpace",
             "summary": "The read-only XRInputSource property targetRaySpace returns an XRSpace (typically an XRReferenceSpace) representing the position and orientation of the target ray in the virtual space. Its native origin tracks the position of the origin point of the target ray, and its orientation indicates the orientation of the controller device itself. These values, interpreted in the context of the input source's targetRayMode, can be used both to fully interpret the device as an input source.",
             "support": {
                 "chrome": {
@@ -641,6 +655,7 @@
             "filename": "api/XRInputSource.json",
             "name": "XRInputSource",
             "slug": "API/XRInputSource",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource",
             "summary": "The WebXR Device API's XRInputSource interface describes a single source of control input which is part of the user's WebXR-compatible virtual or augmented reality system. The device is specific to the platform being used, but provides the direction in which it is being aimed and optionally may generate events if the user triggers performs actions using the device.",
             "support": {
                 "chrome": {
@@ -687,6 +702,7 @@
             "filename": "api/XRInputSourceArray.json",
             "name": "length",
             "slug": "API/XRInputSourceArray/length",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray/length",
             "summary": "The read-only length property returns an integer value indicating the number of items in the input source list represented by the XRInputSourceArray object.",
             "support": {
                 "chrome": {
@@ -733,6 +749,7 @@
             "filename": "api/XRInputSourceArray.json",
             "name": "XRInputSourceArray",
             "slug": "API/XRInputSourceArray",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray",
             "summary": "The interface XRInputSourceArray represents a live list of WebXR input sources, and is used as the return value of the XRSession property inputSources. Each entry is an XRInputSource representing one input device connected to the WebXR system.",
             "support": {
                 "chrome": {
@@ -779,6 +796,7 @@
             "filename": "api/XRInputSourceEvent.json",
             "name": "XRInputSourceEvent",
             "slug": "API/XRInputSourceEvent/XRInputSourceEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/XRInputSourceEvent",
             "summary": "The XRInputSourceEvent() constructor creates and returns a new XRInputSourceEvent object describing an event (state change) which has occurred on a WebXR user input device represented by an XRInputSource.",
             "support": {
                 "chrome": {
@@ -825,6 +843,7 @@
             "filename": "api/XRInputSourceEvent.json",
             "name": "frame",
             "slug": "API/XRInputSourceEvent/frame",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/frame",
             "summary": "The read-only XRInputSourceEvent property frame specifies an XRFrame object representing the event frame during which a WebXR user input occurred. This may thus be an event which occurred in the past rather than a current or impending event.",
             "support": {
                 "chrome": {
@@ -871,6 +890,7 @@
             "filename": "api/XRInputSourceEvent.json",
             "name": "inputSource",
             "slug": "API/XRInputSourceEvent/inputSource",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/inputSource",
             "summary": "The XRInputSourceEvent interface's read-only inputSource property specifies the XRInputSource which generated the input event. This information lets you handle the event appropriately given the particulars of the user input device being manipulated.",
             "support": {
                 "chrome": {
@@ -917,6 +937,7 @@
             "filename": "api/XRInputSourceEvent.json",
             "name": "XRInputSourceEvent",
             "slug": "API/XRInputSourceEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent",
             "summary": "The WebXR Device API's XRInputSourceEvent interface describes an event which has occurred on a WebXR user input device such as a hand controller, gaze tracking system, or motion tracking system. More specifically, they represent a change in the state of an XRInputSource.",
             "support": {
                 "chrome": {
@@ -963,6 +984,7 @@
             "filename": "api/XRInputSourcesChangeEvent.json",
             "name": "XRInputSourcesChangeEvent",
             "slug": "API/XRInputSourcesChangeEvent/XRInputSourcesChangeEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/XRInputSourcesChangeEvent",
             "summary": "The XRInputSourcesChangeEvent() constructor creates and returns a new XRInputSourcesChangeEvent object, representing an update to the list of available WebXR input devices. You won't typically call this constructor yourself, as these events are created and sent to you by the WebXR system.",
             "support": {
                 "chrome": {
@@ -1009,6 +1031,7 @@
             "filename": "api/XRInputSourcesChangeEvent.json",
             "name": "added",
             "slug": "API/XRInputSourcesChangeEvent/added",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/added",
             "summary": "The read-only XRInputSourcesChangeEvent property added is a list of zero or more input sources, each identified using an XRInputSource object, which have been newly made available for use.",
             "support": {
                 "chrome": {
@@ -1055,6 +1078,7 @@
             "filename": "api/XRInputSourcesChangeEvent.json",
             "name": "removed",
             "slug": "API/XRInputSourcesChangeEvent/removed",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/removed",
             "summary": "The read-only XRInputSourcesChangeEvent property removed is an array of zero or more XRInputSource objects representing the input sources that have been removed from the XRSession.",
             "support": {
                 "chrome": {
@@ -1101,6 +1125,7 @@
             "filename": "api/XRInputSourcesChangeEvent.json",
             "name": "session",
             "slug": "API/XRInputSourcesChangeEvent/session",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/session",
             "summary": "The XRInputSourcesChangeEvent property session specifies the XRSession to which the input source list change event applies.",
             "support": {
                 "chrome": {
@@ -1147,6 +1172,7 @@
             "filename": "api/XRInputSourcesChangeEvent.json",
             "name": "XRInputSourcesChangeEvent",
             "slug": "API/XRInputSourcesChangeEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent",
             "summary": "The WebXR Device API interface XRInputSourcesChangeEvent is used to represent the inputsourceschange event sent to an XRSession when the set of available WebXR input controllers changes.",
             "support": {
                 "chrome": {
@@ -1193,6 +1219,7 @@
             "filename": "api/XRLayer.json",
             "name": "XRLayer",
             "slug": "API/XRLayer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRLayer",
             "summary": "The XRLayer interface of the WebXR Device API is the base class for WebXR layer types. It inherits methods from EventTarget.",
             "support": {
                 "chrome": {
@@ -1233,6 +1260,7 @@
             "filename": "api/XRPermissionStatus.json",
             "name": "granted",
             "slug": "API/XRPermissionStatus/granted",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRPermissionStatus/granted",
             "summary": "The WebXR Device API's XRPermissionStatus interface's granted property is an array of strings, each identifying one of the WebXR features for which permission has been granted as of the time at which the Permission API's navigator.permissions.query() method was called.",
             "support": {
                 "chrome": {
@@ -1269,6 +1297,7 @@
             "filename": "api/XRPermissionStatus.json",
             "name": "XRPermissionStatus",
             "slug": "API/XRPermissionStatus",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRPermissionStatus",
             "summary": "The XRPermissionStatus interface defines the object returned by calling navigator.permissions.query() for the xr permission name; it indicates whether or not the app or site has permission to use WebXR, and may be monitored over time for changes to that permissions tate.",
             "support": {
                 "chrome": {
@@ -1318,6 +1347,7 @@
             "filename": "api/XRPose.json",
             "name": "emulatedPosition",
             "slug": "API/XRPose/emulatedPosition",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/emulatedPosition",
             "summary": "The emulatedPosition read-only attribute of the XRPose interface is a Boolean value indicating whether or not both the position component of the pose's transform is directly taken from the XR device, or it's simulated or computed based on other sources.",
             "support": {
                 "chrome": {
@@ -1364,6 +1394,7 @@
             "filename": "api/XRPose.json",
             "name": "transform",
             "slug": "API/XRPose/transform",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRPose/transform",
             "summary": "The transform read-only attribute of the XRPose interface is a XRRigidTransform object providing the position and orientation of the pose relative to the base XRSpace as specified when the pose was obtained by calling XRFrame.getPose().",
             "support": {
                 "chrome": {
@@ -1410,6 +1441,7 @@
             "filename": "api/XRPose.json",
             "name": "XRPose",
             "slug": "API/XRPose",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRPose",
             "summary": "XRPose is a WebXR API interface representing a position and orientation in the 3D space, relative to the XRSpace within which it resides. The XRSpace—which is either an XRReferenceSpace or an XRBoundedReferenceSpace—defines the coordinate system used for the pose and, in the case of an XRViewerPose, its underlying views.",
             "support": {
                 "chrome": {
@@ -1456,6 +1488,7 @@
             "filename": "api/XRReferenceSpace.json",
             "name": "getOffsetReferenceSpace",
             "slug": "API/XRReferenceSpace/getOffsetReferenceSpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/getOffsetReferenceSpace",
             "summary": "The XRReferenceSpace interface's getOffsetReferenceSpace() method returns a new reference space object which describes the relative difference in position between the object on which the method is called and a given point in 3D space. The object returned by getOffsetReferenceSpace() is an XRReferenceSpace if called on an XRReferenceSpace, or an XRBoundedReferenceSpace if called on an object of that type.",
             "support": {
                 "chrome": {
@@ -1502,6 +1535,7 @@
             "filename": "api/XRReferenceSpace.json",
             "name": "reset_event",
             "slug": "API/XRReferenceSpace/reset_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/reset_event",
             "summary": "The reset event is sent to an XRReferenceSpace object when a discontinuity is detected in either the native origin or the effective origin, causing a jump in the position or orientation of objects oriented using the reference space. This is common when the user calibrates or recalibrates an XR device, or if the device automatically changes its origin after losing tracking of the user, then re-gaining it.",
             "support": {
                 "chrome": {
@@ -1548,6 +1582,7 @@
             "filename": "api/XRReferenceSpace.json",
             "name": "reset_event",
             "slug": "API/XRReferenceSpace/reset_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/reset_event",
             "summary": "The reset event is sent to an XRReferenceSpace object when a discontinuity is detected in either the native origin or the effective origin, causing a jump in the position or orientation of objects oriented using the reference space. This is common when the user calibrates or recalibrates an XR device, or if the device automatically changes its origin after losing tracking of the user, then re-gaining it.",
             "support": {
                 "chrome": {
@@ -1594,6 +1629,7 @@
             "filename": "api/XRReferenceSpace.json",
             "name": "XRReferenceSpace",
             "slug": "API/XRReferenceSpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace",
             "summary": "The WebXR Device API's XRReferenceSpace interface describes the coordinate system for a specific tracked entity or object within the virtual world using a specified tracking behavior. The tracking behavior is defined by the selected reference space type. It expands upon the base class, XRSpace, by adding support for several different tracking behaviors as well as to request a new reference space which describes the offset transform between the tracked object and another location in the world.",
             "support": {
                 "chrome": {
@@ -1640,6 +1676,7 @@
             "filename": "api/XRReferenceSpaceEvent.json",
             "name": "XRReferenceSpaceEvent",
             "slug": "API/XRReferenceSpaceEvent/XRReferenceSpaceEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/XRReferenceSpaceEvent",
             "summary": "The XRReferenceSpaceEvent() constructor is used to create a new XRReferenceSpaceEvent object, which represents an event regarding the state of a WebXR reference space object, XRReferenceSpace.",
             "support": {
                 "chrome": {
@@ -1686,6 +1723,7 @@
             "filename": "api/XRReferenceSpaceEvent.json",
             "name": "referenceSpace",
             "slug": "API/XRReferenceSpaceEvent/referenceSpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/referenceSpace",
             "summary": "The read-only XRReferenceSpaceEvent property referenceSpace specifies the reference space which is the originator of the event.",
             "support": {
                 "chrome": {
@@ -1732,6 +1770,7 @@
             "filename": "api/XRReferenceSpaceEvent.json",
             "name": "transform",
             "slug": "API/XRReferenceSpaceEvent/transform",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/transform",
             "summary": "The read-only XRReferenceSpaceEvent property transform indicates the position and orientation of the affected referenceSpace's native origin after the changes the event represents are applied. The transform is defined using the old coordinate system, which allows it to be used to convert coordinates from the pre-event coordinate system to the post-event coordinate system.",
             "support": {
                 "chrome": {
@@ -1778,6 +1817,7 @@
             "filename": "api/XRReferenceSpaceEvent.json",
             "name": "XRReferenceSpaceEvent",
             "slug": "API/XRReferenceSpaceEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent",
             "summary": "The WebXR Device API interface XRReferenceSpaceEvent represents an event sent to an XRReferenceSpace. Currently, the only event that uses this type is the reset event.",
             "support": {
                 "chrome": {
@@ -1824,6 +1864,7 @@
             "filename": "api/XRRenderState.json",
             "name": "baseLayer",
             "slug": "API/XRRenderState/baseLayer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/baseLayer",
             "summary": "The read-only baseLayer property of the XRRenderState interface returns the XRWebGLLayer instance that is the source of bitmap images and a description of how the image is to be rendered in the device.",
             "support": {
                 "chrome": {
@@ -1868,6 +1909,7 @@
             "filename": "api/XRRenderState.json",
             "name": "depthFar",
             "slug": "API/XRRenderState/depthFar",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/depthFar",
             "summary": "The depthFar read-only property of the XRRenderState interface returns the distance in meters of the far clip plane from the viewer.",
             "support": {
                 "chrome": {
@@ -1912,6 +1954,7 @@
             "filename": "api/XRRenderState.json",
             "name": "depthNear",
             "slug": "API/XRRenderState/depthNear",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/depthNear",
             "summary": "The depthNear read-only property of the XRRenderState interface returns the distance in meters of the near clip plane from the viewer.",
             "support": {
                 "chrome": {
@@ -1956,6 +1999,7 @@
             "filename": "api/XRRenderState.json",
             "name": "inlineVerticalFieldOfView",
             "slug": "API/XRRenderState/inlineVerticalFieldOfView",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState/inlineVerticalFieldOfView",
             "summary": "The read-only inlineVerticalFieldOfView property of the XRRenderState interface returns the default vertical field of view for \"inline\" sessions and null for all immersive sessions.",
             "support": {
                 "chrome": {
@@ -2000,6 +2044,7 @@
             "filename": "api/XRRenderState.json",
             "name": "XRRenderState",
             "slug": "API/XRRenderState",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRenderState",
             "summary": "The XRRenderState interface of the WebXR Device API contains configurable values which affect how the imagery generated by an XRSession gets composited. These properties include the range of distances from the viewer within which content should be rendered, the vertical field of view (for inline presentations), and a reference to the XRWebGLLayer being used as the target for rendering the scene prior to it being presented on the XR device's display or displays.",
             "support": {
                 "chrome": {
@@ -2044,6 +2089,7 @@
             "filename": "api/XRRigidTransform.json",
             "name": "XRRigidTransform",
             "slug": "API/XRRigidTransform/XRRigidTransform",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/XRRigidTransform",
             "summary": "The XRRigidTransform() constructor creates a new XRRigidTransform object, representing the position and orientation of a point or object. Among other things, XRRigidTransform is used when providing a transform to translate between coordinate systems across spaces.",
             "support": {
                 "chrome": {
@@ -2090,6 +2136,7 @@
             "filename": "api/XRRigidTransform.json",
             "name": "inverse",
             "slug": "API/XRRigidTransform/inverse",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/inverse",
             "summary": "The read-only inverse property of the XRRigidTransform interface returns another XRRigidTransform object which is the inverse of its owning transform. That is, you can always get the inverse of any XRRigidTransform using its inverse property, instead of having to explicitly generate it.",
             "support": {
                 "chrome": {
@@ -2136,6 +2183,7 @@
             "filename": "api/XRRigidTransform.json",
             "name": "matrix",
             "slug": "API/XRRigidTransform/matrix",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/matrix",
             "summary": "The read-only XRRigidTransform property matrix returns the transform matrix represented by the object. The returned matrix can then be premultiplied with a column vector to rotate the vector by the 3D rotation specified by the orientation, then translate it by the position.",
             "support": {
                 "chrome": {
@@ -2182,6 +2230,7 @@
             "filename": "api/XRRigidTransform.json",
             "name": "orientation",
             "slug": "API/XRRigidTransform/orientation",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/orientation",
             "summary": "The read-only XRRigidTransform property orientation is a DOMPointReadOnly containing a normalized quaternion (also called a unit quaternion or versor) specifying the rotational component of the transform represented by the object. If you specify a quaternion whose length is not exactly 1.0 meters, it will be normalized for you.",
             "support": {
                 "chrome": {
@@ -2228,6 +2277,7 @@
             "filename": "api/XRRigidTransform.json",
             "name": "position",
             "slug": "API/XRRigidTransform/position",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform/position",
             "summary": "The read-only XRRigidTransform property position is a DOMPointReadOnly object which provides the 3D point, specified in meters, describing the translation component of the transform.",
             "support": {
                 "chrome": {
@@ -2274,6 +2324,7 @@
             "filename": "api/XRRigidTransform.json",
             "name": "XRRigidTransform",
             "slug": "API/XRRigidTransform",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRRigidTransform",
             "summary": "The XRRigidTransform is a WebXR API interface that represents the 3D geometric transform described by a position and orientation.",
             "support": {
                 "chrome": {
@@ -2320,6 +2371,7 @@
             "filename": "api/XRSession.json",
             "name": "cancelAnimationFrame",
             "slug": "API/XRSession/cancelAnimationFrame",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/cancelAnimationFrame",
             "summary": "The cancelAnimationFrame() method of the XRSession interface cancels an animation frame which was previously requested by calling requestAnimationFrame.",
             "support": {
                 "chrome": {
@@ -2366,6 +2418,7 @@
             "filename": "api/XRSession.json",
             "name": "end",
             "slug": "API/XRSession/end",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/end",
             "summary": "The end() method shuts down the XRSession on which it's called, returning a promise which resolves once the session has fully shut down.",
             "support": {
                 "chrome": {
@@ -2412,6 +2465,7 @@
             "filename": "api/XRSession.json",
             "name": "end_event",
             "slug": "API/XRSession/end_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/end_event",
             "summary": "An end event is fired at an XRSession object when the WebXR session has ended, either because the web application has chosen to stop the session, or because the user agent terminated the session.",
             "support": {
                 "chrome": {
@@ -2458,6 +2512,7 @@
             "filename": "api/XRSession.json",
             "name": "end_event",
             "slug": "API/XRSession/end_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/end_event",
             "summary": "An end event is fired at an XRSession object when the WebXR session has ended, either because the web application has chosen to stop the session, or because the user agent terminated the session.",
             "support": {
                 "chrome": {
@@ -2504,6 +2559,7 @@
             "filename": "api/XRSession.json",
             "name": "inputSources",
             "slug": "API/XRSession/inputSources",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/inputSources",
             "summary": "The read-only inputSources property of the XRSession interface returns an XRInputSourceArray object which lists all controllers and input devices which are expressly associated with the XR device and are currently available. These controllers may include handheld controllers, XR-equipped gloves, optically tracked hands, and gaze-based input methods. Keyboards, gamepads, and mice are not considered WebXR input sources.",
             "support": {
                 "chrome": {
@@ -2550,6 +2606,7 @@
             "filename": "api/XRSession.json",
             "name": "inputsourceschange_event",
             "slug": "API/XRSession/inputsourceschange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/inputsourceschange_event",
             "summary": "The inputsourceschange event is sent to an XRSession when the set of available WebXR input devices changes.",
             "support": {
                 "chrome": {
@@ -2596,6 +2653,7 @@
             "filename": "api/XRSession.json",
             "name": "inputsourceschange_event",
             "slug": "API/XRSession/inputsourceschange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/inputsourceschange_event",
             "summary": "The inputsourceschange event is sent to an XRSession when the set of available WebXR input devices changes.",
             "support": {
                 "chrome": {
@@ -2642,6 +2700,7 @@
             "filename": "api/XRSession.json",
             "name": "renderState",
             "slug": "API/XRSession/renderState",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/renderState",
             "summary": "The read-only renderState property of an XRSession object indicates the returns a XRRenderState object describing how the user's environment which should be rendered. The information provided covers the minimum and maximum distance at which to render objects, the vertical field of view to use when rendering the in the inline session mode, and the XRWebGLLayer to render into for inline composition.",
             "support": {
                 "chrome": {
@@ -2688,6 +2747,7 @@
             "filename": "api/XRSession.json",
             "name": "requestAnimationFrame",
             "slug": "API/XRSession/requestAnimationFrame",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestAnimationFrame",
             "summary": "The XRSession method requestAnimationFrame(), much like the Window method of the same name, schedules a callback to be executed the next time the browser is ready to paint the session's virtual environment to the XR display. The specified callback is executed once before the next repaint; if you wish for it to be executed for the following repaint, you must call requestAnimationFrame() again. This can be done from within the callback itself.",
             "support": {
                 "chrome": {
@@ -2734,6 +2794,7 @@
             "filename": "api/XRSession.json",
             "name": "requestReferenceSpace",
             "slug": "API/XRSession/requestReferenceSpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestReferenceSpace",
             "summary": "The requestReferenceSpace() method of the XRSession interface returns a promise that resolves with an instance of either XRReferenceSpace or XRBoundedReferenceSpace as appropriate given the type of reference space requested.",
             "support": {
                 "chrome": {
@@ -2780,6 +2841,7 @@
             "filename": "api/XRSession.json",
             "name": "select_event",
             "slug": "API/XRSession/select_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/select_event",
             "summary": "The WebXR select event is sent to an XRSession when one of the session's input sources has completed a primary action.",
             "support": {
                 "chrome": {
@@ -2826,6 +2888,7 @@
             "filename": "api/XRSession.json",
             "name": "select_event",
             "slug": "API/XRSession/select_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/select_event",
             "summary": "The WebXR select event is sent to an XRSession when one of the session's input sources has completed a primary action.",
             "support": {
                 "chrome": {
@@ -2872,6 +2935,7 @@
             "filename": "api/XRSession.json",
             "name": "selectend_event",
             "slug": "API/XRSession/selectend_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/selectend_event",
             "summary": "The WebXR event selectend is sent to an XRSession when one of its input sources ends its primary action or when an input source that's in the process of handling an ongoing primary action is disconnected without successfully completing the action.",
             "support": {
                 "chrome": {
@@ -2918,6 +2982,7 @@
             "filename": "api/XRSession.json",
             "name": "selectend_event",
             "slug": "API/XRSession/selectend_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/selectend_event",
             "summary": "The WebXR event selectend is sent to an XRSession when one of its input sources ends its primary action or when an input source that's in the process of handling an ongoing primary action is disconnected without successfully completing the action.",
             "support": {
                 "chrome": {
@@ -2964,6 +3029,7 @@
             "filename": "api/XRSession.json",
             "name": "selectstart_event",
             "slug": "API/XRSession/selectstart_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/selectstart_event",
             "summary": "The WebXR selectstart event is sent to an XRSession when the user begins a primary action on one of its input sources.",
             "support": {
                 "chrome": {
@@ -3010,6 +3076,7 @@
             "filename": "api/XRSession.json",
             "name": "selectstart_event",
             "slug": "API/XRSession/selectstart_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/selectstart_event",
             "summary": "The WebXR selectstart event is sent to an XRSession when the user begins a primary action on one of its input sources.",
             "support": {
                 "chrome": {
@@ -3056,6 +3123,7 @@
             "filename": "api/XRSession.json",
             "name": "squeeze_event",
             "slug": "API/XRSession/squeeze_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeeze_event",
             "summary": "The WebXR squeeze event is sent to an XRSession when one of the session's input sources has completed a primary squeeze action. Examples of common kinds of primary action are users pressing triggers or buttons, tapping a touchpad, speaking a command, or performing a recognizable gesture when using a video tracking system or handheld controller with an accelerometer.",
             "support": {
                 "chrome": {
@@ -3100,6 +3168,7 @@
             "filename": "api/XRSession.json",
             "name": "squeeze_event",
             "slug": "API/XRSession/squeeze_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeeze_event",
             "summary": "The WebXR squeeze event is sent to an XRSession when one of the session's input sources has completed a primary squeeze action. Examples of common kinds of primary action are users pressing triggers or buttons, tapping a touchpad, speaking a command, or performing a recognizable gesture when using a video tracking system or handheld controller with an accelerometer.",
             "support": {
                 "chrome": {
@@ -3144,6 +3213,7 @@
             "filename": "api/XRSession.json",
             "name": "squeezeend_event",
             "slug": "API/XRSession/squeezeend_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeezeend_event",
             "summary": "The WebXR event squeezeend is sent to an XRSession when one of its input sources ends its primary action or when an input source that's in the process of handling an ongoing primary action is disconnected without successfully completing the action.",
             "support": {
                 "chrome": {
@@ -3188,6 +3258,7 @@
             "filename": "api/XRSession.json",
             "name": "squeezeend_event",
             "slug": "API/XRSession/squeezeend_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeezeend_event",
             "summary": "The WebXR event squeezeend is sent to an XRSession when one of its input sources ends its primary action or when an input source that's in the process of handling an ongoing primary action is disconnected without successfully completing the action.",
             "support": {
                 "chrome": {
@@ -3232,6 +3303,7 @@
             "filename": "api/XRSession.json",
             "name": "squeezestart_event",
             "slug": "API/XRSession/squeezestart_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeezestart_event",
             "summary": "The WebXR event squeezestart is sent to an XRSession when the user begins a primary squeeze action on one of its input sources.",
             "support": {
                 "chrome": {
@@ -3276,6 +3348,7 @@
             "filename": "api/XRSession.json",
             "name": "squeezestart_event",
             "slug": "API/XRSession/squeezestart_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/squeezestart_event",
             "summary": "The WebXR event squeezestart is sent to an XRSession when the user begins a primary squeeze action on one of its input sources.",
             "support": {
                 "chrome": {
@@ -3320,6 +3393,7 @@
             "filename": "api/XRSession.json",
             "name": "updateRenderState",
             "slug": "API/XRSession/updateRenderState",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/updateRenderState",
             "summary": "The updateRenderState() method of the XRSession interface of the WebXR API schedules changes to be applied to the active render state (XRRenderState) prior to rendering of the next frame.",
             "support": {
                 "chrome": {
@@ -3366,6 +3440,7 @@
             "filename": "api/XRSession.json",
             "name": "visibilitychange_event",
             "slug": "API/XRSession/visibilitychange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/visibilitychange_event",
             "summary": "The visibilitychange event is sent to an XRSession to inform it when it becomes visible or hidden, or when it becomes visible but not currently focused. Upon receiving the event, you can check the value of the session's visibilityState property to determine the new visibility state.",
             "support": {
                 "chrome": {
@@ -3412,6 +3487,7 @@
             "filename": "api/XRSession.json",
             "name": "visibilitychange_event",
             "slug": "API/XRSession/visibilitychange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/visibilitychange_event",
             "summary": "The visibilitychange event is sent to an XRSession to inform it when it becomes visible or hidden, or when it becomes visible but not currently focused. Upon receiving the event, you can check the value of the session's visibilityState property to determine the new visibility state.",
             "support": {
                 "chrome": {
@@ -3458,6 +3534,7 @@
             "filename": "api/XRSession.json",
             "name": "visibilityState",
             "slug": "API/XRSession/visibilityState",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/visibilityState",
             "summary": "The read-only visibilityState property of the XRSession interface is a string indicating whether the WebXR content is currently visible to the user, and if it is, whether it's the primary focus.",
             "support": {
                 "chrome": {
@@ -3504,6 +3581,7 @@
             "filename": "api/XRSession.json",
             "name": "XRSession",
             "slug": "API/XRSession",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSession",
             "summary": "The WebXR Device API's XRSession interface represents an ongoing XR session, providing methods and properties used to interact with and control the session. To open a WebXR session, use the XRSystem interface's requestSession() method.",
             "support": {
                 "chrome": {
@@ -3550,6 +3628,7 @@
             "filename": "api/XRSessionEvent.json",
             "name": "XRSessionEvent",
             "slug": "API/XRSessionEvent/XRSessionEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent/XRSessionEvent",
             "summary": "The WebXR Device API's XRSessionEvent() constructor creates and returns a new XRSessionEvent object. These objects represent events announcing state changes in an XRSession representing an augmented or virtual reality session.",
             "support": {
                 "chrome": {
@@ -3596,6 +3675,7 @@
             "filename": "api/XRSessionEvent.json",
             "name": "session",
             "slug": "API/XRSessionEvent/session",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent/session",
             "summary": "The read-only XRSessionEvent interface's session property indicates which XRSession the event is about.",
             "support": {
                 "chrome": {
@@ -3642,6 +3722,7 @@
             "filename": "api/XRSessionEvent.json",
             "name": "XRSessionEvent",
             "slug": "API/XRSessionEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent",
             "summary": "The WebXR Device API's XRSessionEvent interface describes an event which indicates the change of the state of an XRSession. These events occur, for example, when the session ends or the visibility of its context changes.",
             "support": {
                 "chrome": {
@@ -3688,6 +3769,7 @@
             "filename": "api/XRSpace.json",
             "name": "XRSpace",
             "slug": "API/XRSpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSpace",
             "summary": "The XRSpace interface of the WebXR Device API is an abstract interface providing a common basis for every class which represents a virtual coordinate system within the virtual world, in which its origin corresponds to a physical location. Spatial data in WebXR is always expressed relative to an object based upon one of the descendant interfaces of XRSpace, at the time at which a given XRFrame takes place.",
             "support": {
                 "chrome": {
@@ -3734,6 +3816,7 @@
             "filename": "api/XRSystem.json",
             "name": "devicechange_event",
             "slug": "API/XRSystem/devicechange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/devicechange_event",
             "summary": "A devicechange event is fired on an XRSystem object whenever the availability of immersive XR devices has changed; for example, a VR headset or AR goggles have been connected or disconnected. It's a generic Event with no added properties.",
             "support": {
                 "chrome": {
@@ -3780,6 +3863,7 @@
             "filename": "api/XRSystem.json",
             "name": "devicechange_event",
             "slug": "API/XRSystem/devicechange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/devicechange_event",
             "summary": "A devicechange event is fired on an XRSystem object whenever the availability of immersive XR devices has changed; for example, a VR headset or AR goggles have been connected or disconnected. It's a generic Event with no added properties.",
             "support": {
                 "chrome": {
@@ -3826,6 +3910,7 @@
             "filename": "api/XRSystem.json",
             "name": "isSessionSupported",
             "slug": "API/XRSystem/isSessionSupported",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/isSessionSupported",
             "summary": "The XRSystem method isSessionSupported() returns a promise which resolves to true if the specified WebXR session mode is supported by the user's WebXR device. Otherwise, the promise resolves with false.",
             "support": {
                 "chrome": {
@@ -3872,6 +3957,7 @@
             "filename": "api/XRSystem.json",
             "name": "requestSession",
             "slug": "API/XRSystem/requestSession",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession",
             "summary": "The XRSystem interface's requestSession() method returns a promise which resolves to an XRSession object through which you can manage the requested type of WebXR session.",
             "support": {
                 "chrome": {
@@ -3919,6 +4005,7 @@
             "filename": "api/XRSystem.json",
             "name": "XRSystem",
             "slug": "API/XRSystem",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem",
             "summary": "The WebXR Device API interface XRSystem provides methods which let you get access to an XRSession object representing a WebXR session. With that XRSession in hand, you can use it to interact with the Augmented Reality (AR) or Virtual Reality (VR) device.",
             "support": {
                 "chrome": {
@@ -3968,6 +4055,7 @@
             "filename": "api/XRView.json",
             "name": "eye",
             "slug": "API/XRView/eye",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRView/eye",
             "summary": "The XRView interface's read-only eye property is a string indicating which eye's viewpoint the XRView represents: left or right. For views which represent neither eye, such as monoscopic views, this property's value is none.",
             "support": {
                 "chrome": {
@@ -4014,6 +4102,7 @@
             "filename": "api/XRView.json",
             "name": "projectionMatrix",
             "slug": "API/XRView/projectionMatrix",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRView/projectionMatrix",
             "summary": "The XRView interface's read-only projectionMatrix property specifies the projection matrix to apply to the underlying view. This should be used to integrate perspective to everything in the scene, in order to ensure the result is consistent with what the eye expects to see.",
             "support": {
                 "chrome": {
@@ -4060,6 +4149,7 @@
             "filename": "api/XRView.json",
             "name": "recommendedViewportScale",
             "slug": "API/XRView/recommendedViewportScale",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRView/recommendedViewportScale",
             "summary": "The read-only recommendedViewportScale property of the XRView interface is the recommended viewport scale value that you can use for XRView.requestViewportScale() if the user agent has such a recommendation; null otherwise.",
             "support": {
                 "chrome": {
@@ -4104,6 +4194,7 @@
             "filename": "api/XRView.json",
             "name": "requestViewportScale",
             "slug": "API/XRView/requestViewportScale",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRView/requestViewportScale",
             "summary": "The requestViewportScale() method of the XRView interface requests that the user agent sets the requested viewport scale for this viewport to the given value. This is used for dynamic viewport scaling which allows rendering to a subset of the WebXR viewport using a scale factor that can be changed every animation frame.",
             "support": {
                 "chrome": {
@@ -4148,6 +4239,7 @@
             "filename": "api/XRView.json",
             "name": "transform",
             "slug": "API/XRView/transform",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRView/transform",
             "summary": "The read-only transform property of the XRView interface is an XRRigidTransform object which provides the position and orientation of the viewpoint relative to the XRReferenceSpace specified when the XRFrame.getViewerPose() method was called to obtain the view object.",
             "support": {
                 "chrome": {
@@ -4194,6 +4286,7 @@
             "filename": "api/XRView.json",
             "name": "XRView",
             "slug": "API/XRView",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRView",
             "summary": "The WebXR Device API's XRView interface describes a single view into the XR scene for a specific frame, providing orientation and position information for the viewpoint. You can think of it as a description of a specific eye or camera and how it views the world. A 3D frame will involve two views, one for each eye, separated by an appropriate distance which approximates the distance between the viewer's eyes. This allows the two views, when projected in isolation into the appropriate eyes, to simulate a 3D world.",
             "support": {
                 "chrome": {
@@ -4240,6 +4333,7 @@
             "filename": "api/XRViewerPose.json",
             "name": "views",
             "slug": "API/XRViewerPose/views",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRViewerPose/views",
             "summary": "The read-only XRViewerPose property views returns an array which contains every XRView which must be rendered in order to fully represent the scene from the viewpoint defined by the viewer pose. For monoscopic devices, this array contains a single view.",
             "support": {
                 "chrome": {
@@ -4286,6 +4380,7 @@
             "filename": "api/XRViewerPose.json",
             "name": "XRViewerPose",
             "slug": "API/XRViewerPose",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRViewerPose",
             "summary": "The WebXR Device API interface XRViewerPose represents the pose (the position and orientation) of a viewer's point of view on the scene. Each XRViewerPose can have multiple views to represent, for example, the slight separation between the left and right eye.",
             "support": {
                 "chrome": {
@@ -4332,6 +4427,7 @@
             "filename": "api/XRViewport.json",
             "name": "height",
             "slug": "API/XRViewport/height",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/height",
             "summary": "The read-only XRViewport property height specifies the height, in pixels, of the viewport onto the drawing surface within which the WebXR view is to be rendered. Along with width and the origin point given by x and y, this defines the area within which rendered content will be drawn.",
             "support": {
                 "chrome": {
@@ -4378,6 +4474,7 @@
             "filename": "api/XRViewport.json",
             "name": "width",
             "slug": "API/XRViewport/width",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/width",
             "summary": "The read-only XRViewport property width specifies the width of the viewport, in pixels, onto the drawing surface the 3D scene is to be rendered into. This is defined using this property along with the viewport's height and its origin given by its properties x and y.",
             "support": {
                 "chrome": {
@@ -4424,6 +4521,7 @@
             "filename": "api/XRViewport.json",
             "name": "x",
             "slug": "API/XRViewport/x",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/x",
             "summary": "The read-only XRViewport interface's x property indicates the offset from the left edge of the destination surface (typically a XRWebGLLayer to the left edge of the viewport within the surface into which WebXR content is to be rendered. The viewport's y property identifies the y component of the origin, and its is given by the width and height properties.",
             "support": {
                 "chrome": {
@@ -4470,6 +4568,7 @@
             "filename": "api/XRViewport.json",
             "name": "y",
             "slug": "API/XRViewport/y",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport/y",
             "summary": "The read-only XRViewport interface's y property indicates the offset from the bottom edge of the destination surface (typically a XRWebGLLayer to the bottom edge of the viewport within the surface into which WebXR content is to be rendered. The viewport's x property identifies the x component of the origin, and its is given by the width and height properties.",
             "support": {
                 "chrome": {
@@ -4516,6 +4615,7 @@
             "filename": "api/XRViewport.json",
             "name": "XRViewport",
             "slug": "API/XRViewport",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRViewport",
             "summary": "The WebXR Device API's XRViewport interface provides properties used to describe the size and position of the current viewport within the XRWebGLLayer being used to render the 3D scene.",
             "support": {
                 "chrome": {
@@ -4562,6 +4662,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "XRWebGLLayer",
             "slug": "API/XRWebGLLayer/XRWebGLLayer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/XRWebGLLayer",
             "summary": "The WebXR Device API XRWebGLLayer() constructor creates and returns a new XRWebGLLayer object, providing the linkage between the WebXR device and the WebGL graphics layer used to render the 3D scene.",
             "support": {
                 "chrome": {
@@ -4608,6 +4709,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "antialias",
             "slug": "API/XRWebGLLayer/antialias",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/antialias",
             "summary": "The read-only XRWebGLLayer property antialias is a Boolean value which is true if the rendering layer's frame buffer supports antialiasing. Otherwise, this property's value is false. The specific antialiasing technique used is left to the user agent's discretion and cannot be specified by the web site or web app.",
             "support": {
                 "chrome": {
@@ -4654,6 +4756,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "framebuffer",
             "slug": "API/XRWebGLLayer/framebuffer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebuffer",
             "summary": "The read-only XRWebGLLayer property framebuffer is an opaque WebGLFramebuffer which is used to buffer the rendered image if the XR compositor is being used. Otherwise, this property's value is null. The opaque framebuffer is functionally nearly the same as a standard WebGL framebuffer, except for the differences covered in the section How opaque framebuffers are special below.",
             "support": {
                 "chrome": {
@@ -4700,6 +4803,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "framebufferHeight",
             "slug": "API/XRWebGLLayer/framebufferHeight",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebufferHeight",
             "summary": "The read-only XRWebGLLayer property framebufferHeight indicates the height of the framebuffer, in pixels.",
             "support": {
                 "chrome": {
@@ -4746,6 +4850,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "framebufferWidth",
             "slug": "API/XRWebGLLayer/framebufferWidth",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebufferWidth",
             "summary": "The read-only XRWebGLLayer property framebufferWidth specifies the width of the framebuffer, in pixels.",
             "support": {
                 "chrome": {
@@ -4792,6 +4897,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "getNativeFramebufferScaleFactor",
             "slug": "API/XRWebGLLayer/getNativeFramebufferScaleFactor",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/getNativeFramebufferScaleFactor",
             "summary": "The static method XRWebGLLayer.getNativeFramebufferScaleFactor() returns a floating-point scaling factor by which one can multiply the specified XRSession's resolution to get the native resolution of the WebXR device's frame buffer.",
             "support": {
                 "chrome": {
@@ -4838,6 +4944,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "getViewport",
             "slug": "API/XRWebGLLayer/getViewport",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/getViewport",
             "summary": "The XRWebGLLayer interface's getViewport() method returns the XRViewport that should be used to render the specified XRView into the WebGL layer. For WebXR devices which use a single framebuffer for both the left and right eyes, the returned viewport represents the region of the framebuffer into which the scene should be rendered for the eye represented by the view.",
             "support": {
                 "chrome": {
@@ -4884,6 +4991,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "ignoreDepthValues",
             "slug": "API/XRWebGLLayer/ignoreDepthValues",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/ignoreDepthValues",
             "summary": "The read-only XRWebGLLayer property ignoreDepthValues is a Boolean value which is true if the session has been configured to ignore the values in the depth buffer while rendering the scene. If the depth buffer is being used to determine the position of vertices, this property is false.",
             "support": {
                 "chrome": {
@@ -4930,6 +5038,7 @@
             "filename": "api/XRWebGLLayer.json",
             "name": "XRWebGLLayer",
             "slug": "API/XRWebGLLayer",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer",
             "summary": "The XRWebGLLayer interface of the WebXR Device API provides a linkage between the WebXR device (or simulated XR device, in the case of an inline session) and a WebGL context used to render the scene for display on the device. In particular, it provides access to the WebGL framebuffer and viewport to ease access to the context.",
             "support": {
                 "chrome": {
@@ -4976,6 +5085,7 @@
             "filename": "http/headers/Feature-Policy.json",
             "name": "xr-spatial-tracking",
             "slug": "HTTP/Headers/Feature-Policy/xr-spatial-tracking",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/xr-spatial-tracking",
             "summary": "The HTTP Feature-Policy header xr-spatial-tracking directive controls whether the current document is allowed to use the WebXR Device API. This policy controls whether navigator.xr.requestSession() can return XRSession that requires spatial tracking and whether user agent can indicate support for sessions supporting spatial tracking via navigator.xr.isSessionSupported() and devicechange event on navigator.xr object.",
             "support": {
                 "chrome": {
