@@ -125,7 +125,7 @@
                 ],
                 "chrome_android": "mirror",
                 "edge": {
-                    "version_added": "12"
+                    "version_added": false
                 },
                 "firefox": {
                     "version_added": "3.5"
@@ -133,7 +133,8 @@
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "10",
-                    "notes": "Internet Explorer only supports clip paths defined by <code>url()</code>."
+                    "partial_implementation": true,
+                    "notes": "Only supports clip paths defined by <code>url()</code>."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",

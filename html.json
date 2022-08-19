@@ -8620,54 +8620,6 @@
             "title": "Document.dir"
         }
     ],
-    "relaxing-the-same-origin-restriction": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "domain",
-            "slug": "API/Document/domain",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/domain",
-            "summary": "The domain property of the Document interface gets/sets the domain portion of the origin of the current document, as used by the same-origin policy.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": "From Firefox 62, if the domain cannot be identified, <code>domain</code> returns an empty string instead of <code>null</code>. See <a href='https://bugzil.la/819475'>bug 819475</a>."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "4"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document.domain"
-        }
-    ],
     "dom-document-embeds-dev": [
         {
             "engines": [
@@ -12584,7 +12536,7 @@
             "summary": "The url read-only property of the EventSource interface returns a string representing the URL of the source.",
             "support": {
                 "chrome": {
-                    "version_added": "6"
+                    "version_added": "18"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -12608,11 +12560,9 @@
                     "version_added": "12"
                 },
                 "safari": {
-                    "version_added": "5"
+                    "version_added": "6"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -13485,7 +13435,7 @@
             "summary": "The HTMLAreaElement.origin read-only property is a string containing the Unicode serialization of the origin of the represented URL.",
             "support": {
                 "chrome": {
-                    "version_added": "8"
+                    "version_added": "32"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -13503,11 +13453,9 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "5.1"
+                    "version_added": "10"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -17621,7 +17569,7 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "1"
+                    "version_added": "4"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -17755,13 +17703,13 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
                     "version_added": "1"
                 },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
+                "webview_android": {
+                    "version_added": "1"
+                },
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -18049,7 +17997,9 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
+                "webview_android": {
+                    "version_added": "1"
+                },
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -18190,12 +18140,12 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "1.3"
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -34092,59 +34042,6 @@
             "title": "Navigator.pdfViewerEnabled"
         }
     ],
-    "dom-navigator-platform-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Navigator.json",
-            "name": "platform",
-            "slug": "API/Navigator/platform",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/platform",
-            "summary": "The platform property read-only property of the Navigator interface returns a string identifying the platform on which the user's browser is running.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1",
-                    "notes": [
-                        "Before Firefox 69, <code>platform</code> would report running on a 32-bit CPU if running the 32-bit version of Firefox on a 64-bit system.",
-                        "You can override the value returned by <code>platform</code> by setting the preference <code>general.platform.override</code> to the string you wish to be returned instead."
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "4"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "navigator.platform"
-        }
-    ],
     "custom-handlers": [
         {
             "engines": [
@@ -34288,49 +34185,6 @@
                 }
             },
             "title": "WorkerNavigator.userAgent"
-        }
-    ],
-    "dom-navigator-vendor-dev": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Navigator.json",
-            "name": "vendor",
-            "slug": "API/Navigator/vendor",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/vendor",
-            "summary": "The value of the Navigator vendor property is always either \"Google Inc.\", \"Apple Computer, Inc.\", or (in Firefox) the empty string.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "11"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Navigator.vendor"
         }
     ],
     "the-navigator-object": [
@@ -36311,60 +36165,6 @@
                 }
             },
             "title": "Storage"
-        }
-    ],
-    "dom-storageevent-initstorageevent": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/StorageEvent.json",
-            "name": "initStorageEvent",
-            "slug": "API/StorageEvent/initStorageEvent",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/StorageEvent/initStorageEvent",
-            "summary": "The StorageEvent.initStorageEvent() method is used to initialize the value of a StorageEvent.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "13"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "StorageEvent.initStorageEvent()"
         }
     ],
     "the-storageevent-interface": [
@@ -42622,7 +42422,8 @@
                     }
                 ],
                 "ie": {
-                    "version_added": "10"
+                    "version_added": "10",
+                    "notes": "Internet Explorer does not reliably fire <code>requestAnimationFrame</code> before the paint cycle."
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -45671,10 +45472,7 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14",
-                    "prefix": "-webkit-"
-                },
+                "opera_android": "mirror",
                 "safari": [
                     {
                         "version_added": "15"
@@ -45693,10 +45491,7 @@
                         "prefix": "-webkit-"
                     }
                 ],
-                "samsunginternet_android": {
-                    "version_added": "1.0",
-                    "prefix": "-webkit-"
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79",
@@ -49680,6 +49475,9 @@
                 "gecko",
                 "webkit"
             ],
+            "partial": [
+                "gecko"
+            ],
             "filename": "html/elements/input/color.json",
             "name": "type_color",
             "slug": "HTML/Element/input/color",
@@ -49698,6 +49496,7 @@
                 },
                 "firefox_android": {
                     "version_added": "27",
+                    "partial_implementation": true,
                     "notes": "Firefox for Android doesn't allow the user to choose a custom color, only one of the predefined ones."
                 },
                 "ie": {
@@ -57512,6 +57311,57 @@
                 }
             },
             "title": "Feature-Policy: document-domain"
+        }
+    ],
+    "the-x-frame-options-header": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/X-Frame-Options.json",
+            "name": "X-Frame-Options",
+            "slug": "HTTP/Headers/X-Frame-Options",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options",
+            "summary": "The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe>, <embed> or <object>. Sites can use this to avoid click-jacking attacks, by ensuring that their content is not embedded into other sites.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": "8"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.5"
+                },
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "X-Frame-Options"
         }
     ],
     "early-hints": [
