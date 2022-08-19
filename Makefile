@@ -1,3 +1,4 @@
+BCD_REPO=https://github.com/mdn/browser-compat-data.git
 MDN_REPO=https://github.com/mdn/content.git
 GRIP=grip
 GIT=git
