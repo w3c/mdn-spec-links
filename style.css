@@ -228,6 +228,18 @@ td:first-child, th:first-child { border: 0 };
 td:nth-child(2) { text-align: left; }
 td:nth-child(3) { text-align: right; }
 td:nth-child(4) { text-align: right; }
-td:nth-child(4) img { padding-left: 2px; }
+td:nth-child(4) em {
+  color: rgb(220, 220, 220);
+  background: rgb(50, 50, 50);
+  padding: 2px 4px 1px 4px;
+  font-size: 12px;
+  line-height: 13.5px;
+}
+td:nth-child(4) em a { color: rgb(220, 220, 220); }
+td:nth-child(4) img {
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  margin-top: 1.5px;
+}
 td:nth-child(7) { text-align: right; }
 th:nth-child(7) { text-align: right; }
