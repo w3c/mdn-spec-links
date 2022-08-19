@@ -2455,7 +2455,11 @@
             "title": "WebGLRenderingContext.isEnabled()"
         },
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "api/WebGLRenderingContext.json",
             "name": "lineWidth",
             "slug": "API/WebGLRenderingContext/lineWidth",
@@ -2463,32 +2467,40 @@
             "summary": "The WebGLRenderingContext.lineWidth() method of the WebGL API sets the line width of rasterized lines.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "9"
                 },
-                "chrome_android": "mirror",
+                "chrome_android": {
+                    "version_added": "25"
+                },
                 "edge": {
-                    "version_added": false
+                    "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": false
+                    "version_added": "4"
                 },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "11"
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
+                "opera": {
+                    "version_added": "12"
                 },
-                "safari_ios": "mirror",
+                "opera_android": {
+                    "version_added": "12"
+                },
+                "safari": {
+                    "version_added": "5.1"
+                },
+                "safari_ios": {
+                    "version_added": "8"
+                },
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4.4.3"
                 },
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "79"
                 }
             },
             "title": "WebGLRenderingContext.lineWidth()"
@@ -5544,7 +5556,7 @@
             "name": "bindFramebuffer",
             "slug": "API/WebGLRenderingContext/bindFramebuffer",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer",
-            "summary": "The WebGLRenderingContext.bindFramebuffer() method of the WebGL API binds a given WebGLFramebuffer to a target.",
+            "summary": "The WebGLRenderingContext.bindFramebuffer() method of the WebGL API binds to the specified target the default WebGLFramebuffer, or, if the second argument is non-null, the provided WebGLFramebuffer.",
             "support": {
                 "chrome": {
                     "version_added": "56"
@@ -5872,7 +5884,7 @@
             "name": "bindFramebuffer",
             "slug": "API/WebGLRenderingContext/bindFramebuffer",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer",
-            "summary": "The WebGLRenderingContext.bindFramebuffer() method of the WebGL API binds a given WebGLFramebuffer to a target.",
+            "summary": "The WebGLRenderingContext.bindFramebuffer() method of the WebGL API binds to the specified target the default WebGLFramebuffer, or, if the second argument is non-null, the provided WebGLFramebuffer.",
             "support": {
                 "chrome": {
                     "version_added": "9"
