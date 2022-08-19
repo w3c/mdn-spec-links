@@ -261,6 +261,14 @@ const checkSpecURL = (
    *   return;
    * }
    */
+  // FIXME temporary
+  if (
+    spec_url.startsWith(
+      "https://www.w3.org/TR/css-contain-3/#valdef-contain-inline-size"
+    )
+  ) {
+    return;
+  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14600
   if (
     spec_url.startsWith(
