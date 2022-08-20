@@ -217,10 +217,6 @@ const fixCanIUseSpecURLs = (key, data) => {
         "https://www.w3.org/TR/SVG2/",
         "https://svgwg.org/svg2-draft/",
       ],
-      "https://www.w3.org/TR/css-contain-3/": [
-        "https://www.w3.org/TR/css-contain-3",
-        "https://drafts.csswg.org/css-contain-3/",
-      ],
       "http://w3.org/TR/css3-fonts/": [
         "http://w3.org/TR/css3-fonts/",
         "https://drafts.csswg.org/css-fonts-3/",
