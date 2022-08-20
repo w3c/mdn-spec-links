@@ -308,6 +308,33 @@ const checkSpecURL = (
   if (spec_url.startsWith("https://w3c.github.io/device-memory/")) {
     return;
   }
+  if (
+    spec_url.startsWith(
+      "https://w3c.github.io/mst-content-hint/#dom-mediastreamtrack-contenthint"
+    )
+  ) {
+    return; // undocumented in MDN
+  }
+  if (
+    spec_url.startsWith(
+      "https://w3c.github.io/web-share-target/#share_target-member"
+    )
+  ) {
+    return; // undocumented in MDN
+  }
+  if (
+    spec_url.startsWith(
+      "https://wicg.github.io/permissions-request/#dom-permissions-request"
+    )
+  ) {
+    return; // undocumented in MDN
+  }
+  if (spec_url.startsWith("https://tc39.es/proposal-temporal/")) {
+    return; // undocumented in MDN
+  }
+  if (spec_url.startsWith("https://w3c.github.io/mathml/#fund_globatt")) {
+    return; // not in MathML Core
+  }
   // Ancient and unimplemented
   if (spec_url.startsWith("https://w3c.github.io/setImmediate/")) {
     return;

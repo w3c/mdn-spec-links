@@ -217,6 +217,10 @@ const fixCanIUseSpecURLs = (key, data) => {
         "https://www.w3.org/TR/SVG2/",
         "https://svgwg.org/svg2-draft/",
       ],
+      "https://www.w3.org/TR/css-contain-3/": [
+        "https://www.w3.org/TR/css-contain-3",
+        "https://drafts.csswg.org/css-contain-3/",
+      ],
       "http://w3.org/TR/css3-fonts/": [
         "http://w3.org/TR/css3-fonts/",
         "https://drafts.csswg.org/css-fonts-3/",
@@ -1150,6 +1154,33 @@ const isForTargetJSONfile = (specURL, feature, mdnURL) => {
 
 const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
   const parsedURL = new URL(url);
+  if (
+    url.startsWith(
+      "https://w3c.github.io/mst-content-hint/#dom-mediastreamtrack-contenthint"
+    )
+  ) {
+    return; // undocumented in MDN
+  }
+  if (
+    url.startsWith(
+      "https://w3c.github.io/web-share-target/#share_target-member"
+    )
+  ) {
+    return; // undocumented in MDN
+  }
+  if (
+    url.startsWith(
+      "https://wicg.github.io/permissions-request/#dom-permissions-request"
+    )
+  ) {
+    return; // undocumented in MDN
+  }
+  if (url.startsWith("https://tc39.es/proposal-temporal/")) {
+    return; // undocumented in MDN
+  }
+  if (url.startsWith("https://w3c.github.io/mathml/#fund_globatt")) {
+    return; // not in MathML Core
+  }
   if (url.startsWith("https://w3c.github.io/device-memory/")) {
     return; // redirects to https://www.w3.org/TR/device-memory/
   }
