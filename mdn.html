@@ -18,10 +18,10 @@ const ariaRoles = ["alert", "alertdialog", "application", "article",
   "note", "option", "presentation", "progressbar", "radio", "radiogroup",
   "range", "region", "roletype", "row", "rowgroup", "rowheader",
   "scrollbar", "search", "searchbox", "section", "sectionhead", "select",
-  "separator", "slider", "spinbutton", "status", "structural", "structure",
-  "suggestion", "switch", "tab", "table", "tablist", "tabpanel", "term",
-  "textbox", "timer", "toolbar", "tooltip", "tree", "treegrid", "treeitem",
-  "widget", "window"];
+  "separator", "slider", "spinbutton", "status", "structure", "suggestion",
+  "switch", "tab", "table", "tablist", "tabpanel", "term", "textbox",
+  "timer", "toolbar", "tooltip", "tree", "treegrid", "treeitem", "widget",
+  "window"];
 async function listArticles() {
   if (specURL != null) {
     let specName;
@@ -56,9 +56,12 @@ async function listArticles() {
     });
     if (specURL === "https://w3c.github.io/aria/") {
       for (const role of ariaRoles) {
+        const rolesPath = "Web/Accessibility/ARIA/Roles/";
+        const rolesURL =
+          `https://developer.mozilla.org/en-US/docs/${rolesPath}`;
         const li = document.createElement("li");
           li.innerHTML = `<a
-            href=https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/${role}_role>Web/Accessibility/ARIA/Roles/${role}_role</a>`;
+            href=${rolesURL}${role}_role>${rolesPath}${role}_role</a>`;
           ul.append(li);
       }
     }

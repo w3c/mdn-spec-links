@@ -11,7 +11,7 @@ body {
   white-space: nowrap;
 }
 
-h1, p { width: 745px; background: #fff; column-span: all; }
+h1, p { background: #fff; column-span: all; }
 
 h1 {
   color: darkseagreen;
@@ -19,6 +19,7 @@ h1 {
   margin-top: 4px;
   border: 1px dashed #ccc;
   margin-bottom: 8px;
+  width: 814px;
 }
 
 p {
@@ -29,7 +30,7 @@ p {
   font-style: italic;
   font-size: 14px;
   color: #999;
-  width: 750px;
+  width: 819px;
 }
 
 #main {
@@ -45,19 +46,6 @@ p {
     );
 }
 
-@media all and (min-width : 1425px) {
-  #main {
-    font-size: 15px;
-    column-count: 2;
-  }
-  #main table {
-    font-family: Arial Narrow, sans-serif;
-  }
-
-  h1 { width: 665px; }
-  p { width: 670px; }
-}
-
 a, a:hover, a:visited {
   text-decoration: none;
   color: #46f;
@@ -68,6 +56,7 @@ a:hover, a:focus {
 }
 
 img { margin-top: 1px; vertical-align: top; }
+table { min-width: 835px; }
 table span { opacity: 0; font-size: 0px; }
 table i { color: green; }
 table a b { color: #aaa; font-style: italic; }
@@ -95,6 +84,7 @@ em {
 }
 
 u {
+  cursor: pointer;
   text-decoration: none;
   font-family: sans-serif;
   display: inline-block;
@@ -109,24 +99,24 @@ u {
   border-radius: 3px;
   font-weight: bold;
 }
-.Animation { color: white; background-color: #e9967a; }
-.Core { color: white; background-color: #3e7817; }
-.CSS { color: white; background-color: #fe2c1c; }
-.Debuggingandreporting { color: white; background-color: #daa520; }
-.Events { color: white; background-color: #5f9ea0; }
-.Formsandediting { color: white; background-color: #bc8f8f; }
-.Graphicsandtypography { color: white; background-color: #fa7c23; }
-.HTTPandaddressing { color: white; background-color: #0b5c99; }
-.JavaScript { color: black; background-color: #fa7c23; }
-.Media { color: white; background-color: #1e90ff; }
-.Mixedreality { color: white; background-color: #c70813; }
-.Performanceprofiling { color: white; background-color: #ff69b4; }
-.Security { color: white; background-color: #8fbc8f; }
-.Storageandfiles { color: black; background-color: #ffdead; }
-.ServiceWorkers { color: black; background-color: #f6de38; }
-.Utilities { color: black; background-color: #d8bfd8; }
-.WebAssembly { color: white; background-color: #6153e4; }
-.Platforminteraction {
+u.Animation { color: white; background-color: #e9967a; }
+u.Core { color: white; background-color: #3e7817; }
+u.CSS { color: white; background-color: #fe2c1c; }
+u.Debuggingandreporting { color: white; background-color: #daa520; }
+u.Events { color: white; background-color: #5f9ea0; }
+u.Formsandediting { color: white; background-color: #bc8f8f; }
+u.Graphicsandtypography { color: white; background-color: #fa7c23; }
+u.HTTPandaddressing { color: white; background-color: #0b5c99; }
+u.JavaScript { color: black; background-color: #fa7c23; }
+u.Media { color: white; background-color: #1e90ff; }
+u.Mixedreality { color: white; background-color: #c70813; }
+u.Performanceprofiling { color: white; background-color: #ff69b4; }
+u.Security { color: white; background-color: #8fbc8f; }
+u.Storageandfiles { color: black; background-color: #ffdead; }
+u.ServiceWorkers { color: black; background-color: #f6de38; }
+u.Utilities { color: black; background-color: #d8bfd8; }
+u.WebAssembly { color: white; background-color: #6153e4; }
+u.Platforminteraction {
   color: white;
   background:
     linear-gradient(
@@ -139,7 +129,7 @@ u {
       rgba(255, 0, 0, 1) 100%
     );
 }
-.Realtimecommunication {
+u.Realtimecommunication {
   color: white;
   background:
     linear-gradient(
@@ -222,24 +212,40 @@ u {
 }
 tr { break-inside: avoid; page-break-inside: avoid; }
 tr { background: #ccc; }
-td, th { padding: 5px 1px 6px 13px !important; border-style: solid; border-color: #dfe2e5; border-width: 0 0 0 1px;}
+td, th {
+  border-style: solid;
+  border-color: #dfe2e5;
+  border-width: 0 0 0 1px;
+}
+th { padding: 8px 1px 8px 13px !important; }
 td { padding: 8px 13px 8px 13px !important; }
+th:nth-child(8) { text-align: right; }
 td:first-child, th:first-child { border: 0 };
 td:nth-child(2) { text-align: left; }
 td:nth-child(3) { text-align: right; }
-td:nth-child(4) { text-align: right; }
-td:nth-child(4) em {
-  color: rgb(220, 220, 220);
-  background: rgb(50, 50, 50);
-  padding: 2px 4px 1px 4px;
-  font-size: 12px;
-  line-height: 13.5px;
-}
-td:nth-child(4) em a { color: rgb(220, 220, 220); }
-td:nth-child(4) img {
+td:nth-child(3) { text-align: right; }
+td:nth-child(3) div { position: relative; }
+td:nth-child(3) img {
   border: solid 1px #c6cbd1;
   border-bottom-color: #959da5;
-  margin-top: 1.5px;
+  margin-top: 0px;
 }
+td:nth-child(3) em {
+  color: white;
+  background: rgb(18, 105, 211);
+  padding: 2px 1px 1px 1.5px;
+  font-size: 9px;
+  line-height: 8.6px;
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  min-width: 9px;
+  text-align: center;
+}
+td:nth-child(4) img { margin-top: 1.5px; }
+td:nth-child(4) { text-align: right; }
+td:nth-child(3) em a { color: rgb(230, 230, 230); }
+td:nth-child(7) img { filter: grayscale(100%); opacity: 0.4; }
+td:nth-child(7) img.yes { filter: none; opacity: 1; }
 td:nth-child(7) { text-align: right; }
-th:nth-child(7) { text-align: right; }
+td:nth-child(8) { text-align: right; }
