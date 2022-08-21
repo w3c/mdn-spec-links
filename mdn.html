@@ -1,0 +1,56 @@
+<!doctype html><html lang=en><meta charset=utf-8>
+<title>MDN articles</title>
+<h1>You must specify a "url" or "overview" query parameter</h1>
+<div></div>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const specURL = urlParams.get("url");
+const overview = urlParams.get("overview");
+const div = document.querySelector("div");
+async function listArticles() {
+  if (specURL != null) {
+    let specName;
+    let response = await fetch("specdata.json");
+    let specs = await response.json();
+    for (const spec of specs) {
+      if (spec.spec_url === specURL) {
+        specName = spec.spec_name;
+        break;
+      }
+    }
+    const h1 = document.querySelector("h1");
+    document.title = `MDN articles for the ${specName} spec`;
+    h1.innerText = document.title;
+    if (overview != null) {
+      const p = document.createElement("p");
+      p.innerHTML = `<a href=${overview}>${overview.substring(41)}</a>`;
+      div.append(p);
+    }
+    response = await fetch("SPECMAP.json");
+    specs = await response.json();
+    response = await fetch(specs[specURL]);
+    const spec = await response.json();
+    const ul = document.createElement("ul");
+    Object.values(spec).map(feature => {
+      const li = document.createElement("li");
+      const mdnURL= feature[0].mdn_url;
+      if (mdnURL !== overview) {
+        li.innerHTML = `<a href=${mdnURL}>${mdnURL.substring(41)}</a>`;
+        ul.append(li);
+      }
+    });
+    if (specURL === "https://w3c.github.io/aria/") {
+      for (const role of ariaRoles) {
+        const li = document.createElement("li");
+          li.innerHTML = `<a
+            href=https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/${role}_role>Web/Accessibility/ARIA/Roles/${role}_role</a>`;
+          ul.append(li);
+      }
+    }
+    if (ul.childNodes.length !== 0) {
+      div.append(ul);
+    }
+  }
+}
+listArticles();
+</script>
