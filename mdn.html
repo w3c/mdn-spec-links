@@ -25,7 +25,7 @@ const ariaRoles = ["alert", "alertdialog", "application", "article",
 async function listArticles() {
   if (specURL != null) {
     let specName;
-    let response = await fetch("specdata.json");
+    let response = await fetch("https://html-now.github.io/specdata.json");
     let specs = await response.json();
     for (const spec of specs) {
       if (spec.spec_url === specURL) {
