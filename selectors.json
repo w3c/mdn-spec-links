@@ -893,21 +893,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible",
             "summary": "The :focus-visible pseudo-class applies while an element matches the :focus pseudo-class and the UA (User Agent) determines via heuristics that the focus should be made evident on the element. (Many browsers show a \"focus ring\" by default in this case.)",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "86"
-                    },
-                    {
-                        "version_added": "67",
-                        "flags": [
-                            {
-                                "name": "#enable-experimental-web-platform-features",
-                                "type": "preference",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "86"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": [
@@ -932,21 +920,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "86"
-                    },
-                    {
-                        "version_added": "79",
-                        "flags": [
-                            {
-                                "name": "#enable-experimental-web-platform-features",
-                                "type": "preference",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "86"
+                }
             },
             "caniuse": {
                 "feature": "css-focus-visible",
@@ -1531,18 +1507,6 @@
                         "version_added": "12",
                         "alternative_name": ":-webkit-any()",
                         "notes": "Doesn't support combinators."
-                    },
-                    {
-                        "version_removed": "88",
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ],
-                        "notes": "Combinators in the selector list argument may not match correctly (see <a href='https://crbug.com/842157'>bug 842157</a>)."
                     }
                 ],
                 "chrome_android": "mirror",
@@ -1558,17 +1522,6 @@
                             "Doesn't support combinators.",
                             "See <a href='https://bugzil.la/906353'>bug 906353</a>."
                         ]
-                    },
-                    {
-                        "version_added": "77",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.is-where-selectors.enabled",
-                                "value_to_set": "enabled"
-                            }
-                        ],
-                        "notes": "Enabled by default in Firefox Nightly."
                     }
                 ],
                 "firefox_android": "mirror",
@@ -1638,18 +1591,6 @@
                         "version_added": "79",
                         "alternative_name": ":-webkit-any()",
                         "notes": "Doesn't support combinators."
-                    },
-                    {
-                        "version_removed": "88",
-                        "version_added": false,
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ],
-                        "notes": "Combinators in the selector list argument may not match correctly (see <a href='https://crbug.com/842157'>bug 842157</a>)."
                     }
                 ]
             },
@@ -3197,40 +3138,14 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:where",
             "summary": "The :where() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "88"
-                    },
-                    {
-                        "version_added": "72",
-                        "version_removed": "88",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "88"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "78"
-                    },
-                    {
-                        "version_added": "77",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.is-where-selectors.enabled",
-                                "value_to_set": "enabled"
-                            }
-                        ],
-                        "notes": "Enabled by default in Firefox Nightly."
-                    }
-                ],
+                "firefox": {
+                    "version_added": "78"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -3244,22 +3159,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "88"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "88",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "88"
+                }
             },
             "title": ":where()"
         }

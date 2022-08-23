@@ -51,21 +51,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust",
             "summary": "The forced-color-adjust CSS property allows authors to opt certain elements out of forced colors mode. This then restores the control of those values to CSS.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "89"
-                    },
-                    {
-                        "version_added": "79",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "forced-colors",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "89"
+                },
                 "chrome_android": {
                     "version_added": false
                 },
@@ -91,21 +79,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "89"
-                    },
-                    {
-                        "version_added": "79",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "forced-colors",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "89"
+                }
             },
             "title": "forced-color-adjust"
         }

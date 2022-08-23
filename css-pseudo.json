@@ -698,20 +698,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/::marker",
             "summary": "The ::marker CSS pseudo-element selects the marker box of a list item, which typically contains a bullet or number. It works on any element or pseudo-element set to display: list-item, such as the <li> and <summary> elements.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "86"
-                    },
-                    {
-                        "version_added": "80",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "86"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -741,20 +730,9 @@
                 },
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "86"
-                    },
-                    {
-                        "version_added": "80",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "86"
+                }
             },
             "caniuse": {
                 "feature": "css-marker-pseudo",

@@ -1550,22 +1550,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/getAnimations",
             "summary": "The getAnimations() method of the Document interface returns an array of all Animation objects currently in effect whose target elements are descendants of the document. This array includes CSS Animations, CSS Transitions, and Web Animations.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "84"
-                    },
-                    {
-                        "version_added": "61",
-                        "partial_implementation": true,
-                        "notes": "Implements an older version of the specification.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "84"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -1591,22 +1578,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "84"
-                    },
-                    {
-                        "version_added": "79",
-                        "partial_implementation": true,
-                        "notes": "Implements an older version of the specification.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "84"
+                }
             },
             "title": "Document.getAnimations()"
         },
@@ -1622,20 +1596,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/getAnimations",
             "summary": "The getAnimations() method of the ShadowRoot interface returns an array of all Animation objects currently in effect whose target elements are descendants of the shadow tree. This array includes CSS Animations, CSS Transitions, and Web Animations.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "84"
-                    },
-                    {
-                        "version_added": "83",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "84"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -1654,20 +1617,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "84"
-                    },
-                    {
-                        "version_added": "83",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "84"
+                }
             },
             "title": "ShadowRoot.getAnimations()"
         }

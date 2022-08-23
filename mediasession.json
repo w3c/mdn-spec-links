@@ -17,21 +17,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -72,21 +60,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -127,21 +103,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -182,21 +146,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -237,21 +189,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -295,21 +235,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": {
                     "version_added": "82",
                     "partial_implementation": true,
@@ -359,21 +287,9 @@
                     "version_added": "57"
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": {
                     "version_added": "82",
                     "partial_implementation": true,
@@ -423,21 +339,9 @@
                     "version_added": "57"
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": {
                     "version_added": "82",
                     "partial_implementation": true,
@@ -467,15 +371,11 @@
     "dom-mediasession-setactionhandler": [
         {
             "engines": [
-                "blink",
-                "gecko"
+                "blink"
             ],
             "partial": [
                 "gecko",
                 "webkit"
-            ],
-            "needsflag": [
-                "gecko"
             ],
             "filename": "api/MediaSession.json",
             "name": "setActionHandler",
@@ -490,23 +390,11 @@
                     "version_added": "57"
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82",
-                        "partial_implementation": true,
-                        "notes": "Firefox does not support the <code>togglemicrophone</code>, <code>togglecamera</code>, and <code>hangup</code> action types."
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82",
+                    "partial_implementation": true,
+                    "notes": "Firefox does not support the <code>togglemicrophone</code>, <code>togglecamera</code>, and <code>hangup</code> action types."
+                },
                 "firefox_android": {
                     "version_added": "82",
                     "partial_implementation": true,
@@ -558,21 +446,9 @@
                     "version_added": "57"
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": {
                     "version_added": "82",
                     "partial_implementation": true,
@@ -622,21 +498,9 @@
                     "version_added": "57"
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": {
                     "version_added": "82",
                     "partial_implementation": true,
@@ -683,21 +547,9 @@
                     "version_added": "57"
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "82"
-                    },
-                    {
-                        "version_added": "71",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.media.mediasession.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "82"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false

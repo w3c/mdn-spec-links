@@ -14,45 +14,16 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter",
             "summary": "The backdrop-filter CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything behind the element, to see the effect you must make the element or its background at least partially transparent.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "76"
-                    },
-                    {
-                        "version_added": "47",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "76"
+                },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "17"
                 },
-                "firefox": [
-                    {
-                        "version_added": "103"
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "See <a href='https://bugzil.la/1578503'>bug 1578503</a>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.backdrop-filter.enabled",
-                                "value_to_set": "true"
-                            },
-                            {
-                                "type": "preference",
-                                "name": "gfx.webrender.all",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "103"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -67,20 +38,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": "79",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "caniuse": {
                 "feature": "css-backdrop-filter",

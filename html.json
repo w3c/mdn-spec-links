@@ -3549,37 +3549,14 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createConicGradient",
             "summary": "The CanvasRenderingContext2D.createConicGradient() method of the Canvas 2D API creates a gradient around a point with given coordinates.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "99"
-                    },
-                    {
-                        "version_added": "86",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#new-canvas-2d-api"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "99"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "90"
-                    },
-                    {
-                        "version_added": "86",
-                        "version_removed": "90",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "canvas.createConicGradient.enabled"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "90"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -3593,20 +3570,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "99"
-                    },
-                    {
-                        "version_added": "86",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#new-canvas-2d-api"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "99"
+                }
             },
             "title": "CanvasRenderingContext2D.createConicGradient()"
         }
@@ -11574,22 +11540,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "95",
-                        "version_removed": "98",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -11627,22 +11580,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "95",
-                        "version_removed": "98",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -11720,22 +11660,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "95",
-                        "version_removed": "98",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -11933,22 +11860,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "95",
-                        "version_removed": "98",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.webcomponents.formAssociatedCustomElement.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -15328,9 +15242,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLCanvasElement.json",
             "name": "transferControlToOffscreen",
             "slug": "API/HTMLCanvasElement/transferControlToOffscreen",
@@ -15342,15 +15253,21 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "44",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "44",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -15706,21 +15623,9 @@
                     "version_added": false
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "78",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -15761,21 +15666,9 @@
                     "version_added": false
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "78",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -15814,21 +15707,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "53",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -15910,21 +15791,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "53",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -15963,21 +15832,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "53",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -16016,21 +15873,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "53",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -16069,21 +15914,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "53",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -16122,21 +15955,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "53",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -17463,22 +17284,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "94"
-                    },
-                    {
-                        "version_added": "79",
-                        "version_removed": "94",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.forms.enterkeyhint",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "94"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -17612,22 +17420,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert",
             "summary": "The HTMLElement property inert is a boolean value that, when present, makes the browser \"ignore\" user input events for the element, including focus events and events from assistive technologies. The browser may also ignore page search and text selection in the element. This can be useful when building UIs such as modals where you would want to \"trap\" the focus inside the modal when it's visible.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "102"
-                    },
-                    {
-                        "version_added": "60",
-                        "version_removed": "102",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "102"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -17648,22 +17443,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "102"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "102",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "102"
+                }
             },
             "title": "HTMLElement.inert"
         }
@@ -34240,9 +34022,7 @@
     "dom-offscreencanvas-dev": [
         {
             "engines": [
-                "blink"
-            ],
-            "partial": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/OffscreenCanvas.json",
@@ -34256,17 +34036,23 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "46",
-                    "partial_implementation": true,
-                    "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "46",
+                        "partial_implementation": true,
+                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34306,18 +34092,25 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "alternative_name": "toBlob",
-                    "version_added": "46",
-                    "partial_implementation": true,
-                    "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview",
+                        "alternative_name": "toBlob"
+                    },
+                    {
+                        "alternative_name": "toBlob",
+                        "version_added": "46",
+                        "partial_implementation": true,
+                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34341,9 +34134,7 @@
     "dom-offscreencanvas-getcontext-dev": [
         {
             "engines": [
-                "blink"
-            ],
-            "partial": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/OffscreenCanvas.json",
@@ -34357,17 +34148,23 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "44",
-                    "partial_implementation": true,
-                    "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "44",
+                        "partial_implementation": true,
+                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34391,9 +34188,7 @@
     "dom-offscreencanvas-height-dev": [
         {
             "engines": [
-                "blink"
-            ],
-            "partial": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/OffscreenCanvas.json",
@@ -34407,17 +34202,23 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "44",
-                    "partial_implementation": true,
-                    "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "44",
+                        "partial_implementation": true,
+                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34441,9 +34242,7 @@
     "dom-offscreencanvas-transfertoimagebitmap-dev": [
         {
             "engines": [
-                "blink"
-            ],
-            "partial": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/OffscreenCanvas.json",
@@ -34457,17 +34256,23 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "46",
-                    "partial_implementation": true,
-                    "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "46",
+                        "partial_implementation": true,
+                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34491,9 +34296,7 @@
     "dom-offscreencanvas-width-dev": [
         {
             "engines": [
-                "blink"
-            ],
-            "partial": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/OffscreenCanvas.json",
@@ -34507,17 +34310,23 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "44",
-                    "partial_implementation": true,
-                    "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "44",
+                        "partial_implementation": true,
+                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34541,9 +34350,7 @@
     "the-offscreencanvas-interface": [
         {
             "engines": [
-                "blink"
-            ],
-            "partial": [
+                "blink",
                 "gecko"
             ],
             "filename": "api/OffscreenCanvas.json",
@@ -34557,17 +34364,23 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "44",
-                    "partial_implementation": true,
-                    "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "44",
+                        "partial_implementation": true,
+                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -36531,14 +36344,7 @@
             "summary": "The read-only alphabeticBaseline property of the TextMetrics interface is a double giving the distance from the horizontal line indicated by the CanvasRenderingContext2D.textBaseline property to the alphabetic baseline of the line box, in CSS pixels.",
             "support": {
                 "chrome": {
-                    "version_added": "35",
-                    "version_removed": "70",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -36566,14 +36372,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false,
-                    "version_removed": "70",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features"
-                        }
-                    ]
+                    "version_added": false
                 }
             },
             "title": "TextMetrics.alphabeticBaseline"
@@ -36723,21 +36522,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics/fontBoundingBoxAscent",
             "summary": "The read-only fontBoundingBoxAscent property of the TextMetrics interface is a double giving the distance from the horizontal line indicated by the CanvasRenderingContext2D.textBaseline attribute to the top of the highest bounding rectangle of all the fonts used to render the text, in CSS pixels.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "87"
-                    },
-                    {
-                        "version_added": "35",
-                        "version_removed": "87",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "87"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -36763,21 +36550,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "87"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "87",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "87"
+                }
             },
             "title": "TextMetrics.fontBoundingBoxAscent"
         }
@@ -36798,21 +36573,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics/fontBoundingBoxDescent",
             "summary": "The read-only fontBoundingBoxDescent property of the TextMetrics interface is a double giving the distance from the horizontal line indicated by the CanvasRenderingContext2D.textBaseline attribute to the bottom of the bounding rectangle of all the fonts used to render the text, in CSS pixels.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "87"
-                    },
-                    {
-                        "version_added": "35",
-                        "version_removed": "87",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "87"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -36838,21 +36601,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "87"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "87",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "87"
+                }
             },
             "title": "TextMetrics.fontBoundingBoxDescent"
         }
@@ -36873,14 +36624,7 @@
             "summary": "The read-only hangingBaseline property of the TextMetrics interface is a double giving the distance from the horizontal line indicated by the CanvasRenderingContext2D.textBaseline property to the hanging baseline of the line box, in CSS pixels.",
             "support": {
                 "chrome": {
-                    "version_added": "35",
-                    "version_removed": "70",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -36908,14 +36652,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false,
-                    "version_removed": "70",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features"
-                        }
-                    ]
+                    "version_added": false
                 }
             },
             "title": "TextMetrics.hangingBaseline"
@@ -36937,14 +36674,7 @@
             "summary": "The read-only ideographicBaseline property of the TextMetrics interface is a double giving the distance from the horizontal line indicated by the CanvasRenderingContext2D.textBaseline property to the ideographic baseline of the line box, in CSS pixels.",
             "support": {
                 "chrome": {
-                    "version_added": "35",
-                    "version_removed": "70",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features"
-                        }
-                    ]
+                    "version_added": false
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -36972,14 +36702,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false,
-                    "version_removed": "70",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features"
-                        }
-                    ]
+                    "version_added": false
                 }
             },
             "title": "TextMetrics.ideographicBaseline"
@@ -39856,9 +39579,6 @@
             "engines": [
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WebGLRenderingContext.json",
             "name": "commit",
             "slug": "API/WebGLRenderingContext/commit",
@@ -39870,16 +39590,21 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "44",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "44",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "gfx.offscreencanvas.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -42917,21 +42642,9 @@
                     "version_added": "1.24"
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -42975,21 +42688,9 @@
                     "version_added": "1.24"
                 },
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "69"
-                    },
-                    {
-                        "version_added": "68",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.promise_rejection_events.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "69"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -48212,21 +47913,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "98"
-                    },
-                    {
-                        "version_added": "53",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.dialog_element.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "98"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -56275,22 +55964,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "94"
-                    },
-                    {
-                        "version_added": "79",
-                        "version_removed": "94",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.forms.enterkeyhint",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "94"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -56475,21 +56151,6 @@
                     {
                         "version_added": "17",
                         "version_removed": "23"
-                    },
-                    {
-                        "version_added": "23",
-                        "version_removed": "95",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "dom.forms.inputmode",
-                                "value_to_set": "true"
-                            }
-                        ],
-                        "notes": [
-                            "Before version 77, Firefox does not support <code>inputmode</code> when <code>contenteditable</code> is <code>true</code>.",
-                            "Before version 75, Firefox accepts values from an earlier specification. From version 75, it accepts values from the WHATWG Living Standard. See <a href='https://bugzil.la/1509527'>bug 1509527</a>."
-                        ]
                     }
                 ],
                 "firefox_android": {

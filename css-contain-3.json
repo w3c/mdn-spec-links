@@ -10,7 +10,7 @@
             "name": "inline-size",
             "slug": "CSS/contain#inline-size",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain#inline-size",
-            "summary": "The contain CSS property allows an author to indicate that an element and its contents are, as much as possible, independent of the rest of the document tree. This allows the browser to recalculate layout, style, paint, size, or any combination of them for a limited area of the DOM and not the entire page, leading to obvious performance benefits.",
+            "summary": "The contain CSS property allows an author to indicate that an element and its contents are, as much as possible, independent of the rest of the document tree. Containment allows the browser to calculate layout, style, paint, size, or any combination of them for a specific area of the DOM. Changes within an element with containment applied are not propagated outside of the contained element to the rest of the page, leading to performance benefits through fewer DOM re-renders.",
             "support": {
                 "chrome": {
                     "version_added": "105"
