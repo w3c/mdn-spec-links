@@ -12,52 +12,14 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio",
             "summary": "The aspect-ratio CSS property sets a preferred aspect ratio for the box, which will be used in the calculation of auto sizes and some other layout functions.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "88"
-                    },
-                    {
-                        "version_added": "84",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "88"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "89"
-                    },
-                    {
-                        "version_added": "83",
-                        "partial_implementation": true,
-                        "notes": "Firefox 83 implements aspect-ratio for flex items.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.aspect-ratio.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "81",
-                        "partial_implementation": true,
-                        "notes": "Firefox 81 implements aspect-ratio for blocks and replaced elements.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.aspect-ratio.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "89"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -71,21 +33,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "88"
-                    },
-                    {
-                        "version_added": "84",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "88"
+                }
             },
             "title": "aspect-ratio"
         }

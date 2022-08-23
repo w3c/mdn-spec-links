@@ -983,22 +983,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types",
             "summary": "The HTTP Content-Security-Policy (CSP) trusted-types Experimental directive instructs user agents to restrict the creation of Trusted Types policies - functions that build non-spoofable, typed values intended to be passed to DOM XSS sinks in place of strings.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "83"
-                    },
-                    {
-                        "version_added": "73",
-                        "version_removed": "76",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-productivity-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
-                    }
-                ],
+                "chrome": {
+                    "version_added": "83"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -1019,22 +1006,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "83"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "76",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-productivity-features",
-                                "value_to_set": "Enabled"
-                            }
-                        ]
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "83"
+                }
             },
             "title": "CSP: trusted-types"
         }

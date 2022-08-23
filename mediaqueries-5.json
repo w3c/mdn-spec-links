@@ -96,22 +96,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors",
             "summary": "The forced-colors CSS media feature is used to detect if the user agent has enabled a forced colors mode where it enforces a user-chosen limited color palette on the page. An example of a forced colors mode is Windows High Contrast mode.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "89"
-                    },
-                    {
-                        "version_added": "79",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#forced-colors",
-                                "value_to_set": "Enabled"
-                            }
-                        ],
-                        "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
-                    }
-                ],
+                "chrome": {
+                    "version_added": "89"
+                },
                 "chrome_android": {
                     "version_added": false,
                     "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
@@ -119,21 +106,9 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": [
-                    {
-                        "version_added": "89"
-                    },
-                    {
-                        "version_added": "81",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.forced-colors.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "89"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -151,22 +126,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "89"
-                    },
-                    {
-                        "version_added": "79",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#forced-colors",
-                                "value_to_set": "Enabled"
-                            }
-                        ],
-                        "notes": "See <a href='https://crbug.com/970285'>bug 970285</a>."
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "89"
+                }
             },
             "title": "forced-colors"
         }
@@ -281,21 +243,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "101"
-                    },
-                    {
-                        "version_added": "80",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "layout.css.prefers-contrast.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "101"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
