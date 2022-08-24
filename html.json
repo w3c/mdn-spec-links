@@ -39636,7 +39636,7 @@
             "name": "DOMContentLoaded_event",
             "slug": "API/Window/DOMContentLoaded_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event",
-            "summary": "The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.",
+            "summary": "The DOMContentLoaded event fires when the HTML document has been completely parsed, and all deferred scripts (<script defer src=\"…\"> and <script type=\"module\">) have downloaded and executed. It doesn't wait for other things like images, subframes, and async scripts to finish loading.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -55738,7 +55738,7 @@
             "name": "class",
             "slug": "HTML/Global_attributes/class",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class",
-            "summary": "The class global attribute is a space-separated list of the case-sensitive classes of the element. Classes allow CSS and Javascript to select and access specific elements via the class selectors or functions like the DOM method document.getElementsByClassName.",
+            "summary": "The class global attribute is a space-separated list of the case-sensitive classes of the element. Classes allow CSS and JavaScript to select and access specific elements via the class selectors or functions like the DOM method document.getElementsByClassName.",
             "support": {
                 "chrome": {
                     "version_added": true
