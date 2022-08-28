@@ -1126,7 +1126,7 @@ const addSpecLink = (
 const isBrokenURL = (url) => {
   const parsedURL = new URL(url);
   return (
-    url.startsWith("https://www.khronos.org/registry/webgl/extensions/") ||
+    url.startsWith("https://registry.khronos.org/webgl/extensions/") ||
     !parsedURL.host ||
     !url.includes("#") ||
     parsedURL.pathname.includes("http://") ||
@@ -1195,7 +1195,7 @@ const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
   if (url.startsWith("https://www.w3.org/TR/tracking-dnt/")) {
     return; // Obsolete
   }
-  if (url.startsWith("https://www.khronos.org/registry/webgl/extensions/")) {
+  if (url.startsWith("https://registry.khronos.org/webgl/extensions/")) {
     return; // WebGL extension specs; ignore
   }
   if (url.startsWith("https://www.w3.org/TR/MathML3/")) {

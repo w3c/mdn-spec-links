@@ -351,9 +351,7 @@ const checkSpecURL = (
     return;
   }
   if (
-    spec_url.match(
-      /https:\/\/www.khronos.org\/registry\/webgl\/extensions\/[^/]+\//
-    )
+    spec_url.match(/https:\/\/registry.khronos.org\/webgl\/extensions\/[^/]+\//)
   ) {
     return;
   }

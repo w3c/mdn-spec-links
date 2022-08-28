@@ -49,8 +49,8 @@ const stableSpecs = [
   "https://httpwg.org/specs/rfc7838.html",
   "https://httpwg.org/specs/rfc8246.html",
   "https://httpwg.org/specs/rfc8470.html",
-  "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-  "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+  "https://registry.khronos.org/webgl/specs/latest/1.0/",
+  "https://registry.khronos.org/webgl/specs/latest/2.0/",
 ];
 
 const respecRawSpecs = [
