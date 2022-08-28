@@ -194,7 +194,8 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "1"
+                    "version_added": "1",
+                    "notes": "Since Firefox 16, if an <code>actiontype</code> is not specified (is empty) or if the <code>selection</code> attribute is invalid, the markup will throw a MathML error (invalid-markup)."
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -230,8 +231,12 @@
     "the-top-level-math-element": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink"
             ],
             "filename": "mathml/elements/math.json",
             "name": "math",
@@ -239,11 +244,26 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math",
             "summary": "The <math> element is the top-level MathML element, used to write a single mathematical formula. It can be placed in HTML content where flow content is permitted.",
             "support": {
-                "chrome": {
-                    "version_added": "24",
-                    "version_removed": "25",
-                    "notes": "See <a href='https://crbug.com/6606'>bug 6606</a>."
-                },
+                "chrome": [
+                    {
+                        "version_added": "80",
+                        "impl_url": "https://crbug.com/6606",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "24",
+                        "version_removed": "25",
+                        "partial_implementation": true,
+                        "impl_url": "https://crbug.com/152430",
+                        "notes": "Removed in Chrome 25 because <a href='https://crbug.com/152430#c32'>code was not yet production ready</a>."
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": false
@@ -265,12 +285,25 @@
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": "9.5",
-                    "version_removed": "15",
-                    "partial_implementation": true,
-                    "notes": "Only supported in XHTML documents."
-                },
+                "opera": [
+                    {
+                        "version_added": "67",
+                        "impl_url": "https://crbug.com/6606",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "9.5",
+                        "version_removed": "15",
+                        "partial_implementation": true,
+                        "notes": "Only supported in XHTML documents."
+                    }
+                ],
                 "opera_android": {
                     "version_added": "10.1",
                     "version_removed": "14",
@@ -285,11 +318,26 @@
                 },
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false,
-                    "version_removed": "25",
-                    "notes": "See <a href='https://crbug.com/6606'>bug 6606</a>."
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "80",
+                        "impl_url": "https://crbug.com/6606",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "25",
+                        "partial_implementation": true,
+                        "impl_url": "https://crbug.com/152430",
+                        "notes": "Removed in Chrome 25 because <a href='https://crbug.com/152430#c32'>code was not yet production ready</a>."
+                    }
+                ]
             },
             "title": "<math>"
         }
@@ -1278,8 +1326,12 @@
     "style-change-mstyle": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink"
             ],
             "filename": "mathml/elements/mstyle.json",
             "name": "mstyle",
@@ -1287,15 +1339,48 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle",
             "summary": "The MathML <mstyle> element is used to change the style of its children.",
             "support": {
-                "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/6606'>bug 6606</a>."
-                },
+                "chrome": [
+                    {
+                        "version_added": "88",
+                        "impl_url": "https://crrev.com/c/1908533",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "80",
+                        "partial_implementation": true,
+                        "impl_url": "https://crrev.com/c/1908533",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ],
+                        "notes": "Only basic support with attributes <code>dir</code>, <code>mathbackground</code>, <code>mathcolor</code> and <code>mathsize</code>."
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "1"
-                },
+                "firefox": [
+                    {
+                        "version_added": "6",
+                        "notes": [
+                            "In Firefox 29, accepted attributes have been restricted to those actually used in practice: <code>id</code>, <code>class</code>, <code>style</code>, <code>href</code>, <code>mathcolor</code>, <code>mathbackground</code>, <code>scriptlevel</code>, <code>displaystyle</code>, <code>scriptsizemultiplier</code>, <code>scriptminsize</code>, <code>dir</code>, <code>mathsize</code>, <code>mathvariant</code>, <code>fontfamily</code>, <code>fontweight</code>, <code>fontstyle</code>, <code>fontsize</code>, <code>color</code>, <code>background</code>.",
+                            "In Firefox 103, attributes <code>scriptsizemultiplier</code> and <code>scriptminsize</code> have been removed."
+                        ]
+                    },
+                    {
+                        "version_added": "1",
+                        "partial_implementation": true,
+                        "notes": "Attributes <code>bevelled</code>, <code>notation</code>, <code>open</code>, <code>close</code>, <code>separators</code>, <code>accent</code>, <code>accentunder</code>, <code>selection</code>, <code>mathvariant</code> are not supported."
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -1311,10 +1396,32 @@
                 },
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/6606'>bug 6606</a>."
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "88",
+                        "impl_url": "https://crrev.com/c/1908533",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "80",
+                        "partial_implementation": true,
+                        "impl_url": "https://crrev.com/c/1908533",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ],
+                        "notes": "Only basic support with attributes <code>dir</code>, <code>mathbackground</code>, <code>mathcolor</code> and <code>mathsize</code>."
+                    }
+                ]
             },
             "title": "<mstyle>"
         }
