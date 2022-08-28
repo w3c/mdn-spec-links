@@ -261,6 +261,14 @@ const checkSpecURL = (
    *   return;
    * }
    */
+  // FIXME https://github.com/mdn/browser-compat-data/pull/17590
+  if (
+    spec_url.startsWith(
+      "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-"
+    )
+  ) {
+    return;
+  }
   // FIXME temporary
   if (
     spec_url.startsWith(
@@ -275,10 +283,6 @@ const checkSpecURL = (
       "https://wicg.github.io/savedata/#save-data-request-header-field"
     )
   ) {
-    return;
-  }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17209
-  if (spec_url.startsWith("https://www.w3.org/TR/selectors-4/")) {
     return;
   }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17212
