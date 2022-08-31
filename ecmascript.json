@@ -19484,7 +19484,7 @@
             "name": "dotAll",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/dotAll",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll",
-            "summary": "The dotAll property indicates whether or not the s flag is used with the regular expression. dotAll is a read-only property of an individual regular expression instance.",
+            "summary": "The dotAll accessor property indicates whether or not the s flag is used with the regular expression.",
             "support": {
                 "chrome": {
                     "version_added": "62"
@@ -19595,7 +19595,7 @@
             "name": "flags",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/flags",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags",
-            "summary": "The flags property returns a string consisting of the flags of the current regular expression object.",
+            "summary": "The flags accessor property represents the flags of the current regular expression object.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -19646,7 +19646,7 @@
             "name": "global",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/global",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global",
-            "summary": "The global property indicates whether or not the g flag is used with the regular expression. global is a read-only property of an individual regular expression instance.",
+            "summary": "The global accessor property indicates whether or not the g flag is used with the regular expression.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -19699,7 +19699,7 @@
             "name": "hasIndices",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/hasIndices",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices",
-            "summary": "The hasIndices property indicates whether or not the d flag is used with the regular expression. hasIndices is a read-only property of an individual regular expression instance.",
+            "summary": "The hasIndices accessor property indicates whether or not the d flag is used with the regular expression.",
             "support": {
                 "chrome": {
                     "version_added": "90"
@@ -19746,7 +19746,7 @@
             "name": "ignoreCase",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/ignoreCase",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase",
-            "summary": "The ignoreCase property indicates whether or not the i flag is used with the regular expression. ignoreCase is a read-only property of an individual regular expression instance.",
+            "summary": "The ignoreCase accessor property indicates whether or not the i flag is used with the regular expression.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -19852,7 +19852,7 @@
             "name": "multiline",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/multiline",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline",
-            "summary": "The multiline property indicates whether or not the m flag is used with the regular expression. multiline is a read-only property of an individual regular expression instance.",
+            "summary": "The multiline accessor property indicates whether or not the m flag is used with the regular expression.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -19905,7 +19905,7 @@
             "name": "source",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/source",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source",
-            "summary": "The source property returns a String containing the source text of the regexp object, and it doesn't contain the two forward slashes on both sides and any flags.",
+            "summary": "The source accessor property is a string containing the source text of the regex object, without the two forward slashes on both sides or any flags.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -19958,7 +19958,7 @@
             "name": "sticky",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/sticky",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky",
-            "summary": "The sticky property reflects whether or not the search is sticky (searches in strings only from the index indicated by the lastIndex property of this regular expression). sticky is a read-only property of an individual regular expression object.",
+            "summary": "The sticky accessor property indicates whether or not the y flag is used with the regular expression.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -20113,7 +20113,7 @@
             "name": "unicode",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/unicode",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode",
-            "summary": "The unicode property indicates whether or not the u flag is used with a regular expression. unicode is a read-only property of an individual regular expression instance.",
+            "summary": "The unicode accessor property indicates whether or not the u flag is used with the regular expression.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -36376,7 +36376,7 @@
             "name": "for_await_of",
             "slug": "JavaScript/Reference/Statements/for-await...of",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of",
-            "summary": "The for await...of statement creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object. This statement can only be used inside an async function.",
+            "summary": "The for await...of statement creates a loop iterating over async iterable objects as well as sync iterables. This statement can only be used in contexts where await can be used, which includes inside an async function body and in a module.",
             "support": {
                 "chrome": {
                     "version_added": "63"
