@@ -269,6 +269,14 @@ const checkSpecURL = (
   ) {
     return;
   }
+  // FIXME
+  if (
+    spec_url.startsWith(
+      "https://drafts.csswg.org/css-fonts-4/#font-palette-prop"
+    )
+  ) {
+    return;
+  }
   // FIXME temporary
   if (
     spec_url.startsWith(
