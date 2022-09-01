@@ -31,7 +31,6 @@ const stableSpecs = [
   "https://www.rfc-editor.org/rfc/rfc2397",
   "https://www.rfc-editor.org/rfc/rfc6454",
   "https://www.rfc-editor.org/rfc/rfc6797",
-  "https://www.rfc-editor.org/rfc/rfc7034",
   "https://www.rfc-editor.org/rfc/rfc7239",
   "https://www.rfc-editor.org/rfc/rfc7578",
   "https://www.rfc-editor.org/rfc/rfc8942",
