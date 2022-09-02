@@ -537,6 +537,22 @@ const fixCanIUseSpecURLs = (key, data) => {
       // "I'm a teapot" RFC; ignore
       return false;
     }
+    if (url.startsWith("https://httpwg.org/specs/rfc7725.html")) {
+      // HTTP status code 405; irrelevant
+      return false;
+    }
+    if (url.startsWith("https://httpwg.org/specs/rfc8470.html")) {
+      // HTTP Early-Data header; irrelevant
+      return false;
+    }
+    if (
+      url.startsWith(
+        "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-expect-ct"
+      )
+    ) {
+      // HTTP Expect-CT header; irrelevant
+      return false;
+    }
     return !SPECURLS.includes(url);
   };
   if (data && data instanceof Object && "spec" in data) {

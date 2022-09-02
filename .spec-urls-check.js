@@ -358,6 +358,22 @@ const checkSpecURL = (
     // "I'm a teapot" RFC; ignore
     return;
   }
+  if (spec_url.startsWith("https://httpwg.org/specs/rfc7725.html")) {
+    // HTTP status code 405; irrelevant
+    return;
+  }
+  if (spec_url.startsWith("https://httpwg.org/specs/rfc8470.html")) {
+    // HTTP Early-Data header; irrelevant
+    return;
+  }
+  if (
+    spec_url.startsWith(
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-expect-ct"
+    )
+  ) {
+    // HTTP Expect-CT header; irrelevant
+    return false;
+  }
   if (
     spec_url.match(/https:\/\/registry.khronos.org\/webgl\/extensions\/[^/]+\//)
   ) {
