@@ -269,7 +269,7 @@ const checkSpecURL = (
   ) {
     return;
   }
-  // FIXME
+  // FIXME temporary
   if (
     spec_url.startsWith(
       "https://drafts.csswg.org/css-fonts-4/#font-palette-prop"
@@ -308,6 +308,10 @@ const checkSpecURL = (
       "https://svgwg.org/svg2-draft/styling.html#__svg__SVGStyleElement__disabled"
     )
   ) {
+    return;
+  }
+  // Redirects from https://w3c.github.io/device-memory; ignore
+  if (spec_url.startsWith("https://www.w3.org/TR/device-memory/")) {
     return;
   }
   if (spec_url.startsWith("https://www.w3.org/TR/SVG11/")) {
