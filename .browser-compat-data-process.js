@@ -553,6 +553,14 @@ const fixCanIUseSpecURLs = (key, data) => {
       // HTTP Expect-CT header; irrelevant
       return false;
     }
+    if (
+      url.startsWith(
+        "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers"
+      )
+    ) {
+      // HTTP Digest header; irrelevant
+      return false;
+    }
     return !SPECURLS.includes(url);
   };
   if (data && data instanceof Object && "spec" in data) {

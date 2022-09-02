@@ -376,7 +376,15 @@ const checkSpecURL = (
     )
   ) {
     // HTTP Expect-CT header; irrelevant
-    return false;
+    return;
+  }
+  if (
+    spec_url.startsWith(
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers"
+    )
+  ) {
+    // HTTP Digest header; irrelevant
+    return;
   }
   if (
     spec_url.match(/https:\/\/registry.khronos.org\/webgl\/extensions\/[^/]+\//)
