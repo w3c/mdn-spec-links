@@ -537,30 +537,6 @@ const fixCanIUseSpecURLs = (key, data) => {
       // "I'm a teapot" RFC; ignore
       return false;
     }
-    if (url.startsWith("https://httpwg.org/specs/rfc7725.html")) {
-      // HTTP status code 405; irrelevant
-      return false;
-    }
-    if (url.startsWith("https://httpwg.org/specs/rfc8470.html")) {
-      // HTTP Early-Data header; irrelevant
-      return false;
-    }
-    if (
-      url.startsWith(
-        "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-expect-ct"
-      )
-    ) {
-      // HTTP Expect-CT header; irrelevant
-      return false;
-    }
-    if (
-      url.startsWith(
-        "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers"
-      )
-    ) {
-      // HTTP Digest header; irrelevant
-      return false;
-    }
     return !SPECURLS.includes(url);
   };
   if (data && data instanceof Object && "spec" in data) {
@@ -1204,6 +1180,9 @@ const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
   if (url.startsWith("https://w3c.github.io/device-memory/")) {
     return; // redirects to https://www.w3.org/TR/device-memory/
   }
+  if (url.startsWith("https://www.w3.org/TR/device-memory/")) {
+    return;
+  }
   if (url.startsWith("https://w3c.github.io/setImmediate/")) {
     return; // ancient and unimplemented
   }
@@ -1215,6 +1194,26 @@ const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
   }
   if (url.startsWith("/https://www.rfc-editor.org/rfc/rfc7469")) {
     return; // HTTP Public Key Pinning (obsolete)
+  }
+  if (url.startsWith("https://httpwg.org/specs/rfc7725.html")) {
+    return; // HTTP status code 405; irrelevant
+  }
+  if (url.startsWith("https://httpwg.org/specs/rfc8470.html")) {
+    return; // HTTP Early-Data header; irrelevant
+  }
+  if (
+    url.startsWith(
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-expect-ct"
+    )
+  ) {
+    return; // HTTP Expect-CT header; irrelevant
+  }
+  if (
+    url.startsWith(
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers"
+    )
+  ) {
+    return; // HTTP Digest header; irrelevant
   }
   if (url.startsWith("https://www.w3.org/TR/tracking-dnt/")) {
     return; // Obsolete
