@@ -22,6 +22,9 @@ const error = (msg) => console.error(chalk`{redBright     ${msg}}`);
 
 const needsSpecURL = (mdnURL) => {
   const exceptions = [
+    // FIXME: temporary https://github.com/mdn/browser-compat-data/pull/17728
+    "https://developer.mozilla.org/docs/Web/CSS/path()",
+    "https://developer.mozilla.org/docs/Web/CSS/path",
     "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createConicGradient",
     "https://developer.mozilla.org/docs/Web/API/Document/featurePolicy",
     "https://developer.mozilla.org/docs/Web/API/FeaturePolicy/allowedFeatures",
