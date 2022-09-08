@@ -22,9 +22,6 @@ const error = (msg) => console.error(chalk`{redBright     ${msg}}`);
 
 const needsSpecURL = (mdnURL) => {
   const exceptions = [
-    // FIXME: temporary https://github.com/mdn/browser-compat-data/pull/17728
-    "https://developer.mozilla.org/docs/Web/CSS/path()",
-    "https://developer.mozilla.org/docs/Web/CSS/path",
     "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createConicGradient",
     "https://developer.mozilla.org/docs/Web/API/Document/featurePolicy",
     "https://developer.mozilla.org/docs/Web/API/FeaturePolicy/allowedFeatures",
@@ -264,14 +261,6 @@ const checkSpecURL = (
    *   return;
    * }
    */
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17691
-  if (
-    spec_url.startsWith(
-      "https://drafts.csswg.org/css-fonts-4/#font-palette-prop"
-    )
-  ) {
-    return;
-  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14600
   if (
     spec_url.startsWith(
