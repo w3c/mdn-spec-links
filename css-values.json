@@ -352,6 +352,226 @@
             "title": "<length>"
         }
     ],
+    "trig-funcs": [
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/acos.json",
+            "name": "acos",
+            "slug": "CSS/acos",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/acos",
+            "summary": "The acos() CSS function is a trigonometric function that returns the inverse cosine of a number between -1 and 1. The function contains a single calculation that returns the number of radians representing an <angle> between 0deg and 180deg.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "acos()"
+        },
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/asin.json",
+            "name": "asin",
+            "slug": "CSS/asin",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/asin",
+            "summary": "The asin() CSS function is a trigonometric function that returns the inverse sine of a number between -1 and 1. The function contains a single calculation that returns the number of radians representing an <angle> between -90deg and 90deg.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "asin()"
+        },
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/types/cos.json",
+            "name": "cos",
+            "slug": "CSS/cos",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/cos",
+            "summary": "The cos() CSS function is a trigonometric function that returns the cosine of a number, which is a value between -1 and 1. The function contains a single calculation that must resolve to either a <number> or an <angle> by interpreting the result of the argument as radians. That is, cos(45deg), cos(0.125turn), and cos(3.14159 / 4) all represent the same value, approximately 0.707.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.trig.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "cos()"
+        },
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/types/sin.json",
+            "name": "sin",
+            "slug": "CSS/sin",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin",
+            "summary": "The sin() CSS function is a trigonometric function that returns the sine of a number, which is a value between -1 and 1. The function contains a single calculation that must resolve to either a <number> or an <angle> by interpreting the result of the argument as radians. That is, sin(45deg), sin(0.125turn), and sin(3.14159 / 4) all represent the same value, approximately 0.707.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.trig.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "sin()"
+        },
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/types/tan.json",
+            "name": "tan",
+            "slug": "CSS/tan",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/tan",
+            "summary": "The tan() CSS function is a trigonometric function that returns the tangent of a number, which is a value between −infinity and infinity. The function contains a single calculation that must resolve to either a <number> or an <angle> by interpreting the result of the argument as radians.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.trig.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "tan()"
+        }
+    ],
     "mixed-percentages": [
         {
             "engines": [
@@ -570,189 +790,6 @@
                 }
             },
             "title": "<angle>"
-        }
-    ],
-    "trig-funcs": [
-        {
-            "engines": [
-                "webkit"
-            ],
-            "filename": "css/types/asin.json",
-            "name": "asin",
-            "slug": "CSS/asin",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/asin",
-            "summary": "The asin() CSS function is a trigonometric function that returns the inverse sine of a number between -1 and 1. The function contains a single calculation that returns the number of radians representing an <angle> between -90deg and 90deg.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "15.4"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "asin()"
-        },
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "css/types/cos.json",
-            "name": "cos",
-            "slug": "CSS/cos",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/cos",
-            "summary": "The cos() CSS function is a trigonometric function that returns the cosine of a number, which is a value between -1 and 1. The function contains a single calculation that must resolve to either a <number> or an <angle> by interpreting the result of the argument as radians. That is, cos(45deg), cos(0.125turn), and cos(3.14159 / 4) all represent the same value, approximately 0.707.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "103",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.trig.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "15.4"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "cos()"
-        },
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "css/types/sin.json",
-            "name": "sin",
-            "slug": "CSS/sin",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/sin",
-            "summary": "The sin() CSS function is a trigonometric function that returns the sine of a number, which is a value between -1 and 1. The function contains a single calculation that must resolve to either a <number> or an <angle> by interpreting the result of the argument as radians. That is, sin(45deg), sin(0.125turn), and sin(3.14159 / 4) all represent the same value, approximately 0.707.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "103",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.trig.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "15.4"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "sin()"
-        },
-        {
-            "engines": [
-                "gecko",
-                "webkit"
-            ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "css/types/tan.json",
-            "name": "tan",
-            "slug": "CSS/tan",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/tan",
-            "summary": "The tan() CSS function is a trigonometric function that returns the tangent of a number, which is a value between −infinity and infinity. The function contains a single calculation that must resolve to either a <number> or an <angle> by interpreting the result of the argument as radians.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "103",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.trig.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "15.4"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "tan()"
         }
     ],
     "calc-func": [

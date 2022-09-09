@@ -357,7 +357,7 @@
             "name": "merror",
             "slug": "MathML/Element/merror",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror",
-            "summary": "The MathML <merror> element is used to display contents as error messages. In Firefox this error message is rendered similar to the typical XML error message. Note that this error is not thrown when your MathML markup is wrong or not well-formed XML. You will still get an XML parsing error (in case of the XHTML notation of MathML), which has nothing to do with <merror>.",
+            "summary": "The MathML <merror> element is used to display contents as error messages. The intent of this element is to provide a standard way for programs that generate MathML from other input to report syntax errors.",
             "support": {
                 "chrome": {
                     "version_added": "81",
@@ -417,7 +417,7 @@
             "name": "mfrac",
             "slug": "MathML/Element/mfrac",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac",
-            "summary": "The MathML <mfrac> element is used to display fractions.",
+            "summary": "The MathML <mfrac> element is used to display fractions. It can also be used to mark up fraction-like objects such as binomial coefficients and Legendre symbols.",
             "support": {
                 "chrome": {
                     "version_added": "83",
@@ -541,7 +541,7 @@
             "name": "mmultiscripts",
             "slug": "MathML/Element/mmultiscripts",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts",
-            "summary": "The MathML <mmultiscripts> element allows you to create tensor-like objects. In a descriptive way tensors are multidimensional matrices (mathematical imprecise but exemplified). The degree of a tensor depends on the dimensionality of a representative array. For example, a number is a 0-dimensional array, or a 0th-order tensor. A 1-dimensional array (e.g. vectors) is a 1st-order tensor and so 2nd-order tensors are needed to represent square matrices. To learn more about the mathematical background of tensors refer to the entry on Wikipedia.",
+            "summary": "The MathML <mmultiscripts> element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the <msubsup> element. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
             "support": {
                 "chrome": {
                     "version_added": "86",

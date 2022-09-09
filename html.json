@@ -5154,7 +5154,7 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "2"
+                    "version_added": "3.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -48087,7 +48087,6 @@
         {
             "engines": [
                 "blink",
-                "gecko",
                 "webkit"
             ],
             "partial": [
@@ -48109,7 +48108,9 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "4"
+                    "version_added": "4",
+                    "partial_implementation": true,
+                    "notes": "The <code>&lt;datalist&gt;</code> element will only create a dropdown for textual types, such as <code>text</code>, <code>search</code>, <code>url</code>, <code>tel</code>, <code>email</code> and <code>number</code>. The <code>date</code>, <code>time</code>, <code>range</code> and <code>color</code> types are not supported."
                 },
                 "firefox_android": [
                     {
