@@ -153,8 +153,7 @@ const processSpecURL = async (
       "https://labs.w3.org/spec-generator/?type=respec&url=" + requestURL;
   }
   if (requestURL.startsWith("https://drafts.csswg.org/")) {
-    requestURL =
-      "https://andreubotella.com/csswg-auto-build/" + requestURL.substring(25);
+    return;
   }
   const contents = getRemoteContents(specURL, requestURL, seconds);
   if (contents && contents.match(/respec-w3c-/)) {
@@ -198,10 +197,6 @@ const processSpecURL = async (
 
   if (requestURL.startsWith("https://labs.w3.org/spec-generator/")) {
     requestURL = requestURL.substring(52);
-  }
-
-  if (requestURL.startsWith("https://andreubotella.com")) {
-    requestURL = "https://drafts.csswg.org" + requestURL.substring(42);
   }
 
   if (specJSONfile === "mathml.json") {

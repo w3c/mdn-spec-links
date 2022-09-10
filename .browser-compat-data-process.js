@@ -105,58 +105,59 @@ const fixCanIUseSpecURLs = (key, data) => {
         "tools.ietf.org",
         "datatracker.ietf.org/doc",
       ],
-      "https://drafts.csswg.org/mediaqueries/#media0": ["media0", "media"],
-      "https://drafts.csswg.org/css-conditional/#at-supports-ext": [
+      "https://w3c.github.io/csswg-drafts/mediaqueries/#media0": [
+        "media0",
+        "media",
+      ],
+      "https://w3c.github.io/csswg-drafts/css-conditional/#at-supports-ext": [
         "at-supports-ext",
         "at-supports",
       ],
-      "https://drafts.csswg.org/web-animations-1/": [
+      "https://w3c.github.io/csswg-drafts/web-animations-1/": [
         "web-animations-1",
         "web-animations",
       ],
-      "https://drafts.csswg.org/css-color-3/#transparency": [
+      "https://w3c.github.io/csswg-drafts/css-color-3/#transparency": [
         "css-color-3",
         "css-color",
       ],
-      "https://drafts.csswg.org/selectors/#gen-content": [
+      "https://w3c.github.io/csswg-drafts/selectors/#gen-content": [
         "selectors",
         "selectors-3",
       ],
-      "https://drafts.csswg.org/selectors/#first-letter": [
+      "https://w3c.github.io/csswg-drafts/selectors/#first-letter": [
         "selectors",
         "selectors-3",
       ],
-      "https://drafts.csswg.org/selectors/#first-line": [
+      "https://w3c.github.io/csswg-drafts/selectors/#first-line": [
         "selectors",
         "selectors-3",
       ],
-      "https://drafts.csswg.org/selectors/#the-user-action-pseudo-classes-hover-act":
+      "https://w3c.github.io/csswg-drafts/selectors/#the-user-action-pseudo-classes-hover-act":
         ["selectors", "selectors-3"],
-      "https://drafts.csswg.org/css-text-decor/#text-decoration-skip-ink-property":
+      "https://w3c.github.io/csswg-drafts/css-text-decor/#text-decoration-skip-ink-property":
         ["css-text-decor", "css-text-decor-4"],
-      "https://drafts.csswg.org/css-text-decor/#text-decoration-skipping": [
+      "https://w3c.github.io/csswg-drafts/css-text-decor/#text-decoration-skipping":
+        ["css-text-decor", "css-text-decor-4"],
+      "https://w3c.github.io/csswg-drafts/css-text-decor/#text-decoration-width-property":
+        ["css-text-decor", "css-text-decor-4"],
+      "https://w3c.github.io/csswg-drafts/css-text-decor/#underline-offset": [
         "css-text-decor",
         "css-text-decor-4",
       ],
-      "https://drafts.csswg.org/css-text-decor/#text-decoration-width-property":
-        ["css-text-decor", "css-text-decor-4"],
-      "https://drafts.csswg.org/css-text-decor/#underline-offset": [
-        "css-text-decor",
-        "css-text-decor-4",
-      ],
-      "https://drafts.csswg.org/selectors/#target-pseudo": [
+      "https://w3c.github.io/csswg-drafts/selectors/#target-pseudo": [
         "target-pseudo",
         "the-target-pseudo",
       ],
-      "https://drafts.csswg.org/selectors/#last-child-pseudo": [
+      "https://w3c.github.io/csswg-drafts/selectors/#last-child-pseudo": [
         "last-child-pseudo",
         "the-last-child-pseudo",
       ],
-      "https://drafts.csswg.org/selectors/#empty-pseudo": [
+      "https://w3c.github.io/csswg-drafts/selectors/#empty-pseudo": [
         "empty-pseudo",
         "the-empty-pseudo",
       ],
-      "https://drafts.csswg.org/selectors/#universal-selector": [
+      "https://w3c.github.io/csswg-drafts/selectors/#universal-selector": [
         "universal-selector",
         "the-universal-selector",
       ],
@@ -219,15 +220,15 @@ const fixCanIUseSpecURLs = (key, data) => {
       ],
       "http://w3.org/TR/css3-fonts/": [
         "http://w3.org/TR/css3-fonts/",
-        "https://drafts.csswg.org/css-fonts-3/",
+        "https://w3c.github.io/csswg-drafts/css-fonts-3/",
       ],
       "https://www.w3.org/TR/css4-images/": [
         "https://www.w3.org/TR/css4-images/",
-        "https://drafts.csswg.org/css-images-4/",
+        "https://w3c.github.io/csswg-drafts/css-images-4/",
       ],
       "https://www.w3.org/TR/mediaqueries-4/": [
         "https://www.w3.org/TR/mediaqueries-4/",
-        "https://drafts.csswg.org/mediaqueries-4/",
+        "https://w3c.github.io/csswg-drafts/mediaqueries-4/",
       ],
       "https://www.w3.org/TR/pointerevents/": [
         "https://www.w3.org/TR/pointerevents/",
@@ -235,23 +236,19 @@ const fixCanIUseSpecURLs = (key, data) => {
       ],
       "https://www.w3.org/TR/cssom/": [
         "https://www.w3.org/TR/cssom/",
-        "https://drafts.csswg.org/cssom/",
+        "https://w3c.github.io/csswg-drafts/cssom/",
       ],
       "https://www.w3.org/TR/css-variables-1/": [
         "https://www.w3.org/TR/css-variables-1/",
-        "https://drafts.csswg.org/css-variables/",
+        "https://w3c.github.io/csswg-drafts/css-variables/",
       ],
       "https://www.w3.org/TR/cssom-view": [
         "https://www.w3.org/TR/cssom-view",
-        "https://drafts.csswg.org/cssom-view",
+        "https://w3c.github.io/csswg-drafts/cssom-view",
       ],
       "http://w3.org/TR/css-fonts/": [
         "http://w3.org/TR/css3-fonts/",
-        "https://drafts.csswg.org/css-fonts-3/",
-      ],
-      "http://drafts.csswg.org/css-scoping/": [
-        "http://drafts.csswg",
-        "https://drafts.csswg",
+        "https://w3c.github.io/csswg-drafts/css-fonts-3/",
       ],
       "https://www.w3.org/TR/compositing-1/": [
         "https://www.w3.org/TR/compositing-1/",
@@ -265,8 +262,8 @@ const fixCanIUseSpecURLs = (key, data) => {
         "https://www.w3.org/TR/css-masking-1/",
         "https://drafts.fxtf.org/css-masking-1/",
       ],
-      "https://drafts.csswg.org/css-timing-1/": ["timing", "easing"],
-      "https://drafts.csswg.org/css-logical-props/": [
+      "https://w3c.github.io/csswg-drafts/css-timing-1/": ["timing", "easing"],
+      "https://w3c.github.io/csswg-drafts/css-logical-props/": [
         "/css-logical-props/",
         "/css-logical/",
       ],
@@ -305,7 +302,7 @@ const fixCanIUseSpecURLs = (key, data) => {
       ],
       "https://www.w3.org/TR/css-": [
         "https://www.w3.org/TR/css-",
-        "https://drafts.csswg.org/css-",
+        "https://w3c.github.io/csswg-drafts/css-",
       ],
       "https://w3c.github.io/hr-time/#sec-DOMHighResTimeStamp": [
         "#sec-DOMHighResTimeStamp",
@@ -481,31 +478,31 @@ const fixCanIUseSpecURLs = (key, data) => {
     if (url.startsWith("https://www.w3.org/TR/css3-background/")) {
       return url.replace(
         "https://www.w3.org/TR/css3-background/",
-        "https://drafts.csswg.org/css-backgrounds-3/"
+        "https://w3c.github.io/csswg-drafts/css-backgrounds-3/"
       );
     }
     if (url.startsWith("https://www.w3.org/TR/css3-mediaqueries/")) {
       return url.replace(
         "https://www.w3.org/TR/css3-mediaqueries/",
-        "https://drafts.csswg.org/mediaqueries-3/"
+        "https://w3c.github.io/csswg-drafts/mediaqueries-3/"
       );
     }
     if (url.startsWith("https://www.w3.org/TR/css3-selectors/")) {
       return url.replace(
         "https://www.w3.org/TR/css3-selectors/",
-        "https://drafts.csswg.org/selectors-3/"
+        "https://w3c.github.io/csswg-drafts/selectors-3/"
       );
     }
     if (url.startsWith("https://www.w3.org/TR/css3-")) {
       return url.replace(
         /https:\/\/www.w3.org\/TR\/css3-([^/]+)\//,
-        "https://drafts.csswg.org/css-$1-3/"
+        "https://w3c.github.io/csswg-drafts/css-$1-3/"
       );
     }
     if (url.startsWith("https://www.w3.org/TR/selectors")) {
       return url.replace(
         /https:\/\/www.w3.org\/TR\/selectors(-)?4\//,
-        "https://drafts.csswg.org/selectors-4/"
+        "https://w3c.github.io/csswg-drafts/selectors-4/"
       );
     }
     if (url.includes("://www.ecma-international.org/ecma-262/")) {
@@ -585,7 +582,7 @@ const fixCanIUseSpecURLs = (key, data) => {
       .replace("www.w3.org/TR/clipboard-apis", "w3c.github.io/clipboard-apis")
       .replace(
         "w3.org/TR/css3-fonts/#font-rend-props",
-        "drafts.csswg.org/css-fonts/#font-rend-props"
+        "w3c.github.io/csswg-drafts/css-fonts/#font-rend-props"
       )
       .replace(
         "#widl-Element-insertAdjacentHTML-void-DOMString-position-DOMString-text",
@@ -676,6 +673,10 @@ const fixCanIUseSpecURLs = (key, data) => {
       if (isObsolete(base)) {
         return data;
       }
+      specURL = specURL.replace(
+        "drafts.csswg.org",
+        "w3c.github.io/csswg-drafts"
+      );
       if (isBrokenSpecURL(specURL, parsedURL, SPECURLS)) {
         warn(`bad caniuse spec URL ${specURL}`);
         return data;
