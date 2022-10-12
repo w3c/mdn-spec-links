@@ -42,7 +42,6 @@ const stableSpecs = [
   "https://httpwg.org/specs/rfc9111.html",
   "https://httpwg.org/specs/rfc9112.html",
   "https://httpwg.org/specs/rfc9113.html",
-  "https://registry.khronos.org/webgl/specs/latest/1.0/",
   "https://registry.khronos.org/webgl/specs/latest/2.0/",
 ];
 
