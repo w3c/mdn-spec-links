@@ -2,10 +2,10 @@
     "propdef-hyphenate-character": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "prefixed": [
-                "blink",
                 "webkit"
             ],
             "filename": "css/properties/hyphenate-character.json",
@@ -14,10 +14,15 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/hyphenate-character",
             "summary": "The hyphenate-character CSS property sets the character (or string) used at the end of a line before a hyphenation break.",
             "support": {
-                "chrome": {
-                    "prefix": "-webkit-",
-                    "version_added": "6"
-                },
+                "chrome": [
+                    {
+                        "version_added": "106"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "6"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -34,19 +39,18 @@
                     "prefix": "-webkit-",
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "prefix": "-webkit-",
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "prefix": "-webkit-",
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "prefix": "-webkit-",
-                    "version_added": "79"
-                }
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "106"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "title": "hyphenate-character"
         }

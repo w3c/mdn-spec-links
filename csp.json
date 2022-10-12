@@ -1177,43 +1177,6 @@
             "title": "CSP: media-src"
         }
     ],
-    "directive-navigate-to": [
-        {
-            "engines": [],
-            "filename": "http/headers/Content-Security-Policy.json",
-            "name": "navigate-to",
-            "slug": "HTTP/Headers/Content-Security-Policy/navigate-to",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/navigate-to",
-            "summary": "The HTTP Content-Security-Policy (CSP) navigate-to directive restricts the URLs to which a document can initiate navigations by any means including <form> (if form-action is not specified), <a>, window.location, window.open, etc. This is an enforcement on what navigations this document initiates, not on what this document is allowed to navigate to.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "CSP: navigate-to"
-        }
-    ],
     "directive-object-src": [
         {
             "engines": [
@@ -1443,6 +1406,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "http/headers/Content-Security-Policy.json",
@@ -1456,10 +1420,21 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1529337'>bug 1529337</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "security.csp.script-src-attr-elem.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -1488,6 +1463,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "http/headers/Content-Security-Policy.json",
@@ -1501,10 +1477,21 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1529337'>bug 1529337</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "security.csp.script-src-attr-elem.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -1580,6 +1567,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "http/headers/Content-Security-Policy.json",
@@ -1593,10 +1581,21 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1529338'>bug 1529338</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "security.csp.style-src-attr-elem.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -1625,6 +1624,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "http/headers/Content-Security-Policy.json",
@@ -1638,10 +1638,21 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1529338'>bug 1529338</a>."
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "105",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "security.csp.style-src-attr-elem.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false

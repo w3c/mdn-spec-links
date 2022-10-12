@@ -72,7 +72,7 @@
             "name": "decode",
             "slug": "API/TextDecoder/decode",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/decode",
-            "summary": "The TextDecode.decode() method returns a string containing the text, given in parameters, decoded with the specific method for that TextDecoder object.",
+            "summary": "The TextDecoder.decode() method returns a string containing text decoded from the buffer passed as a parameter.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -135,7 +135,7 @@
             "name": "encoding",
             "slug": "API/TextDecoder/encoding",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/encoding",
-            "summary": "The TextDecoder.encoding read-only property returns a string containing the name of the decoding algorithm used by the specific decoder.",
+            "summary": "The TextDecoder.encoding read-only property returns a string containing the name of the decoding algorithm used by the specific decoder object.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -189,7 +189,7 @@
             "name": "fatal",
             "slug": "API/TextDecoder/fatal",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/fatal",
-            "summary": "The fatal property of the TextDecoder interface is a Boolean indicating whether the error mode is fatal. If this value is true, the processed text cannot be decoded because of malformed data. If this value is false malformed data is replaced with placeholder characters.",
+            "summary": "The fatal read-only property of the TextDecoder interface is a Boolean indicating whether the error mode is fatal.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -236,7 +236,7 @@
             "name": "ignoreBOM",
             "slug": "API/TextDecoder/ignoreBOM",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/ignoreBOM",
-            "summary": "The ignoreBOM property of the TextDecoder interface is a Boolean indicating whether the byte order mark is ignored.",
+            "summary": "The ignoreBOM read-only property of the TextDecoder interface is a Boolean indicating whether the byte order mark is ignored.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -338,6 +338,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/TextDecoderStream.json",
@@ -355,7 +356,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -384,6 +385,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/TextDecoderStream.json",
@@ -401,7 +403,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -430,6 +432,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/TextDecoderStream.json",
@@ -447,7 +450,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -476,6 +479,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/TextDecoderStream.json",
@@ -493,7 +497,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -522,6 +526,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/TextDecoderStream.json",
@@ -539,7 +544,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -681,7 +686,7 @@
             "name": "encodeInto",
             "slug": "API/TextEncoder/encodeInto",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encodeInto",
-            "summary": "The TextEncoder.encodeInto() method takes a string to encode and a destination Uint8Array to put resulting UTF-8 encoded text into, and returns a dictionary object indicating the progress of the encoding. This is potentially more performant than the older encode() method especially when the target buffer is a view into a Wasm heap.",
+            "summary": "The TextEncoder.encodeInto() method takes a string to encode and a destination Uint8Array to put resulting UTF-8 encoded text into, and returns a dictionary object indicating the progress of the encoding. This is potentially more performant than the older encode() method — especially when the target buffer is a view into a WASM heap.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -768,6 +773,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/TextEncoderStream.json",
@@ -785,7 +791,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -869,6 +875,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/TextEncoderStream.json",
@@ -886,7 +893,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -915,6 +922,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/TextEncoderStream.json",
@@ -932,7 +940,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {

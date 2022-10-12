@@ -129,6 +129,8 @@ const needsSpecURL = (mdnURL) => {
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/forEach",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/keys",
     "https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values",
+    "https://developer.mozilla.org/docs/Web/MathML/Element/menclose",
+    "https://developer.mozilla.org/docs/Web/MathML/Global_attributes/href",
     // FIXME: for this one we really do need a spec URL
     "https://developer.mozilla.org/docs/Web/API/GamepadButton/touched",
     // FIXME: for this one we really do need a spec URL

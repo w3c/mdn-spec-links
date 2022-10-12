@@ -49,7 +49,7 @@
             "name": "FontFaceSet",
             "slug": "API/FontFaceSet",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet",
-            "summary": "The FontFaceSet interface of the CSS Font Loading API manages the loading of font-faces and querying of their download status. It is available as Document.fonts.",
+            "summary": "The FontFaceSet interface of the CSS Font Loading API manages the loading of font-faces and querying of their download status.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -77,6 +77,44 @@
                 }
             },
             "title": "FontFaceSet"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/WorkerGlobalScope.json",
+            "name": "fonts",
+            "slug": "API/WorkerGlobalScope/fonts",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/fonts",
+            "summary": "The fonts property of the WorkerGlobalScope interface returns the FontFaceSet interface of the worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "105"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerGlobalScope.fonts"
         }
     ],
     "font-face-constructor": [
@@ -132,7 +170,7 @@
             "name": "ascentOverride",
             "slug": "API/FontFace/ascentOverride",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/ascentOverride",
-            "summary": "The ascentOverride property of the FontFace interface returns and sets the value of the @font-face/ascent-override descriptor. The possible values are normal, indicating that the metric used should be obtained from the font file, or a percentage.",
+            "summary": "The ascentOverride property of the FontFace interface returns and sets the ascent metric for the font, the height above the baseline that CSS uses to lay out line boxes in an inline formatting context.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -254,7 +292,7 @@
             "name": "family",
             "slug": "API/FontFace/family",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/family",
-            "summary": "The FontFace.family property allows the author to get or set the font family of a FontFace object. This is equivalent to the font-family descriptor of @font-face.",
+            "summary": "The FontFace.family property allows the author to get or set the font family of a FontFace object.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -297,7 +335,7 @@
             "name": "featureSettings",
             "slug": "API/FontFace/featureSettings",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/featureSettings",
-            "summary": "The featureSettings property of the FontFace interface retrieves or sets infrequently used font features that are not available from a font's variant properties. It is equivalent to the font-feature-settings descriptor.",
+            "summary": "The featureSettings property of the FontFace interface retrieves or sets infrequently used font features that are not available from a font's variant properties.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -509,7 +547,7 @@
             "name": "stretch",
             "slug": "API/FontFace/stretch",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/stretch",
-            "summary": "The stretch property of the FontFace interface retrieves or sets how the font stretches. It is equivalent to the font-stretch descriptor.",
+            "summary": "The stretch property of the FontFace interface retrieves or sets how the font stretches.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -552,7 +590,7 @@
             "name": "style",
             "slug": "API/FontFace/style",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/style",
-            "summary": "The style property of the FontFace interface retrieves or sets the font's style. It is equivalent to the font-style descriptor.",
+            "summary": "The style property of the FontFace interface retrieves or sets the font's style.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -595,7 +633,7 @@
             "name": "unicodeRange",
             "slug": "API/FontFace/unicodeRange",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/unicodeRange",
-            "summary": "The unicodeRange property of the FontFace interface retrieves or sets the range of unicode codepoints encompassing the font. It is equivalent to the unicode-range descriptor.",
+            "summary": "The unicodeRange property of the FontFace interface retrieves or sets the range of unicode codepoints encompassing the font.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -637,7 +675,7 @@
             "name": "variant",
             "slug": "API/FontFace/variant",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/variant",
-            "summary": "The variant property of the FontFace interface programmatically retrieves or sets font variant values. It is equivalent to the font-variant descriptor.",
+            "summary": "The variant property of the FontFace interface programmatically retrieves or sets font variant values.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -680,7 +718,7 @@
             "name": "variationSettings",
             "slug": "API/FontFace/variationSettings",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/variationSettings",
-            "summary": "The variationSettings property of the FontFace interface retrieves or sets low-level OpenType or TrueType font variations. It is equivalent to the font-variation-settings descriptor.",
+            "summary": "The variationSettings property of the FontFace interface retrieves or sets low-level OpenType or TrueType font variations.",
             "support": {
                 "chrome": {
                     "version_added": "62"
@@ -721,7 +759,7 @@
             "name": "weight",
             "slug": "API/FontFace/weight",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace/weight",
-            "summary": "The weight property of the FontFace interface retrieves or sets the weight of the font. It is equivalent to the font-weight descriptor.",
+            "summary": "The weight property of the FontFace interface retrieves or sets the weight of the font.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -764,7 +802,7 @@
             "name": "FontFace",
             "slug": "API/FontFace",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFace",
-            "summary": "The FontFace interface represents a single usable font face. It allows control of the source of the font face, being a URL to an external resource, or a buffer; it also allows control of when the font face is loaded and its current status.",
+            "summary": "The FontFace interface of the CSS Font Loading API represents a single usable font face.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -1053,7 +1091,7 @@
             "name": "loadingdone_event",
             "slug": "API/FontFaceSet/loadingdone_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/loadingdone_event",
-            "summary": "The loadingdone event fires when the document has loaded all events.",
+            "summary": "The loadingdone event fires when the document has loaded all fonts.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -1300,7 +1338,7 @@
             "name": "FontFaceSetLoadEvent",
             "slug": "API/FontFaceSetLoadEvent",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSetLoadEvent",
-            "summary": "The FontFaceSetLoadEvent interface of the CSS Font Loading API is fired whenever a FontFaceSet loads.",
+            "summary": "The FontFaceSetLoadEvent interface of the CSS Font Loading API represents events fired at a FontFaceSet after it starts loading font faces.",
             "support": {
                 "chrome": {
                     "version_added": "35"

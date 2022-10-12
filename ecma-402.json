@@ -2708,7 +2708,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Intl.PluralRules.prototytpe.select()"
+            "title": "Intl.PluralRules.prototype.select()"
         }
     ],
     "sec-intl.pluralrules.supportedlocalesof": [
@@ -3397,7 +3397,7 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segments/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segments/@@iterator",
-            "summary": "The [@@iterator]() method is part of the iterable protocol, which returns a new iterator object that can iterate over the entries in an Intl.Segmenter object. Each entry is returned as an object.",
+            "summary": "The @@iterator method of a Segments object implements the iterable protocol and allows Intl.Segments objects to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields data about each segment.",
             "support": {
                 "chrome": {
                     "version_added": "87"

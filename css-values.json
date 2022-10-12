@@ -53,7 +53,7 @@
             "name": "clamp",
             "slug": "CSS/clamp",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp",
-            "summary": "The clamp() CSS function clamps a value between an upper and lower bound. clamp() enables selecting a middle value within a range of values between a defined minimum and maximum. It takes three parameters: a minimum value, a preferred value, and a maximum allowed value. The clamp() function can be used anywhere a <length>, <frequency>, <angle>, <time>, <percentage>, <number>, or <integer> is allowed.",
+            "summary": "The clamp() CSS function clamps a middle value within a range of values between a defined minimum bound and a maximum bound. The function takes three parameters: a minimum value, a preferred value, and a maximum allowed value.",
             "support": {
                 "chrome": {
                     "version_added": "79"
@@ -352,10 +352,90 @@
             "title": "<length>"
         }
     ],
-    "trig-funcs": [
+    "sign-funcs": [
         {
             "engines": [
                 "webkit"
+            ],
+            "filename": "css/types/abs.json",
+            "name": "abs",
+            "slug": "CSS/abs",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/abs",
+            "summary": "The abs() CSS function returns the absolute value of the argument, as the same type as the input.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "abs()"
+        },
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/sign.json",
+            "name": "sign",
+            "slug": "CSS/sign()",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/sign()",
+            "summary": "The sign() CSS function contains one calculation, and returns -1 if the numeric value of the argument is negative, +1 if the numeric value of the argument is positive, 0⁺ if the numeric value of the argument is 0⁺, and 0⁻ if the numeric value of the argument is 0⁻.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "sign()"
+        }
+    ],
+    "trig-funcs": [
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/types/acos.json",
             "name": "acos",
@@ -369,7 +449,14 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "103",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.trig.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -392,7 +479,11 @@
         },
         {
             "engines": [
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/types/asin.json",
             "name": "asin",
@@ -406,7 +497,14 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "103",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.trig.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -426,6 +524,102 @@
                 }
             },
             "title": "asin()"
+        },
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/types/atan.json",
+            "name": "atan",
+            "slug": "CSS/atan",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/atan",
+            "summary": "The atan() CSS function is a trigonometric function that returns the inverse tangent of a number between -∞ and +∞. The function contains a single calculation that returns the number of radians representing an <angle> between -90deg and 90deg.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.trig.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "atan()"
+        },
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/types/atan2.json",
+            "name": "atan2",
+            "slug": "CSS/atan2",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/atan2",
+            "summary": "The atan2() CSS function is a trigonometric function that returns the inverse tangent of two values between -infinity and infinity. The function accepts two arguments and returns the number of radians representing an <angle> between -180deg and 180deg.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.trig.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "atan2()"
         },
         {
             "engines": [
@@ -926,6 +1120,156 @@
                 }
             },
             "title": "<dimension>"
+        }
+    ],
+    "exponent-funcs": [
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/exp.json",
+            "name": "exp",
+            "slug": "CSS/exp",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/exp",
+            "summary": "The exp() CSS function is an exponential function that takes an number as an argument and returns the mathematical constant e raised to the power of the given number.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "exp()"
+        },
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/log.json",
+            "name": "log",
+            "slug": "CSS/log",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/log",
+            "summary": "The log() CSS function is an exponential function that returns the logarithm of a number.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "log()"
+        },
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/pow.json",
+            "name": "pow",
+            "slug": "CSS/pow",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/pow",
+            "summary": "The pow() CSS function is an exponential function that returns the value of a base raised to the power of a number.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "pow()"
+        },
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/sqrt.json",
+            "name": "sqrt",
+            "slug": "CSS/sqrt",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/sqrt",
+            "summary": "The sqrt() CSS function is an exponential function that returns the square root of a number.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "sqrt()"
         }
     ],
     "frequency": [

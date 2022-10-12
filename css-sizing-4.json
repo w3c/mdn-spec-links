@@ -40,16 +40,20 @@
             "title": "aspect-ratio"
         }
     ],
-    "propdef-contain-intrinsic-size": [
+    "propdef-contain-intrinsic-height": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
-            "filename": "css/properties/contain-intrinsic-size.json",
-            "name": "contain-intrinsic-size",
-            "slug": "CSS/contain-intrinsic-size",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size",
-            "summary": "The contain-intrinsic-size CSS property controls the natural size of an element specified by content-visibility.",
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/properties/contain-intrinsic-height.json",
+            "name": "contain-intrinsic-height",
+            "slug": "CSS/contain-intrinsic-height",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-height",
+            "summary": "The contain-intrinsic-length CSS property sets the height of an element that a browser can use for layout when the element is subject to size containment.",
             "support": {
                 "chrome": {
                     "version_added": "83"
@@ -57,7 +61,64 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
+                    "version_added": "104",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.contain-intrinsic-size.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
                     "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "83"
+                }
+            },
+            "title": "contain-intrinsic-height"
+        }
+    ],
+    "propdef-contain-intrinsic-size": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/properties/contain-intrinsic-size.json",
+            "name": "contain-intrinsic-size",
+            "slug": "CSS/contain-intrinsic-size",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size",
+            "summary": "The contain-intrinsic-size CSS shorthand property sets the size of an element that a browser will use for layout when the element is subject to size containment.",
+            "support": {
+                "chrome": {
+                    "version_added": "83"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "104",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.contain-intrinsic-size.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -77,6 +138,56 @@
                 }
             },
             "title": "contain-intrinsic-size"
+        }
+    ],
+    "propdef-contain-intrinsic-width": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/properties/contain-intrinsic-width.json",
+            "name": "contain-intrinsic-width",
+            "slug": "CSS/contain-intrinsic-width",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-width",
+            "summary": "The contain-intrinsic-width CSS property sets the width of an element that a browser will use for layout when the element is subject to size containment.",
+            "support": {
+                "chrome": {
+                    "version_added": "83"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "104",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.contain-intrinsic-size.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "83"
+                }
+            },
+            "title": "contain-intrinsic-width"
         }
     ],
     "sizing-values": [

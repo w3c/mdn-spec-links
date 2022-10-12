@@ -756,7 +756,8 @@
     "subgrids": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/grid-template-columns.json",
             "name": "subgrid",
@@ -783,8 +784,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/202115'>bug 202115</a>."
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -850,7 +850,8 @@
         },
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/properties/grid-template-rows.json",
             "name": "subgrid",
@@ -877,8 +878,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/202115'>bug 202115</a>."
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1044,7 +1044,7 @@
             "name": "grid-template",
             "slug": "CSS/grid-template",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template",
-            "summary": "The grid-template CSS property is a shorthand property for defining grid columns, rows, and areas.",
+            "summary": "The grid-template CSS property is a shorthand property for defining grid columns, grid rows, and grid areas.",
             "support": {
                 "chrome": {
                     "version_added": "57"

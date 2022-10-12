@@ -598,6 +598,7 @@
     "ref-for-dom-body-body①": [
         {
             "engines": [
+                "blink",
                 "webkit"
             ],
             "filename": "api/Request.json",
@@ -607,8 +608,8 @@
             "summary": "The read-only body property of the Request interface contains a ReadableStream with the body contents that have been added to the request. Note that a request using the GET or HEAD method cannot have a body and null is return in these cases.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/688906'>bug 688906</a>."
+                    "version_added": "105",
+                    "impl_url": "https://crbug.com/688906"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -633,8 +634,8 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/688906'>bug 688906</a>."
+                    "version_added": "105",
+                    "impl_url": "https://crbug.com/688906"
                 }
             },
             "title": "Request.body"

@@ -193,56 +193,6 @@
             "title": "color()"
         }
     ],
-    "color-keywords": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "css/types/color.json",
-            "name": "color_keywords",
-            "slug": "CSS/color_value/color_keywords",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color_keywords",
-            "summary": "The <named-color> CSS data type is the name of a color, such as red, blue, black, or lightseagreen. Syntactically, a <named-color> is an <ident>.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "3",
-                    "notes": "Internet Explorer 8 and later support gray color keywords spelled with an <em>e</em> (<code>grey</code>, <code>darkgrey</code>, <code>darkslategrey</code>, <code>dimgrey</code>, <code>lightgrey</code>, and <code>lightslategrey</code>). Internet Explorer 3 to Internet Explorer 7 only support the keywords spelled with <em>a</em> (<code>gray</code>, <code>darkgray</code>, <code>darkslategray</code>, <code>dimgray</code>, <code>lightgray</code>, and <code>lightslategray</code>)."
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "3.5"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "<named-color>"
-        }
-    ],
     "currentcolor-color": [
         {
             "engines": [
@@ -603,6 +553,56 @@
             "title": "lch()"
         }
     ],
+    "named-colors": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/color.json",
+            "name": "named-color",
+            "slug": "CSS/named-color",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/named-color",
+            "summary": "The <named-color> CSS data type is the name of a color, such as red, blue, black, or lightseagreen. Syntactically, a <named-color> is an <ident>.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "3",
+                    "notes": "Internet Explorer 8 and later support gray color keywords spelled with an <em>e</em> (<code>grey</code>, <code>darkgrey</code>, <code>darkslategrey</code>, <code>dimgrey</code>, <code>lightgrey</code>, and <code>lightslategrey</code>). Internet Explorer 3 to Internet Explorer 7 only support the keywords spelled with <em>a</em> (<code>gray</code>, <code>darkgray</code>, <code>darkslategray</code>, <code>dimgray</code>, <code>lightgray</code>, and <code>lightslategray</code>)."
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "3.5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<named-color>"
+        }
+    ],
     "ok-lab": [
         {
             "engines": [
@@ -730,6 +730,55 @@
                 "title": "#rrggbbaa hex color notation"
             },
             "title": "<hex-color>"
+        }
+    ],
+    "css-system-colors": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/types/color.json",
+            "name": "system-color",
+            "slug": "CSS/system-color",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/system-color",
+            "summary": "The <system-color> CSS data type usually reflects the default color choices used for the different parts of a web page.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "3"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "3.5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "<system-color>"
         }
     ],
     "transparent-color": [

@@ -88,6 +88,7 @@ const respecRawSpecs = [
   "https://w3c.github.io/web-nfc/", // NO TR; never had a TR
   "https://w3c.github.io/web-share/", // yes
   "https://w3c.github.io/web-share-target/",
+  "https://w3c.github.io/web-share-target/level-2/",
   "https://w3c.github.io/webrtc-extensions/", // NO TR; never had a TR
   "https://w3c.github.io/webrtc-identity/", // out of date TR
   "https://w3c.github.io/webrtc-pc/", // out of date TR

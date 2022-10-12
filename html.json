@@ -2977,7 +2977,7 @@
             "summary": "The CanvasGradient.addColorStop() method adds a new color stop, defined by an offset and a color, to a given canvas gradient.",
             "support": {
                 "chrome": {
-                    "version_added": "6"
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -2998,13 +2998,11 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "5.1"
+                    "version_added": "2"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "3"
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -3026,7 +3024,7 @@
             "summary": "The CanvasGradient interface represents an opaque object describing a gradient. It is returned by the methods CanvasRenderingContext2D.createLinearGradient(), CanvasRenderingContext2D.createConicGradient() or CanvasRenderingContext2D.createRadialGradient().",
             "support": {
                 "chrome": {
-                    "version_added": "6"
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -3050,13 +3048,11 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "5.1"
+                    "version_added": "2"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "3"
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -3140,15 +3136,11 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "4"
+                    "version_added": "2"
                 },
-                "safari_ios": {
-                    "version_added": "1"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -5598,7 +5590,8 @@
     "dom-context-2d-roundrect": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/CanvasRenderingContext2D.json",
             "name": "roundRect",
@@ -5622,7 +5615,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -6952,9 +6945,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -7003,9 +6994,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -7601,9 +7590,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -7652,9 +7639,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -7703,9 +7688,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -7754,9 +7737,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -7805,9 +7786,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -9868,9 +9847,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -10121,9 +10098,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "partial": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/Document.json",
@@ -10207,6 +10182,9 @@
                     }
                 ],
                 "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
                     {
                         "version_added": "14",
                         "partial_implementation": true,
@@ -10272,9 +10250,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "partial": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/Document.json",
@@ -10358,6 +10334,9 @@
                     }
                 ],
                 "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
                     {
                         "version_added": "14",
                         "partial_implementation": true,
@@ -10885,6 +10864,47 @@
             "title": "Element: auxclick event"
         }
     ],
+    "event-beforematch": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/Element.json",
+            "name": "beforematch_event",
+            "slug": "API/Element/beforematch_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/beforematch_event",
+            "summary": "An element receives a beforematch event when it is in the hidden until found state and the browser is about to reveal its content because the user has found the content through the \"find in page\" feature or through fragment navigation.",
+            "support": {
+                "chrome": {
+                    "version_added": "102"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "102"
+                }
+            },
+            "title": "Element: beforematch event"
+        }
+    ],
     "handler-onblur": [
         {
             "engines": [
@@ -10896,7 +10916,7 @@
             "name": "blur_event",
             "slug": "API/Element/blur_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event",
-            "summary": "The blur event fires when an element has lost focus. The main difference between this event and focusout is that focusout bubbles while blur does not.",
+            "summary": "The blur event fires when an element has lost focus. The event does not bubble, but the related focusout event that follows does bubble.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -10978,9 +10998,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -11209,7 +11227,7 @@
             "name": "focus_event",
             "slug": "API/Element/focus_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event",
-            "summary": "The focus event fires when an element has received focus. The main difference between this event and focusin is that focusin bubbles while focus does not.",
+            "summary": "The focus event fires when an element has received focus. The event does not bubble, but the related focusin event that follows does bubble.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11291,9 +11309,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -12852,7 +12868,7 @@
             "summary": "The withCredentials read-only property of the EventSource interface returns a boolean value indicating whether the EventSource object was instantiated with CORS credentials set.",
             "support": {
                 "chrome": {
-                    "version_added": "6"
+                    "version_added": "26"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -12876,11 +12892,9 @@
                     "version_added": "12"
                 },
                 "safari": {
-                    "version_added": "5"
+                    "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -13675,9 +13689,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -15001,9 +15013,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -15142,9 +15152,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -15236,9 +15244,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -15285,9 +15291,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -15683,21 +15687,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -16928,9 +16920,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -16977,9 +16967,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -17823,9 +17811,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -17927,55 +17913,6 @@
                 }
             },
             "title": "HTMLElement.innerText"
-        }
-    ],
-    "event-input-input": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLElement.json",
-            "name": "input_event",
-            "slug": "API/HTMLElement/input_event",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event",
-            "summary": "The input event fires when the value of an <input>, <select>, or <textarea> element has been changed.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "9",
-                    "partial_implementation": true,
-                    "notes": "Only supports <code>input</code> of type <code>text</code> and <code>password</code>."
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "11.6"
-                },
-                "opera_android": {
-                    "version_added": "12"
-                },
-                "safari": {
-                    "version_added": "3.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLElement: input event"
         }
     ],
     "handler-oninput": [
@@ -21017,9 +20954,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -21851,9 +21786,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -22246,7 +22179,7 @@
             "name": "HTMLLinkElement",
             "slug": "API/HTMLLinkElement",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement",
-            "summary": "The HTMLLinkElement interface represents reference information for external resources and the relationship of those resources to a document and vice-versa (corresponds to <link> element; not to be confused with <a>, which is represented by HTMLAnchorElement). This object inherits all of the properties and methods of the HTMLElement interface.",
+            "summary": "The HTMLLinkElement interface represents reference information for external resources and the relationship of those resources to a document and vice versa (corresponds to <link> element; not to be confused with <a>, which is represented by HTMLAnchorElement). This object inherits all of the properties and methods of the HTMLElement interface.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -22942,7 +22875,7 @@
             "name": "crossOrigin",
             "slug": "API/HTMLMediaElement/crossOrigin",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/crossOrigin",
-            "summary": "The HTMLMediaElement.crossOrigin property is the CORS setting for this image element. See CORS settings attributes for details.",
+            "summary": "The HTMLMediaElement.crossOrigin property is the CORS setting for this media element. See CORS settings attributes for details.",
             "support": {
                 "chrome": {
                     "version_added": "33"
@@ -26864,9 +26797,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -27062,9 +26993,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -27113,9 +27042,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -27508,9 +27435,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -28498,47 +28423,6 @@
                 }
             },
             "title": "HTMLSlotElement.name"
-        }
-    ],
-    "event-slotchange": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLSlotElement.json",
-            "name": "slotchange_event",
-            "slug": "API/HTMLSlotElement/slotchange_event",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSlotElement/slotchange_event",
-            "summary": "The slotchange event is fired on an HTMLSlotElement instance (<slot> element) when the node(s) contained in that slot change.",
-            "support": {
-                "chrome": {
-                    "version_added": "53"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLSlotElement: slotchange event"
         }
     ],
     "handler-onslotchange": [
@@ -29648,7 +29532,7 @@
             "name": "tHead",
             "slug": "API/HTMLTableElement/tHead",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/tHead",
-            "summary": "The HTMLTableElement.tHead represents the <thead> element of a <table> . Its value will be null if there is no such element.",
+            "summary": "The HTMLTableElement.tHead represents the <thead> element of a <table>. Its value will be null if there is no such element.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -31738,6 +31622,46 @@
             "title": "ImageData()"
         }
     ],
+    "dom-imagedata-colorspace": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/ImageData.json",
+            "name": "colorSpace",
+            "slug": "API/ImageData/colorSpace",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ImageData/colorSpace",
+            "summary": "The read-only ImageData.colorSpace property is a string indicating the color space of the image data.",
+            "support": {
+                "chrome": {
+                    "version_added": "92"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "92"
+                }
+            },
+            "title": "ImageData.colorSpace"
+        }
+    ],
     "dom-imagedata-data-dev": [
         {
             "engines": [
@@ -32312,9 +32236,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -32337,7 +32259,7 @@
             "name": "pathname",
             "slug": "API/Location/pathname",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname",
-            "summary": "The pathname property of the Location interface is a string containing the path of the URL for the location, which will be the empty string if there is no path.",
+            "summary": "The pathname property of the Location interface is a string containing the path of the URL for the location. If there is no path, pathname will be empty: otherwise, pathname contains an initial '/' followed by the path of the URL, not including the query string or fragment.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33018,7 +32940,7 @@
             "summary": "The MessageEvent() constructor creates a new MessageEvent object.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "16"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33045,7 +32967,7 @@
                     "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": "4"
+                    "version_added": "6"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34302,6 +34224,45 @@
             "title": "Navigator.registerProtocolHandler()"
         }
     ],
+    "dom-navigator-useractivation": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "userActivation",
+            "slug": "API/Navigator/userActivation",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userActivation",
+            "summary": "The read-only userActivation property of the Navigator interface returns a UserActivation object which contains information about the current window's user activation state.",
+            "support": {
+                "chrome": {
+                    "version_added": "72"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator.userActivation"
+        }
+    ],
     "dom-navigator-useragent-dev": [
         {
             "engines": [
@@ -34466,23 +34427,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "46",
-                        "partial_implementation": true,
-                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34522,25 +34469,10 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview",
-                        "alternative_name": "toBlob"
-                    },
-                    {
-                        "alternative_name": "toBlob",
-                        "version_added": "46",
-                        "partial_implementation": true,
-                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105",
+                    "alternative_name": "toBlob"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34578,23 +34510,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "44",
-                        "partial_implementation": true,
-                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34632,23 +34550,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "44",
-                        "partial_implementation": true,
-                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34686,23 +34590,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "46",
-                        "partial_implementation": true,
-                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34740,23 +34630,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "44",
-                        "partial_implementation": true,
-                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34794,23 +34670,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "44",
-                        "partial_implementation": true,
-                        "notes": "See <a href='https://bugzil.la/1390089'>bug 1390089</a>.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34829,6 +34691,86 @@
                 }
             },
             "title": "OffscreenCanvas"
+        }
+    ],
+    "offscreencontext2d-commit": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/OffscreenCanvasRenderingContext2D.json",
+            "name": "commit",
+            "slug": "API/OffscreenCanvasRenderingContext2D/commit",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/commit",
+            "summary": "The OffscreenCanvasRenderingContext2D.commit() method of the Canvas 2D API copies the rendering context's bitmap to the bitmap of the placeholder <canvas> element of the associated OffscreenCanvas object. The copy operation is synchronous. Calling this method is not needed for the transfer, since it happens automatically during the event-loop execution.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "105"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "OffscreenCanvasRenderingContext2D.commit()"
+        }
+    ],
+    "the-offscreen-2d-rendering-context": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/OffscreenCanvasRenderingContext2D.json",
+            "name": "OffscreenCanvasRenderingContext2D",
+            "slug": "API/OffscreenCanvasRenderingContext2D",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D",
+            "summary": "The OffscreenCanvasRenderingContext2D interface is a CanvasRenderingContext2D rendering context for drawing to the bitmap of an OffscreenCanvas object. It is similar to the CanvasRenderingContext2D object, with the following differences:",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "105"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "OffscreenCanvasRenderingContext2D"
         }
     ],
     "dom-pagetransitionevent-persisted-dev": [
@@ -38893,6 +38835,123 @@
             "title": "TrackEvent"
         }
     ],
+    "dom-useractivation-hasbeenactive": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/UserActivation.json",
+            "name": "hasBeenActive",
+            "slug": "API/UserActivation/hasBeenActive",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/UserActivation/hasBeenActive",
+            "summary": "The read-only hasBeenActive property of the UserActivation interface indicates whether the current window has sticky user activation (see sticky activation).",
+            "support": {
+                "chrome": {
+                    "version_added": "72"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "UserActivation.hasBeenActive"
+        }
+    ],
+    "dom-useractivation-isactive": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/UserActivation.json",
+            "name": "isActive",
+            "slug": "API/UserActivation/hasBeenActive",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/UserActivation/hasBeenActive",
+            "summary": "The read-only hasBeenActive property of the UserActivation interface indicates whether the current window has sticky user activation (see sticky activation).",
+            "support": {
+                "chrome": {
+                    "version_added": "97"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "97"
+                }
+            },
+            "title": "UserActivation.hasBeenActive"
+        }
+    ],
+    "the-useractivation-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/UserActivation.json",
+            "name": "UserActivation",
+            "slug": "API/UserActivation",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/UserActivation",
+            "summary": "The UserActivation interface allows querying information about a window's user activation state.",
+            "support": {
+                "chrome": {
+                    "version_added": "72"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "UserActivation"
+        }
+    ],
     "dom-validitystate-badinput-dev": [
         {
             "engines": [
@@ -39962,9 +40021,6 @@
             "engines": [
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/WebGL2RenderingContext.json",
             "name": "commit",
             "slug": "API/WebGLRenderingContext/commit",
@@ -39977,14 +40033,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "44",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "gfx.offscreencanvas.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "105"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -40020,21 +40069,9 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "44",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "gfx.offscreencanvas.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
+                "firefox": {
+                    "version_added": "105"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -46069,10 +46106,7 @@
                     "version_added": "5.1",
                     "notes": "In Safari, <code>:in-range</code> matched disabled and read-only inputs (see <a href='https://webkit.org/b/156530'>bug 156530</a>). It was later changed to only match enabled read-write inputs."
                 },
-                "safari_ios": {
-                    "version_added": "5",
-                    "notes": "In Safari, <code>:in-range</code> matched disabled and read-only inputs (see <a href='https://webkit.org/b/156530'>bug 156530</a>). It was later changed to only match enabled read-write inputs."
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": {
                     "version_added": "1.0",
                     "notes": "Before version 6.0, <code>:in-range</code> matched disabled and read-only inputs (see <a href='https://crbug.com/602568'>Chromium bug 602568</a>). In version 6.0, it was changed to only match enabled read-write inputs."
@@ -46330,9 +46364,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "2.2"
@@ -48669,9 +48701,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -48720,9 +48750,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -50419,7 +50447,7 @@
             "name": "type_tel",
             "slug": "HTML/Element/input/tel",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel",
-            "summary": "<input> elements of type tel are used to let the user enter and edit a telephone number. Unlike <input type=\"email\"> and <input type=\"url\"> , the input value is not automatically validated to a particular format before the form can be submitted, because formats for telephone numbers vary so much around the world.",
+            "summary": "<input> elements of type tel are used to let the user enter and edit a telephone number. Unlike <input type=\"email\"> and <input type=\"url\">, the input value is not automatically validated to a particular format before the form can be submitted, because formats for telephone numbers vary so much around the world.",
             "support": {
                 "chrome": {
                     "version_added": "3",
@@ -54777,7 +54805,7 @@
             "name": "source",
             "slug": "HTML/Element/source",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source",
-            "summary": "The <source> HTML element specifies multiple media resources for the <picture>, the <audio> element, or the <video> element. It is an empty element, meaning that it has no content and does not have a closing tag. It is commonly used to offer the same media content in multiple file formats in order to provide compatibility with a broad range of browsers given their differing support for image file formats and media file formats.",
+            "summary": "The <source> HTML element specifies multiple media resources for the <picture>, the <audio> element, or the <video> element. It is a void element, meaning that it has no content and does not have a closing tag. It is commonly used to offer the same media content in multiple file formats in order to provide compatibility with a broad range of browsers given their differing support for image file formats and media file formats.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -56430,7 +56458,7 @@
             "name": "until-found_value",
             "slug": "HTML/Global_attributes/hidden",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden",
-            "summary": "The hidden global attribute is a Boolean attribute indicating that the element is not yet, or is no longer, relevant. For example, it can be used to hide elements of the page that can't be used until the login process has been completed. Browsers won't render elements with the hidden attribute set.",
+            "summary": "The hidden global attribute is an enumerated attribute indicating that the browser should not render the contents of the element. For example, it can be used to hide elements of the page that can't be used until the login process has been completed.",
             "support": {
                 "chrome": {
                     "version_added": "102"
@@ -56471,7 +56499,7 @@
             "name": "hidden",
             "slug": "HTML/Global_attributes/hidden",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden",
-            "summary": "The hidden global attribute is a Boolean attribute indicating that the element is not yet, or is no longer, relevant. For example, it can be used to hide elements of the page that can't be used until the login process has been completed. Browsers won't render elements with the hidden attribute set.",
+            "summary": "The hidden global attribute is an enumerated attribute indicating that the browser should not render the contents of the element. For example, it can be used to hide elements of the page that can't be used until the login process has been completed.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -56702,7 +56730,7 @@
             "name": "itemprop",
             "slug": "HTML/Global_attributes/itemprop",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop",
-            "summary": "The itemprop global attribute is used to add properties to an item. Every HTML element can have an itemprop attribute specified, and an itemprop consists of a name-value pair. Each name-value pair is called a property, and a group of one or more properties forms an item. Property values are either a string or a URL and can be associated with a very wide range of elements including <audio>, <embed>, <iframe>, <img>, <link>, <object>, <source> , <track>, and <video>.",
+            "summary": "The itemprop global attribute is used to add properties to an item. Every HTML element can have an itemprop attribute specified, and an itemprop consists of a name-value pair. Each name-value pair is called a property, and a group of one or more properties forms an item. Property values are either a string or a URL and can be associated with a very wide range of elements including <audio>, <embed>, <iframe>, <img>, <link>, <object>, <source>, <track>, and <video>.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -57001,7 +57029,7 @@
             "name": "spellcheck",
             "slug": "HTML/Global_attributes/spellcheck",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/spellcheck",
-            "summary": "The spellcheck global attribute is an enumerated attribute defines whether the element may be checked for spelling errors.",
+            "summary": "The spellcheck global attribute is an enumerated attribute that defines whether the element may be checked for spelling errors.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -59317,7 +59345,7 @@
             "name": "Pseudo-classes",
             "slug": "CSS/Pseudo-classes",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes",
-            "summary": "A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.",
+            "summary": "A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, the pseudo-class :hover can be used to select a button when a user's pointer hovers over the button and this selected button can then be styled.",
             "support": null,
             "title": "Pseudo-classes"
         }

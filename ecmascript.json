@@ -663,7 +663,7 @@
             "name": "findLast",
             "slug": "JavaScript/Reference/Global_Objects/Array/findLast",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast",
-            "summary": "The findLast() method returns the value of the last element in an array that satisfies the provided testing function. If no elements satisfy the testing function, undefined is returned.",
+            "summary": "The findLast() method iterates the array in reverse order and returns the value of the first element that satisfies the provided testing function. If no elements satisfy the testing function, undefined is returned.",
             "support": {
                 "chrome": {
                     "version_added": "97"
@@ -710,7 +710,7 @@
             "name": "findLastIndex",
             "slug": "JavaScript/Reference/Global_Objects/Array/findLastIndex",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLastIndex",
-            "summary": "The findLastIndex() method returns the index of the last element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.",
+            "summary": "The findLastIndex() method iterates the array in reverse order and returns the index of the first element that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.",
             "support": {
                 "chrome": {
                     "version_added": "97"
@@ -1082,7 +1082,7 @@
             "name": "isArray",
             "slug": "JavaScript/Reference/Global_Objects/Array/isArray",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray",
-            "summary": "The Array.isArray() method determines whether the passed value is an Array.",
+            "summary": "The Array.isArray() static method determines whether the passed value is an Array.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -1593,11 +1593,9 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
                     "version_added": "4"
                 },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -1648,11 +1646,9 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
                     "version_added": "4"
                 },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -2161,7 +2157,7 @@
             "name": "values",
             "slug": "JavaScript/Reference/Global_Objects/Array/values",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values",
-            "summary": "The values() method returns a new array iterator object that contains the values for each index in the array.",
+            "summary": "The values() method returns a new array iterator object that iterates the value of each index in the array.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -2226,7 +2222,7 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Global_Objects/Array/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@iterator",
-            "summary": "The @@iterator method is part of The iterable protocol, that defines how to synchronously iterate over a sequence of values.",
+            "summary": "The @@iterator method of an Array object implements the iterable protocol and allows arrays to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields the value of each index in the array.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -2647,7 +2643,9 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": "mirror",
+                "safari_ios": {
+                    "version_added": "6"
+                },
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -2668,7 +2666,7 @@
             "name": "@@species",
             "slug": "JavaScript/Reference/Global_Objects/ArrayBuffer/@@species",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/@@species",
-            "summary": "The ArrayBuffer[@@species] accessor property returns the ArrayBuffer constructor.",
+            "summary": "The ArrayBuffer[@@species] accessor property returns the constructor used to construct return values from array buffer methods.",
             "support": {
                 "chrome": {
                     "version_added": "51"
@@ -3913,7 +3911,7 @@
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/BigInt/toString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/toString",
-            "summary": "The toString() method returns a string representing the specified BigInt object. The trailing \"n\" is not part of the string.",
+            "summary": "The toString() method returns a string representing the specified BigInt value. The trailing \"n\" is not part of the string.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -4857,7 +4855,7 @@
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/Boolean/toString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/toString",
-            "summary": "The toString() method returns a string representing the specified Boolean object.",
+            "summary": "The toString() method returns a string representing the specified boolean value.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -5048,9 +5046,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5105,9 +5101,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5162,9 +5156,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5219,9 +5211,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5370,9 +5360,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5427,9 +5415,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5484,9 +5470,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5541,9 +5525,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5598,9 +5580,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5655,9 +5635,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5712,9 +5690,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5769,9 +5745,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5920,9 +5894,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -5977,9 +5949,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -6034,9 +6004,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -6091,9 +6059,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -6148,9 +6114,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -6205,9 +6169,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -6262,9 +6224,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -6319,9 +6279,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -6376,9 +6334,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -7464,7 +7420,7 @@
             "summary": "The static Date.now() method returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.",
             "support": {
                 "chrome": {
-                    "version_added": "5"
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -7474,7 +7430,7 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "3"
+                    "version_added": "1"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8445,7 +8401,7 @@
                     "version_added": "11"
                 },
                 "safari": {
-                    "version_added": "5"
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -8500,7 +8456,7 @@
                     "version_added": "11"
                 },
                 "safari": {
-                    "version_added": "5"
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -10633,7 +10589,9 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": "mirror",
+                "safari_ios": {
+                    "version_added": "6"
+                },
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -11327,7 +11285,7 @@
             "name": "JSON",
             "slug": "JavaScript/Reference/Global_Objects/JSON",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-            "summary": "The JSON object contains methods for parsing JavaScript Object Notation (JSON) and converting values to JSON. It can't be called or constructed, and aside from its two method properties, it has no interesting functionality of its own.",
+            "summary": "The JSON object contains methods for parsing JavaScript Object Notation (JSON) and converting values to JSON. It can't be called or constructed.",
             "support": {
                 "chrome": {
                     "version_added": "3"
@@ -11985,10 +11943,10 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Global_Objects/Map/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/@@iterator",
-            "summary": "The initial value of the @@iterator property is the same function object as the initial value of the Map.prototype.entries() method.",
+            "summary": "The @@iterator method of a Map object implements the iterable protocol and allows maps to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields the key-value pairs of the map.",
             "support": {
                 "chrome": {
-                    "version_added": "43"
+                    "version_added": "38"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -12048,7 +12006,7 @@
             "name": "@@species",
             "slug": "JavaScript/Reference/Global_Objects/Map/@@species",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/@@species",
-            "summary": "The Map[@@species] accessor property returns the Map constructor.",
+            "summary": "The Map[@@species] accessor property is an unused accessor property specifying how to copy Map objects.",
             "support": {
                 "chrome": {
                     "version_added": "51"
@@ -14946,7 +14904,7 @@
             "name": "isFinite",
             "slug": "JavaScript/Reference/Global_Objects/Number/isFinite",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite",
-            "summary": "The Number.isFinite() method determines whether the passed value is a finite number — that is, it checks that the type of a given value is Number, and the number is neither positive Infinity, negative Infinity, nor NaN.",
+            "summary": "The Number.isFinite() method determines whether the passed value is a finite number — that is, it checks that a given value is a number, and the number is neither positive Infinity, negative Infinity, nor NaN.",
             "support": {
                 "chrome": {
                     "version_added": "19"
@@ -15453,7 +15411,7 @@
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/Number/toString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString",
-            "summary": "The toString() method returns a string representing the specified Number object.",
+            "summary": "The toString() method returns a string representing the specified number value.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -18527,7 +18485,7 @@
             "name": "revocable",
             "slug": "JavaScript/Reference/Global_Objects/Proxy/revocable",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable",
-            "summary": "The Proxy.revocable() method is used to create a revocable Proxy object.",
+            "summary": "The Proxy.revocable() static method creates a revocable Proxy object.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -20347,7 +20305,7 @@
             "name": "@@species",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/@@species",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@species",
-            "summary": "The RegExp[@@species] accessor property returns the RegExp constructor.",
+            "summary": "The RegExp[@@species] accessor property returns the constructor used to construct copied regular expressions in certain RegExp methods.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -21031,7 +20989,7 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Global_Objects/Set/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/@@iterator",
-            "summary": "The initial value of the @@iterator property is the same function object as the initial value of the values property.",
+            "summary": "The @@iterator method of a Set object implements the iterable protocol and allows sets to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields the values of the set.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -21094,7 +21052,7 @@
             "name": "@@species",
             "slug": "JavaScript/Reference/Global_Objects/Set/@@species",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/@@species",
-            "summary": "The Set[Symbol.species] accessor property returns the Set constructor.",
+            "summary": "The Set[@@species] accessor property is an unused accessor property specifying how to copy Set objects.",
             "support": {
                 "chrome": {
                     "version_added": "51"
@@ -22074,7 +22032,7 @@
             "name": "length",
             "slug": "JavaScript/Reference/Global_Objects/String/length",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length",
-            "summary": "The length property of a String object contains the length of the string, in UTF-16 code units. length is a read-only data property of string instances.",
+            "summary": "The length read-only property of a string contains the length of the string in UTF-16 code units.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -23111,7 +23069,7 @@
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/String/toString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString",
-            "summary": "The toString() method of a string object returns a string representing the specified string.",
+            "summary": "The toString() method returns a string representing the specified string value.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -23501,7 +23459,7 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Global_Objects/String/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/@@iterator",
-            "summary": "The [@@iterator]() method returns a new iterator object that iterates over the code points of a String value, returning each code point as a String value.",
+            "summary": "The @@iterator method of a string implements the iterable protocol and allows strings to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields the Unicode code points of the string value as individual strings.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -24367,7 +24325,7 @@
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/Symbol/toString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toString",
-            "summary": "The toString() method returns a string representing the specified Symbol object.",
+            "summary": "The toString() method returns a string representing the specified symbol value.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -25396,7 +25354,7 @@
             "name": "findLast",
             "slug": "JavaScript/Reference/Global_Objects/TypedArray/findLast",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findLast",
-            "summary": "The findLast() method returns the value of the last element in a typed array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.",
+            "summary": "The findLast() method iterates a typed array in reverse order and returns the value of the first element that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.",
             "support": {
                 "chrome": {
                     "version_added": "97"
@@ -25443,7 +25401,7 @@
             "name": "findLastIndex",
             "slug": "JavaScript/Reference/Global_Objects/TypedArray/findLastIndex",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findLastIndex",
-            "summary": "The findLastIndex() method returns the index of the first element in a typed array that satisfies the provided testing function. If no values satisfy the testing function, -1 is returned.",
+            "summary": "The findLastIndex() method iterates a typed array in reverse order and returns the index of the first element that satisfies the provided testing function. If no values satisfy the testing function, -1 is returned.",
             "support": {
                 "chrome": {
                     "version_added": "97"
@@ -26498,9 +26456,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -26555,9 +26511,7 @@
                 "safari": {
                     "version_added": "5.1"
                 },
-                "safari_ios": {
-                    "version_added": "5"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "37"
@@ -26629,7 +26583,7 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Global_Objects/TypedArray/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/@@iterator",
-            "summary": "The initial value of the @@iterator property is the same function object as the initial value of the values property.",
+            "summary": "The @@iterator method of a TypedArray object implements the iterable protocol and allows typed arrays to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields the value of each index in the typed array.",
             "support": {
                 "chrome": {
                     "version_added": "38"
@@ -26692,7 +26646,7 @@
             "name": "@@species",
             "slug": "JavaScript/Reference/Global_Objects/TypedArray/@@species",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/@@species",
-            "summary": "The TypedArray[@@species] accessor property returns the constructor of a typed array.",
+            "summary": "The TypedArray[@@species] accessor property returns the constructor used to construct return values from typed array methods.",
             "support": {
                 "chrome": {
                     "version_added": "51"
@@ -28257,7 +28211,7 @@
             "name": "parseFloat",
             "slug": "JavaScript/Reference/Global_Objects/parseFloat",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat",
-            "summary": "The parseFloat() function parses an argument (converting it to a string first if needed) and returns a floating point number.",
+            "summary": "The parseFloat() function parses a string argument and returns a floating point number.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -29323,7 +29277,7 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Functions/arguments/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/@@iterator",
-            "summary": "The @@iterator method of the arguments object implements the iterable protocol and allows arguments to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops.",
+            "summary": "The @@iterator method of the arguments object implements the iterable protocol and allows arguments to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields the value of each index in the arguments object.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -29372,7 +29326,7 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Functions/arguments/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/@@iterator",
-            "summary": "The @@iterator method of the arguments object implements the iterable protocol and allows arguments to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops.",
+            "summary": "The @@iterator method of the arguments object implements the iterable protocol and allows arguments to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields the value of each index in the arguments object.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -30675,7 +30629,7 @@
             "name": "template_literals",
             "slug": "JavaScript/Reference/Template_literals",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals",
-            "summary": "Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, for string interpolation with embedded expressions, and for special constructs called tagged templates.",
+            "summary": "Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -32816,7 +32770,7 @@
             "name": "decrement",
             "slug": "JavaScript/Reference/Operators/Decrement",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement",
-            "summary": "The decrement operator (--) decrements (subtracts one from) its operand and returns a value.",
+            "summary": "The decrement operator (--) decrements (subtracts one from) its operand and returns the value before or after the decrement, depending on where the operator is placed.",
             "support": {
                 "chrome": {
                     "version_added": "2"
@@ -32869,7 +32823,7 @@
             "name": "delete",
             "slug": "JavaScript/Reference/Operators/delete",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete",
-            "summary": "The JavaScript delete operator removes a property from an object; if no more references to the same property are held, it is eventually released automatically.",
+            "summary": "The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -34034,7 +33988,7 @@
             "name": "increment",
             "slug": "JavaScript/Reference/Operators/Increment",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment",
-            "summary": "The increment operator (++) increments (adds one to) its operand and returns a value.",
+            "summary": "The increment operator (++) increments (adds one to) its operand and returns the value before or after the increment, depending on where the operator is placed.",
             "support": {
                 "chrome": {
                     "version_added": "2"
@@ -34554,7 +34508,7 @@
             "name": "optional_chaining",
             "slug": "JavaScript/Reference/Operators/Optional_chaining",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining",
-            "summary": "The optional chaining operator (?.) enables you to read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid.",
+            "summary": "The optional chaining operator (?.) accesses an object's property or calls a function. If the object is undefined or null, it returns undefined instead of throwing an error.",
             "support": {
                 "chrome": {
                     "version_added": "80"
@@ -36393,7 +36347,7 @@
             "name": "for_in",
             "slug": "JavaScript/Reference/Statements/for...in",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in",
-            "summary": "The for...in statement iterates over all enumerable properties of an object that are keyed by strings (ignoring ones keyed by Symbols), including inherited enumerable properties.",
+            "summary": "The for...in statement iterates over all enumerable string properties of an object (ignoring properties keyed by symbols), including inherited enumerable properties.",
             "support": {
                 "chrome": {
                     "version_added": "1"
