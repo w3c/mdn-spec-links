@@ -16821,7 +16821,7 @@
             "name": "propertyIsEnumerable",
             "slug": "JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable",
-            "summary": "The propertyIsEnumerable() method returns a Boolean indicating whether the specified property is enumerable and is the object's own property.",
+            "summary": "The propertyIsEnumerable() method returns a boolean indicating whether the specified property is the object's enumerable own property.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -17031,7 +17031,7 @@
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/Object/toString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString",
-            "summary": "The toString() method returns a string representing the object.",
+            "summary": "The toString() method returns a string representing the object. This method is meant to be overridden by derived objects for custom type conversion logic.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -17084,7 +17084,7 @@
             "name": "valueOf",
             "slug": "JavaScript/Reference/Global_Objects/Object/valueOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf",
-            "summary": "The valueOf() method returns the primitive value of the specified object.",
+            "summary": "The valueOf() method of Object converts the this value to an object. This method is meant to be overridden by derived objects for custom type conversion logic.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33337,7 +33337,7 @@
             "name": "exponentiation",
             "slug": "JavaScript/Reference/Operators/Exponentiation",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation",
-            "summary": "The exponentiation operator (**) returns the result of raising the first operand to the power of the second operand. It is equivalent to {{{jsxref(\"Math.pow()\")}}}, except it also accepts BigInts as operands.",
+            "summary": "The exponentiation operator (**) returns the result of raising the first operand to the power of the second operand. It is equivalent to Math.pow(), except it also accepts BigInts as operands.",
             "support": {
                 "chrome": {
                     "version_added": "52"

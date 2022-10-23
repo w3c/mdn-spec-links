@@ -48,7 +48,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -116,7 +116,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -184,7 +184,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -252,7 +252,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -320,7 +320,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -388,7 +388,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -7411,7 +7411,7 @@
             "name": "setDragImage",
             "slug": "API/DataTransfer/setDragImage",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setDragImage",
-            "summary": "When a drag occurs, a translucent image is generated from the drag target (the element the dragstart event is fired at), and follows the mouse pointer during the drag. This image is created automatically, so you do not need to create it yourself. However, if a custom image is desired, the DataTransfer.setDragImage() method can be used to set the custom image to be used. The image will typically be an <image> element but it can also be a <canvas> or any other visible element.",
+            "summary": "When a drag occurs, a translucent image is generated from the drag target (the element the dragstart event is fired at), and follows the mouse pointer during the drag. This image is created automatically, so you do not need to create it yourself. However, if a custom image is desired, the DataTransfer.setDragImage() method can be used to set the custom image to be used. The image will typically be an <img> element but it can also be a <canvas> or any other visible element.",
             "support": {
                 "chrome": {
                     "version_added": "3"
@@ -8490,7 +8490,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": "10"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -20126,7 +20126,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "9"
+                    "version_added": "9.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -20619,7 +20619,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "9"
+                    "version_added": "9.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -31610,7 +31610,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -33826,6 +33826,9 @@
                     "version_added": "1"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.27"
+                },
                 "edge": {
                     "version_added": "12"
                 },
@@ -33927,6 +33930,9 @@
                     "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.27"
+                },
                 "edge": {
                     "version_added": "16"
                 },
@@ -37413,7 +37419,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -37456,7 +37462,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -53174,7 +53180,7 @@
             "name": "mark",
             "slug": "HTML/Element/mark",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark",
-            "summary": "The <mark> HTML element represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.",
+            "summary": "The <mark> HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -54648,6 +54654,135 @@
                 }
             },
             "title": "<section>: The Generic Section element"
+        }
+    ],
+    "attr-select-multiple": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/select.json",
+            "name": "multiple",
+            "slug": "HTML/Attributes/multiple",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/multiple",
+            "summary": "The Boolean multiple attribute, if set, means the form control accepts one or more values. Valid for the email and file input types and the <select>, the manner by which the user opts for multiple values depends on the form control.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": true
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: multiple"
+        }
+    ],
+    "attr-select-required": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/select.json",
+            "name": "required",
+            "slug": "HTML/Attributes/required",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required",
+            "summary": "The Boolean required attribute, if present, indicates that the user must specify a value for the input before the owning form can be submitted.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "10"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: required"
+        }
+    ],
+    "attr-select-size": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/select.json",
+            "name": "size",
+            "slug": "HTML/Attributes/size",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/size",
+            "summary": "The size attribute defines the width of the <input> and the height of the <select> element. For the input, if the type attribute is text or password then it's the number of characters. This must be an integer value 0 or higher. If no size is specified, or an invalid value is specified, the input has no size declared, and the form control will be the default width based on the user agent. If CSS targets the element with properties impacting the width, CSS takes precedence.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": true
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: size"
         }
     ],
     "the-select-element": [
