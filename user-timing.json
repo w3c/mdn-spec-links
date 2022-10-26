@@ -330,6 +330,104 @@
             "title": "Performance"
         }
     ],
+    "dom-performancemark-constructor": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/PerformanceMark.json",
+            "name": "PerformanceMark",
+            "slug": "API/PerformanceMark/PerformanceMark",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMark/PerformanceMark",
+            "summary": "The PerformanceMark() constructor creates a timestamp with the given name.",
+            "support": {
+                "chrome": {
+                    "version_added": "76"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.2"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "101"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "79"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PerformanceMark()"
+        }
+    ],
+    "dom-performancemark-detail": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/PerformanceMark.json",
+            "name": "detail",
+            "slug": "API/PerformanceMark/detail",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMark/detail",
+            "summary": "The read-only detail property returns arbitrary metadata that was included in the mark upon construction (either when using performance.mark() or the PerformanceMark() constructor).",
+            "support": {
+                "chrome": {
+                    "version_added": "76"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.2"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "101"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "79"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PerformanceMark.detail"
+        }
+    ],
     "performancemark": [
         {
             "engines": [
@@ -341,7 +439,7 @@
             "name": "PerformanceMark",
             "slug": "API/PerformanceMark",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMark",
-            "summary": "PerformanceMark is an abstract interface for PerformanceEntry objects with an entryType of \"mark\". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser's performance timeline.",
+            "summary": "PerformanceMark is an interface for PerformanceEntry objects with an entryType of \"mark\".",
             "support": {
                 "chrome": {
                     "version_added": "28"
@@ -379,6 +477,53 @@
                 }
             },
             "title": "PerformanceMark"
+        }
+    ],
+    "dom-performancemeasure-detail": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/PerformanceMeasure.json",
+            "name": "detail",
+            "slug": "API/PerformanceMeasure/detail",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMeasure/detail",
+            "summary": "The read-only detail property returns arbitrary metadata that was included in the mark upon construction (when using performance.measure().",
+            "support": {
+                "chrome": {
+                    "version_added": "78"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.2"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "103"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "14.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PerformanceMeasure.detail"
         }
     ],
     "performancemeasure": [

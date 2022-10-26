@@ -17306,7 +17306,7 @@
             "name": "all",
             "slug": "JavaScript/Reference/Global_Objects/Promise/all",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all",
-            "summary": "The Promise.all() method takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises. This returned promise will fulfill when all of the input's promises have fulfilled, or if the input iterable contains no promises. It rejects immediately upon any of the input promises rejecting or non-promises throwing an error, and will reject with this first rejection message / error.",
+            "summary": "The Promise.all() method takes an iterable of promises as input and returns a single Promise. This returned promise fulfills when all of the input's promises fulfill (including when an empty iterable is passed), with an array of the fulfillment values. It rejects when any of the input's promises rejects, with this first rejection reason.",
             "support": {
                 "chrome": {
                     "version_added": "32"
@@ -17355,7 +17355,7 @@
             "name": "allSettled",
             "slug": "JavaScript/Reference/Global_Objects/Promise/allSettled",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled",
-            "summary": "The Promise.allSettled() method returns a promise that fulfills after all of the given promises have either fulfilled or rejected, with an array of objects that each describes the outcome of each promise.",
+            "summary": "The Promise.allSettled() method takes an iterable of promises as input and returns a single Promise. This returned promise fulfills when all of the input's promises settle (including when an empty iterable is passed), with an array of objects that describe the outcome of each promise.",
             "support": {
                 "chrome": {
                     "version_added": "76"
@@ -17402,7 +17402,7 @@
             "name": "any",
             "slug": "JavaScript/Reference/Global_Objects/Promise/any",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any",
-            "summary": "Promise.any() takes an iterable of Promise objects. It returns a single promise that fulfills as soon as any of the promises in the iterable fulfills, with the value of the fulfilled promise. If no promises in the iterable fulfill (if all of the given promises are rejected), then the returned promise is rejected with an AggregateError, a new subclass of Error that groups together individual errors.",
+            "summary": "The Promise.any() method takes an iterable of promises as input and returns a single Promise. This returned promise fulfills when any of the input's promises fulfills, with this first fulfillment value. It rejects when all of the input's promises reject (including when an empty iterable is passed), with an AggregateError containing an array of rejection reasons.",
             "support": {
                 "chrome": {
                     "version_added": "85"
@@ -17551,7 +17551,7 @@
             "name": "race",
             "slug": "JavaScript/Reference/Global_Objects/Promise/race",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race",
-            "summary": "The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise.",
+            "summary": "The Promise.race() method takes an iterable of promises as input and returns a single Promise. This returned promise settles with the eventual state of the first promise that settles.",
             "support": {
                 "chrome": {
                     "version_added": "32"
