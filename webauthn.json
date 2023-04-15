@@ -56,7 +56,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AuthenticatorAssertionResponse.authenticatorData"
+            "title": "AuthenticatorAssertionResponse: authenticatorData property"
         }
     ],
     "dom-authenticatorassertionresponse-signature": [
@@ -116,7 +116,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AuthenticatorAssertionResponse.signature"
+            "title": "AuthenticatorAssertionResponse: signature property"
         }
     ],
     "dom-authenticatorassertionresponse-userhandle": [
@@ -176,7 +176,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AuthenticatorAssertionResponse.userHandle"
+            "title": "AuthenticatorAssertionResponse: userHandle property"
         }
     ],
     "iface-authenticatorassertionresponse": [
@@ -296,7 +296,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AuthenticatorAttestationResponse.attestationObject"
+            "title": "AuthenticatorAttestationResponse: attestationObject property"
         }
     ],
     "dom-authenticatorattestationresponse-gettransports": [
@@ -338,7 +338,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AuthenticatorAttestationResponse.getTransports()"
+            "title": "AuthenticatorAttestationResponse: getTransports() method"
         }
     ],
     "authenticatorattestationresponse": [
@@ -458,7 +458,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "AuthenticatorResponse.clientDataJSON"
+            "title": "AuthenticatorResponse: clientDataJSON property"
         }
     ],
     "authenticatorresponse": [
@@ -576,7 +576,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredential.getClientExtensionResults()"
+            "title": "PublicKeyCredential: getClientExtensionResults() method"
         }
     ],
     "dom-publickeycredential-isuserverifyingplatformauthenticatoravailable": [
@@ -634,7 +634,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()"
+            "title": "PublicKeyCredential: isUserVerifyingPlatformAuthenticatorAvailable() static method"
         }
     ],
     "ref-for-dom-publickeycredential-rawid": [
@@ -692,7 +692,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredential.rawId"
+            "title": "PublicKeyCredential: rawId property"
         }
     ],
     "dom-publickeycredential-response": [
@@ -750,7 +750,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PublicKeyCredential.response"
+            "title": "PublicKeyCredential: response property"
         }
     ],
     "iface-pkcredential": [
@@ -820,7 +820,7 @@
             "name": "publickey-credentials-get",
             "slug": "HTTP/Headers/Feature-Policy/publickey-credentials-get",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/publickey-credentials-get",
-            "summary": "The HTTP Feature-Policy header publickey-credentials-get directive controls whether the current document is allowed to access the Web Authentication API to retrieve public-key credentials; i.e., via navigator.credentials.get({publicKey: ..., ...}).",
+            "summary": "The HTTP Permissions-Policy header publickey-credentials-get directive controls whether the current document is allowed to access the Web Authentication API to retrieve public-key credentials.",
             "support": {
                 "chrome": {
                     "version_added": "84"
@@ -851,7 +851,7 @@
                     "version_added": "84"
                 }
             },
-            "title": "Feature-Policy: publickey-credentials-get"
+            "title": "Permissions-Policy: publickey-credentials-get"
         }
     ]
 }

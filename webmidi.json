@@ -50,7 +50,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIAccess.inputs"
+            "title": "MIDIAccess: inputs property"
         }
     ],
     "dom-midiaccess-outputs": [
@@ -104,7 +104,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIAccess.outputs"
+            "title": "MIDIAccess: outputs property"
         }
     ],
     "dom-midiaccess-onstatechange": [
@@ -212,7 +212,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIAccess.sysexEnabled"
+            "title": "MIDIAccess: sysexEnabled property"
         }
     ],
     "midiaccess-interface": [
@@ -320,7 +320,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIConnectionEvent()"
+            "title": "MIDIConnectionEvent: MIDIConnectionEvent() constructor"
         }
     ],
     "dom-midiconnectionevent-port": [
@@ -374,7 +374,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIConnectionEvent.port"
+            "title": "MIDIConnectionEvent: port property"
         }
     ],
     "midiconnectionevent-interface": [
@@ -700,7 +700,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIMessageEvent()"
+            "title": "MIDIMessageEvent: MIDIMessageEvent() constructor"
         }
     ],
     "dom-midimessageevent-data": [
@@ -756,7 +756,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIMessageEvent.data"
+            "title": "MIDIMessageEvent: data property"
         }
     ],
     "midimessageevent-interface": [
@@ -867,7 +867,7 @@
                     "notes": "See <a href='https://crbug.com/471798'>bug 471798</a>."
                 }
             },
-            "title": "MIDIOutput.clear()"
+            "title": "MIDIOutput: clear() method"
         }
     ],
     "dom-midioutput-send": [
@@ -923,7 +923,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIOutput.send()"
+            "title": "MIDIOutput: send() method"
         }
     ],
     "MIDIOutput": [
@@ -1033,7 +1033,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.close()"
+            "title": "MIDIPort: close() method"
         }
     ],
     "dom-midiport-connection": [
@@ -1087,7 +1087,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.connection"
+            "title": "MIDIPort: connection property"
         }
     ],
     "dom-midiport-id": [
@@ -1141,7 +1141,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.id"
+            "title": "MIDIPort: id property"
         }
     ],
     "dom-midiport-manufacturer": [
@@ -1195,7 +1195,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.manufacturer"
+            "title": "MIDIPort: manufacturer property"
         }
     ],
     "dom-midiport-name": [
@@ -1249,7 +1249,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.name"
+            "title": "MIDIPort: name property"
         }
     ],
     "dom-midiport-open": [
@@ -1303,7 +1303,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.open()"
+            "title": "MIDIPort: open() method"
         }
     ],
     "dom-midiport-state": [
@@ -1357,7 +1357,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.state"
+            "title": "MIDIPort: state property"
         }
     ],
     "dom-midiport-onstatechange": [
@@ -1465,7 +1465,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.type"
+            "title": "MIDIPort: type property"
         }
     ],
     "dom-midiport-version": [
@@ -1519,7 +1519,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MIDIPort.version"
+            "title": "MIDIPort: version property"
         }
     ],
     "MIDIPort": [
@@ -1627,7 +1627,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Navigator.requestMIDIAccess()"
+            "title": "Navigator: requestMIDIAccess() method"
         }
     ],
     "permissions-policy-integration": [
@@ -1643,7 +1643,7 @@
             "name": "midi",
             "slug": "HTTP/Headers/Feature-Policy/midi",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/midi",
-            "summary": "The HTTP Feature-Policy header midi directive controls whether the current document is allowed to use the Web MIDI API. When this policy is enabled, the Promise returned by Navigator.requestMIDIAccess() will reject with a DOMException.",
+            "summary": "The HTTP Permissions-Policy header midi directive controls whether the current document is allowed to use the Web MIDI API.",
             "support": {
                 "chrome": {
                     "version_added": "60"
@@ -1677,7 +1677,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Feature-Policy: midi"
+            "title": "Permissions-Policy: midi"
         }
     ]
 }

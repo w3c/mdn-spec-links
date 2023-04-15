@@ -10,7 +10,7 @@
             "name": "clearMarks",
             "slug": "API/Performance/clearMarks",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/clearMarks",
-            "summary": "The clearMarks() method removes the named mark from the browser's performance entry buffer. If the method is called with no arguments, all performance entries with an entry type of \"mark\" will be removed from the performance entry buffer.",
+            "summary": "The clearMarks() method removes all or specific PerformanceMark objects from the browser's performance timeline.",
             "support": {
                 "chrome": [
                     {
@@ -65,7 +65,7 @@
                     }
                 ]
             },
-            "title": "performance.clearMarks()"
+            "title": "Performance: clearMarks() method"
         }
     ],
     "dom-performance-clearmeasures": [
@@ -79,7 +79,7 @@
             "name": "clearMeasures",
             "slug": "API/Performance/clearMeasures",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/clearMeasures",
-            "summary": "The clearMeasures() method removes the named measure from the browser's performance entry buffer. If the method is called with no arguments, all performance entries with an entry type of \"measure\" will be removed from the performance entry buffer.",
+            "summary": "The clearMeasures() method removes all or specific PerformanceMeasure objects from the browser's performance timeline.",
             "support": {
                 "chrome": [
                     {
@@ -134,7 +134,7 @@
                     }
                 ]
             },
-            "title": "performance.clearMeasures()"
+            "title": "Performance: clearMeasures() method"
         }
     ],
     "dom-performance-mark": [
@@ -148,7 +148,7 @@
             "name": "mark",
             "slug": "API/Performance/mark",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark",
-            "summary": "The mark() method creates a timestamp in the browser's performance entry buffer with the given name.",
+            "summary": "The mark() method creates a named PerformanceMark object representing a high resolution timestamp marker in the browser's performance timeline.",
             "support": {
                 "chrome": [
                     {
@@ -203,7 +203,7 @@
                     }
                 ]
             },
-            "title": "performance.mark()"
+            "title": "Performance: mark() method"
         }
     ],
     "dom-performance-measure": [
@@ -217,7 +217,7 @@
             "name": "measure",
             "slug": "API/Performance/measure",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure",
-            "summary": "The measure() method creates a named timestamp in the browser's performance entry buffer between marks, the navigation start time, or the current time.",
+            "summary": "The measure() method creates a named PerformanceMeasure object representing a time measurement between two marks in the browser's performance timeline.",
             "support": {
                 "chrome": [
                     {
@@ -272,7 +272,7 @@
                     }
                 ]
             },
-            "title": "performance.measure()"
+            "title": "Performance: measure() method"
         }
     ],
     "extensions-performance-interface": [
@@ -286,7 +286,7 @@
             "name": "Performance",
             "slug": "API/Performance",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance",
-            "summary": "The Performance interface provides access to performance-related information for the current page. It's part of the High Resolution Time API, but is enhanced by the Performance Timeline API, the Navigation Timing API, the User Timing API, and the Resource Timing API.",
+            "summary": "The Performance interface provides access to performance-related information for the current page.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -328,104 +328,6 @@
                 }
             },
             "title": "Performance"
-        }
-    ],
-    "dom-performancemark-constructor": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/PerformanceMark.json",
-            "name": "PerformanceMark",
-            "slug": "API/PerformanceMark/PerformanceMark",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMark/PerformanceMark",
-            "summary": "The PerformanceMark() constructor creates a timestamp with the given name.",
-            "support": {
-                "chrome": {
-                    "version_added": "76"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.2"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "101"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "16.0.0"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "79"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PerformanceMark()"
-        }
-    ],
-    "dom-performancemark-detail": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/PerformanceMark.json",
-            "name": "detail",
-            "slug": "API/PerformanceMark/detail",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMark/detail",
-            "summary": "The read-only detail property returns arbitrary metadata that was included in the mark upon construction (either when using performance.mark() or the PerformanceMark() constructor).",
-            "support": {
-                "chrome": {
-                    "version_added": "76"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.2"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "101"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "16.0.0"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "79"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PerformanceMark.detail"
         }
     ],
     "performancemark": [
@@ -477,53 +379,6 @@
                 }
             },
             "title": "PerformanceMark"
-        }
-    ],
-    "dom-performancemeasure-detail": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/PerformanceMeasure.json",
-            "name": "detail",
-            "slug": "API/PerformanceMeasure/detail",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMeasure/detail",
-            "summary": "The read-only detail property returns arbitrary metadata that was included in the mark upon construction (when using performance.measure().",
-            "support": {
-                "chrome": {
-                    "version_added": "78"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.2"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "103"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "16.0.0"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PerformanceMeasure.detail"
         }
     ],
     "performancemeasure": [

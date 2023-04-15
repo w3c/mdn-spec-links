@@ -1,4 +1,45 @@
 {
+    "dom-rtccertificate-expires": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCCertificate.json",
+            "name": "expires",
+            "slug": "API/RTCCertificate/expires",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCCertificate/expires",
+            "summary": "The read-only expires property of the RTCCertificate interface returns the expiration date of the certificate.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "42"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCCertificate: expires property"
+        }
+    ],
     "dom-rtccertificate": [
         {
             "engines": [
@@ -78,7 +119,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDTMFSender.insertDTMF()"
+            "title": "RTCDTMFSender: insertDTMF() method"
         }
     ],
     "dom-RTCDTMFSender-tonebuffer": [
@@ -119,7 +160,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDTMFSender.toneBuffer"
+            "title": "RTCDTMFSender: toneBuffer property"
         }
     ],
     "event-RTCDTMFSender-tonechange": [
@@ -215,7 +256,7 @@
             "name": "RTCDTMFToneChangeEvent",
             "slug": "API/RTCDTMFToneChangeEvent/RTCDTMFToneChangeEvent",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCDTMFToneChangeEvent/RTCDTMFToneChangeEvent",
-            "summary": "A string with the name of the event. It is case-sensitive and browsers always set it to tonechange.",
+            "summary": "The RTCDTMFToneChangeEvent() constructor creates a new RTCDTMFToneChangeEvent object.",
             "support": {
                 "chrome": {
                     "version_added": "27"
@@ -244,7 +285,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDTMFToneChangeEvent()"
+            "title": "RTCDTMFToneChangeEvent: RTCDTMFToneChangeEvent() constructor"
         }
     ],
     "dom-rtcdtmftonechangeevent-tone": [
@@ -287,7 +328,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDTMFToneChangeEvent.tone"
+            "title": "RTCDTMFToneChangeEvent: tone property"
         }
     ],
     "dom-rtcdtmftonechangeevent": [
@@ -373,7 +414,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.binaryType"
+            "title": "RTCDataChannel: binaryType property"
         }
     ],
     "dom-datachannel-bufferedamount": [
@@ -416,7 +457,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.bufferedAmount"
+            "title": "RTCDataChannel: bufferedAmount property"
         }
     ],
     "event-datachannel-bufferedamountlow": [
@@ -543,7 +584,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.bufferedAmountLowThreshold"
+            "title": "RTCDataChannel: bufferedAmountLowThreshold property"
         }
     ],
     "dom-rtcdatachannel-close": [
@@ -586,7 +627,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.close()"
+            "title": "RTCDataChannel: close() method"
         }
     ],
     "event-datachannel-close": [
@@ -881,7 +922,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.id"
+            "title": "RTCDataChannel: id property"
         }
     ],
     "dom-datachannel-label": [
@@ -924,7 +965,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.label"
+            "title": "RTCDataChannel: label property"
         }
     ],
     "dom-datachannel-maxpacketlifetime": [
@@ -965,7 +1006,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.maxPacketLifeTime"
+            "title": "RTCDataChannel: maxPacketLifeTime property"
         }
     ],
     "dom-datachannel-maxretransmits": [
@@ -1006,7 +1047,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.maxRetransmits"
+            "title": "RTCDataChannel: maxRetransmits property"
         }
     ],
     "event-datachannel-message": [
@@ -1133,7 +1174,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.negotiated"
+            "title": "RTCDataChannel: negotiated property"
         }
     ],
     "event-datachannel-open": [
@@ -1262,7 +1303,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.ordered"
+            "title": "RTCDataChannel: ordered property"
         }
     ],
     "dom-datachannel-protocol": [
@@ -1305,7 +1346,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.protocol"
+            "title": "RTCDataChannel: protocol property"
         }
     ],
     "dom-datachannel-readystate": [
@@ -1348,7 +1389,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.readyState"
+            "title": "RTCDataChannel: readyState property"
         }
     ],
     "dom-rtcdatachannel-send": [
@@ -1391,7 +1432,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannel.send()"
+            "title": "RTCDataChannel: send() method"
         }
     ],
     "rtcdatachannel": [
@@ -1479,7 +1520,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannelEvent()"
+            "title": "RTCDataChannelEvent: RTCDataChannelEvent() constructor"
         }
     ],
     "dom-datachannelevent-channel": [
@@ -1526,7 +1567,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDataChannelEvent.channel"
+            "title": "RTCDataChannelEvent: channel property"
         }
     ],
     "rtcdatachannelevent": [
@@ -1618,7 +1659,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDtlsTransport.iceTransport"
+            "title": "RTCDtlsTransport: iceTransport property"
         }
     ],
     "dom-rtcdtlstransport-state": [
@@ -1663,7 +1704,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCDtlsTransport.state"
+            "title": "RTCDtlsTransport: state property"
         }
     ],
     "dom-rtcdtlstransport": [
@@ -1750,7 +1791,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCError.errorDetail"
+            "title": "RTCError: errorDetail property"
         }
     ],
     "dom-rtcerror-receivedalert": [
@@ -1792,7 +1833,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCError.receivedAlert"
+            "title": "RTCError: receivedAlert property"
         }
     ],
     "dom-rtcerror-sctpcausecode": [
@@ -1834,7 +1875,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCError.sctpCauseCode"
+            "title": "RTCError: sctpCauseCode property"
         }
     ],
     "dom-rtcerror-sdplinenumber": [
@@ -1876,7 +1917,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCError.sdpLineNumber"
+            "title": "RTCError: sdpLineNumber property"
         }
     ],
     "dom-rtcerror-sentalert": [
@@ -1918,7 +1959,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCError.sentAlert"
+            "title": "RTCError: sentAlert property"
         }
     ],
     "dom-rtcerror": [
@@ -2002,7 +2043,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCErrorEvent.error"
+            "title": "RTCErrorEvent: error property"
         }
     ],
     "dom-rtcerrorevent": [
@@ -2105,7 +2146,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate()"
+            "title": "RTCIceCandidate: RTCIceCandidate() constructor"
         }
     ],
     "dom-rtcicecandidate-address": [
@@ -2145,7 +2186,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.address"
+            "title": "RTCIceCandidate: address property"
         }
     ],
     "dom-rtcicecandidate-candidate": [
@@ -2190,7 +2231,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.candidate"
+            "title": "RTCIceCandidate: candidate property"
         }
     ],
     "dom-rtcicecandidate-component": [
@@ -2230,7 +2271,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.component"
+            "title": "RTCIceCandidate: component property"
         }
     ],
     "dom-rtcicecandidate-foundation": [
@@ -2270,7 +2311,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.foundation"
+            "title": "RTCIceCandidate: foundation property"
         }
     ],
     "dom-rtcicecandidate-port": [
@@ -2310,7 +2351,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.port"
+            "title": "RTCIceCandidate: port property"
         }
     ],
     "dom-rtcicecandidate-priority": [
@@ -2350,7 +2391,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.priority"
+            "title": "RTCIceCandidate: priority property"
         }
     ],
     "dom-rtcicecandidate-protocol": [
@@ -2390,7 +2431,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.protocol"
+            "title": "RTCIceCandidate: protocol property"
         }
     ],
     "dom-rtcicecandidate-relatedaddress": [
@@ -2430,7 +2471,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.relatedAddress"
+            "title": "RTCIceCandidate: relatedAddress property"
         }
     ],
     "dom-rtcicecandidate-relatedport": [
@@ -2470,7 +2511,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.relatedPort"
+            "title": "RTCIceCandidate: relatedPort property"
         }
     ],
     "dom-rtcicecandidate-sdpmid": [
@@ -2515,7 +2556,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.sdpMid"
+            "title": "RTCIceCandidate: sdpMid property"
         }
     ],
     "dom-rtcicecandidate-sdpmlineindex": [
@@ -2560,7 +2601,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.sdpMLineIndex"
+            "title": "RTCIceCandidate: sdpMLineIndex property"
         }
     ],
     "dom-rtcicecandidate-tcptype": [
@@ -2600,7 +2641,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.tcpType"
+            "title": "RTCIceCandidate: tcpType property"
         }
     ],
     "dom-rtcicecandidate-tojson": [
@@ -2643,7 +2684,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.toJSON()"
+            "title": "RTCIceCandidate: toJSON() method"
         }
     ],
     "dom-rtcicecandidate-type": [
@@ -2683,7 +2724,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.type"
+            "title": "RTCIceCandidate: type property"
         }
     ],
     "dom-rtcicecandidate-usernamefragment": [
@@ -2724,7 +2765,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceCandidate.usernameFragment"
+            "title": "RTCIceCandidate: usernameFragment property"
         }
     ],
     "rtcicecandidate-interface": [
@@ -2828,7 +2869,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceServer.credential"
+            "title": "RTCIceServer: credential property"
         }
     ],
     "dom-rtciceserver-urls": [
@@ -2873,7 +2914,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceServers.urls"
+            "title": "RTCIceServers: urls property"
         }
     ],
     "dom-rtciceserver-username": [
@@ -2920,7 +2961,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceServer.username"
+            "title": "RTCIceServer: username property"
         }
     ],
     "rtciceserver-dictionary": [
@@ -3006,7 +3047,7 @@
                     "version_added": false
                 }
             },
-            "title": "RTCIceTransport.component"
+            "title": "RTCIceTransport: component property"
         }
     ],
     "dom-icetransport-gatheringstate": [
@@ -3046,7 +3087,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceTransport.gatheringState"
+            "title": "RTCIceTransport: gatheringState property"
         }
     ],
     "event-icetransport-gatheringstatechange": [
@@ -3165,7 +3206,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceTransport.getLocalCandidates()"
+            "title": "RTCIceTransport: getLocalCandidates() method"
         }
     ],
     "dom-rtcicetransport-getlocalparameters": [
@@ -3204,7 +3245,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceTransport.getLocalParameters()"
+            "title": "RTCIceTransport: getLocalParameters() method"
         }
     ],
     "dom-rtcicetransport-getremotecandidates": [
@@ -3245,7 +3286,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceTransport.getRemoteCandidates()"
+            "title": "RTCIceTransport: getRemoteCandidates() method"
         }
     ],
     "dom-rtcicetransport-getremoteparameters": [
@@ -3286,7 +3327,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceTransport.getRemoteParameters()"
+            "title": "RTCIceTransport: getRemoteParameters() method"
         }
     ],
     "dom-rtcicetransport-getselectedcandidatepair": [
@@ -3327,7 +3368,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceTransport.getSelectedCandidatePair()"
+            "title": "RTCIceTransport: getSelectedCandidatePair() method"
         }
     ],
     "dom-icetransport-role": [
@@ -3368,7 +3409,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceTransport.role"
+            "title": "RTCIceTransport: role property"
         }
     ],
     "event-icetransport-selectedcandidatepairchange": [
@@ -3488,7 +3529,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCIceTransport.state"
+            "title": "RTCIceTransport: state property"
         }
     ],
     "event-icetransport-statechange": [
@@ -3690,7 +3731,7 @@
                     }
                 ]
             },
-            "title": "RTCPeerConnection()"
+            "title": "RTCPeerConnection: RTCPeerConnection() constructor"
         }
     ],
     "dom-peerconnection-addicecandidate": [
@@ -3737,7 +3778,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.addIceCandidate()"
+            "title": "RTCPeerConnection: addIceCandidate() method"
         }
     ],
     "dom-rtcpeerconnection-addtrack": [
@@ -3751,7 +3792,7 @@
             "name": "addTrack",
             "slug": "API/RTCPeerConnection/addTrack",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/addTrack",
-            "summary": "The RTCPeerConnection method addTrack() adds a new media track to the set of tracks which will be transmitted to the other peer.>",
+            "summary": "The RTCPeerConnection method addTrack() adds a new media track to the set of tracks which will be transmitted to the other peer.",
             "support": {
                 "chrome": {
                     "version_added": "64"
@@ -3780,7 +3821,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.addTrack()"
+            "title": "RTCPeerConnection: addTrack() method"
         }
     ],
     "dom-rtcpeerconnection-addtransceiver": [
@@ -3825,7 +3866,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.addTransceiver()"
+            "title": "RTCPeerConnection: addTransceiver() method"
         }
     ],
     "dom-rtcpeerconnection-cantrickleicecandidates": [
@@ -3868,7 +3909,7 @@
                     "version_added": "83"
                 }
             },
-            "title": "RTCPeerConnection.canTrickleIceCandidates"
+            "title": "RTCPeerConnection: canTrickleIceCandidates property"
         }
     ],
     "dom-rtcpeerconnection-close": [
@@ -3913,7 +3954,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.close()"
+            "title": "RTCPeerConnection: close() method"
         }
     ],
     "dom-peerconnection-connection-state": [
@@ -3953,7 +3994,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.connectionState"
+            "title": "RTCPeerConnection: connectionState property"
         }
     ],
     "dom-rtcpeerconnection-onconnectionstatechange": [
@@ -4038,7 +4079,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.createAnswer()"
+            "title": "RTCPeerConnection: createAnswer() method"
         }
     ],
     "dom-peerconnection-createdatachannel": [
@@ -4081,7 +4122,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.createDataChannel()"
+            "title": "RTCPeerConnection: createDataChannel() method"
         }
     ],
     "dom-rtcpeerconnection-createoffer": [
@@ -4126,7 +4167,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.createOffer()"
+            "title": "RTCPeerConnection: createOffer() method"
         }
     ],
     "dom-peerconnection-currentlocaldesc": [
@@ -4169,7 +4210,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.currentLocalDescription"
+            "title": "RTCPeerConnection: currentLocalDescription property"
         }
     ],
     "dom-peerconnection-currentremotedesc": [
@@ -4210,7 +4251,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.currentRemoteDescription"
+            "title": "RTCPeerConnection: currentRemoteDescription property"
         }
     ],
     "dom-rtcpeerconnection-ondatachannel": [
@@ -4298,7 +4339,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.generateCertificate() static function"
+            "title": "RTCPeerConnection: generateCertificate() static method"
         }
     ],
     "dom-rtcpeerconnection-getconfiguration": [
@@ -4343,7 +4384,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.getConfiguration()"
+            "title": "RTCPeerConnection: getConfiguration() method"
         }
     ],
     "dom-peerconnection-getreceivers": [
@@ -4386,7 +4427,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.getReceivers()"
+            "title": "RTCPeerConnection: getReceivers() method"
         }
     ],
     "dom-peerconnection-getsenders": [
@@ -4429,7 +4470,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.getSenders()"
+            "title": "RTCPeerConnection: getSenders() method"
         }
     ],
     "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector": [
@@ -4472,7 +4513,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.getStats()"
+            "title": "RTCPeerConnection: getStats() method"
         }
     ],
     "dom-peerconnection-gettranseceivers": [
@@ -4515,7 +4556,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.getTransceivers()"
+            "title": "RTCPeerConnection: getTransceivers() method"
         }
     ],
     "dom-rtcpeerconnection-onicecandidate": [
@@ -4644,7 +4685,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.iceConnectionState"
+            "title": "RTCPeerConnection: iceConnectionState property"
         }
     ],
     "dom-rtcpeerconnection-oniceconnectionstatechange": [
@@ -4732,7 +4773,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.iceGatheringState"
+            "title": "RTCPeerConnection: iceGatheringState property"
         }
     ],
     "dom-rtcpeerconnection-onicegatheringstatechange": [
@@ -4822,7 +4863,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.localDescription"
+            "title": "RTCPeerConnection: localDescription property"
         }
     ],
     "dom-rtcpeerconnection-onnegotiationneeded": [
@@ -4887,7 +4928,7 @@
             "name": "pendingLocalDescription",
             "slug": "API/RTCPeerConnection/pendingLocalDescription",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/pendingLocalDescription",
-            "summary": "The read-only property RTCPeerConnection.pendingLocalDescription returns an RTCSessionDescription object describing a pending configuration change for the local end of the connection. This does not describe the connection as it currently stands, but as it may exist in the near future. Use RTCPeerConnection.currentLocalDescription or RTCPeerConnection.localDescription to get the current state of the endpoint. For details on the difference, see Pending and current descriptions in WebRTC connectivity.",
+            "summary": "The read-only property RTCPeerConnection.pendingLocalDescription returns an RTCSessionDescription object describing a pending configuration change for the local end of the connection. This does not describe the connection as it currently stands, but as it may exist in the near future. Use RTCPeerConnection.currentLocalDescription or RTCPeerConnection.localDescription to get the current state of the endpoint. For details on the difference, see Pending and current descriptions in the WebRTC Connectivity page.",
             "support": {
                 "chrome": {
                     "version_added": "70"
@@ -4916,7 +4957,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.pendingLocalDescription"
+            "title": "RTCPeerConnection: pendingLocalDescription property"
         }
     ],
     "dom-peerconnection-pendingremotedesc": [
@@ -4930,7 +4971,7 @@
             "name": "pendingRemoteDescription",
             "slug": "API/RTCPeerConnection/pendingRemoteDescription",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/pendingRemoteDescription",
-            "summary": "The read-only property RTCPeerConnection.pendingRemoteDescription returns an RTCSessionDescription object describing a pending configuration change for the remote end of the connection. This does not describe the connection as it currently stands, but as it may exist in the near future. Use RTCPeerConnection.currentRemoteDescription or RTCPeerConnection.remoteDescription to get the current session description for the remote endpoint. For details on the difference, see Pending and current descriptions in WebRTC connectivity.",
+            "summary": "The read-only property RTCPeerConnection.pendingRemoteDescription returns an RTCSessionDescription object describing a pending configuration change for the remote end of the connection. This does not describe the connection as it currently stands, but as it may exist in the near future. Use RTCPeerConnection.currentRemoteDescription or RTCPeerConnection.remoteDescription to get the current session description for the remote endpoint. For details on the difference, see Pending and current descriptions in the WebRTC Connectivity page.",
             "support": {
                 "chrome": {
                     "version_added": "70"
@@ -4959,7 +5000,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.pendingRemoteDescription"
+            "title": "RTCPeerConnection: pendingRemoteDescription property"
         }
     ],
     "dom-peerconnection-remotedescription": [
@@ -5004,7 +5045,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.remoteDescription"
+            "title": "RTCPeerConnection: remoteDescription property"
         }
     ],
     "dom-rtcpeerconnection-removetrack": [
@@ -5049,7 +5090,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.removeTrack()"
+            "title": "RTCPeerConnection: removeTrack() method"
         }
     ],
     "dom-rtcpeerconnection-restartice": [
@@ -5092,7 +5133,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.restartIce()"
+            "title": "RTCPeerConnection: restartIce() method"
         }
     ],
     "dom-rtcpeerconnection-sctp": [
@@ -5135,7 +5176,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.sctp"
+            "title": "RTCPeerConnection: sctp property"
         }
     ],
     "dom-rtcpeerconnection-setconfiguration": [
@@ -5178,7 +5219,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.setConfiguration()"
+            "title": "RTCPeerConnection: setConfiguration() method"
         }
     ],
     "dom-peerconnection-setlocaldescription": [
@@ -5225,7 +5266,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.setLocalDescription()"
+            "title": "RTCPeerConnection: setLocalDescription() method"
         }
     ],
     "dom-peerconnection-setremotedescription": [
@@ -5270,7 +5311,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.setRemoteDescription()"
+            "title": "RTCPeerConnection: setRemoteDescription() method"
         }
     ],
     "dom-peerconnection-signaling-state": [
@@ -5284,7 +5325,7 @@
             "name": "signalingState",
             "slug": "API/RTCPeerConnection/signalingState",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/signalingState",
-            "summary": "The read-only signalingState property on the RTCPeerConnection interface returns a string value describing the state of the signaling process on the local end of the connection while connecting or reconnecting to another peer. See Signaling in Lifetime of a WebRTC session for more details about the signaling process.",
+            "summary": "The read-only signalingState property on the RTCPeerConnection interface returns a string value describing the state of the signaling process on the local end of the connection while connecting or reconnecting to another peer. See Signaling in our WebRTC session lifetime page.",
             "support": {
                 "chrome": {
                     "version_added": "26"
@@ -5313,7 +5354,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnection.signalingState"
+            "title": "RTCPeerConnection: signalingState property"
         }
     ],
     "event-signalingstatechange": [
@@ -5524,7 +5565,7 @@
                     "version_added": "81"
                 }
             },
-            "title": "RTCPeerConnectionIceErrorEvent.address"
+            "title": "RTCPeerConnectionIceErrorEvent: address property"
         }
     ],
     "rtcpeerconnectioniceerrorevent": [
@@ -5607,7 +5648,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnectionIceEvent()"
+            "title": "RTCPeerConnectionIceEvent: RTCPeerConnectionIceEvent() constructor"
         }
     ],
     "dom-rtcpeerconnectioniceevent-candidate": [
@@ -5650,7 +5691,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCPeerConnectionIceEvent.candidate"
+            "title": "RTCPeerConnectionIceEvent: candidate property"
         }
     ],
     "rtcpeerconnectioniceevent": [
@@ -5757,7 +5798,7 @@
                     "version_added": false
                 }
             },
-            "title": "RTCRtpContributingSource.audioLevel"
+            "title": "RTCRtpContributingSource: audioLevel property"
         }
     ],
     "dom-rtcrtpcontributingsource-source": [
@@ -5814,7 +5855,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpContributingSource.source"
+            "title": "RTCRtpContributingSource: source property"
         }
     ],
     "dom-rtcrtpcontributingsource-timestamp": [
@@ -5872,7 +5913,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpContributingSource.timestamp"
+            "title": "RTCRtpContributingSource: timestamp property"
         }
     ],
     "dom-rtcrtpcontributingsource": [
@@ -5972,52 +6013,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpEncodingParameters.maxBitrate"
-        }
-    ],
-    "dom-rtcrtpencodingparameters-maxframerate": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "partial": [
-                "gecko"
-            ],
-            "filename": "api/RTCRtpEncodingParameters.json",
-            "name": "maxFramerate",
-            "slug": "API/RTCRtpEncodingParameters/maxFramerate",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpEncodingParameters/maxFramerate",
-            "summary": "The maxFramerate property of the RTCRtpEncodingParameters dictionary specifies the maximum framerate that can be used to send the encoding, in frames per second.",
-            "support": {
-                "chrome": {
-                    "version_added": "81"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "101",
-                    "partial_implementation": true,
-                    "notes": "Zero is treated as 'no fps limit' (see <a href='https://bugzil.la/1611957'>bug 1611957</a>)."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "81"
-                }
-            },
-            "title": "RTCRtpEncodingParameters.maxFramerate"
+            "title": "RTCRtpEncodingParameters: maxBitrate property"
         }
     ],
     "dom-rtcrtpencodingparameters-scaleresolutiondownby": [
@@ -6060,7 +6056,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpEncodingParameters.scaleResolutionDownBy"
+            "title": "RTCRtpEncodingParameters: scaleResolutionDownBy property"
         }
     ],
     "dom-rtcrtpencodingparameters": [
@@ -6145,7 +6141,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpReceiver.getCapabilities() static function"
+            "title": "RTCRtpReceiver: getCapabilities() static method"
         }
     ],
     "dom-rtcrtpreceiver-getcontributingsources": [
@@ -6188,7 +6184,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpReceiver.getContributingSources()"
+            "title": "RTCRtpReceiver: getContributingSources() method"
         }
     ],
     "dom-rtcrtpreceiver-getparameters": [
@@ -6201,7 +6197,7 @@
             "name": "getParameters",
             "slug": "API/RTCRtpReceiver/getParameters",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getParameters",
-            "summary": "The getParameters() method of the RTCRtpReceiver interface returns an RTCRtpReceiveParameters object describing the current configuration for the encoding and transmission of media on the receiver's track.",
+            "summary": "The getParameters() method of the RTCRtpReceiver interface returns an object describing the current configuration for the encoding and transmission of media on the receiver's track.",
             "support": {
                 "chrome": {
                     "version_added": "59"
@@ -6228,7 +6224,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpReceiver.getParameters()"
+            "title": "RTCRtpReceiver: getParameters() method"
         }
     ],
     "widl-RTCRtpReceiver-getStats-Promise-RTCStatsReport": [
@@ -6273,7 +6269,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpReceiver.getStats()"
+            "title": "RTCRtpReceiver: getStats() method"
         }
     ],
     "dom-rtcrtpreceiver-getsynchronizationsources": [
@@ -6314,7 +6310,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpReceiver.getSynchronizationSources()"
+            "title": "RTCRtpReceiver: getSynchronizationSources() method"
         }
     ],
     "dom-rtpreceiver-track": [
@@ -6357,7 +6353,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpReceiver.track"
+            "title": "RTCRtpReceiver: track property"
         }
     ],
     "dom-rtcrtpreceiver-transport": [
@@ -6400,7 +6396,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpReceiver.transport"
+            "title": "RTCRtpReceiver: transport property"
         }
     ],
     "rtcrtpreceiver-interface": [
@@ -6456,7 +6452,7 @@
             "name": "encodings",
             "slug": "API/RTCRtpSendParameters/encodings",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSendParameters/encodings",
-            "summary": "The RTCRtpSendParameters dictionary's encodings property is an RTCRtpEncodingParameters object providing configuration settings for the encoder being used for the RTCRtpSender's track.",
+            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -6486,7 +6482,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSendParameters.encodings"
+            "title": "RTCRtpSender: setParameters() method"
         }
     ],
     "dom-rtcrtpsendparameters": [
@@ -6499,7 +6495,7 @@
             "name": "RTCRtpSendParameters",
             "slug": "API/RTCRtpSendParameters",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSendParameters",
-            "summary": "The WebRTC API's RTCRtpSendParameters dictionary is used to specify the parameters for an RTCRtpSender when calling its setParameters() method.",
+            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -6529,7 +6525,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSendParameters"
+            "title": "RTCRtpSender: setParameters() method"
         }
     ],
     "dom-rtcrtpsender-dtmf": [
@@ -6570,7 +6566,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.dtmf"
+            "title": "RTCRtpSender: dtmf property"
         }
     ],
     "dom-rtcrtpsender-getcapabilities": [
@@ -6612,7 +6608,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.getCapabilities() static function"
+            "title": "RTCRtpSender: getCapabilities() static method"
         }
     ],
     "dom-rtcrtpsender-getparameters": [
@@ -6626,7 +6622,7 @@
             "name": "getParameters",
             "slug": "API/RTCRtpSender/getParameters",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getParameters",
-            "summary": "The getParameters() method of the RTCRtpSender interface returns an RTCRtpSendParameters object describing the current configuration for the encoding and transmission of media on the sender's track.",
+            "summary": "The getParameters() method of the RTCRtpSender interface returns an object describing the current configuration for how the sender's track will be encoded and transmitted to a remote RTCRtpReceiver.",
             "support": {
                 "chrome": {
                     "version_added": "68"
@@ -6653,7 +6649,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.getParameters()"
+            "title": "RTCRtpSender: getParameters() method"
         }
     ],
     "widl-RTCRtpSender-getStats-Promise-RTCStatsReport": [
@@ -6696,7 +6692,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.getStats()"
+            "title": "RTCRtpSender: getStats() method"
         }
     ],
     "dom-rtcrtpsender-replacetrack": [
@@ -6737,7 +6733,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.replaceTrack()"
+            "title": "RTCRtpSender: replaceTrack() method"
         }
     ],
     "dom-rtcrtpsender-setparameters": [
@@ -6786,7 +6782,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.setParameters()"
+            "title": "RTCRtpSender: setParameters() method"
         }
     ],
     "dom-rtcrtpsender-setstreams": [
@@ -6828,7 +6824,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.setStreams()"
+            "title": "RTCRtpSender: setStreams() method"
         }
     ],
     "dom-rtcrtpsender-track": [
@@ -6871,7 +6867,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.track"
+            "title": "RTCRtpSender: track property"
         }
     ],
     "dom-rtcrtpsender-transport": [
@@ -6914,7 +6910,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpSender.transport"
+            "title": "RTCRtpSender: transport property"
         }
     ],
     "rtcrtpsender-interface": [
@@ -7007,7 +7003,7 @@
                     "version_added": false
                 }
             },
-            "title": "RTCRtpReceiver.getSynchronizationSources()"
+            "title": "RTCRtpReceiver: getSynchronizationSources() method"
         }
     ],
     "dom-rtcrtptransceiver-currentdirection": [
@@ -7048,7 +7044,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpTransceiver.currentDirection"
+            "title": "RTCRtpTransceiver: currentDirection property"
         }
     ],
     "dom-rtcrtptransceiver-direction": [
@@ -7089,7 +7085,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpTransceiver.direction"
+            "title": "RTCRtpTransceiver: direction property"
         }
     ],
     "dom-rtptransceiver-mid": [
@@ -7130,7 +7126,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpTransceiver.mid"
+            "title": "RTCRtpTransceiver: mid property"
         }
     ],
     "dom-rtcrtptransceiver-receiver": [
@@ -7171,7 +7167,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpTransceiver.receiver"
+            "title": "RTCRtpTransceiver: receiver property"
         }
     ],
     "dom-rtcrtptransceiver-sender": [
@@ -7212,7 +7208,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpTransceiver.sender"
+            "title": "RTCRtpTransceiver: sender property"
         }
     ],
     "dom-rtcrtptransceiver-setcodecpreferences": [
@@ -7252,7 +7248,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCRtpTransceiver.setCodecPreferences()"
+            "title": "RTCRtpTransceiver: setCodecPreferences() method"
         }
     ],
     "dom-rtcrtptransceiver-stop": [
@@ -7293,7 +7289,7 @@
                     "version_added": "88"
                 }
             },
-            "title": "RTCRtpTransceiver.stop()"
+            "title": "RTCRtpTransceiver: stop() method"
         }
     ],
     "rtcrtptransceiver-interface": [
@@ -7377,7 +7373,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCSctpTransport.state"
+            "title": "RTCSctpTransport: state property"
         }
     ],
     "rtcsctptransport-interface": [
@@ -7463,7 +7459,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCSessionDescription.sdp"
+            "title": "RTCSessionDescription: sdp property"
         }
     ],
     "dom-rtcsessiondescription-tojson": [
@@ -7506,7 +7502,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCSessionDescription.toJSON()"
+            "title": "RTCSessionDescription: toJSON() method"
         }
     ],
     "dom-rtcsessiondescription-type": [
@@ -7551,7 +7547,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCSessionDescription.type"
+            "title": "RTCSessionDescription: type property"
         }
     ],
     "rtcsessiondescription-class": [
@@ -7690,7 +7686,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCTrackEvent.receiver"
+            "title": "RTCTrackEvent: receiver property"
         }
     ],
     "dom-rtctrackevent-streams": [
@@ -7733,7 +7729,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCTrackEvent.streams"
+            "title": "RTCTrackEvent: streams property"
         }
     ],
     "dom-rtctrackevent-track": [
@@ -7776,7 +7772,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCTrackEvent.track"
+            "title": "RTCTrackEvent: track property"
         }
     ],
     "dom-trackevent-transceiver": [
@@ -7823,7 +7819,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "RTCTrackEvent.transceiver"
+            "title": "RTCTrackEvent: transceiver property"
         }
     ],
     "dom-rtctrackevent": [

@@ -9,7 +9,7 @@
             "name": "calendars",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/calendars",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendars",
-            "summary": "The Intl.Locale.prototype.calendars property is an accessor property which returns an array of one or more unique calendar identifiers for the Locale.",
+            "summary": "The calendars accessor property of Intl.Locale instances returns a list of one or more unique calendar identifiers for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "99"
@@ -45,6 +45,52 @@
             "title": "Intl.Locale.prototype.calendars"
         }
     ],
+    "sec-Intl.Locale.prototype.collations": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Intl/Locale.json",
+            "name": "collations",
+            "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/collations",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collations",
+            "summary": "The collations accessor property of Intl.Locale instances returns a list of one or more collation types for this locale.",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "Intl.Locale.prototype.collations"
+        }
+    ],
     "sec-Intl.Locale.prototype.hourCycles": [
         {
             "engines": [
@@ -55,7 +101,7 @@
             "name": "hourCycles",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/hourCycles",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycles",
-            "summary": "The Intl.Locale.prototype.hourCycles property is an accessor property which returns a list of one or more unique hour cycle identifiers for the Locale.",
+            "summary": "The hourCycles accessor property of Intl.Locale instances returns a list of one or more unique hour cycle identifiers for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "99"
@@ -101,7 +147,7 @@
             "name": "numberingSystems",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystems",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystems",
-            "summary": "The Intl.Locale.prototype.numberingSystems property is an accessor property that returns one or more unique numbering system identifiers according to the numeral system used by the Locale.",
+            "summary": "The numberingSystems accessor property of Intl.Locale instances returns a list of one or more unique numbering system identifiers for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "99"
@@ -147,7 +193,7 @@
             "name": "textInfo",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/textInfo",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/textInfo",
-            "summary": "The Intl.Locale.prototype.textInfo property is an accessor property which returns the ordering of characters indicated by either ltr (left-to-right) or by rtl (right-to-left) for the associated Locale.",
+            "summary": "The textInfo accessor property of Intl.Locale instances returns the ordering of characters indicated by either ltr (left-to-right) or by rtl (right-to-left) for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "99"
@@ -193,7 +239,7 @@
             "name": "timeZones",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/timeZones",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/timeZones",
-            "summary": "The Intl.Locale.prototype.timeZones property is an accessor property which returns an array of supported time zones for a chosen Locale.",
+            "summary": "The timeZones accessor property of Intl.Locale instances returns a list of supported time zones for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "99"
@@ -239,7 +285,7 @@
             "name": "weekInfo",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/weekInfo",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/weekInfo",
-            "summary": "The Intl.Locale.prototype.weekInfo property is an accessor property which returns a weekInfo object with the properties firstDay, weekend and minimalDays for the associated Locale.",
+            "summary": "The weekInfo accessor property of Intl.Locale instances returns a weekInfo object with the properties firstDay, weekend and minimalDays for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "99"

@@ -37,7 +37,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.fonts"
+            "title": "Document: fonts property"
         },
         {
             "engines": [
@@ -114,7 +114,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WorkerGlobalScope.fonts"
+            "title": "WorkerGlobalScope: fonts property"
         }
     ],
     "font-face-constructor": [
@@ -157,7 +157,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace()"
+            "title": "FontFace: FontFace() constructor"
         }
     ],
     "dom-fontfacedescriptors-ascentoverride": [
@@ -197,7 +197,7 @@
                     "version_added": "87"
                 }
             },
-            "title": "FontFace.ascentOverride"
+            "title": "FontFace: ascentOverride property"
         }
     ],
     "dom-fontfacedescriptors-descentoverride": [
@@ -237,7 +237,7 @@
                     "version_added": "87"
                 }
             },
-            "title": "FontFace.descentOverride"
+            "title": "FontFace: descentOverride property"
         }
     ],
     "dom-fontface-display": [
@@ -278,7 +278,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.display"
+            "title": "FontFace: display property"
         }
     ],
     "dom-fontface-family": [
@@ -321,7 +321,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.family"
+            "title": "FontFace: family property"
         }
     ],
     "dom-fontface-featuresettings": [
@@ -364,7 +364,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.featureSettings"
+            "title": "FontFace: featureSettings property"
         }
     ],
     "dom-fontfacedescriptors-linegapoverride": [
@@ -404,7 +404,7 @@
                     "version_added": "87"
                 }
             },
-            "title": "FontFace.lineGapOverride"
+            "title": "FontFace: lineGapOverride property"
         }
     ],
     "font-face-load": [
@@ -447,7 +447,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.load()"
+            "title": "FontFace: load() method"
         }
     ],
     "dom-fontface-loaded": [
@@ -490,7 +490,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.loaded"
+            "title": "FontFace: loaded property"
         }
     ],
     "dom-fontface-status": [
@@ -533,7 +533,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.status"
+            "title": "FontFace: status property"
         }
     ],
     "dom-fontface-stretch": [
@@ -576,7 +576,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.stretch"
+            "title": "FontFace: stretch property"
         }
     ],
     "dom-fontface-style": [
@@ -619,7 +619,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.style"
+            "title": "FontFace: style property"
         }
     ],
     "dom-fontface-unicoderange": [
@@ -662,7 +662,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.unicodeRange"
+            "title": "FontFace: unicodeRange property"
         }
     ],
     "dom-fontface-variant": [
@@ -705,7 +705,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.variant"
+            "title": "FontFace: variant property"
         }
     ],
     "dom-fontfacedescriptors-variationsettings": [
@@ -745,7 +745,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.variationSettings"
+            "title": "FontFace: variationSettings property"
         }
     ],
     "dom-fontface-weight": [
@@ -788,7 +788,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFace.weight"
+            "title": "FontFace: weight property"
         }
     ],
     "fontface-interface": [
@@ -872,7 +872,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSet.add()"
+            "title": "FontFaceSet: add() method"
         }
     ],
     "dom-fontfaceset-check": [
@@ -886,7 +886,7 @@
             "name": "check",
             "slug": "API/FontFaceSet/check",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/check",
-            "summary": "The check() method of the FontFaceSet returns whether all fonts in the given font list have been loaded and are available.",
+            "summary": "The check() method of the FontFaceSet returns true if you can render some text using the given font specification without attempting to use any fonts in this FontFaceSet that are not yet fully loaded. This means you can use the font specification without causing a font swap.",
             "support": {
                 "chrome": {
                     "version_added": "35"
@@ -913,7 +913,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSet.check()"
+            "title": "FontFaceSet: check() method"
         }
     ],
     "dom-fontfaceset-clear": [
@@ -954,7 +954,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSet.clear()"
+            "title": "FontFaceSet: clear() method"
         }
     ],
     "dom-fontfaceset-delete": [
@@ -995,7 +995,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSet.delete()"
+            "title": "FontFaceSet: delete() method"
         }
     ],
     "dom-fontfaceset-load": [
@@ -1036,7 +1036,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSet.load()"
+            "title": "FontFaceSet: load() method"
         }
     ],
     "dom-fontfaceset-onloading": [
@@ -1200,7 +1200,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSet.ready"
+            "title": "FontFaceSet: ready property"
         }
     ],
     "dom-fontfaceset-status": [
@@ -1241,7 +1241,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSet.status"
+            "title": "FontFaceSet: status property"
         }
     ],
     "dom-fontfacesetloadevent-fontfacesetloadevent": [
@@ -1283,7 +1283,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSetLoadEvent()"
+            "title": "FontFaceSetLoadEvent: FontFaceSetLoadEvent() constructor"
         }
     ],
     "dom-fontfacesetloadevent-fontfaces": [
@@ -1325,7 +1325,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FontFaceSetLoadEvent.fontfaces"
+            "title": "FontFaceSetLoadEvent: fontfaces property"
         }
     ],
     "fontfacesetloadevent": [

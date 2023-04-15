@@ -10,7 +10,7 @@
             "name": "style",
             "slug": "CSS/contain#style",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain#style",
-            "summary": "The contain CSS property allows an author to indicate that an element and its contents are, as much as possible, independent of the rest of the document tree. Containment allows the browser to calculate layout, style, paint, size, or any combination of them for a specific area of the DOM. Changes within an element with containment applied are not propagated outside of the contained element to the rest of the page, leading to performance benefits through fewer DOM re-renders.",
+            "summary": "The contain CSS property indicates that an element and its contents are, as much as possible, independent from the rest of the document tree. Containment enables isolating a subsection of the DOM, providing performance benefits by limiting calculations of layout, style, paint, size, or any combination to a DOM subtree rather than the entire page. Containment can also be used to scope CSS counters and quotes.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -51,7 +51,7 @@
             "name": "contain",
             "slug": "CSS/contain",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/contain",
-            "summary": "The contain CSS property allows an author to indicate that an element and its contents are, as much as possible, independent of the rest of the document tree. Containment allows the browser to calculate layout, style, paint, size, or any combination of them for a specific area of the DOM. Changes within an element with containment applied are not propagated outside of the contained element to the rest of the page, leading to performance benefits through fewer DOM re-renders.",
+            "summary": "The contain CSS property indicates that an element and its contents are, as much as possible, independent from the rest of the document tree. Containment enables isolating a subsection of the DOM, providing performance benefits by limiting calculations of layout, style, paint, size, or any combination to a DOM subtree rather than the entire page. Containment can also be used to scope CSS counters and quotes.",
             "support": {
                 "chrome": {
                     "version_added": "52"
@@ -94,7 +94,7 @@
             "name": "content-visibility",
             "slug": "CSS/content-visibility",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility",
-            "summary": "The content-visibility CSS property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. Basically it enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.",
+            "summary": "The content-visibility CSS property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. It enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.",
             "support": {
                 "chrome": {
                     "version_added": "85"

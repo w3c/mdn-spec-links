@@ -275,7 +275,7 @@
             "name": "Collator",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Collator/Collator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator",
-            "summary": "The Intl.Collator() constructor creates Intl.Collator objects that enable language-sensitive string comparison.",
+            "summary": "The Intl.Collator() constructor creates Intl.Collator objects.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -437,7 +437,7 @@
             "name": "supportedLocalesOf",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Collator/supportedLocalesOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/supportedLocalesOf",
-            "summary": "The Intl.Collator.supportedLocalesOf() method returns an array containing those of the provided locales that are supported in collation without having to fall back to the runtime's default locale.",
+            "summary": "The Intl.Collator.supportedLocalesOf() static method returns an array containing those of the provided locales that are supported in collation without having to fall back to the runtime's default locale.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -547,7 +547,7 @@
             "name": "DateTimeFormat",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat",
-            "summary": "The Intl.DateTimeFormat() constructor creates Intl.DateTimeFormat objects that enable language-sensitive date and time formatting.",
+            "summary": "The Intl.DateTimeFormat() constructor creates Intl.DateTimeFormat objects.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -871,7 +871,7 @@
             "name": "supportedLocalesOf",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/supportedLocalesOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/supportedLocalesOf",
-            "summary": "The Intl.DateTimeFormat.supportedLocalesOf() method returns an array containing those of the provided locales that are supported in date and time formatting without having to fall back to the runtime's default locale.",
+            "summary": "The Intl.DateTimeFormat.supportedLocalesOf() static method returns an array containing those of the provided locales that are supported in date and time formatting without having to fall back to the runtime's default locale.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -981,7 +981,7 @@
             "name": "DisplayNames",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DisplayNames/DisplayNames",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/DisplayNames",
-            "summary": "The Intl.DisplayNames() constructor creates Intl.DisplayNames objects that enable the consistent translation of language, region and script display names.",
+            "summary": "The Intl.DisplayNames() constructor creates Intl.DisplayNames objects.",
             "support": {
                 "chrome": {
                     "version_added": "81"
@@ -1122,7 +1122,7 @@
             "name": "supportedLocalesOf",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DisplayNames/supportedLocalesOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/supportedLocalesOf",
-            "summary": "The Intl.DisplayNames.supportedLocalesOf() method returns an array containing those of the provided locales that are supported in display names without having to fall back to the runtime's default locale.",
+            "summary": "The Intl.DisplayNames.supportedLocalesOf() static method returns an array containing those of the provided locales that are supported in display names without having to fall back to the runtime's default locale.",
             "support": {
                 "chrome": {
                     "version_added": "81"
@@ -1216,7 +1216,7 @@
             "name": "ListFormat",
             "slug": "JavaScript/Reference/Global_Objects/Intl/ListFormat/ListFormat",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/ListFormat",
-            "summary": "The Intl.ListFormat() constructor creates Intl.ListFormat objects that enable language-sensitive list formatting.",
+            "summary": "The Intl.ListFormat() constructor creates Intl.ListFormat objects.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -1426,7 +1426,7 @@
             "name": "supportedLocalesOf",
             "slug": "JavaScript/Reference/Global_Objects/Intl/ListFormat/supportedLocalesOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/supportedLocalesOf",
-            "summary": "The Intl.ListFormat.supportedLocalesOf() method returns an array containing those of the provided locales that are supported in list formatting without having to fall back to the runtime's default locale.",
+            "summary": "The Intl.ListFormat.supportedLocalesOf() static method returns an array containing those of the provided locales that are supported in list formatting without having to fall back to the runtime's default locale.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -1534,7 +1534,7 @@
             "name": "Locale",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/Locale",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale",
-            "summary": "The Intl.Locale constructor is a standard built-in property of the Intl object that represents a Unicode locale identifier.",
+            "summary": "The Intl.Locale() constructor creates Intl.Locale objects.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -1581,7 +1581,7 @@
             "name": "baseName",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/baseName",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/baseName",
-            "summary": "The Intl.Locale.prototype.baseName property returns a substring of the Locale's string representation, containing core information about the Locale.",
+            "summary": "The baseName accessor property of Intl.Locale instances returns a substring of this locale's string representation, containing core information about this locale.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -1628,7 +1628,7 @@
             "name": "calendar",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/calendar",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendar",
-            "summary": "The Intl.Locale.prototype.calendar property is an accessor property which returns the type of calendar used in the Locale.",
+            "summary": "The calendar accessor property of Intl.Locale instances returns the calendar type for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -1675,7 +1675,7 @@
             "name": "caseFirst",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/caseFirst",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/caseFirst",
-            "summary": "The Intl.Locale.prototype.caseFirst property is an accessor property that returns whether case is taken into account for the locale's collation rules.",
+            "summary": "The caseFirst accessor property of Intl.Locale instances returns whether case is taken into account for this locale's collation rules.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -1722,7 +1722,7 @@
             "name": "collation",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/collation",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collation",
-            "summary": "The Intl.Locale.prototype.collation property is an accessor property that returns the collation type for the Locale, which is used to order strings according to the locale's rules.",
+            "summary": "The collation accessor property of Intl.Locale instances returns the collation type for this locale, which is used to order strings according to the locale's rules.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -1769,7 +1769,7 @@
             "name": "hourCycle",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle",
-            "summary": "The Intl.Locale.prototype.hourCycle property is an accessor property that returns the time keeping format convention used by the locale.",
+            "summary": "The hourCycle accessor property of Intl.Locale instances returns the hour cycle type for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -1816,7 +1816,7 @@
             "name": "language",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/language",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/language",
-            "summary": "The Intl.Locale.prototype.language property is an accessor property that returns the language associated with the locale.",
+            "summary": "The language accessor property of Intl.Locale instances returns the language associated with this locale.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -1957,7 +1957,7 @@
             "name": "numberingSystem",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystem",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystem",
-            "summary": "The Intl.Locale.prototype.numberingSystem property is an accessor property that returns the numeral system used by the locale.",
+            "summary": "The numberingSystem accessor property of Intl.Locale instances returns the numeral system for this locale.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -2004,7 +2004,7 @@
             "name": "numeric",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/numeric",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numeric",
-            "summary": "The Intl.Locale.prototype.numeric property is an accessor property that returns whether the locale has special collation handling for numeric characters.",
+            "summary": "The numeric accessor property of Intl.Locale instances returns whether this locale has special collation handling for numeric characters.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -2051,7 +2051,7 @@
             "name": "region",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/region",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/region",
-            "summary": "The Intl.Locale.prototype.region property is an accessor property that returns the region of the world (usually a country) associated with the locale.",
+            "summary": "The region accessor property of Intl.Locale instances returns the region of the world (usually a country) associated with this locale.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -2098,7 +2098,7 @@
             "name": "script",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/script",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script",
-            "summary": "The Intl.Locale.prototype.script property is an accessor property which returns the script used for writing the particular language used in the locale.",
+            "summary": "The script accessor property of Intl.Locale instances returns the script used for writing the particular language used in this locale.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -2239,7 +2239,7 @@
             "name": "NumberFormat",
             "slug": "JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat",
-            "summary": "The Intl.NumberFormat() constructor creates Intl.NumberFormat objects that enable language-sensitive number formatting.",
+            "summary": "The Intl.NumberFormat() constructor creates Intl.NumberFormat objects.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -2452,7 +2452,7 @@
             "name": "supportedLocalesOf",
             "slug": "JavaScript/Reference/Global_Objects/Intl/NumberFormat/supportedLocalesOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/supportedLocalesOf",
-            "summary": "The Intl.NumberFormat.supportedLocalesOf() method returns an array containing those of the provided locales that are supported in number formatting without having to fall back to the runtime's default locale.",
+            "summary": "The Intl.NumberFormat.supportedLocalesOf() static method returns an array containing those of the provided locales that are supported in number formatting without having to fall back to the runtime's default locale.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -2722,7 +2722,7 @@
             "name": "supportedLocalesOf",
             "slug": "JavaScript/Reference/Global_Objects/Intl/PluralRules/supportedLocalesOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/supportedLocalesOf",
-            "summary": "The Intl.PluralRules.supportedLocalesOf() method returns an array containing those of the provided locales that are supported in plural formatting without having to fall back to the runtime's default locale.",
+            "summary": "The Intl.PluralRules.supportedLocalesOf() static method returns an array containing those of the provided locales that are supported in plural formatting without having to fall back to the runtime's default locale.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -3020,7 +3020,7 @@
             "name": "supportedLocalesOf",
             "slug": "JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/supportedLocalesOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/supportedLocalesOf",
-            "summary": "The Intl.RelativeTimeFormat.supportedLocalesOf() method returns an array containing those of the provided locales that are supported in date and time formatting without having to fall back to the runtime's default locale.",
+            "summary": "The Intl.RelativeTimeFormat.supportedLocalesOf() static method returns an array containing those of the provided locales that are supported in date and time formatting without having to fall back to the runtime's default locale.",
             "support": {
                 "chrome": {
                     "version_added": "71"
@@ -3121,7 +3121,7 @@
             "name": "Segmenter",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segmenter/Segmenter",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter/Segmenter",
-            "summary": "The Intl.Segmenter() constructor creates Intl.Segmenter objects that enable locale-sensitive text segmentation.",
+            "summary": "The Intl.Segmenter() constructor creates Intl.Segmenter objects.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -3259,7 +3259,7 @@
             "name": "supportedLocalesOf",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segmenter/supportedLocalesOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter/supportedLocalesOf",
-            "summary": "The Intl.Segmenter.supportedLocalesOf() method returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.",
+            "summary": "The Intl.Segmenter.supportedLocalesOf() static method returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -3351,7 +3351,7 @@
             "name": "containing",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segments/containing",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segments/containing",
-            "summary": "The Intl.Segments.prototype.containing() method returns an object describing the segment in the string that includes the code unit at the specified index.",
+            "summary": "The containing() method of a Segments object returns an object describing the segment in the string that includes the code unit at the specified index.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -3384,7 +3384,7 @@
                     "version_added": "87"
                 }
             },
-            "title": "Intl.Segments.prototype.containing()"
+            "title": "Segments.prototype.containing()"
         }
     ],
     "sec-%segmentsprototype%-@@iterator": [
@@ -3397,7 +3397,7 @@
             "name": "@@iterator",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segments/@@iterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segments/@@iterator",
-            "summary": "The @@iterator method of a Segments object implements the iterable protocol and allows Intl.Segments objects to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an iterator that yields data about each segment.",
+            "summary": "The [@@iterator]() method of Segments instances implements the iterable protocol and allows Segments objects to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an segments iterator object that yields data about each segment.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -3430,7 +3430,7 @@
                     "version_added": "87"
                 }
             },
-            "title": "Intl.Segments.prototype[@@iterator]()"
+            "title": "Segments.prototype[@@iterator]()"
         }
     ],
     "sec-segments-objects": [
@@ -3443,7 +3443,7 @@
             "name": "Segments",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segments",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segments",
-            "summary": "An Intl.Segments instance is an iterable collection of the segments of a text string. It is returned by a call to the segment() method of an Intl.Segmenter object.",
+            "summary": "A Segments object is an iterable collection of the segments of a text string. It is returned by a call to the segment() method of an Intl.Segmenter object.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -3476,7 +3476,7 @@
                     "version_added": "87"
                 }
             },
-            "title": "Intl.Segments"
+            "title": "Segments"
         }
     ],
     "sec-intl.getcanonicallocales": [
@@ -3490,7 +3490,7 @@
             "name": "getCanonicalLocales",
             "slug": "JavaScript/Reference/Global_Objects/Intl/getCanonicalLocales",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/getCanonicalLocales",
-            "summary": "The Intl.getCanonicalLocales() method returns an array containing the canonical locale names. Duplicates will be omitted and elements will be validated as structurally valid language tags.",
+            "summary": "The Intl.getCanonicalLocales() static method returns an array containing the canonical locale names. Duplicates will be omitted and elements will be validated as structurally valid language tags.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -3541,7 +3541,7 @@
             "name": "@@toStringTag",
             "slug": "JavaScript/Reference/Global_Objects/Intl/@@toStringTag",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/@@toStringTag",
-            "summary": "The Intl[@@toStringTag] property has an initial value of \"Intl\".",
+            "summary": "The Intl namespace object contains several constructors as well as functionality common to the internationalization constructors and other language sensitive functions. Collectively, they comprise the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, date and time formatting, and more.",
             "support": {
                 "chrome": {
                     "version_added": "86"
@@ -3574,7 +3574,7 @@
                     "version_added": "86"
                 }
             },
-            "title": "Intl[@@toStringTag]"
+            "title": "Intl"
         }
     ],
     "intl-object": [
@@ -3588,7 +3588,7 @@
             "name": "Intl",
             "slug": "JavaScript/Reference/Global_Objects/Intl",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl",
-            "summary": "The Intl object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. The Intl object provides access to several constructors as well as functionality common to the internationalization constructors and other language sensitive functions.",
+            "summary": "The Intl namespace object contains several constructors as well as functionality common to the internationalization constructors and other language sensitive functions. Collectively, they comprise the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, date and time formatting, and more.",
             "support": {
                 "chrome": {
                     "version_added": "24"

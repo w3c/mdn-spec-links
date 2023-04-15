@@ -10,7 +10,7 @@
             "name": "clearResourceTimings",
             "slug": "API/Performance/clearResourceTimings",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/clearResourceTimings",
-            "summary": "The clearResourceTimings() method removes all performance entries with an entryType of \"resource\" from the browser's performance data buffer and sets the size of the performance data buffer to zero. To set the size of the browser's performance data buffer, use the Performance.setResourceTimingBufferSize() method.",
+            "summary": "The clearResourceTimings() method removes all performance entries with an entryType of \"resource\" from the browser's performance timeline and sets the size of the performance resource data buffer to zero.",
             "support": {
                 "chrome": [
                     {
@@ -59,7 +59,7 @@
                     }
                 ]
             },
-            "title": "performance.clearResourceTimings()"
+            "title": "Performance: clearResourceTimings() method"
         }
     ],
     "dom-performance-onresourcetimingbufferfull": [
@@ -136,7 +136,7 @@
             "name": "setResourceTimingBufferSize",
             "slug": "API/Performance/setResourceTimingBufferSize",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/setResourceTimingBufferSize",
-            "summary": "The setResourceTimingBufferSize() method sets the browser's resource timing buffer size to the specified number of \"resource\" performance entry type objects.",
+            "summary": "The setResourceTimingBufferSize() method sets the desired size of the browser's resource timing buffer which stores the \"resource\" performance entries.",
             "support": {
                 "chrome": [
                     {
@@ -185,7 +185,7 @@
                     }
                 ]
             },
-            "title": "performance.setResourceTimingBufferSize()"
+            "title": "Performance: setResourceTimingBufferSize() method"
         }
     ],
     "sec-extensions-performance-interface": [
@@ -199,7 +199,7 @@
             "name": "Performance",
             "slug": "API/Performance",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance",
-            "summary": "The Performance interface provides access to performance-related information for the current page. It's part of the High Resolution Time API, but is enhanced by the Performance Timeline API, the Navigation Timing API, the User Timing API, and the Resource Timing API.",
+            "summary": "The Performance interface provides access to performance-related information for the current page.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -254,7 +254,7 @@
             "name": "connectEnd",
             "slug": "API/PerformanceResourceTiming/connectEnd",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/connectEnd",
-            "summary": "The connectEnd read-only property returns the timestamp immediately after the browser finishes establishing the connection to the server to retrieve the resource. The timestamp value includes the time interval to establish the transport connection, as well as other time intervals such as SSL handshake and SOCKS authentication.",
+            "summary": "The connectEnd read-only property returns the timestamp immediately after the browser finishes establishing the connection to the server to retrieve the resource. The timestamp value includes the time interval to establish the transport connection, as well as other time intervals such as TLS handshake and SOCKS authentication.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -287,7 +287,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.connectEnd"
+            "title": "PerformanceResourceTiming: connectEnd property"
         }
     ],
     "dom-performanceresourcetiming-connectstart": [
@@ -334,7 +334,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.connectStart"
+            "title": "PerformanceResourceTiming: connectStart property"
         }
     ],
     "dom-performanceresourcetiming-decodedbodysize": [
@@ -347,7 +347,7 @@
             "name": "decodedBodySize",
             "slug": "API/PerformanceResourceTiming/decodedBodySize",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/decodedBodySize",
-            "summary": "The decodedBodySize read-only property returns the size (in octets) received from the fetch (HTTP or cache) of the message body, after removing any applied content-codings. If the resource is retrieved from an application cache or local resources, it returns the size of the payload after removing any applied content-codings.",
+            "summary": "The decodedBodySize read-only property returns the size (in octets) received from the fetch (HTTP or cache) of the message body after removing any applied content encoding (like gzip or Brotli). If the resource is retrieved from an application cache or local resources, it returns the size of the payload after removing any applied content encoding.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -376,7 +376,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.decodedBodySize"
+            "title": "PerformanceResourceTiming: decodedBodySize property"
         }
     ],
     "dom-performanceresourcetiming-domainlookupend": [
@@ -390,7 +390,7 @@
             "name": "domainLookupEnd",
             "slug": "API/PerformanceResourceTiming/domainLookupEnd",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/domainLookupEnd",
-            "summary": "The domainLookupEnd read-only property returns the timestamp immediately after the browser finishes the domain name lookup for the resource.",
+            "summary": "The domainLookupEnd read-only property returns the timestamp immediately after the browser finishes the domain-name lookup for the resource.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -419,7 +419,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.domainLookupEnd"
+            "title": "PerformanceResourceTiming: domainLookupEnd property"
         }
     ],
     "dom-performanceresourcetiming-domainlookupstart": [
@@ -462,7 +462,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.domainLookupStart"
+            "title": "PerformanceResourceTiming: domainLookupStart property"
         }
     ],
     "dom-performanceresourcetiming-encodedbodysize": [
@@ -475,7 +475,7 @@
             "name": "encodedBodySize",
             "slug": "API/PerformanceResourceTiming/encodedBodySize",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/encodedBodySize",
-            "summary": "The encodedBodySize read-only property represents the size (in octets) received from the fetch (HTTP or cache), of the payload body, before removing any applied content-codings.",
+            "summary": "The encodedBodySize read-only property represents the size (in octets) received from the fetch (HTTP or cache) of the payload body before removing any applied content encodings (like gzip or Brotli). If the resource is retrieved from an application cache or a local resource, it must return the size of the payload body before removing any applied content encoding.",
             "support": {
                 "chrome": {
                     "version_added": "54"
@@ -504,7 +504,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.encodedBodySize"
+            "title": "PerformanceResourceTiming: encodedBodySize property"
         }
     ],
     "dom-performanceresourcetiming-fetchstart": [
@@ -547,7 +547,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.fetchStart"
+            "title": "PerformanceResourceTiming: fetchStart property"
         }
     ],
     "dom-performanceresourcetiming-initiatortype": [
@@ -561,7 +561,7 @@
             "name": "initiatorType",
             "slug": "API/PerformanceResourceTiming/initiatorType",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/initiatorType",
-            "summary": "The initiatorType read-only property is a string that represents the type of resource that initiated the performance event.",
+            "summary": "The initiatorType read-only property is a string representing web platform feature that initiated the resource load.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -590,7 +590,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.initiatorType"
+            "title": "PerformanceResourceTiming: initiatorType property"
         }
     ],
     "dom-performanceresourcetiming-nexthopprotocol": [
@@ -633,7 +633,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.nextHopProtocol"
+            "title": "PerformanceResourceTiming: nextHopProtocol property"
         }
     ],
     "dom-performanceresourcetiming-redirectend": [
@@ -676,7 +676,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.redirectEnd"
+            "title": "PerformanceResourceTiming: redirectEnd property"
         }
     ],
     "dom-performanceresourcetiming-redirectstart": [
@@ -719,7 +719,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.redirectStart"
+            "title": "PerformanceResourceTiming: redirectStart property"
         }
     ],
     "dom-performanceresourcetiming-requeststart": [
@@ -762,7 +762,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.requestStart"
+            "title": "PerformanceResourceTiming: requestStart property"
         }
     ],
     "dom-performanceresourcetiming-responseend": [
@@ -805,7 +805,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.responseEnd"
+            "title": "PerformanceResourceTiming: responseEnd property"
         }
     ],
     "dom-performanceresourcetiming-responsestart": [
@@ -848,7 +848,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.responseStart"
+            "title": "PerformanceResourceTiming: responseStart property"
         }
     ],
     "dom-performanceresourcetiming-secureconnectionstart": [
@@ -891,7 +891,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.secureConnectionStart"
+            "title": "PerformanceResourceTiming: secureConnectionStart property"
         }
     ],
     "dom-performanceresourcetiming-tojson": [
@@ -905,7 +905,7 @@
             "name": "toJSON",
             "slug": "API/PerformanceResourceTiming/toJSON",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/toJSON",
-            "summary": "The toJSON() method is a serializer that returns a JSON representation of the PerformanceResourceTiming object.",
+            "summary": "The toJSON() method of the PerformanceResourceTiming interface is a serializer; it returns a JSON representation of the PerformanceResourceTiming object.",
             "support": {
                 "chrome": {
                     "version_added": "43"
@@ -934,7 +934,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.toJSON()"
+            "title": "PerformanceResourceTiming: toJSON() method"
         }
     ],
     "dom-performanceresourcetiming-transfersize": [
@@ -976,7 +976,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.transferSize"
+            "title": "PerformanceResourceTiming: transferSize property"
         }
     ],
     "dom-performanceresourcetiming-workerstart": [
@@ -1023,7 +1023,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "PerformanceResourceTiming.workerStart"
+            "title": "PerformanceResourceTiming: workerStart property"
         }
     ],
     "resources-included-in-the-performanceresourcetiming-interface": [

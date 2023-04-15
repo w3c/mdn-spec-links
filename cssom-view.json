@@ -74,7 +74,7 @@
                     "version_added": false
                 }
             },
-            "title": "Document.caretPositionFromPoint()"
+            "title": "Document: caretPositionFromPoint() method"
         }
     ],
     "dom-document-elementfrompoint": [
@@ -132,7 +132,7 @@
                 "feature": "element-from-point",
                 "title": "document.elementFromPoint()"
             },
-            "title": "Document.elementFromPoint()"
+            "title": "Document: elementFromPoint() method"
         }
     ],
     "dom-document-elementsfrompoint": [
@@ -183,7 +183,7 @@
                     "notes": "Before Chrome 66, this method returned <code>null</code> when the element was a child of a host node. See <a href='https://crbug.com/759947'>issue 759947</a>."
                 }
             },
-            "title": "Document.elementsFromPoint()"
+            "title": "Document: elementsFromPoint() method"
         }
     ],
     "eventdef-document-scroll": [
@@ -197,7 +197,7 @@
             "name": "scroll_event",
             "slug": "API/Document/scroll_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event",
-            "summary": "The scroll event fires when the document view has been scrolled. For element scrolling, see Element: scroll event.",
+            "summary": "The scroll event fires when the document view has been scrolled. To detect when scrolling has completed, see the Document: scrollend event. For element scrolling, see Element: scroll event.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -242,7 +242,7 @@
             "name": "scroll_event",
             "slug": "API/Element/scroll_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event",
-            "summary": "The scroll event fires when an element has been scrolled.",
+            "summary": "The scroll event fires when an element has been scrolled. To detect when scrolling has completed, see the Element: scrollend event.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -381,7 +381,7 @@
                 "feature": "document-scrollingelement",
                 "title": "document.scrollingElement"
             },
-            "title": "Document.scrollingElement"
+            "title": "Document: scrollingElement property"
         }
     ],
     "extensions-to-the-document-interface": [
@@ -479,7 +479,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.clientHeight"
+            "title": "Element: clientHeight property"
         }
     ],
     "dom-element-clientleft": [
@@ -528,7 +528,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.clientLeft"
+            "title": "Element: clientLeft property"
         }
     ],
     "dom-element-clienttop": [
@@ -577,7 +577,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.clientTop"
+            "title": "Element: clientTop property"
         }
     ],
     "dom-element-clientwidth": [
@@ -626,7 +626,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.clientWidth"
+            "title": "Element: clientWidth property"
         }
     ],
     "dom-element-getboundingclientrect": [
@@ -682,7 +682,7 @@
                 "feature": "getboundingclientrect",
                 "title": "Element.getBoundingClientRect()"
             },
-            "title": "Element.getBoundingClientRect()"
+            "title": "Element: getBoundingClientRect() method"
         }
     ],
     "dom-element-getclientrects": [
@@ -731,7 +731,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.getClientRects()"
+            "title": "Element: getClientRects() method"
         }
     ],
     "dom-element-scroll": [
@@ -772,7 +772,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.scroll()"
+            "title": "Element: scroll() method"
         }
     ],
     "dom-element-scrollby": [
@@ -813,7 +813,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.scrollBy()"
+            "title": "Element: scrollBy() method"
         }
     ],
     "dom-element-scrollheight": [
@@ -869,7 +869,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.scrollHeight"
+            "title": "Element: scrollHeight property"
         }
     ],
     "dom-element-scrollintoview": [
@@ -935,7 +935,7 @@
                 "feature": "scrollintoview",
                 "title": "scrollIntoView"
             },
-            "title": "Element.scrollIntoView()"
+            "title": "Element: scrollIntoView() method"
         }
     ],
     "dom-element-scrollleft": [
@@ -985,7 +985,7 @@
                     "notes": "For right-to-left elements, this property uses 0-100 (most left to most right) instead of negative values. See <a href='https://crbug.com/721759'>bug 721759</a>."
                 }
             },
-            "title": "Element.scrollLeft"
+            "title": "Element: scrollLeft property"
         }
     ],
     "dom-element-scrollto": [
@@ -1026,7 +1026,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.scrollTo()"
+            "title": "Element: scrollTo() method"
         }
     ],
     "dom-element-scrolltop": [
@@ -1073,7 +1073,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.scrollTop"
+            "title": "Element: scrollTop property"
         }
     ],
     "dom-element-scrollwidth": [
@@ -1121,7 +1121,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Element.scrollWidth"
+            "title": "Element: scrollWidth property"
         }
     ],
     "extension-to-the-element-interface": [
@@ -1223,7 +1223,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement.offsetHeight"
+            "title": "HTMLElement: offsetHeight property"
         }
     ],
     "dom-htmlelement-offsetleft": [
@@ -1272,7 +1272,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement.offsetLeft"
+            "title": "HTMLElement: offsetLeft property"
         }
     ],
     "dom-htmlelement-offsetparent": [
@@ -1321,7 +1321,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement.offsetParent"
+            "title": "HTMLElement: offsetParent property"
         }
     ],
     "dom-htmlelement-offsettop": [
@@ -1370,7 +1370,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement.offsetTop"
+            "title": "HTMLElement: offsetTop property"
         }
     ],
     "dom-htmlelement-offsetwidth": [
@@ -1419,7 +1419,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLElement.offsetWidth"
+            "title": "HTMLElement: offsetWidth property"
         }
     ],
     "dom-htmlimageelement-x": [
@@ -1474,7 +1474,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLImageElement.x"
+            "title": "HTMLImageElement: x property"
         }
     ],
     "dom-htmlimageelement-y": [
@@ -1529,7 +1529,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "HTMLImageElement.y"
+            "title": "HTMLImageElement: y property"
         }
     ],
     "dom-mediaquerylist-onchange": [
@@ -1619,7 +1619,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaQueryList.matches"
+            "title": "MediaQueryList: matches property"
         }
     ],
     "dom-mediaquerylist-media": [
@@ -1668,7 +1668,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaQueryList.media"
+            "title": "MediaQueryList: media property"
         }
     ],
     "the-mediaquerylist-interface": [
@@ -1797,7 +1797,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaQueryListEvent()"
+            "title": "MediaQueryListEvent: MediaQueryListEvent() constructor"
         }
     ],
     "dom-mediaquerylistevent-matches": [
@@ -1838,7 +1838,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaQueryListEvent.matches"
+            "title": "MediaQueryListEvent: matches property"
         }
     ],
     "dom-mediaquerylistevent-media": [
@@ -1879,7 +1879,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaQueryListEvent.media"
+            "title": "MediaQueryListEvent: media property"
         }
     ],
     "dom-mouseevent-offsetx": [
@@ -1930,7 +1930,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MouseEvent.offsetX"
+            "title": "MouseEvent: offsetX property"
         }
     ],
     "dom-mouseevent-offsety": [
@@ -1981,7 +1981,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MouseEvent.offsetY"
+            "title": "MouseEvent: offsetY property"
         }
     ],
     "dom-mouseevent-pagex": [
@@ -2030,7 +2030,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MouseEvent.pageX"
+            "title": "MouseEvent: pageX property"
         }
     ],
     "dom-mouseevent-pagey": [
@@ -2079,7 +2079,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MouseEvent.pageY"
+            "title": "MouseEvent: pageY property"
         }
     ],
     "dom-mouseevent-x": [
@@ -2128,7 +2128,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MouseEvent.x"
+            "title": "MouseEvent: x property"
         }
     ],
     "dom-mouseevent-y": [
@@ -2177,7 +2177,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MouseEvent.y"
+            "title": "MouseEvent: y property"
         }
     ],
     "extensions-to-the-mouseevent-interface": [
@@ -2275,7 +2275,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Range.getBoundingClientRect()"
+            "title": "Range: getBoundingClientRect() method"
         }
     ],
     "dom-range-getclientrects": [
@@ -2326,7 +2326,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Range.getClientRects()"
+            "title": "Range: getClientRects() method"
         }
     ],
     "extensions-to-the-range-interface": [
@@ -2421,7 +2421,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Screen.availHeight"
+            "title": "Screen: availHeight property"
         }
     ],
     "dom-screen-availwidth": [
@@ -2468,7 +2468,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Screen.availWidth"
+            "title": "Screen: availWidth property"
         }
     ],
     "dom-screen-colordepth": [
@@ -2520,7 +2520,7 @@
                     "notes": "Starting with version 59 this property is no longer required to always return 24."
                 }
             },
-            "title": "Screen.colorDepth"
+            "title": "Screen: colorDepth property"
         }
     ],
     "dom-screen-height": [
@@ -2567,7 +2567,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Screen.height"
+            "title": "Screen: height property"
         }
     ],
     "dom-screen-pixeldepth": [
@@ -2619,7 +2619,7 @@
                     "notes": "Starting with version 59 this property is no longer required to always return 24."
                 }
             },
-            "title": "Screen.pixelDepth"
+            "title": "Screen: pixelDepth property"
         }
     ],
     "dom-screen-width": [
@@ -2666,7 +2666,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Screen.width"
+            "title": "Screen: width property"
         }
     ],
     "the-screen-interface": [
@@ -2756,7 +2756,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "VisualViewport.height"
+            "title": "VisualViewport: height property"
         }
     ],
     "dom-visualviewport-offsetleft": [
@@ -2799,7 +2799,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "VisualViewport.offsetleft"
+            "title": "VisualViewport: offsetleft property"
         }
     ],
     "dom-visualviewport-offsettop": [
@@ -2842,7 +2842,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "VisualViewport.offsetTop"
+            "title": "VisualViewport: offsetTop property"
         }
     ],
     "dom-visualviewport-pageleft": [
@@ -2885,7 +2885,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "VisualViewport.pageLeft"
+            "title": "VisualViewport: pageLeft property"
         }
     ],
     "dom-visualviewport-pagetop": [
@@ -2928,7 +2928,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "VisualViewport.pageTop"
+            "title": "VisualViewport: pageTop property"
         }
     ],
     "eventdef-window-resize": [
@@ -3032,7 +3032,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "VisualViewport.scale"
+            "title": "VisualViewport: scale property"
         }
     ],
     "dom-visualviewport-width": [
@@ -3075,7 +3075,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "VisualViewport.width"
+            "title": "VisualViewport: width property"
         }
     ],
     "the-visualviewport-interface": [
@@ -3171,7 +3171,7 @@
                 "feature": "devicepixelratio",
                 "title": "Window.devicePixelRatio"
             },
-            "title": "Window.devicePixelRatio"
+            "title": "Window: devicePixelRatio property"
         }
     ],
     "dom-window-innerheight": [
@@ -3225,7 +3225,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.innerHeight"
+            "title": "Window: innerHeight property"
         }
     ],
     "dom-window-innerwidth": [
@@ -3279,7 +3279,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.innerWidth"
+            "title": "Window: innerWidth property"
         }
     ],
     "dom-window-matchmedia": [
@@ -3332,7 +3332,7 @@
                 "feature": "matchmedia",
                 "title": "matchMedia"
             },
-            "title": "Window.matchMedia()"
+            "title": "Window: matchMedia() method"
         }
     ],
     "dom-window-moveby": [
@@ -3379,7 +3379,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.moveBy()"
+            "title": "Window: moveBy() method"
         }
     ],
     "dom-window-moveto": [
@@ -3426,7 +3426,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.moveTo()"
+            "title": "Window: moveTo() method"
         }
     ],
     "the-features-argument-to-the-open()-method": [
@@ -3473,7 +3473,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.open()"
+            "title": "Window: open() method"
         }
     ],
     "dom-window-outerheight": [
@@ -3522,7 +3522,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.outerHeight"
+            "title": "Window: outerHeight property"
         }
     ],
     "dom-window-outerwidth": [
@@ -3571,7 +3571,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.outerWidth"
+            "title": "Window: outerWidth property"
         }
     ],
     "dom-window-pagexoffset": [
@@ -3618,7 +3618,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.pageXOffset"
+            "title": "Window: pageXOffset property"
         }
     ],
     "dom-window-pageyoffset": [
@@ -3665,7 +3665,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.pageYOffset"
+            "title": "Window: pageYOffset property"
         }
     ],
     "resizing-viewports": [
@@ -3770,7 +3770,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.resizeBy()"
+            "title": "Window: resizeBy() method"
         }
     ],
     "dom-window-resizeto": [
@@ -3820,7 +3820,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.resizeTo()"
+            "title": "Window: resizeTo() method"
         }
     ],
     "dom-window-screen": [
@@ -3867,7 +3867,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.screen"
+            "title": "Window: screen property"
         }
     ],
     "dom-window-screenleft": [
@@ -3914,7 +3914,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.screenLeft"
+            "title": "Window: screenLeft property"
         }
     ],
     "dom-window-screentop": [
@@ -3961,7 +3961,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.screenTop"
+            "title": "Window: screenTop property"
         }
     ],
     "dom-window-screenx": [
@@ -4009,7 +4009,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.screenX"
+            "title": "Window: screenX property"
         }
     ],
     "dom-window-screeny": [
@@ -4057,7 +4057,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.screenY"
+            "title": "Window: screenY property"
         }
     ],
     "dom-window-scroll": [
@@ -4104,7 +4104,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.scroll()"
+            "title": "Window: scroll() method"
         }
     ],
     "dom-window-scrollby": [
@@ -4151,7 +4151,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.scrollBy()"
+            "title": "Window: scrollBy() method"
         }
     ],
     "dom-window-scrollto": [
@@ -4198,7 +4198,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.scrollTo()"
+            "title": "Window: scrollTo() method"
         }
     ],
     "dom-window-scrollx": [
@@ -4282,7 +4282,7 @@
                     }
                 ]
             },
-            "title": "Window.scrollX"
+            "title": "Window: scrollX property"
         }
     ],
     "dom-window-scrolly": [
@@ -4366,7 +4366,7 @@
                     }
                 ]
             },
-            "title": "Window.scrollY"
+            "title": "Window: scrollY property"
         }
     ],
     "dom-window-visualviewport": [
@@ -4409,7 +4409,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Window.visualViewport"
+            "title": "Window: visualViewport property"
         }
     ]
 }

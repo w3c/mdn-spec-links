@@ -10,7 +10,7 @@
             "name": "calc",
             "slug": "CSS/calc()",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc()",
-            "summary": "The calc() CSS function lets you perform calculations when specifying CSS property values. It can be used anywhere a <length>, <frequency>, <angle>, <time>, <percentage>, <number>, or <integer> is allowed.",
+            "summary": "The calc() CSS function lets you perform calculations when specifying CSS property values. It can be used with <length>, <frequency>, <angle>, <time>, <percentage>, <number>, or <integer> values.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -1047,7 +1047,7 @@
             "name": "calc",
             "slug": "CSS/calc",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc",
-            "summary": "The calc() CSS function lets you perform calculations when specifying CSS property values. It can be used anywhere a <length>, <frequency>, <angle>, <time>, <percentage>, <number>, or <integer> is allowed.",
+            "summary": "The calc() CSS function lets you perform calculations when specifying CSS property values. It can be used with <length>, <frequency>, <angle>, <time>, <percentage>, <number>, or <integer> values.",
             "support": {
                 "chrome": [
                     {
@@ -1288,6 +1288,43 @@
             "engines": [
                 "webkit"
             ],
+            "filename": "css/types/mod.json",
+            "name": "mod",
+            "slug": "CSS/mod",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/mod",
+            "summary": "The mod() CSS function returns a modulus left over when the first parameter is divided by the second parameter, similar to the JavaScript remainder operator (%). The modulus is the value left over when one operand, the dividend, is divided by a second operand, the divisor. It always takes the sign of the divisor.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "mod()"
+        },
+        {
+            "engines": [
+                "webkit"
+            ],
             "filename": "css/types/pow.json",
             "name": "pow",
             "slug": "CSS/pow",
@@ -1320,6 +1357,80 @@
                 }
             },
             "title": "pow()"
+        },
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/rem.json",
+            "name": "rem",
+            "slug": "CSS/rem",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/rem",
+            "summary": "The rem() CSS function returns a remainder left over when the first parameter is divided by the second parameter, similar to the JavaScript remainder operator (%). The remainder is the value left over when one operand, the dividend, is divided by a second operand, the divisor. It always takes the sign of the dividend.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "rem()"
+        },
+        {
+            "engines": [
+                "webkit"
+            ],
+            "filename": "css/types/round.json",
+            "name": "round",
+            "slug": "CSS/round",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/round",
+            "summary": "The round() CSS function returns a rounded number based on a selected rounding strategy.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "round()"
         },
         {
             "engines": [

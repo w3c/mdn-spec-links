@@ -45,7 +45,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ByteLengthQueuingStrategy()"
+            "title": "ByteLengthQueuingStrategy: ByteLengthQueuingStrategy() constructor"
         }
     ],
     "blqs-size": [
@@ -94,7 +94,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ByteLengthQueuingStrategy.size()"
+            "title": "ByteLengthQueuingStrategy: size() method"
         }
     ],
     "blqs-class": [
@@ -127,19 +127,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -198,7 +192,7 @@
                     "version_added": "80"
                 }
             },
-            "title": "CompressionStream.readable"
+            "title": "CompressionStream: readable property"
         },
         {
             "engines": [
@@ -241,7 +235,7 @@
                     "version_added": "80"
                 }
             },
-            "title": "DecompressionStream.readable"
+            "title": "DecompressionStream: readable property"
         },
         {
             "engines": [
@@ -286,7 +280,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoderStream.readable"
+            "title": "TextDecoderStream: readable property"
         },
         {
             "engines": [
@@ -331,7 +325,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoderStream.readable"
+            "title": "TextEncoderStream: readable property"
         }
     ],
     "dom-generictransformstream-writable": [
@@ -376,7 +370,7 @@
                     "version_added": "80"
                 }
             },
-            "title": "CompressionStream.writable"
+            "title": "CompressionStream: writable property"
         },
         {
             "engines": [
@@ -419,7 +413,7 @@
                     "version_added": "80"
                 }
             },
-            "title": "DecompressionStream.writable"
+            "title": "DecompressionStream: writable property"
         },
         {
             "engines": [
@@ -464,7 +458,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoderStream.writable"
+            "title": "TextDecoderStream: writable property"
         },
         {
             "engines": [
@@ -509,7 +503,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoderStream.writable"
+            "title": "TextEncoderStream: writable property"
         }
     ],
     "ref-for-cqs-constructor①": [
@@ -555,7 +549,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "CountQueuingStrategy()"
+            "title": "CountQueuingStrategy: CountQueuingStrategy() constructor"
         }
     ],
     "ref-for-cqs-size②": [
@@ -601,7 +595,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "CountQueuingStrategy.size()"
+            "title": "CountQueuingStrategy: size() method"
         }
     ],
     "cqs-class": [
@@ -631,19 +625,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -703,7 +691,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableByteStreamController.byobRequest"
+            "title": "ReadableByteStreamController: byobRequest property"
         }
     ],
     "ref-for-rbs-controller-close①": [
@@ -749,7 +737,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableByteStreamController.close()"
+            "title": "ReadableByteStreamController: close() method"
         }
     ],
     "ref-for-rbs-controller-desired-size②": [
@@ -795,7 +783,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableByteStreamController.desiredSize"
+            "title": "ReadableByteStreamController: desiredSize property"
         }
     ],
     "ref-for-rbs-controller-enqueue①": [
@@ -841,7 +829,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableByteStreamController.enqueue()"
+            "title": "ReadableByteStreamController: enqueue() method"
         }
     ],
     "ref-for-rbs-controller-error①": [
@@ -887,7 +875,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableByteStreamController.error()"
+            "title": "ReadableByteStreamController: error() method"
         }
     ],
     "rbs-controller-class": [
@@ -925,19 +913,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -998,7 +980,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStream()"
+            "title": "ReadableStream: ReadableStream() constructor"
         }
     ],
     "ref-for-rs-cancel③": [
@@ -1047,7 +1029,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStream.cancel()"
+            "title": "ReadableStream: cancel() method"
         }
     ],
     "ref-for-rs-get-reader⑤": [
@@ -1096,7 +1078,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStream.getReader()"
+            "title": "ReadableStream: getReader() method"
         }
     ],
     "ref-for-rs-locked②": [
@@ -1145,7 +1127,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStream.locked"
+            "title": "ReadableStream: locked property"
         }
     ],
     "ref-for-rs-pipe-through②": [
@@ -1192,7 +1174,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStream.pipeThrough()"
+            "title": "ReadableStream: pipeThrough() method"
         }
     ],
     "ref-for-rs-pipe-to④": [
@@ -1239,7 +1221,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStream.pipeTo()"
+            "title": "ReadableStream: pipeTo() method"
         }
     ],
     "ref-for-rs-tee②": [
@@ -1286,7 +1268,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStream.tee()"
+            "title": "ReadableStream: tee() method"
         }
     ],
     "rs-transfer": [
@@ -1365,19 +1347,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -1437,7 +1413,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamBYOBReader()"
+            "title": "ReadableStreamBYOBReader: ReadableStreamBYOBReader() constructor"
         }
     ],
     "ref-for-generic-reader-cancel②": [
@@ -1483,7 +1459,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamBYOBReader.cancel()"
+            "title": "ReadableStreamBYOBReader: cancel() method"
         },
         {
             "engines": [
@@ -1527,7 +1503,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStreamDefaultReader.cancel()"
+            "title": "ReadableStreamDefaultReader: cancel() method"
         }
     ],
     "ref-for-generic-reader-closed②": [
@@ -1573,7 +1549,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamBYOBReader.closed"
+            "title": "ReadableStreamBYOBReader: closed property"
         },
         {
             "engines": [
@@ -1617,7 +1593,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStreamDefaultReader.closed"
+            "title": "ReadableStreamDefaultReader: closed property"
         }
     ],
     "ref-for-byob-reader-read③": [
@@ -1663,7 +1639,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamBYOBReader.read()"
+            "title": "ReadableStreamBYOBReader: read() method"
         }
     ],
     "ref-for-byob-reader-release-lock②": [
@@ -1709,7 +1685,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamBYOBReader.releaseLock()"
+            "title": "ReadableStreamBYOBReader: releaseLock() method"
         }
     ],
     "byob-reader-class": [
@@ -1739,19 +1715,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -1811,7 +1781,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamBYOBRequest.respond()"
+            "title": "ReadableStreamBYOBRequest: respond() method"
         }
     ],
     "ref-for-rs-byob-request-respond-with-new-view①": [
@@ -1857,7 +1827,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamBYOBRequest.respondWithNewView()"
+            "title": "ReadableStreamBYOBRequest: respondWithNewView() method"
         }
     ],
     "ref-for-rs-byob-request-view①": [
@@ -1903,7 +1873,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamBYOBRequest.view"
+            "title": "ReadableStreamBYOBRequest: view property"
         }
     ],
     "rs-byob-request-class": [
@@ -1933,19 +1903,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -2005,7 +1969,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamDefaultController.close()"
+            "title": "ReadableStreamDefaultController: close() method"
         }
     ],
     "ref-for-rs-default-controller-desired-size②": [
@@ -2051,7 +2015,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamDefaultController.desiredSize"
+            "title": "ReadableStreamDefaultController: desiredSize property"
         }
     ],
     "ref-for-rs-default-controller-enqueue①": [
@@ -2097,7 +2061,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamDefaultController.enqueue()"
+            "title": "ReadableStreamDefaultController: enqueue() method"
         }
     ],
     "rs-default-controller-error": [
@@ -2143,7 +2107,7 @@
                     "version_added": "89"
                 }
             },
-            "title": "ReadableStreamDefaultController.error()"
+            "title": "ReadableStreamDefaultController: error() method"
         }
     ],
     "rs-default-controller-class": [
@@ -2181,19 +2145,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -2253,7 +2211,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStreamDefaultReader()"
+            "title": "ReadableStreamDefaultReader: ReadableStreamDefaultReader() constructor"
         }
     ],
     "ref-for-default-reader-read①": [
@@ -2299,7 +2257,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStreamDefaultReader.read()"
+            "title": "ReadableStreamDefaultReader: read() method"
         }
     ],
     "ref-for-default-reader-release-lock②": [
@@ -2345,7 +2303,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "ReadableStreamDefaultReader.releaseLock()"
+            "title": "ReadableStreamDefaultReader: releaseLock() method"
         }
     ],
     "default-reader-class": [
@@ -2383,19 +2341,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -2456,7 +2408,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TransformStream()"
+            "title": "TransformStream: TransformStream() constructor"
         }
     ],
     "ref-for-ts-readable②": [
@@ -2503,7 +2455,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TransformStream.readable"
+            "title": "TransformStream: readable property"
         }
     ],
     "ts-transfer": [
@@ -2596,7 +2548,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TransformStream.writable"
+            "title": "TransformStream: writable property"
         }
     ],
     "ts-class": [
@@ -2627,19 +2579,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -2700,7 +2646,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TransformStreamDefaultController.desiredSize"
+            "title": "TransformStreamDefaultController: desiredSize property"
         }
     ],
     "ts-default-controller-enqueue": [
@@ -2747,7 +2693,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TransformStreamDefaultController.enqueue()"
+            "title": "TransformStreamDefaultController: enqueue() method"
         }
     ],
     "ts-default-controller-error": [
@@ -2794,7 +2740,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TransformStreamDefaultController.error()"
+            "title": "TransformStreamDefaultController: error() method"
         }
     ],
     "ts-default-controller-terminate": [
@@ -2841,7 +2787,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TransformStreamDefaultController.terminate()"
+            "title": "TransformStreamDefaultController: terminate() method"
         }
     ],
     "ts-default-controller-class": [
@@ -2949,7 +2895,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStream()"
+            "title": "WritableStream: WritableStream() constructor"
         }
     ],
     "ref-for-ws-abort③": [
@@ -3002,7 +2948,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStream.abort()"
+            "title": "WritableStream: abort() method"
         }
     ],
     "ref-for-ws-get-writer①": [
@@ -3055,7 +3001,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStream.getWriter()"
+            "title": "WritableStream: getWriter() method"
         }
     ],
     "ref-for-ws-locked②": [
@@ -3108,7 +3054,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStream.locked"
+            "title": "WritableStream: locked property"
         }
     ],
     "ws-transfer": [
@@ -3187,19 +3133,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": {
                     "version_added": "47"
@@ -3266,7 +3206,53 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultController.error()"
+            "title": "WritableStreamDefaultController: error() method"
+        }
+    ],
+    "ref-for-ws-default-controller-signal①": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/WritableStreamDefaultController.json",
+            "name": "signal",
+            "slug": "API/WritableStreamDefaultController/signal",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WritableStreamDefaultController/signal",
+            "summary": "The read-only signal property of the WritableStreamDefaultController interface returns the AbortSignal associated with the controller.",
+            "support": {
+                "chrome": {
+                    "version_added": "98"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.16"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "100"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.5.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "98"
+                }
+            },
+            "title": "WritableStreamDefaultController: signal property"
         }
     ],
     "ws-default-controller-class": [
@@ -3299,19 +3285,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -3371,7 +3351,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultWriter()"
+            "title": "WritableStreamDefaultWriter: WritableStreamDefaultWriter() constructor"
         }
     ],
     "ref-for-default-writer-abort④": [
@@ -3420,7 +3400,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultWriter.abort()"
+            "title": "WritableStreamDefaultWriter: abort() method"
         }
     ],
     "ref-for-default-writer-close⑦": [
@@ -3469,7 +3449,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultWriter.close()"
+            "title": "WritableStreamDefaultWriter: close() method"
         }
     ],
     "ref-for-default-writer-closed②": [
@@ -3518,7 +3498,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultWriter.closed"
+            "title": "WritableStreamDefaultWriter: closed property"
         }
     ],
     "ref-for-default-writer-desired-size⑥": [
@@ -3567,7 +3547,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultWriter.desiredSize"
+            "title": "WritableStreamDefaultWriter: desiredSize property"
         }
     ],
     "ref-for-default-writer-ready⑨": [
@@ -3616,7 +3596,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultWriter.ready"
+            "title": "WritableStreamDefaultWriter: ready property"
         }
     ],
     "ref-for-default-writer-release-lock②": [
@@ -3665,7 +3645,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultWriter.releaseLock()"
+            "title": "WritableStreamDefaultWriter: releaseLock() method"
         }
     ],
     "ref-for-default-writer-write①②": [
@@ -3714,7 +3694,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "WritableStreamDefaultWriter.write()"
+            "title": "WritableStreamDefaultWriter: write() method"
         }
     ],
     "default-writer-class": [
@@ -3747,19 +3727,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.5.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.5.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",

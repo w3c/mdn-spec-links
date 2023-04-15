@@ -53,7 +53,7 @@
                 "feature": "getrandomvalues",
                 "title": "crypto.getRandomValues()"
             },
-            "title": "Crypto.getRandomValues()"
+            "title": "Crypto: getRandomValues() method"
         }
     ],
     "Crypto-method-randomUUID": [
@@ -84,16 +84,10 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "19.0.0"
-                    },
-                    {
-                        "version_added": "16.7.0",
-                        "version_removed": "19.0.0",
-                        "notes": "From version 14.17.0, a similar method is available as <a href='https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_crypto'><code>crypto.randomUUID()</code></a>."
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.7.0",
+                    "notes": "From version 14.17.0, a similar method is available as <a href='https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_crypto'><code>crypto.randomUUID()</code></a>."
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -107,7 +101,7 @@
                     "version_added": "92"
                 }
             },
-            "title": "Crypto.randomUUID()"
+            "title": "Crypto: randomUUID() method"
         }
     ],
     "Crypto-attribute-subtle": [
@@ -163,7 +157,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Crypto.subtle"
+            "title": "Crypto: subtle property"
         }
     ],
     "crypto-interface": [
@@ -204,19 +198,12 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": [
-                    {
-                        "version_added": "19.0.0",
-                        "notes": "<code>Crypto</code> is not a concrete interface, but its methods are available on the global <code>crypto</code> object."
-                    },
-                    {
-                        "version_added": "15.0.0",
-                        "version_removed": "19.0.0",
-                        "alternative_name": "crypto.webcrypto",
-                        "partial_implementation": true,
-                        "notes": "<code>Crypto</code> is not a concrete interface, but calling <code>require('crypto').webcrypto</code> returns an instance of the <code>Crypto</code> class."
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "15.0.0",
+                    "alternative_name": "crypto.webcrypto",
+                    "partial_implementation": true,
+                    "notes": "<code>Crypto</code> is not a concrete interface, but calling <code>require('crypto').webcrypto</code> returns an instance of the <code>Crypto</code> class."
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -551,7 +538,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.decrypt()"
+            "title": "SubtleCrypto: decrypt() method"
         }
     ],
     "SubtleCrypto-method-deriveBits": [
@@ -612,7 +599,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.deriveBits()"
+            "title": "SubtleCrypto: deriveBits() method"
         }
     ],
     "SubtleCrypto-method-deriveKey": [
@@ -665,7 +652,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.deriveKey()"
+            "title": "SubtleCrypto: deriveKey() method"
         }
     ],
     "SubtleCrypto-method-digest": [
@@ -716,7 +703,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.digest()"
+            "title": "SubtleCrypto: digest() method"
         }
     ],
     "SubtleCrypto-method-encrypt": [
@@ -781,7 +768,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.encrypt()"
+            "title": "SubtleCrypto: encrypt() method"
         }
     ],
     "SubtleCrypto-method-exportKey": [
@@ -850,7 +837,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.exportKey()"
+            "title": "SubtleCrypto: exportKey() method"
         }
     ],
     "SubtleCrypto-method-generateKey": [
@@ -915,7 +902,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.generateKey()"
+            "title": "SubtleCrypto: generateKey() method"
         }
     ],
     "SubtleCrypto-method-importKey": [
@@ -987,7 +974,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.importKey()"
+            "title": "SubtleCrypto: importKey() method"
         }
     ],
     "SubtleCrypto-method-sign": [
@@ -1039,7 +1026,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.sign()"
+            "title": "SubtleCrypto: sign() method"
         }
     ],
     "SubtleCrypto-method-unwrapKey": [
@@ -1094,7 +1081,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.unwrapKey()"
+            "title": "SubtleCrypto: unwrapKey() method"
         }
     ],
     "SubtleCrypto-method-verify": [
@@ -1154,7 +1141,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.verify()"
+            "title": "SubtleCrypto: verify() method"
         }
     ],
     "SubtleCrypto-method-wrapKey": [
@@ -1205,7 +1192,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "SubtleCrypto.wrapKey()"
+            "title": "SubtleCrypto: wrapKey() method"
         }
     ],
     "subtlecrypto-interface": [
@@ -1310,7 +1297,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "self.crypto"
+            "title": "crypto global property"
         }
     ]
 }

@@ -55,7 +55,7 @@
                 "feature": "blobbuilder",
                 "title": "Blob constructing"
             },
-            "title": "Blob()"
+            "title": "Blob: Blob() constructor"
         }
     ],
     "dom-blob-arraybuffer": [
@@ -102,7 +102,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Blob.arrayBuffer()"
+            "title": "Blob: arrayBuffer() method"
         }
     ],
     "dfn-size": [
@@ -155,7 +155,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Blob.size"
+            "title": "Blob: size property"
         }
     ],
     "dfn-slice": [
@@ -237,7 +237,7 @@
                     }
                 ]
             },
-            "title": "Blob.slice()"
+            "title": "Blob: slice() method"
         }
     ],
     "dom-blob-stream": [
@@ -284,7 +284,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Blob.stream()"
+            "title": "Blob: stream() method"
         }
     ],
     "dom-blob-text": [
@@ -331,7 +331,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Blob.text()"
+            "title": "Blob: text() method"
         }
     ],
     "dfn-type": [
@@ -384,7 +384,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Blob.type"
+            "title": "Blob: type property"
         },
         {
             "engines": [
@@ -423,7 +423,7 @@
                     "version_added": "14"
                 },
                 "safari": {
-                    "version_added": "8"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -434,7 +434,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "File.type"
+            "title": "File: type property"
         }
     ],
     "blob-section": [
@@ -467,20 +467,14 @@
                 "ie": {
                     "version_added": "10"
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "15.7.0",
-                        "version_removed": "18.0.0",
-                        "alternative_name": "buffer.Blob",
-                        "notes": [
-                            "Experimental implementation.",
-                            "Must be imported using <code>require('buffer').Blob</code> or <code>import { Blob } from 'buffer'</code>."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "15.7.0",
+                    "alternative_name": "buffer.Blob",
+                    "notes": [
+                        "Experimental implementation.",
+                        "Must be imported using <code>require('buffer').Blob</code> or <code>import { Blob } from 'buffer'</code>."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": {
                     "version_added": "11"
@@ -542,7 +536,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "File()"
+            "title": "File: File() constructor"
         }
     ],
     "dfn-lastModified": [
@@ -594,7 +588,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "File.lastModified"
+            "title": "File: lastModified property"
         }
     ],
     "dfn-name": [
@@ -635,7 +629,7 @@
                     "version_added": "14"
                 },
                 "safari": {
-                    "version_added": "8"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -646,7 +640,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "File.name"
+            "title": "File: name property"
         }
     ],
     "file-section": [
@@ -757,7 +751,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileList.item()"
+            "title": "FileList: item() method"
         }
     ],
     "dfn-length": [
@@ -809,7 +803,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileList.length"
+            "title": "FileList: length property"
         }
     ],
     "filelist-section": [
@@ -915,7 +909,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader()"
+            "title": "FileReader: FileReader() constructor"
         }
     ],
     "abort": [
@@ -969,7 +963,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader.abort()"
+            "title": "FileReader: abort() method"
         }
     ],
     "dfn-abort-event": [
@@ -1142,7 +1136,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader.error"
+            "title": "FileReader: error property"
         }
     ],
     "dfn-error-event": [
@@ -1768,7 +1762,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader.readAsArrayBuffer()"
+            "title": "FileReader: readAsArrayBuffer() method"
         }
     ],
     "readAsBinaryString": [
@@ -1822,7 +1816,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader.readAsBinaryString()"
+            "title": "FileReader: readAsBinaryString() method"
         }
     ],
     "readAsDataURL": [
@@ -1877,7 +1871,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader.readAsDataURL()"
+            "title": "FileReader: readAsDataURL() method"
         }
     ],
     "readAsDataText": [
@@ -1931,7 +1925,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader.readAsText()"
+            "title": "FileReader: readAsText() method"
         }
     ],
     "dom-filereader-readystate": [
@@ -1985,7 +1979,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader.readyState"
+            "title": "FileReader: readyState property"
         }
     ],
     "dom-filereader-result": [
@@ -2039,7 +2033,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReader.result"
+            "title": "FileReader: result property"
         }
     ],
     "APIASynch": [
@@ -2144,7 +2138,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReaderSync.readAsArrayBuffer()"
+            "title": "FileReaderSync: readAsArrayBuffer() method"
         }
     ],
     "readAsDataURLSync-section": [
@@ -2194,7 +2188,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReaderSync.readAsDataURL()"
+            "title": "FileReaderSync: readAsDataURL() method"
         }
     ],
     "readAsTextSync": [
@@ -2244,7 +2238,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "FileReaderSync.readAsText()"
+            "title": "FileReaderSync: readAsText() method"
         }
     ],
     "FileReaderSync": [
@@ -2349,7 +2343,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "URL.createObjectURL()"
+            "title": "URL: createObjectURL() static method"
         }
     ],
     "dfn-revokeObjectURL": [
@@ -2399,7 +2393,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "URL.revokeObjectURL()"
+            "title": "URL: revokeObjectURL() static method"
         }
     ]
 }

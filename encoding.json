@@ -58,7 +58,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoder()"
+            "title": "TextDecoder: TextDecoder() constructor"
         }
     ],
     "ref-for-dom-textdecoder-decode①": [
@@ -121,7 +121,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoder.decode()"
+            "title": "TextDecoder: decode() method"
         }
     ],
     "ref-for-dom-textdecoder-encoding①": [
@@ -175,7 +175,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoder.encoding"
+            "title": "TextDecoder: encoding property"
         }
     ],
     "ref-for-dom-textdecoder-fatal①": [
@@ -222,7 +222,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoder.fatal"
+            "title": "TextDecoder: fatal property"
         }
     ],
     "ref-for-dom-textdecoder-ignorebom①": [
@@ -269,7 +269,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoder.ignoreBOM"
+            "title": "TextDecoder: ignoreBOM property"
         }
     ],
     "interface-textdecoder": [
@@ -378,7 +378,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoderStream()"
+            "title": "TextDecoderStream: TextDecoderStream() constructor"
         }
     ],
     "dom-textdecoder-encoding": [
@@ -425,7 +425,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoderStream.encoding"
+            "title": "TextDecoderStream: encoding property"
         }
     ],
     "dom-textdecoder-fatal": [
@@ -472,7 +472,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoderStream.fatal"
+            "title": "TextDecoderStream: fatal property"
         }
     ],
     "textdecoder-ignore-bom-flag": [
@@ -519,7 +519,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextDecoderStream.ignoreBOM"
+            "title": "TextDecoderStream: ignoreBOM property"
         }
     ],
     "interface-textdecoderstream": [
@@ -550,19 +550,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.6.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.6.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -631,7 +625,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoder()"
+            "title": "TextEncoder: TextEncoder() constructor"
         }
     ],
     "ref-for-dom-textencoder-encode①": [
@@ -678,7 +672,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoder.encode()"
+            "title": "TextEncoder: encode() method"
         }
     ],
     "ref-for-dom-textencoder-encodeinto①": [
@@ -727,7 +721,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoder.encodeInto()"
+            "title": "TextEncoder: encodeInto() method"
         }
     ],
     "dom-textencoder-encoding": [
@@ -774,7 +768,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoder.encoding"
+            "title": "TextEncoder: encoding property"
         },
         {
             "engines": [
@@ -819,7 +813,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoderStream.encoding"
+            "title": "TextEncoderStream: encoding property"
         }
     ],
     "interface-textencoder": [
@@ -921,7 +915,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "TextEncoderStream()"
+            "title": "TextEncoderStream: TextEncoderStream() constructor"
         }
     ],
     "interface-textencoderstream": [
@@ -952,19 +946,13 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": [
-                    {
-                        "version_added": "18.0.0"
-                    },
-                    {
-                        "version_added": "16.6.0",
-                        "version_removed": "18.0.0",
-                        "notes": [
-                            "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
-                            "Experimental implementation."
-                        ]
-                    }
-                ],
+                "nodejs": {
+                    "version_added": "16.6.0",
+                    "notes": [
+                        "Must be imported using either <code>require('stream/web')</code> or <code>import * from 'stream/web'</code>.",
+                        "Experimental implementation."
+                    ]
+                },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
