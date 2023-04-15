@@ -7,7 +7,6 @@ import chalk from "chalk";
 import { readFileSync, existsSync, statSync, readdirSync } from "fs";
 import request from "sync-request";
 import { resolve, extname, join, basename } from "path";
-import { gunzipSync } from "zlib";
 import path from "path";
 import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
@@ -430,7 +429,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       "https://developer.mozilla.org/sitemaps/en-us/sitemap.xml.gz",
       options
     );
-    const xml = gunzipSync(response.getBody()).toString("utf8");
+    const xml = response.getBody();
     const dom = new JSDOM("");
     const DOMParser = dom.window.DOMParser;
     const parser = new DOMParser();
