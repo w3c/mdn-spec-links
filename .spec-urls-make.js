@@ -102,6 +102,7 @@ const respecRawSpecs = [
   "https://wicg.github.io/visual-viewport/", // NO TR; never had a TR
   "https://wicg.github.io/netinfo/", // NO TR; never had a TR
   "https://wicg.github.io/savedata/", // NO TR; never had a TR
+  "https://wicg.github.io/web-app-launch/",
   "https://wicg.github.io/window-controls-overlay/",
 ];
 
