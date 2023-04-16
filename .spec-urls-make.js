@@ -331,6 +331,11 @@ const processSpecMap = (key, data) => {
         0
       );
       processSpecURL(
+        "https://html.spec.whatwg.org/multipage/document-lifecycle.html",
+        "html.json",
+        0
+      );
+      processSpecURL(
         "https://html.spec.whatwg.org/multipage/dom.html",
         "html.json",
         0
@@ -372,11 +377,6 @@ const processSpecMap = (key, data) => {
       );
       processSpecURL(
         "https://html.spec.whatwg.org/multipage/grouping-content.html",
-        "html.json",
-        0
-      );
-      processSpecURL(
-        "https://html.spec.whatwg.org/multipage/history.html",
         "html.json",
         0
       );
@@ -436,6 +436,11 @@ const processSpecMap = (key, data) => {
         0
       );
       processSpecURL(
+        "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+        "html.json",
+        0
+      );
+      processSpecURL(
         "https://html.spec.whatwg.org/multipage/obsolete.html",
         "html.json",
         0
@@ -447,6 +452,11 @@ const processSpecMap = (key, data) => {
       );
       processSpecURL(
         "https://html.spec.whatwg.org/multipage/parsing.html",
+        "html.json",
+        0
+      );
+      processSpecURL(
+        "https://html.spec.whatwg.org/multipage/popover.html",
         "html.json",
         0
       );
