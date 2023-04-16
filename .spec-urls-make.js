@@ -46,6 +46,7 @@ const stableSpecs = [
 ];
 
 const respecRawSpecs = [
+  "https://privacycg.github.io/gpc-spec/",
   "https://w3c.github.io/badging/", // NO TR
   "https://w3c.github.io/battery/", // yes
   "https://w3c.github.io/beacon/", // OUT OF DATE TR
