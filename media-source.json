@@ -42,7 +42,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": {
                     "version_added": "13",
@@ -79,7 +79,7 @@
             "summary": "The buffered read-only property of HTMLMediaElement objects returns a new static normalized TimeRanges object that represents the ranges of the media resource, if any, that the user agent has buffered at the moment the buffered property is accessed.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -128,7 +128,7 @@
             "summary": "The seekable read-only property of HTMLMediaElement objects returns a new static normalized TimeRanges object that represents the ranges of the media resource, if any, that the user agent is able to seek to at the time seekable property is accessed.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -348,6 +348,45 @@
             "title": "MediaSource: addSourceBuffer() method"
         }
     ],
+    "dom-mediasource-canconstructindedicatedworker": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MediaSource.json",
+            "name": "canConstructInDedicatedWorker",
+            "slug": "API/MediaSource/canConstructInDedicatedWorker",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaSource/canConstructInDedicatedWorker",
+            "summary": "The canConstructInDedicatedWorker static property of the MediaSource interface returns true if MediaSource worker support is implemented, providing a low-latency feature detection mechanism.",
+            "support": {
+                "chrome": {
+                    "version_added": "108"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "108"
+                }
+            },
+            "title": "MediaSource: canConstructInDedicatedWorker static property"
+        }
+    ],
     "dom-mediasource-clearliveseekablerange": [
         {
             "engines": [
@@ -506,6 +545,45 @@
                 }
             },
             "title": "MediaSource: endOfStream() method"
+        }
+    ],
+    "dom-mediasource-handle": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MediaSource.json",
+            "name": "handle",
+            "slug": "API/MediaSource/handle",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaSource/handle",
+            "summary": "The handle read-only property of the MediaSource interface returns a MediaSourceHandle object, a proxy for the MediaSource that can be transferred from a dedicated worker back to the main thread and attached to a media element via its HTMLMediaElement.srcObject property.",
+            "support": {
+                "chrome": {
+                    "version_added": "108"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "108"
+                }
+            },
+            "title": "MediaSource: handle property"
         }
     ],
     "dom-mediasource-istypesupported": [
@@ -860,6 +938,45 @@
             "title": "MediaSource"
         }
     ],
+    "mediasourcehandle": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/MediaSourceHandle.json",
+            "name": "MediaSourceHandle",
+            "slug": "API/MediaSourceHandle",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaSourceHandle",
+            "summary": "The MediaSourceHandle interface of the Media Source Extensions API is a proxy for a MediaSource that can be transferred from a dedicated worker back to the main thread and attached to a media element via its HTMLMediaElement.srcObject property. MediaSource objects are not transferable because they are event targets, hence the need for MediaSourceHandles.",
+            "support": {
+                "chrome": {
+                    "version_added": "108"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "108"
+                }
+            },
+            "title": "MediaSourceHandle"
+        }
+    ],
     "dom-sourcebuffer-abort": [
         {
             "engines": [
@@ -1105,12 +1222,12 @@
             "summary": "The audioTracks read-only property of the SourceBuffer interface returns a list of the audio tracks currently contained inside the SourceBuffer.",
             "support": {
                 "chrome": {
-                    "version_added": "51",
+                    "version_added": "70",
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
                         }
                     ]
                 },
@@ -1144,8 +1261,8 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
                         }
                     ]
                 }
@@ -1390,9 +1507,7 @@
                     "version_added": false
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "18"
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": false
                 },
@@ -1553,12 +1668,12 @@
             "summary": "The videoTracks read-only property of the SourceBuffer interface returns a list of the video tracks currently contained inside the SourceBuffer.",
             "support": {
                 "chrome": {
-                    "version_added": "51",
+                    "version_added": "70",
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
                         }
                     ]
                 },
@@ -1592,8 +1707,8 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
                         }
                     ]
                 }

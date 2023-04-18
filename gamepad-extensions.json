@@ -200,9 +200,7 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "68"
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": false
                 }
@@ -214,7 +212,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/GamepadHapticActuator.json",
             "name": "type",
@@ -240,7 +239,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -256,7 +255,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/GamepadHapticActuator.json",
             "name": "GamepadHapticActuator",
@@ -282,7 +282,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",

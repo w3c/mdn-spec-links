@@ -120,6 +120,45 @@
                 }
             },
             "title": "CanMakePaymentEvent"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ServiceWorkerGlobalScope.json",
+            "name": "canmakepayment_event",
+            "slug": "API/ServiceWorkerGlobalScope/canmakepayment_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/canmakepayment_event",
+            "summary": "The canmakepayment event of the ServiceWorkerGlobalScope interface is fired on a payment app's service worker to check whether it is ready to handle a payment. Specifically, it is fired when the merchant website calls new PaymentRequest().",
+            "support": {
+                "chrome": {
+                    "version_added": "70"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerGlobalScope: canmakepayment event"
         }
     ],
     "dom-paymentmanager-userhint": [
@@ -243,6 +282,47 @@
                 }
             },
             "title": "PaymentRequestEvent: PaymentRequestEvent() constructor"
+        }
+    ],
+    "changepaymentmethod-method": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/PaymentRequestEvent.json",
+            "name": "changePaymentMethod",
+            "slug": "API/PaymentRequestEvent/changePaymentMethod",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestEvent/changePaymentMethod",
+            "summary": "The changePaymentMethod() method of the PaymentRequestEvent interface is used by the payment handler to get an updated total, given such payment method details as the billing address.",
+            "support": {
+                "chrome": {
+                    "version_added": "76"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PaymentRequestEvent: changePaymentMethod() method"
         }
     ],
     "dom-paymentrequestevent-methoddata": [
@@ -612,6 +692,45 @@
                 }
             },
             "title": "PaymentRequestEvent"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ServiceWorkerGlobalScope.json",
+            "name": "paymentrequest_event",
+            "slug": "API/ServiceWorkerGlobalScope/paymentrequest_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/paymentrequest_event",
+            "summary": "The paymentrequest event of the ServiceWorkerGlobalScope interface is fired on a payment app when a payment flow has been initiated on the merchant website via the PaymentRequest.show() method.",
+            "support": {
+                "chrome": {
+                    "version_added": "70"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ServiceWorkerGlobalScope: paymentrequest event"
         }
     ],
     "dom-serviceworkerregistration-paymentmanager": [

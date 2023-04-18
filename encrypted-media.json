@@ -171,6 +171,51 @@
             "title": "HTMLMediaElement: setMediaKeys() method"
         }
     ],
+    "dom-mediaencryptedevent": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaEncryptedEvent.json",
+            "name": "MediaEncryptedEvent",
+            "slug": "API/MediaEncryptedEvent/MediaEncryptedEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaEncryptedEvent/MediaEncryptedEvent",
+            "summary": "The MediaEncryptedEvent constructor creates a new MediaEncryptedEvent object.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "13"
+                },
+                "firefox": {
+                    "version_added": "38"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "43"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaEncryptedEvent: MediaEncryptedEvent() constructor"
+        }
+    ],
     "dom-mediaencryptedevent-initdata": [
         {
             "engines": [
@@ -1676,6 +1721,70 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
+            },
+            "title": "Permissions-Policy: encrypted-media"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "altname": [
+                "gecko"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "encrypted-media",
+            "slug": "HTTP/Headers/Permissions-Policy/encrypted-media",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/encrypted-media",
+            "summary": "The HTTP Permissions-Policy header encrypted-media directive controls whether the current document is allowed to use the Encrypted Media Extensions API (EME).",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "64",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "74",
+                    "alternative_name": "Feature-Policy: encrypted-media",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.security.featurePolicy.header.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ]
             },
             "title": "Permissions-Policy: encrypted-media"
         }

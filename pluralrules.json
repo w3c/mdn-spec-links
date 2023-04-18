@@ -2,7 +2,7 @@
     "proposed.html#sec-intl.pluralrules.prototype.selectrange": [
         {
             "engines": [
-                "gecko",
+                "blink",
                 "webkit"
             ],
             "filename": "javascript/builtins/Intl/PluralRules.json",
@@ -12,7 +12,7 @@
             "summary": "The Intl.PluralRules.prototype.selectRange() method receives two values and returns a string indicating which plural rule to use for locale-aware formatting.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "106"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -20,7 +20,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "preview"
+                    "version_added": false
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -39,7 +39,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "106"
                 }
             },
             "title": "Intl.PluralRules.prototype.selectRange()"

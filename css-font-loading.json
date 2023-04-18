@@ -81,7 +81,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/WorkerGlobalScope.json",
             "name": "fonts",
@@ -105,7 +106,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "preview"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -269,7 +270,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "10"
+                    "version_added": "11.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -711,7 +712,6 @@
     "dom-fontfacedescriptors-variationsettings": [
         {
             "engines": [
-                "blink",
                 "gecko"
             ],
             "filename": "api/FontFace.json",
@@ -721,7 +721,7 @@
             "summary": "The variationSettings property of the FontFace interface retrieves or sets low-level OpenType or TrueType font variations.",
             "support": {
                 "chrome": {
-                    "version_added": "62"
+                    "version_added": false
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -742,7 +742,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": false
                 }
             },
             "title": "FontFace: variationSettings property"
@@ -878,9 +878,11 @@
     "dom-fontfaceset-check": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
+            ],
+            "partial": [
+                "blink"
             ],
             "filename": "api/FontFaceSet.json",
             "name": "check",
@@ -889,7 +891,9 @@
             "summary": "The check() method of the FontFaceSet returns true if you can render some text using the given font specification without attempting to use any fonts in this FontFaceSet that are not yet fully loaded. This means you can use the font specification without causing a font swap.",
             "support": {
                 "chrome": {
-                    "version_added": "35"
+                    "version_added": "35",
+                    "partial_implementation": true,
+                    "notes": "The method returns <code>false</code> instead of <code>true</code> for nonexistent or locally installed fonts. See <a href='https://crbug.com/591602'>bug 591602</a>."
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -910,7 +914,9 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "The method returns <code>false</code> instead of <code>true</code> for nonexistent or locally installed fonts. See <a href='https://crbug.com/591602'>bug 591602</a>."
                 }
             },
             "title": "FontFaceSet: check() method"

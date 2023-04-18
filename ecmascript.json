@@ -46,6 +46,53 @@
             "title": "AggregateError() constructor"
         }
     ],
+    "sec-aggregate-error": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AggregateError.json",
+            "name": "errors",
+            "slug": "JavaScript/Reference/Global_Objects/AggregateError/errors",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError/errors",
+            "summary": "The errors data property of an AggregateError instance contains an array representing the errors that were aggregated.",
+            "support": {
+                "chrome": {
+                    "version_added": "85"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.2"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "79"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "15.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "85"
+                }
+            },
+            "title": "AggregateError: errors"
+        }
+    ],
     "sec-aggregate-error-objects": [
         {
             "engines": [
@@ -681,7 +728,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "18.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -728,7 +775,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "18.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -2038,6 +2085,144 @@
             "title": "Array.prototype.toLocaleString()"
         }
     ],
+    "sec-array.prototype.toreversed": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Array.json",
+            "name": "toReversed",
+            "slug": "JavaScript/Reference/Global_Objects/Array/toReversed",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed",
+            "summary": "The toReversed() method of an Array instance is the copying counterpart of the reverse() method. It returns a new array with the elements in reversed order.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.3"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "Array.prototype.toReversed()"
+        }
+    ],
+    "sec-array.prototype.tosorted": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Array.json",
+            "name": "toSorted",
+            "slug": "JavaScript/Reference/Global_Objects/Array/toSorted",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted",
+            "summary": "The toSorted() method of an Array instance is the copying version of the sort() method. It returns a new array with the elements sorted in ascending order.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.3"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "Array.prototype.toSorted()"
+        }
+    ],
+    "sec-array.prototype.tospliced": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Array.json",
+            "name": "toSpliced",
+            "slug": "JavaScript/Reference/Global_Objects/Array/toSpliced",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSpliced",
+            "summary": "The toSpliced() method of an Array instance is the copying version of the splice() method. It returns a new array with some elements removed and/or replaced at a given index.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.3"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "Array.prototype.toSpliced()"
+        }
+    ],
     "sec-array.prototype.tostring": [
         {
             "engines": [
@@ -2209,6 +2394,52 @@
                 }
             },
             "title": "Array.prototype.values()"
+        }
+    ],
+    "sec-array.prototype.with": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Array.json",
+            "name": "with",
+            "slug": "JavaScript/Reference/Global_Objects/Array/with",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with",
+            "summary": "The with() method of an Array instance is the copying version of using the bracket notation to change the value of a given index. It returns a new array with the element at the given index replaced with the given value.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.3"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "Array.prototype.with()"
         }
     ],
     "sec-array.prototype-@@iterator": [
@@ -2772,6 +3003,66 @@
             "title": "ArrayBuffer"
         }
     ],
+    "sec-async-function-constructor": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncFunction.json",
+            "name": "AsyncFunction",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncFunction/AsyncFunction",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction/AsyncFunction",
+            "summary": "The AsyncFunction() constructor creates AsyncFunction objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "55"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "15"
+                },
+                "firefox": {
+                    "version_added": "52"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "7.6.0"
+                    },
+                    {
+                        "version_added": "7.0.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncFunction() constructor"
+        }
+    ],
     "sec-async-function-objects": [
         {
             "engines": [
@@ -3064,6 +3355,64 @@
             "title": "AsyncGenerator"
         }
     ],
+    "sec-asyncgeneratorfunction-constructor": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncGeneratorFunction.json",
+            "name": "AsyncGeneratorFunction",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncGeneratorFunction/AsyncGeneratorFunction",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction/AsyncGeneratorFunction",
+            "summary": "The AsyncGeneratorFunction() constructor creates AsyncGeneratorFunction objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "55"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.10.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncGeneratorFunction() constructor"
+        }
+    ],
     "sec-asyncgeneratorfunction-objects": [
         {
             "engines": [
@@ -3120,6 +3469,100 @@
                 }
             },
             "title": "AsyncGeneratorFunction"
+        }
+    ],
+    "sec-asynciteratorprototype-asynciterator": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncIterator.json",
+            "name": "@@asyncIterator",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncIterator/@@asyncIterator",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator/@@asyncIterator",
+            "summary": "The [@@asyncIterator]() method of an AsyncIterator object implements the async iterable protocol and allows built-in async iterators to be consumed by most syntaxes expecting async iterables, such as for await...of loops. It returns the value of this, which is the async iterator object itself.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "57"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "10.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncIterator.prototype[@@asyncIterator]()"
+        }
+    ],
+    "sec-asynciteratorprototype": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/AsyncIterator.json",
+            "name": "AsyncIterator",
+            "slug": "JavaScript/Reference/Global_Objects/AsyncIterator",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator",
+            "summary": "An AsyncIterator object is an object that conforms to the async iterator protocol by providing a next() method that returns a promise fulfilling to an iterator result object. The AsyncIterator.prototype object is a hidden global object that all built-in async iterators inherit from. It provides an @@asyncIterator method that returns the async iterator object itself, making the async iterator also async iterable.",
+            "support": {
+                "chrome": {
+                    "version_added": "63"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "57"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "10.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "AsyncIterator"
         }
     ],
     "sec-atomics.add": [
@@ -3747,7 +4190,8 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "15.2"
+                    "version_added": "15.2",
+                    "notes": "Before Safari 16.4, <code>Atomics</code> is gated behind COOP/COEP. For more detail, read <a href='https://web.dev/coop-coep/'>Making your website \"cross-origin isolated\" using COOP and COEP</a>."
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -11100,6 +11544,66 @@
             "title": "Generator"
         }
     ],
+    "sec-generatorfunction-constructor": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/GeneratorFunction.json",
+            "name": "GeneratorFunction",
+            "slug": "JavaScript/Reference/Global_Objects/GeneratorFunction/GeneratorFunction",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction/GeneratorFunction",
+            "summary": "The GeneratorFunction() constructor creates GeneratorFunction objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "39"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "13"
+                },
+                "firefox": {
+                    "version_added": "26"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "4.0.0"
+                    },
+                    {
+                        "version_added": "0.12.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "GeneratorFunction() constructor"
+        }
+    ],
     "sec-generatorfunction-objects": [
         {
             "engines": [
@@ -11158,6 +11662,118 @@
                 }
             },
             "title": "GeneratorFunction"
+        }
+    ],
+    "sec-%iteratorprototype%-@@iterator": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Iterator.json",
+            "name": "@@iterator",
+            "slug": "JavaScript/Reference/Global_Objects/Iterator/@@iterator",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator/@@iterator",
+            "summary": "The [@@iterator]() method of Iterator instances implements the iterable protocol and allows built-in iterators to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns the value of this, which is the iterator object itself.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": [
+                    {
+                        "version_added": "36"
+                    },
+                    {
+                        "alternative_name": "@@iterator",
+                        "version_added": "27",
+                        "version_removed": "36",
+                        "notes": "A placeholder property named <code>@@iterator</code> is used."
+                    },
+                    {
+                        "alternative_name": "iterator",
+                        "version_added": "17",
+                        "version_removed": "27",
+                        "notes": "A placeholder property named <code>iterator</code> is used."
+                    }
+                ],
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "0.12.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Iterator.prototype[@@iterator]()"
+        }
+    ],
+    "sec-%iteratorprototype%-object": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Iterator.json",
+            "name": "Iterator",
+            "slug": "JavaScript/Reference/Global_Objects/Iterator",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator",
+            "summary": "An Iterator object is an object that conforms to the iterator protocol by providing a next() method that returns an iterator result object. The Iterator.prototype object is a hidden global object that all built-in iterators inherit from. It provides a @@iterator method that returns the iterator object itself, making the iterator also iterable.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "17"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "0.12.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Iterator"
         }
     ],
     "sec-json.parse": [
@@ -17736,6 +18352,64 @@
             "title": "Promise.prototype.then()"
         }
     ],
+    "sec-get-promise-@@species": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Promise.json",
+            "name": "@@species",
+            "slug": "JavaScript/Reference/Global_Objects/Promise/@@species",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/@@species",
+            "summary": "The Promise[@@species] static accessor property returns the constructor used to construct return values from promise methods.",
+            "support": {
+                "chrome": {
+                    "version_added": "51"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "48"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "6.5.0"
+                    },
+                    {
+                        "version_added": "6.0.0",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--harmony"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Promise[@@species]"
+        }
+    ],
     "sec-promise-objects": [
         {
             "engines": [
@@ -19665,7 +20339,7 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "16.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
@@ -21306,6 +21980,55 @@
                 }
             },
             "title": "SharedArrayBuffer.prototype.slice()"
+        }
+    ],
+    "sec-sharedarraybuffer-@@species": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/SharedArrayBuffer.json",
+            "name": "@@species",
+            "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer/@@species",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/@@species",
+            "summary": "The SharedArrayBuffer[@@species] static accessor property returns the constructor used to construct return values from SharedArrayBuffer methods.",
+            "support": {
+                "chrome": {
+                    "version_added": "68"
+                },
+                "chrome_android": {
+                    "version_added": "89"
+                },
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "8.10.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.2"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SharedArrayBuffer[@@species]"
         }
     ],
     "sec-sharedarraybuffer-objects": [
@@ -26411,6 +27134,98 @@
             "title": "TypedArray.prototype.toLocaleString()"
         }
     ],
+    "sec-%typedarray%.prototype.toreversed": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/TypedArray.json",
+            "name": "toReversed",
+            "slug": "JavaScript/Reference/Global_Objects/TypedArray/toReversed",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/toReversed",
+            "summary": "The toReversed() method is the copying counterpart of the reverse() method. It returns a new array with the elements in reversed order. This method has the same algorithm as Array.prototype.reverse(). TypedArray is one of the typed array types here.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.3"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "TypedArray.prototype.toReversed()"
+        }
+    ],
+    "sec-%typedarray%.prototype.tosorted": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/TypedArray.json",
+            "name": "toSorted",
+            "slug": "JavaScript/Reference/Global_Objects/TypedArray/toSorted",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/toSorted",
+            "summary": "The toSorted() method is the copying version of the sort() method. It returns a new array with the elements sorted in ascending order. This method has the same algorithm as Array.prototype.toSorted(), except that it sorts the values numerically instead of as strings by default. TypedArray is one of the typed array types here.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.3"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "TypedArray.prototype.toSorted()"
+        }
+    ],
     "sec-%typedarray%.prototype.tostring": [
         {
             "engines": [
@@ -26513,6 +27328,52 @@
                 }
             },
             "title": "TypedArray.prototype.values()"
+        }
+    ],
+    "sec-%typedarray%.prototype.with": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/TypedArray.json",
+            "name": "with",
+            "slug": "JavaScript/Reference/Global_Objects/TypedArray/with",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/with",
+            "summary": "The with() method is the copying version of using the bracket notation to change the value of a given index. It returns a new array with the element at the given index replaced with the given value. This method has the same algorithm as Array.prototype.with(). TypedArray is one of the typed array types here.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.3"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "TypedArray.prototype.with()"
         }
     ],
     "sec-%typedarray%.prototype-@@iterator": [
@@ -29012,7 +29873,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "javascript/classes.json",
             "name": "static_initialization_blocks",
@@ -29042,7 +29904,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -29055,57 +29917,6 @@
         }
     ],
     "sec-arguments-exotic-objects": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "javascript/functions.json",
-            "name": "callee",
-            "slug": "JavaScript/Reference/Functions/arguments/callee",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee",
-            "summary": "The arguments.callee property contains the currently executing function that the arguments belong to.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.0"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "6"
-                },
-                "nodejs": {
-                    "version_added": "0.10.0"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "4"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "arguments.callee"
-        },
         {
             "engines": [
                 "blink",
@@ -31666,51 +32477,6 @@
                 "gecko",
                 "webkit"
             ],
-            "filename": "javascript/operators/logical_nullish_assignment.json",
-            "name": "logical_nullish_assignment",
-            "slug": "JavaScript/Reference/Operators/Logical_nullish_assignment",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment",
-            "summary": "The nullish coalescing assignment (??=) operator, also known as the logical nullish assignment operator, only assigns if x is nullish (null or undefined).",
-            "support": {
-                "chrome": {
-                    "version_added": "85"
-                },
-                "chrome_android": "mirror",
-                "deno": {
-                    "version_added": "1.2"
-                },
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "79"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "15.0.0"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "85"
-                }
-            },
-            "title": "Nullish coalescing assignment (??=)"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
             "filename": "javascript/operators/logical_or_assignment.json",
             "name": "logical_or_assignment",
             "slug": "JavaScript/Reference/Operators/Logical_OR_assignment",
@@ -31800,6 +32566,51 @@
                 }
             },
             "title": "Multiplication assignment (*=)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/nullish_coalescing_assignment.json",
+            "name": "nullish_coalescing_assignment",
+            "slug": "JavaScript/Reference/Operators/Logical_nullish_assignment",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment",
+            "summary": "The nullish coalescing assignment (??=) operator, also known as the logical nullish assignment operator, only assigns if x is nullish (null or undefined).",
+            "support": {
+                "chrome": {
+                    "version_added": "85"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.2"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "79"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "15.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "14"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "85"
+                }
+            },
+            "title": "Nullish coalescing assignment (??=)"
         },
         {
             "engines": [
@@ -33825,7 +34636,8 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": "1.0"
+                    "version_added": "1.0",
+                    "notes": "Bundled Deno applications (using `deno compile`) do not support dynamic imports"
                 },
                 "edge": "mirror",
                 "firefox": {

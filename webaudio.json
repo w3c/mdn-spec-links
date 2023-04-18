@@ -912,9 +912,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -1518,7 +1516,7 @@
             "summary": "The createMediaElementSource() method of the AudioContext Interface is used to create a new MediaElementAudioSourceNode object, given an existing HTML <audio> or <video> element, the audio from which can then be played and manipulated.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -1563,7 +1561,7 @@
             "summary": "The createMediaStreamDestination() method of the AudioContext Interface is used to create a new MediaStreamAudioDestinationNode object associated with a WebRTC MediaStream representing an audio stream, which may be stored in a local file or sent to another computer.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "25"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -1578,7 +1576,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "11"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1606,7 +1604,7 @@
             "summary": "The createMediaStreamSource() method of the AudioContext Interface is used to create a new MediaStreamAudioSourceNode object, given a media stream (say, from a MediaDevices.getUserMedia instance), the audio from which can then be played and manipulated.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "22"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -1623,7 +1621,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "11"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1801,6 +1799,123 @@
             "title": "AudioContext: resume() method"
         }
     ],
+    "dom-audiocontext-setsinkid": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioContext.json",
+            "name": "setSinkId",
+            "slug": "API/AudioContext/setSinkId",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/setSinkId",
+            "summary": "The setSinkId() method of the AudioContext interface sets the output audio device for the AudioContext. If a sink ID is not explicitly set, the default system audio output device will be used.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "AudioContext: setSinkId() method"
+        }
+    ],
+    "eventdef-audiocontext-sinkchange": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioContext.json",
+            "name": "sinkchange_event",
+            "slug": "API/AudioContext/sinkchange_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/sinkchange_event",
+            "summary": "The sinkchange event of the AudioContext interface is fired when the output audio device (and therefore, the AudioContext.sinkId) has changed.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "AudioContext: sinkchange event"
+        }
+    ],
+    "dom-audiocontext-sinkid": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioContext.json",
+            "name": "sinkId",
+            "slug": "API/AudioContext/sinkId",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/sinkId",
+            "summary": "The sinkId read-only property of the AudioContext interface returns the sink ID of the current output audio device.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "AudioContext: sinkId property"
+        }
+    ],
     "dom-audiocontext-suspend": [
         {
             "engines": [
@@ -1922,7 +2037,7 @@
             "summary": "The maxchannelCount property of the AudioDestinationNode interface is an unsigned long defining the maximum amount of channels that the physical device can handle.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "27"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -1938,9 +2053,17 @@
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
-                "safari": {
-                    "version_added": "6"
-                },
+                "safari": [
+                    {
+                        "version_added": "14.1"
+                    },
+                    {
+                        "version_added": "7",
+                        "version_removed": "14.1",
+                        "partial_implementation": true,
+                        "notes": "This property always returns <code>0</code>."
+                    }
+                ],
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
@@ -2426,7 +2549,7 @@
             "summary": "The channelCount property of the AudioNode interface represents an integer used to determine how many channels are used when up-mixing and down-mixing connections to any inputs to the node.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "27"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -2443,7 +2566,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2471,7 +2594,7 @@
             "summary": "The channelCountMode property of the AudioNode interface represents an enumerated value describing the way channels must be matched between the node's inputs and outputs.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "27"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -2488,7 +2611,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2516,7 +2639,7 @@
             "summary": "The channelInterpretation property of the AudioNode interface represents an enumerated value describing how input channels are mapped to output channels when the number of inputs/outputs is different. For example, this setting defines how a mono input will be up-mixed to a stereo or 5.1 channel output, or how a quad channel input will be down-mixed to a stereo or mono output.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "27"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -2533,7 +2656,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3676,6 +3799,84 @@
             "title": "AudioScheduledSourceNode"
         }
     ],
+    "dom-audiosinkinfo-type": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioSinkInfo.json",
+            "name": "type",
+            "slug": "API/AudioSinkInfo/type",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioSinkInfo/type",
+            "summary": "The type read-only property of the AudioSinkInfo interface returns the type of the audio output device.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "AudioSinkInfo: type property"
+        }
+    ],
+    "AudioSinkInfo": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/AudioSinkInfo.json",
+            "name": "AudioSinkInfo",
+            "slug": "API/AudioSinkInfo",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioSinkInfo",
+            "summary": "The AudioSinkInfo interface of the Web Audio API represents information describing an AudioContext's sink ID, retrieved via AudioContext.sinkId.",
+            "support": {
+                "chrome": {
+                    "version_added": "110"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "110"
+                }
+            },
+            "title": "AudioSinkInfo"
+        }
+    ],
     "AudioWorklet": [
         {
             "engines": [
@@ -4671,7 +4872,7 @@
             "summary": "The createDelay() method of the BaseAudioContext Interface is used to create a DelayNode, which is used to delay the incoming audio signal by a certain amount of time.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "24"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -4688,7 +4889,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -4761,7 +4962,7 @@
             "summary": "The createGain() method of the BaseAudioContext interface creates a GainNode, which can be used to control the overall gain (or volume) of the audio graph.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "24"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -4778,7 +4979,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -5023,7 +5224,7 @@
             "summary": "The createWaveShaper() method of the BaseAudioContext interface creates a WaveShaperNode, which represents a non-linear distortion. It is used to apply distortion effects to your audio.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -5467,9 +5668,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -5552,7 +5751,7 @@
             "summary": "The detune property of the BiquadFilterNode interface is an a-rate AudioParam representing detuning of the frequency in cents.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "25"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -5569,7 +5768,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -5687,7 +5886,7 @@
             "summary": "The getFrequencyResponse() method of the BiquadFilterNode interface takes the current filtering algorithm's settings and calculates the frequency response for frequencies specified in a specified array of frequencies.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "17"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6299,9 +6498,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -6339,7 +6536,7 @@
             "summary": "The delayTime property of the DelayNode interface is an a-rate AudioParam representing the amount of delay to apply.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "24"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6356,7 +6553,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -6384,7 +6581,7 @@
             "summary": "The DelayNode interface represents a delay-line; an AudioNode audio-processing module that causes a delay between the arrival of an input data and its propagation to the output.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "24"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6401,7 +6598,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -6432,9 +6629,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -6472,7 +6667,7 @@
             "summary": "The attack property of the DynamicsCompressorNode interface is a k-rate AudioParam representing the amount of time, in seconds, required to reduce the gain by 10 dB. It defines how quickly the signal is adapted when its volume is increased.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "19"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6517,7 +6712,7 @@
             "summary": "The knee property of the DynamicsCompressorNode interface is a k-rate AudioParam containing a decibel value representing the range above the threshold where the curve smoothly transitions to the compressed portion.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "19"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6562,7 +6757,7 @@
             "summary": "The ratio property of the DynamicsCompressorNode interface Is a k-rate AudioParam representing the amount of change, in dB, needed in the input for a 1 dB change in the output.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "19"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6607,7 +6802,7 @@
             "summary": "The reduction read-only property of the DynamicsCompressorNode interface is a float representing the amount of gain reduction currently applied by the compressor to the signal.",
             "support": {
                 "chrome": {
-                    "version_added": "14",
+                    "version_added": "19",
                     "notes": "Before version 52, this was an <code>AudioParam.</code>."
                 },
                 "chrome_android": "mirror",
@@ -6662,7 +6857,7 @@
             "summary": "The release property of the DynamicsCompressorNode interface Is a k-rate AudioParam representing the amount of time, in seconds, required to increase the gain by 10 dB. It defines how quick the signal is adapted when its volume is reduced.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "20"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6707,7 +6902,7 @@
             "summary": "The threshold property of the DynamicsCompressorNode interface is a k-rate AudioParam representing the decibel value above which the compression will start taking effect.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "19"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6800,9 +6995,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -6840,7 +7033,7 @@
             "summary": "The gain property of the GainNode interface is an a-rate AudioParam representing the amount of gain to apply.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "24"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6857,7 +7050,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -6885,7 +7078,7 @@
             "summary": "The GainNode interface represents a change in volume. It is an AudioNode audio-processing module that causes a given gain to be applied to the input data before its propagation to the output. A GainNode always has exactly one input and one output, both with the same number of channels.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "24"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6902,7 +7095,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -6933,9 +7126,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -7062,9 +7253,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -7102,7 +7291,7 @@
             "summary": "The MediaElementAudioSourceNode interface's read-only mediaElement property indicates the HTMLMediaElement that contains the audio track from which the node is receiving audio.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -7145,7 +7334,7 @@
             "summary": "The MediaElementAudioSourceNode interface represents an audio source consisting of an HTML <audio> or <video> element. It is an AudioNode that acts as an audio source.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -7190,12 +7379,10 @@
             "summary": "The MediaStreamAudioDestinationNode() constructor of the Web Audio API creates a new MediaStreamAudioDestinationNode object instance.",
             "support": {
                 "chrome": {
-                    "version_added": "55"
+                    "version_added": "57"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -7233,7 +7420,7 @@
             "summary": "The stream property of the AudioContext interface represents a MediaStream containing a single audio MediaStreamTrack with the same number of channels as the node itself.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "25"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -7250,7 +7437,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "11"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -7278,7 +7465,7 @@
             "summary": "The MediaStreamAudioDestinationNode interface represents an audio destination consisting of a WebRTC MediaStream with a single AudioMediaStreamTrack, which can be used in a similar way to a MediaStream obtained from navigator.mediaDevices.getUserMedia().",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "25"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -7295,7 +7482,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "11"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -7326,9 +7513,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -7366,7 +7551,7 @@
             "summary": "The MediaStreamAudioSourceNode interface's read-only mediaStream property indicates the MediaStream that contains the audio track from which the node is receiving audio.",
             "support": {
                 "chrome": {
-                    "version_added": "23"
+                    "version_added": "22"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -7407,7 +7592,7 @@
             "summary": "The MediaStreamAudioSourceNode interface is a type of AudioNode which operates as an audio source whose media is received from a MediaStream obtained using the WebRTC or Media Capture and Streams APIs.",
             "support": {
                 "chrome": {
-                    "version_added": "23"
+                    "version_added": "22"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -7532,9 +7717,7 @@
                     "version_added": "57"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -7677,7 +7860,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -7731,7 +7914,7 @@
                         "version_added": "14.1"
                     },
                     {
-                        "version_added": "6",
+                        "version_added": "7",
                         "version_removed": "14.1",
                         "prefix": "webkit"
                     }
@@ -7784,7 +7967,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -7913,7 +8096,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "6"
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -8010,7 +8193,7 @@
                         "version_added": "14.1"
                     },
                     {
-                        "version_added": "6",
+                        "version_added": "7",
                         "version_removed": "14.1",
                         "prefix": "webkit"
                     }
@@ -8049,9 +8232,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -8309,9 +8490,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -9010,9 +9189,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -9100,9 +9277,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -9229,9 +9404,7 @@
                     "version_added": "55"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "53"
                 },
@@ -9269,7 +9442,7 @@
             "summary": "The curve property of the WaveShaperNode interface is a Float32Array of numbers describing the distortion to apply.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -9314,7 +9487,7 @@
             "summary": "The oversample property of the WaveShaperNode interface is an enumerated value indicating if oversampling must be used. Oversampling is a technique for creating more samples (up-sampling) before applying a distortion effect to the audio signal.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "29"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -9359,7 +9532,7 @@
             "summary": "The WaveShaperNode interface represents a non-linear distorter.",
             "support": {
                 "chrome": {
-                    "version_added": "14"
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "edge": {

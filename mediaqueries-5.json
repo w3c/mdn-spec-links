@@ -378,7 +378,9 @@
     ],
     "scripting": [
         {
-            "engines": [],
+            "engines": [
+                "gecko"
+            ],
             "filename": "css/at-rules/media.json",
             "name": "scripting",
             "slug": "CSS/@media/scripting",
@@ -392,8 +394,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1166581'>bug 1166581</a>."
+                    "version_added": "113"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -423,9 +424,7 @@
     "video-dynamic-range": [
         {
             "engines": [
-                "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "css/at-rules/media.json",
             "name": "video-dynamic-range",
@@ -434,7 +433,7 @@
             "summary": "The video-dynamic-range CSS media feature can be used to test the combination of brightness, contrast ratio, and color depth that are supported by the video plane of the user agent and the output device.",
             "support": {
                 "chrome": {
-                    "version_added": "98"
+                    "version_added": false
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -449,13 +448,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "13.1"
+                    "version_added": false
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "98"
+                    "version_added": false
                 }
             },
             "title": "video-dynamic-range"

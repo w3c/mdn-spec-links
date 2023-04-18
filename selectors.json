@@ -582,7 +582,8 @@
     "the-dir-pseudo": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/selectors/dir.json",
             "name": "dir",
@@ -613,7 +614,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2517,7 +2518,7 @@
             "summary": "The :picture-in-picture CSS pseudo-class matches the element which is currently in picture-in-picture mode.",
             "support": {
                 "chrome": {
-                    "version_added": "76"
+                    "version_added": "110"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -2538,7 +2539,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "110"
                 }
             },
             "title": ":picture-in-picture"
@@ -3034,7 +3035,8 @@
     "user-invalid-pseudo": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/selectors/user-invalid.json",
             "name": "user-invalid",
@@ -3043,7 +3045,8 @@
             "summary": "The :user-invalid CSS pseudo-class represents any validated form element whose value isn't valid based on their validation constraints, after the user has interacted with it.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1156069'>bug 1156069</a>."
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -3064,13 +3067,14 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1156069'>bug 1156069</a>."
                 }
             },
             "title": ":user-invalid (:-moz-ui-invalid)"
@@ -3079,7 +3083,8 @@
     "user-valid-pseudo": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/selectors/user-valid.json",
             "name": "user-valid",
@@ -3088,7 +3093,8 @@
             "summary": "The :user-valid CSS pseudo-class represents any validated form element whose value validates correctly based on its validation constraints. However, unlike :valid it only matches once the user has interacted with it.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1156069'>bug 1156069</a>."
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -3109,13 +3115,14 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/1156069'>bug 1156069</a>."
                 }
             },
             "title": ":user-valid (:-moz-ui-valid)"

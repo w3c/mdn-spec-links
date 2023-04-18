@@ -423,7 +423,7 @@
                     "version_added": "14"
                 },
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -467,14 +467,20 @@
                 "ie": {
                     "version_added": "10"
                 },
-                "nodejs": {
-                    "version_added": "15.7.0",
-                    "alternative_name": "buffer.Blob",
-                    "notes": [
-                        "Experimental implementation.",
-                        "Must be imported using <code>require('buffer').Blob</code> or <code>import { Blob } from 'buffer'</code>."
-                    ]
-                },
+                "nodejs": [
+                    {
+                        "version_added": "18.0.0"
+                    },
+                    {
+                        "version_added": "15.7.0",
+                        "version_removed": "18.0.0",
+                        "alternative_name": "buffer.Blob",
+                        "notes": [
+                            "Experimental implementation.",
+                            "Must be imported using <code>require('buffer').Blob</code> or <code>import { Blob } from 'buffer'</code>."
+                        ]
+                    }
+                ],
                 "oculus": "mirror",
                 "opera": {
                     "version_added": "11"
@@ -629,7 +635,7 @@
                     "version_added": "14"
                 },
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -716,7 +722,7 @@
             "summary": "The item() method of the FileList API returns a File object representing the file at the specified index in the file list.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -768,7 +774,7 @@
             "summary": "The read-only FileList length property returns the number of files in the FileList.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -820,7 +826,7 @@
             "summary": "An object of this type is returned by the files property of the HTML <input> element; this lets you access the list of files selected with the <input type=\"file\"> element. It's also used for a list of files dropped into web content when using the drag and drop API; see the DataTransfer object for details on this usage.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -2091,6 +2097,56 @@
             "title": "FileReader"
         }
     ],
+    "filereadersyncConstrctr": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/FileReaderSync.json",
+            "name": "FileReaderSync",
+            "slug": "API/FileReaderSync/FileReaderSync",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/FileReaderSync",
+            "summary": "The FileReaderSync() constructor creates a new FileReaderSync.",
+            "support": {
+                "chrome": {
+                    "version_added": "7"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "8"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "10"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "FileReaderSync: FileReaderSync() constructor"
+        }
+    ],
     "readAsArrayBufferSyncSection": [
         {
             "engines": [
@@ -2105,7 +2161,7 @@
             "summary": "The readAsArrayBuffer() method of the FileReaderSync interface allows to read File or Blob objects in a synchronous way into an ArrayBuffer. This interface is only available in workers as it enables synchronous I/O that could potentially block.",
             "support": {
                 "chrome": {
-                    "version_added": "7"
+                    "version_added": "9"
                 },
                 "chrome_android": "mirror",
                 "deno": {

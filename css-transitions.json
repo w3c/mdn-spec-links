@@ -326,7 +326,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/TransitionEvent.json",
             "name": "TransitionEvent",
@@ -338,7 +339,9 @@
                     "version_added": "27"
                 },
                 "chrome_android": "mirror",
-                "edge": "mirror",
+                "edge": {
+                    "version_added": "14"
+                },
                 "firefox": {
                     "version_added": "23"
                 },
@@ -350,7 +353,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "preview"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": {

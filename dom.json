@@ -2243,7 +2243,7 @@
             "summary": "The Element.nextElementSibling read-only property returns the element immediately following the specified one in its parent's children list, or null if the specified element is the last one in the list.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -2335,7 +2335,7 @@
             "summary": "The Element.previousElementSibling read-only property returns the Element immediately prior to the specified one in its parent's children list, or null if the specified element is the first one in the list.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -2800,7 +2800,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2994,6 +2994,9 @@
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "9"
+                },
+                "nodejs": {
+                    "version_added": "19.0.0"
                 },
                 "oculus": "mirror",
                 "opera": {
@@ -4192,7 +4195,7 @@
             "summary": "The Element.childElementCount read-only property returns the number of child elements of this element.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -5635,7 +5638,7 @@
             "summary": "The Element.firstElementChild read-only property returns an element's first child Element, or null if there are no child elements.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6050,7 +6053,7 @@
             "summary": "The Element.lastElementChild read-only property returns an element's last child Element, or null if there are no child elements.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6278,7 +6281,7 @@
             "summary": "The DocumentFragment.querySelector() method returns the first element, or null if no matches are found, within the DocumentFragment (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6388,7 +6391,7 @@
             "summary": "The DocumentFragment.querySelectorAll() method returns a NodeList of elements within the DocumentFragment (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6745,6 +6748,49 @@
                 }
             },
             "title": "DocumentFragment: DocumentFragment() constructor"
+        }
+    ],
+    "dom-nonelementparentnode-getelementbyid": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/DocumentFragment.json",
+            "name": "getElementById",
+            "slug": "API/DocumentFragment/getElementById",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/getElementById",
+            "summary": "The getElementById() method of the DocumentFragment returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.",
+            "support": {
+                "chrome": {
+                    "version_added": "36"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "28"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "9"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "DocumentFragment: getElementById() method"
         }
     ],
     "interface-documentfragment": [
@@ -11710,7 +11756,7 @@
             "summary": "The compareDocumentPosition() method of the Node interface reports the position of its argument node relative to the node on which it is called.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -13346,6 +13392,133 @@
             "title": "NodeIterator"
         }
     ],
+    "interface-nodelist": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NodeList.json",
+            "name": "forEach",
+            "slug": "API/NodeList/forEach",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach",
+            "summary": "The forEach() method of the NodeList interface calls the callback given in parameter once for each value pair in the list, in insertion order.",
+            "support": {
+                "chrome": {
+                    "version_added": "51"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "50"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NodeList: forEach() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NodeList.json",
+            "name": "@@iterator",
+            "slug": "JavaScript/Reference/Global_Objects/Array/@@iterator",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@iterator",
+            "summary": "The [@@iterator]() method of Array instances implements the iterable protocol and allows arrays to be consumed by most syntaxes expecting iterables, such as the spread syntax and for...of loops. It returns an array iterator object that yields the value of each index in the array.",
+            "support": {
+                "chrome": {
+                    "version_added": "51"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "36"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Array.prototype[@@iterator]()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/NodeList.json",
+            "name": "NodeList",
+            "slug": "API/NodeList",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
+            "summary": "NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll().",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "5"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "8"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "NodeList"
+        }
+    ],
     "ref-for-dom-nodelist-item①": [
         {
             "engines": [
@@ -13438,53 +13611,6 @@
                 }
             },
             "title": "NodeList: length property"
-        }
-    ],
-    "interface-nodelist": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NodeList.json",
-            "name": "NodeList",
-            "slug": "API/NodeList",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
-            "summary": "NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll().",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "5"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "8"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "NodeList"
         }
     ],
     "dom-processinginstruction-target": [
@@ -14843,6 +14969,47 @@
             "title": "ShadowRoot: mode property"
         }
     ],
+    "dom-shadowroot-slotassignment": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ShadowRoot.json",
+            "name": "slotAssignment",
+            "slug": "API/ShadowRoot/slotAssignment",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/slotAssignment",
+            "summary": "The read-only slotAssignment property of the ShadowRoot interface returns the slot assignment mode for the shadow DOM tree. Nodes are either automatically assigned (named) or manually assigned (manual). The value of this property defined using the slotAssignment option when calling Element.attachShadow().",
+            "support": {
+                "chrome": {
+                    "version_added": "86"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "92"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "86"
+                }
+            },
+            "title": "ShadowRoot: slotAssignment property"
+        }
+    ],
     "interface-shadowroot": [
         {
             "engines": [
@@ -15083,7 +15250,7 @@
             "summary": "The read-only wholeText property of the Text interface returns the full text of all Text nodes logically adjacent to the node. The text is concatenated in document order. This allows specifying any text node and obtaining all adjacent text as a single string.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -15884,6 +16051,55 @@
             "title": "XMLDocument"
         }
     ],
+    "dom-xpathevaluator-xpathevaluator": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/XPathEvaluator.json",
+            "name": "XPathEvaluator",
+            "slug": "API/XPathEvaluator/XPathEvaluator",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/XPathEvaluator",
+            "summary": "The XPathEvaluator() constructor creates a new XPathEvaluator.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3"
+                },
+                "safari_ios": {
+                    "version_added": "1"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "XPathEvaluator: XPathEvaluator() constructor"
+        }
+    ],
     "interface-xpathevaluator": [
         {
             "engines": [
@@ -16527,6 +16743,55 @@
                 }
             },
             "title": "XPathResult"
+        }
+    ],
+    "dom-xsltprocessor-xsltprocessor": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/XSLTProcessor.json",
+            "name": "XSLTProcessor",
+            "slug": "API/XSLTProcessor/XSLTProcessor",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XSLTProcessor/XSLTProcessor",
+            "summary": "The XSLTProcessor() constructor creates a new XSLTProcessor object instance.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "3.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "3"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "XSLTProcessor: XSLTProcessor() constructor"
         }
     ],
     "dom-xsltprocessor-clearparameters": [

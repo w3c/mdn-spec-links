@@ -5,9 +5,6 @@
                 "blink",
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/HTMLMediaElement.json",
             "name": "setSinkId",
             "slug": "API/HTMLMediaElement/setSinkId",
@@ -24,16 +21,21 @@
                 "edge": {
                     "version_added": "17"
                 },
-                "firefox": {
-                    "version_added": "64",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "media.setsinkid.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "64",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.setsinkid.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -57,7 +59,8 @@
     "dom-htmlmediaelement-sinkid": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/HTMLMediaElement.json",
             "name": "sinkId",
@@ -68,13 +71,28 @@
                 "chrome": {
                     "version_added": "49"
                 },
-                "chrome_android": "mirror",
+                "chrome_android": {
+                    "version_added": false,
+                    "notes": "Not available due to <a href='https://crbug.com/648286'>a limitation in Android</a>."
+                },
                 "edge": {
                     "version_added": "17"
                 },
-                "firefox": {
-                    "version_added": false
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "64",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.setsinkid.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -87,9 +105,7 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": false
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -100,9 +116,6 @@
     "dom-mediadevices-selectaudiooutput": [
         {
             "engines": [
-                "gecko"
-            ],
-            "needsflag": [
                 "gecko"
             ],
             "filename": "api/MediaDevices.json",
@@ -116,16 +129,21 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "media.setsinkid.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "preview"
+                    },
+                    {
+                        "version_added": "88",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.setsinkid.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -163,18 +181,81 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "92",
-                    "partial_implementation": true,
-                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "media.setsinkid.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                "firefox": [
+                    {
+                        "version_added": "preview",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "92",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.setsinkid.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
                 },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "Permissions-Policy: speaker-selection"
+        },
+        {
+            "engines": [],
+            "altname": [
+                "gecko"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "speaker-selection",
+            "slug": "HTTP/Headers/Permissions-Policy/speaker-selection",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/speaker-selection",
+            "summary": "The HTTP Permissions-Policy header speaker-selection directive controls whether the current document is allowed to enumerate and select audio output devices (speakers, headphones, and so on).",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "preview",
+                        "alternative_name": "Feature-Policy: speaker-selection",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                    },
+                    {
+                        "version_added": "92",
+                        "alternative_name": "Feature-Policy: speaker-selection",
+                        "partial_implementation": true,
+                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.setsinkid.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false

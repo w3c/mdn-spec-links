@@ -285,5 +285,44 @@
             },
             "title": "IdleDetector"
         }
+    ],
+    "api-permissions-policy": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "idle-detection",
+            "slug": "HTTP/Headers/Permissions-Policy/idle-detection",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/idle-detection",
+            "summary": "The HTTP Permissions-Policy header idle-detection directive controls whether the current document is allowed to use the Idle Detection API to detect when users are interacting with their devices, for example to report \"available\"/\"away\" status in chat applications.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "Permissions-Policy: idle-detection"
+        }
     ]
 }

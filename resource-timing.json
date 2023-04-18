@@ -341,7 +341,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PerformanceResourceTiming.json",
             "name": "decodedBodySize",
@@ -367,7 +368,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -469,7 +470,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PerformanceResourceTiming.json",
             "name": "encodedBodySize",
@@ -495,7 +497,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -722,6 +724,45 @@
             "title": "PerformanceResourceTiming: redirectStart property"
         }
     ],
+    "dom-performanceresourcetiming-renderblockingstatus": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/PerformanceResourceTiming.json",
+            "name": "renderBlockingStatus",
+            "slug": "API/PerformanceResourceTiming/renderBlockingStatus",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/renderBlockingStatus",
+            "summary": "The renderBlockingStatus read-only property returns the render-blocking status of the resource.",
+            "support": {
+                "chrome": {
+                    "version_added": "107"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "107"
+                }
+            },
+            "title": "PerformanceResourceTiming: renderBlockingStatus property"
+        }
+    ],
     "dom-performanceresourcetiming-requeststart": [
         {
             "engines": [
@@ -851,6 +892,45 @@
             "title": "PerformanceResourceTiming: responseStart property"
         }
     ],
+    "dom-performanceresourcetiming-responsestatus": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/PerformanceResourceTiming.json",
+            "name": "responseStatus",
+            "slug": "API/PerformanceResourceTiming/responseStatus",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseStatus",
+            "summary": "The responseStatus read-only property represents the HTTP response status code returned when fetching the resource.",
+            "support": {
+                "chrome": {
+                    "version_added": "109"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "109"
+                }
+            },
+            "title": "PerformanceResourceTiming: responseStatus property"
+        }
+    ],
     "dom-performanceresourcetiming-secureconnectionstart": [
         {
             "engines": [
@@ -908,7 +988,7 @@
             "summary": "The toJSON() method of the PerformanceResourceTiming interface is a serializer; it returns a JSON representation of the PerformanceResourceTiming object.",
             "support": {
                 "chrome": {
-                    "version_added": "43"
+                    "version_added": "45"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -941,7 +1021,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/PerformanceResourceTiming.json",
             "name": "transferSize",
@@ -967,7 +1048,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -993,7 +1074,7 @@
             "summary": "The workerStart read-only property of the PerformanceResourceTiming interface returns a DOMHighResTimeStamp immediately before dispatching the FetchEvent if a Service Worker thread is already running, or immediately before starting the Service Worker thread if it is not already running. If the resource is not intercepted by a Service Worker the property will always return 0.",
             "support": {
                 "chrome": {
-                    "version_added": "43"
+                    "version_added": "46"
                 },
                 "chrome_android": "mirror",
                 "edge": {

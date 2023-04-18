@@ -97,7 +97,7 @@
                 },
                 "chrome_android": "mirror",
                 "edge": {
-                    "version_added": "12"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "39"
@@ -140,7 +140,7 @@
                 },
                 "chrome_android": "mirror",
                 "edge": {
-                    "version_added": "12"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "39",
@@ -184,7 +184,7 @@
                 },
                 "chrome_android": "mirror",
                 "edge": {
-                    "version_added": "12"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "39"
@@ -227,7 +227,7 @@
                 },
                 "chrome_android": "mirror",
                 "edge": {
-                    "version_added": "12"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "39"
@@ -252,6 +252,49 @@
             "title": "MediaDeviceInfo: label property"
         }
     ],
+    "dom-mediadeviceinfo-tojson": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaDeviceInfo.json",
+            "name": "toJSON",
+            "slug": "API/MediaDeviceInfo/toJSON",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaDeviceInfo/toJSON",
+            "summary": "The toJSON() method of the MediaDeviceInfo interface is a serializer; it returns a JSON representation of the MediaDeviceInfo object.",
+            "support": {
+                "chrome": {
+                    "version_added": "47"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "42"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaDeviceInfo: toJSON() method"
+        }
+    ],
     "device-info": [
         {
             "engines": [
@@ -270,7 +313,7 @@
                 },
                 "chrome_android": "mirror",
                 "edge": {
-                    "version_added": "12"
+                    "version_added": "14"
                 },
                 "firefox": {
                     "version_added": "39"
@@ -415,7 +458,13 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "39"
+                        "version_added": "preview",
+                        "notes": "<code>enumerateDevices()</code> enumerates both input and output devices. Previously only input devices were returned."
+                    },
+                    {
+                        "version_added": "39",
+                        "partial_implementation": true,
+                        "notes": "<code>enumerateDevices()</code> only returns input devices."
                     },
                     {
                         "version_added": "63",
@@ -1977,7 +2026,7 @@
             "summary": "The MediaStreamTrackEvent() constructor returns a new MediaStreamTrackEvent object, which represents an event signaling that a MediaStreamTrack has been added to or removed from a MediaStream.",
             "support": {
                 "chrome": {
-                    "version_added": "26"
+                    "version_added": "55"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -4273,6 +4322,130 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
+            },
+            "title": "Permissions-Policy: microphone"
+        }
+    ],
+    "permissions-policy-integration": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "altname": [
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "camera",
+            "slug": "HTTP/Headers/Permissions-Policy/camera",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/camera",
+            "summary": "The HTTP Permissions-Policy header camera directive controls whether the current document is allowed to use video input devices.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "64",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "74",
+                    "alternative_name": "Feature-Policy: camera",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": "11.1",
+                    "alternative_name": "Feature-Policy: camera"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ]
+            },
+            "title": "Permissions-Policy: camera"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "altname": [
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "microphone",
+            "slug": "HTTP/Headers/Permissions-Policy/microphone",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/microphone",
+            "summary": "The HTTP Permissions-Policy header microphone directive controls whether the current document is allowed to use audio input devices.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "64",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "74",
+                    "alternative_name": "Feature-Policy: microphone",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "48"
+                },
+                "opera_android": {
+                    "version_added": "45"
+                },
+                "safari": {
+                    "version_added": "11.1",
+                    "alternative_name": "Feature-Policy: microphone"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ]
             },
             "title": "Permissions-Policy: microphone"
         }

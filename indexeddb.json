@@ -1288,7 +1288,7 @@
             "summary": "The databases method of the IDBFactory interface returns a list representing all the available databases, including their names and versions.",
             "support": {
                 "chrome": {
-                    "version_added": "71"
+                    "version_added": "72"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -1623,9 +1623,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/IDBIndex.json",
             "name": "getAllKeys",
             "slug": "API/IDBIndex/getAllKeys",
@@ -1638,13 +1635,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "44",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.indexedDB.experimental"
-                        }
-                    ]
+                    "version_added": "44"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -3346,7 +3337,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "8"
+                    "version_added": "10.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",

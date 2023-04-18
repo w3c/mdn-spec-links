@@ -48,7 +48,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -116,7 +116,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -184,7 +184,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -252,7 +252,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -320,7 +320,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -388,7 +388,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1963,9 +1963,7 @@
                 "deno": {
                     "version_added": "1.24"
                 },
-                "edge": {
-                    "version_added": "12"
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": "1.5"
                 },
@@ -2248,7 +2246,7 @@
             "summary": "The message event is fired on a MessagePort object when a message arrives on that channel.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -2513,7 +2511,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DedicatedWorkerGlobalScope.json",
             "name": "messageerror_event",
@@ -2544,7 +2543,7 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
                 },
                 "safari_ios": "mirror",
@@ -2559,7 +2558,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/MessagePort.json",
             "name": "messageerror_event",
@@ -2601,7 +2601,7 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
                 },
                 "safari_ios": "mirror",
@@ -2616,7 +2616,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Window.json",
             "name": "messageerror_event",
@@ -2644,7 +2645,7 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
                 },
                 "safari_ios": "mirror",
@@ -2659,7 +2660,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Worker.json",
             "name": "messageerror_event",
@@ -2693,7 +2695,7 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
                 },
                 "safari_ios": "mirror",
@@ -3583,7 +3585,7 @@
             "summary": "The CanvasRenderingContext2D.createImageData() method of the Canvas 2D API creates a new, blank ImageData object with the specified dimensions. All of the pixels in the new object are transparent black.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -4094,7 +4096,7 @@
             "summary": "The CanvasRenderingContext2D method fillText(), part of the Canvas 2D API, draws a text string at the specified coordinates, filling the string's characters with the current fillStyle. An optional parameter allows specifying a maximum width for the rendered text, which the user agent will achieve by condensing the text or by using a lower font size.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -4184,7 +4186,7 @@
             "summary": "The CanvasRenderingContext2D.font property of the Canvas 2D API specifies the current text style to use when drawing text. This string uses the same syntax as the CSS font specifier.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -4403,7 +4405,7 @@
             "summary": "The CanvasRenderingContext2D method getImageData() of the Canvas 2D API returns an ImageData object representing the underlying pixel data for a specified portion of the canvas.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -5139,7 +5141,7 @@
             "summary": "The CanvasRenderingContext2D.measureText() method returns a TextMetrics object that contains information about the measured text (such as its width, for example).",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -5282,7 +5284,7 @@
             "summary": "The CanvasRenderingContext2D.putImageData() method of the Canvas 2D API paints data from the given ImageData object onto the canvas. If a dirty rectangle is provided, only the pixels from that rectangle are painted. This method is not affected by the canvas transformation matrix.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -5591,6 +5593,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "api/CanvasRenderingContext2D.json",
@@ -5605,7 +5608,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "112"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -5832,7 +5835,7 @@
             "summary": "The CanvasRenderingContext2D.setTransform() method of the Canvas 2D API resets (overrides) the current transformation to the identity matrix, and then invokes a transformation described by the arguments of this method. This lets you scale, rotate, translate (move), and skew the context.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6210,7 +6213,7 @@
             "summary": "The CanvasRenderingContext2D method strokeText(), part of the Canvas 2D API, strokes — that is, draws the outlines of — the characters of a text string at the specified coordinates. An optional parameter allows specifying a maximum width for the rendered text, which the user agent will achieve by condensing the text or by using a lower font size.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6259,7 +6262,7 @@
             "summary": "The CanvasRenderingContext2D.textAlign property of the Canvas 2D API specifies the current text alignment used when drawing text.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -6308,7 +6311,7 @@
             "summary": "The CanvasRenderingContext2D.textBaseline property of the Canvas 2D API specifies the current text baseline used when drawing text.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -8290,7 +8293,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/DedicatedWorkerGlobalScope.json",
             "name": "messageerror_event",
@@ -8321,7 +8325,7 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
                 },
                 "safari_ios": "mirror",
@@ -8575,7 +8579,7 @@
             "summary": "The activeElement read-only property of the Document interface returns the Element within the DOM that currently has focus.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -8637,7 +8641,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": "10"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -9260,7 +9264,7 @@
             "summary": "The hasFocus() method of the Document interface returns a boolean value indicating whether the document or any element inside the document has focus. This method can be used to determine whether the active element in a document has focus.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -10192,6 +10196,84 @@
                 }
             },
             "title": "Element: scroll event"
+        }
+    ],
+    "handler-onscrollend": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Document.json",
+            "name": "scrollend_event",
+            "slug": "API/Document/scrollend_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/scrollend_event",
+            "summary": "The scrollend event fires when the document view has completed scrolling. Scrolling is considered completed when the scroll position has no more pending updates and the user has completed their gesture.",
+            "support": {
+                "chrome": {
+                    "version_added": "preview"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "preview"
+                }
+            },
+            "title": "Document: scrollend event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Element.json",
+            "name": "scrollend_event",
+            "slug": "API/Element/scrollend_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollend_event",
+            "summary": "The scrollend event fires when element scrolling has completed. Scrolling is considered completed when the scroll position has no more pending updates and the user has completed their gesture.",
+            "support": {
+                "chrome": {
+                    "version_added": "preview"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "109"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "preview"
+                }
+            },
+            "title": "Element: scrollend event"
         }
     ],
     "document.title": [
@@ -11952,6 +12034,49 @@
             "title": "Element: paste event"
         }
     ],
+    "handler-onsecuritypolicyviolation": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/Element.json",
+            "name": "securitypolicyviolation_event",
+            "slug": "API/Element/securitypolicyviolation_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/securitypolicyviolation_event",
+            "summary": "The securitypolicyviolation event is fired when a Content Security Policy is violated.",
+            "support": {
+                "chrome": {
+                    "version_added": "41"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "15"
+                },
+                "firefox": {
+                    "version_added": "63"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Element: securitypolicyviolation event"
+        }
+    ],
     "handler-onwheel": [
         {
             "engines": [
@@ -12002,7 +12127,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "checkValidity",
@@ -12026,7 +12152,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12042,7 +12168,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "form",
@@ -12066,7 +12193,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12082,7 +12209,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "labels",
@@ -12106,7 +12234,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12122,7 +12250,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "reportValidity",
@@ -12146,7 +12275,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12162,7 +12291,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "setFormValue",
@@ -12186,7 +12316,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12202,7 +12332,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "setValidity",
@@ -12226,7 +12357,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12242,7 +12373,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "shadowRoot",
@@ -12251,7 +12383,7 @@
             "summary": "The shadowRoot read-only property of the ElementInternals interface returns the ShadowRoot for this element.",
             "support": {
                 "chrome": {
-                    "version_added": "77"
+                    "version_added": "88"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -12266,13 +12398,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "88"
                 }
             },
             "title": "ElementInternals: shadowRoot property"
@@ -12282,7 +12414,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "validationMessage",
@@ -12306,7 +12439,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12322,7 +12455,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "validity",
@@ -12346,7 +12480,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12362,7 +12496,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "willValidate",
@@ -12386,7 +12521,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -12402,7 +12537,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/ElementInternals.json",
             "name": "ElementInternals",
@@ -12426,7 +12562,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/197960'>bug 197960</a>."
                 },
                 "safari_ios": "mirror",
@@ -13117,7 +13253,7 @@
             "summary": "An object of this type is returned by the files property of the HTML <input> element; this lets you access the list of files selected with the <input type=\"file\"> element. It's also used for a list of files dropped into web content when using the drag and drop API; see the DataTransfer object for details on this usage.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -13167,7 +13303,7 @@
             "summary": "The HTMLInputElement.files property allows you to access the FileList selected with the <input type=\"file\"> element.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -14792,7 +14928,7 @@
             "summary": "The Audio() constructor creates and returns a new HTMLAudioElement which can be either attached to a document for the user to interact with and/or listen to, or can be used offscreen to manage and play audio.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -14843,7 +14979,7 @@
             "summary": "The HTMLAudioElement interface provides access to the properties of <audio> elements, as well as methods to manipulate them.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -15780,7 +15916,7 @@
             "summary": "The HTMLCanvasElement.toDataURL() method returns a data URL containing a representation of the image in the format specified by the type parameter.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -15821,7 +15957,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/HTMLCanvasElement.json",
             "name": "transferControlToOffscreen",
@@ -15845,7 +15982,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -16170,6 +16307,43 @@
                 }
             },
             "title": "HTMLDetailsElement: toggle event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "toggle_event",
+            "slug": "API/HTMLElement/toggle_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event",
+            "summary": "The toggle event fires when an element with the popover attribute is about to be opened or closed.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLElement: toggle event"
         }
     ],
     "htmldetailselement": [
@@ -16779,7 +16953,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/HTMLElement.json",
             "name": "attachInternals",
@@ -16803,7 +16978,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/197960'>bug 197960</a>."
                 },
                 "safari_ios": "mirror",
@@ -16814,6 +16989,45 @@
                 }
             },
             "title": "HTMLElement: attachInternals() method"
+        }
+    ],
+    "event-beforetoggle": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "beforetoggle_event",
+            "slug": "API/HTMLElement/beforetoggle_event",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/beforetoggle_event",
+            "summary": "The beforetoggle event fires when an element with the popover attribute is about to be opened or closed.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLElement: beforetoggle event"
         }
     ],
     "dom-blur-dev": [
@@ -17087,7 +17301,7 @@
             "summary": "The dataset read-only property of the HTMLElement interface provides read/write access to custom data attributes (data-*) on elements. It exposes a map of strings (DOMStringMap) with an entry for each data-* attribute.",
             "support": {
                 "chrome": {
-                    "version_added": "8"
+                    "version_added": "7"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -18013,6 +18227,45 @@
             "title": "HTMLElement: hidden property"
         }
     ],
+    "dom-hidepopover": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "hidePopover",
+            "slug": "API/HTMLElement/hidePopover",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidePopover",
+            "summary": "The HTMLElement.hidePopover() method opens an element that has a valid popover attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLElement: hidePopover() method"
+        }
+    ],
     "dom-inert": [
         {
             "engines": [
@@ -18032,11 +18285,9 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "preview"
+                    "version_added": "112"
                 },
-                "firefox_android": {
-                    "version_added": false
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -18152,6 +18403,49 @@
                 }
             },
             "title": "HTMLElement: input event"
+        }
+    ],
+    "dom-inputmode": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "inputMode",
+            "slug": "API/HTMLElement/inputMode",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inputMode",
+            "summary": "The HTMLElement property inputMode reflects the value of the element's inputmode attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "66"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "95"
+                },
+                "firefox_android": {
+                    "version_added": "79"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLElement: inputMode property"
         }
     ],
     "dom-iscontenteditable-dev": [
@@ -18346,6 +18640,45 @@
             "title": "HTMLElement: outerText property"
         }
     ],
+    "dom-showpopover": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "showPopover",
+            "slug": "API/HTMLElement/showPopover",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/showPopover",
+            "summary": "The HTMLElement.showPopover() method opens an element that has a valid popover attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLElement: showPopover() method"
+        }
+    ],
     "dom-tabindex": [
         {
             "engines": [
@@ -18442,6 +18775,45 @@
                 }
             },
             "title": "HTMLElement: title property"
+        }
+    ],
+    "dom-togglepopover": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "togglePopover",
+            "slug": "API/HTMLElement/togglePopover",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/togglePopover",
+            "summary": "The HTMLElement.togglePopover() method opens an element that has a valid popover attribute.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLElement: togglePopover() method"
         }
     ],
     "htmlelement": [
@@ -18967,9 +19339,7 @@
                 "firefox": {
                     "version_added": "72"
                 },
-                "firefox_android": {
-                    "version_added": false
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
@@ -20316,7 +20686,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "9"
+                    "version_added": "9.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -20484,6 +20854,59 @@
                 }
             },
             "title": "SVGImageElement: decoding property"
+        }
+    ],
+    "attr-img-fetchpriority": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLImageElement.json",
+            "name": "fetchPriority",
+            "slug": "API/HTMLImageElement/fetchPriority",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority",
+            "summary": "The fetchPriority property of the HTMLImageElement interface represents a hint given to the browser on how it should prioritize the fetch of the image relative to other images.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "101",
+                        "version_removed": "102",
+                        "alternative_name": "fetchpriority"
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "102",
+                        "alternative_name": "fetchpriority"
+                    }
+                ]
+            },
+            "title": "HTMLImageElement: fetchPriority property"
         }
     ],
     "dom-img-height-dev": [
@@ -20809,7 +21232,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "9"
+                    "version_added": "9.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -22227,6 +22650,59 @@
             "title": "HTMLLinkElement: as property"
         }
     ],
+    "attr-link-fetchpriority": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLLinkElement.json",
+            "name": "fetchPriority",
+            "slug": "API/HTMLLinkElement/fetchPriority",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement/fetchPriority",
+            "summary": "The fetchPriority property of the HTMLLinkElement interface represents a hint given to the browser on how it should prioritize the preload of the given resource relative to other resources of the same type.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": "101",
+                        "version_removed": "102",
+                        "alternative_name": "fetchpriority"
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "102"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "102",
+                        "alternative_name": "fetchpriority"
+                    }
+                ]
+            },
+            "title": "HTMLLinkElement: fetchPriority property"
+        }
+    ],
     "dom-link-referrerpolicy": [
         {
             "engines": [
@@ -22470,7 +22946,7 @@
             "summary": "The abort event is fired when the resource was not fully loaded, but not as the result of an error.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -22519,7 +22995,7 @@
             "summary": "The abort event is fired when the resource was not fully loaded, but not as the result of an error.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -22576,8 +23052,8 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
                         }
                     ]
                 },
@@ -22613,8 +23089,8 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
                         }
                     ]
                 }
@@ -22636,7 +23112,7 @@
             "summary": "The HTMLMediaElement.autoplay property reflects the autoplay HTML attribute, indicating whether playback should automatically begin as soon as enough media is available to do so without interruption.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -22687,7 +23163,7 @@
             "summary": "The buffered read-only property of HTMLMediaElement objects returns a new static normalized TimeRanges object that represents the ranges of the media resource, if any, that the user agent has buffered at the moment the buffered property is accessed.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23017,7 +23493,7 @@
             "summary": "The HTMLMediaElement.controls property reflects the controls HTML attribute, which controls whether user interface controls for playing the media item will be displayed.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23118,7 +23594,7 @@
             "summary": "The HTMLMediaElement.currentSrc property contains the absolute URL of the chosen media resource. This could happen, for example, if the web server selects a media file based on the resolution of the user's display. The value is an empty string if the networkState property is EMPTY.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23169,7 +23645,7 @@
             "summary": "The HTMLMediaElement interface's currentTime property specifies the current playback time in seconds.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23267,7 +23743,7 @@
             "summary": "The HTMLMediaElement.defaultPlaybackRate property indicates the default playback rate for the media.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23318,7 +23794,7 @@
             "summary": "The read-only HTMLMediaElement property duration indicates the length of the element's media in seconds.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23573,7 +24049,7 @@
             "summary": "The HTMLMediaElement.ended property indicates whether the media element has ended playback.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23726,7 +24202,7 @@
             "summary": "The HTMLMediaElement.error property is the MediaError object for the most recent error, or null if there has not been an error. When an error event is received by the element, you can determine details about what happened by examining this object.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23777,7 +24253,7 @@
             "summary": "The error event is fired when the resource could not be loaded due to an error (for example, a network connectivity problem).",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23826,7 +24302,7 @@
             "summary": "The error event is fired when the resource could not be loaded due to an error (for example, a network connectivity problem).",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -23863,7 +24339,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Window.json",
             "name": "messageerror_event",
@@ -23891,7 +24368,7 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
                 },
                 "safari_ios": "mirror",
@@ -23960,7 +24437,7 @@
             "summary": "The HTMLMediaElement method load() resets the media element to its initial state and begins the process of selecting a media source and loading the media in preparation for playback to begin at the beginning.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -24215,7 +24692,7 @@
             "summary": "The loadstart event is fired when the browser has started to load a resource.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -24264,7 +24741,7 @@
             "summary": "The loadstart event is fired when the browser has started to load a resource.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -24364,7 +24841,7 @@
             "summary": "The HTMLMediaElement.muted property indicates whether the media element is muted.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -24415,7 +24892,7 @@
             "summary": "The HTMLMediaElement.networkState property indicates the current state of the fetching of media over the network.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -24469,7 +24946,7 @@
             "summary": "The HTMLMediaElement.pause() method will pause playback of the media, if the media is already in a paused state this method will have no effect.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -24622,7 +25099,7 @@
             "summary": "The read-only HTMLMediaElement.paused property tells whether the media element is paused.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -24673,7 +25150,7 @@
             "summary": "The HTMLMediaElement play() method attempts to begin playback of the media. It returns a Promise which is resolved when playback has been successfully started.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -24826,7 +25303,7 @@
             "summary": "The HTMLMediaElement.playbackRate property sets the rate at which the media is being played back. This is used to implement user controls for fast forward, slow motion, and so forth. The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -25035,7 +25512,7 @@
             "summary": "The progress event is fired periodically as the browser loads a resource.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -25084,7 +25561,7 @@
             "summary": "The progress event is fired periodically as the browser loads a resource.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -25235,7 +25712,7 @@
             "summary": "The HTMLMediaElement.readyState property indicates the readiness state of the media.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -25286,7 +25763,7 @@
             "summary": "The seekable read-only property of HTMLMediaElement objects returns a new static normalized TimeRanges object that represents the ranges of the media resource, if any, that the user agent is able to seek to at the time seekable property is accessed.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -25541,7 +26018,7 @@
             "summary": "The HTMLMediaElement.src property reflects the value of the HTML media element's src attribute, which indicates the URL of a media resource to use in the element.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -25593,15 +26070,20 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject",
             "summary": "The srcObject property of the HTMLMediaElement interface sets or returns the object which serves as the source of the media associated with the HTMLMediaElement.",
             "support": {
-                "chrome": {
-                    "version_added": "52",
-                    "partial_implementation": true,
-                    "notes": "Only supports <code>MediaStream</code> objects (see <a href='https://crbug.com/506273'>bug 506273</a>)."
-                },
+                "chrome": [
+                    {
+                        "version_added": "108",
+                        "partial_implementation": true,
+                        "notes": "Support added for <code>MediaSourceHandle</code> objects transferred from dedicated workers where they were obtained from <code>MediaSource.handle</code> (see <a href='https://crbug.com/878133'>bug 878133</a>)."
+                    },
+                    {
+                        "version_added": "52",
+                        "partial_implementation": true,
+                        "notes": "Support added for <code>MediaStream</code> objects (see <a href='https://crbug.com/506273'>bug 506273</a>)."
+                    }
+                ],
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
+                "edge": "mirror",
                 "firefox": [
                     {
                         "version_added": "42",
@@ -25626,16 +26108,19 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "52",
-                    "partial_implementation": true,
-                    "notes": "Only supports <code>MediaStream</code> objects (see <a href='https://crbug.com/506273'>bug 506273</a>."
-                },
-                "edge_blink": {
-                    "version_added": "79",
-                    "partial_implementation": true,
-                    "notes": "Only supports <code>MediaStream</code> objects (see <a href='https://crbug.com/506273'>bug 506273</a>)."
-                }
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "108",
+                        "partial_implementation": true,
+                        "notes": "Support added for <code>MediaSourceHandle</code> objects transferred from dedicated workers where they were obtained from <code>MediaSource.handle</code> (see <a href='https://crbug.com/878133'>bug 878133</a>)."
+                    },
+                    {
+                        "version_added": "79",
+                        "partial_implementation": true,
+                        "notes": "Support added for <code>MediaStream</code> objects (see <a href='https://crbug.com/506273'>bug 506273</a>)."
+                    }
+                ]
             },
             "title": "HTMLMediaElement: srcObject property"
         }
@@ -26017,8 +26502,8 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
                         }
                     ]
                 },
@@ -26054,8 +26539,8 @@
                     "flags": [
                         {
                             "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
                         }
                     ]
                 }
@@ -26080,7 +26565,7 @@
             "summary": "The HTMLMediaElement.volume property sets the volume at which the media will be played.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -26133,7 +26618,7 @@
             "summary": "The volumechange event is fired when the volume has changed.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -26184,7 +26669,7 @@
             "summary": "The volumechange event is fired when the volume has changed.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -26235,7 +26720,7 @@
             "summary": "The waiting event is fired when playback has stopped because of a temporary lack of data.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -26286,7 +26771,7 @@
             "summary": "The waiting event is fired when playback has stopped because of a temporary lack of data.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -26337,7 +26822,7 @@
             "summary": "The HTMLMediaElement interface adds to HTMLElement the properties and methods needed to support basic media-related capabilities that are common to audio and video.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -28456,7 +28941,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/HTMLSlotElement.json",
             "name": "assign",
@@ -28480,7 +28966,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -28711,7 +29197,7 @@
             "summary": "The HTMLSourceElement interface provides special properties (beyond the regular HTMLElement object interface it also has available to it by inheritance) for manipulating <source> elements.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -30758,7 +31244,7 @@
             "summary": "The HTMLVideoElement interface's read-only videoHeight property indicates the intrinsic height of the video, expressed in CSS pixels. In simple terms, this is the height of the media in its natural size.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -30809,7 +31295,7 @@
             "summary": "The HTMLVideoElement interface's read-only videoWidth property indicates the intrinsic width of the video, expressed in CSS pixels. In simple terms, this is the width of the media in its natural size.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -30860,7 +31346,7 @@
             "summary": "Implemented by the <video> element, the HTMLVideoElement interface provides special properties and methods for manipulating video objects. It also inherits properties and methods of HTMLMediaElement and HTMLElement.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -30895,6 +31381,96 @@
                 }
             },
             "title": "HTMLVideoElement"
+        }
+    ],
+    "the-hashchangeevent-interface": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HashChangeEvent.json",
+            "name": "HashChangeEvent",
+            "slug": "API/HashChangeEvent/HashChangeEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HashChangeEvent/HashChangeEvent",
+            "summary": "The HashChangeEvent() constructor creates a new HashChangeEvent object, that is used by the hashchange event fired at the window object when the fragment of the URL changes.",
+            "support": {
+                "chrome": {
+                    "version_added": "16"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "11"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HashChangeEvent: HashChangeEvent() constructor"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HashChangeEvent.json",
+            "name": "HashChangeEvent",
+            "slug": "API/HashChangeEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HashChangeEvent",
+            "summary": "The HashChangeEvent interface represents events that fire when the fragment identifier of the URL has changed.",
+            "support": {
+                "chrome": {
+                    "version_added": "8"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "3.6"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "8"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "10.6"
+                },
+                "opera_android": {
+                    "version_added": "11"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HashChangeEvent"
         }
     ],
     "dom-hashchangeevent-newurl-dev": [
@@ -30989,55 +31565,6 @@
                 }
             },
             "title": "HashChangeEvent: oldURL property"
-        }
-    ],
-    "the-hashchangeevent-interface": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HashChangeEvent.json",
-            "name": "HashChangeEvent",
-            "slug": "API/HashChangeEvent",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HashChangeEvent",
-            "summary": "The HashChangeEvent interface represents events that fire when the fragment identifier of the URL has changed.",
-            "support": {
-                "chrome": {
-                    "version_added": "8"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.6"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "8"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "10.6"
-                },
-                "opera_android": {
-                    "version_added": "11"
-                },
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "5"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HashChangeEvent"
         }
     ],
     "dom-history-back-dev": [
@@ -31694,7 +32221,7 @@
             "summary": "The ImageBitmapRenderingContext.transferFromImageBitmap() method displays the given ImageBitmap in the canvas associated with this rendering context. The ownership of the ImageBitmap is transferred to the canvas as well.",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "66"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -31742,7 +32269,7 @@
             "summary": "The ImageBitmapRenderingContext interface is a canvas rendering context that provides the functionality to replace the canvas's contents with the given ImageBitmap. Its context id (the first argument to HTMLCanvasElement.getContext() or OffscreenCanvas.getContext()) is \"bitmaprenderer\".",
             "support": {
                 "chrome": {
-                    "version_added": "56"
+                    "version_added": "66"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -31800,7 +32327,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -32756,7 +33283,7 @@
             "summary": "The read-only property MediaError.code returns a numeric value which represents the kind of error that occurred on a media element. To get a text string with specific diagnostic information, see MediaError.message.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -32846,7 +33373,7 @@
             "summary": "The MediaError interface represents an error which occurred while handling media in an HTML media element based on HTMLMediaElement, such as <audio> or <video>.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -32902,7 +33429,7 @@
             "summary": "The MessageChannel() constructor of the MessageChannel interface returns a new MessageChannel object with two new MessagePort objects.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -32963,7 +33490,7 @@
             "summary": "The port1 read-only property of the MessageChannel interface returns the first port of the message channel — the port attached to the context that originated the channel.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33016,7 +33543,7 @@
             "summary": "The port2 read-only property of the MessageChannel interface returns the second port of the message channel — the port attached to the context at the other end of the channel, which the message is initially sent to.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33069,7 +33596,7 @@
             "summary": "The MessageChannel interface of the Channel Messaging API allows us to create a new message channel and send data through it via its two MessagePort properties.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33183,7 +33710,7 @@
             "summary": "The data read-only property of the MessageEvent interface represents the data sent by the message emitter.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33238,7 +33765,7 @@
             "summary": "The lastEventId read-only property of the MessageEvent interface is a string representing a unique ID for the event.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33293,7 +33820,7 @@
             "summary": "The origin read-only property of the MessageEvent interface is a string representing the origin of the message emitter.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33348,7 +33875,7 @@
             "summary": "The ports read-only property of the MessageEvent interface is an array of MessagePort objects representing the ports associated with the channel the message is being sent through (where appropriate, e.g. in channel messaging or when sending a message to a shared worker).",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33403,7 +33930,7 @@
             "summary": "The source read-only property of the MessageEvent interface is a MessageEventSource (which can be a WindowProxy, MessagePort, or ServiceWorker object) representing the message emitter.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33458,7 +33985,7 @@
             "summary": "The MessageEvent interface represents a message received by a target object.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33513,7 +34040,7 @@
             "summary": "The close() method of the MessagePort interface disconnects the port, so it is no longer active. This stops the flow of messages to that port.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33574,7 +34101,7 @@
             "summary": "The message event is fired on a MessagePort object when a message arrives on that channel.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33627,7 +34154,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/MessagePort.json",
             "name": "messageerror_event",
@@ -33669,7 +34197,7 @@
                     "version_added": "47"
                 },
                 "safari": {
-                    "version_added": false,
+                    "version_added": "16.4",
                     "notes": "See <a href='https://webkit.org/b/171216'>bug 171216</a>."
                 },
                 "safari_ios": "mirror",
@@ -33696,7 +34224,7 @@
             "summary": "The postMessage() method of the MessagePort interface sends a message from the port, and optionally, transfers ownership of objects to other browsing contexts.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": [
@@ -33761,7 +34289,7 @@
             "summary": "The start() method of the MessagePort interface starts the sending of messages queued on the port. This method is only needed when using EventTarget.addEventListener; it is implied when using onmessage.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -33814,7 +34342,7 @@
             "summary": "The MessagePort interface of the Channel Messaging API represents one of the two ports of a MessageChannel, allowing messages to be sent from one port and listening out for them arriving at the other.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -34016,6 +34544,9 @@
                     "version_added": "1"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.27"
+                },
                 "edge": {
                     "version_added": "12"
                 },
@@ -34117,6 +34648,9 @@
                     "notes": "Before Chrome 65, <code>navigator.languages[0]</code> is not guaranteed to equal <code>navigator.language</code>."
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.27"
+                },
                 "edge": {
                     "version_added": "16"
                 },
@@ -34223,7 +34757,7 @@
             "summary": "Returns the online status of the browser. The property returns a boolean value, with true meaning online and false meaning offline. The property sends updates whenever the browser's ability to connect to the network changes. The update occurs when the user follows links or when a script requests a remote page. For example, the property should return false when users click links soon after they lose internet connection.",
             "support": {
                 "chrome": {
-                    "version_added": "1",
+                    "version_added": "2",
                     "notes": "Earlier versions of Chrome incorrectly return true when a tab is first opened, but it starts reporting the correct connectivity status after the first network event. Windows: 11, macOS: 14, Chrome OS: 13, Linux: Always returns <code>true</code>. For history, see <a href='https://crbug.com/7469'>crbug.com/7469</a>."
                 },
                 "chrome_android": {
@@ -34330,7 +34864,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Navigator.json",
             "name": "pdfViewerEnabled",
@@ -34354,7 +34889,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34414,10 +34949,60 @@
             "title": "Navigator: registerProtocolHandler() method"
         }
     ],
-    "dom-navigator-useractivation": [
+    "dom-navigator-unregisterprotocolhandler-dev": [
         {
             "engines": [
                 "blink"
+            ],
+            "filename": "api/Navigator.json",
+            "name": "unregisterProtocolHandler",
+            "slug": "API/Navigator/unregisterProtocolHandler",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/unregisterProtocolHandler",
+            "summary": "The Navigator method unregisterProtocolHandler() removes a protocol handler for a given URL scheme.",
+            "support": {
+                "chrome": {
+                    "version_added": "38"
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": [
+                    {
+                        "version_added": "25"
+                    },
+                    {
+                        "version_added": "12.1",
+                        "version_removed": "15"
+                    }
+                ],
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Navigator: unregisterProtocolHandler() method"
+        }
+    ],
+    "dom-navigator-useractivation": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
             ],
             "filename": "api/Navigator.json",
             "name": "userActivation",
@@ -34441,7 +35026,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34604,7 +35189,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvas.json",
             "name": "OffscreenCanvas",
@@ -34628,7 +35214,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34643,10 +35229,9 @@
     "dom-offscreencanvas-converttoblob-dev": [
         {
             "engines": [
-                "blink"
-            ],
-            "altname": [
-                "gecko"
+                "blink",
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvas.json",
             "name": "convertToBlob",
@@ -34659,10 +35244,15 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "105",
-                    "alternative_name": "toBlob"
-                },
+                "firefox": [
+                    {
+                        "version_added": "105"
+                    },
+                    {
+                        "version_added": "105",
+                        "alternative_name": "toBlob"
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -34671,7 +35261,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34687,7 +35277,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvas.json",
             "name": "getContext",
@@ -34711,7 +35302,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34727,7 +35318,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvas.json",
             "name": "height",
@@ -34751,7 +35343,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34767,7 +35359,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvas.json",
             "name": "transferToImageBitmap",
@@ -34791,7 +35384,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34807,7 +35400,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvas.json",
             "name": "width",
@@ -34831,7 +35425,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34847,7 +35441,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvas.json",
             "name": "OffscreenCanvas",
@@ -34871,7 +35466,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34887,7 +35482,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvasRenderingContext2D.json",
             "name": "commit",
@@ -34911,7 +35507,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34927,7 +35523,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/OffscreenCanvasRenderingContext2D.json",
             "name": "OffscreenCanvasRenderingContext2D",
@@ -34951,7 +35548,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -34961,6 +35558,92 @@
                 }
             },
             "title": "OffscreenCanvasRenderingContext2D"
+        }
+    ],
+    "the-pagetransitionevent-interface": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/PageTransitionEvent.json",
+            "name": "PageTransitionEvent",
+            "slug": "API/PageTransitionEvent/PageTransitionEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PageTransitionEvent/PageTransitionEvent",
+            "summary": "The PageTransitionEvent() constructor creates a new PageTransitionEvent object, that is used by the pageshow or pagehide events, fired at the window object when a page is loaded or unloaded.",
+            "support": {
+                "chrome": {
+                    "version_added": "16"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "11"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PageTransitionEvent: PageTransitionEvent() constructor"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/PageTransitionEvent.json",
+            "name": "PageTransitionEvent",
+            "slug": "API/PageTransitionEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PageTransitionEvent",
+            "summary": "The PageTransitionEvent event object is available inside handler functions for the pageshow and pagehide events, fired when a document is being loaded or unloaded.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1.5"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "11"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "4"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PageTransitionEvent"
         }
     ],
     "dom-pagetransitionevent-persisted-dev": [
@@ -35009,53 +35692,6 @@
                 }
             },
             "title": "PageTransitionEvent: persisted property"
-        }
-    ],
-    "the-pagetransitionevent-interface": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/PageTransitionEvent.json",
-            "name": "PageTransitionEvent",
-            "slug": "API/PageTransitionEvent",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PageTransitionEvent",
-            "summary": "The PageTransitionEvent event object is available inside handler functions for the pageshow and pagehide events, fired when a document is being loaded or unloaded.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1.5"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "11"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "5"
-                },
-                "safari_ios": {
-                    "version_added": "4"
-                },
-                "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PageTransitionEvent"
         }
     ],
     "dom-path2d-dev": [
@@ -35185,6 +35821,94 @@
             "title": "Path2D"
         }
     ],
+    "the-popstateevent-interface": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/PopStateEvent.json",
+            "name": "PopStateEvent",
+            "slug": "API/PopStateEvent/PopStateEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PopStateEvent/PopStateEvent",
+            "summary": "The PopStateEvent() constructor creates a new PopStateEvent object.",
+            "support": {
+                "chrome": {
+                    "version_added": "16"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "11"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PopStateEvent: PopStateEvent() constructor"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/PopStateEvent.json",
+            "name": "PopStateEvent",
+            "slug": "API/PopStateEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PopStateEvent",
+            "summary": "PopStateEvent is an interface for the popstate event.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "10"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "6"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "PopStateEvent"
+        }
+    ],
     "dom-popstateevent-state-dev": [
         {
             "engines": [
@@ -35230,53 +35954,6 @@
                 }
             },
             "title": "PopStateEvent: state property"
-        }
-    ],
-    "the-popstateevent-interface": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/PopStateEvent.json",
-            "name": "PopStateEvent",
-            "slug": "API/PopStateEvent",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/PopStateEvent",
-            "summary": "PopStateEvent is an interface for the popstate event.",
-            "support": {
-                "chrome": {
-                    "version_added": "4"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "4"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "10"
-                },
-                "oculus": "mirror",
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "6"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PopStateEvent"
         }
     ],
     "unhandled-promise-rejections:dom-event-constructor": [
@@ -35604,7 +36281,7 @@
             "summary": "The error event of the SharedWorker interface fires when an error occurs in the worker.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": {
                     "version_added": false
@@ -35721,7 +36398,7 @@
             "summary": "The SharedWorker() constructor creates a SharedWorker object that executes the script at the specified URL. This script must obey the same-origin policy.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": {
                     "version_added": false
@@ -35788,7 +36465,7 @@
             "summary": "The port property of the SharedWorker interface returns a MessagePort object used to communicate and control the shared worker.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": {
                     "version_added": false
@@ -35855,10 +36532,11 @@
             "summary": "The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope, SharedWorkerGlobalScope.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/154571'>bug 154571</a>."
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -37331,7 +38009,7 @@
             "summary": "The read-only width property of the TextMetrics interface contains the text's advance width (the width of that inline box) in CSS pixels.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -37380,7 +38058,7 @@
             "summary": "The TextMetrics interface represents the dimensions of a piece of text in the canvas; a TextMetrics instance can be retrieved using the CanvasRenderingContext2D.measureText() method.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -37637,7 +38315,7 @@
                 },
                 "chrome_android": "mirror",
                 "edge": {
-                    "version_added": "12"
+                    "version_added": "18"
                 },
                 "firefox": {
                     "version_added": "31"
@@ -37650,7 +38328,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -37693,7 +38371,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "7"
+                    "version_added": "8"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -39075,7 +39753,8 @@
     "dom-useractivation-hasbeenactive": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/UserActivation.json",
             "name": "hasBeenActive",
@@ -39099,7 +39778,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -39114,7 +39793,8 @@
     "dom-useractivation-isactive": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/UserActivation.json",
             "name": "isActive",
@@ -39123,7 +39803,7 @@
             "summary": "The read-only hasBeenActive property of the UserActivation interface indicates whether the current window has sticky user activation (see sticky activation).",
             "support": {
                 "chrome": {
-                    "version_added": "97"
+                    "version_added": "72"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -39138,13 +39818,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "97"
+                    "version_added": "79"
                 }
             },
             "title": "UserActivation: hasBeenActive property"
@@ -39153,7 +39833,8 @@
     "the-useractivation-interface": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/UserActivation.json",
             "name": "UserActivation",
@@ -39177,7 +39858,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -39248,7 +39929,7 @@
             "summary": "The read-only patternMismatch property of a ValidityState object indicates if the value of an <input>, after having been edited by the user, does not conform to the constraints set by the element's pattern attribute.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -39299,7 +39980,7 @@
             "summary": "The read-only rangeOverflow property of a ValidityState object indicates if the value of an <input>, after having been edited by the user, does not conform to the constraints set by the element's max attribute.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -39350,7 +40031,7 @@
             "summary": "The read-only rangeUnderflow property of a ValidityState object indicates if the value of an <input>, after having been edited by the user, does not conform to the constraints set by the element's min attribute.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -39401,7 +40082,7 @@
             "summary": "The read-only stepMismatch property of a ValidityState object indicates if the value of an <input>, after having been edited by the user, does not conform to the constraints set by the element's step attribute.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -39452,7 +40133,7 @@
             "summary": "The read-only tooLong property of a ValidityState object indicates if the value of an <input> or <textarea>, after having been edited by the user, exceeds the maximum code-unit length established by the element's maxlength attribute.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -39553,7 +40234,7 @@
             "summary": "The read-only typeMismatch property of a ValidityState object indicates if the value of an <input>, after having been edited by the user, does not conform to the constraints set by the element's type attribute.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -39604,7 +40285,7 @@
             "summary": "The ValidityState interface represents the validity states that an element can be in, with respect to constraint validation. Together, they help explain why an element's value fails to validate, if it's not valid.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -42189,12 +42870,8 @@
                     "version_added": "11"
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "5"
                 },
@@ -42238,12 +42915,8 @@
                     "version_added": "11"
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "5"
                 },
@@ -42475,7 +43148,7 @@
             "summary": "The window.postMessage() method safely enables cross-origin communication between Window objects; e.g., between a page and a pop-up that it spawned, or between a page and an iframe embedded within it.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -42924,7 +43597,7 @@
             "summary": "The read-only sessionStorage property accesses a session Storage object for the current origin. sessionStorage is similar to localStorage; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.",
             "support": {
                 "chrome": {
-                    "version_added": "5"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -43633,7 +44306,7 @@
             "summary": "The postMessage() method of the Worker interface sends a message to the worker. The first parameter is the data to send to the worker. The data may be any JavaScript object that can be handled by the structured clone algorithm.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": [
@@ -43739,7 +44412,7 @@
             "summary": "The terminate() method of the Worker interface immediately terminates the Worker. This does not offer the worker an opportunity to finish its operations; it is stopped at once.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -43814,7 +44487,7 @@
             "summary": "The Worker interface of the Web Workers API represents a background task that can be created via script, which can send messages back to its creator.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44347,7 +45020,7 @@
             "summary": "The hash property of a WorkerLocation object returns the hash part of the worker's location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44399,7 +45072,7 @@
             "summary": "The host property of a WorkerLocation object returns the host part of the worker's location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44451,7 +45124,7 @@
             "summary": "The hostname property of a WorkerLocation object returns the hostname part of the worker's location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44503,7 +45176,7 @@
             "summary": "The href property of a WorkerLocation object returns a string containing the serialized URL for the worker's location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44601,7 +45274,7 @@
             "summary": "The pathname property of a WorkerLocation object returns the pathname part of the worker's location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44653,7 +45326,7 @@
             "summary": "The port property of a WorkerLocation object returns the port part of the worker's location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44705,7 +45378,7 @@
             "summary": "The protocol property of a WorkerLocation object returns the protocol part of the worker's location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44757,7 +45430,7 @@
             "summary": "The search property of a WorkerLocation object returns the search part of the worker's location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44809,7 +45482,7 @@
             "summary": "The toString() stringifier method of a WorkerLocation object returns a string containing the serialized URL for the worker's location. It is a synonym for WorkerLocation.href.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -44863,7 +45536,7 @@
             "summary": "The WorkerLocation interface defines the absolute location of the script executed by the Worker. Such an object is initialized for each worker and is available via the WorkerGlobalScope.location property obtained by calling self.location.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "4"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -45984,7 +46657,8 @@
     "selector-ltr": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/selectors/dir.json",
             "name": "dir",
@@ -46015,7 +46689,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -53077,47 +53751,6 @@
             "title": "rel=preload"
         }
     ],
-    "link-type-prerender": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "html/elements/link.json",
-            "name": "prerender",
-            "slug": "HTML/Link_types/prerender",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/prerender",
-            "summary": "The prerender keyword for the rel attribute of the <link> element is a hint to browsers that the user might need the target resource for the next navigation, and therefore the browser can likely improve the user experience by preemptively fetching and processing the resource — for example, by fetching its subresources or performing some rendering in the background offscreen.",
-            "support": {
-                "chrome": {
-                    "version_added": "13"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": "11"
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "rel=prerender"
-        }
-    ],
     "linkTypes": [
         {
             "engines": [
@@ -54811,6 +55444,135 @@
             "title": "<section>: The Generic Section element"
         }
     ],
+    "attr-select-multiple": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/select.json",
+            "name": "multiple",
+            "slug": "HTML/Attributes/multiple",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/multiple",
+            "summary": "The Boolean multiple attribute, if set, means the form control accepts one or more values. Valid for the email and file input types and the <select>, the manner by which the user opts for multiple values depends on the form control.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": true
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: multiple"
+        }
+    ],
+    "attr-select-required": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/select.json",
+            "name": "required",
+            "slug": "HTML/Attributes/required",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required",
+            "summary": "The Boolean required attribute, if present, indicates that the user must specify a value for the input before the owning form can be submitted.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "10"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: required"
+        }
+    ],
+    "attr-select-size": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "html/elements/select.json",
+            "name": "size",
+            "slug": "HTML/Attributes/size",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/size",
+            "summary": "The size attribute defines the width of the <input> and the height of the <select> element. For the input, if the type attribute is text or password then it's the number of characters. This must be an integer value 0 or higher. If no size is specified, or an invalid value is specified, the input has no size declared, and the form control will be the default width based on the user agent. If CSS targets the element with properties impacting the width, CSS takes precedence.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": true
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "HTML attribute: size"
+        }
+    ],
     "the-select-element": [
         {
             "engines": [
@@ -55640,7 +56402,8 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": true,
+                    "notes": "Backgrounds applied to <code>&lt;thead&gt;</code> elements will be applied to each table cell, rather than the entire header. To mimic the behavior of other browsers, set the <code>background-attachment</code> CSS property to <code>fixed</code>."
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -56143,9 +56906,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "html/global_attributes.json",
             "name": "autocapitalize",
             "slug": "HTML/Global_attributes/autocapitalize",
@@ -56158,14 +56918,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "83",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.forms.autocapitalize",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "111"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -56764,25 +57517,14 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "preview"
+                    "version_added": "112"
                 },
-                "firefox_android": {
-                    "version_added": false
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": "47",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#enable-experimental-web-platform-features",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": "15.5"
@@ -57188,6 +57930,44 @@
             "title": "nonce"
         }
     ],
+    "the-popover-attribute": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "html/global_attributes.json",
+            "name": "popover",
+            "slug": "HTML/Global_attributes/popover",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/popover",
+            "summary": "The popover global attribute is used to specify that the element should be hidden on the page until it is opened by interacting with an invoking element (a <button> or <input type=\"button\"> with a popovertarget), or manually via showPopover().",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "popover"
+        }
+    ],
     "attr-slot": [
         {
             "engines": [
@@ -57417,6 +58197,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "html/global_attributes.json",
@@ -57431,7 +58212,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "111"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -57591,32 +58372,34 @@
                 }
             },
             "title": "Permissions-Policy: autoplay"
-        }
-    ],
-    "document-domain-feature": [
+        },
         {
             "engines": [
-                "blink",
+                "blink"
+            ],
+            "altname": [
                 "gecko"
             ],
-            "needsflag": [
-                "gecko"
-            ],
-            "filename": "http/headers/Feature-Policy.json",
-            "name": "document-domain",
-            "slug": "HTTP/Headers/Feature-Policy/document-domain",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/document-domain",
-            "summary": "The HTTP Permissions-Policy header document-domain directive controls whether the current document is allowed to set document.domain.",
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "autoplay",
+            "slug": "HTTP/Headers/Permissions-Policy/autoplay",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/autoplay",
+            "summary": "The HTTP Permissions-Policy header autoplay directive controls whether the current document is allowed to autoplay media requested through the HTMLMediaElement interface.",
             "support": {
-                "chrome": {
-                    "version_added": "77"
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
+                "chrome": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "64",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ],
+                "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
                     "version_added": "74",
+                    "alternative_name": "Feature-Policy: autoplay",
                     "flags": [
                         {
                             "type": "preference",
@@ -57638,9 +58421,106 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ]
+            },
+            "title": "Permissions-Policy: autoplay"
+        }
+    ],
+    "policy-controlled-features": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "needsflag": [
+                "blink"
+            ],
+            "altname": [
+                "gecko"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "document-domain",
+            "slug": "HTTP/Headers/Permissions-Policy/document-domain",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/document-domain",
+            "summary": "The HTTP Permissions-Policy header document-domain directive controls whether the current document is allowed to set document.domain.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "88",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--enable-blink-features=ExperimentalProductivityFeatures"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "64",
+                        "alternative_name": "Feature-Policy",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--enable-blink-features=ExperimentalProductivityFeatures"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "74",
+                    "alternative_name": "Feature-Policy: document-domain",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.security.featurePolicy.header.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "88",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--enable-blink-features=ExperimentalProductivityFeatures"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "Feature-Policy",
+                        "flags": [
+                            {
+                                "type": "runtime_flag",
+                                "name": "--enable-blink-features=ExperimentalProductivityFeatures"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Permissions-Policy: document-domain"
         }
@@ -57699,7 +58579,8 @@
     "early-hints": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "http/status.json",
             "name": "103",
@@ -57708,15 +58589,33 @@
             "summary": "The HTTP 103 Early Hints information response may be sent by a server while it is still preparing a response, with hints about the resources that the server is expecting the final response will link. This allows a browser to start preloading resources even before the server has prepared and sent that final response.",
             "support": {
                 "chrome": {
-                    "version_added": "103"
+                    "version_added": "103",
+                    "notes": "Supported in HTTP/2 and later (SPDY/QUIC)"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
+                "edge": "mirror",
+                "firefox": [
+                    {
+                        "version_added": "preview",
+                        "notes": "Supported in HTTP1.0 and later"
+                    },
+                    {
+                        "version_added": "102",
+                        "notes": "Supported in HTTP1.0 and later",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "network.early-hints.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "network.early-hints.preconnect.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -57728,7 +58627,8 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "103"
+                    "version_added": "103",
+                    "notes": "Supported in HTTP/2 and later (SPDY/QUIC)"
                 }
             },
             "title": "103 Early Hints"
@@ -57758,7 +58658,8 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serialized properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 additionally supports serialization of <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                        "Version 104 adds serialization of <code>stack</code> in the main thread (<a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>).",
+                        "Version 110 adds serialization of <code>stack</code> in workers (<a href='https://developer.mozilla.org/docs/Web/API/Worker/postMessage'><code>worker.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -57806,7 +58707,8 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                        "Version 104 also serializes <code>stack</code> in the main thread (<a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>).",
+                        "Version 110 also serializes <code>stack</code> in workers (<a href='https://developer.mozilla.org/docs/Web/API/Worker/postMessage'><code>worker.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -57854,7 +58756,8 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                        "Version 104 also serializes <code>stack</code> in the main thread (<a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>).",
+                        "Version 110 also serializes <code>stack</code> in workers (<a href='https://developer.mozilla.org/docs/Web/API/Worker/postMessage'><code>worker.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -57902,7 +58805,8 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                        "Version 104 also serializes <code>stack</code> in the main thread (<a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>).",
+                        "Version 110 also serializes <code>stack</code> in workers (<a href='https://developer.mozilla.org/docs/Web/API/Worker/postMessage'><code>worker.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -57950,7 +58854,8 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                        "Version 104 also serializes <code>stack</code> in the main thread (<a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>).",
+                        "Version 110 also serializes <code>stack</code> in workers (<a href='https://developer.mozilla.org/docs/Web/API/Worker/postMessage'><code>worker.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -57998,7 +58903,8 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                        "Version 104 also serializes <code>stack</code> in the main thread (<a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>).",
+                        "Version 110 also serializes <code>stack</code> in workers (<a href='https://developer.mozilla.org/docs/Web/API/Worker/postMessage'><code>worker.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -58046,7 +58952,8 @@
                     "version_added": "103",
                     "notes": [
                         "Version 103 serializable properties: <code>name</code>, <code>message</code>, <code>cause</code>, <code>fileName</code>, <code>lineNumber</code> and <code>columnNumber</code>.",
-                        "Version 104 also serializes <code>stack</code> in <a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>."
+                        "Version 104 also serializes <code>stack</code> in the main thread (<a href='https://developer.mozilla.org/docs/Web/API/Window/postMessage'><code>window.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>).",
+                        "Version 110 also serializes <code>stack</code> in workers (<a href='https://developer.mozilla.org/docs/Web/API/Worker/postMessage'><code>worker.postMessage()</code></a> and <a href='https://developer.mozilla.org/docs/Web/API/structuredClone'><code>structuredClone()</code></a>)."
                     ]
                 },
                 "firefox_android": "mirror",
@@ -58118,6 +59025,59 @@
         }
     ],
     "hostgetimportmetaproperties": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/operators/import_meta.json",
+            "name": "resolve",
+            "slug": "JavaScript/Reference/Operators/import.meta/resolve",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import.meta/resolve",
+            "summary": "import.meta.resolve() is a built-in function defined on the import.meta object of a JavaScript module that resolves a module specifier to a URL using the current module's URL as base.",
+            "support": {
+                "chrome": {
+                    "version_added": "105"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.24"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "106"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "12.6.0",
+                    "partial_implementation": true,
+                    "flags": [
+                        {
+                            "type": "runtime_flag",
+                            "name": "--experimental-import-meta-resolve"
+                        }
+                    ],
+                    "notes": "Returns a Promise."
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "105"
+                }
+            },
+            "title": "import.meta.resolve()"
+        },
         {
             "engines": [
                 "blink",
@@ -58779,7 +59739,7 @@
             "summary": "The Channel Messaging API allows two separate scripts running in different browsing contexts attached to the same document (e.g., two IFrames, or the main document and an IFrame, two documents via a SharedWorker, or two workers) to communicate directly, passing messages between one another through two-way channels (or pipes) with a port at each end.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -58838,7 +59798,7 @@
             "summary": "The Channel Messaging API allows two separate scripts running in different browsing contexts attached to the same document (e.g., two <iframe> elements, the main document and a single <iframe>, or two documents via a SharedWorker) to communicate directly, passing messages between each other through two-way channels (or pipes) with a port at each end.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -58993,7 +59953,7 @@
             "summary": "The window.postMessage() method safely enables cross-origin communication between Window objects; e.g., between a page and a pop-up that it spawned, or between a page and an iframe embedded within it.",
             "support": {
                 "chrome": {
-                    "version_added": "1"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -59637,10 +60597,11 @@
             "summary": "The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope, SharedWorkerGlobalScope.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/154571'>bug 154571</a>."
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -59704,10 +60665,11 @@
             "summary": "The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope, SharedWorkerGlobalScope.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": {
-                    "version_added": false
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/154571'>bug 154571</a>."
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -59998,7 +60960,7 @@
             "summary": "Web Workers makes it possible to run a script operation in a background thread separate from the main execution thread of a web application. The advantage of this is that laborious processing can be performed in a separate thread, allowing the main (usually the UI) thread to run without being blocked/slowed down.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "2"
                 },
                 "chrome_android": "mirror",
                 "deno": {

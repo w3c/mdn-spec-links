@@ -3011,45 +3011,6 @@
             "title": "RTCIceServer"
         }
     ],
-    "dom-icetransport-component": [
-        {
-            "engines": [],
-            "filename": "api/RTCIceTransport.json",
-            "name": "component",
-            "slug": "API/RTCIceTransport/component",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/component",
-            "summary": "The read-only RTCIceTransport property component specifies whether the object is serving to transport RTP or RTCP.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "RTCIceTransport: component property"
-        }
-    ],
     "dom-icetransport-gatheringstate": [
         {
             "engines": [
@@ -3333,7 +3294,8 @@
     "dom-rtcicetransport-getselectedcandidatepair": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceTransport.json",
             "name": "getSelectedCandidatePair",
@@ -3359,7 +3321,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3415,7 +3377,8 @@
     "event-icetransport-selectedcandidatepairchange": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceTransport.json",
             "name": "selectedcandidatepairchange_event",
@@ -3439,7 +3402,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3454,7 +3417,8 @@
     "dom-rtcicetransport-onselectedcandidatepairchange": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/RTCIceTransport.json",
             "name": "selectedcandidatepairchange_event",
@@ -3478,7 +3442,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -5757,9 +5721,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/RTCRtpContributingSource.json",
             "name": "audioLevel",
             "slug": "API/RTCRtpContributingSource/audioLevel",
@@ -5772,14 +5733,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "59",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "media.peerconnection.rtpsourcesapi.enable",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "59"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -5808,9 +5762,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/RTCRtpContributingSource.json",
             "name": "source",
             "slug": "API/RTCRtpContributingSource/source",
@@ -5825,14 +5776,7 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "59",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "media.peerconnection.rtpsourcesapi.enable",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "59"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -5865,9 +5809,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/RTCRtpContributingSource.json",
             "name": "timestamp",
             "slug": "API/RTCRtpContributingSource/timestamp",
@@ -5883,13 +5824,6 @@
                 },
                 "firefox": {
                     "version_added": "59",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "media.peerconnection.rtpsourcesapi.enable",
-                            "value_to_set": "true"
-                        }
-                    ],
                     "notes": "Starting in version 60, the <code>timestamp</code> is correctly computed based on the window's <code>Performance</code> time, rather than <code>Date.getTime()</code>."
                 },
                 "firefox_android": "mirror",
@@ -5923,9 +5857,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/RTCRtpContributingSource.json",
             "name": "RTCRtpContributingSource",
             "slug": "API/RTCRtpContributingSource",
@@ -5940,14 +5871,7 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "59",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "media.peerconnection.rtpsourcesapi.enable",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "59"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -6014,6 +5938,51 @@
                 }
             },
             "title": "RTCRtpEncodingParameters: maxBitrate property"
+        }
+    ],
+    "dom-rtcrtpencodingparameters-maxframerate": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCRtpEncodingParameters.json",
+            "name": "maxFramerate",
+            "slug": "API/RTCRtpEncodingParameters/maxFramerate",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpEncodingParameters/maxFramerate",
+            "summary": "The maxFramerate property of the RTCRtpEncodingParameters dictionary specifies the maximum framerate that can be used to send the encoding, in frames per second.",
+            "support": {
+                "chrome": {
+                    "version_added": "81"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "101",
+                    "partial_implementation": true,
+                    "notes": "Zero is treated as 'no fps limit' (see <a href='https://bugzil.la/1611957'>bug 1611957</a>)."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "81"
+                }
+            },
+            "title": "RTCRtpEncodingParameters: maxFramerate property"
         }
     ],
     "dom-rtcrtpencodingparameters-scaleresolutiondownby": [
@@ -6187,6 +6156,402 @@
             "title": "RTCRtpReceiver: getContributingSources() method"
         }
     ],
+    "dom-rtcrtpparameters-codecs": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpReceiver.json",
+            "name": "return_object_property_codecs",
+            "slug": "API/RTCRtpReceiver/getParameters#codecs",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getParameters#codecs",
+            "summary": "The getParameters() method of the RTCRtpReceiver interface returns an object describing the current configuration for the encoding and transmission of media on the receiver's track.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpReceiver: getParameters() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "return_object_property_codecs",
+            "slug": "API/RTCRtpSender/getParameters#codecs",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getParameters#codecs",
+            "summary": "The getParameters() method of the RTCRtpSender interface returns an object describing the current configuration for how the sender's track will be encoded and transmitted to a remote RTCRtpReceiver.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "46",
+                    "partial_implementation": true,
+                    "notes": "The property is defined but not implemented/used."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: getParameters() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "parameters_codecs_parameter",
+            "slug": "API/RTCRtpSender/setParameters#codecs",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/setParameters#codecs",
+            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "46",
+                    "partial_implementation": true,
+                    "notes": "The property is defined but not implemented/used."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: setParameters() method"
+        }
+    ],
+    "dom-rtcrtpparameters-headerextensions": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpReceiver.json",
+            "name": "return_object_property_headerExtensions",
+            "slug": "API/RTCRtpReceiver/getParameters#headerextensions",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getParameters#headerextensions",
+            "summary": "The getParameters() method of the RTCRtpReceiver interface returns an object describing the current configuration for the encoding and transmission of media on the receiver's track.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpReceiver: getParameters() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "return_object_property_headerExtensions",
+            "slug": "API/RTCRtpSender/getParameters#headerextensions",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getParameters#headerextensions",
+            "summary": "The getParameters() method of the RTCRtpSender interface returns an object describing the current configuration for how the sender's track will be encoded and transmitted to a remote RTCRtpReceiver.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "46",
+                    "partial_implementation": true,
+                    "notes": "The property is defined but not implemented/used."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: getParameters() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "parameters_headerExtensions_parameter",
+            "slug": "API/RTCRtpSender/setParameters#headerextensions",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/setParameters#headerextensions",
+            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "46",
+                    "partial_implementation": true,
+                    "notes": "The property is defined but not implemented/used."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: setParameters() method"
+        }
+    ],
+    "dom-rtcrtpparameters-rtcp": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpReceiver.json",
+            "name": "return_object_property_rtcp",
+            "slug": "API/RTCRtpReceiver/getParameters#rtcp",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getParameters#rtcp",
+            "summary": "The getParameters() method of the RTCRtpReceiver interface returns an object describing the current configuration for the encoding and transmission of media on the receiver's track.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpReceiver: getParameters() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "return_object_property_rtcp",
+            "slug": "API/RTCRtpSender/getParameters#rtcp",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getParameters#rtcp",
+            "summary": "The getParameters() method of the RTCRtpSender interface returns an object describing the current configuration for how the sender's track will be encoded and transmitted to a remote RTCRtpReceiver.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "46",
+                    "partial_implementation": true,
+                    "notes": "The property is defined but not implemented/used."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: getParameters() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "parameters_rtcp_parameter",
+            "slug": "API/RTCRtpSender/setParameters#rtcp",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/setParameters#rtcp",
+            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "46",
+                    "partial_implementation": true,
+                    "notes": "The property is defined but not implemented/used."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: setParameters() method"
+        }
+    ],
     "dom-rtcrtpreceiver-getparameters": [
         {
             "engines": [
@@ -6203,7 +6568,9 @@
                     "version_added": "59"
                 },
                 "chrome_android": "mirror",
-                "edge": "mirror",
+                "edge": {
+                    "version_added": false
+                },
                 "firefox": {
                     "version_added": false
                 },
@@ -6442,92 +6809,6 @@
             "title": "RTCRtpReceiver"
         }
     ],
-    "dom-rtcrtpsendparameters-encodings": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/RTCRtpSendParameters.json",
-            "name": "encodings",
-            "slug": "API/RTCRtpSendParameters/encodings",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSendParameters/encodings",
-            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
-            "support": {
-                "chrome": {
-                    "version_added": "69"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false,
-                    "notes": "Firefox uses <code>RTCRtpParameters.encodings</code> instead."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "12.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCRtpSender: setParameters() method"
-        }
-    ],
-    "dom-rtcrtpsendparameters": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/RTCRtpSendParameters.json",
-            "name": "RTCRtpSendParameters",
-            "slug": "API/RTCRtpSendParameters",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSendParameters",
-            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
-            "support": {
-                "chrome": {
-                    "version_added": "69"
-                },
-                "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false,
-                    "notes": "Firefox expects an <code><a href='https://developer.mozilla.org/docs/Web/API/RTCRtpParameters'>RTCRtpParameters</a></code> object instead."
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "12.1"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "RTCRtpSender: setParameters() method"
-        }
-    ],
     "dom-rtcrtpsender-dtmf": [
         {
             "engines": [
@@ -6611,6 +6892,172 @@
             "title": "RTCRtpSender: getCapabilities() static method"
         }
     ],
+    "dom-rtcrtpsendparameters-encodings": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "return_object_property_encodings",
+            "slug": "API/RTCRtpSender/getParameters#encodings",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getParameters#encodings",
+            "summary": "The getParameters() method of the RTCRtpSender interface returns an object describing the current configuration for how the sender's track will be encoded and transmitted to a remote RTCRtpReceiver.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "46"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: getParameters() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "parameters_encodings_parameter",
+            "slug": "API/RTCRtpSender/setParameters#encodings",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/setParameters#encodings",
+            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "46"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: setParameters() method"
+        }
+    ],
+    "dom-rtcrtpsendparameters-transactionid": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "return_object_property_transactionId",
+            "slug": "API/RTCRtpSender/getParameters#transactionid",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getParameters#transactionid",
+            "summary": "The getParameters() method of the RTCRtpSender interface returns an object describing the current configuration for how the sender's track will be encoded and transmitted to a remote RTCRtpReceiver.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: getParameters() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCRtpSender.json",
+            "name": "parameters_transactionId_parameter",
+            "slug": "API/RTCRtpSender/setParameters#transactionid",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/setParameters#transactionid",
+            "summary": "The setParameters() method of the RTCRtpSender interface applies changes the configuration of sender's track, which is the MediaStreamTrack for which the RTCRtpSender is responsible.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCRtpSender: setParameters() method"
+        }
+    ],
     "dom-rtcrtpsender-getparameters": [
         {
             "engines": [
@@ -6628,7 +7075,9 @@
                     "version_added": "68"
                 },
                 "chrome_android": "mirror",
-                "edge": "mirror",
+                "edge": {
+                    "version_added": false
+                },
                 "firefox": {
                     "version_added": "46"
                 },
@@ -6753,7 +7202,9 @@
                     "version_added": "68"
                 },
                 "chrome_android": "mirror",
-                "edge": "mirror",
+                "edge": {
+                    "version_added": false
+                },
                 "firefox": [
                     {
                         "version_added": "64"
@@ -6962,9 +7413,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/RTCRtpSynchronizationSource.json",
             "name": "RTCRtpSynchronizationSource",
             "slug": "API/RTCRtpSynchronizationSource",
@@ -6977,14 +7425,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "59",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "media.peerconnection.rtpsourcesapi.enable",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "59"
                 },
                 "firefox_android": "mirror",
                 "ie": {

@@ -1051,9 +1051,7 @@
         {
             "engines": [
                 "blink",
-                "gecko"
-            ],
-            "altname": [
+                "gecko",
                 "webkit"
             ],
             "filename": "api/GeolocationPositionError.json",
@@ -1100,10 +1098,15 @@
                     "alternative_name": "PositionError",
                     "version_added": "16"
                 },
-                "safari": {
-                    "alternative_name": "PositionError",
-                    "version_added": "5"
-                },
+                "safari": [
+                    {
+                        "version_added": "13.1"
+                    },
+                    {
+                        "alternative_name": "PositionError",
+                        "version_added": "5"
+                    }
+                ],
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": [
@@ -1221,6 +1224,63 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
+            },
+            "title": "Permissions-Policy: geolocation"
+        }
+    ],
+    "permissions-policy": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "altname": [
+                "gecko"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "geolocation",
+            "slug": "HTTP/Headers/Permissions-Policy/geolocation",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/geolocation",
+            "summary": "The HTTP Permissions-Policy header geolocation directive controls whether the current document is allowed to use the Geolocation Interface.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "64",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "74",
+                    "alternative_name": "Feature-Policy: geolocation",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ]
             },
             "title": "Permissions-Policy: geolocation"
         }

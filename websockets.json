@@ -163,7 +163,7 @@
             "summary": "The wasClean read-only property of the CloseEvent interface returns true if the connection closed cleanly.",
             "support": {
                 "chrome": {
-                    "version_added": "13"
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -213,7 +213,7 @@
             "summary": "A CloseEvent is sent to clients using WebSockets when the connection is closed. This is delivered to the listener indicated by the WebSocket object's onclose attribute.",
             "support": {
                 "chrome": {
-                    "version_added": "13"
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -269,7 +269,7 @@
             "summary": "The WebSocket() constructor returns a new WebSocket object.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -376,7 +376,7 @@
             "summary": "The WebSocket.bufferedAmount read-only property returns the number of bytes of data that have been queued using calls to send() but not yet transmitted to the network. This value resets to zero once all queued data has been sent. This value does not reset to zero when the connection is closed; if you keep calling send(), this will continue to climb.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -426,7 +426,7 @@
             "summary": "The WebSocket.close() method closes the WebSocket connection or connection attempt, if any. If the connection is already CLOSED, this method does nothing.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -476,7 +476,7 @@
             "summary": "The close event is fired when a connection with a WebSocket is closed.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -630,7 +630,7 @@
             "summary": "The message event is fired when data is received through a WebSocket.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -682,7 +682,7 @@
             "summary": "The open event is fired when a connection with a WebSocket is opened.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -784,7 +784,7 @@
             "summary": "The WebSocket.readyState read-only property returns the current state of the WebSocket connection.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -834,7 +834,7 @@
             "summary": "The WebSocket.send() method enqueues the specified data to be transmitted to the server over the WebSocket connection, increasing the value of bufferedAmount by the number of bytes needed to contain the data. If the data can't be sent (for example, because it needs to be buffered but the buffer is full), the socket is closed automatically. The browser will throw an exception if you call send() when the connection is in the CONNECTING state. If you call send() when the connection is in the CLOSING or CLOSED states, the browser will silently discard the data.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -952,7 +952,7 @@
             "summary": "The WebSocket object provides the API for creating and managing a WebSocket connection to a server, as well as for sending and receiving data on the connection.",
             "support": {
                 "chrome": {
-                    "version_added": "4"
+                    "version_added": "5"
                 },
                 "chrome_android": "mirror",
                 "deno": {

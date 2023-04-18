@@ -1445,7 +1445,8 @@
     "dom-encodedvideochunk-encodedvideochunk": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/EncodedVideoChunk.json",
             "name": "EncodedVideoChunk",
@@ -1469,7 +1470,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1484,7 +1485,8 @@
     "dom-encodedvideochunk-bytelength": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/EncodedVideoChunk.json",
             "name": "byteLength",
@@ -1508,7 +1510,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1523,7 +1525,8 @@
     "dom-encodedvideochunk-copyto": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/EncodedVideoChunk.json",
             "name": "copyTo",
@@ -1547,7 +1550,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1562,7 +1565,8 @@
     "dom-encodedvideochunk-duration": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/EncodedVideoChunk.json",
             "name": "duration",
@@ -1586,7 +1590,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1601,7 +1605,8 @@
     "dom-encodedvideochunk-timestamp": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/EncodedVideoChunk.json",
             "name": "timestamp",
@@ -1625,7 +1630,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1640,7 +1645,8 @@
     "dom-encodedvideochunk-type": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/EncodedVideoChunk.json",
             "name": "type",
@@ -1664,7 +1670,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1679,7 +1685,8 @@
     "encodedvideochunk-interface": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/EncodedVideoChunk.json",
             "name": "EncodedVideoChunk",
@@ -1703,7 +1710,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1871,6 +1878,84 @@
             "title": "ImageDecoder: completed property"
         }
     ],
+    "dom-imagedecoder-decode": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ImageDecoder.json",
+            "name": "decode",
+            "slug": "API/ImageDecoder/decode",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ImageDecoder/decode",
+            "summary": "The decode() method of the ImageDecoder interface enqueues a control message to decode the frame of an image.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "ImageDecoder: decode() method"
+        }
+    ],
+    "dom-imagedecoder-istypesupported": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ImageDecoder.json",
+            "name": "isTypeSupported",
+            "slug": "API/ImageDecoder/isTypeSupported",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ImageDecoder/isTypeSupported",
+            "summary": "The ImageDecoder.isTypeSupported() static method checks if a given MIME type can be decoded by the user agent.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "ImageDecoder: isTypeSupported() static method"
+        }
+    ],
     "dom-imagedecoder-reset": [
         {
             "engines": [
@@ -1947,6 +2032,45 @@
                 }
             },
             "title": "ImageDecoder: tracks property"
+        }
+    ],
+    "dom-imagedecoder-type": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ImageDecoder.json",
+            "name": "type",
+            "slug": "API/ImageDecoder/type",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ImageDecoder/type",
+            "summary": "The type read-only property of the ImageDecoder interface reflects the MIME type configured during construction.",
+            "support": {
+                "chrome": {
+                    "version_added": "94"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "94"
+                }
+            },
+            "title": "ImageDecoder: type property"
         }
     ],
     "imagedecoder-interface": [
@@ -2660,7 +2784,8 @@
     "dom-videodecoder-videodecoder": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "VideoDecoder",
@@ -2684,7 +2809,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2699,7 +2824,8 @@
     "dom-videodecoder-close": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "close",
@@ -2723,7 +2849,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2738,7 +2864,8 @@
     "dom-videodecoder-configure": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "configure",
@@ -2762,7 +2889,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2777,7 +2904,8 @@
     "dom-videodecoder-decode": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "decode",
@@ -2801,7 +2929,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2816,7 +2944,8 @@
     "dom-videodecoder-decodequeuesize": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "decodeQueueSize",
@@ -2840,7 +2969,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2855,7 +2984,8 @@
     "dom-videodecoder-flush": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "flush",
@@ -2879,7 +3009,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2894,7 +3024,8 @@
     "dom-videodecoder-reset": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "reset",
@@ -2918,7 +3049,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2933,7 +3064,8 @@
     "dom-videodecoder-state": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "state",
@@ -2957,7 +3089,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2972,7 +3104,8 @@
     "videodecoder-interface": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoDecoder.json",
             "name": "VideoDecoder",
@@ -2996,7 +3129,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3011,7 +3144,8 @@
     "dom-videoencoder-videoencoder": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoEncoder.json",
             "name": "VideoEncoder",
@@ -3035,7 +3169,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3050,7 +3184,8 @@
     "dom-videoencoder-close": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoEncoder.json",
             "name": "close",
@@ -3074,7 +3209,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3089,7 +3224,8 @@
     "dom-videoencoder-configure": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoEncoder.json",
             "name": "configure",
@@ -3113,7 +3249,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3128,7 +3264,8 @@
     "dom-videoencoder-encode": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoEncoder.json",
             "name": "encode",
@@ -3152,7 +3289,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3167,7 +3304,8 @@
     "dom-videoencoder-encodequeuesize": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoEncoder.json",
             "name": "encodeQueueSize",
@@ -3191,7 +3329,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3206,7 +3344,8 @@
     "dom-videoencoder-reset": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoEncoder.json",
             "name": "reset",
@@ -3230,7 +3369,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3245,7 +3384,8 @@
     "dom-videoencoder-state": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoEncoder.json",
             "name": "state",
@@ -3269,7 +3409,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3284,7 +3424,8 @@
     "videoencoder-interface": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoEncoder.json",
             "name": "VideoEncoder",
@@ -3308,7 +3449,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3323,7 +3464,8 @@
     "dom-videoframe-videoframe": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "VideoFrame",
@@ -3347,7 +3489,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3362,7 +3504,8 @@
     "dom-videoframe-allocationsize": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "allocationSize",
@@ -3386,7 +3529,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3401,7 +3544,8 @@
     "dom-videoframe-clone": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "clone",
@@ -3425,7 +3569,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3440,7 +3584,8 @@
     "dom-videoframe-close": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "close",
@@ -3464,7 +3609,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3479,7 +3624,8 @@
     "dom-videoframe-codedheight": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "codedHeight",
@@ -3503,7 +3649,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3518,7 +3664,8 @@
     "dom-videoframe-codedrect": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "codedRect",
@@ -3542,7 +3689,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3557,7 +3704,8 @@
     "dom-videoframe-codedwidth": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "codedWidth",
@@ -3581,7 +3729,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3596,7 +3744,8 @@
     "dom-videoframe-colorspace": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "colorSpace",
@@ -3620,7 +3769,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3635,7 +3784,8 @@
     "dom-videoframe-displayheight": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "displayHeight",
@@ -3659,7 +3809,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3674,7 +3824,8 @@
     "dom-videoframe-displaywidth": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "displayWidth",
@@ -3698,7 +3849,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3713,7 +3864,8 @@
     "dom-videoframe-duration": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "duration",
@@ -3737,7 +3889,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3752,7 +3904,8 @@
     "dom-videoframe-format": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "format",
@@ -3776,7 +3929,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3791,7 +3944,8 @@
     "dom-videoframe-timestamp": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "timestamp",
@@ -3815,7 +3969,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3830,7 +3984,8 @@
     "dom-videoframe-visiblerect": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "visibleRect",
@@ -3854,7 +4009,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3869,7 +4024,8 @@
     "videoframe-interface": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/VideoFrame.json",
             "name": "VideoFrame",
@@ -3893,7 +4049,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",

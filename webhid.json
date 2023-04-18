@@ -1064,5 +1064,44 @@
             },
             "title": "Navigator: hid property"
         }
+    ],
+    "permissions-policy": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "hid",
+            "slug": "HTTP/Headers/Permissions-Policy/hid",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/hid",
+            "summary": "The HTTP Permissions-Policy header hid directive controls whether the current document is allowed to use the WebHID API to connect to uncommon or exotic human interface devices such as alternative keyboards or gamepads.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "Permissions-Policy: hid"
+        }
     ]
 }

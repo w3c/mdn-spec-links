@@ -84,10 +84,16 @@
                 "ie": {
                     "version_added": false
                 },
-                "nodejs": {
-                    "version_added": "16.7.0",
-                    "notes": "From version 14.17.0, a similar method is available as <a href='https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_crypto'><code>crypto.randomUUID()</code></a>."
-                },
+                "nodejs": [
+                    {
+                        "version_added": "19.0.0"
+                    },
+                    {
+                        "version_added": "16.7.0",
+                        "version_removed": "19.0.0",
+                        "notes": "From version 14.17.0, a similar method is available as <a href='https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_crypto'><code>crypto.randomUUID()</code></a>."
+                    }
+                ],
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -198,12 +204,19 @@
                 "ie": {
                     "version_added": "11"
                 },
-                "nodejs": {
-                    "version_added": "15.0.0",
-                    "alternative_name": "crypto.webcrypto",
-                    "partial_implementation": true,
-                    "notes": "<code>Crypto</code> is not a concrete interface, but calling <code>require('crypto').webcrypto</code> returns an instance of the <code>Crypto</code> class."
-                },
+                "nodejs": [
+                    {
+                        "version_added": "19.0.0",
+                        "notes": "<code>Crypto</code> is not a concrete interface, but its methods are available on the global <code>crypto</code> object."
+                    },
+                    {
+                        "version_added": "15.0.0",
+                        "version_removed": "19.0.0",
+                        "alternative_name": "crypto.webcrypto",
+                        "partial_implementation": true,
+                        "notes": "<code>Crypto</code> is not a concrete interface, but calling <code>require('crypto').webcrypto</code> returns an instance of the <code>Crypto</code> class."
+                    }
+                ],
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
@@ -233,9 +246,9 @@
             ],
             "filename": "api/CryptoKey.json",
             "name": "algorithm",
-            "slug": "API/CryptoKey",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
+            "slug": "API/CryptoKey/algorithm",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey/algorithm",
+            "summary": "The read-only algorithm property of the CryptoKey interface returns an object describing the algorithm for which this key can be used, and any associated extra parameters.",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -270,7 +283,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "CryptoKey"
+            "title": "CryptoKey: algorithm property"
         }
     ],
     "dom-cryptokey-extractable": [
@@ -282,9 +295,9 @@
             ],
             "filename": "api/CryptoKey.json",
             "name": "extractable",
-            "slug": "API/CryptoKey",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
+            "slug": "API/CryptoKey/extractable",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey/extractable",
+            "summary": "The read-only extractable property of the CryptoKey interface indicates whether or not the key may be extracted using SubtleCrypto.exportKey() or SubtleCrypto.wrapKey().",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -326,7 +339,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "CryptoKey"
+            "title": "CryptoKey: extractable property"
         }
     ],
     "dom-cryptokey-type": [
@@ -338,9 +351,9 @@
             ],
             "filename": "api/CryptoKey.json",
             "name": "type",
-            "slug": "API/CryptoKey",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
+            "slug": "API/CryptoKey/type",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey/type",
+            "summary": "The read-only type property of the CryptoKey interface indicates which kind of key is represented by the object. It can have the following values:",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -375,7 +388,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "CryptoKey"
+            "title": "CryptoKey: type property"
         }
     ],
     "dom-cryptokey-usages": [
@@ -387,9 +400,9 @@
             ],
             "filename": "api/CryptoKey.json",
             "name": "usages",
-            "slug": "API/CryptoKey",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey",
-            "summary": "The CryptoKey interface of the Web Crypto API represents a cryptographic key obtained from one of the SubtleCrypto methods generateKey(), deriveKey(), importKey(), or unwrapKey().",
+            "slug": "API/CryptoKey/usages",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey/usages",
+            "summary": "The read-only usages property of the CryptoKey interface indicates what can be done with the key.",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -424,7 +437,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "CryptoKey"
+            "title": "CryptoKey: usages property"
         }
     ],
     "cryptokey-interface": [

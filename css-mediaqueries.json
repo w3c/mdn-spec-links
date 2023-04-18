@@ -189,6 +189,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "css/at-rules/media.json",
@@ -203,7 +204,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "110"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -522,6 +523,7 @@
     "mf-overflow-block": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/at-rules/media.json",
@@ -531,7 +533,7 @@
             "summary": "The overflow-block CSS media feature can be used to test how the output device handles content that overflows the initial containing block along the block axis.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "113"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -552,7 +554,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "113"
                 }
             },
             "title": "overflow-block"
@@ -561,6 +563,7 @@
     "mf-overflow-inline": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/at-rules/media.json",
@@ -570,7 +573,7 @@
             "summary": "The overflow-inline CSS media feature can be used to test how the output device handles content that overflows the initial containing block along the inline axis.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "113"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -591,7 +594,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "113"
                 }
             },
             "title": "overflow-inline"
@@ -650,7 +653,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/at-rules/media.json",
             "name": "resolution",
@@ -699,8 +703,7 @@
                     }
                 ],
                 "safari": {
-                    "version_added": false,
-                    "notes": "See <a href='https://webkit.org/b/78087'>bug 78087</a>."
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -719,6 +722,7 @@
     "update": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/at-rules/media.json",
@@ -728,7 +732,7 @@
             "summary": "The update CSS media feature can be used to test how frequently (if at all) the output device is able to modify the appearance of content once rendered.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "113"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -749,7 +753,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "113"
                 }
             },
             "title": "update"

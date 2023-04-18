@@ -145,7 +145,12 @@
     "color-function": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/types/color.json",
             "name": "color",
@@ -154,12 +159,19 @@
             "summary": "The color() functional notation allows a color to be specified in a particular, specified colorspace rather than the implicit sRGB colorspace that most of the other color functions operate in.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "111"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "111",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.more_color_4.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -183,7 +195,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "111"
                 }
             },
             "caniuse": {
@@ -480,7 +492,12 @@
     "lab-colors": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/types/color.json",
             "name": "lab",
@@ -489,12 +506,19 @@
             "summary": "The lab() functional notation expresses a given color in the CIE L*a*b* color space. Lab represents the entire range of color that humans can see.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "111"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "111",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.more_color_4.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -510,14 +534,19 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "111"
                 }
             },
             "title": "lab()"
         },
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/types/color.json",
             "name": "lch",
@@ -526,12 +555,19 @@
             "summary": "The lch() functional notation expresses a given color in the LCH color space. It has the same L axis as lab(), but uses polar coordinates C (Chroma) and H (Hue).",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "111"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "111",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.more_color_4.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -547,7 +583,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "111"
                 }
             },
             "title": "lch()"
@@ -606,7 +642,12 @@
     "ok-lab": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/types/color.json",
             "name": "oklab",
@@ -615,12 +656,19 @@
             "summary": "The oklab() functional notation expresses a given color in the Oklab color space, which attempts to mimic how color is perceived by the human eye. The oklab() works with a Cartesian coordinate system on the Oklab color space, the a- and b-axes. If you want a polar color system, chroma and hue, use oklch().",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "111"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "111",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.more_color_4.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -636,14 +684,19 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "111"
                 }
             },
             "title": "oklab()"
         },
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/types/color.json",
             "name": "oklch",
@@ -652,12 +705,19 @@
             "summary": "The oklch() functional notation expresses a given color in the OKLCH color space. It has the same L axis as oklab(), but uses polar coordinates C (Chroma) and H (Hue).",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "111"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "111",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.more_color_4.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -673,7 +733,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "111"
                 }
             },
             "title": "oklch()"
@@ -790,9 +850,9 @@
             ],
             "filename": "css/types/color.json",
             "name": "transparent",
-            "slug": "CSS/color_value#transparent",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#transparent",
-            "summary": "The <color> CSS data type represents a color. A <color> may also include an alpha-channel transparency value, indicating how the color should composite with its background.",
+            "slug": "CSS/named-color#transparent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/named-color#transparent",
+            "summary": "The <named-color> CSS data type is the name of a color, such as red, blue, black, or lightseagreen. Syntactically, a <named-color> is an <ident>.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -827,7 +887,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "<color>"
+            "title": "<named-color>"
         }
     ],
     "color-syntax": [

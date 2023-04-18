@@ -2,12 +2,12 @@
     "color-mix": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
             "needsflag": [
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "css/types/color.json",
             "name": "color-mix",
@@ -16,7 +16,7 @@
             "summary": "The color-mix() functional notation takes two <color> values and returns the result of mixing them in a given colorspace by a given amount.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "111"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -37,20 +37,25 @@
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
-                "safari": {
-                    "version_added": "15",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "CSS color-mix()"
-                        }
-                    ]
-                },
+                "safari": [
+                    {
+                        "version_added": "16.2"
+                    },
+                    {
+                        "version_added": "15",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "CSS color-mix()"
+                            }
+                        ]
+                    }
+                ],
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "111"
                 }
             },
             "title": "color-mix()"

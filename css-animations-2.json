@@ -84,7 +84,9 @@
     "animation-composition": [
         {
             "engines": [
-                "gecko"
+                "blink",
+                "gecko",
+                "webkit"
             ],
             "needsflag": [
                 "gecko"
@@ -96,7 +98,7 @@
             "summary": "The animation-composition CSS property specifies the composite operation to use when multiple animations affect the same property simultaneously.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "112"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -118,13 +120,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "112"
                 }
             },
             "title": "animation-composition"

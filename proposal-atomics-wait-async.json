@@ -2,7 +2,8 @@
     "atomics.waitasync": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "javascript/builtins/Atomics.json",
             "name": "waitAsync",
@@ -36,7 +37,7 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "16.4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",

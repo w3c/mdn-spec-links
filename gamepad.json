@@ -408,8 +408,7 @@
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/GamepadButton.json",
             "name": "touched",
@@ -435,7 +434,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": false
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -948,6 +947,50 @@
                             "value_to_set": "Enabled"
                         }
                     ]
+                }
+            },
+            "title": "Permissions-Policy: gamepad"
+        },
+        {
+            "engines": [],
+            "altname": [
+                "gecko"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "gamepad",
+            "slug": "HTTP/Headers/Permissions-Policy/gamepad",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/gamepad",
+            "summary": "The HTTP Permissions-Policy header gamepad directive controls whether the current document is allowed to use the Gamepad API.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "91",
+                    "alternative_name": "Feature-Policy: gamepad",
+                    "partial_implementation": true,
+                    "notes": [
+                        "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
+                        "The default allowlist is <code>*</code> instead of <code>self</code> (as required by the specification)."
+                    ]
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
                 }
             },
             "title": "Permissions-Policy: gamepad"

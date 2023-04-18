@@ -3531,9 +3531,7 @@
                     "version_added": false
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": false
                 },
@@ -3574,9 +3572,7 @@
                     "version_added": false
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": false
                 },
@@ -3617,9 +3613,7 @@
                     "version_added": false
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": false
                 },
@@ -3660,9 +3654,7 @@
                     "version_added": false
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "version_added": "11.2"
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": false
                 },
@@ -3675,8 +3667,7 @@
     ],
     "xrsystem-interface": [
         {
-            "engines": [],
-            "altname": [
+            "engines": [
                 "blink"
             ],
             "filename": "api/XRSystem.json",
@@ -3685,10 +3676,16 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem",
             "summary": "The WebXR Device API interface XRSystem provides methods which let you get access to an XRSession object representing a WebXR session. With that XRSession in hand, you can use it to interact with the Augmented Reality (AR) or Virtual Reality (VR) device.",
             "support": {
-                "chrome": {
-                    "alternative_name": "XR",
-                    "version_added": "79"
-                },
+                "chrome": [
+                    {
+                        "version_added": "83"
+                    },
+                    {
+                        "alternative_name": "XR",
+                        "version_added": "79",
+                        "version_removed": "83"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -3705,17 +3702,20 @@
                     "version_added": false
                 },
                 "safari_ios": "mirror",
-                "samsunginternet_android": {
-                    "alternative_name": "XR",
-                    "version_added": "11.2"
-                },
+                "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "alternative_name": "XR",
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "83"
+                    },
+                    {
+                        "alternative_name": "XR",
+                        "version_added": false,
+                        "version_removed": "83"
+                    }
+                ]
             },
             "title": "XRSystem"
         }
@@ -4740,6 +4740,59 @@
                 "edge_blink": {
                     "version_added": "79"
                 }
+            },
+            "title": "Permissions-Policy: xr-spatial-tracking"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "xr-spatial-tracking",
+            "slug": "HTTP/Headers/Permissions-Policy/xr-spatial-tracking",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/xr-spatial-tracking",
+            "summary": "The HTTP Permissions-Policy header xr-spatial-tracking directive controls whether the current document is allowed to use the WebXR Device API.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ],
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": [
+                    {
+                        "version_added": "88"
+                    },
+                    {
+                        "version_added": "79",
+                        "alternative_name": "Feature-Policy"
+                    }
+                ]
             },
             "title": "Permissions-Policy: xr-spatial-tracking"
         }

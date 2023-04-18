@@ -738,5 +738,44 @@
             },
             "title": "WorkerNavigator: serial property"
         }
+    ],
+    "permissions-policy": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "serial",
+            "slug": "HTTP/Headers/Permissions-Policy/serial",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/serial",
+            "summary": "The HTTP Permissions-Policy header serial directive controls whether the current document is allowed to use the Web Serial API to communicate with serial devices, either directly connected via a serial port, or via USB or Bluetooth devices emulating a serial port.",
+            "support": {
+                "chrome": {
+                    "version_added": "89"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "89"
+                }
+            },
+            "title": "Permissions-Policy: serial"
+        }
     ]
 }
