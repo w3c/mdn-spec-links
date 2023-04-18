@@ -1,4 +1,6 @@
 BCD_REPO=https://github.com/mdn/browser-compat-data.git
+# BCD_BRANCH=main
+BCD_BRANCH=sideshowbarker/spec-url-updates
 MDN_REPO=https://github.com/mdn/content.git
 GRIP=grip
 GIT=git
@@ -16,7 +18,7 @@ yarn.lock:
 	$(YARN)
 
 browser-compat-data:
-	$(GIT) clone $(BCD_REPO)
+	$(GIT) clone -b $(BCD_BRANCH) --single-branch $(BCD_REPO)
 
 content:
 	$(GIT) clone $(MDN_REPO)
