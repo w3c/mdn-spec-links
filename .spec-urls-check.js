@@ -34,6 +34,8 @@ const needsSpecURL = (mdnURL) => {
     "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/controller",
     "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/mediaGroup",
     "https://developer.mozilla.org/docs/Web/API/MouseEvent/region",
+    // In the spec, this one is defined by reference to the WebIDL spec
+    "https://developer.mozilla.org/docs/Web/API/PaymentResponse/toJSON",
     // iterables; we explicitly don’t want spec URLs for these
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/entries",
     "https://developer.mozilla.org/docs/Web/API/CSSTransformValue/forEach",
@@ -392,6 +394,14 @@ const checkSpecURL = (
     )
   ) {
     // HTTP Digest header; irrelevant
+    return;
+  }
+  if (
+    spec_url.startsWith(
+      "https://datatracker.ietf.org/doc/html/draft-davidben-http-client-hint-reliability"
+    )
+  ) {
+    // HTTP Critical-CH header; irrelevant
     return;
   }
   if (

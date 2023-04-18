@@ -1216,6 +1216,13 @@ const processSpecURL = (url, feature, bcdData, mdnURL, mdnData) => {
   ) {
     return; // HTTP Digest header; irrelevant
   }
+  if (
+    url.startsWith(
+      "https://datatracker.ietf.org/doc/html/draft-davidben-http-client-hint-reliability"
+    )
+  ) {
+    return; // HTTP Critical-CH header; irrelevant
+  }
   if (url.startsWith("https://www.w3.org/TR/tracking-dnt/")) {
     return; // Obsolete
   }
