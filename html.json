@@ -5418,7 +5418,8 @@
     "dom-context-2d-reset": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "api/CanvasRenderingContext2D.json",
             "name": "reset",
@@ -5432,7 +5433,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "113"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -5452,6 +5453,44 @@
                 }
             },
             "title": "CanvasRenderingContext2D: reset() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/OffscreenCanvasRenderingContext2D.json",
+            "name": "reset",
+            "slug": "API/OffscreenCanvasRenderingContext2D#canvasrenderingcontext2d.reset",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D#canvasrenderingcontext2d.reset",
+            "summary": "The OffscreenCanvasRenderingContext2D interface is a CanvasRenderingContext2D rendering context for drawing to the bitmap of an OffscreenCanvas object. It is similar to the CanvasRenderingContext2D object, with the following differences:",
+            "support": {
+                "chrome": {
+                    "version_added": "99"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "113"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "99"
+                }
+            },
+            "title": "OffscreenCanvasRenderingContext2D"
         }
     ],
     "dom-context-2d-resettransform-dev": [
@@ -43221,8 +43260,7 @@
                     "version_added": "1"
                 },
                 "firefox_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1247609'>bug 1247609</a>."
+                    "version_added": "113"
                 },
                 "ie": {
                     "version_added": "5"
@@ -52113,7 +52151,7 @@
             "name": "max",
             "slug": "HTML/Attributes/max",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/max",
-            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present by is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
+            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present but is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -54226,7 +54264,7 @@
             "name": "max",
             "slug": "HTML/Attributes/max",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/max",
-            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present by is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
+            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present but is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -54974,7 +55012,7 @@
             "name": "max",
             "slug": "HTML/Attributes/max",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/max",
-            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present by is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
+            "summary": "The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present but is not specified or is invalid, no max value is applied. If the max attribute is valid and a non-empty value is greater than the maximum allowed by the max attribute, constraint validation will prevent form submission.",
             "support": {
                 "chrome": {
                     "version_added": "6"
@@ -59999,6 +60037,47 @@
                 }
             },
             "title": "Window: postMessage() method"
+        }
+    ],
+    "custom-elements": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": null,
+            "name": "Using_custom_elements",
+            "slug": "Web_Components/Using_custom_elements",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements",
+            "summary": "One of the key features of the Web Components standard is the ability to create custom elements that encapsulate your functionality on an HTML page, rather than having to make do with a long, nested batch of elements that together provide a custom page feature. This article introduces the use of the Custom Elements API.",
+            "support": {
+                "chrome": {
+                    "version_added": "54"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "63"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Using custom elements"
         }
     ],
     "dnd": [
