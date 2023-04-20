@@ -8,7 +8,12 @@ import chalk from "chalk";
 import { readFileSync, writeFileSync } from "fs";
 import request from "sync-request";
 
-import { JSDOM } from "jsdom";
+import jsdom from "jsdom";
+const { JSDOM } = jsdom;
+const virtualConsole = new jsdom.VirtualConsole();
+virtualConsole.on("error", () => {
+  // No-op to skip console errors such as "Could not parse CSS stylesheet"
+});
 
 let allURLs = [];
 const bikeshedSpecs = [];
@@ -161,7 +166,7 @@ const processSpecURL = async (
   if (contents && contents.match(/respec-w3c-/)) {
     warn(`${specURL} loads respec`);
   }
-  const dom = new JSDOM(contents);
+  const dom = new JSDOM(contents, { virtualConsole });
   const document = dom.window.document;
 
   const meta = document.querySelector("meta[http-equiv=refresh]");
