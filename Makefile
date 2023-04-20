@@ -28,7 +28,7 @@ yari.PID: content
 	@if ! ($(NETSTAT) -an | $(EGREP) -i "[.:]5042.+LISTEN" > /dev/null); \
 		then \
 		$(YARN) --cwd content start & echo $$! > yari.PID; \
-		sleep 3; \
+		sleep 20; \
 		echo "yari PID: $$(cat yari.PID)"; \
 	fi
 
