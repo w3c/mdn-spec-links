@@ -196,7 +196,6 @@ const processSpecURL = async (
   }
 
   const allIdElements = [...document.querySelectorAll("*[id]")];
-  const allNameElements = [...document.querySelectorAll("*:not(meta)[name]")];
 
   if (originalURL) {
     requestURL = originalURL;
@@ -233,10 +232,13 @@ const processSpecURL = async (
     return;
   }
 
-  for (let i = 0; i < allNameElements.length; i++) {
-    const name = allNameElements[i].getAttribute("name");
-    allURLs.push(requestURL + "#" + name);
-    note(requestURL + "#" + name);
+  if (requestURL.startsWith("https://sourcemaps.info/spec.html")) {
+    const allNameElements = [...document.querySelectorAll("*[name]")];
+    for (let i = 0; i < allNameElements.length; i++) {
+      const name = allNameElements[i].getAttribute("name");
+      allURLs.push(requestURL + "#" + name);
+      note(requestURL + "#" + name);
+    }
   }
 
   dom.window.close();
