@@ -6081,7 +6081,7 @@
             "name": "getCapabilities",
             "slug": "API/RTCRtpReceiver/getCapabilities",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getCapabilities",
-            "summary": "The static function RTCRtpReceiver.getCapabilities() returns an RTCRtpCapabilities object describing the codecs and capabilities supported by RTCRtpReceivers on the current device.",
+            "summary": "The static method RTCRtpReceiver.getCapabilities() returns an object describing the codec and header extension capabilities supported by RTCRtpReceiver objects on the current device.",
             "support": {
                 "chrome": {
                     "version_added": "59"
@@ -6860,7 +6860,7 @@
             "name": "getCapabilities",
             "slug": "API/RTCRtpSender/getCapabilities",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getCapabilities",
-            "summary": "The static function RTCRtpSender.getCapabilities() returns an RTCRtpCapabilities object describing the codecs and capabilities supported by the RTCRtpSender.",
+            "summary": "The static method RTCRtpSender.getCapabilities() returns an object describing the codec and header extension capabilities supported by the RTCRtpSender.",
             "support": {
                 "chrome": {
                     "version_added": "69"
@@ -7662,7 +7662,7 @@
             "name": "setCodecPreferences",
             "slug": "API/RTCRtpTransceiver/setCodecPreferences",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpTransceiver/setCodecPreferences",
-            "summary": "The RTCRtpTransceiver method setCodecPreferences() configures the transceiver's codecs given a list of RTCRtpCodecCapability objects specifying the new preferences for each codec.",
+            "summary": "The RTCRtpTransceiver method setCodecPreferences() configures the transceiver's preferred list of codecs.",
             "support": {
                 "chrome": {
                     "version_added": "76"
