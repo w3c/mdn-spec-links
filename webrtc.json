@@ -7776,6 +7776,88 @@
             "title": "RTCRtpTransceiver"
         }
     ],
+    "dom-rtcsctptransport-maxchannels": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCSctpTransport.json",
+            "name": "maxChannels",
+            "slug": "API/RTCSctpTransport/maxChannels",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCSctpTransport/maxChannels",
+            "summary": "The maxChannels read-only property of the RTCSctpTransport interface indicates the maximum number of RTCDataChannel objects that can be opened simultaneously.",
+            "support": {
+                "chrome": {
+                    "version_added": "76"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1278299'>bug 1278299</a>."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCSctpTransport: maxChannels property"
+        }
+    ],
+    "dom-rtcsctptransport-maxmessagesize": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCSctpTransport.json",
+            "name": "maxMessageSize",
+            "slug": "API/RTCSctpTransport/maxMessageSize",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCSctpTransport/maxMessageSize",
+            "summary": "The maxMessageSize read-only property of the RTCSctpTransport interface indicates the maximum size of a message that can be sent using the RTCDataChannel.send() method.",
+            "support": {
+                "chrome": {
+                    "version_added": "76"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1278299'>bug 1278299</a>."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCSctpTransport: maxMessageSize property"
+        }
+    ],
     "dom-rtcsctptransport-state": [
         {
             "engines": [
@@ -7815,6 +7897,47 @@
                 }
             },
             "title": "RTCSctpTransport: state property"
+        }
+    ],
+    "dom-rtcsctptransport-transport": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCSctpTransport.json",
+            "name": "transport",
+            "slug": "API/RTCSctpTransport/transport",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCSctpTransport/transport",
+            "summary": "The transport read-only property of the RTCSctpTransport interface returns a RTCDtlsTransport object representing the DTLS transport used for the transmission and receipt of data packets.",
+            "support": {
+                "chrome": {
+                    "version_added": "76"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false,
+                    "notes": "See <a href='https://bugzil.la/1278299'>bug 1278299</a>."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCSctpTransport: transport property"
         }
     ],
     "rtcsctptransport-interface": [
