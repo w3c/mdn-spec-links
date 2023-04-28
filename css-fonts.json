@@ -1524,9 +1524,7 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "11"
                 },
@@ -1863,9 +1861,7 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "9"
                 },
@@ -1882,6 +1878,7 @@
     "font-variant-alternates-prop": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -1892,8 +1889,7 @@
             "summary": "The font-variant-alternates CSS property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in @font-feature-values.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/716567'>bug 716567</a>."
+                    "version_added": "111"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -1914,8 +1910,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/716567'>bug 716567</a>."
+                    "version_added": "111"
                 }
             },
             "title": "font-variant-alternates"

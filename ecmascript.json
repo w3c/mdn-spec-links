@@ -2095,14 +2095,14 @@
             "name": "toReversed",
             "slug": "JavaScript/Reference/Global_Objects/Array/toReversed",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed",
-            "summary": "The toReversed() method of an Array instance is the copying counterpart of the reverse() method. It returns a new array with the elements in reversed order.",
+            "summary": "The toReversed() method of Array instances is the copying counterpart of the reverse() method. It returns a new array with the elements in reversed order.",
             "support": {
                 "chrome": {
                     "version_added": "110"
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.31"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -2113,13 +2113,13 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "20.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "16.3"
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2141,14 +2141,14 @@
             "name": "toSorted",
             "slug": "JavaScript/Reference/Global_Objects/Array/toSorted",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted",
-            "summary": "The toSorted() method of an Array instance is the copying version of the sort() method. It returns a new array with the elements sorted in ascending order.",
+            "summary": "The toSorted() method of Array instances is the copying version of the sort() method. It returns a new array with the elements sorted in ascending order.",
             "support": {
                 "chrome": {
                     "version_added": "110"
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.31"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -2159,13 +2159,13 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "20.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "16.3"
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2187,14 +2187,14 @@
             "name": "toSpliced",
             "slug": "JavaScript/Reference/Global_Objects/Array/toSpliced",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSpliced",
-            "summary": "The toSpliced() method of an Array instance is the copying version of the splice() method. It returns a new array with some elements removed and/or replaced at a given index.",
+            "summary": "The toSpliced() method of Array instances is the copying version of the splice() method. It returns a new array with some elements removed and/or replaced at a given index.",
             "support": {
                 "chrome": {
                     "version_added": "110"
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.31"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -2205,13 +2205,13 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "20.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "16.3"
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -2406,14 +2406,14 @@
             "name": "with",
             "slug": "JavaScript/Reference/Global_Objects/Array/with",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with",
-            "summary": "The with() method of an Array instance is the copying version of using the bracket notation to change the value of a given index. It returns a new array with the element at the given index replaced with the given value.",
+            "summary": "The with() method of Array instances is the copying version of using the bracket notation to change the value of a given index. It returns a new array with the element at the given index replaced with the given value.",
             "support": {
                 "chrome": {
                     "version_added": "110"
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.31"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -2424,13 +2424,13 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "20.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "16.3"
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -3192,7 +3192,7 @@
             "name": "return",
             "slug": "JavaScript/Reference/Global_Objects/AsyncGenerator/return",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator/return",
-            "summary": "The return() method of an async generator acts as if a return statement is inserted in the generator's body at the current suspended position, which finishes the generator and allows the generator to perform any cleanup tasks when combined with a try...finally block.",
+            "summary": "The return() method of AsyncGenerator instances acts as if a return statement is inserted in the generator's body at the current suspended position, which finishes the generator and allows the generator to perform any cleanup tasks when combined with a try...finally block.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -3250,7 +3250,7 @@
             "name": "throw",
             "slug": "JavaScript/Reference/Global_Objects/AsyncGenerator/throw",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator/throw",
-            "summary": "The throw() method of an async generator acts as if a throw statement is inserted in the generator's body at the current suspended position, which informs the generator of an error condition and allows it to handle the error, or perform cleanup and close itself.",
+            "summary": "The throw() method of AsyncGenerator instances acts as if a throw statement is inserted in the generator's body at the current suspended position, which informs the generator of an error condition and allows it to handle the error, or perform cleanup and close itself.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -3482,7 +3482,7 @@
             "name": "@@asyncIterator",
             "slug": "JavaScript/Reference/Global_Objects/AsyncIterator/@@asyncIterator",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator/@@asyncIterator",
-            "summary": "The [@@asyncIterator]() method of an AsyncIterator object implements the async iterable protocol and allows built-in async iterators to be consumed by most syntaxes expecting async iterables, such as for await...of loops. It returns the value of this, which is the async iterator object itself.",
+            "summary": "The [@@asyncIterator]() method of AsyncIterator instances implements the async iterable protocol and allows built-in async iterators to be consumed by most syntaxes expecting async iterables, such as for await...of loops. It returns the value of this, which is the async iterator object itself.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -6907,7 +6907,7 @@
             "name": "getDate",
             "slug": "JavaScript/Reference/Global_Objects/Date/getDate",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate",
-            "summary": "The getDate() method of a Date instance returns the day of the month for this date according to local time.",
+            "summary": "The getDate() method of Date instances returns the day of the month for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -6960,7 +6960,7 @@
             "name": "getDay",
             "slug": "JavaScript/Reference/Global_Objects/Date/getDay",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay",
-            "summary": "The getDay() method of a Date instance returns the day of the week for this date according to local time, where 0 represents Sunday. For the day of the month, see Date.prototype.getDate().",
+            "summary": "The getDay() method of Date instances returns the day of the week for this date according to local time, where 0 represents Sunday. For the day of the month, see Date.prototype.getDate().",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7013,7 +7013,7 @@
             "name": "getFullYear",
             "slug": "JavaScript/Reference/Global_Objects/Date/getFullYear",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear",
-            "summary": "The getFullYear() method of a Date instance returns the year for this date according to local time.",
+            "summary": "The getFullYear() method of Date instances returns the year for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7066,7 +7066,7 @@
             "name": "getHours",
             "slug": "JavaScript/Reference/Global_Objects/Date/getHours",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours",
-            "summary": "The getHours() method of a Date instance returns the hours for this date according to local time.",
+            "summary": "The getHours() method of Date instances returns the hours for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7119,7 +7119,7 @@
             "name": "getMilliseconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/getMilliseconds",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds",
-            "summary": "The getMilliseconds() method of a Date instance returns the milliseconds for this date according to local time.",
+            "summary": "The getMilliseconds() method of Date instances returns the milliseconds for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7172,7 +7172,7 @@
             "name": "getMinutes",
             "slug": "JavaScript/Reference/Global_Objects/Date/getMinutes",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes",
-            "summary": "The getMinutes() method of a Date instance returns the minutes for this date according to local time.",
+            "summary": "The getMinutes() method of Date instances returns the minutes for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7225,7 +7225,7 @@
             "name": "getMonth",
             "slug": "JavaScript/Reference/Global_Objects/Date/getMonth",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth",
-            "summary": "The getMonth() method of a Date instance returns the month for this date according to local time, as a zero-based value (where zero indicates the first month of the year).",
+            "summary": "The getMonth() method of Date instances returns the month for this date according to local time, as a zero-based value (where zero indicates the first month of the year).",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7278,7 +7278,7 @@
             "name": "getSeconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/getSeconds",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds",
-            "summary": "The getSeconds() method of a Date instance returns the seconds for this date according to local time.",
+            "summary": "The getSeconds() method of Date instances returns the seconds for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7331,7 +7331,7 @@
             "name": "getTime",
             "slug": "JavaScript/Reference/Global_Objects/Date/getTime",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime",
-            "summary": "The getTime() method of a Date instance returns the number of milliseconds for this date since the epoch, which is defined as the midnight at the beginning of January 1, 1970, UTC.",
+            "summary": "The getTime() method of Date instances returns the number of milliseconds for this date since the epoch, which is defined as the midnight at the beginning of January 1, 1970, UTC.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7384,7 +7384,7 @@
             "name": "getTimezoneOffset",
             "slug": "JavaScript/Reference/Global_Objects/Date/getTimezoneOffset",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset",
-            "summary": "The getTimezoneOffset() method of a Date instance returns the difference, in minutes, between this date as evaluated in the UTC time zone, and the same date as evaluated in the local time zone.",
+            "summary": "The getTimezoneOffset() method of Date instances returns the difference, in minutes, between this date as evaluated in the UTC time zone, and the same date as evaluated in the local time zone.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7437,7 +7437,7 @@
             "name": "getUTCDate",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCDate",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDate",
-            "summary": "The getUTCDate() method of a Date instance returns the day of the month for this date according to universal time.",
+            "summary": "The getUTCDate() method of Date instances returns the day of the month for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7490,7 +7490,7 @@
             "name": "getUTCDay",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCDay",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDay",
-            "summary": "The getUTCDay() method of a Date instance returns the day of the week for this date according to universal time, where 0 represents Sunday.",
+            "summary": "The getUTCDay() method of Date instances returns the day of the week for this date according to universal time, where 0 represents Sunday.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7543,7 +7543,7 @@
             "name": "getUTCFullYear",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCFullYear",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCFullYear",
-            "summary": "The getUTCFullYear() method of a Date instance returns the year for this date according to universal time.",
+            "summary": "The getUTCFullYear() method of Date instances returns the year for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7596,7 +7596,7 @@
             "name": "getUTCHours",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCHours",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours",
-            "summary": "The getUTCHours() method of a Date instance returns the hours for this date according to universal time.",
+            "summary": "The getUTCHours() method of Date instances returns the hours for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7649,7 +7649,7 @@
             "name": "getUTCMilliseconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds",
-            "summary": "The getUTCMilliseconds() method of a Date instance returns the milliseconds for this date according to universal time.",
+            "summary": "The getUTCMilliseconds() method of Date instances returns the milliseconds for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7702,7 +7702,7 @@
             "name": "getUTCMinutes",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCMinutes",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMinutes",
-            "summary": "The getUTCMinutes() method of a Date instance returns the minutes for this date according to universal time.",
+            "summary": "The getUTCMinutes() method of Date instances returns the minutes for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7755,7 +7755,7 @@
             "name": "getUTCMonth",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCMonth",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMonth",
-            "summary": "The getUTCMonth() method of a Date instance returns the month for this date according to universal time, as a zero-based value (where zero indicates the first month of the year).",
+            "summary": "The getUTCMonth() method of Date instances returns the month for this date according to universal time, as a zero-based value (where zero indicates the first month of the year).",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7808,7 +7808,7 @@
             "name": "getUTCSeconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/getUTCSeconds",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCSeconds",
-            "summary": "The getUTCSeconds() method of a Date instance returns the seconds in the specified date according to universal time.",
+            "summary": "The getUTCSeconds() method of Date instances returns the seconds in the specified date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7967,7 +7967,7 @@
             "name": "setDate",
             "slug": "JavaScript/Reference/Global_Objects/Date/setDate",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate",
-            "summary": "The setDate() method of a Date instance changes the day of the month for this date according to local time.",
+            "summary": "The setDate() method of Date instances changes the day of the month for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8020,7 +8020,7 @@
             "name": "setFullYear",
             "slug": "JavaScript/Reference/Global_Objects/Date/setFullYear",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear",
-            "summary": "The setFullYear() method of a Date instance changes the year, month, and/or day of month for this date according to local time.",
+            "summary": "The setFullYear() method of Date instances changes the year, month, and/or day of month for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8073,7 +8073,7 @@
             "name": "setHours",
             "slug": "JavaScript/Reference/Global_Objects/Date/setHours",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours",
-            "summary": "The setHours() method of a Date instance changes the hours, minutes, seconds, and/or milliseconds for this date according to local time.",
+            "summary": "The setHours() method of Date instances changes the hours, minutes, seconds, and/or milliseconds for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8126,7 +8126,7 @@
             "name": "setMilliseconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/setMilliseconds",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds",
-            "summary": "The setMilliseconds() method of a Date instance changes the milliseconds for this date according to local time.",
+            "summary": "The setMilliseconds() method of Date instances changes the milliseconds for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8179,7 +8179,7 @@
             "name": "setMinutes",
             "slug": "JavaScript/Reference/Global_Objects/Date/setMinutes",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes",
-            "summary": "The setMinutes() method of a Date instance changes the minutes for this date according to local time.",
+            "summary": "The setMinutes() method of Date instances changes the minutes for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8232,7 +8232,7 @@
             "name": "setMonth",
             "slug": "JavaScript/Reference/Global_Objects/Date/setMonth",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth",
-            "summary": "The setMonth() method of a Date instance changes the month and/or day of the month for this date according to local time.",
+            "summary": "The setMonth() method of Date instances changes the month and/or day of the month for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8285,7 +8285,7 @@
             "name": "setSeconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/setSeconds",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds",
-            "summary": "The setSeconds() method of a Date instance changes the seconds and/or milliseconds for this date according to local time.",
+            "summary": "The setSeconds() method of Date instances changes the seconds and/or milliseconds for this date according to local time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8338,7 +8338,7 @@
             "name": "setTime",
             "slug": "JavaScript/Reference/Global_Objects/Date/setTime",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime",
-            "summary": "The setTime() method of a Date instance changes the timestamp for this date, which is the number of milliseconds since the epoch, defined as the midnight at the beginning of January 1, 1970, UTC.",
+            "summary": "The setTime() method of Date instances changes the timestamp for this date, which is the number of milliseconds since the epoch, defined as the midnight at the beginning of January 1, 1970, UTC.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8391,7 +8391,7 @@
             "name": "setUTCDate",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCDate",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate",
-            "summary": "The setUTCDate() method of a Date instance changes the day of the month for this date according to universal time.",
+            "summary": "The setUTCDate() method of Date instances changes the day of the month for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8444,7 +8444,7 @@
             "name": "setUTCFullYear",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCFullYear",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear",
-            "summary": "The setUTCFullYear() method of a Date instance changes the year for this date according to universal time.",
+            "summary": "The setUTCFullYear() method of Date instances changes the year for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8497,7 +8497,7 @@
             "name": "setUTCHours",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCHours",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours",
-            "summary": "The setUTCHours() method of a Date instance changes the hours, minutes, seconds, and/or milliseconds for this date according to universal time.",
+            "summary": "The setUTCHours() method of Date instances changes the hours, minutes, seconds, and/or milliseconds for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8550,7 +8550,7 @@
             "name": "setUTCMilliseconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds",
-            "summary": "The setUTCMilliseconds() method of a Date instance changes the milliseconds for this date according to universal time.",
+            "summary": "The setUTCMilliseconds() method of Date instances changes the milliseconds for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8603,7 +8603,7 @@
             "name": "setUTCMinutes",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCMinutes",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMinutes",
-            "summary": "The setUTCMinutes() method of a Date instance changes the minutes for this date according to universal time.",
+            "summary": "The setUTCMinutes() method of Date instances changes the minutes for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8656,7 +8656,7 @@
             "name": "setUTCMonth",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCMonth",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMonth",
-            "summary": "The setUTCMonth() method of a Date instance changes the month and/or day of the month for this date according to universal time.",
+            "summary": "The setUTCMonth() method of Date instances changes the month and/or day of the month for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8709,7 +8709,7 @@
             "name": "setUTCSeconds",
             "slug": "JavaScript/Reference/Global_Objects/Date/setUTCSeconds",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCSeconds",
-            "summary": "The setUTCSeconds() method of a Date instance changes the seconds and/or milliseconds for this date according to universal time.",
+            "summary": "The setUTCSeconds() method of Date instances changes the seconds and/or milliseconds for this date according to universal time.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -11446,7 +11446,7 @@
             "name": "return",
             "slug": "JavaScript/Reference/Global_Objects/Generator/return",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/return",
-            "summary": "The return() method of a generator acts as if a return statement is inserted in the generator's body at the current suspended position, which finishes the generator and allows the generator to perform any cleanup tasks when combined with a try...finally block.",
+            "summary": "The return() method of Generator instances acts as if a return statement is inserted in the generator's body at the current suspended position, which finishes the generator and allows the generator to perform any cleanup tasks when combined with a try...finally block.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -11495,7 +11495,7 @@
             "name": "throw",
             "slug": "JavaScript/Reference/Global_Objects/Generator/throw",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/throw",
-            "summary": "The throw() method of a generator acts as if a throw statement is inserted in the generator's body at the current suspended position, which informs the generator of an error condition and allows it to handle the error, or perform cleanup and close itself.",
+            "summary": "The throw() method of Generator instances acts as if a throw statement is inserted in the generator's body at the current suspended position, which informs the generator of an error condition and allows it to handle the error, or perform cleanup and close itself.",
             "support": {
                 "chrome": {
                     "version_added": "39"
@@ -17760,7 +17760,7 @@
             "name": "valueOf",
             "slug": "JavaScript/Reference/Global_Objects/Object/valueOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf",
-            "summary": "The valueOf() method of Object converts the this value to an object. This method is meant to be overridden by derived objects for custom type conversion logic.",
+            "summary": "The valueOf() method of Object instances converts the this value to an object. This method is meant to be overridden by derived objects for custom type conversion logic.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -18125,7 +18125,7 @@
             "name": "catch",
             "slug": "JavaScript/Reference/Global_Objects/Promise/catch",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch",
-            "summary": "The catch() method of a Promise object schedules a function to be called when the promise is rejected. It immediately returns an equivalent Promise object, allowing you to chain calls to other promise methods. It is a shortcut for Promise.prototype.then(undefined, onRejected).",
+            "summary": "The catch() method of Promise instances schedules a function to be called when the promise is rejected. It immediately returns an equivalent Promise object, allowing you to chain calls to other promise methods. It is a shortcut for Promise.prototype.then(undefined, onRejected).",
             "support": {
                 "chrome": {
                     "version_added": "32"
@@ -18174,7 +18174,7 @@
             "name": "finally",
             "slug": "JavaScript/Reference/Global_Objects/Promise/finally",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally",
-            "summary": "The finally() method of a Promise object schedules a function to be called when the promise is settled (either fulfilled or rejected). It immediately returns an equivalent Promise object, allowing you to chain calls to other promise methods.",
+            "summary": "The finally() method of Promise instances schedules a function to be called when the promise is settled (either fulfilled or rejected). It immediately returns an equivalent Promise object, allowing you to chain calls to other promise methods.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -18374,7 +18374,7 @@
             "name": "then",
             "slug": "JavaScript/Reference/Global_Objects/Promise/then",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then",
-            "summary": "The then() method of a Promise object takes up to two arguments: callback functions for the fulfilled and rejected cases of the Promise. It immediately returns an equivalent Promise object, allowing you to chain calls to other promise methods.",
+            "summary": "The then() method of Promise instances takes up to two arguments: callback functions for the fulfilled and rejected cases of the Promise. It immediately returns an equivalent Promise object, allowing you to chain calls to other promise methods.",
             "support": {
                 "chrome": {
                     "version_added": "32"
@@ -20845,7 +20845,7 @@
             "name": "@@match",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/@@match",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@match",
-            "summary": "The [@@match]() method of a regular expression specifies how String.prototype.match() should behave. In addition, its presence (or absence) can influence whether an object is regarded as a regular expression.",
+            "summary": "The [@@match]() method of RegExp instances specifies how String.prototype.match() should behave. In addition, its presence (or absence) can influence whether an object is regarded as a regular expression.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -20894,7 +20894,7 @@
             "name": "@@matchAll",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/@@matchAll",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@matchAll",
-            "summary": "The [@@matchAll]() method of a regular expression specifies how String.prototype.matchAll should behave.",
+            "summary": "The [@@matchAll]() method of RegExp instances specifies how String.prototype.matchAll should behave.",
             "support": {
                 "chrome": {
                     "version_added": "73"
@@ -20943,7 +20943,7 @@
             "name": "@@replace",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/@@replace",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@replace",
-            "summary": "The [@@replace]() method of a regular expression specifies how String.prototype.replace() and String.prototype.replaceAll() should behave when the regular expression is passed in as the pattern.",
+            "summary": "The [@@replace]() method of RegExp instances specifies how String.prototype.replace() and String.prototype.replaceAll() should behave when the regular expression is passed in as the pattern.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -20990,7 +20990,7 @@
             "name": "@@search",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/@@search",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@search",
-            "summary": "The [@@search]() method of a regular expression specifies how String.prototype.search should behave.",
+            "summary": "The [@@search]() method of RegExp instances specifies how String.prototype.search should behave.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -21099,7 +21099,7 @@
             "name": "@@split",
             "slug": "JavaScript/Reference/Global_Objects/RegExp/@@split",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@split",
-            "summary": "The [@@split]() method of a regular expression specifies how String.prototype.split should behave when the regular expression is passed in as the separator.",
+            "summary": "The [@@split]() method of RegExp instances specifies how String.prototype.split should behave when the regular expression is passed in as the separator.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -21919,7 +21919,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "78"
+                    "version_added": "79"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -21936,7 +21936,9 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -21968,7 +21970,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "78"
+                    "version_added": "79"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -21985,7 +21987,9 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -22004,7 +22008,7 @@
             "name": "slice",
             "slug": "JavaScript/Reference/Global_Objects/SharedArrayBuffer/slice",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/slice",
-            "summary": "The slice() method of a SharedArrayBuffer instance returns a new SharedArrayBuffer whose contents are a copy of this SharedArrayBuffer's bytes from begin, inclusive, up to end, exclusive. If either begin or end is negative, it refers to an index from the end of the array, as opposed to from the beginning. This method has the same algorithm as Array.prototype.slice().",
+            "summary": "The slice() method of SharedArrayBuffer instances returns a new SharedArrayBuffer whose contents are a copy of this SharedArrayBuffer's bytes from begin, inclusive, up to end, exclusive. If either begin or end is negative, it refers to an index from the end of the array, as opposed to from the beginning. This method has the same algorithm as Array.prototype.slice().",
             "support": {
                 "chrome": {
                     "version_added": "68"
@@ -22017,7 +22021,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "78"
+                    "version_added": "79"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -22034,7 +22038,9 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -22066,7 +22072,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "78"
+                    "version_added": "79"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -22083,7 +22089,9 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -22115,7 +22123,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "78"
+                    "version_added": "79"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -22132,7 +22140,9 @@
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
+                "webview_android": {
+                    "version_added": false
+                },
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -22255,7 +22265,7 @@
             "name": "charAt",
             "slug": "JavaScript/Reference/Global_Objects/String/charAt",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt",
-            "summary": "The charAt() method of a String instance returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.",
+            "summary": "The charAt() method of String values returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -22709,7 +22719,7 @@
             "name": "indexOf",
             "slug": "JavaScript/Reference/Global_Objects/String/indexOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf",
-            "summary": "The indexOf() method, given one argument: a substring to search for, searches the entire calling string, and returns the index of the first occurrence of the specified substring. Given a second argument: a number, the method returns the first occurrence of the specified substring at an index greater than or equal to the specified number.",
+            "summary": "The indexOf() method of String values searches this string and returns the index of the first occurrence of the specified substring. It takes an optional starting position and returns the first occurrence of the specified substring at an index greater than or equal to the specified number.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -22762,7 +22772,7 @@
             "name": "lastIndexOf",
             "slug": "JavaScript/Reference/Global_Objects/String/lastIndexOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf",
-            "summary": "The lastIndexOf() method, given one argument: a substring to search for, searches the entire calling string, and returns the index of the last occurrence of the specified substring. Given a second argument: a number, the method returns the last occurrence of the specified substring at an index less than or equal to the specified number.",
+            "summary": "The lastIndexOf() method of String values searches this string and returns the index of the last occurrence of the specified substring. It takes an optional starting position and returns the last occurrence of the specified substring at an index less than or equal to the specified number.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -27268,7 +27278,7 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.31"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -27279,13 +27289,13 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "20.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "16.3"
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -27314,7 +27324,7 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.31"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -27325,13 +27335,13 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "20.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "16.3"
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -27464,7 +27474,7 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.31"
                 },
                 "edge": "mirror",
                 "firefox": {
@@ -27475,13 +27485,13 @@
                     "version_added": false
                 },
                 "nodejs": {
-                    "version_added": false
+                    "version_added": "20.0.0"
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "16.3"
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -28608,7 +28618,7 @@
             "name": "Infinity",
             "slug": "JavaScript/Reference/Global_Objects/Infinity",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-            "summary": "The global property Infinity is a numeric value representing infinity.",
+            "summary": "The Infinity global property is a numeric value representing infinity.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -28661,7 +28671,7 @@
             "name": "NaN",
             "slug": "JavaScript/Reference/Global_Objects/NaN",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-            "summary": "The global NaN property is a value representing Not-A-Number.",
+            "summary": "The NaN global property is a value representing Not-A-Number.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -28979,7 +28989,7 @@
             "name": "globalThis",
             "slug": "JavaScript/Reference/Global_Objects/globalThis",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis",
-            "summary": "The global globalThis property contains the global this value, which is usually akin to the global object.",
+            "summary": "The globalThis global property contains the global this value, which is usually akin to the global object.",
             "support": {
                 "chrome": {
                     "version_added": "71"
@@ -29026,7 +29036,7 @@
             "name": "isFinite",
             "slug": "JavaScript/Reference/Global_Objects/isFinite",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite",
-            "summary": "The global isFinite() function determines whether the passed value is a finite number. If needed, the parameter is first converted to a number.",
+            "summary": "The isFinite() function determines whether the passed value is a finite number. If needed, the parameter is first converted to a number.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -29238,7 +29248,7 @@
             "name": "undefined",
             "slug": "JavaScript/Reference/Global_Objects/undefined",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-            "summary": "The global undefined property represents the primitive value undefined. It is one of JavaScript's primitive types.",
+            "summary": "The undefined global property represents the primitive value undefined. It is one of JavaScript's primitive types.",
             "support": {
                 "chrome": {
                     "version_added": "1"

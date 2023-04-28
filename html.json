@@ -3548,9 +3548,16 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "90"
-                },
+                "firefox": [
+                    {
+                        "version_added": "112"
+                    },
+                    {
+                        "version_added": "90",
+                        "notes": "Implements an older version of the specification. The gradient starts from a line going vertically up from the center, like the equivalent CSS function.",
+                        "partial_implementation": true
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -3558,9 +3565,16 @@
                 "oculus": "mirror",
                 "opera": "mirror",
                 "opera_android": "mirror",
-                "safari": {
-                    "version_added": "15"
-                },
+                "safari": [
+                    {
+                        "version_added": "16.1"
+                    },
+                    {
+                        "version_added": "15",
+                        "notes": "Implements an older version of the specification. The gradient starts from a line going vertically up from the center, like the equivalent CSS function.",
+                        "partial_implementation": true
+                    }
+                ],
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
@@ -39691,6 +39705,45 @@
             "title": "TimeRanges"
         }
     ],
+    "toggleevent": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ToggleEvent.json",
+            "name": "ToggleEvent",
+            "slug": "API/ToggleEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ToggleEvent",
+            "summary": "The ToggleEvent interface represents an event notifying the user of an element whose state toggles between being open or closed.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "ToggleEvent"
+        }
+    ],
     "dom-trackevent-track-dev": [
         {
             "engines": [
@@ -40308,6 +40361,57 @@
                 }
             },
             "title": "ValidityState: typeMismatch property"
+        }
+    ],
+    "dom-validitystate-valuemissing-dev": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ValidityState.json",
+            "name": "valueMissing",
+            "slug": "API/ValidityState/valueMissing",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/valueMissing",
+            "summary": "The read-only valueMissing property of a ValidityState object indicates if a required control, such as an <input>, <select>, or <textarea>, has an empty value.",
+            "support": {
+                "chrome": {
+                    "version_added": "4"
+                },
+                "chrome_android": "mirror",
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "4"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "10"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
+                "safari": {
+                    "version_added": "5"
+                },
+                "safari_ios": {
+                    "version_added": "5"
+                },
+                "samsunginternet_android": "mirror",
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ValidityState: valueMissing property"
         }
     ],
     "the-constraint-validation-api:validitystate-3": [
@@ -47247,6 +47351,45 @@
                 }
             },
             "title": ":out-of-range"
+        }
+    ],
+    "selector-popover-open": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "css/selectors/popover-open.json",
+            "name": "popover-open",
+            "slug": "CSS/:popover-open",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:popover-open",
+            "summary": "The :popover-open CSS pseudo-class represents an element with a popover attribute that is in the open state.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": ":popover-open"
         }
     ],
     "selector-read-only": [
@@ -57993,6 +58136,7 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": false
                 },
@@ -59230,9 +59374,7 @@
                 "chrome": {
                     "version_added": "4"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -59245,9 +59387,7 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": null
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "5"
                 },

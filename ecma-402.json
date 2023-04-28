@@ -333,7 +333,7 @@
             "name": "compare",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Collator/compare",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/compare",
-            "summary": "The Intl.Collator.prototype.compare() method compares two strings according to the sort order of this Intl.Collator object.",
+            "summary": "The compare() method of Intl.Collator instances compares two strings according to the sort order of this collator object.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -385,7 +385,7 @@
             "name": "resolvedOptions",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Collator/resolvedOptions",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/resolvedOptions",
-            "summary": "The Intl.Collator.prototype.resolvedOptions() method returns a new object with properties reflecting the locale and collation options computed during initialization of this Intl.Collator object.",
+            "summary": "The resolvedOptions() method of Intl.Collator instances returns a new object with properties reflecting the locale and collation options computed during initialization of this collator object.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -605,7 +605,7 @@
             "name": "format",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/format",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/format",
-            "summary": "The Intl.DateTimeFormat.prototype.format() method formats a date according to the locale and formatting options of this Intl.DateTimeFormat object.",
+            "summary": "The format() method of Intl.DateTimeFormat instances formats a date according to the locale and formatting options of this Intl.DateTimeFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -657,7 +657,7 @@
             "name": "formatRange",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange",
-            "summary": "The Intl.DateTimeFormat.prototype.formatRange() formats a date range in the most concise way based on the locale and options provided when instantiating Intl.DateTimeFormat object.",
+            "summary": "The formatRange() method of Intl.DateTimeFormat instances formats a date range in the most concise way based on the locales and options provided when instantiating this Intl.DateTimeFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "76"
@@ -705,7 +705,7 @@
             "name": "formatRangeToParts",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRangeToParts",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRangeToParts",
-            "summary": "The Intl.DateTimeFormat.prototype.formatRangeToParts() method returns an array of locale-specific tokens representing each part of the formatted date range produced by Intl.DateTimeFormat formatters.",
+            "summary": "The formatRangeToParts() method of Intl.DateTimeFormat instances returns an array of locale-specific tokens representing each part of the formatted date range produced by this Intl.DateTimeFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "76"
@@ -753,7 +753,7 @@
             "name": "formatToParts",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts",
-            "summary": "The Intl.DateTimeFormat.prototype.formatToParts() method allows locale-aware formatting of strings produced by Intl.DateTimeFormat formatters.",
+            "summary": "The formatToParts() method of Intl.DateTimeFormat instances allows locale-aware formatting of strings produced by this Intl.DateTimeFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "57",
@@ -819,7 +819,7 @@
             "name": "resolvedOptions",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/resolvedOptions",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/resolvedOptions",
-            "summary": "The Intl.DateTimeFormat.prototype.resolvedOptions() method returns a new object with properties reflecting the locale and date and time formatting options computed during initialization of this Intl.DateTimeFormat object.",
+            "summary": "The resolvedOptions() method of Intl.DateTimeFormat instances returns a new object with properties reflecting the locale and date and time formatting options computed during initialization of this Intl.DateTimeFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -1028,7 +1028,7 @@
             "name": "of",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DisplayNames/of",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/of",
-            "summary": "The Intl.DisplayNames.prototype.of() method receives a code and returns a string based on the locale and options provided when instantiating Intl.DisplayNames.",
+            "summary": "The of() method of Intl.DisplayNames instances receives a code and returns a string based on the locale and options provided when instantiating this Intl.DisplayNames object.",
             "support": {
                 "chrome": {
                     "version_added": "81"
@@ -1075,7 +1075,7 @@
             "name": "resolvedOptions",
             "slug": "JavaScript/Reference/Global_Objects/Intl/DisplayNames/resolvedOptions",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/resolvedOptions",
-            "summary": "The Intl.DisplayNames.prototype.resolvedOptions() method returns a new object with properties reflecting the locale and style formatting options computed during the construction of the current Intl.DisplayNames object.",
+            "summary": "The resolvedOptions() method of Intl.DisplayNames instances returns a new object with properties reflecting the locale and style formatting options computed during the construction of this Intl.DisplayNames object.",
             "support": {
                 "chrome": {
                     "version_added": "81"
@@ -1324,7 +1324,7 @@
             "name": "formatToParts",
             "slug": "JavaScript/Reference/Global_Objects/Intl/ListFormat/formatToParts",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/formatToParts",
-            "summary": "The Intl.ListFormat.prototype.formatToParts() method returns an Array of objects representing the different components that can be used to format a list of values in a locale-aware fashion.",
+            "summary": "The formatToParts() method of Intl.ListFormat instances returns an Array of objects representing the different components that can be used to format a list of values in a locale-aware fashion.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -1375,7 +1375,7 @@
             "name": "resolvedOptions",
             "slug": "JavaScript/Reference/Global_Objects/Intl/ListFormat/resolvedOptions",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/resolvedOptions",
-            "summary": "The Intl.ListFormat.prototype.resolvedOptions() method returns a new object with properties reflecting the locale and style formatting options computed during the construction of the current Intl.ListFormat object.",
+            "summary": "The resolvedOptions() method of Intl.ListFormat instances returns a new object with properties reflecting the locale and style formatting options computed during the construction of this Intl.ListFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -1863,7 +1863,7 @@
             "name": "maximize",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/maximize",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/maximize",
-            "summary": "The Intl.Locale.prototype.maximize() method gets the most likely values for the language, script, and region of the locale based on existing values.",
+            "summary": "The maximize() method of Intl.Locale instances gets the most likely values for the language, script, and region of this locale based on existing values.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -1910,7 +1910,7 @@
             "name": "minimize",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/minimize",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/minimize",
-            "summary": "The Intl.Locale.prototype.minimize() method attempts to remove information about the locale that would be added by calling maximize().",
+            "summary": "The minimize() method of Intl.Locale instances attempts to remove information about this locale that would be added by calling maximize().",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -2145,7 +2145,7 @@
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Locale/toString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/toString",
-            "summary": "The Intl.Locale.prototype.toString() method returns the Locale's full locale identifier string.",
+            "summary": "The toString() method of Intl.Locale instances returns this Locale's full locale identifier string.",
             "support": {
                 "chrome": {
                     "version_added": "74"
@@ -2297,7 +2297,7 @@
             "name": "format",
             "slug": "JavaScript/Reference/Global_Objects/Intl/NumberFormat/format",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/format",
-            "summary": "The Intl.NumberFormat.prototype.format() method formats a number according to the locale and formatting options of this Intl.NumberFormat object.",
+            "summary": "The format() method of Intl.NumberFormat instances formats a number according to the locale and formatting options of this Intl.NumberFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -2350,7 +2350,7 @@
             "name": "formatToParts",
             "slug": "JavaScript/Reference/Global_Objects/Intl/NumberFormat/formatToParts",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/formatToParts",
-            "summary": "The Intl.NumberFormat.prototype.formatToParts() method allows locale-aware formatting of strings produced by NumberFormat formatters.",
+            "summary": "The formatToParts() method of Intl.NumberFormat instances allows locale-aware formatting of strings produced by this Intl.NumberFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "64"
@@ -2400,7 +2400,7 @@
             "name": "resolvedOptions",
             "slug": "JavaScript/Reference/Global_Objects/Intl/NumberFormat/resolvedOptions",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/resolvedOptions",
-            "summary": "The Intl.NumberFormat.prototype.resolvedOptions() method returns a new object with properties reflecting the locale and number formatting options computed during initialization of this Intl.NumberFormat object.",
+            "summary": "The resolvedOptions() method of Intl.NumberFormat instances returns a new object with properties reflecting the locale and number formatting options computed during initialization of this Intl.NumberFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "24"
@@ -2622,7 +2622,7 @@
             "name": "resolvedOptions",
             "slug": "JavaScript/Reference/Global_Objects/Intl/PluralRules/resolvedOptions",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/resolvedOptions",
-            "summary": "The Intl.PluralRules.prototype.resolvedOptions() method returns a new object with properties reflecting the locale and plural formatting options computed during initialization of this Intl.PluralRules object.",
+            "summary": "The resolvedOptions() method of Intl.PluralRules instances returns a new object with properties reflecting the locale and plural formatting options computed during initialization of this Intl.PluralRules object.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -2672,7 +2672,7 @@
             "name": "select",
             "slug": "JavaScript/Reference/Global_Objects/Intl/PluralRules/select",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/select",
-            "summary": "The Intl.PluralRules.prototype.select() method returns a string indicating which plural rule to use for locale-aware formatting.",
+            "summary": "The select() method of Intl.PluralRules instances returns a string indicating which plural rule to use for locale-aware formatting.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -2876,7 +2876,7 @@
             "name": "format",
             "slug": "JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/format",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/format",
-            "summary": "The Intl.RelativeTimeFormat.prototype.format() method formats a value and unit according to the locale and formatting options of this Intl.RelativeTimeFormat object.",
+            "summary": "The format() method of Intl.RelativeTimeFormat instances formats a value and unit according to the locale and formatting options of this Intl.RelativeTimeFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "71"
@@ -2924,7 +2924,7 @@
             "name": "formatToParts",
             "slug": "JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/formatToParts",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/formatToParts",
-            "summary": "The Intl.RelativeTimeFormat.prototype.formatToParts() method returns an Array of objects representing the relative time format in parts that can be used for custom locale-aware formatting.",
+            "summary": "The formatToParts() method of Intl.RelativeTimeFormat instances returns an Array of objects representing the relative time format in parts that can be used for custom locale-aware formatting.",
             "support": {
                 "chrome": {
                     "version_added": "71"
@@ -2972,7 +2972,7 @@
             "name": "resolvedOptions",
             "slug": "JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/resolvedOptions",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/resolvedOptions",
-            "summary": "The Intl.RelativeTimeFormat.prototype.resolvedOptions() method returns a new object with properties reflecting the locale and relative time formatting options computed during initialization of this Intl.RelativeTimeFormat object.",
+            "summary": "The resolvedOptions() method of Intl.RelativeTimeFormat instances returns a new object with properties reflecting the locale and relative time formatting options computed during initialization of this Intl.RelativeTimeFormat object.",
             "support": {
                 "chrome": {
                     "version_added": "71"
@@ -3167,7 +3167,7 @@
             "name": "resolvedOptions",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segmenter/resolvedOptions",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter/resolvedOptions",
-            "summary": "The Intl.Segmenter.prototype.resolvedOptions() method returns a new object with properties reflecting the locale and granularity options computed during the initialization of this Intl.Segmenter object.",
+            "summary": "The resolvedOptions() method of Intl.Segmenter instances returns a new object with properties reflecting the locale and granularity options computed during the initialization of this Intl.Segmenter object.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -3213,7 +3213,7 @@
             "name": "segment",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segmenter/segment",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter/segment",
-            "summary": "The Intl.Segmenter.prototype.segment() method segments a string according to the locale and granularity of this Intl.Segmenter object.",
+            "summary": "The segment() method of Intl.Segmenter instances segments a string according to the locale and granularity of this Intl.Segmenter object.",
             "support": {
                 "chrome": {
                     "version_added": "87"
@@ -3351,7 +3351,7 @@
             "name": "containing",
             "slug": "JavaScript/Reference/Global_Objects/Intl/Segments/containing",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segments/containing",
-            "summary": "The containing() method of a Segments object returns an object describing the segment in the string that includes the code unit at the specified index.",
+            "summary": "The containing() method of Segments instances returns an object describing the segment in the string that includes the code unit at the specified index.",
             "support": {
                 "chrome": {
                     "version_added": "87"

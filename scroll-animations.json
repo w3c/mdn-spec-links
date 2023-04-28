@@ -52,9 +52,11 @@
     "propdef-scroll-timeline-axis": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/properties/scroll-timeline-axis.json",
@@ -63,14 +65,36 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-axis",
             "summary": "The scroll-timeline-axis CSS property is used to specify the scrollbar direction that will be used to provide the timeline for a scroll-driven animation.",
             "support": {
-                "chrome": {
-                    "version_added": false
-                },
+                "chrome": [
+                    {
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property `scroll-timeline` uses the fixed order of name and then the axis.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "108",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": [
                     {
-                        "version_added": "110",
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property uses the fixed order of name and then the axis.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -81,6 +105,7 @@
                     },
                     {
                         "version_added": "103",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -103,9 +128,30 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property `scroll-timeline` uses the fixed order of name and then the axis.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "108",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "scroll-timeline-axis"
         }
@@ -113,9 +159,11 @@
     "scroll-timeline-name": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/properties/scroll-timeline-name.json",
@@ -124,14 +172,36 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-name",
             "summary": "The scroll-timeline-name CSS property is used to define a named timeline that drives the progress of the scrollbar in a container. The name is then referenced in an animation-timeline declaration to indicate the container's element that is used to drive the progress of the animation through the scrolling action.",
             "support": {
-                "chrome": {
-                    "version_added": false
-                },
+                "chrome": [
+                    {
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property `scroll-timeline` uses the fixed order of name and then the axis.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "108",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": [
                     {
-                        "version_added": "110",
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property uses the fixed order of name and then the axis.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -142,6 +212,7 @@
                     },
                     {
                         "version_added": "103",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -164,9 +235,30 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property `scroll-timeline` uses the fixed order of name and then the axis.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "108",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "scroll-timeline-name"
         }
@@ -174,9 +266,11 @@
     "scroll-timeline-shorthand": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/properties/scroll-timeline.json",
@@ -185,14 +279,36 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline",
             "summary": "The scroll-timeline CSS shorthand property is used to define a named timeline that drives the progress of the scrollbar in a container. The name is then referenced in an animation-timeline declaration to indicate the container's element that is used to drive the progress of the animation through the scrolling action.",
             "support": {
-                "chrome": {
-                    "version_added": false
-                },
+                "chrome": [
+                    {
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property `scroll-timeline` uses the fixed order of name and then the axis.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "108",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": [
                     {
-                        "version_added": "110",
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property uses the fixed order of name and then the axis.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -203,6 +319,7 @@
                     },
                     {
                         "version_added": "103",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
                         "flags": [
                             {
                                 "type": "preference",
@@ -225,9 +342,30 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "111",
+                        "notes": "The syntax of the shorthand property `scroll-timeline` uses the fixed order of name and then the axis.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "108",
+                        "notes": "The `@scroll-timeline` at-rule is replaced with the longhand properties `scroll-timeline-name` and `scroll-timeline-axis` and the shorthand property `scroll-timeline`.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "scroll-timeline"
         }
