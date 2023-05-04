@@ -174,7 +174,7 @@
             "name": "commitStyles",
             "slug": "API/Animation/commitStyles",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Animation/commitStyles",
-            "summary": "The commitStyles() method of the Web Animations API's Animation interface commits the end styling state of an animation to the element being animated, even after that animation has been removed. It will cause the end styling state to be written to the element being animated, in the form of properties inside a style attribute.",
+            "summary": "The commitStyles() method of the Web Animations API's Animation interface writes the computed values of the animation's current styles into its target element's style attribute. commitStyles() works even if the animation has been automatically removed.",
             "support": {
                 "chrome": {
                     "version_added": "84"
@@ -585,7 +585,7 @@
             "name": "persist",
             "slug": "API/Animation/persist",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Animation/persist",
-            "summary": "The persist() method of the Web Animations API's Animation interface explicitly persists an animation, when it would otherwise be removed due to the browser's Automatically removing filling animations behavior.",
+            "summary": "The persist() method of the Web Animations API's Animation interface explicitly persists an animation, preventing it from being automatically removed when it is replaced by another animation.",
             "support": {
                 "chrome": {
                     "version_added": "84"
@@ -801,7 +801,7 @@
             "name": "remove_event",
             "slug": "API/Animation/remove_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Animation/remove_event",
-            "summary": "The remove event of the Animation interface fires when the animation is removed (i.e., put into an active replace state).",
+            "summary": "The remove event of the Animation interface fires when the animation is automatically removed by the browser.",
             "support": {
                 "chrome": {
                     "version_added": "84"
@@ -842,7 +842,7 @@
             "name": "remove_event",
             "slug": "API/Animation/remove_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Animation/remove_event",
-            "summary": "The remove event of the Animation interface fires when the animation is removed (i.e., put into an active replace state).",
+            "summary": "The remove event of the Animation interface fires when the animation is automatically removed by the browser.",
             "support": {
                 "chrome": {
                     "version_added": "84"
@@ -883,7 +883,7 @@
             "name": "replaceState",
             "slug": "API/Animation/replaceState",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Animation/replaceState",
-            "summary": "The read-only Animation.replaceState property of the Web Animations API returns the replace state of the animation. This will be active if the animation has been removed, or persisted if Animation.persist() has been invoked on it.",
+            "summary": "The read-only Animation.replaceState property of the Web Animations API indicates whether the animation has been automatically removed after being replaced by another animation.",
             "support": {
                 "chrome": {
                     "version_added": "84"
