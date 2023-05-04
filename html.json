@@ -15639,6 +15639,158 @@
             "title": "HTMLTextAreaElement: labels property"
         }
     ],
+    "dom-popovertargetaction": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLButtonElement.json",
+            "name": "popoverTargetAction",
+            "slug": "API/HTMLButtonElement/popoverTargetAction",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement/popoverTargetAction",
+            "summary": "The popoverTargetAction property of the HTMLButtonElement interface gets and sets the action to be performed (\"hide\", \"show\", or \"toggle\") on a popover element being controlled by a control button.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLButtonElement: popoverTargetAction property"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLInputElement.json",
+            "name": "popoverTargetAction",
+            "slug": "API/HTMLInputElement/popoverTargetAction",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/popoverTargetAction",
+            "summary": "The popoverTargetAction property of the HTMLInputElement interface gets and sets the action to be performed (\"hide\", \"show\", or \"toggle\") on a popover element being controlled by an <input> element of type=\"button\".",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLInputElement: popoverTargetAction property"
+        }
+    ],
+    "dom-popovertargetelement": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLButtonElement.json",
+            "name": "popoverTargetElement",
+            "slug": "API/HTMLButtonElement/popoverTargetElement",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement/popoverTargetElement",
+            "summary": "The popoverTargetElement property of the HTMLButtonElement interface gets and sets the popover element to control via a control button.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLButtonElement: popoverTargetElement property"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLInputElement.json",
+            "name": "popoverTargetElement",
+            "slug": "API/HTMLInputElement/popoverTargetElement",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/popoverTargetElement",
+            "summary": "The popoverTargetElement property of the HTMLInputElement interface gets and sets the popover element to control via an <input> element of type=\"button\".",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLInputElement: popoverTargetElement property"
+        }
+    ],
     "htmlbuttonelement": [
         {
             "engines": [
@@ -16369,7 +16521,7 @@
             "name": "toggle_event",
             "slug": "API/HTMLElement/toggle_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event",
-            "summary": "The toggle event fires when an element with the popover attribute is about to be opened or closed.",
+            "summary": "The toggle event of the HTMLElement interface fires on a popover element (i.e. one that has a valid popover attribute) just after it is shown or hidden.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -16746,7 +16898,7 @@
             "name": "showModal",
             "slug": "API/HTMLDialogElement/showModal",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal",
-            "summary": "The showModal() method of the HTMLDialogElement interface displays the dialog as a modal, over the top of any other dialogs that might be present. It displays into the top layer, along with a ::backdrop pseudo-element. Interaction outside the dialog is blocked and the content outside it is rendered inert.",
+            "summary": "The showModal() method of the HTMLDialogElement interface displays the dialog as a modal, over the top of any other dialogs that might be present. It displays in the top layer, along with a ::backdrop pseudo-element. Interaction outside the dialog is blocked and the content outside it is rendered inert.",
             "support": {
                 "chrome": {
                     "version_added": "37"
@@ -17053,7 +17205,7 @@
             "name": "beforetoggle_event",
             "slug": "API/HTMLElement/beforetoggle_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/beforetoggle_event",
-            "summary": "The beforetoggle event fires when an element with the popover attribute is about to be opened or closed.",
+            "summary": "The beforetoggle event of the HTMLElement interface fires on a popover element (i.e. one that has a valid popover attribute) just before it is shown or hidden.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -18289,7 +18441,7 @@
             "name": "hidePopover",
             "slug": "API/HTMLElement/hidePopover",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidePopover",
-            "summary": "The HTMLElement.hidePopover() method opens an element that has a valid popover attribute.",
+            "summary": "The hidePopover() method of the HTMLElement interface hides a popover element (i.e. one that has a valid popover attribute) by removing it from the top layer and styling it with display: none.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -18693,6 +18845,45 @@
             "title": "HTMLElement: outerText property"
         }
     ],
+    "dom-popover": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLElement.json",
+            "name": "popover",
+            "slug": "API/HTMLElement/popover",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/popover",
+            "summary": "The popover property of the HTMLElement interface gets and sets an element's popover state via JavaScript (\"auto\" or \"manual\"), and can be used for feature detection.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "HTMLElement: popover property"
+        }
+    ],
     "dom-showpopover": [
         {
             "engines": [
@@ -18702,7 +18893,7 @@
             "name": "showPopover",
             "slug": "API/HTMLElement/showPopover",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/showPopover",
-            "summary": "The HTMLElement.showPopover() method opens an element that has a valid popover attribute.",
+            "summary": "The showPopover() method of the HTMLElement interface shows a popover element (i.e. one that has a valid popover attribute) by adding it to the top layer.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -18839,7 +19030,7 @@
             "name": "togglePopover",
             "slug": "API/HTMLElement/togglePopover",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/togglePopover",
-            "summary": "The HTMLElement.togglePopover() method opens an element that has a valid popover attribute.",
+            "summary": "The togglePopover() method of the HTMLElement interface toggles a popover element (i.e. one that has a valid popover attribute) between the hidden and showing states.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -39712,9 +39903,46 @@
             ],
             "filename": "api/ToggleEvent.json",
             "name": "ToggleEvent",
+            "slug": "API/ToggleEvent/ToggleEvent",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ToggleEvent/ToggleEvent",
+            "summary": "The ToggleEvent() constructor creates a new ToggleEvent object.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "ToggleEvent: ToggleEvent() constructor"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ToggleEvent.json",
+            "name": "ToggleEvent",
             "slug": "API/ToggleEvent",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ToggleEvent",
-            "summary": "The ToggleEvent interface represents an event notifying the user of an element whose state toggles between being open or closed.",
+            "summary": "The ToggleEvent interface represents an event notifying the user when a popover element's state toggles between showing and hidden.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -39742,6 +39970,84 @@
                 }
             },
             "title": "ToggleEvent"
+        }
+    ],
+    "dom-toggleevent-newstate": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ToggleEvent.json",
+            "name": "newState",
+            "slug": "API/ToggleEvent/newState",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ToggleEvent/newState",
+            "summary": "The newState read-only property of the ToggleEvent interface is a string representing the state the element is transitioning to.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "ToggleEvent: newState property"
+        }
+    ],
+    "dom-toggleevent-oldstate": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/ToggleEvent.json",
+            "name": "oldState",
+            "slug": "API/ToggleEvent/oldState",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ToggleEvent/oldState",
+            "summary": "The oldState read-only property of the ToggleEvent interface is a string representing the state the element is transitioning from.",
+            "support": {
+                "chrome": {
+                    "version_added": "114"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "114"
+                }
+            },
+            "title": "ToggleEvent: oldState property"
         }
     ],
     "dom-trackevent-track-dev": [
@@ -47362,7 +47668,7 @@
             "name": "popover-open",
             "slug": "CSS/:popover-open",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:popover-open",
-            "summary": "The :popover-open CSS pseudo-class represents an element with a popover attribute that is in the open state.",
+            "summary": "The :popover-open CSS pseudo-class represents a popover element (i.e. one with a popover attribute) that is in the showing state. You can use this to apply style to popover elements only when they are shown.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -58120,7 +58426,7 @@
             "name": "popover",
             "slug": "HTML/Global_attributes/popover",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/popover",
-            "summary": "The popover global attribute is used to specify that the element should be hidden on the page until it is opened by interacting with an invoking element (a <button> or <input type=\"button\"> with a popovertarget), or manually via showPopover().",
+            "summary": "The popover global attribute is used to designate an element as a popover element.",
             "support": {
                 "chrome": {
                     "version_added": "114"
