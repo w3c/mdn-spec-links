@@ -36447,6 +36447,902 @@
             "title": "yield*"
         }
     ],
+    "prod-DecimalEscape": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "backreference",
+            "slug": "JavaScript/Reference/Regular_expressions/Backreference",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Backreference",
+            "summary": "A backreference refers to the submatch of a previous capturing group and matches the same text as that group. For named capturing groups, you may prefer to use the named backreference syntax.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Backreference: \\1, \\2"
+        }
+    ],
+    "prod-Atom": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "capturing_group",
+            "slug": "JavaScript/Reference/Regular_expressions/Capturing_group",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Capturing_group",
+            "summary": "A capturing group groups a subpattern, allowing you to apply a quantifier to the entire group or use disjunctions within it. It memorizes information about the subpattern match, so that you can refer back to it later with a backreference, or access the information through the match results.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Capturing group: (...)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "named_capturing_group",
+            "slug": "JavaScript/Reference/Regular_expressions/Named_capturing_group",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group",
+            "summary": "A named capturing group is a particular kind of capturing group that allows to give a name to the group. The group's matching result can later be identified by this name instead of by its index in the pattern.",
+            "support": {
+                "chrome": {
+                    "version_added": "64"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.3.0",
+                        "flags": [
+                            {
+                                "name": "--harmony",
+                                "type": "runtime_flag"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Named capturing group: (?<name>...)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "non_capturing_group",
+            "slug": "JavaScript/Reference/Regular_expressions/Non-capturing_group",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Non-capturing_group",
+            "summary": "A non-capturing group groups a subpattern, allowing you to apply a quantifier to the entire group or use disjunctions within it. It acts like the grouping operator in JavaScript expressions, and unlike capturing groups, it does not memorize the matched text, allowing for better performance and avoiding confusion when the pattern also contains useful capturing groups.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Non-capturing group: (?:...)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "wildcard",
+            "slug": "JavaScript/Reference/Regular_expressions/Wildcard",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Wildcard",
+            "summary": "A wildcard matches all characters except line terminators. It also matches line terminators if the s flag is set.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Wildcard: ."
+        }
+    ],
+    "prod-CharacterClass": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "character_class",
+            "slug": "JavaScript/Reference/Regular_expressions/Character_class",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class",
+            "summary": "A character class matches any character in or not in a custom set of characters.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Character class: [...], [^...]"
+        }
+    ],
+    "prod-CharacterClassEscape": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "character_class_escape",
+            "slug": "JavaScript/Reference/Regular_expressions/Character_class_escape",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape",
+            "summary": "A character class escape is an escape sequence that represents a set of characters.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Character class escape: \\d, \\D, \\w, \\W, \\s, \\S"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "unicode_character_class_escape",
+            "slug": "JavaScript/Reference/Regular_expressions/Unicode_character_class_escape",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape",
+            "summary": "A unicode character class escape is a kind of character class escape that matches a set of characters specified by a Unicode property. It's only supported in unicode mode.",
+            "support": {
+                "chrome": {
+                    "version_added": "64"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.3.0",
+                        "flags": [
+                            {
+                                "name": "--harmony",
+                                "type": "runtime_flag"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Unicode character class escape: \\p{...}, \\P{...}"
+        }
+    ],
+    "prod-CharacterEscape": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "character_escape",
+            "slug": "JavaScript/Reference/Regular_expressions/Character_escape",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape",
+            "summary": "A character escape represents a character that may not be able to be conveniently represented in its literal form.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Character escape: \\n, \\u{...}"
+        }
+    ],
+    "prod-Disjunction": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "disjunction",
+            "slug": "JavaScript/Reference/Regular_expressions/Disjunction",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Disjunction",
+            "summary": "A disjunction specifies multiple alternatives. Any alternative matching the input causes the entire disjunction to be matched.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Disjunction: |"
+        }
+    ],
+    "prod-Assertion": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "input_boundary_assertion",
+            "slug": "JavaScript/Reference/Regular_expressions/Input_boundary_assertion",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Input_boundary_assertion",
+            "summary": "An input boundary assertion checks if the current position in the string is an input boundary. An input boundary is the start or end of the string; or, if the m flag is set, the start or end of a line.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Input boundary assertion: ^, $"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "lookahead_assertion",
+            "slug": "JavaScript/Reference/Regular_expressions/Lookahead_assertion",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion",
+            "summary": "A lookahead assertion \"looks ahead\": it attempts to match the subsequent input with the given pattern, but it does not consume any of the input — if the match is successful, the current position in the input stays the same.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Lookahead assertion: (?=...), (?!...)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "lookbehind_assertion",
+            "slug": "JavaScript/Reference/Regular_expressions/Lookbehind_assertion",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookbehind_assertion",
+            "summary": "A lookbehind assertion \"looks behind\": it attempts to match the previous input with the given pattern, but it does not consume any of the input — if the match is successful, the current position in the input stays the same. It matches each atom in its pattern in the reverse order.",
+            "support": {
+                "chrome": {
+                    "version_added": "62"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "8.10.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Lookbehind assertion: (?<=...), (?<!...)"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "word_boundary_assertion",
+            "slug": "JavaScript/Reference/Regular_expressions/Word_boundary_assertion",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Word_boundary_assertion",
+            "summary": "A word boundary assertion checks if the current position in the string is a word boundary. A word boundary is where the next character is a word character and the previous character is not a word character, or vice versa.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Word boundary assertion: \\b, \\B"
+        }
+    ],
+    "prod-PatternCharacter": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "literal_character",
+            "slug": "JavaScript/Reference/Regular_expressions/Literal_character",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Literal_character",
+            "summary": "A literal character specifies exactly itself to be matched in the input text.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Literal character: a, b"
+        }
+    ],
+    "prod-AtomEscape": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "named_backreference",
+            "slug": "JavaScript/Reference/Regular_expressions/Named_backreference",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_backreference",
+            "summary": "A named backreference refers to the submatch of a previous named capturing group and matches the same text as that group. For unnamed capturing groups, you need to use the normal backreference syntax.",
+            "support": {
+                "chrome": {
+                    "version_added": "64"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "78"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": [
+                    {
+                        "version_added": "10.0.0"
+                    },
+                    {
+                        "version_added": "8.3.0",
+                        "flags": [
+                            {
+                                "name": "--harmony",
+                                "type": "runtime_flag"
+                            }
+                        ]
+                    }
+                ],
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Named backreference: \\k<name>"
+        }
+    ],
+    "prod-Quantifier": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/regular_expressions.json",
+            "name": "quantifier",
+            "slug": "JavaScript/Reference/Regular_expressions/Quantifier",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier",
+            "summary": "A quantifier repeats an atom a certain number of times. The quantifier is placed after the atom it applies to.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "1"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": "4"
+                },
+                "nodejs": {
+                    "version_added": "0.10.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "5"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "Quantifier: *, +, ?, {n}, {n,}, {n,m}"
+        }
+    ],
     "sec-block": [
         {
             "engines": [
