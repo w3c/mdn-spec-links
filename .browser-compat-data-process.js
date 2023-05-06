@@ -673,10 +673,6 @@ const fixCanIUseSpecURLs = (key, data) => {
       if (isObsolete(base)) {
         return data;
       }
-      specURL = specURL.replace(
-        "drafts.csswg.org",
-        "w3c.github.io/csswg-drafts"
-      );
       if (isBrokenSpecURL(specURL, parsedURL, SPECURLS)) {
         warn(`bad caniuse spec URL ${specURL}`);
         return data;

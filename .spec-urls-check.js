@@ -287,30 +287,6 @@ const checkSpecURL = (
   ) {
     return;
   }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17212
-  if (
-    spec_url.startsWith(
-      "https://drafts.csswg.org/scroll-animations/#scroll-timeline-at-rule"
-    )
-  ) {
-    return;
-  }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17212
-  if (
-    spec_url.startsWith(
-      "https://w3c.github.io/csswg-drafts/scroll-animations/#scroll-timeline-at-rule"
-    )
-  ) {
-    return;
-  }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17212
-  if (
-    spec_url.startsWith(
-      "https://w3c.github.io/csswg-drafts/scroll-animations/#scroll-timeline-at-rule"
-    )
-  ) {
-    return;
-  }
   // FIXME temporary https://github.com/w3c/svgwg/pull/879
   // PR merged but spec output not regenerated yet...
   if (

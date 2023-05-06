@@ -159,9 +159,6 @@ const processSpecURL = async (
     requestURL =
       "https://labs.w3.org/spec-generator/?type=respec&url=" + requestURL;
   }
-  if (requestURL.startsWith("https://drafts.csswg.org/")) {
-    return;
-  }
   const contents = getRemoteContents(specURL, requestURL, seconds);
   if (contents && contents.match(/respec-w3c-/)) {
     warn(`${specURL} loads respec`);
