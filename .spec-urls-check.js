@@ -264,6 +264,22 @@ const checkSpecURL = (
    *   return;
    * }
    */
+  // FIXME temporary https://github.com/w3c/csswg-drafts/issues/8806
+  if (
+    spec_url.startsWith(
+      "https://drafts.csswg.org/cssom/#dom-cssimportrule-layername"
+    )
+  ) {
+    return;
+  }
+  // FIXME temporary https://github.com/w3c/csswg-drafts/issues/8806
+  if (
+    spec_url.startsWith(
+      "https://drafts.csswg.org/cssom/#dom-cssimportrule-supportstext"
+    )
+  ) {
+    return;
+  }
   // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17748
   if (
     spec_url.startsWith(
