@@ -258,12 +258,6 @@ const checkSpecURL = (
   standard,
   deprecated
 ) => {
-  /*
-   * // FIXME temporary https://github.com/mdn/browser-compat-data/pull/12171
-   * if (spec_url.startsWith('https://w3c.github.io/webcrypto/#Crypto-method-randomUUID')) {
-   *   return;
-   * }
-   */
   // FIXME temporary https://github.com/w3c/csswg-drafts/issues/8806
   if (
     spec_url.startsWith(
@@ -280,34 +274,19 @@ const checkSpecURL = (
   ) {
     return;
   }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/17748
-  if (
-    spec_url.startsWith(
-      "https://w3c.github.io/webrtc-pc/#dom-rtcicecredentialtype"
-    )
-  ) {
-    return;
-  }
-  if (
-    spec_url.startsWith(
-      "https://w3c.github.io/webrtc-pc/#dom-rtciceserver-credentialtype"
-    )
-  ) {
-    return;
-  }
-  // FIXME temporary https://github.com/mdn/browser-compat-data/pull/14600
-  if (
-    spec_url.startsWith(
-      "https://wicg.github.io/savedata/#save-data-request-header-field"
-    )
-  ) {
-    return;
-  }
   // FIXME temporary https://github.com/w3c/svgwg/pull/879
   // PR merged but spec output not regenerated yet...
   if (
     spec_url.startsWith(
       "https://svgwg.org/svg2-draft/styling.html#__svg__SVGStyleElement__disabled"
+    )
+  ) {
+    return;
+  }
+  // Permanently ignore
+  if (
+    spec_url.startsWith(
+      "https://wicg.github.io/savedata/#save-data-request-header-field"
     )
   ) {
     return;
