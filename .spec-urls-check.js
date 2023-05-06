@@ -258,6 +258,12 @@ const checkSpecURL = (
   standard,
   deprecated
 ) => {
+  // FIXME temporary https://github.com/w3c/csswg-drafts/issues/8807
+  if (
+    spec_url.startsWith("https://drafts.csswg.org/css-position-4/#backdrop")
+  ) {
+    return;
+  }
   // FIXME temporary https://github.com/w3c/csswg-drafts/issues/8806
   if (
     spec_url.startsWith(
