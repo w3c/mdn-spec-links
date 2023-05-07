@@ -1936,7 +1936,8 @@
             "summary": "The border-image-width CSS property sets the width of an element's border image.",
             "support": {
                 "chrome": {
-                    "version_added": "15"
+                    "version_added": "15",
+                    "notes": "Before Chrome 112, a border image's absolute or percentage length width may not take precedence over a narrower <code>border-width</code> (<a href='https://crbug.com/767352'>bug 767352</a>)."
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -1959,7 +1960,8 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "notes": "Before Chrome 112, a border image's absolute or percentage length width may not take precedence over a narrower <code>border-width</code> (<a href='https://crbug.com/767352'>bug 767352</a>)."
                 }
             },
             "title": "border-image-width"
@@ -1980,7 +1982,8 @@
             "support": {
                 "chrome": [
                     {
-                        "version_added": "16"
+                        "version_added": "16",
+                        "notes": "Before Chrome 112, a border image's absolute or percentage length width may not take precedence over a narrower <code>border-width</code> (<a href='https://crbug.com/767352'>bug 767352</a>)."
                     },
                     {
                         "prefix": "-webkit-",
@@ -2014,7 +2017,8 @@
                 "oculus": "mirror",
                 "opera": [
                     {
-                        "version_added": "11"
+                        "version_added": "11",
+                        "notes": "Before Opera 98, a border image's absolute or percentage length width may not take precedence over a narrower <code>border-width</code> (<a href='https://crbug.com/767352'>bug 767352</a>)."
                     },
                     {
                         "version_added": "10.5",
@@ -2024,7 +2028,8 @@
                 ],
                 "opera_android": [
                     {
-                        "version_added": "11"
+                        "version_added": "11",
+                        "notes": "A border image's absolute or percentage length width may not take precedence over a narrower <code>border-width</code> (<a href='https://crbug.com/767352'>bug 767352</a>)."
                     },
                     {
                         "version_added": "11",
@@ -2053,7 +2058,8 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": [
                     {
-                        "version_added": "4.4"
+                        "version_added": "4.4",
+                        "notes": "Before WebView 112, a border image's absolute or percentage length width may not take precedence over a narrower <code>border-width</code> (<a href='https://crbug.com/767352'>bug 767352</a>)."
                     },
                     {
                         "prefix": "-webkit-",
@@ -2062,7 +2068,8 @@
                 ],
                 "edge_blink": [
                     {
-                        "version_added": "79"
+                        "version_added": "79",
+                        "notes": "Before Chrome 112, a border image's absolute or percentage length width may not take precedence over a narrower <code>border-width</code> (<a href='https://crbug.com/767352'>bug 767352</a>)."
                     },
                     {
                         "prefix": "-webkit-",
