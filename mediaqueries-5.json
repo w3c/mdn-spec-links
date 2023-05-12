@@ -376,6 +376,56 @@
             "title": "prefers-reduced-motion"
         }
     ],
+    "prefers-reduced-transparency": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "css/at-rules/media.json",
+            "name": "prefers-reduced-transparency",
+            "slug": "CSS/@media/prefers-reduced-transparency",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-transparency",
+            "summary": "The prefers-reduced-transparency CSS media feature is used to detect if a user has enabled a setting on their device to reduce the transparent or translucent layer effects used on the device. Switching on such a setting can help improve contrast and readability for some users.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "113",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.prefers-reduced-transparency.enabled",
+                            "value_to_set": "true"
+                        }
+                    ],
+                    "impl_url": "https://bugzil.la/1736914"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "prefers-reduced-transparency"
+        }
+    ],
     "scripting": [
         {
             "engines": [
