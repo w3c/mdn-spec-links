@@ -23,9 +23,9 @@ jobs:
       - name: Run w3c/mdn-spec-links build
         id: build
         run: |
-          echo "::set-output name=conclusion::success"
-          make report-BCD || echo "::set-output name=conclusion::failure"
-          make report || echo "::set-output name=conclusion::failure"
+          echo "{name}={conclusion::success}" >> $GITHUB_OUTPUT
+          make report-BCD || echo "{name}={conclusion::failure}" >> $GITHUB_OUTPUT
+          make report || echo "{name}={conclusion::failure}" >> $GITHUB_OUTPUT
       - uses: crazy-max/ghaction-import-gpg@v5
         with:
           gpg_private_key: ${{ secrets.GPG_SIGNING_KEY }}
