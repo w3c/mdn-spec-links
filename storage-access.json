@@ -13,7 +13,7 @@
             "name": "hasStorageAccess",
             "slug": "API/Document/hasStorageAccess",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/hasStorageAccess",
-            "summary": "The hasStorageAccess() method of the Document interface returns a Promise that resolves with a boolean value indicating whether the document has access to its first-party storage.",
+            "summary": "The hasStorageAccess() method of the Document interface returns a Promise that resolves with a boolean value indicating whether the document has access to unpartitioned cookies.",
             "support": {
                 "chrome": {
                     "version_added": "78",
@@ -84,7 +84,7 @@
             "name": "requestStorageAccess",
             "slug": "API/Document/requestStorageAccess",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/requestStorageAccess",
-            "summary": "The requestStorageAccess() method of the Document interface returns a Promise that resolves if the access to first-party storage was granted, and rejects if access was denied.",
+            "summary": "The requestStorageAccess() method of the Document interface allows a document loaded in a third-party context (i.e. embedded in an <iframe>) to request access to unpartitioned cookies.",
             "support": {
                 "chrome": {
                     "version_added": "78",
