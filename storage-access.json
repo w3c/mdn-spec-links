@@ -6,26 +6,28 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "api/Document.json",
             "name": "hasStorageAccess",
             "slug": "API/Document/hasStorageAccess",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/hasStorageAccess",
             "summary": "The hasStorageAccess() method of the Document interface returns a Promise that resolves with a boolean value indicating whether the document has access to unpartitioned cookies.",
             "support": {
-                "chrome": {
-                    "version_added": "78",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#storage-access-api",
-                            "value_to_set": "Enabled"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/989663'>bug 989663</a>."
-                },
+                "chrome": [
+                    {
+                        "version_added": "113"
+                    },
+                    {
+                        "version_added": "78",
+                        "version_removed": "112",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#storage-access-api",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": false
@@ -38,16 +40,7 @@
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#storage-access-api",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": "11.1"
@@ -55,17 +48,22 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#storage-access-api",
-                            "value_to_set": "Enabled"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/989663'>bug 989663</a>."
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "113"
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "112",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#storage-access-api",
+                                "value_to_set": "Enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Document: hasStorageAccess() method"
         }
@@ -77,26 +75,33 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "blink"
-            ],
             "filename": "api/Document.json",
             "name": "requestStorageAccess",
             "slug": "API/Document/requestStorageAccess",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/requestStorageAccess",
             "summary": "The requestStorageAccess() method of the Document interface allows a document loaded in a third-party context (i.e. embedded in an <iframe>) to request access to unpartitioned cookies.",
             "support": {
-                "chrome": {
-                    "version_added": "78",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#storage-access-api",
-                            "value_to_set": "Enabled"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/989663'>bug 989663</a>."
-                },
+                "chrome": [
+                    {
+                        "version_added": "113",
+                        "notes": [
+                            "Only resolves <code>requestStorageAccess()</code> calls that come from domains within a <a href='https://developer.chrome.com/docs/privacy-sandbox/first-party-sets/'>first-party set</a>.",
+                            "Client-side storage access granted per-frame, as per spec updates <a href='https://developer.mozilla.org/docs/Web/API/Storage_Access_API#how_it_works'>see explanation</a>."
+                        ]
+                    },
+                    {
+                        "version_added": "78",
+                        "version_removed": "112",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#storage-access-api",
+                                "value_to_set": "Enabled"
+                            }
+                        ],
+                        "notes": "Client-side storage access granted per-page (<a href='https://developer.mozilla.org/docs/Web/API/Storage_Access_API#how_it_works'>see explanation</a>)"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": false
@@ -109,36 +114,77 @@
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": "65",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#storage-access-api",
-                            "value_to_set": "Enabled"
-                        }
-                    ]
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "11.1"
+                    "version_added": "11.1",
+                    "notes": "Client-side storage access granted per-page (<a href='https://developer.mozilla.org/docs/Web/API/Storage_Access_API#how_it_works'>see explanation</a>)"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": [
+                    {
+                        "version_added": "113",
+                        "notes": [
+                            "Only resolves <code>requestStorageAccess()</code> calls that come from domains within a <a href='https://developer.chrome.com/docs/privacy-sandbox/first-party-sets/'>first-party set</a>.",
+                            "Client-side storage access granted per-frame, as per spec updates <a href='https://developer.mozilla.org/docs/Web/API/Storage_Access_API#how_it_works'>see explanation</a>."
+                        ]
+                    },
+                    {
+                        "version_added": false,
+                        "version_removed": "112",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#storage-access-api",
+                                "value_to_set": "Enabled"
+                            }
+                        ],
+                        "notes": "Client-side storage access granted per-page (<a href='https://developer.mozilla.org/docs/Web/API/Storage_Access_API#how_it_works'>see explanation</a>)"
+                    }
+                ]
+            },
+            "title": "Document: requestStorageAccess() method"
+        }
+    ],
+    "permissions-policy-integration": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "http/headers/Permissions-Policy.json",
+            "name": "storage-access",
+            "slug": "HTTP/Headers/Permissions-Policy/storage-access",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/storage-access",
+            "summary": "The HTTP Permissions-Policy header storage-access directive controls whether a document loaded in a third-party context (i.e. embedded in an <iframe>) is allowed to use the Storage Access API to request access to unpartitioned cookies.",
+            "support": {
+                "chrome": {
+                    "version_added": "113"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "#storage-access-api",
-                            "value_to_set": "Enabled"
-                        }
-                    ],
-                    "notes": "See <a href='https://crbug.com/989663'>bug 989663</a>."
+                    "version_added": "113"
                 }
             },
-            "title": "Document: requestStorageAccess() method"
+            "title": "Permissions-Policy: storage-access"
         }
     ]
 }

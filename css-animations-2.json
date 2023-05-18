@@ -135,9 +135,11 @@
     "animation-timeline": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/properties/animation-timeline.json",
@@ -147,7 +149,14 @@
             "summary": "The animation-timeline CSS property specifies the timeline that is used to control the progress of an animation.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "85",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -175,7 +184,14 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "85",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "enable-experimental-web-platform-features",
+                            "value_to_set": "enabled"
+                        }
+                    ]
                 }
             },
             "title": "animation-timeline"

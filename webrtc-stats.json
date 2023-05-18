@@ -285,6 +285,123 @@
             "title": "RTCStatsReport"
         }
     ],
+    "dom-rtcaudiosourcestats-audiolevel": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "audioLevel",
+            "slug": "API/RTCAudioSourceStats/audioLevel",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCAudioSourceStats/audioLevel",
+            "summary": "The RTCAudioSourceStats dictionary's audioLevel property represents the audio level of the media source.",
+            "support": {
+                "chrome": {
+                    "version_added": "80"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "80"
+                }
+            },
+            "title": "RTCAudioSourceStats: audioLevel property"
+        }
+    ],
+    "dom-rtcaudiosourcestats-totalaudioenergy": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "totalAudioEnergy",
+            "slug": "API/RTCAudioSourceStats/totalAudioEnergy",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCAudioSourceStats/totalAudioEnergy",
+            "summary": "The RTCAudioSourceStats dictionary's totalAudioEnergy property represents the total audio energy of the media source over the lifetime of this stats object.",
+            "support": {
+                "chrome": {
+                    "version_added": "80"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "80"
+                }
+            },
+            "title": "RTCAudioSourceStats: totalAudioEnergy property"
+        }
+    ],
+    "dom-rtcaudiosourcestats-totalsamplesduration": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "totalSamplesDuration",
+            "slug": "API/RTCAudioSourceStats/totalSamplesDuration",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCAudioSourceStats/totalSamplesDuration",
+            "summary": "The RTCAudioSourceStats dictionary's totalSamplesDuration property represents the combined duration of all samples produced by the media source over the lifetime of this stats object, in seconds. It does not include samples dropped before reaching this media source.",
+            "support": {
+                "chrome": {
+                    "version_added": "80"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "80"
+                }
+            },
+            "title": "RTCAudioSourceStats: totalSamplesDuration property"
+        }
+    ],
     "dom-rtcstatstype-media-source": [
         {
             "engines": [
@@ -356,47 +473,6 @@
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": "11"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "80"
-                }
-            },
-            "title": "RTCStatsReport"
-        }
-    ],
-    "dom-rtcstatstype-peer-connection": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/RTCStatsReport.json",
-            "name": "type_peer-connection",
-            "slug": "API/RTCStatsReport#peer_connection",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport#peer_connection",
-            "summary": "The RTCStatsReport interface provides a statistics report obtained by calling one of the RTCPeerConnection.getStats(), RTCRtpReceiver.getStats(), and RTCRtpSender.getStats() methods.",
-            "support": {
-                "chrome": {
-                    "version_added": "80"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "113"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "13.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",

@@ -4646,30 +4646,16 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/imageSmoothingEnabled",
             "summary": "The imageSmoothingEnabled property of the CanvasRenderingContext2D interface, part of the Canvas API, determines whether scaled images are smoothed (true, default) or not (false). On getting the imageSmoothingEnabled property, the last value it was set to is returned.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "30"
-                    },
-                    {
-                        "version_added": "21",
-                        "version_removed": "30",
-                        "prefix": "webkit"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "30"
+                },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "15"
                 },
-                "firefox": [
-                    {
-                        "version_added": "51"
-                    },
-                    {
-                        "version_added": "3.6",
-                        "version_removed": "51",
-                        "prefix": "moz"
-                    }
-                ],
+                "firefox": {
+                    "version_added": "51"
+                },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": "11",
@@ -4684,16 +4670,9 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": [
-                    {
-                        "version_added": "79"
-                    },
-                    {
-                        "version_added": false,
-                        "version_removed": "30",
-                        "prefix": "webkit"
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "CanvasRenderingContext2D: imageSmoothingEnabled property"
         }
@@ -21103,7 +21082,11 @@
     "attr-img-fetchpriority": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
+            ],
+            "needsflag": [
+                "webkit"
             ],
             "filename": "api/HTMLImageElement.json",
             "name": "fetchPriority",
@@ -21134,7 +21117,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "Fetch Priority"
+                        }
+                    ]
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -22897,7 +22886,11 @@
     "attr-link-fetchpriority": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
+            ],
+            "needsflag": [
+                "webkit"
             ],
             "filename": "api/HTMLLinkElement.json",
             "name": "fetchPriority",
@@ -22928,7 +22921,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "Fetch Priority"
+                        }
+                    ]
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -48141,9 +48140,7 @@
                 "samsunginternet_android": {
                     "version_added": "1.5"
                 },
-                "webview_android": {
-                    "version_added": "3"
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -48188,9 +48185,7 @@
                 "samsunginternet_android": {
                     "version_added": "1.5"
                 },
-                "webview_android": {
-                    "version_added": "3"
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -48212,14 +48207,14 @@
             "summary": "The <a> HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "Starting with Firefox 41, &lt;a&gt; without <code>href</code> attribute is no longer classified as interactive content: clicking it inside &lt;label&gt; will activate labelled content (<a href='https://bugzil.la/1167816'>bug 1167816</a>)."
                 },
                 "firefox_android": "mirror",
@@ -48230,13 +48225,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<a>: The Anchor element"
@@ -48258,9 +48253,7 @@
                 "chrome": {
                     "version_added": "2"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -48275,9 +48268,7 @@
                     "version_added": "7"
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": true
@@ -48306,7 +48297,7 @@
             "summary": "The <address> HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -48325,13 +48316,11 @@
                 "safari": {
                     "version_added": "1"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<address>: The Contact Address element"
@@ -48351,7 +48340,7 @@
             "summary": "The <area> HTML element defines an area inside an image map that has predefined clickable areas. An image map allows geometric areas on an image to be associated with hypertext links.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -48368,13 +48357,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<area>: The Image Map Area element"
@@ -48396,9 +48385,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -48445,9 +48432,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -48511,7 +48496,7 @@
                     "version_added": "10.5"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "11"
                 },
                 "safari": {
                     "version_added": "3.1"
@@ -48544,7 +48529,7 @@
             "summary": "The <b> HTML element is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use <b> for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the <strong> element.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -48564,13 +48549,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<b>: The Bring Attention To element"
@@ -48590,7 +48575,7 @@
             "summary": "The <base> HTML element specifies the base URL to use for all relative URLs in a document. There can be only one <base> element in a document.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -48608,13 +48593,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<base>: The Document Base URL element"
@@ -48677,7 +48662,7 @@
             "summary": "The <bdo> HTML element overrides the current directionality of text, so that the text within is rendered in a different direction.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -48694,13 +48679,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<bdo>: The Bidirectional Text Override element"
@@ -48777,20 +48762,14 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": true
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -48814,9 +48793,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -48828,12 +48805,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -48919,7 +48894,7 @@
                     "version_added": "12"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "12"
                 },
                 "safari": {
                     "version_added": "6"
@@ -48993,7 +48968,7 @@
             "summary": "The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -49010,13 +48985,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "HTML attribute: disabled"
@@ -49081,30 +49056,34 @@
             "summary": "The <button> HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it then performs an action, such as submitting a form or opening a dialog.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<button>: The Button element"
@@ -49269,9 +49248,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -49283,12 +49260,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -49316,9 +49291,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -49330,12 +49303,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -49363,9 +49334,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -49377,12 +49346,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -49512,7 +49479,7 @@
             "summary": "The <dd> HTML element provides the description, definition, or value for the preceding term (<dt>) in a description list (<dl>).",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -49532,13 +49499,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<dd>: The Description Details element"
@@ -49558,7 +49525,7 @@
             "summary": "The <del> HTML element represents a range of text that has been deleted from a document. This can be used when rendering \"track changes\" or source code diff information, for example. The <ins> element can be used for the opposite purpose: to indicate text that has been added to the document.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -49575,13 +49542,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<del>: The Deleted Text element"
@@ -49603,9 +49570,7 @@
                 "chrome": {
                     "version_added": "12"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
                     "version_added": "49",
@@ -49620,9 +49585,7 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "6"
                 },
@@ -49650,7 +49613,7 @@
             "summary": "The <dfn> HTML element is used to indicate the term being defined within the context of a definition phrase or sentence. The ancestor <p> element, the <dt>/<dd> pairing, or the nearest <section> ancestor of the <dfn> element, is considered to be the definition of the term.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "15"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -49667,13 +49630,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "6"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<dfn>: The Definition element"
@@ -49734,7 +49697,7 @@
             "summary": "The <div> HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -49751,13 +49714,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<div>: The Content Division element"
@@ -49777,7 +49740,7 @@
             "summary": "The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -49794,13 +49757,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<dl>: The Description List element"
@@ -49820,7 +49783,7 @@
             "summary": "The <dt> HTML element specifies a term in a description or definition list, and as such must be used inside a <dl> element. It is usually followed by a <dd> element; however, multiple <dt> elements in a row indicate several terms that are all defined by the immediate next <dd> element.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -49837,13 +49800,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<dt>: The Description Term element"
@@ -49865,9 +49828,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -49879,12 +49840,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -49953,7 +49912,7 @@
             "summary": "The <fieldset> HTML element is used to group several controls as well as labels (<label>) within a web form.",
             "support": {
                 "chrome": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "Does not support <code>flexbox</code> and <code>grid</code> layouts within this element. See <a href='https://crbug.com/262679'>bug 262679</a>."
                 },
                 "chrome_android": "mirror",
@@ -49961,23 +49920,27 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true,
+                    "version_added": "79",
                     "notes": "Does not support <code>flexbox</code> and <code>grid</code> layouts within this element. See <a href='https://crbug.com/262679'>bug 262679</a>."
                 }
             },
@@ -50000,9 +49963,7 @@
                 "chrome": {
                     "version_added": "8"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -50049,9 +50010,7 @@
                 "chrome": {
                     "version_added": "8"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -50098,9 +50057,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -50145,14 +50102,14 @@
             "summary": "The <form> HTML element represents a document section containing interactive controls for submitting information.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -50162,13 +50119,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<form>: The Form element"
@@ -50188,7 +50145,7 @@
             "summary": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -50205,13 +50162,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<h1>–<h6>: The HTML Section Heading elements"
@@ -50229,7 +50186,7 @@
             "summary": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -50246,13 +50203,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<h1>–<h6>: The HTML Section Heading elements"
@@ -50270,7 +50227,7 @@
             "summary": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -50287,13 +50244,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<h1>–<h6>: The HTML Section Heading elements"
@@ -50311,7 +50268,7 @@
             "summary": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -50328,13 +50285,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<h1>–<h6>: The HTML Section Heading elements"
@@ -50352,7 +50309,7 @@
             "summary": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -50369,13 +50326,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<h1>–<h6>: The HTML Section Heading elements"
@@ -50393,7 +50350,7 @@
             "summary": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -50410,13 +50367,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<h1>–<h6>: The HTML Section Heading elements"
@@ -50438,9 +50395,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -50452,12 +50407,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -50485,9 +50438,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -50534,9 +50485,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -50632,30 +50581,34 @@
             "summary": "The <html> HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<html>: The HTML Document / Root element"
@@ -50677,9 +50630,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -50691,12 +50642,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -50724,14 +50673,12 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "The <code>resize</code> CSS property doesn't have any effect on this element due to <a href='https://bugzil.la/680823'>bug 680823</a>."
                 },
                 "firefox_android": "mirror",
@@ -50740,11 +50687,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "15"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "14"
+                },
                 "safari": {
-                    "version_added": true,
+                    "version_added": "4",
                     "notes": "Safari has a <a href='https://www.quirksmode.org/bugreports/archives/2005/02/hidden_iframes.html'>bug</a> that prevents iframes from loading if the <code>iframe</code> element was hidden when added to the page. <code>iframeElement.src = iframeElement.src</code> should cause it to load the iframe."
                 },
                 "safari_ios": "mirror",
@@ -50812,14 +50761,14 @@
             "summary": "The <img> HTML element embeds an image into the document.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -50829,13 +50778,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<img>: The Image Embed element"
@@ -53406,7 +53355,7 @@
             "summary": "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -53421,8 +53370,12 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
                     "version_added": "1"
                 },
@@ -53432,7 +53385,7 @@
                     "version_added": "1"
                 },
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<input>: The Input (Form Input) element"
@@ -53462,7 +53415,7 @@
             "summary": "The <ins> HTML element represents a range of text that has been added to a document. You can use the <del> element to similarly represent a range of text that has been deleted from the document.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -53479,13 +53432,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<ins>"
@@ -53505,7 +53458,7 @@
             "summary": "The <kbd> HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a <kbd> element using its default monospace font, although this is not mandated by the HTML standard.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -53525,13 +53478,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<kbd>: The Keyboard Input element"
@@ -53551,14 +53504,14 @@
             "summary": "The for attribute is an allowed attribute for <label> and <output>. When used on a <label> element it indicates the form element that this label describes. When used on an <output> element it allows for an explicit relationship between the elements that represent values which are used in the output.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -53568,13 +53521,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "HTML attribute: for"
@@ -53594,14 +53547,14 @@
             "summary": "The <label> HTML element represents a caption for an item in a user interface.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -53611,13 +53564,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<label>: The Label element"
@@ -54311,9 +54264,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -54326,11 +54277,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -54358,9 +54311,7 @@
                 "chrome": {
                     "version_added": "26"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -54423,18 +54374,12 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "1"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -54458,7 +54403,7 @@
             "summary": "The <mark> HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "7"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -54477,13 +54422,13 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "5.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<mark>: The Mark Text element"
@@ -54869,9 +54814,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55002,7 +54945,7 @@
             "summary": "The <ol> HTML element represents an ordered list of items — typically rendered as a numbered list.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -55019,13 +54962,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<ol>: The Ordered List element"
@@ -55047,9 +54990,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55061,12 +55002,10 @@
                     "version_added": "8"
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -55094,9 +55033,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55108,12 +55045,10 @@
                     "version_added": "5.5"
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -55141,9 +55076,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55155,12 +55088,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -55188,9 +55119,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55202,12 +55131,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -55235,9 +55162,7 @@
                 "chrome": {
                     "version_added": "10"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "18"
                 },
@@ -55253,14 +55178,12 @@
                     "version_added": "11"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "11"
                 },
                 "safari": {
                     "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -55286,9 +55209,7 @@
                 "chrome": {
                     "version_added": "10"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "18"
                 },
@@ -55304,14 +55225,12 @@
                     "version_added": "11"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "11"
                 },
                 "safari": {
                     "version_added": "7"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -55335,7 +55254,7 @@
             "summary": "The <p> HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -55352,13 +55271,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<p>: The Paragraph element"
@@ -55421,7 +55340,7 @@
             "summary": "The <pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -55438,13 +55357,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<pre>: The Preformatted Text element"
@@ -55466,9 +55385,7 @@
                 "chrome": {
                     "version_added": "6"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55517,9 +55434,7 @@
                 "chrome": {
                     "version_added": "6"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55571,7 +55486,7 @@
             "summary": "The <q> HTML element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the <blockquote> element.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -55588,13 +55503,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<q>: The Inline Quotation element"
@@ -55616,9 +55531,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
                     "version_added": "38"
@@ -55629,15 +55542,11 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "5"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -55663,9 +55572,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
                     "version_added": "38"
@@ -55676,15 +55583,11 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "5"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -55710,9 +55613,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55725,15 +55626,11 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "5"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -55757,7 +55654,7 @@
             "summary": "The <s> HTML element renders text with a strikethrough, or a line through it. Use the <s> element to represent things that are no longer relevant or no longer accurate. However, <s> is not appropriate when indicating document edits; for that, use the <del> and <ins> elements, as appropriate.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -55777,13 +55674,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<s>: The Strikethrough element"
@@ -55803,7 +55700,7 @@
             "summary": "The <samp> HTML element is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console).",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -55820,13 +55717,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<samp>: The Sample Output element"
@@ -55848,9 +55745,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55866,11 +55761,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -55898,9 +55795,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -55945,7 +55840,7 @@
             "summary": "The Boolean multiple attribute, if set, means the form control accepts one or more values. Valid for the email and file input types and the <select>, the manner by which the user opts for multiple values depends on the form control.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -55962,13 +55857,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "HTML attribute: multiple"
@@ -55988,7 +55883,7 @@
             "summary": "The Boolean required attribute, if present, indicates that the user must specify a value for the input before the owning form can be submitted.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "10"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -56005,13 +55900,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "5.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "HTML attribute: required"
@@ -56031,7 +55926,7 @@
             "summary": "The size attribute defines the width of the <input> and the height of the <select> element. For the input, if the type attribute is text or password then it's the number of characters. This must be an integer value 0 or higher. If no size is specified, or an invalid value is specified, the input has no size declared, and the form control will be the default width based on the user agent. If CSS targets the element with properties impacting the width, CSS takes precedence.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -56048,13 +55943,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "HTML attribute: size"
@@ -56074,7 +55969,7 @@
             "summary": "The <select> HTML element represents a control that provides a menu of options.",
             "support": {
                 "chrome": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "<code>border-radius</code> on <code>&lt;select&gt;</code> elements is ignored unless <code>-webkit-appearance</code> is overridden to an appropriate value."
                 },
                 "chrome_android": "mirror",
@@ -56094,26 +55989,26 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "2"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "<code>border-radius</code> on <code>&lt;select&gt;</code> elements is ignored unless <code>-webkit-appearance</code> is overridden to an appropriate value."
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
-                    "version_added": true,
+                    "version_added": "37",
                     "notes": [
                         "In the Browser app for Android 4.1 (and possibly later versions), there is a bug where the menu indicator triangle on the side of a <code>&lt;select&gt;</code> will not be displayed if a <code>background</code>, <code>border</code>, or <code>border-radius</code> style is applied to the <code>&lt;select&gt;</code>.",
                         "<code>border-radius</code> on <code>&lt;select&gt;</code> elements is ignored unless <code>-webkit-appearance</code> is overridden to an appropriate value."
                     ]
                 },
                 "edge_blink": {
-                    "version_added": true,
+                    "version_added": "79",
                     "notes": "<code>border-radius</code> on <code>&lt;select&gt;</code> elements is ignored unless <code>-webkit-appearance</code> is overridden to an appropriate value."
                 }
             },
@@ -56175,7 +56070,7 @@
             "summary": "The <small> HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from small to x-small.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -56192,13 +56087,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<small>: the side comment element"
@@ -56218,7 +56113,7 @@
             "summary": "The <source> HTML element specifies multiple media resources for the <picture>, the <audio> element, or the <video> element. It is a void element, meaning that it has no content and does not have a closing tag. It is commonly used to offer the same media content in multiple file formats in order to provide compatibility with a broad range of browsers given their differing support for image file formats and media file formats.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -56236,13 +56131,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<source>: The Media or Image Source element"
@@ -56262,7 +56157,7 @@
             "summary": "The <span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <span> is very much like a <div> element, but <div> is a block-level element whereas a <span> is an inline-level element.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -56279,13 +56174,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<span>: The Content Span element"
@@ -56307,9 +56202,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -56324,12 +56217,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -56402,7 +56293,7 @@
             "summary": "The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -56419,13 +56310,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<sub>: The Subscript element"
@@ -56443,7 +56334,7 @@
             "summary": "The <sup> HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -56460,13 +56351,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<sup>: The Superscript element"
@@ -56488,9 +56379,7 @@
                 "chrome": {
                     "version_added": "12"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
                     "version_added": "49"
@@ -56501,15 +56390,11 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": "14"
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "6"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -56550,13 +56435,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -56584,9 +56469,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -56599,11 +56482,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -56631,9 +56516,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -56646,11 +56529,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -56691,9 +56576,7 @@
                 },
                 "oculus": "mirror",
                 "opera": "mirror",
-                "opera_android": {
-                    "version_added": null
-                },
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "8"
                 },
@@ -56723,14 +56606,14 @@
             "summary": "The <textarea> HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": [
                         "Before Firefox 6, when a <code>&lt;textarea&gt;</code> was focused, the insertion point was placed at the end of the text by default. Other major browsers place the insertion point at the beginning of the text.",
                         "A default background-image gradient is applied to all <code>&lt;textarea&gt;</code> elements, which can be disabled using <code>background-image: none</code>.",
@@ -56742,19 +56625,23 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
+                "opera": {
+                    "version_added": "12.1"
+                },
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": {
-                    "version_added": true,
+                    "version_added": "3",
                     "notes": "Unlike other major browsers, a default style of <code>opacity: 0.4</code> is applied to disabled <code>&lt;textarea&gt;</code> elements."
                 },
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<textarea>: The Textarea element"
@@ -56776,9 +56663,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -56791,11 +56676,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -56823,9 +56710,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -56838,11 +56723,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -56870,9 +56757,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -56885,11 +56770,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true,
+                    "version_added": "1",
                     "notes": "Backgrounds applied to <code>&lt;thead&gt;</code> elements will be applied to each table cell, rather than the entire header. To mimic the behavior of other browsers, set the <code>background-attachment</code> CSS property to <code>fixed</code>."
                 },
                 "safari_ios": "mirror",
@@ -56979,9 +56866,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -56993,16 +56878,12 @@
                     "version_added": "1"
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": "1"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -57028,9 +56909,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -57043,11 +56922,13 @@
                 },
                 "oculus": "mirror",
                 "opera": {
-                    "version_added": true
+                    "version_added": "12.1"
                 },
-                "opera_android": "mirror",
+                "opera_android": {
+                    "version_added": "12.1"
+                },
                 "safari": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -57094,17 +56975,14 @@
                     "version_added": "12.1"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "12.1"
                 },
                 "safari": {
                     "version_added": "6"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
-                "webview_android": {
-                    "version_added": true,
-                    "notes": "Doesn't work for fullscreen video."
-                },
+                "webview_android": "mirror",
                 "edge_blink": {
                     "version_added": "79"
                 }
@@ -57126,7 +57004,7 @@
             "summary": "The <u> HTML element represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -57146,13 +57024,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<u>: The Unarticulated Annotation (Underline) element"
@@ -57172,7 +57050,7 @@
             "summary": "The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -57189,13 +57067,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<ul>: The Unordered List element"
@@ -57215,7 +57093,7 @@
             "summary": "The <var> HTML element represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -57232,13 +57110,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<var>: The Variable element"
@@ -57260,9 +57138,7 @@
                 "chrome": {
                     "version_added": "3"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -57309,9 +57185,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
                     "version_added": "1"
@@ -57326,14 +57200,12 @@
                     "version_added": "11.6"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "12"
                 },
                 "safari": {
                     "version_added": "4"
                 },
-                "safari_ios": {
-                    "version_added": null
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -59647,7 +59519,7 @@
                     "version_added": "12"
                 },
                 "opera_android": {
-                    "version_added": null
+                    "version_added": "12"
                 },
                 "safari": {
                     "version_added": "6"
@@ -59976,11 +59848,9 @@
                 "chrome": {
                     "version_added": "18"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
-                    "version_added": false
+                    "version_added": "≤79"
                 },
                 "firefox": {
                     "version_added": "18"
@@ -59990,16 +59860,12 @@
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
                     "version_added": "6"
                 },
-                "safari_ios": {
-                    "version_added": true
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
@@ -60025,9 +59891,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -60039,12 +59903,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "≤4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -60121,9 +59983,7 @@
                 "chrome": {
                     "version_added": "1"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
@@ -60135,12 +59995,10 @@
                     "version_added": true
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": true
-                },
+                "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "≤4"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -61023,9 +60881,7 @@
                 "chrome": {
                     "version_added": "5"
                 },
-                "chrome_android": {
-                    "version_added": true
-                },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },

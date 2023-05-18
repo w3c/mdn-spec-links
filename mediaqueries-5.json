@@ -136,7 +136,11 @@
     "inverted": [
         {
             "engines": [
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/at-rules/media.json",
             "name": "inverted-colors",
@@ -150,7 +154,14 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "114",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.inverted-colors.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
