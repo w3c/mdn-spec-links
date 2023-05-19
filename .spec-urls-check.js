@@ -258,24 +258,18 @@ const checkSpecURL = (
   standard,
   deprecated
 ) => {
-  // FIXME temporary https://github.com/w3c/csswg-drafts/issues/8807
-  if (
-    spec_url.startsWith("https://drafts.csswg.org/css-position-4/#backdrop")
-  ) {
-    return;
-  }
-  // FIXME temporary https://github.com/w3c/csswg-drafts/issues/8806
+  // FIXME temporary
   if (
     spec_url.startsWith(
-      "https://drafts.csswg.org/cssom/#dom-cssimportrule-layername"
+      "https://tc39.es/proposal-array-grouping/#sec-array.prototype.group"
     )
   ) {
     return;
   }
-  // FIXME temporary https://github.com/w3c/csswg-drafts/issues/8806
+  // FIXME temporary
   if (
     spec_url.startsWith(
-      "https://drafts.csswg.org/cssom/#dom-cssimportrule-supportstext"
+      "https://tc39.es/proposal-array-grouping/#sec-array.prototype.grouptomap"
     )
   ) {
     return;
