@@ -273,11 +273,9 @@
     "image-set-notation": [
         {
             "engines": [
+                "blink",
                 "gecko",
                 "webkit"
-            ],
-            "prefixed": [
-                "blink"
             ],
             "filename": "css/properties/background-image.json",
             "name": "image-set",
@@ -285,10 +283,15 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set()",
             "summary": "The image-set() CSS functional notation is a method of letting the browser pick the most appropriate CSS image from a given set, primarily for high pixel density screens.",
             "support": {
-                "chrome": {
-                    "prefix": "-webkit-",
-                    "version_added": "21"
-                },
+                "chrome": [
+                    {
+                        "version_added": "113"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "21"
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": [
@@ -322,10 +325,15 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "prefix": "-webkit-",
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "113"
+                    },
+                    {
+                        "prefix": "-webkit-",
+                        "version_added": "79"
+                    }
+                ]
             },
             "caniuse": {
                 "feature": "css-image-set",

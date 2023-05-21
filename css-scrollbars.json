@@ -47,7 +47,11 @@
     "scrollbar-width": [
         {
             "engines": [
+                "blink",
                 "gecko"
+            ],
+            "needsflag": [
+                "blink"
             ],
             "filename": "css/properties/scrollbar-width.json",
             "name": "scrollbar-width",
@@ -56,8 +60,14 @@
             "summary": "The scrollbar-width property allows the author to set the maximum thickness of an element's scrollbars when they are shown.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/891944'>bug 891944</a>."
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -79,8 +89,14 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/891944'>bug 891944</a>."
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
                 }
             },
             "title": "scrollbar-width"
