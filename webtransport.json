@@ -119,6 +119,45 @@
             "title": "WebTransport: closed property"
         }
     ],
+    "dom-webtransport-congestioncontrol": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/WebTransport.json",
+            "name": "congestionControl",
+            "slug": "API/WebTransport/congestionControl",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport/congestionControl",
+            "summary": "The congestionControl read-only property of the WebTransport interface indicates the application's preference for either high throughput or low-latency when sending data.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "114"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "WebTransport: congestionControl property"
+        }
+    ],
     "dom-webtransport-createbidirectionalstream": [
         {
             "engines": [
@@ -129,7 +168,7 @@
             "name": "createBidirectionalStream",
             "slug": "API/WebTransport/createBidirectionalStream",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport/createBidirectionalStream",
-            "summary": "The createBidirectionalStream() method of the WebTransport interface opens a bidirectional stream; it returns a WebTransportBidirectionalStream object containing readable and writable properties, which can be used to reliably read from and write to the server.",
+            "summary": "The createBidirectionalStream() method of the WebTransport interface asynchronously opens and returns a bidirectional stream.",
             "support": {
                 "chrome": {
                     "version_added": "97"
@@ -169,7 +208,7 @@
             "name": "createUnidirectionalStream",
             "slug": "API/WebTransport/createUnidirectionalStream",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport/createUnidirectionalStream",
-            "summary": "The createUnidirectionalStream() method of the WebTransport interface opens a unidirectional stream; it returns a WritableStream object that can be used to reliably write data to the server.",
+            "summary": "The createUnidirectionalStream() method of the WebTransport interface asynchronously opens a unidirectional stream.",
             "support": {
                 "chrome": {
                     "version_added": "97"
@@ -237,6 +276,84 @@
                 }
             },
             "title": "WebTransport: datagrams property"
+        }
+    ],
+    "dom-webtransport-draining": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/WebTransport.json",
+            "name": "draining",
+            "slug": "API/WebTransport/draining",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport/draining",
+            "summary": "The draining read-only property of the WebTransport interface returns a promise that resolves if a server indicates that it wants the client to gracefully close the connection.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "114"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "WebTransport: draining property"
+        }
+    ],
+    "dom-webtransport-getstats": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/WebTransport.json",
+            "name": "getStats",
+            "slug": "API/WebTransport/getStats",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport/getStats",
+            "summary": "The getStats() method of the WebTransport interface asynchronously returns an object containing HTTP/3 connection statistics.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "114"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "WebTransport: getStats() method"
         }
     ],
     "dom-webtransport-incomingbidirectionalstreams": [
@@ -716,7 +833,7 @@
                     "version_added": "97"
                 }
             },
-            "title": "WebTransportDatagramDuplexStream.outgoingMaxAge"
+            "title": "WebTransportDatagramDuplexStream: outgoingMaxAge property"
         }
     ],
     "dom-webtransportdatagramduplexstream-readable": [
@@ -997,6 +1114,84 @@
                 }
             },
             "title": "WebTransportError"
+        }
+    ],
+    "dom-webtransportreceivestream-getstats": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/WebTransportReceiveStream.json",
+            "name": "getStats",
+            "slug": "API/WebTransportReceiveStream/getStats",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransportReceiveStream/getStats",
+            "summary": "The getStats() method of the WebTransportReceiveStream interface asynchronously returns an object containing statistics for the current stream.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "114"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "WebTransportReceiveStream: getStats() method"
+        }
+    ],
+    "webtransportreceivestream": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/WebTransportReceiveStream.json",
+            "name": "WebTransportReceiveStream",
+            "slug": "API/WebTransportReceiveStream",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransportReceiveStream",
+            "summary": "The WebTransportReceiveStream interface of the WebTransport API is a ReadableStream that can be used to read from an incoming unidirectional or bidirectional WebTransport stream from a server.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "114"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "WebTransportReceiveStream"
         }
     ]
 }
