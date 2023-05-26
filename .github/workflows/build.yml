@@ -20,15 +20,15 @@ jobs:
         run: |
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
           echo "https://github.com/${{ github.event.client_payload.repository }}/commit/${{ github.event.client_payload.sha }}"
-          echo "::set-output name=sha_short::$(echo ${{ github.event.client_payload.sha }} | cut -c1-7)"
-          echo "::set-output name=self_link::$(echo $(curl https://api.github.com/repos/w3c/mdn-spec-links/check-suites/$(curl https://api.github.com/repos/w3c/mdn-spec-links/actions/runs/${{ github.run_id }} | jq -r .check_suite_id)/check-runs | jq -r .check_runs[0].html_url)?check_suite_focus=true)"
+          echo "{name}={sha_short::$(echo ${{ github.event.client_payload.sha }} | cut -c1-7)}" >> $GITHUB_OUTPUT
+          echo "{name}={self_link::$(echo $(curl https://api.github.com/repos/w3c/mdn-spec-links/check-suites/$(curl https://api.github.com/repos/w3c/mdn-spec-links/actions/runs/${{ github.run_id }} | jq -r .check_suite_id)/check-runs | jq -r .check_runs[0].html_url)?check_suite_focus=true)}" >>$GITHUB_OUTPUT
       - name: Run w3c/mdn-spec-links build
         id: build
         if: github.event.action == 'ping'
         run: |
-          echo "::set-output name=conclusion::success"
-          make report-BCD || echo "::set-output name=conclusion::failure"
-          make report || echo "::set-output name=conclusion::failure"
+          echo "{name}={conclusion::success}" >> $GITHUB_OUTPUT
+          make report-BCD || echo "{name}={conclusion::failure}" >> $GITHUB_OUTPUT
+          make report || echo "{name}={conclusion::failure}" >> GITHUB_OUTPUT
       - uses: crazy-max/ghaction-import-gpg@v3
         with:
           gpg-private-key: ${{ secrets.GPG_SIGNING_KEY }}
