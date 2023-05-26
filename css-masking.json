@@ -1592,7 +1592,11 @@
     ],
     "element-attrdef-mask-maskcontentunits": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/mask.json",
             "name": "maskContentUnits",
             "slug": "SVG/Attribute/maskContentUnits",
@@ -1600,12 +1604,12 @@
             "summary": "The maskContentUnits attribute indicates which coordinate system to use for the contents of the <mask> element.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1615,13 +1619,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "maskContentUnits"
@@ -1629,7 +1633,11 @@
     ],
     "element-attrdef-mask-maskunits": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/mask.json",
             "name": "maskUnits",
             "slug": "SVG/Attribute/maskUnits",
@@ -1637,12 +1645,12 @@
             "summary": "The maskUnits attribute indicates which coordinate system to use for the geometry properties of the <mask> element.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1652,13 +1660,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "maskUnits"
@@ -1678,14 +1686,14 @@
             "summary": "The <mask> element defines an alpha mask for compositing the current object into the background. A mask is used/referenced using the mask property.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -1695,13 +1703,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<mask>"

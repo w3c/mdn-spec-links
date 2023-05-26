@@ -7919,14 +7919,14 @@
             "summary": "The textLength attribute, available on SVG <text> and <tspan> elements, lets you specify the width of the space into which the text will draw. The user agent will ensure that the text does not extend farther than that distance, using the method or methods specified by the lengthAdjust attribute. By default, only the spacing between characters is adjusted, but the glyph size can also be adjusted if you change lengthAdjust.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -7936,13 +7936,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "textLength"
@@ -8075,7 +8075,7 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -8159,11 +8159,9 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
-                "firefox_android": {
-                    "version_added": "4"
-                },
+                "firefox_android": "mirror",
                 "ie": {
                     "version_added": "9"
                 },
@@ -8375,7 +8373,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -8440,7 +8438,11 @@
     ],
     "pservers.html#LinearGradientElementGradientTransformAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/linearGradient.json",
             "name": "gradientTransform",
             "slug": "SVG/Attribute/gradientTransform",
@@ -8448,12 +8450,12 @@
             "summary": "The gradientTransform attribute contains the definition of an optional additional transformation from the gradient coordinate system onto the target coordinate system (i.e., userSpaceOnUse or objectBoundingBox). This allows for things such as skewing the gradient. This additional transformation matrix is post-multiplied to (i.e., inserted to the right of) any previously defined transformations, including the implicit transformation necessary to convert from object bounding box units to user space.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8463,13 +8465,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "gradientTransform"
@@ -8477,7 +8479,11 @@
     ],
     "pservers.html#RadialGradientElementGradientTransformAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/linearGradient.json",
             "name": "gradientTransform",
             "slug": "SVG/Attribute/gradientTransform",
@@ -8485,12 +8491,12 @@
             "summary": "The gradientTransform attribute contains the definition of an optional additional transformation from the gradient coordinate system onto the target coordinate system (i.e., userSpaceOnUse or objectBoundingBox). This allows for things such as skewing the gradient. This additional transformation matrix is post-multiplied to (i.e., inserted to the right of) any previously defined transformations, including the implicit transformation necessary to convert from object bounding box units to user space.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8500,13 +8506,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "gradientTransform"
@@ -8514,7 +8520,11 @@
     ],
     "pservers.html#LinearGradientElementSpreadMethodAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/linearGradient.json",
             "name": "spreadMethod",
             "slug": "SVG/Attribute/spreadMethod",
@@ -8522,12 +8532,12 @@
             "summary": "The spreadMethod attribute determines how a shape is filled beyond the defined edges of a gradient.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8537,19 +8547,23 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "spreadMethod"
         },
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/radialGradient.json",
             "name": "spreadMethod",
             "slug": "SVG/Attribute/spreadMethod",
@@ -8557,12 +8571,12 @@
             "summary": "The spreadMethod attribute determines how a shape is filled beyond the defined edges of a gradient.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8572,13 +8586,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "spreadMethod"
@@ -8586,7 +8600,11 @@
     ],
     "pservers.html#RadialGradientElementSpreadMethodAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/linearGradient.json",
             "name": "spreadMethod",
             "slug": "SVG/Attribute/spreadMethod",
@@ -8594,12 +8612,12 @@
             "summary": "The spreadMethod attribute determines how a shape is filled beyond the defined edges of a gradient.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8609,19 +8627,23 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "spreadMethod"
         },
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/radialGradient.json",
             "name": "spreadMethod",
             "slug": "SVG/Attribute/spreadMethod",
@@ -8629,12 +8651,12 @@
             "summary": "The spreadMethod attribute determines how a shape is filled beyond the defined edges of a gradient.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8644,13 +8666,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "spreadMethod"
@@ -8691,7 +8713,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -8719,14 +8741,14 @@
             "summary": "The markerHeight attribute represents the height of the viewport into which the <marker> is to be fitted when it is rendered according to the viewBox and preserveAspectRatio attributes.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8736,13 +8758,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "markerHeight"
@@ -8762,14 +8784,14 @@
             "summary": "The markerUnits attribute defines the coordinate system for the markerWidth and markerHeight attributes and the contents of the <marker>.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8779,13 +8801,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "markerUnits"
@@ -8805,14 +8827,14 @@
             "summary": "The markerWidth attribute represents the width of the viewport into which the <marker> is to be fitted when it is rendered according to the viewBox and preserveAspectRatio attributes.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8822,13 +8844,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "markerWidth"
@@ -8848,14 +8870,14 @@
             "summary": "The orient attribute indicates how a marker is rotated when it is placed at its position on the shape.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8865,13 +8887,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "orient"
@@ -8912,9 +8934,7 @@
                 "safari": {
                     "version_added": "3"
                 },
-                "safari_ios": {
-                    "version_added": "3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -9076,6 +9096,8 @@
     "pservers.html#PatternElementPatternContentUnitsAttribute": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "svg/elements/pattern.json",
@@ -9085,12 +9107,12 @@
             "summary": "The patternContentUnits attribute indicates which coordinate system to use for the contents of the <pattern> element.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9108,7 +9130,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "patternContentUnits"
@@ -9117,6 +9139,8 @@
     "pservers.html#PatternElementPatternTransformAttribute": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "svg/elements/pattern.json",
@@ -9126,12 +9150,12 @@
             "summary": "The patternTransform attribute defines a list of transform definitions that are applied to a pattern tile.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9149,7 +9173,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "patternTransform"
@@ -9158,6 +9182,8 @@
     "pservers.html#PatternElementPatternUnitsAttribute": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "svg/elements/pattern.json",
@@ -9167,12 +9193,12 @@
             "summary": "The patternUnits attribute indicates which coordinate system to use for the geometry properties of the <pattern> element.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9190,7 +9216,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "patternUnits"
@@ -9210,14 +9236,14 @@
             "summary": "The <pattern> element defines a graphics object which can be redrawn at repeated x- and y-coordinate intervals (\"tiled\") to cover an area.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9235,7 +9261,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<pattern>"
@@ -9341,7 +9367,11 @@
     ],
     "pservers.html#RadialGradientElementFRAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/radialGradient.json",
             "name": "fr",
             "slug": "SVG/Attribute/fr",
@@ -9349,12 +9379,12 @@
             "summary": "The fr attribute defines the radius of the focal point for the radial gradient.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "24"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "55"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9364,13 +9394,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "7"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "fr"
@@ -9378,7 +9408,11 @@
     ],
     "pservers.html#RadialGradientElementFXAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/radialGradient.json",
             "name": "fx",
             "slug": "SVG/Attribute/fx",
@@ -9386,12 +9420,12 @@
             "summary": "The fx attribute defines the x-axis coordinate of the focal point for a radial gradient.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9401,13 +9435,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "fx"
@@ -9415,7 +9449,11 @@
     ],
     "pservers.html#RadialGradientElementFYAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/radialGradient.json",
             "name": "fy",
             "slug": "SVG/Attribute/fy",
@@ -9423,12 +9461,12 @@
             "summary": "The fy attribute defines the y-axis coordinate of the focal point for a radial gradient.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9438,13 +9476,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "fy"
@@ -9485,7 +9523,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -9583,7 +9621,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -9707,7 +9745,11 @@
     ],
     "styling.html#StyleElementMediaAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/style.json",
             "name": "media",
             "slug": "SVG/Attribute/media",
@@ -9715,12 +9757,12 @@
             "summary": "The media attribute specifies a media query that must be matched for a style sheet to apply.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9730,13 +9772,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "media"
@@ -9777,7 +9819,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -9828,9 +9870,7 @@
                 "safari": {
                     "version_added": "3"
                 },
-                "safari_ios": {
-                    "version_added": "3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -9926,7 +9966,7 @@
                     "version_added": "10.1"
                 },
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -9954,14 +9994,14 @@
             "summary": "The dx attribute indicates a shift along the x-axis on the position of an element or its content.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -9971,13 +10011,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "dx"
@@ -9997,14 +10037,14 @@
             "summary": "The dy attribute indicates a shift along the y-axis on the position of an element or its content.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -10014,13 +10054,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "dy"
@@ -10040,14 +10080,14 @@
             "summary": "The lengthAdjust attribute controls how the text is stretched into the length defined by the textLength attribute.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -10057,13 +10097,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "lengthAdjust"
@@ -10083,14 +10123,14 @@
             "summary": "The x attribute defines an x-axis coordinate in the user coordinate system.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -10100,13 +10140,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "x"
@@ -10126,14 +10166,14 @@
             "summary": "The y attribute defines a y-axis coordinate in the user coordinate system.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "1.5"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -10143,13 +10183,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "y"
@@ -10192,9 +10232,7 @@
                 "safari": {
                     "version_added": "3"
                 },
-                "safari_ios": {
-                    "version_added": "3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -10239,9 +10277,7 @@
                 "safari": {
                     "version_added": "3"
                 },
-                "safari_ios": {
-                    "version_added": "3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "3"
@@ -10294,7 +10330,11 @@
     ],
     "text.html#TextPathElementSpacingAttribute": [
         {
-            "engines": [],
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
             "filename": "svg/elements/textPath.json",
             "name": "spacing",
             "slug": "SVG/Attribute/spacing",
@@ -10302,12 +10342,12 @@
             "summary": "The spacing attribute indicates how the user agent should determine the spacing between typographic characters that are to be rendered along a path.",
             "support": {
                 "chrome": {
-                    "version_added": null
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": null
+                    "version_added": "20"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -10317,13 +10357,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": null
+                    "version_added": "79"
                 }
             },
             "title": "spacing"
@@ -10343,14 +10383,14 @@
             "summary": "The startOffset attribute defines an offset from the start of the path for the initial current text position along the path after converting the path to the <textPath> element's coordinate system.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "20"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -10360,13 +10400,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": true
+                    "version_added": "3.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "startOffset"
@@ -10386,14 +10426,14 @@
             "summary": "To render text along the shape of a <path>, enclose the text in a <textPath> element that has an href attribute with a reference to the <path> element.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": true
+                    "version_added": "2"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -10403,17 +10443,14 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "3",
+                    "version_added": "3.1",
                     "notes": "Until Safari 6, textPath was not re-rendered when the referenced path was changed dynamically (see <a href='https://webkit.org/b/15799'>bug 15799</a>)"
                 },
-                "safari_ios": {
-                    "version_added": "3",
-                    "notes": "Until Safari 6, textPath was not re-rendered when the referenced path was changed dynamically (see <a href='https://webkit.org/b/15799'>bug 15799</a>)"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<textPath>"
@@ -10482,14 +10519,14 @@
             "summary": "The <use> element takes nodes from within the SVG document, and duplicates them somewhere else. The effect is the same as if the nodes were deeply cloned into a non-exposed DOM, then pasted where the use element is, much like cloned template elements.",
             "support": {
                 "chrome": {
-                    "version_added": "22"
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "4",
+                    "version_added": "1.5",
                     "notes": "Before version 56, Firefox does not completely follow the <code>use</code> cascading rules (see <a href='https://bugzil.la/265894'>bug 265894</a>). A fix is <a href='https://stackoverflow.com/questions/27866893/svg-fill-not-being-applied-in-firefox/27872310#27872310'>documented by Amelia Bellamy-Royds on StackOverflow</a>."
                 },
                 "firefox_android": "mirror",
@@ -10506,9 +10543,7 @@
                 "safari": {
                     "version_added": "3"
                 },
-                "safari_ios": {
-                    "version_added": "3"
-                },
+                "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": {
                     "version_added": "4"
@@ -10524,7 +10559,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "svg/elements/view.json",
             "name": "view",
@@ -10533,7 +10569,7 @@
             "summary": "A view is a defined way to view the image, like a zoom level or a detail view.",
             "support": {
                 "chrome": {
-                    "version_added": true
+                    "version_added": "1"
                 },
                 "chrome_android": "mirror",
                 "edge": {
@@ -10550,13 +10586,13 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": null
+                    "version_added": "3"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": true
+                    "version_added": "79"
                 }
             },
             "title": "<view>"
