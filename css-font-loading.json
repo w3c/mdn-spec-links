@@ -77,45 +77,6 @@
                 }
             },
             "title": "FontFaceSet"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/WorkerGlobalScope.json",
-            "name": "fonts",
-            "slug": "API/WorkerGlobalScope/fonts",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/fonts",
-            "summary": "The fonts property of the WorkerGlobalScope interface returns the FontFaceSet interface of the worker.",
-            "support": {
-                "chrome": {
-                    "version_added": "69"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "105"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "preview"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WorkerGlobalScope: fonts property"
         }
     ],
     "font-face-constructor": [
@@ -1374,6 +1335,47 @@
                 }
             },
             "title": "FontFaceSetLoadEvent"
+        }
+    ],
+    "dom-fontfacesource-fonts": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WorkerGlobalScope.json",
+            "name": "fonts",
+            "slug": "API/WorkerGlobalScope/fonts",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/fonts",
+            "summary": "The fonts property of the WorkerGlobalScope interface returns the FontFaceSet interface of the worker.",
+            "support": {
+                "chrome": {
+                    "version_added": "69"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "105"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "15"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WorkerGlobalScope: fonts property"
         }
     ]
 }
