@@ -20,15 +20,15 @@ jobs:
         run: |
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
           echo "https://github.com/${{ github.event.client_payload.repository }}/commit/${{ github.event.client_payload.sha }}"
-          echo "{name}={sha_short::$(echo ${{ github.event.client_payload.sha }} | cut -c1-7)}" >> $GITHUB_OUTPUT
-          echo "{name}={self_link::$(echo $(curl https://api.github.com/repos/w3c/mdn-spec-links/check-suites/$(curl https://api.github.com/repos/w3c/mdn-spec-links/actions/runs/${{ github.run_id }} | jq -r .check_suite_id)/check-runs | jq -r .check_runs[0].html_url)?check_suite_focus=true)}" >>$GITHUB_OUTPUT
+          echo "sha_short=$(echo ${{ github.event.client_payload.sha }} | cut -c1-7)}" >> $GITHUB_OUTPUT
+          echo "self_link=$(echo $(curl https://api.github.com/repos/w3c/mdn-spec-links/check-suites/$(curl https://api.github.com/repos/w3c/mdn-spec-links/actions/runs/${{ github.run_id }} | jq -r .check_suite_id)/check-runs | jq -r .check_runs[0].html_url)?check_suite_focus=true)}" >>$GITHUB_OUTPUT
       - name: Run w3c/mdn-spec-links build
         id: build
         if: github.event.action == 'ping'
         run: |
-          echo "{name}={conclusion::success}" >> $GITHUB_OUTPUT
-          make report-BCD || echo "{name}={conclusion::failure}" >> $GITHUB_OUTPUT
-          make report || echo "{name}={conclusion::failure}" >> GITHUB_OUTPUT
+          echo "conclusion=success" >> $GITHUB_OUTPUT
+          make report-BCD || echo "conclusion=failure" >> $GITHUB_OUTPUT
+          make report || echo "conclusion=failure" >> GITHUB_OUTPUT
       - uses: crazy-max/ghaction-import-gpg@v3
         with:
           gpg_private_key: ${{ secrets.GPG_SIGNING_KEY }}
@@ -36,7 +36,6 @@ jobs:
           git_user_signingkey: true
           git_commit_gpgsign: true
       - name: Create pull request
-        if: ${{ steps.build.outputs.conclusion == 'success' }}
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
