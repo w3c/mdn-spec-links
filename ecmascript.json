@@ -22366,7 +22366,7 @@
             "name": "charAt",
             "slug": "JavaScript/Reference/Global_Objects/String/charAt",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt",
-            "summary": "The charAt() method of String values returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.",
+            "summary": "The charAt() method of String values returns a new string consisting of the single UTF-16 code unit at the given index.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -22419,7 +22419,7 @@
             "name": "charCodeAt",
             "slug": "JavaScript/Reference/Global_Objects/String/charCodeAt",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt",
-            "summary": "The charCodeAt() method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.",
+            "summary": "The charCodeAt() method of String values returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -22472,7 +22472,7 @@
             "name": "codePointAt",
             "slug": "JavaScript/Reference/Global_Objects/String/codePointAt",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt",
-            "summary": "The codePointAt() method returns a non-negative integer that is the Unicode code point value at the given position. Note that this function does not give the nth code point in a string, but the code point starting at the specified string index.",
+            "summary": "The codePointAt() method of String values returns a non-negative integer that is the Unicode code point value of the character starting at the given index. Note that the index is still based on UTF-16 code units, not Unicode code points.",
             "support": {
                 "chrome": {
                     "version_added": "41"
@@ -22700,7 +22700,7 @@
             "name": "fromCodePoint",
             "slug": "JavaScript/Reference/Global_Objects/String/fromCodePoint",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint",
-            "summary": "The String.fromCodePoint() static method returns a string created by using the specified sequence of code points.",
+            "summary": "The String.fromCodePoint() static method returns a string created from the specified sequence of code points.",
             "support": {
                 "chrome": {
                     "version_added": "41"
