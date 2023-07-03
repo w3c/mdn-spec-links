@@ -21,8 +21,7 @@ jobs:
         run: |
           echo "conclusion=success" >> $GITHUB_OUTPUT
           make URLS-LOG \
-            || echo "conclusion=failure" >> $GITHUB_OUTPUT; \
-            exit 1
+            || echo "conclusion=failure" >> $GITHUB_OUTPUT
       - uses: crazy-max/ghaction-import-gpg@v3
         with:
           gpg-private-key: ${{ secrets.GPG_SIGNING_KEY }}
