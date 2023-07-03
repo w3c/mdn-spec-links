@@ -1895,12 +1895,8 @@
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "14.1"
                 },
@@ -1939,12 +1935,8 @@
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "14.1"
                 },
@@ -1977,9 +1969,7 @@
                     "version_added": "33"
                 },
                 "chrome_android": "mirror",
-                "edge": {
-                    "version_added": false
-                },
+                "edge": "mirror",
                 "firefox": {
                     "version_added": false
                 },
@@ -1988,12 +1978,8 @@
                     "version_added": false
                 },
                 "oculus": "mirror",
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
+                "opera": "mirror",
+                "opera_android": "mirror",
                 "safari": {
                     "version_added": "14.1"
                 },
@@ -3386,7 +3372,7 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "16"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -5080,7 +5066,8 @@
                     "version_added": "14"
                 },
                 "firefox": {
-                    "version_added": "49"
+                    "version_added": "49",
+                    "notes": "In Firefox, speech synthesis voices do not start loading until after the first call to <code>window.speechSynthesis.getVoices()</code>. A way to mitigate this issue is to call the method at the beginning of page load, then wait a few seconds before calling the method again. Voices will remain loaded until all tabs that have called this method have been closed."
                 },
                 "firefox_android": {
                     "version_added": "62"

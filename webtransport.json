@@ -278,48 +278,10 @@
             "title": "WebTransport: datagrams property"
         }
     ],
-    "dom-webtransport-draining": [
-        {
-            "engines": [
-                "gecko"
-            ],
-            "filename": "api/WebTransport.json",
-            "name": "draining",
-            "slug": "API/WebTransport/draining",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebTransport/draining",
-            "summary": "The draining read-only property of the WebTransport interface returns a promise that resolves if a server indicates that it wants the client to gracefully close the connection.",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "114"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "WebTransport: draining property"
-        }
-    ],
     "dom-webtransport-getstats": [
         {
-            "engines": [
+            "engines": [],
+            "partial": [
                 "gecko"
             ],
             "filename": "api/WebTransport.json",
@@ -334,7 +296,9 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "114"
+                    "version_added": "114",
+                    "partial_implementation": true,
+                    "notes": "Method is defined but throws a not-implemented error."
                 },
                 "firefox_android": "mirror",
                 "ie": {

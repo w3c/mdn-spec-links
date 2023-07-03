@@ -211,7 +211,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "api/Headers.json",
             "name": "getSetCookie",
@@ -241,7 +242,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -1910,7 +1911,7 @@
                 "webkit"
             ],
             "filename": "api/Response.json",
-            "name": "error",
+            "name": "error_static",
             "slug": "API/Response/error_static",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Response/error_static",
             "summary": "The error() static method of the Response interface returns a new Response object associated with a network error.",
@@ -1994,6 +1995,49 @@
             "title": "Response: headers property"
         }
     ],
+    "ref-for-dom-response-json①": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/Response.json",
+            "name": "json_static",
+            "slug": "API/Response/json_static",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Response/json_static",
+            "summary": "The json() static method of the Response interface returns a Response that contains the provided JSON data as body, and a Content-Type header which is set to application/json. The response status, status message, and additional headers can also be set.",
+            "support": {
+                "chrome": {
+                    "version_added": "105"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.22"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "115"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "105"
+                }
+            },
+            "title": "Response: json() static method"
+        }
+    ],
     "ref-for-dom-response-ok②": [
         {
             "engines": [
@@ -2048,7 +2092,7 @@
                 "webkit"
             ],
             "filename": "api/Response.json",
-            "name": "redirect",
+            "name": "redirect_static",
             "slug": "API/Response/redirect_static",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Response/redirect_static",
             "summary": "The redirect() static method of the Response interface returns a Response resulting in a redirect to the specified URL.",
@@ -2990,6 +3034,50 @@
                 }
             },
             "title": "Origin"
+        }
+    ],
+    "sec-purpose-header": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "http/headers/Sec-Purpose.json",
+            "name": "Sec-Purpose",
+            "slug": "HTTP/Headers/Sec-Purpose",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Purpose",
+            "summary": "The Sec-Purpose fetch metadata request header indicates the purpose for which the requested resource will be used, when that purpose is something other than immediate use by the user-agent.",
+            "support": {
+                "chrome": {
+                    "version_added": false,
+                    "notes": "Chrome uses the legacy <code>Purpose: prefetch</code> header to indicate a request is a prefetch. See <a href='https://crbug.com/1358419'>bug 1358419</a>."
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "115",
+                    "notes": "<code>Sec-Purpose: prefetch</code> replaces the non-standard <code>X-moz: prefetch</code> header that was used to indicate a prefetch request in earlier versions. Prefetch requests should also include the header <code>Accept</code> header string for navigations, but <code>Accept: */*</code> is sent instead."
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false,
+                    "notes": "Chrome uses the legacy <code>Purpose: prefetch</code> header to indicate a request is a prefetch. See <a href='https://crbug.com/1358419'>bug 1358419</a>."
+                }
+            },
+            "title": "Sec-Purpose"
         }
     ],
     "x-content-type-options-header": [

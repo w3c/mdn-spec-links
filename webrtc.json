@@ -40,6 +40,46 @@
             "title": "RTCCertificate: expires property"
         }
     ],
+    "dom-rtccertificate-getfingerprints": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "api/RTCCertificate.json",
+            "name": "getFingerprints",
+            "slug": "API/RTCCertificate/getFingerprints",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCCertificate/getFingerprints",
+            "summary": "The getFingerprints() method of the RTCCertificate interface is used to get an array of certificate fingerprints.",
+            "support": {
+                "chrome": {
+                    "version_added": "61"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "12.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCCertificate: getFingerprints() method"
+        }
+    ],
     "dom-rtccertificate": [
         {
             "engines": [
@@ -51,7 +91,7 @@
             "name": "RTCCertificate",
             "slug": "API/RTCCertificate",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCCertificate",
-            "summary": "The interface of the WebRTC API provides an object represents a certificate that an RTCPeerConnection uses to authenticate.",
+            "summary": "The RTCCertificate interface of the WebRTC API provides an object representing a certificate that an RTCPeerConnection uses to authenticate.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -4270,7 +4310,7 @@
                 "webkit"
             ],
             "filename": "api/RTCPeerConnection.json",
-            "name": "generateCertificate",
+            "name": "generateCertificate_static",
             "slug": "API/RTCPeerConnection/generateCertificate_static",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate_static",
             "summary": "The static RTCPeerConnection.generateCertificate() function creates an X.509 certificate and corresponding private key, returning a promise that resolves with the new RTCCertificate once it's generated.",
@@ -6080,9 +6120,9 @@
                 "webkit"
             ],
             "filename": "api/RTCRtpReceiver.json",
-            "name": "getCapabilities",
-            "slug": "API/RTCRtpReceiver/getCapabilities",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getCapabilities",
+            "name": "getCapabilities_static",
+            "slug": "API/RTCRtpReceiver/getCapabilities_static",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/getCapabilities_static",
             "summary": "The static method RTCRtpReceiver.getCapabilities() returns an object describing the codec and header extension capabilities supported by RTCRtpReceiver objects on the current device.",
             "support": {
                 "chrome": {
@@ -6860,9 +6900,9 @@
                 "webkit"
             ],
             "filename": "api/RTCRtpSender.json",
-            "name": "getCapabilities",
-            "slug": "API/RTCRtpSender/getCapabilities",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getCapabilities",
+            "name": "getCapabilities_static",
+            "slug": "API/RTCRtpSender/getCapabilities_static",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/getCapabilities_static",
             "summary": "The static method RTCRtpSender.getCapabilities() returns an object describing the codec and header extension capabilities supported by the RTCRtpSender.",
             "support": {
                 "chrome": {
@@ -7346,7 +7386,7 @@
                     "version_added": "13"
                 },
                 "firefox": {
-                    "version_added": "34"
+                    "version_added": "82"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -8175,6 +8215,242 @@
             "title": "RTCSessionDescription"
         }
     ],
+    "dom-rtcstatsreport": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "entries",
+            "slug": "API/RTCStatsReport/entries",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport/entries",
+            "summary": "The entries() method of the RTCStatsReport interface returns a new iterator object that can be used to iterate through the key/value pairs for each element in the RTCStatsReport object, in insertion order.",
+            "support": {
+                "chrome": {
+                    "version_added": "58"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "48"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCStatsReport: entries() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "forEach",
+            "slug": "API/RTCStatsReport/forEach",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport/forEach",
+            "summary": "The forEach() method of the RTCStatsReport interface executes a provided function once for each key/value pair in the RTCStatsReport object, in insertion order.",
+            "support": {
+                "chrome": {
+                    "version_added": "58"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "27"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCStatsReport: forEach() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "get",
+            "slug": "API/RTCStatsReport/get",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport/get",
+            "summary": "The get() method of the RTCStatsReport interface returns a specified element from an RTCStatsReport.",
+            "support": {
+                "chrome": {
+                    "version_added": "58"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "27"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCStatsReport: get() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "has",
+            "slug": "API/RTCStatsReport/has",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport/has",
+            "summary": "The has() method of the RTCStatsReport interface returns a boolean indicating whether a report contains a statistics dictionary with the specified id.",
+            "support": {
+                "chrome": {
+                    "version_added": "58"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "27"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCStatsReport: has() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "keys",
+            "slug": "API/RTCStatsReport/keys",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport/keys",
+            "summary": "The keys() method of the RTCStatsReport interface returns a new iterator object that can be used to iterate through the keys for each element in the RTCStatsReport object, in insertion order.",
+            "support": {
+                "chrome": {
+                    "version_added": "58"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "48"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCStatsReport: keys() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/RTCStatsReport.json",
+            "name": "size",
+            "slug": "API/RTCStatsReport/size",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport/size",
+            "summary": "The size read-only property of the RTCStatsReport interface returns the number of items in the current report.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "48"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "RTCStatsReport: size property"
+        }
+    ],
     "rtcstatsreport-object": [
         {
             "engines": [
@@ -8186,7 +8462,7 @@
             "name": "RTCStatsReport",
             "slug": "API/RTCStatsReport",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/RTCStatsReport",
-            "summary": "The RTCStatsReport interface provides a statistics report obtained by calling one of the RTCPeerConnection.getStats(), RTCRtpReceiver.getStats(), and RTCRtpSender.getStats() methods.",
+            "summary": "The RTCStatsReport interface of the WebRTC API provides a statistics report for a RTCPeerConnection, RTCRtpSender, or RTCRtpReceiver.",
             "support": {
                 "chrome": {
                     "version_added": "58"

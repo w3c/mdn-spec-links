@@ -2089,6 +2089,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "javascript/builtins/Array.json",
@@ -2106,7 +2107,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "115"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -2135,6 +2136,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "javascript/builtins/Array.json",
@@ -2152,7 +2154,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "115"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -2181,6 +2183,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "javascript/builtins/Array.json",
@@ -2198,7 +2201,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "115"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -2400,6 +2403,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "javascript/builtins/Array.json",
@@ -2417,7 +2421,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "115"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -4104,6 +4108,56 @@
             "title": "Atomics.wait()"
         }
     ],
+    "sec-atomics.waitasync": [
+        {
+            "engines": [
+                "blink",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/Atomics.json",
+            "name": "waitAsync",
+            "slug": "JavaScript/Reference/Global_Objects/Atomics/waitAsync",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/waitAsync",
+            "summary": "The Atomics.waitAsync() static method waits asynchronously on a shared memory location and returns a Promise.",
+            "support": {
+                "chrome": {
+                    "version_added": "87"
+                },
+                "chrome_android": {
+                    "version_added": "89"
+                },
+                "deno": {
+                    "version_added": "1.4"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "16.0.0"
+                },
+                "oculus": "mirror",
+                "opera": {
+                    "version_added": "75"
+                },
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "87"
+                }
+            },
+            "title": "Atomics.waitAsync()"
+        }
+    ],
     "sec-atomics.xor": [
         {
             "engines": [
@@ -5678,7 +5732,7 @@
             "name": "getBigInt64",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getBigInt64",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getBigInt64",
-            "summary": "The getBigInt64() method gets a signed 64-bit integer (long long) at the specified byte offset from the start of the DataView.",
+            "summary": "The getBigInt64() method of DataView instances reads 8 bytes starting at the specified byte offset of this DataView and interprets them as a 64-bit signed integer.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -5725,7 +5779,7 @@
             "name": "getBigUint64",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getBigUint64",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getBigUint64",
-            "summary": "The getBigUint64() method gets an unsigned 64-bit integer (unsigned long long) at the specified byte offset from the start of the DataView.",
+            "summary": "The getBigUint64() method of DataView instances reads 8 bytes starting at the specified byte offset of this DataView and interprets them as a 64-bit unsigned integer.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -5772,7 +5826,7 @@
             "name": "getFloat32",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getFloat32",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getFloat32",
-            "summary": "The getFloat32() method gets a signed 32-bit float (float) at the specified byte offset from the start of the DataView.",
+            "summary": "The getFloat32() method of DataView instances reads 4 bytes starting at the specified byte offset of this DataView and interprets them as a 32-bit float.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -5827,7 +5881,7 @@
             "name": "getFloat64",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getFloat64",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getFloat64",
-            "summary": "The getFloat64() method gets a signed 64-bit float (double) at the specified byte offset from the start of the DataView.",
+            "summary": "The getFloat64() method of DataView instances reads 8 bytes starting at the specified byte offset of this DataView and interprets them as a 64-bit float.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -5882,7 +5936,7 @@
             "name": "getInt16",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getInt16",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt16",
-            "summary": "The getInt16() method gets a signed 16-bit integer (short) at the specified byte offset from the start of the DataView.",
+            "summary": "The getInt16() method of DataView instances reads 2 bytes starting at the specified byte offset of this DataView and interprets them as a 16-bit signed integer.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -5937,7 +5991,7 @@
             "name": "getInt32",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getInt32",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt32",
-            "summary": "The getInt32() method gets a signed 32-bit integer (long) at the specified byte offset from the start of the DataView.",
+            "summary": "The getInt32() method of DataView instances reads 4 bytes starting at the specified byte offset of this DataView and interprets them as a 32-bit signed integer.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -5992,7 +6046,7 @@
             "name": "getInt8",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getInt8",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt8",
-            "summary": "The getInt8() method gets a signed 8-bit integer (byte) at the specified byte offset from the start of the DataView.",
+            "summary": "The getInt8() method of DataView instances reads 1 byte at the specified byte offset of this DataView and interprets it as an 8-bit signed integer.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6047,7 +6101,7 @@
             "name": "getUint16",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getUint16",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint16",
-            "summary": "The getUint16() method gets an unsigned 16-bit integer (unsigned short) at the specified byte offset from the start of the DataView.",
+            "summary": "The getUint16() method of DataView instances reads 2 bytes starting at the specified byte offset of this DataView and interprets them as a 16-bit unsigned integer.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6102,7 +6156,7 @@
             "name": "getUint32",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getUint32",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint32",
-            "summary": "The getUint32() method gets an unsigned 32-bit integer (unsigned long) at the specified byte offset from the start of the DataView.",
+            "summary": "The getUint32() method of DataView instances reads 4 bytes starting at the specified byte offset of this DataView and interprets them as a 32-bit unsigned integer.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6157,7 +6211,7 @@
             "name": "getUint8",
             "slug": "JavaScript/Reference/Global_Objects/DataView/getUint8",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint8",
-            "summary": "The getUint8() method gets an unsigned 8-bit integer (unsigned byte) at the specified byte offset from the start of the DataView.",
+            "summary": "The getUint8() method of DataView instances reads 1 byte at the specified byte offset of this DataView and interprets it as an 8-bit unsigned integer.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6212,7 +6266,7 @@
             "name": "setBigInt64",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setBigInt64",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigInt64",
-            "summary": "The setBigInt64() method stores a signed 64-bit integer (long long) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setBigInt64() method of DataView instances takes a BigInt and stores it as a 64-bit signed integer in the 8 bytes starting at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -6259,7 +6313,7 @@
             "name": "setBigUint64",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setBigUint64",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigUint64",
-            "summary": "The setBigUint64() method stores an unsigned 64-bit integer (unsigned long long) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setBigUint64() method of DataView instances takes a BigInt and stores it as a 64-bit unsigned integer in the 8 bytes starting at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -6306,7 +6360,7 @@
             "name": "setFloat32",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setFloat32",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat32",
-            "summary": "The setFloat32() method stores a signed 32-bit float (float) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setFloat32() method of DataView instances takes a number and stores it as a 32-bit float in the 4 bytes starting at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6361,7 +6415,7 @@
             "name": "setFloat64",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setFloat64",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat64",
-            "summary": "The setFloat64() method stores a signed 64-bit float (double) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setFloat64() method of DataView instances takes a number and stores it as a 64-bit float in the 8 bytes starting at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6416,7 +6470,7 @@
             "name": "setInt16",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setInt16",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt16",
-            "summary": "The setInt16() method stores a signed 16-bit integer (short) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setInt16() method of DataView instances takes a number and stores it as a 16-bit signed integer in the 2 bytes at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6471,7 +6525,7 @@
             "name": "setInt32",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setInt32",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt32",
-            "summary": "The setInt32() method stores a signed 32-bit integer (long) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setInt32() method of DataView instances takes a number and stores it as a 32-bit signed integer in the 4 bytes at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6526,7 +6580,7 @@
             "name": "setInt8",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setInt8",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt8",
-            "summary": "The setInt8() method stores a signed 8-bit integer (byte) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setInt8() method of DataView instances takes a number and stores it as an 8-bit signed integer in the byte at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6581,7 +6635,7 @@
             "name": "setUint16",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setUint16",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint16",
-            "summary": "The setUint16() method stores an unsigned 16-bit integer (unsigned short) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setUint16() method of DataView instances takes a number and stores it as a 16-bit unsigned integer in the 2 bytes at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6636,7 +6690,7 @@
             "name": "setUint32",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setUint32",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint32",
-            "summary": "The setUint32() method stores an unsigned 32-bit integer (unsigned long) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setUint32() method of DataView instances takes a number and stores it as a 32-bit unsigned integer in the 4 bytes at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6691,7 +6745,7 @@
             "name": "setUint8",
             "slug": "JavaScript/Reference/Global_Objects/DataView/setUint8",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint8",
-            "summary": "The setUint8() method stores an unsigned 8-bit integer (byte) value at the specified byte offset from the start of the DataView.",
+            "summary": "The setUint8() method of DataView instances takes a number and stores it as an 8-bit unsigned integer in the byte at the specified byte offset of this DataView.",
             "support": {
                 "chrome": {
                     "version_added": "9"
@@ -6854,7 +6908,7 @@
             "name": "UTC",
             "slug": "JavaScript/Reference/Global_Objects/Date/UTC",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC",
-            "summary": "The Date.UTC() static method accepts parameters similar to the Date constructor, but treats them as UTC. It returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.",
+            "summary": "The Date.UTC() static method accepts parameters representing the date and time components similar to the Date constructor, but treats them as UTC. It returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -7914,7 +7968,7 @@
             "name": "parse",
             "slug": "JavaScript/Reference/Global_Objects/Date/parse",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse",
-            "summary": "The Date.parse() static method parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC or NaN if the string is unrecognized or, in some cases, contains illegal date values (e.g. 2015-02-31).",
+            "summary": "The Date.parse() static method parses a string representation of a date, and returns the date's timestamp.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8762,7 +8816,7 @@
             "name": "toDateString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toDateString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString",
-            "summary": "The toDateString() method returns the date portion of a Date object interpreted in the local timezone in English.",
+            "summary": "The toDateString() method of Date instances returns a string representing the date portion of this date interpreted in the local timezone.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -8815,7 +8869,7 @@
             "name": "toISOString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toISOString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString",
-            "summary": "The toISOString() method returns a string in simplified extended ISO format (ISO 8601), which is always 24 or 27 characters long (YYYY-MM-DDTHH:mm:ss.sssZ or ±YYYYYY-MM-DDTHH:mm:ss.sssZ, respectively). The timezone is always zero UTC offset, as denoted by the suffix Z.",
+            "summary": "The toISOString() method of Date instances returns a string representing this date in the date time string format, a simplified format based on ISO 8601, which is always 24 or 27 characters long (YYYY-MM-DDTHH:mm:ss.sssZ or ±YYYYYY-MM-DDTHH:mm:ss.sssZ, respectively). The timezone is always UTC, as denoted by the suffix Z.",
             "support": {
                 "chrome": {
                     "version_added": "3"
@@ -8870,7 +8924,7 @@
             "name": "toJSON",
             "slug": "JavaScript/Reference/Global_Objects/Date/toJSON",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toJSON",
-            "summary": "The toJSON() method returns a string representation of the Date object.",
+            "summary": "The toJSON() method of Date instances returns a string representing this date in the same ISO format as toISOString().",
             "support": {
                 "chrome": {
                     "version_added": "3"
@@ -9084,7 +9138,7 @@
             "name": "toString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toString",
-            "summary": "The toString() method returns a string representing the specified Date object interpreted in the local timezone.",
+            "summary": "The toString() method of Date instances returns a string representing this date interpreted in the local timezone.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -9137,7 +9191,7 @@
             "name": "toTimeString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toTimeString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toTimeString",
-            "summary": "The toTimeString() method returns the time portion of a Date object interpreted in the local timezone in English.",
+            "summary": "The toTimeString() method of Date instances returns a string representing the time portion of this date interpreted in the local timezone.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -9190,7 +9244,7 @@
             "name": "toUTCString",
             "slug": "JavaScript/Reference/Global_Objects/Date/toUTCString",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toUTCString",
-            "summary": "The toUTCString() method converts a date to a string, interpreting it in the UTC time zone. toGMTString() is an alias of this method.",
+            "summary": "The toUTCString() method of Date instances returns a string representing this date in the RFC 7231 format, with negative years allowed. The timezone is always UTC. toGMTString() is an alias of this method.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -9243,7 +9297,7 @@
             "name": "valueOf",
             "slug": "JavaScript/Reference/Global_Objects/Date/valueOf",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/valueOf",
-            "summary": "The valueOf() method returns the primitive value of a Date object.",
+            "summary": "The valueOf() method of Date instances returns the number of milliseconds for this date since the epoch, which is defined as the midnight at the beginning of January 1, 1970, UTC.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -9296,7 +9350,7 @@
             "name": "@@toPrimitive",
             "slug": "JavaScript/Reference/Global_Objects/Date/@@toPrimitive",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/@@toPrimitive",
-            "summary": "The [@@toPrimitive]() method converts a Date object to a primitive value.",
+            "summary": "The [@@toPrimitive]() method of Date instances returns a primitive value representing this date. It may either be a string or a number, depending on the hint given.",
             "support": {
                 "chrome": {
                     "version_added": "47"
@@ -20834,6 +20888,53 @@
             "title": "RegExp.prototype.unicode"
         }
     ],
+    "sec-get-regexp.prototype.unicodesets": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/RegExp.json",
+            "name": "unicodeSets",
+            "slug": "JavaScript/Reference/Global_Objects/RegExp/unicodeSets",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicodeSets",
+            "summary": "The unicodeSets accessor property of RegExp instances returns whether or not the v flag is used with this regular expression.",
+            "support": {
+                "chrome": {
+                    "version_added": "112"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.32"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "116"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "20.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "17"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "112"
+                }
+            },
+            "title": "RegExp.prototype.unicodeSets"
+        }
+    ],
     "sec-regexp.prototype-@@match": [
         {
             "engines": [
@@ -22761,6 +22862,53 @@
             "title": "String.prototype.indexOf()"
         }
     ],
+    "sec-string.prototype.iswellformed": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/String.json",
+            "name": "isWellFormed",
+            "slug": "JavaScript/Reference/Global_Objects/String/isWellFormed",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/isWellFormed",
+            "summary": "The isWellFormed() method of String values returns a boolean indicating whether this string contains any lone surrogates.",
+            "support": {
+                "chrome": {
+                    "version_added": "111"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.32"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "preview"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "20.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "111"
+                }
+            },
+            "title": "String.prototype.isWellFormed()"
+        }
+    ],
     "sec-string.prototype.lastindexof": [
         {
             "engines": [
@@ -23955,6 +24103,53 @@
                 }
             },
             "title": "String.prototype.toUpperCase()"
+        }
+    ],
+    "sec-string.prototype.towellformed": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "javascript/builtins/String.json",
+            "name": "toWellFormed",
+            "slug": "JavaScript/Reference/Global_Objects/String/toWellFormed",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toWellFormed",
+            "summary": "The toWellFormed() method of String values returns a string where all lone surrogates of this string are replaced with the Unicode replacement character U+FFFD.",
+            "support": {
+                "chrome": {
+                    "version_added": "111"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.32"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "preview"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "20.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "16.4"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "111"
+                }
+            },
+            "title": "String.prototype.toWellFormed()"
         }
     ],
     "sec-string.prototype.trim": [
@@ -27265,6 +27460,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
@@ -27282,7 +27478,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "115"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -27311,6 +27507,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
@@ -27328,7 +27525,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "115"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -27461,6 +27658,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "javascript/builtins/TypedArray.json",
@@ -27478,7 +27676,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "115"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -29907,7 +30105,7 @@
             "name": "public_class_fields",
             "slug": "JavaScript/Reference/Classes/Class_elements#Public_fields",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Class_elements#Public_fields",
-            "summary": "Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
+            "summary": "Public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -29960,7 +30158,7 @@
             "name": "static_class_fields",
             "slug": "JavaScript/Reference/Classes/Class_fields",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Class_fields",
-            "summary": "Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
+            "summary": "Public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.",
             "support": {
                 "chrome": {
                     "version_added": "72"
@@ -36722,7 +36920,7 @@
             "name": "character_class",
             "slug": "JavaScript/Reference/Regular_expressions/Character_class",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class",
-            "summary": "A character class matches any character in or not in a custom set of characters.",
+            "summary": "A character class matches any character in or not in a custom set of characters. When the v flag is enabled, it can also be used to match finite-length strings.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -36826,7 +37024,7 @@
             "name": "unicode_character_class_escape",
             "slug": "JavaScript/Reference/Regular_expressions/Unicode_character_class_escape",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape",
-            "summary": "A unicode character class escape is a kind of character class escape that matches a set of characters specified by a Unicode property. It's only supported in unicode mode.",
+            "summary": "A unicode character class escape is a kind of character class escape that matches a set of characters specified by a Unicode property. It's only supported in Unicode-aware mode. When the v flag is enabled, it can also be used to match finite-length strings.",
             "support": {
                 "chrome": {
                     "version_added": "64"

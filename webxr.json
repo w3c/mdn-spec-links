@@ -3676,16 +3676,9 @@
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRSystem",
             "summary": "The WebXR Device API interface XRSystem provides methods which let you get access to an XRSession object representing a WebXR session. With that XRSession in hand, you can use it to interact with the Augmented Reality (AR) or Virtual Reality (VR) device.",
             "support": {
-                "chrome": [
-                    {
-                        "version_added": "83"
-                    },
-                    {
-                        "alternative_name": "XR",
-                        "version_added": "79",
-                        "version_removed": "83"
-                    }
-                ],
+                "chrome": {
+                    "version_added": "79"
+                },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
@@ -3706,16 +3699,9 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": [
-                    {
-                        "version_added": "83"
-                    },
-                    {
-                        "alternative_name": "XR",
-                        "version_added": false,
-                        "version_removed": "83"
-                    }
-                ]
+                "edge_blink": {
+                    "version_added": "79"
+                }
             },
             "title": "XRSystem"
         }
@@ -4535,9 +4521,9 @@
                 "blink"
             ],
             "filename": "api/XRWebGLLayer.json",
-            "name": "getNativeFramebufferScaleFactor",
-            "slug": "API/XRWebGLLayer/getNativeFramebufferScaleFactor",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/getNativeFramebufferScaleFactor",
+            "name": "getNativeFramebufferScaleFactor_static",
+            "slug": "API/XRWebGLLayer/getNativeFramebufferScaleFactor_static",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/getNativeFramebufferScaleFactor_static",
             "summary": "The static method XRWebGLLayer.getNativeFramebufferScaleFactor() returns a floating-point scaling factor by which one can multiply the specified XRSession's resolution to get the native resolution of the WebXR device's frame buffer.",
             "support": {
                 "chrome": {

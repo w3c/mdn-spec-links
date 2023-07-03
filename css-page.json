@@ -1,83 +1,4 @@
 {
-    "using-named-pages": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "css/at-rules/page.json",
-            "name": "page",
-            "slug": "CSS/page",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/page",
-            "summary": "The page CSS property is used to specify the named page, a specific type of page defined by the @page at-rule.",
-            "support": {
-                "chrome": {
-                    "version_added": "85"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "110"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "85"
-                }
-            },
-            "title": "page"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "css/properties/page.json",
-            "name": "page",
-            "slug": "CSS/page",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/page",
-            "summary": "The page CSS property is used to specify the named page, a specific type of page defined by the @page at-rule.",
-            "support": {
-                "chrome": {
-                    "version_added": "85"
-                },
-                "chrome_android": "mirror",
-                "edge": "mirror",
-                "firefox": {
-                    "version_added": "110"
-                },
-                "firefox_android": "mirror",
-                "ie": {
-                    "version_added": false
-                },
-                "oculus": "mirror",
-                "opera": "mirror",
-                "opera_android": "mirror",
-                "safari": {
-                    "version_added": "preview"
-                },
-                "safari_ios": "mirror",
-                "samsunginternet_android": "mirror",
-                "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "85"
-                }
-            },
-            "title": "page"
-        }
-    ],
     "page-orientation-prop": [
         {
             "engines": [
@@ -195,7 +116,8 @@
         },
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "css/at-rules/page.json",
             "name": "size",
@@ -219,7 +141,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "13.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": {
@@ -239,7 +161,8 @@
         {
             "engines": [
                 "blink",
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/at-rules/page.json",
             "name": "page",
@@ -267,7 +190,7 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "13.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -423,6 +346,47 @@
                 }
             },
             "title": "page-break-inside"
+        }
+    ],
+    "using-named-pages": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "css/properties/page.json",
+            "name": "page",
+            "slug": "CSS/page",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/page",
+            "summary": "The page CSS property is used to specify the named page, a specific type of page defined by the @page at-rule.",
+            "support": {
+                "chrome": {
+                    "version_added": "85"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "110"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "13.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "85"
+                }
+            },
+            "title": "page"
         }
     ],
     "left-right-first": [

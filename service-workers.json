@@ -405,6 +405,9 @@
                     "version_added": "40"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.26"
+                },
                 "edge": {
                     "version_added": "16"
                 },
@@ -448,6 +451,9 @@
                     "version_added": "40"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.26"
+                },
                 "edge": {
                     "version_added": "16"
                 },
@@ -491,6 +497,9 @@
                     "version_added": "40"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
                 "edge": {
                     "version_added": "16"
                 },
@@ -541,6 +550,9 @@
                     }
                 ],
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": false
+                },
                 "edge": {
                     "version_added": "16"
                 },
@@ -591,6 +603,9 @@
                     "version_added": "40"
                 },
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.26"
+                },
                 "edge": {
                     "version_added": "16"
                 },
@@ -642,6 +657,9 @@
                     }
                 ],
                 "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.26"
+                },
                 "edge": {
                     "version_added": "16"
                 },
@@ -3063,7 +3081,7 @@
             "name": "fetch_event",
             "slug": "API/ServiceWorkerGlobalScope/fetch_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/fetch_event",
-            "summary": "The fetch event is fired when the fetch() method is called.",
+            "summary": "The fetch event is fired in the service worker's global scope when the main app thread makes a network request. It enables the service worker to intercept network requests and send customized responses (for example, from a local cache).",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -4072,7 +4090,7 @@
                 },
                 "chrome_android": "mirror",
                 "deno": {
-                    "version_added": false
+                    "version_added": "1.26"
                 },
                 "edge": {
                     "version_added": "16"
