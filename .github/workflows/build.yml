@@ -24,7 +24,7 @@ jobs:
           echo "self_link=$(echo $(curl https://api.github.com/repos/w3c/mdn-spec-links/check-suites/$(curl https://api.github.com/repos/w3c/mdn-spec-links/actions/runs/${{ github.run_id }} | jq -r .check_suite_id)/check-runs | jq -r .check_runs[0].html_url)?check_suite_focus=true)}" >>$GITHUB_OUTPUT
       - name: Run w3c/mdn-spec-links build
         id: build
-        if: github.event.action == 'ping'
+        if: github.event.action == 'ping' || github.event_name == 'workflow_dispatch'
         run: |
           echo "conclusion=success" >> $GITHUB_OUTPUT
           make report-BCD || echo "conclusion=failure" >> $GITHUB_OUTPUT
