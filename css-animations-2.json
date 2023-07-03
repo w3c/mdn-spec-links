@@ -88,9 +88,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "css/properties/animation-composition.json",
             "name": "animation-composition",
             "slug": "CSS/animation-composition",
@@ -102,16 +99,21 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "104",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.animation-composition.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "115"
+                    },
+                    {
+                        "version_added": "104",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.animation-composition.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -139,37 +141,54 @@
                 "gecko"
             ],
             "needsflag": [
-                "blink",
                 "gecko"
             ],
             "filename": "css/properties/animation-timeline.json",
             "name": "animation-timeline",
             "slug": "CSS/animation-timeline",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline",
-            "summary": "The animation-timeline CSS property specifies the timeline that is used to control the progress of an animation.",
+            "summary": "The animation-timeline CSS property specifies the timeline that is used to control the progress of a CSS animation.",
             "support": {
-                "chrome": {
-                    "version_added": "85",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                },
+                "chrome": [
+                    {
+                        "version_added": "115"
+                    },
+                    {
+                        "version_added": "85",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": {
-                    "version_added": "97",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "layout.css.scroll-linked-animations.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
+                "firefox": [
+                    {
+                        "version_added": "110",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.scroll-driven-animations.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "97",
+                        "version_removed": "110",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "layout.css.scroll-linked-animations.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": "mirror",
                 "ie": {
                     "version_added": false
@@ -183,16 +202,21 @@
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
-                "edge_blink": {
-                    "version_added": "85",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "enable-experimental-web-platform-features",
-                            "value_to_set": "enabled"
-                        }
-                    ]
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "115"
+                    },
+                    {
+                        "version_added": "85",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "animation-timeline"
         }

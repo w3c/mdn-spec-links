@@ -237,8 +237,6 @@
     "dom-tag-type": [
         {
             "engines": [
-                "blink",
-                "gecko",
                 "webkit"
             ],
             "filename": "javascript/builtins/WebAssembly/Tag.json",
@@ -248,7 +246,7 @@
             "summary": "The type() prototype method of the Tag object can be used to get the sequence of data types associated with the tag.",
             "support": {
                 "chrome": {
-                    "version_added": "95"
+                    "version_added": false
                 },
                 "chrome_android": "mirror",
                 "deno": {
@@ -256,7 +254,7 @@
                 },
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "100"
+                    "version_added": false
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -275,7 +273,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "95"
+                    "version_added": false
                 }
             },
             "title": "WebAssembly.Tag.prototype.type()"

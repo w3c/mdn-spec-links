@@ -63,6 +63,52 @@
             "title": "URL: URL() constructor"
         }
     ],
+    "ref-for-dom-url-canparse": [
+        {
+            "engines": [
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/URL.json",
+            "name": "canParse_static",
+            "slug": "API/URL/canParse_static",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/URL/canParse_static",
+            "summary": "The URL.canParse() static method of the URL interface returns a boolean indicating whether or not an absolute URL, or a relative URL combined with a base URL, are parsable and valid.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.33"
+                },
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "115"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "20.0.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "17"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "URL: canParse() static method"
+        }
+    ],
     "dom-url-hash": [
         {
             "engines": [
@@ -909,6 +955,194 @@
                 }
             },
             "title": "URLSearchParams: URLSearchParams() constructor"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/URLSearchParams.json",
+            "name": "entries",
+            "slug": "API/URLSearchParams/entries",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/entries",
+            "summary": "The entries() method of the URLSearchParams interface returns an iterator allowing iteration through all key/value pairs contained in this object. The iterator returns key/value pairs in the same order as they appear in the query string. The key and value of each pair are string objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "7.5.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "URLSearchParams: entries() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/URLSearchParams.json",
+            "name": "forEach",
+            "slug": "API/URLSearchParams/forEach",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/forEach",
+            "summary": "The forEach() method of the URLSearchParams interface allows iteration through all values contained in this object via a callback function.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "7.5.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "URLSearchParams: forEach() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/URLSearchParams.json",
+            "name": "keys",
+            "slug": "API/URLSearchParams/keys",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/keys",
+            "summary": "The keys() method of the URLSearchParams interface returns an iterator allowing iteration through all keys contained in this object. The keys are string objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "7.5.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "URLSearchParams: keys() method"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/URLSearchParams.json",
+            "name": "values",
+            "slug": "API/URLSearchParams/values",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/values",
+            "summary": "The values() method of the URLsearchParams interface returns an iterator allowing iteration through all values contained in this object. The values are string objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": "mirror",
+                "deno": {
+                    "version_added": "1.0"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "44"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "nodejs": {
+                    "version_added": "7.5.0"
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "URLSearchParams: values() method"
         }
     ],
     "dom-urlsearchparams-append": [
@@ -971,7 +1205,7 @@
             "name": "delete",
             "slug": "API/URLSearchParams/delete",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/delete",
-            "summary": "The delete() method of the URLSearchParams interface deletes the given search parameter and all its associated values, from the list of all search parameters.",
+            "summary": "The delete() method of the URLSearchParams interface deletes specified parameters and their associated value(s) from the list of all search parameters.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -1125,7 +1359,7 @@
             "name": "has",
             "slug": "API/URLSearchParams/has",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/has",
-            "summary": "The has() method of the URLSearchParams interface returns a boolean value that indicates whether a parameter with the specified name exists.",
+            "summary": "The has() method of the URLSearchParams interface returns a boolean value that indicates whether the specified parameter is in the search parameters.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -1247,7 +1481,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",

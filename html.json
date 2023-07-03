@@ -6679,6 +6679,51 @@
             "title": "CustomElementRegistry: get() method"
         }
     ],
+    "dom-customelementregistry-getname": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "partial": [
+                "webkit"
+            ],
+            "filename": "api/CustomElementRegistry.json",
+            "name": "getName",
+            "slug": "API/CustomElementRegistry/getName",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/getName",
+            "summary": "The getName() method of the CustomElementRegistry interface returns the name for a previously-defined custom element.",
+            "support": {
+                "chrome": {
+                    "version_added": "117"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": "116"
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": "preview",
+                    "partial_implementation": true,
+                    "notes": "Supports 'Autonomous custom elements' but not 'Customized built-in elements'."
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "117"
+                }
+            },
+            "title": "CustomElementRegistry: getName() method"
+        }
+    ],
     "dom-customelementregistry-upgrade-dev": [
         {
             "engines": [
@@ -7642,7 +7687,7 @@
             "name": "types",
             "slug": "API/DataTransfer/types",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/types",
-            "summary": "The DataTransfer.types read-only property returns an array of the drag data formats (as strings) that were set in the dragstart event. The order of the formats is the same order as the data included in the drag operation.",
+            "summary": "The DataTransfer.types read-only property returns the available types that exist in the items.",
             "support": {
                 "chrome": {
                     "version_added": "3"
@@ -10243,7 +10288,7 @@
             "summary": "The scrollend event fires when the document view has completed scrolling. Scrolling is considered completed when the scroll position has no more pending updates and the user has completed their gesture.",
             "support": {
                 "chrome": {
-                    "version_added": "preview"
+                    "version_added": "114"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -10264,7 +10309,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "preview"
+                    "version_added": "114"
                 }
             },
             "title": "Document: scrollend event"
@@ -10281,7 +10326,7 @@
             "summary": "The scrollend event fires when element scrolling has completed. Scrolling is considered completed when the scroll position has no more pending updates and the user has completed their gesture.",
             "support": {
                 "chrome": {
-                    "version_added": "preview"
+                    "version_added": "114"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -10302,7 +10347,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "preview"
+                    "version_added": "114"
                 }
             },
             "title": "Element: scrollend event"
@@ -10971,7 +11016,7 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "14"
                 },
                 "safari_ios": {
                     "version_added": false
@@ -10997,7 +11042,7 @@
             "summary": "The DragEvent interface is a DOM event that represents a drag and drop interaction. The user initiates a drag by placing a pointer device (such as a mouse) on the touch surface and then dragging the pointer to a new location (such as another DOM element). Applications are free to interpret a drag and drop interaction in an application-specific way.",
             "support": {
                 "chrome": {
-                    "version_added": "3"
+                    "version_added": "46"
                 },
                 "chrome_android": {
                     "version_added": false
@@ -11019,7 +11064,7 @@
                 },
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "14"
                 },
                 "safari_ios": {
                     "version_added": false
@@ -11068,7 +11113,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "3.1"
+                    "version_added": "14"
                 },
                 "safari_ios": {
                     "version_added": false
@@ -15632,7 +15677,7 @@
             "name": "popoverTargetAction",
             "slug": "API/HTMLButtonElement/popoverTargetAction",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement/popoverTargetAction",
-            "summary": "The popoverTargetAction property of the HTMLButtonElement interface gets and sets the action to be performed (\"hide\", \"show\", or \"toggle\") on a popover element being controlled by a control button.",
+            "summary": "The popoverTargetAction property of the HTMLButtonElement interface gets and sets the action to be performed (\"hide\", \"show\", or \"toggle\") on a popover element being controlled by a button.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -15657,7 +15702,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -15706,7 +15751,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -15732,7 +15777,7 @@
             "name": "popoverTargetElement",
             "slug": "API/HTMLButtonElement/popoverTargetElement",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement/popoverTargetElement",
-            "summary": "The popoverTargetElement property of the HTMLButtonElement interface gets and sets the popover element to control via a control button.",
+            "summary": "The popoverTargetElement property of the HTMLButtonElement interface gets and sets the popover element to control via a button.",
             "support": {
                 "chrome": {
                     "version_added": "114"
@@ -15757,7 +15802,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -15806,7 +15851,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -18261,7 +18306,7 @@
             "name": "drop_event",
             "slug": "API/HTMLElement/drop_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/drop_event",
-            "summary": "The drop event is fired when an element or text selection is dropped on a valid drop target.",
+            "summary": "The drop event is fired when an element or text selection is dropped on a valid drop target. To ensure that the drop event always fires as expected, you should always include a preventDefault() call in the part of your code which handles the dragover event.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -18308,7 +18353,7 @@
             "name": "drop_event",
             "slug": "API/HTMLElement/drop_event",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/drop_event",
-            "summary": "The drop event is fired when an element or text selection is dropped on a valid drop target.",
+            "summary": "The drop event is fired when an element or text selection is dropped on a valid drop target. To ensure that the drop event always fires as expected, you should always include a preventDefault() call in the part of your code which handles the dragover event.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -18522,7 +18567,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -18947,7 +18992,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -18998,7 +19043,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -19147,7 +19192,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -21597,7 +21642,7 @@
             "title": "HTMLImageElement: sizes property"
         }
     ],
-    "dom-img-src": [
+    "attr-img-src": [
         {
             "engines": [
                 "blink",
@@ -22971,7 +23016,7 @@
             "name": "as",
             "slug": "API/HTMLLinkElement/as",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement/as",
-            "summary": "The as property of the HTMLLinkElement interface returns a string representing the type of content being loaded by the HTML link, one of \"script\", \"style\", \"image\", \"video\", \"audio\", \"track\", \"font\", \"fetch\".",
+            "summary": "The as property of the HTMLLinkElement interface returns a string representing the type of content to be preloaded by a link element.",
             "support": {
                 "chrome": {
                     "version_added": "50"
@@ -25832,7 +25877,8 @@
                     {
                         "prefix": "moz",
                         "version_added": "20",
-                        "notes": "May be removed in a future release, see <a href='https://bugzil.la/1765201'>bug 1765201</a>."
+                        "version_removed": "115",
+                        "notes": "Disable by default in version 115 (behind preference <code>dom.media.mozPreservesPitch.enabled</code>). May be fully removed in a future release (see <a href='https://bugzil.la/1765201'>bug 1765201</a>)."
                     }
                 ],
                 "firefox_android": "mirror",
@@ -28773,9 +28819,9 @@
                 "webkit"
             ],
             "filename": "api/HTMLScriptElement.json",
-            "name": "supports",
-            "slug": "API/HTMLScriptElement/supports",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/supports",
+            "name": "supports_static",
+            "slug": "API/HTMLScriptElement/supports_static",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/supports_static",
             "summary": "The supports() static method of the HTMLScriptElement interface provides a simple and consistent method to feature-detect what types of scripts are supported by the user agent.",
             "support": {
                 "chrome": {
@@ -32606,7 +32652,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "15"
+                    "version_added": "11.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -32647,7 +32693,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "15"
+                    "version_added": "11.1"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -35844,7 +35890,6 @@
     "offscreencontext2d-commit": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -35855,7 +35900,7 @@
             "summary": "The OffscreenCanvasRenderingContext2D.commit() method of the Canvas 2D API copies the rendering context's bitmap to the bitmap of the placeholder <canvas> element of the associated OffscreenCanvas object. The copy operation is synchronous. Calling this method is not needed for the transfer, since it happens automatically during the event-loop execution.",
             "support": {
                 "chrome": {
-                    "version_added": "69"
+                    "version_added": false
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -35876,7 +35921,7 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": false
                 }
             },
             "title": "OffscreenCanvasRenderingContext2D: commit() method"
@@ -40054,7 +40099,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -40103,7 +40148,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -40154,7 +40199,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -40205,7 +40250,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": "preview"
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -41548,6 +41593,45 @@
                 }
             },
             "title": "VideoTrackList: selectedIndex property"
+        }
+    ],
+    "the-visibilitystateentry-interface": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/VisibilityStateEntry.json",
+            "name": "VisibilityStateEntry",
+            "slug": "API/VisibilityStateEntry",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/VisibilityStateEntry",
+            "summary": "The VisibilityStateEntry interface provides timings of page visibility state changes, i.e., when a tab changes from the foreground to the background or vice versa.",
+            "support": {
+                "chrome": {
+                    "version_added": "115"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                    "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "edge_blink": {
+                    "version_added": "115"
+                }
+            },
+            "title": "VisibilityStateEntry"
         }
     ],
     "event-domcontentloaded": [
@@ -52218,6 +52302,7 @@
         {
             "engines": [
                 "blink",
+                "gecko",
                 "webkit"
             ],
             "filename": "html/elements/input.json",
@@ -52232,7 +52317,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "116"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -52757,7 +52842,7 @@
             "name": "maxlength",
             "slug": "HTML/Attributes/maxlength",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/maxlength",
-            "summary": "The maxlength attribute defines the maximum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher.",
+            "summary": "The maxlength attribute defines the maximum string length that the user can enter into an <input> or <textarea>. The attribute must have an integer value of 0 or higher.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -52802,7 +52887,7 @@
             "name": "minlength",
             "slug": "HTML/Attributes/minlength",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/minlength",
-            "summary": "The minlength attribute defines the minimum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher. If no minlength is specified, or an invalid value is specified, the input has no minimum length. This value must be less than or equal to the value of maxlength, otherwise the value will never be valid, as it is impossible to meet both criteria.",
+            "summary": "The minlength attribute defines the minimum string length that the user can enter into an <input> or <textarea>. The attribute must have an integer value of 0 or higher.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -52843,7 +52928,7 @@
             "name": "maxlength",
             "slug": "HTML/Attributes/maxlength",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/maxlength",
-            "summary": "The maxlength attribute defines the maximum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher.",
+            "summary": "The maxlength attribute defines the maximum string length that the user can enter into an <input> or <textarea>. The attribute must have an integer value of 0 or higher.",
             "support": {
                 "chrome": {
                     "version_added": "4"
@@ -52892,7 +52977,7 @@
             "name": "minlength",
             "slug": "HTML/Attributes/minlength",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/minlength",
-            "summary": "The minlength attribute defines the minimum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher. If no minlength is specified, or an invalid value is specified, the input has no minimum length. This value must be less than or equal to the value of maxlength, otherwise the value will never be valid, as it is impossible to meet both criteria.",
+            "summary": "The minlength attribute defines the minimum string length that the user can enter into an <input> or <textarea>. The attribute must have an integer value of 0 or higher.",
             "support": {
                 "chrome": {
                     "version_added": "40"
@@ -54107,13 +54192,14 @@
     "link-type-modulepreload": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
             "filename": "html/elements/link.json",
             "name": "modulepreload",
             "slug": "HTML/Link_types/modulepreload",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/modulepreload",
-            "summary": "The modulepreload keyword for the rel attribute of the <link> element provides a declarative way to preemptively fetch a module script and its dependencies, and store them in the document's module map for later evaluation.",
+            "summary": "The modulepreload keyword, for the rel attribute of the <link> element, provides a declarative way to preemptively fetch a module script and its dependencies, and store them in the document's module map for later evaluation.",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -54123,7 +54209,7 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": null
+                    "version_added": "115"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -56035,7 +56121,7 @@
             "name": "size",
             "slug": "HTML/Attributes/size",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/size",
-            "summary": "The size attribute defines the width of the <input> and the height of the <select> element. For the input, if the type attribute is text or password then it's the number of characters. This must be an integer value 0 or higher. If no size is specified, or an invalid value is specified, the input has no size declared, and the form control will be the default width based on the user agent. If CSS targets the element with properties impacting the width, CSS takes precedence.",
+            "summary": "The size attribute defines the width of the <input> and the height of the <select> element. For the input, if the type attribute is text or password then it's the number of characters. This must be an integer value of 0 or higher. If no size is specified, or an invalid value is specified, the input has no size declared, and the form control will be the default width based on the user agent. If CSS targets the element with properties impacting the width, CSS takes precedence.",
             "support": {
                 "chrome": {
                     "version_added": "1"

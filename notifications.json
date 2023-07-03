@@ -694,9 +694,9 @@
                 "blink"
             ],
             "filename": "api/Notification.json",
-            "name": "maxActions",
-            "slug": "API/Notification/maxActions",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Notification/maxActions",
+            "name": "maxActions_static",
+            "slug": "API/Notification/maxActions_static",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Notification/maxActions_static",
             "summary": "The maxActions attribute of the Notification interface returns the maximum number of actions supported by the device and the User Agent. Effectively, this is the maximum number of elements in Notification.actions array which will be respected by the User Agent.",
             "support": {
                 "chrome": {
@@ -739,7 +739,7 @@
                 "webkit"
             ],
             "filename": "api/Notification.json",
-            "name": "permission",
+            "name": "permission_static",
             "slug": "API/Notification/permission_static",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Notification/permission_static",
             "summary": "The permission read-only property of the Notification interface indicates the current permission granted by the user for the current origin to display web notifications.",
@@ -831,9 +831,9 @@
                 "webkit"
             ],
             "filename": "api/Notification.json",
-            "name": "requestPermission",
-            "slug": "API/Notification/requestPermission",
-            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission",
+            "name": "requestPermission_static",
+            "slug": "API/Notification/requestPermission_static",
+            "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission_static",
             "summary": "The requestPermission() static method of the Notification interface requests permission from the user for the current origin to display notifications.",
             "support": {
                 "chrome": {
@@ -989,7 +989,8 @@
     "dom-notification-silent": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "webkit"
             ],
             "filename": "api/Notification.json",
             "name": "silent",
@@ -1015,7 +1016,7 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
