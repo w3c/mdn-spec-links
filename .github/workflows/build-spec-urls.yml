@@ -20,7 +20,9 @@ jobs:
         id: incoming
         run: |
           echo "{name}={conclusion::success}" >> $GITHUB_OUTPUT
-          make URLS-LOG || echo "{name}={conclusion::failure}" >> $GITHUB_OUTPUT
+          make URLS-LOG \
+            || echo "{name}={conclusion::failure}" >> $GITHUB_OUTPUT; \
+            exit 1
       - uses: crazy-max/ghaction-import-gpg@v3
         with:
           gpg-private-key: ${{ secrets.GPG_SIGNING_KEY }}
@@ -28,7 +30,6 @@ jobs:
           git-user-signingkey: true
           git-commit-gpgsign: true
       - name: Create pull request
-        if: ${{ steps.build.outputs.conclusion == 'success' }}
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
@@ -41,7 +42,6 @@ jobs:
           branch: create-pull-request/patch-spec-urls
           delete-branch: true
       - name: Log pull request URL
-        if: ${{ steps.build.outputs.conclusion == 'success' }}
         run: |
           echo "Pull request URL: ${{ steps.cpr.outputs.pull-request-url }}"
       - name: Set status
@@ -53,6 +53,6 @@ jobs:
           -H "Authorization: Bearer $GITHUB_TOKEN" \
           -H "Accept: application/vnd.github.v3+json" \
           https://api.github.com/repos/w3c/mdn-spec-links/statuses/${{ github.sha }} \
-          -d '{"state": "${{ steps.build.outputs.conclusion }}", "context": "Update SPECURLS.json" }'
+          -d '{"state": "success", "context": "Update SPECURLS.json" }'
           make report-only || true
           if [[ "${{ steps.build.outputs.conclusion }}" == "failure" ]]; then exit 1; fi
