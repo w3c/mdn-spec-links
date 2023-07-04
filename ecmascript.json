@@ -29899,7 +29899,7 @@
             "name": "class",
             "slug": "JavaScript/Reference/Statements/class",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class",
-            "summary": "The class declaration creates a new class with a given name using prototype-based inheritance.",
+            "summary": "The class declaration creates a binding of a new class to a given name.",
             "support": {
                 "chrome": [
                     {
@@ -30747,7 +30747,7 @@
             "name": "function",
             "slug": "JavaScript/Reference/Statements/function",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function",
-            "summary": "The function declaration defines a function with the specified parameters.",
+            "summary": "The function declaration creates a binding of a new function to a given name.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -33353,7 +33353,7 @@
             "name": "async_function",
             "slug": "JavaScript/Reference/Statements/async_function",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function",
-            "summary": "The async function declaration declares an async function where the await keyword is permitted within the function body. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.",
+            "summary": "The async function declaration creates a binding of a new async function to a given name. The await keyword is permitted within the function body, enabling asynchronous, promise-based behavior to be written in a cleaner style and avoiding the need to explicitly configure promise chains.",
             "support": {
                 "chrome": {
                     "version_added": "55"
@@ -33473,7 +33473,7 @@
             "name": "async_generator_function",
             "slug": "JavaScript/Reference/Statements/async_function*",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function*",
-            "summary": "The async function* declaration defines an async generator function, which returns an AsyncGenerator object.",
+            "summary": "The async function* declaration creates a binding of a new async generator function to a given name.",
             "support": {
                 "chrome": {
                     "version_added": "63"
@@ -34529,7 +34529,7 @@
             "name": "generator_function",
             "slug": "JavaScript/Reference/Statements/function*",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*",
-            "summary": "The function* declaration (function keyword followed by an asterisk) defines a generator function, which returns a Generator object.",
+            "summary": "The function* declaration creates a binding of a new generator function to a given name. A generator function can be exited and later re-entered, with its context (variable bindings) saved across re-entrances.",
             "support": {
                 "chrome": {
                     "version_added": "39"
@@ -37658,7 +37658,7 @@
             "name": "const",
             "slug": "JavaScript/Reference/Statements/const",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const",
-            "summary": "The const declaration creates block-scoped constants, much like variables declared using the let keyword. The value of a constant can't be changed through reassignment (i.e. by using the assignment operator), and it can't be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed.",
+            "summary": "The const declaration declares block-scoped local variables. The value of a constant can't be changed through reassignment using the assignment operator, but if a constant is an object, its properties can be added, updated, or removed.",
             "support": {
                 "chrome": {
                     "version_added": "21"
@@ -37717,7 +37717,7 @@
             "name": "let",
             "slug": "JavaScript/Reference/Statements/let",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
-            "summary": "The let declaration declares a block-scoped local variable, optionally initializing it to a value.",
+            "summary": "The let declaration declares re-assignable, block-scoped local variables, optionally initializing each to a value.",
             "support": {
                 "chrome": [
                     {
@@ -38816,7 +38816,7 @@
             "name": "var",
             "slug": "JavaScript/Reference/Statements/var",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var",
-            "summary": "The var statement declares a function-scoped or globally-scoped variable, optionally initializing it to a value.",
+            "summary": "The var statement declares function-scoped or globally-scoped variables, optionally initializing each to a value.",
             "support": {
                 "chrome": {
                     "version_added": "1"
