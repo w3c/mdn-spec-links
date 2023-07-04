@@ -424,7 +424,11 @@
     "view-notation": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "css/properties/animation-timeline.json",
             "name": "view",
@@ -438,7 +442,14 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false
+                    "version_added": "114",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.scroll-driven-animations.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
