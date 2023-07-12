@@ -2607,7 +2607,7 @@
             "name": "playing",
             "slug": "CSS/:playing",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:playing",
-            "summary": "The :playing CSS pseudo-class selector represents an element that is playable, such as <audio> or <video>, when that element is \"playing\".",
+            "summary": "The :playing CSS pseudo-class selector represents the playback state of an element that is playable, such as <audio> or <video>, when that element is \"playing\". An element is considered to be playing if it is currently playing the media resource, or if it has temporarily stopped for reasons other than user intent (such as :buffering or :stalled).",
             "support": {
                 "chrome": {
                     "version_added": false
@@ -2815,7 +2815,7 @@
             "name": "scope",
             "slug": "CSS/:scope",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:scope",
-            "summary": "The :scope CSS pseudo-class represents elements that are a reference point for selectors to match against.",
+            "summary": "The :scope CSS pseudo-class represents elements that are a reference point, or scope, for selectors to match against.",
             "support": {
                 "chrome": {
                     "version_added": "27"
