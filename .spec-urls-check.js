@@ -259,6 +259,10 @@ const checkSpecURL = (
   deprecated
 ) => {
   // FIXME temporary
+  if (spec_url.startsWith("https://tc39.es/proposal-resizablearraybuffer")) {
+    return;
+  }
+  // FIXME temporary
   if (
     spec_url.startsWith(
       "https://tc39.es/proposal-array-grouping/#sec-array.prototype.group"
