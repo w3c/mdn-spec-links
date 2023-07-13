@@ -81,8 +81,9 @@ index.html: README.md
 		echo "* [$${file%.*}]($$file) [[status](less-than-2.html?spec=$${file%.*})]" >> $<.tmp; \
 		fi; \
 	done
-	$(GRIP) --title=$< --export $<.tmp - > $@
-	$(RM) $<.tmp
+	pip install grip \
+		&& $(GRIP) --title=$< --export $<.tmp - > $@ \
+		&& $(RM) $<.tmp
 
 .mdn-spec-links.schema.json: .mdn-spec-links.ts
 	ts-json-schema-generator --path $< --unstable --type MDNSpecLink --out $@
