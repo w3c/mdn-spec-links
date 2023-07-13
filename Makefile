@@ -71,6 +71,19 @@ URLS-LOG: yarn.lock
 	$(NODE) --max-old-space-size=13312 .spec-urls-make.js 2>&1 \
 	  | tee URLS-LOG
 
+index.html: README.md
+	cp $< $<.tmp
+	echo >> $<.tmp
+	echo >> $<.tmp
+	for file in *.json; do \
+		if [[ "$$file" != "SPECMAP.json" \
+		&& "$$file" != "SPECURLS.json" && "$$file" != "w3c.json" && "$$file" != "package.json" ]]; then \
+		echo "* [$${file%.*}]($$file) [[status](less-than-2.html?spec=$${file%.*})]" >> $<.tmp; \
+		fi; \
+	done
+	$(GRIP) --title=$< --export $<.tmp - > $@
+	$(RM) $<.tmp
+
 .mdn-spec-links.schema.json: .mdn-spec-links.ts
 	ts-json-schema-generator --path $< --unstable --type MDNSpecLink --out $@
 
