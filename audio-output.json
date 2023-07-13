@@ -21,22 +21,13 @@
                 "edge": {
                     "version_added": "17"
                 },
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "64",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.setsinkid.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": "mirror",
+                "firefox": {
+                    "version_added": "116"
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "Not available due to a limitation in Android (see <a href='https://bugzil.la/1473346'>bug 1473346</a>)."
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -78,22 +69,13 @@
                 "edge": {
                     "version_added": "17"
                 },
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "64",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.setsinkid.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": "mirror",
+                "firefox": {
+                    "version_added": "116"
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "Not available due to a limitation in Android (see <a href='https://bugzil.la/1473346'>bug 1473346</a>)."
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -129,22 +111,12 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview"
-                    },
-                    {
-                        "version_added": "88",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.setsinkid.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": "mirror",
+                "firefox": {
+                    "version_added": "116"
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -181,26 +153,15 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "92",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.setsinkid.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": "mirror",
+                "firefox": {
+                    "version_added": "116",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "Not available due to a limitation in Android (see <a href='https://bugzil.la/1473346'>bug 1473346</a>)."
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -235,28 +196,16 @@
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
-                "firefox": [
-                    {
-                        "version_added": "preview",
-                        "alternative_name": "Feature-Policy: speaker-selection",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
-                    },
-                    {
-                        "version_added": "92",
-                        "alternative_name": "Feature-Policy: speaker-selection",
-                        "partial_implementation": true,
-                        "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "media.setsinkid.enabled",
-                                "value_to_set": "true"
-                            }
-                        ]
-                    }
-                ],
-                "firefox_android": "mirror",
+                "firefox": {
+                    "version_added": "116",
+                    "alternative_name": "Feature-Policy: speaker-selection",
+                    "partial_implementation": true,
+                    "notes": "Only supported through the <code>allow</code> attribute on <code>&lt;iframe&gt;</code> elements."
+                },
+                "firefox_android": {
+                    "version_added": false,
+                    "notes": "Not available due to a limitation in Android (see <a href='https://bugzil.la/1473346'>bug 1473346</a>)."
+                },
                 "ie": {
                     "version_added": false
                 },
