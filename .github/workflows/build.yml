@@ -29,6 +29,7 @@ jobs:
           echo "conclusion=success" >> $GITHUB_OUTPUT
           make report-BCD || echo "conclusion=failure" >> $GITHUB_OUTPUT
           make report || echo "conclusion=failure" >> GITHUB_OUTPUT
+          make -B index.html
       - uses: crazy-max/ghaction-import-gpg@v5
         with:
           gpg_private_key: ${{ secrets.GPG_SIGNING_KEY }}
