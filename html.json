@@ -16821,9 +16821,7 @@
                 "chrome": {
                     "version_added": "37"
                 },
-                "chrome_android": {
-                    "version_added": false
-                },
+                "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
                     "version_added": "98"
@@ -38208,9 +38206,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/TextMetrics.json",
             "name": "fontBoundingBoxAscent",
             "slug": "API/TextMetrics/fontBoundingBoxAscent",
@@ -38223,14 +38218,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "74",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.textMetrics.fontBoundingBox.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "116"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -38259,9 +38247,6 @@
                 "gecko",
                 "webkit"
             ],
-            "needsflag": [
-                "gecko"
-            ],
             "filename": "api/TextMetrics.json",
             "name": "fontBoundingBoxDescent",
             "slug": "API/TextMetrics/fontBoundingBoxDescent",
@@ -38274,14 +38259,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": "74",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.textMetrics.fontBoundingBox.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
+                    "version_added": "116"
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -43974,7 +43952,8 @@
                     "version_added": "12"
                 },
                 "firefox": {
-                    "version_added": "1"
+                    "version_added": "1",
+                    "notes": "Firefox strips newline characters from the prompt response; see <a href='https://bugzil.la/1716229'>bug 1716229</a>."
                 },
                 "firefox_android": "mirror",
                 "ie": {

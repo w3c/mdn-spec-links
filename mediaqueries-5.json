@@ -390,9 +390,11 @@
     "prefers-reduced-transparency": [
         {
             "engines": [
+                "blink",
                 "gecko"
             ],
             "needsflag": [
+                "blink",
                 "gecko"
             ],
             "filename": "css/at-rules/media.json",
@@ -402,7 +404,15 @@
             "summary": "The prefers-reduced-transparency CSS media feature is used to detect if a user has enabled a setting on their device to reduce the transparent or translucent layer effects used on the device. Switching on such a setting can help improve contrast and readability for some users.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ],
+                    "impl_url": "https://crbug.com/1424879"
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -425,13 +435,22 @@
                 "opera": "mirror",
                 "opera_android": "mirror",
                 "safari": {
-                    "version_added": false
+                    "version_added": false,
+                    "impl_url": "https://webkit.org/b/175497"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "preview",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ],
+                    "impl_url": "https://crbug.com/1424879"
                 }
             },
             "title": "prefers-reduced-transparency"
