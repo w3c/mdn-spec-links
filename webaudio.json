@@ -5311,7 +5311,7 @@
             "name": "decodeAudioData",
             "slug": "API/BaseAudioContext/decodeAudioData",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData",
-            "summary": "The decodeAudioData() method of the BaseAudioContext Interface is used to asynchronously decode audio file data contained in an ArrayBuffer. In this case the ArrayBuffer is loaded from XMLHttpRequest and FileReader. The decoded AudioBuffer is resampled to the AudioContext's sampling rate, then passed to a callback or promise.",
+            "summary": "The decodeAudioData() method of the BaseAudioContext Interface is used to asynchronously decode audio file data contained in an ArrayBuffer that is loaded from fetch(), XMLHttpRequest, or FileReader. The decoded AudioBuffer is resampled to the AudioContext's sampling rate, then passed to a callback or promise.",
             "support": {
                 "chrome": {
                     "version_added": "14"

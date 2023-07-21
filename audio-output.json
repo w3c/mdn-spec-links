@@ -9,7 +9,7 @@
             "name": "setSinkId",
             "slug": "API/HTMLMediaElement/setSinkId",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/setSinkId",
-            "summary": "The HTMLMediaElement.setSinkId() method sets the ID of the audio device to use for output and returns a Promise. This only works when the application is authorized to use the specified device.",
+            "summary": "The HTMLMediaElement.setSinkId() method of the Audio Output Devices API sets the ID of the audio device to use for output and returns a Promise.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -57,7 +57,7 @@
             "name": "sinkId",
             "slug": "API/HTMLMediaElement/sinkId",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/sinkId",
-            "summary": "The HTMLMediaElement.sinkId read-only property returns a string that is the unique ID of the audio device delivering output. If it is using the user agent default, it returns an empty string. This ID should be one of the MediaDeviceInfo.deviceId values returned from MediaDevices.enumerateDevices(), id-multimedia, or id-communications.",
+            "summary": "The HTMLMediaElement.sinkId read-only property of the Audio Output Devices API returns a string that is the unique ID of the device to be used for playing audio output.",
             "support": {
                 "chrome": {
                     "version_added": "49"
@@ -104,7 +104,7 @@
             "name": "selectAudioOutput",
             "slug": "API/MediaDevices/selectAudioOutput",
             "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/selectAudioOutput",
-            "summary": "The MediaDevices method selectAudioOutput() prompts the user to select a specific audio output device, for example a speaker or headset. On success, the returned Promise is resolved with a MediaDeviceInfo describing the selected device.",
+            "summary": "The MediaDevices.selectAudioOutput() method of the Audio Output Devices API prompts the user to select an audio output device, such as a speaker or headset. If the user selects a device, the method grants user permission to use the selected device as an audio output sink.",
             "support": {
                 "chrome": {
                     "version_added": false
