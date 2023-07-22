@@ -2,7 +2,11 @@
     "dom-imagecapture-imagecapture": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ImageCapture.json",
             "name": "ImageCapture",
@@ -16,8 +20,14 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/888177'>bug 888177</a>."
+                    "version_added": "35",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.imagecapture.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -56,8 +66,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/888177'>bug 888177</a>."
+                    "version_added": false
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -96,8 +105,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/888177'>bug 888177</a>."
+                    "version_added": false
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -140,8 +148,7 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/888177'>bug 888177</a>."
+                    "version_added": false
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -166,7 +173,11 @@
     "dom-imagecapture-takephoto": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ImageCapture.json",
             "name": "takePhoto",
@@ -188,8 +199,14 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/888177'>bug 888177</a>."
+                    "version_added": "35",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.imagecapture.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -224,6 +241,9 @@
             "engines": [
                 "blink"
             ],
+            "altname": [
+                "gecko"
+            ],
             "filename": "api/ImageCapture.json",
             "name": "track",
             "slug": "API/ImageCapture/track",
@@ -236,8 +256,15 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/888177'>bug 888177</a>."
+                    "version_added": "35",
+                    "alternative_name": "videoStreamTrack",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.imagecapture.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -262,7 +289,11 @@
     "imagecaptureapi": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/ImageCapture.json",
             "name": "ImageCapture",
@@ -276,8 +307,14 @@
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/888177'>bug 888177</a>."
+                    "version_added": "35",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "dom.imagecapture.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {

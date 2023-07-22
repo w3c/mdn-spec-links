@@ -173,7 +173,13 @@
     "offset-position-property": [
         {
             "engines": [
+                "blink",
+                "gecko",
                 "webkit"
+            ],
+            "needsflag": [
+                "blink",
+                "gecko"
             ],
             "filename": "css/properties/offset-position.json",
             "name": "offset-position",
@@ -182,14 +188,26 @@
             "summary": "The offset-position CSS property defines the initial position of the offset-path.",
             "support": {
                 "chrome": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/638055'>bug 638055</a>."
+                    "version_added": "115",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1559232'>bug 1559232</a>."
+                    "version_added": "116",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "layout.css.motion-path-offset-position.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
                 },
                 "firefox_android": "mirror",
                 "ie": {
@@ -205,8 +223,14 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/638055'>bug 638055</a>."
+                    "version_added": "115",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
                 }
             },
             "title": "offset-position"
