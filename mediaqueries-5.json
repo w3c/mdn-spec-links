@@ -6,6 +6,9 @@
                 "gecko",
                 "webkit"
             ],
+            "partial": [
+                "gecko"
+            ],
             "filename": "css/at-rules/media.json",
             "name": "display-mode",
             "slug": "CSS/@media/display-mode",
@@ -21,7 +24,11 @@
                     "version_added": "47",
                     "notes": "Firefox 47 and later support <code>display-mode</code> values <code>fullscreen</code> and <code>browser</code>. Firefox 57 added support for <code>minimal-ui</code> and <code>standalone</code> values."
                 },
-                "firefox_android": "mirror",
+                "firefox_android": {
+                    "version_added": "47",
+                    "partial_implementation": true,
+                    "notes": "Only supports the <code>browser</code> value, which always reports <code>true</code>."
+                },
                 "ie": {
                     "version_added": false
                 },
@@ -459,7 +466,8 @@
     "scripting": [
         {
             "engines": [
-                "gecko"
+                "gecko",
+                "webkit"
             ],
             "filename": "css/at-rules/media.json",
             "name": "scripting",
@@ -488,7 +496,7 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": false
+                    "version_added": "17"
                 },
                 "safari_ios": "mirror",
                 "samsunginternet_android": "mirror",
@@ -504,7 +512,11 @@
     "video-dynamic-range": [
         {
             "engines": [
+                "blink",
                 "gecko"
+            ],
+            "needsflag": [
+                "blink"
             ],
             "filename": "css/at-rules/media.json",
             "name": "video-dynamic-range",
@@ -513,7 +525,14 @@
             "summary": "The video-dynamic-range CSS media feature can be used to test the combination of brightness, contrast ratio, and color depth that are supported by the video plane of the user agent and the output device.",
             "support": {
                 "chrome": {
-                    "version_added": false
+                    "version_added": "98",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
                 },
                 "chrome_android": "mirror",
                 "edge": "mirror",
@@ -534,7 +553,14 @@
                 "samsunginternet_android": "mirror",
                 "webview_android": "mirror",
                 "edge_blink": {
-                    "version_added": false
+                    "version_added": "98",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "#enable-experimental-web-platform-features",
+                            "value_to_set": "Enabled"
+                        }
+                    ]
                 }
             },
             "title": "video-dynamic-range"
