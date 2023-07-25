@@ -3655,7 +3655,6 @@
     "eventdef-speechsynthesisutterance-boundary": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -3669,13 +3668,11 @@
             "summary": "The boundary event of the Web Speech API is fired when the spoken utterance reaches a word or sentence boundary.",
             "support": {
                 "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
                     "version_added": "33",
                     "partial_implementation": true,
                     "notes": "The <code>boundary</code> event does not fire as expected. See <a href='https://crbug.com/1122143'>bug 1122143</a>."
                 },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "14"
                 },
@@ -3706,7 +3703,9 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "The <code>boundary</code> event does not fire as expected. See <a href='https://crbug.com/1122143'>bug 1122143</a>."
                 }
             },
             "title": "SpeechSynthesisUtterance: boundary event"
@@ -3715,7 +3714,6 @@
     "dom-speechsynthesisutterance-onboundary": [
         {
             "engines": [
-                "blink",
                 "gecko",
                 "webkit"
             ],
@@ -3729,13 +3727,11 @@
             "summary": "The boundary event of the Web Speech API is fired when the spoken utterance reaches a word or sentence boundary.",
             "support": {
                 "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
                     "version_added": "33",
                     "partial_implementation": true,
                     "notes": "The <code>boundary</code> event does not fire as expected. See <a href='https://crbug.com/1122143'>bug 1122143</a>."
                 },
+                "chrome_android": "mirror",
                 "edge": {
                     "version_added": "14"
                 },
@@ -3766,7 +3762,9 @@
                     "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "79"
+                    "version_added": "79",
+                    "partial_implementation": true,
+                    "notes": "The <code>boundary</code> event does not fire as expected. See <a href='https://crbug.com/1122143'>bug 1122143</a>."
                 }
             },
             "title": "SpeechSynthesisUtterance: boundary event"
