@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-/* Any copyright is dedicated to the Public Domain.
- * http://creativecommons.org/publicdomain/zero/1.0/ */
+ Any copyright is dedicated to the Public Domain.
+ * http:"creativecommons.org/publicdomain/zero/1.0/ */
 
 "use strict";
 import chalk from "chalk";
