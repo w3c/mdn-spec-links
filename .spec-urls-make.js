@@ -157,7 +157,7 @@ const processSpecURL = async (
   let requestURL = specURL;
   if (respecRawSpecs.includes(requestURL)) {
     requestURL =
-      "https://labs.w3.org/spec-generator/?type=respec&url=" + requestURL;
+      "https://www.w3.org/publications/spec-generator/?type=respec&url=" + requestURL;
   }
   const contents = getRemoteContents(specURL, requestURL, seconds);
   if (contents && contents.match(/respec-w3c-/)) {
@@ -198,8 +198,8 @@ const processSpecURL = async (
     requestURL = originalURL;
   }
 
-  if (requestURL.startsWith("https://labs.w3.org/spec-generator/")) {
-    requestURL = requestURL.substring(52);
+  if (requestURL.startsWith("https://www.w3.org/publications/spec-generator/")) {
+    requestURL = requestURL.substring(64);
   }
 
   if (specJSONfile === "mathml.json") {
